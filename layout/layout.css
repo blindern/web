@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+html, body {
+	background-image: url(../graphics/layout/Athene-backgr.gif);
+	background-repeat: repeat;
+	height:100%;
+}
+
+#container, #contentContainer, #footer {
+	width:800px;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	overflow: visible;
+}
+
+#header {
+	height:100px;
+}
+
+#menu-top {
+	background-color: #333;
+	text-align:center;
+}
+
+#menu-top a, #menu-top a:visited, #menu-top {
+	color:white;
+	font-family:Times new roman;
+	font-size: 17px;
+	text-decoration:none;
+	font-style:italic;
+}
+
+#contentContainer {
+	width: 790px;
+	background-color: #ECECEC;
+	position:absolute;
+	top:120px;
+	bottom:20px;
+	padding-top:20px;
+	padding-left:10px;
+	overflow:scroll;
+	overflow-x:hidden;
+
+}
+
+#content {
+	padding:10px;
+	margin:0;
+	width:580px;
+	background-color:white;
+	float:left;
+}
+#content img {
+	border: 1px solid #000;
+	margin: 5px;
+}
+.rightMenu {
+	background-color:#cecece;
+	width:150px;
+	float:right;
+	margin-top:-10px;
+	border:4px solid #cecece;
+}
+
+
+.rightMenu a, .rightMenu a:link, .rightMenu a:visited {
+	display:block;
+	width:150px;
+	height: 20px;
+	border:0;
+	margin-top:2px;
+	text-align:left;
+	text-decoration:none;
+	line-height:20px;
+	color: black;
+	font-size: 10px;
+	font-family:Arial;
+}
+
+.rightMenu a.highlight, .rightMenu a:hover{
+	background-color:#ececec;
+}
+
+#footer {
+	position:absolute;
+	bottom:0px;
+	height:20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid black;
+	background-color:#cecece;
+	text-align:center;
+}
+
+.soknadReklame {
+	background-color: #fdb0af;
+	border: 1px solid black;
+	width: 200px;
+	float:right;
+	clear: both;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+.soknadReklame h2 {
+	text-decoration:underline;
+}
+.soknadReklame a, .soknadReklame a:hover, .soknadReklame a:visited, .soknadReklame a:link {
+	font-size: 13px;
+	font-family: arial;
+	color: black;
+	text-decoration:none;
+}
+
+p, .soknadskjema{
+	font-size:13px;
+	font-family: arial;
+	margin-bottom:13px;
+}
+
+h1 {
+	font-family: arial;
+	font-size:20px;
+	margin-bottom: 10px;
+
+}
+
+.rightMenu h1, h2, legend {
+	font-family: arial;
+	font-size:12px;
+}
+
+h3 {
+
+}
+
+.ansatteFrame{
+	width:100%;
+	overflow:hidden;
+}
+
+
+
+/*For forms*/
+label{
+	width: 150px;
+	float: left;
+	margin-right: 2px;
+	display:inline;
+}
+.formText{
+	width: 150px;
+	display:block;
+	float:left;
+}
+.submit input {
+	margin-left: 160px;
+}
+
+fieldset {
+	border: 1px solid black;
+	width: 450px;
+	padding:5px;
+}
+
+fieldset div{
+	padding: 0;
+	display:block;
+	clear:both;
+}
+
+fieldset p{
+	display:block;
+}
+
+fieldset legend {
+	font-family: arial;
+	font-size:13px;
+	font-weight:bold;
+}
+
+
+/*Tabell for leiepriser*/
+.leiepriser{
+	border: 1px solid black;
+	border-collapse:collapse;
+	width: 400px;
+}
+
+.leiepriser td{
+	border: 1px solid black;
+	padding: 2px;
+}
+.leiepriser td p{
+	padding:0;
+	margin:0;
+}
+.roed {
+	background-color:red;
+}
