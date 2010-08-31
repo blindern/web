@@ -1,13 +1,13 @@
-<?
+<?php
 	$thisYear = date("Y");
 ?>
 
 							<h1>Hvem b&oslash;r s&oslash;ke</h1>
                             <img src="graphics/images/paerealle.jpg" width="200" height="125" border="1" align="right">
-							<h2>Opptak av beboere for h&oslash;sten <? echo $thisYear;?></h2>
+							<h2>Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?></h2>
 							<p>
-                            	Opptak av beboere for h&oslash;sten <? echo $thisYear;?> skjer
-								fortl&oslash;pende fra og med februar <? echo $thisYear;?>.
+                            	Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?> skjer
+								fortl&oslash;pende fra og med februar <?php echo $thisYear; ?>.
 							</p>
 
                             <h2>Fordel med langvarig tidsperspektiv</h2>

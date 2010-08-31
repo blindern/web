@@ -1,7 +1,6 @@
-﻿<?
+<?php
 	$thisYear = date("Y");
 ?>
-
 							<h1>S&oslash;knad om plass</h1>
                             <h2>S&oslash;knadsskjema</h2>
                             <p>
@@ -11,10 +10,10 @@
                             	eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
                             	blir behandlet med lik verdi.
                             </p>
-                          	<h2>Opptak av beboere for h&oslash;sten <? echo $thisYear;?></h2>
+                          	<h2>Opptak av beboere for h&oslash;sten <?php echo $thisYear;?></h2>
                           	<p>
-							  	Opptak av beboere for h&oslash;sten <? echo $thisYear;?> skjer
-							  	fortl&oslash;pende fra og med februar <? echo $thisYear;?>.
+							  	Opptak av beboere for h&oslash;sten <?php echo $thisYear;?> skjer
+							  	fortl&oslash;pende fra og med februar <?php echo $thisYear;?>.
 							</p>
                           	<h2>Elektronisk s&oslash;knad</h2>
                           	<p>

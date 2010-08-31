@@ -1,12 +1,14 @@
-* {
+/** {
 	margin: 0;
 	padding:0;
-}
+}*/
 
 html, body {
 	background-image: url(../graphics/layout/Athene-backgr.gif);
 	background-repeat: repeat;
 	height:100%;
+	margin: 0;
+	padding: 0;
 }
 
 #container, #contentContainer, #footer {
@@ -98,6 +100,7 @@ html, body {
 	background-color:#cecece;
 	text-align:center;
 }
+#footer p { margin: 0 }
 
 .soknadReklame {
 	background-color: #fdb0af;
@@ -118,31 +121,89 @@ html, body {
 	text-decoration:none;
 }
 
-p, .soknadskjema{
+body {
 	font-size:13px;
 	font-family: arial;
-	margin-bottom:13px;
+}
+p, .soknadskjema {
+	margin: 0 0 13px 0;
 }
 
 h1 {
 	font-family: arial;
 	font-size:20px;
+	margin-top: 0;
 	margin-bottom: 10px;
 
+}
+h2 {
+	margin: 0;
 }
 
 .rightMenu h1, h2, legend {
 	font-family: arial;
-	font-size:12px;
+	font-size:13px;
 }
 
 h3 {
 
 }
 
-.ansatteFrame{
-	width:100%;
-	overflow:hidden;
+dl {
+	margin: 1em 0;
+	line-height: 1.3em;
+}
+dl dt {
+	float: left;
+	clear: left;
+	font-weight: bold;
+	/*margin: 0 10px 0 20px;*/
+}
+dl dd {
+	
+}
+
+ul {
+	margin-top: 0;
+}
+ul li {
+	margin: 3px 0;
+}
+
+
+/* Ansatte */
+.ansatteFrame, .ansatteFrame2 {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+.ansatteFrame img {
+	float: right;
+}
+#content .ansatteFrame2 img {
+	float: right;
+	margin-right: 40px;
+}
+.ansatteFrame2 h2 {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #EEE;
+}
+.ansatte_info {
+	margin-left: 40px;
+	overflow: hidden;
+}
+.ansatteFrame2 dl {
+	margin: 1em 0;
+	line-height: 1.4em;
+}
+.ansatteFrame2 dt {
+	float: left;
+	clear: left;
+	font-weight: bold;
+	padding-right: 10px;
+}
+.ansatteFrame2 dd {
+	margin-left: 120px;
 }
 
 
@@ -203,4 +264,26 @@ fieldset legend {
 }
 .roed {
 	background-color:red;
+}
+
+/* Arrangementsplan */
+dl.arrangementer {
+	margin: 1em 0;
+	line-height: 1.3em;
+}
+dl.arrangementer dt {
+	float: left;
+	clear: left;
+	width: 100px;
+	text-align: right;
+	font-weight: normal;
+}
+dl.arrangementer dd {
+	margin-left: 120px;
+}
+ul.arrangementer {
+	margin: 1em 0;
+}
+ul.arrangementer li {
+	margin-left: 2em;
 }

@@ -8,6 +8,8 @@
  * @copyright 2009
  */
 
+error_reporting(E_ALL & ~E_NOTICE);
+
 include "code/layout.php";
 include "code/menu.php";
 
@@ -17,5 +19,3 @@ $layoutObj->getTopMenu();
 $layoutObj->getPageContent($_GET['category'], $_GET['id']);
 $layoutObj->getRightMenu($_GET['category'], $_GET['id']);
 $layoutObj->printBuffer();
-
-?>
