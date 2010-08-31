@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery
+
+	galleryStyle="MODERN"
+	title="Blindern Studenterhjem"
+	textColor="FFFFFF"
+	frameColor="FFFFFF"
+	frameWidth="10"
+	thumbPosition="BOTTOM"
+	thumbColumns="4"
+	thumbRows="1"
+	showOpenButton="FALSE"
+	showFullscreenButton="FALSE"
+	maxImageWidth="500"
+	maxImageHeight="500"
+	useFlickr="false"
+	flickrUserName=""
+	flickrTags=""
+	languageCode="AUTO"
+	languageList=""
+	imagePath="../../graphics/images/slideshow/images/"
+	thumbPath="../../graphics/images/slideshow/thumbs/"
+>
+<image imageURL="../../graphics/images/slideshow/images/trapp_paere.jpg" thumbURL="../graphics/images/slideshow/thumbnails/trapp_paere.jpg" linkURL="" linkTarget="" >
+	<caption>Bunnen av pærealleen. T-banen ligger ca 70 meter til venstre for denne trappen. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/etgodthjem.jpg" thumbURL="graphics/images/slideshow/thumbnails/etgodthjem.jpg" linkURL="" linkTarget="" >
+	<caption>Skiltet med "Et godt hjem for studenter" kan sees på den ene stolpen i bunnen av pærealleen. Under dette mottoet ble studenterhjemmet bygget. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/paere1.jpg" thumbURL="graphics/images/slideshow/thumbnails/paere1.jpg" linkURL="" linkTarget="" >
+	<caption>Den mektige pærealleen. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/paere2.jpg" thumbURL="graphics/images/slideshow/thumbnails/paere2.jpg" linkURL="" linkTarget="" >
+	<caption>Pærealleen og østfløy. Det er på denne plenen sølecuppen arrangeres. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/paere3.jpg" thumbURL="graphics/images/slideshow/thumbnails/paere3.jpg" linkURL="" linkTarget="" >
+	<caption>Østfløy sett fra pærealleen en vakker sommerdag. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/hovedbyggvinter.jpg" thumbURL="graphics/images/slideshow/thumbnails/hovedbyggvinter.jpg" linkURL="" linkTarget="" >
+	<caption>Hovedbygget en kald vinterkveld. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/hovedbygg1.jpg" thumbURL="graphics/images/slideshow/thumbnails/hovedbygg1.jpg" linkURL="" linkTarget="" >
+	<caption>Tre travle karer. Er det Onsdag, og er de på vei til Bunnpris som ligger rett over veien? Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/hovedbygg2.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/hovedbygg2.jpg" linkURL="" linkTarget="" >
+	<caption>Bygget som er fra 1925 ble i 1997 fredet av riksantivkvaren. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/sykkelkjeller2.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/sykkelkjeller2.jpg" linkURL="" linkTarget="" >
+	<caption>I sykkelkjelleren kan man sette sykkelen om vinteren. Foto:Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/foaje.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/foaje.jpg" linkURL="" linkTarget="" >
+	<caption>Helt inners ser man hoveddøren. Til høyre i foajeen er peisestuen, og til venstre er matsalen. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/kollegievegg.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/kollegievegg.jpg" linkURL="" linkTarget="" >
+	<caption>Veggene på foajeen er dekorert med bilder av alle Kollegiene, helt tilbake til 1925. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/posthyller.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/posthyller.jpg" linkURL="" linkTarget="" >
+	<caption>Her sorteres og legges posten hver morgen. Hvert rom har sin hylle. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/bordtennis.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/bordtennis.jpg" linkURL="" linkTarget="" >
+	<caption>Foreningen Blindern Studenterhjem og IFBS disponerer bl.a. et bordtennisbord som kan fritt benyttes av alle beboere. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/tirill_solecup.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/tirill_solecup.jpg" linkURL="" linkTarget="" >
+	<caption>Et av brukets mange tradisjoner er sølecup. Her er det ikke nødvendigvis den med flest mål som vinner. Foto: Tiril Stensgård Finnanger</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/tennis.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/tennis.jpg" linkURL="" linkTarget="" >
+	<caption>Studenterhjemmet disponerer også sin egen tennisbane. Denne kan fritt benyttes av alle brukets beboere, og innimellom arrangerer IFBS også egene tennisturneringer. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/billa1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/billa1.jpg" linkURL="" linkTarget="" >
+	<caption>Når baren ikke er åpen, benyttes lokalet til hygge. Lokalet er åpent hele tiden, og billjardbordet er flittig i bruk på ettermiddagene. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/badstue1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/badstue1.jpg" linkURL="" linkTarget="" >
+	<caption>I kjelleren på hovedbygget er det en nyoppusset badstue som kan benyttes av alle brukets beboere. Dette er også tilholdsstedet for gutteforeningen BBB - Blindern Bad og Badstue. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/moebelkjeller.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/moebelkjeller.jpg" linkURL="" linkTarget="" >
+	<caption>Dersom du har egene møbler, kan disse lagres i møbelkjelleren over sommeren. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/milla_valhal.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/milla_valhal.jpg" linkURL="" linkTarget="" >
+	<caption>Valhall er stedet for spontane fester, bursdager og annen hygge. Foto: Milla Melgaard</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/matsal.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/matsal.jpg" linkURL="" linkTarget="" >
+	<caption>I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere osm har utmerket seg oppigjennom årene. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/musikksalong.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/musikksalong.jpg" linkURL="" linkTarget="" >
+	<caption>Dette er brukets Musikksalong, det fineste møteromet. Her holder bl.a. Kollegiet sine ukentlige møter, og under spesielle begivenheter åpnes det bar er inne. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/romellen1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/romellen1.jpg" linkURL="" linkTarget="" >
+	<caption>Flittig student på et av rommene på Hovedbygget. Skrivebord, hylle, stol og seng er standardinventar og står klart på alle rom. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/fotball.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/fotball.jpg" linkURL="" linkTarget="" >
+	<caption>På brukets store tomt ligger det også en fotballbane og en sandvollyballbane. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/romellen2.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/romellen2.jpg" linkURL="" linkTarget="" >
+	<caption>Det sies at fra enkelte av rommene på hovedbygget kan man se helt til Oslofjorden. </caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/skjold.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/skjold.jpg" linkURL="" linkTarget="" >
+	<caption>Beboere som utmerker seg spesielt iløpet av sin botid på Bruket, kan få et skjold på veggen. Her henger det skjold helt tilbake fra Brukets spede barndom: Foto Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/peisestue.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/peisestue.jpg" linkURL="" linkTarget="" >
+	<caption>Erik og Johan slapper av i en av lesekrokene i peisestuen. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/milla_hornoch.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/milla_hornoch.jpg" linkURL="" linkTarget="" >
+	<caption>Blindern Haarn oc Blaese Orchester er brukets eget orkester, og spiller opp til både små og store anledninger. Foto: Milla Mellgaard</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/dassbilla.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/dassbilla.jpg" linkURL="" linkTarget="" >
+	<caption>Doen i Billa-bar har meget spesiell innredning. Her kan man finne sangglade mennesker synge alle slags sviser ut i de sene nattetimer. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/tirill_hornoch.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/tirill_hornoch.jpg" linkURL="" linkTarget="" >
+	<caption>Blindern Haarn oc Blaese Orchester har statig oppdrag utenfor studenterhjemmet. Det anbefales på det sterkeste å bli med i en forening, og Haarn oc Blaese er intet dumt valg. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/dusj1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/dusj1.jpg" linkURL="" linkTarget="" >
+	<caption>For tiden holdes dusjene på å pusses opp. Slik ser en nyoppusset dusj ut. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/rom1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/rom1.jpg" linkURL="" linkTarget="" >
+	<caption>Rommene er både store og lyse. Dette er et dobbeltrom med utgang til en egen balkong. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/bad1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/bad1.jpg" linkURL="" linkTarget="" >
+	<caption>Nyoppusset bad fra 2009. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/fagereng_glade.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/fagereng_glade.jpg" linkURL="" linkTarget="" >
+	<caption>Det sosiale er meget viktig på Bruket, og det tar ikke lange tiden før nyinnflyttede glir inn i det gode miljøet på bruket. Foto: Anders Fagereng</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/romellen3.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/romellen3.jpg" linkURL="" linkTarget="" >
+	<caption>Nok et enkelt innredet rom. Dette er et enkeltrom på hovedbygget. Foto: Simen Buodd</caption>
+</image>
+
+
+<image imageURL="../../graphics/images/slideshow/images/dusj2.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/dusj2.jpg" linkURL="" linkTarget="" >
+	<caption>De fleste rommene deler dusj med naboen. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/milla_advent.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/milla_advent.jpg" linkURL="" linkTarget="" >
+	<caption>Pigefaareningen arrangerer av og til arrangementer som her, juleverksted. Foto: Milla Melgaard</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/romerbad2.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/romerbad2.jpg" linkURL="" linkTarget="" >
+	<caption>Brukets egene romerbad. Her arrangeres både årlig togafest, og annenhvert år omdannes dette til Ulka - brukets bruneste pub. Foto: Simen Buodd</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/milla_cHorusBuchus.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/milla_cHorusBuchus.jpg" linkURL="" linkTarget="" >
+	<caption>cHorus Buchus er brukets egene mannskor. Her under fremføringen av "Father Christmas" på julemøtet. Foto: Milla Melgaard</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/vaskeri.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/vaskeri.jpg" linkURL="" linkTarget="" >
+	<caption>Studentvaskeriet står åpent året rundt. Her er det bare å skrive seg opp på liste, så får man både vasket og tørket tøyet sitt. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/matsal1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/matsal1.jpg" linkURL="" linkTarget="" >
+	<caption>Kjøkkenet serverer variert og god, norsk mat. Det serveres tre måltider om dagen, der en av dem er varmmat. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/gymsal.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/gymsal.jpg" linkURL="" linkTarget="" >
+	<caption>Gymsalen benyttes til alt fra yoga og vektløfting til konserter og diskotek. Salen står åpen hele døgnet, og kan benyttes av alle. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/valhal1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/valhal1.jpg" linkURL="" linkTarget="" >
+	<caption>Har du med deg glassflasker til Valhall, blir kvelden ekstra morsom etterhvert som flaskene blir tomme. Bank flasken tre ganger i bordet, og prøv å treffe blinken. Her nytter det ikke å feste uten sko! Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/peisestue1.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/peisestue1.jpg" linkURL="" linkTarget="" >
+	<caption>Peisestua byr på et rolig lesemiljø på dagtid der mange velger å sitte å studere. Utover ettermiddagen overtar andre aktiviteter som brettspill, fyring i peisen og andre aktiviteter. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/jan_vi.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/jan_vi.jpg" linkURL="" linkTarget="" >
+	<caption>Jan IV er Brukets øverste beskytter. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/balla.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/balla.jpg" linkURL="" linkTarget="" >
+	<caption>Balustraden på hovedbygget er et yppelig sted for kollokviegrupper, brettspill eller vors med gode venner. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+
+<image imageURL="../../graphics/images/slideshow/images/bukkekollegiet.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/bukkekollegiet.jpg" linkURL="" linkTarget="" >
+	<caption>Bukkekollegiet er et av brukets elste tradisjoner. Disse har ansvaret for å utnevne beboere som har vist en spesiel ånd for bruket til hel- eller halv-bukk slik at de får skjold på veggen i matsalen. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+
+<image imageURL="../../graphics/images/slideshow/images/dagligeledere.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/dagligeledere.jpg" linkURL="" linkTarget="" >
+	<caption>På veggen opp til 2.etg henger bilder av alle Brukets tidligere daglige ledere. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/valhall.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/valhall.jpg" linkURL="" linkTarget="" >
+	<caption>Døren inn til festrommet Valhall. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/lysekrone.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/lysekrone.jpg" linkURL="" linkTarget="" >
+	<caption>Bygget er fredet, og derfor er også stilen befart på inventar. Lysekroner slik som denne finnes det mange av rundt om kring. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+<image imageURL="../../graphics/images/slideshow/images/billa.jpg" thumbURL="../../graphics/images/slideshow/thumbnails/billa.jpg" linkURL="" linkTarget="" >
+	<caption>Billa-Bar, Brukets egen bar. Bar med alle rettigheter, holder åpent hver onsdag, og ca en Lørdag i måneden. Her holdes både større og mindre fester, og festforeningen har ansvaret for driften. Foto: Cecilie Sæle Merkesvik</caption>
+</image>
+
+
+</simpleviewergallery>
