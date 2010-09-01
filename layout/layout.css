@@ -157,8 +157,10 @@ h1 {
 
 }
 h2 {
-	margin: 0;
+	margin: 15px 0 0 0;
 }
+
+.clear { clear: both }
 
 #menu_sub h1, h2, legend {
 	font-family: arial;
@@ -203,7 +205,7 @@ ul li {
 	float: right;
 	margin-right: 40px;
 }
-.ansatteFrame2 h2 {
+/*.ansatteFrame2*/ h2 {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EEE;

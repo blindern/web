@@ -9,7 +9,7 @@ Om Blindern Studenterhjem
 Studentbolig
 	studentboliger	Studentboliger
 	velferdstilbud	Felles velferdstilbud
-	omvisning	Digital Omvisning
+	omvisning	Digital omvisning
 	leiepriser	Leiepriser
 	beliggenhet	Beliggenhet
 
