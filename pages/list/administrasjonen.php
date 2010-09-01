@@ -15,7 +15,7 @@
                             	Kontortid: 09.00 - 15.00<br>
                             	Telefon: (+47) 23 33 15 00<br>
                             	Fax: (+47) 23 33 15 56 <br>
-                            	E-post: post@blindern-studenterhjem.no<br>
+                            	E-post: <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a><br>
                             	<br>
                             	Organisasjonsnummer:<br>
                             	955 073 053<br>
@@ -37,7 +37,7 @@
 								Blindern Studenterhjem<br>
                             	Blindernveien 41<br>
                             	0313 OSLO<br>
-                            	<a href="site.php?category=1&id=4">
+                            	<a href="beliggenhet">
 									Se vegbeskrivelse her.
 								</a>
                             </p>

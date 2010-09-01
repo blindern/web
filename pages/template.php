@@ -11,7 +11,7 @@ echo '
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="index.php"><img src="graphics/layout/new_header.jpg" width="800" height="100" border=0></a>
+			<a href="'.bs_side::$pagedata->doc_path.'/"><img src="graphics/layout/new_header.jpg" width="800" height="100" border=0></a>
 		</div>
 		'.bs_side::$menu_main.'
 		<div id="contentContainer">

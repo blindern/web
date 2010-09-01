@@ -24,6 +24,6 @@ Foreninger
 	arrangementplan	Arrangementplan
 
 Administrasion
-	administrasjon	Kontakt administrasjonen
+	administrasjonen	Kontakt administrasjonen
 	ansatte	Ansatte
 	om_nettsidene	Om nettsidene

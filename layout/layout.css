@@ -66,7 +66,7 @@ html, body {
 	margin:0;
 	width:590px;
 	background-color:white;
-	float:left;
+	float:right;
 
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
@@ -80,7 +80,7 @@ html, body {
 #menu_sub_wrap {
 	background-color:#cecece;
 	width:150px;
-	float:right;
+	float: left;
 
 	padding: 4px;
 

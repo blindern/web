@@ -43,6 +43,6 @@
 					ulike studenterforeninger. Dersom du har sp&oslash;rsm&aring;l
 					som ikke blir besvart p&aring; disse nettsidene, ta
 					gjerne kontakt med adminstrasjonen. E-postadresse
-					og telefonnummer <a href="site.php?category=4&id=0">finner
+					og telefonnummer <a href="administrasjonen">finner
 					du her</a>.
 				</p>

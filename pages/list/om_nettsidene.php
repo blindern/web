@@ -18,5 +18,5 @@
                         </p>
 						<p>
                             E-post adressen til hjemmesideoppmann er:
-							hjemmesideoppmann@blindern-studenterhjem.no
+							<a href="mailto:hjemmesideoppmann@blindern-studenterhjem.no">hjemmesideoppmann@blindern-studenterhjem.no</a>
 						</p>

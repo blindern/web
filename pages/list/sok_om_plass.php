@@ -21,7 +21,7 @@
                             	for &aring; sende en elektronisk s&oslash;knad. Dersom
                             	du ikke har f&aring;tt svar innen 7 arbeidsdager s&aring;
                             	ber vi deg om &aring; sende en ny s&oslash;knad p&aring;
-                            	e-post til post@blindern-studenterhjem.no
+                            	e-post til <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.
                             </p>
 <?php
 

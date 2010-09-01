@@ -1,5 +1,6 @@
-<?
-	$this->head .= <<<EOD
+<?php
+
+bs_side::$head .= <<<EOD
 \n
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script type="text/javascript">
@@ -10,7 +11,7 @@
 		params.bgcolor = "222222";
 		params.allowfullscreen = true;
 		params.allowscriptaccess = "always";
-		swfobject.embedSWF("simpleviewer/simpleviewer.swf", "flashContent", "500", "600", "9.0.124", false, flashvars, params);
+		swfobject.embedSWF("simpleviewer/simpleviewer.swf", "flashContent", "100%", "650", "9.0.124", false, flashvars, params);
 		</script>
 \n
 EOD;
@@ -27,10 +28,10 @@ EOD;
                             </object>
                             -->
                             <h1>Digital Omvisning</h1>
-                            <h2>Blider fra Blinderen Studenterhjem</h2>
+                            <h2 style="margin-bottom: 10px">Blider fra Blinderen Studenterhjem</h2>
 							<div id="flashContent">SimpleViewer requires JavaScript and the Flash Player.
 							<a href="http://www.adobe.com/go/getflashplayer/">Get Flash.</a></div><br>
-                            <h2>Media om Blindern Studenterhjem: </h2>
+                            <h2 style="margin-top: 20px">Media om Blindern Studenterhjem: </h2>
                             <p>
                             	Blindern Studenterhjem ble k&aring;ret av TV-Norge
                             	til beste studentbolig i Oslo.<br>

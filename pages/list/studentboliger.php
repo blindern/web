@@ -14,7 +14,7 @@
 							ansiennitet, og desto lengre tid du bor p&aring; Studenterhjemmet,
 							jo st&oslash;rre og nyere rom vil du kunne f&aring;.
 							Du kan bli n&aelig;rmere kjent med rommene gjennom
-							<a href="site.php?category=1&id=2">
+							<a href="omvisning">
 								den digitale omvisningen.
 							</a>
 						</p>
