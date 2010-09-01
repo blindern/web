@@ -25,7 +25,7 @@
                             </p>
 <?php
 
-$scheme = file_get_contents($this->path."html/skjema.php");
+$scheme = file_get_contents(dirname(__FILE__)."/../skjema.php");
 $navn="";
 $kjonn="";
 $foednr="";
@@ -145,7 +145,7 @@ if(!isset($_POST['submit'])){
 		echo "<h2 style='background-color:red'>S&oslash;knaden ble ikke sendt!</h2>";
 		foreach($errorMsg as $melding)
 			echo "<p>".$melding."</p>";
-		$scheme = file_get_contents($this->path."html/skjema.php");
+		$scheme = file_get_contents(dirname(__FILE__)."/../skjema.php");
 
 		$antMndSel[$antMnd-1] = "selected";
 		printf($scheme, $navn, $kjonnSel[0], $kjonnSel[1], $foednr, $mob, $tlf, $epost,

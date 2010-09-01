@@ -6,7 +6,6 @@
 html, body {
 	background-image: url(../graphics/layout/Athene-backgr.gif);
 	background-repeat: repeat;
-	height:100%;
 	margin: 0;
 	padding: 0;
 }
@@ -18,20 +17,33 @@ html, body {
 #container {
 	margin-left: auto;
 	margin-right: auto;
-	height: 100%;
-	overflow: visible;
 }
 
 #header {
 	height:100px;
 }
 
-#menu-top {
+#menu_main {
 	background-color: #333;
 	text-align:center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-#menu-top a, #menu-top a:visited, #menu-top {
+#menu_main li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+}
+#menu_main li:before {
+	content: " - ";
+}
+#menu_main li:first-child:before {
+	content: "";
+}
+
+#menu_main a, #menu_main a:visited, #menu_main {
 	color:white;
 	font-family:Times new roman;
 	font-size: 17px;
@@ -40,86 +52,94 @@ html, body {
 }
 
 #contentContainer {
-	width: 790px;
+	width: 780px;
 	background-color: #ECECEC;
-	position:absolute;
-	top:120px;
-	bottom:20px;
-	padding-top:20px;
+	padding-top:10px;
 	padding-left:10px;
-	overflow:scroll;
-	overflow-x:hidden;
-
+	padding-right: 10px;
 }
+
+#content_clear { clear: both }
 
 #content {
 	padding:10px;
 	margin:0;
-	width:580px;
+	width:590px;
 	background-color:white;
 	float:left;
+
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 #content img {
 	border: 1px solid #000;
 	margin: 5px;
 }
-.rightMenu {
+
+#menu_sub_wrap {
 	background-color:#cecece;
 	width:150px;
 	float:right;
-	margin-top:-10px;
-	border:4px solid #cecece;
+
+	padding: 4px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#menu_sub {
+	margin: 0;
+	padding: 0;
+}
+#menu_sub li {
+	margin: 0;
+	padding: 0 3px;
+	list-style: none;
 }
 
 
-.rightMenu a, .rightMenu a:link, .rightMenu a:visited {
+#active_page {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+
+#menu_sub a {
 	display:block;
-	width:150px;
+	
+	width: 100%;
 	height: 20px;
 	border:0;
-	margin-top:2px;
-	text-align:left;
+	margin: 2px -3px 0 -3px;
+	padding: 0 3px;
+	
 	text-decoration:none;
 	line-height:20px;
+	
 	color: black;
-	font-size: 10px;
+	
+	font-size: 11px;
 	font-family:Arial;
 }
+#menu_sub a:before {
+	content: "» ";
+}
 
-.rightMenu a.highlight, .rightMenu a:hover{
+#menu_sub .active a, #menu_sub a:hover{
 	background-color:#ececec;
 }
 
 #footer {
-	position:absolute;
-	bottom:0px;
-	height:20px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	border: 1px solid black;
 	background-color:#cecece;
 	text-align:center;
-}
-#footer p { margin: 0 }
 
-.soknadReklame {
-	background-color: #fdb0af;
-	border: 1px solid black;
-	width: 200px;
-	float:right;
-	clear: both;
-	margin-bottom: 5px;
-	padding: 3px;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
-.soknadReklame h2 {
-	text-decoration:underline;
-}
-.soknadReklame a, .soknadReklame a:hover, .soknadReklame a:visited, .soknadReklame a:link {
-	font-size: 13px;
-	font-family: arial;
-	color: black;
-	text-decoration:none;
-}
+#footer p { margin: 3px 0 }
 
 body {
 	font-size:13px;
@@ -140,7 +160,7 @@ h2 {
 	margin: 0;
 }
 
-.rightMenu h1, h2, legend {
+#menu_sub h1, h2, legend {
 	font-family: arial;
 	font-size:13px;
 }
