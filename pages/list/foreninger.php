@@ -1,5 +1,5 @@
 							<h1>Foreninger</h1>
-							<img src="graphics/images/IFBS1.jpg" width="200" height="150" border="1" align="right">
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/IFBS1.jpg" width="200" height="150" border="1" align="right">
 							<h2>Foreningsstyret</h2>
 							<p>
 								Det eksisterer mange klubber, foreninger og lag p&aring;
@@ -14,7 +14,7 @@
 							</p>
 
 
-							<p class="clear"><img src="graphics/images/blindernrevy.jpg" width="200" height="150" border="1" align="right"></p>
+							<p class="clear"><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernrevy.jpg" width="200" height="150" border="1" align="right"></p>
 							<h2>UKEstyret</h2>
 							<p>
 								Den aller f&oslash;rste revyen p&aring; Blindern Studenterhjem
@@ -59,7 +59,7 @@
 							</p>
 							<p>Se mer informasjon om Småbruket og leie på <a href="hyttestyret">hyttestyret</a> sine sider.</p>
 
-							<p><img src="graphics/images/haarnocblaese.jpg" width="200" height="206" border="1" style="float: right" /></p>
+							<p><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/haarnocblaese.jpg" width="200" height="206" border="1" style="float: right" /></p>
 							<h2>Blindern Haarn oc Blaese Orchester</h2>
 							<p>
 								Blindern Haarn oc Blaese Orchester</strong><br>
@@ -106,7 +106,7 @@
 								</a></li>
 							</ul>
 
-							<img src="graphics/images/fotballbane.jpg" width="218" height="145" border="1" align="right">
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" width="218" height="145" border="1" align="right">
 							<h2>Idrettsforeningen ved Blindern Studenterhjem (IFBS)</h2>
 							<p>
 								Dette er BS' idrettsforening. Deres oppgaver

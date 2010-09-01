@@ -6,12 +6,12 @@ echo '
 <head>
 <title>'.bs_side::$title.'</title>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="layout/layout.css" />'.bs_side::$head.'
+<link rel="stylesheet" type="text/css" href="'.bs_side::$pagedata->doc_path.'/layout/layout.css" />'.bs_side::$head.'
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="'.bs_side::$pagedata->doc_path.'/"><img src="graphics/layout/new_header.jpg" width="800" height="100" border=0></a>
+			<a href="'.bs_side::$pagedata->doc_path.'/"><img src="'.bs_side::$pagedata->doc_path.'/graphics/layout/new_header.jpg" width="800" height="100" border=0></a>
 		</div>
 		'.bs_side::$menu_main.'
 		<div id="contentContainer">

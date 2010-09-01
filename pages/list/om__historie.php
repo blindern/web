@@ -1,5 +1,5 @@
 						<h1>Historie</h1>
-						<img src="graphics/images/godthjem.jpg" align="right" width="177px" height="208px" alt="Historie logo">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/godthjem.jpg" align="right" width="177px" height="208px" alt="Historie logo">
                         <h2>Historien fra 1925 til 1950..</h2>
 						<p>
                             Blindern Studenterhjem &aring;pnet i 1925, og de vakre

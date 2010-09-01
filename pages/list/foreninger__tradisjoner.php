@@ -1,5 +1,5 @@
 							<h1>Tradisjoner</h1>
-                            <img src="graphics/images/cumshotskonsert.jpg" width="200" height="150" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/cumshotskonsert.jpg" width="200" height="150" border="1" align="right">
 							<h2>
 								Hva vil du oppleve som nyinnflyttet p&aring; Blindern
                             	Studenterhjem?
@@ -33,7 +33,7 @@
 	                            s&aring; sitter ordene garantert litt l&oslash;sere
 	                            i munnen n&aring;.
 	                        </p>
-                            <img src="graphics/images/hostball_1.jpg" width="250" height="167" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_1.jpg" width="250" height="167" border="1" align="right">
 							<h2>Rebusl&oslash;p</h2>
 							<p>
 	                            Etter hytteturen er det rebusl&oslash;p. De nyinnflyttede
@@ -53,7 +53,7 @@
 	                            f&oslash;r, s&aring; vil du oppleve ditt f&oslash;rste
 	                            p&aring; dette arrangementet.
 	                        </p>
-                            <img src="graphics/images/hostball_2.jpg" width="150" height="225" border="1" align="left">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_2.jpg" width="150" height="225" border="1" align="left">
 							<h2>H&oslash;stball</h2>
 							<p>
 	                            Et av de flotteste arrangementene p&aring; BS er ballet.

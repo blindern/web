@@ -1,5 +1,5 @@
 						<h1>Brukets venner</h1>
-                        <img src="graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
+                        <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
 						<p>
 							<em>Et fredet bruk er ogs&aring; et krevende bruk. Vi
 							er kommet s&aring; langt i Blindern Studenterhjems

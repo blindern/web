@@ -1,5 +1,5 @@
 							<h1>Felles velferdstilbud</h1>
-                            <img src="graphics/images/hyttenibaerumsmarka.jpg" width="200" height="133" border="1" align="left">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hyttenibaerumsmarka.jpg" width="200" height="133" border="1" align="left">
                             <h2>Velferdstilbud</h2>
                             <p>
 								Det finnes en rekke felles velferdstilbud
@@ -28,7 +28,7 @@
                             	som beboere kan benytte fritt uten &aring; betale
                             	ekstra
                             </p>
-                            <img src="graphics/images/lesesalen_2.jpg" width="200" height="133" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/lesesalen_2.jpg" width="200" height="133" border="1" align="right">
 							<h2>Bibliotek og lesesal</h2>
 							<p>
                             	P&aring; Studenterhjemmets bibliotek er det femti
@@ -55,7 +55,7 @@
 								TV-stuen p&aring; Studenterhjemmet har ViaSat- og
                             	Canal Digital-abonnement.
                             </p>
-                            <img src="graphics/images/peisestuen.jpg" width="200" height="133" border="1" align="left">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/peisestuen.jpg" width="200" height="133" border="1" align="left">
 							<h2>Flere musikkrom</h2>
 							<p>
 	                            Det finnes flere musikkrom p&aring; Blindern Studenterhjem,

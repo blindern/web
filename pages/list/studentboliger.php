@@ -1,5 +1,5 @@
 						<h1>Studentboliger</h1>
-						<img src="graphics/images/matsal.jpg" width="200" height="133" border="1" align="left">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" width="200" height="133" border="1" align="left">
 						<h2>Hva slags bolig tilbyr BS?</h2>
 						<p>
 							Det er plass til over 220 studenter p&aring;
@@ -43,7 +43,7 @@
 							vask av kl&aelig;r, senget&oslash;y og lignende.</li>
 						</ul>
 						
-						<p><img src="graphics/images/middagsmaaltid.jpg" width="200" height="133" border="1" style="float: right" /></p>
+						<p><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/middagsmaaltid.jpg" width="200" height="133" border="1" style="float: right" /></p>
 						
 						<h2>Tre daglige m&aring;ltider pluss matpakke</h2>
 						<p>

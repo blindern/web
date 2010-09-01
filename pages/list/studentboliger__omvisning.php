@@ -1,7 +1,6 @@
 <?php
 
-bs_side::$head .= <<<EOD
-\n
+bs_side::$head .= '
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script type="text/javascript">
 		var flashvars = {};
@@ -11,10 +10,8 @@ bs_side::$head .= <<<EOD
 		params.bgcolor = "222222";
 		params.allowfullscreen = true;
 		params.allowscriptaccess = "always";
-		swfobject.embedSWF("simpleviewer/simpleviewer.swf", "flashContent", "100%", "650", "9.0.124", false, flashvars, params);
-		</script>
-\n
-EOD;
+		swfobject.embedSWF("'.bs_side::$pagedata->doc_path.'/simpleviewer/simpleviewer.swf", "flashContent", "100%", "650", "9.0.124", false, flashvars, params);
+		</script>';
 
 ?>
                             <!--

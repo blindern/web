@@ -1,5 +1,5 @@
 							<h1>Leiepriser H&oslash;stsemesteret 2010</h1>
-                            <img src="graphics/images/bs_inngang_liten.jpg" width="200" height="150" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" width="200" height="150" border="1" align="right">
 							<h2>Om Leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,

@@ -66,7 +66,7 @@ class bs_side
 	protected static function check_request()
 	{
 		$request = str_replace("/", "__", self::$pagedata->path);
-		if (preg_match("/[^a-zA-Z0-9_\\-]/", $request)) page_not_found();
+		if (preg_match("/[^a-zA-Z0-9_\\-]/", $request)) self::page_not_found();
 		
 		if ($request === "") $request = "index";
 		
@@ -74,13 +74,13 @@ class bs_side
 		$file = "pages/list/$request.php";
 		if (file_exists($file))
 		{
-			self::$menu_active = $request;
+			self::$menu_active = self::$pagedata->path ? self::$pagedata->path : "index";
 			require $file;
 		}
 		
 		else
 		{
-			page_not_found();
+			self::page_not_found();
 		}
 		
 		self::load_page();
@@ -152,7 +152,7 @@ class bs_side
 			if ($key == "index") $key = "";
 			
 			self::$menu_main .= '
-			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.urlencode($key).'">'.htmlspecialchars($item).'</a></li>';
+			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';
 		}
 		
 		self::$menu_main .= '
@@ -176,43 +176,41 @@ class bs_side
 				if ($key == "index") $key = "";
 				
 				self::$menu_sub .= '
-			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.urlencode($key).'">'.htmlspecialchars($item).'</a></li>';
+			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';
 			}
 			
 			self::$menu_sub .= '
 		</ul>';
 		}
 	}
-}
-
-/**
- * Ugyldig side (404)
- */
-function page_not_found($more_info = NULL)
-{
-	$more_info = empty($more_info) ? '' : $more_info;
 	
-	// siden finnes ikke (404)
-	header("HTTP/1.1 404 Not Found");
-	
-	// har vi hentet inn page?
-	if (isset(ess::$b->page))
+	/**
+	 * Ugyldig side (404)
+	 */
+	public static function page_not_found($more_info = NULL)
 	{
-		ess::$b->page->add_title("404 Not Found");
+		$more_info = empty($more_info) ? '' : $more_info;
 		
-		echo '
+		// siden finnes ikke (404)
+		header("HTTP/1.1 404 Not Found");
+		
+		// har vi hentet inn page?
+		//if (isset(ess::$b->page))
+		{
+			echo '
 <h1>404 Not found</h1>
 <p>Siden du ba om finnes ikke.</p>
 <dl class="dl_50px">
 	<dt>Adresse</dt>
 	<dd>'.htmlspecialchars($_SERVER['REQUEST_URI']).'</dd>
 </dl>'.$more_info;
-		
-		ess::$b->page->load();
-	}
-	
-	// sett opp html etc
-	echo '<!DOCTYPE html>
+			
+			self::load_page();
+			die;
+		}
+			
+		// sett opp html etc
+		echo '<!DOCTYPE html>
 <html lang="no">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -237,8 +235,9 @@ h1 { font-size: 23px; }
 <p class="hsws"><a href="http://www.henrist.net">HenriSt Websystem</a></p>
 </body>
 </html>';
-	
-	die;
+		
+		die;
+	}
 }
 
 bs_side::main();

@@ -1,5 +1,5 @@
 				<h1>Velkommen til Blindern Studenterhjem</h1>
-				<img src="graphics/images/bs_hovedbygg1_liten.jpg" width="200" height="150" border="1" align="right">
+				<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_hovedbygg1_liten.jpg" width="200" height="150" border="1" align="right">
 				<h2> Like ved UiO</h2>
 				<p>
 					I et praktfullt beliggende hageanlegg p&aring; Blindern,

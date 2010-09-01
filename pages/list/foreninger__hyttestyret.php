@@ -1,6 +1,6 @@
 							<h1>Hyttestyret</h1>
 							
-							<img src="graphics/images/hytte_dugnad.jpg" width="200" height="133" border="1" align="right" />
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hytte_dugnad.jpg" width="200" height="133" border="1" align="right" />
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
 								Sm&aring;bruket er en t&oslash;mmerhytte som ligger

@@ -1,4 +1,4 @@
-                        <img src="graphics/images/trapp_paerealle.jpg" width="302" height="201" border="1" align="right">
+                        <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/trapp_paerealle.jpg" width="302" height="201" border="1" align="right">
 						<h1>Om nettsidene</h1>
                         <p>
 							<strong>Torbj&oslash;rn H. Sandvik</strong> har
