@@ -102,24 +102,26 @@ html, body {
 }
 #footer p { margin: 0 }
 
-.soknadReklame {
+.ledigeplasser {
 	background-color: #fdb0af;
-	border: 1px solid black;
-	width: 200px;
+	border: 2px solid #AAA;
+	width: 148px;
+	margin: 10px 0;
 	float:right;
-	clear: both;
-	margin-bottom: 5px;
+	clear: right;
 	padding: 3px;
 }
-.soknadReklame h2 {
-	text-decoration:underline;
+.ledigeplasser h2 {
+	text-decoration: underline;
+	margin-bottom: 2px;
 }
-.soknadReklame a, .soknadReklame a:hover, .soknadReklame a:visited, .soknadReklame a:link {
+.ledigeplasser p { margin: 10px 0 0 }
+/*.ledigeplasser a, .ledigeplasser a:hover, .ledigeplasser a:visited, .ledigeplasser a:link {
 	font-size: 13px;
 	font-family: arial;
 	color: black;
 	text-decoration:none;
-}
+}*/
 
 body {
 	font-size:13px;

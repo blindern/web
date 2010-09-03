@@ -26,7 +26,7 @@ class layout{
 		$this->head.= "<head>";
 		$this->head.= '<title>Blindern Studenterhjem - Et godt hjem for studenter</title>
 						<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-						<link rel="stylesheet" type="text/css" href="layout/layout.css" />';
+						<link rel="stylesheet" type="text/css" href="layout/layout.css?upd='.filemtime(dirname(__FILE__)."/../layout/layout.css").'" />';
 	}
 
 	/**
@@ -58,7 +58,14 @@ class layout{
 			$i++;
 		}
 		$output .= "\t\t\t</div>\n";
-		$output .= "\t\t</div>\n";
+		#$output .= "\t\t</div>";
+		$output .= '
+		<div class="ledigeplasser">
+			<h2>Ledige plasser i høst</h2>
+			<p>Vi har fremdeles ledige plasser i høst.</p>
+			<p>Send inn <a href="site.php?category=2&id=1">elektronisk søknad</a> som blir behandlet fortløpende!</p>
+		</div>
+		</div>';
 		$this->page .= $output;
 	}
 
