@@ -210,48 +210,15 @@ class bs_side
 		// siden finnes ikke (404)
 		header("HTTP/1.1 404 Not Found");
 		
-		// har vi hentet inn page?
-		//if (isset(ess::$b->page))
-		{
-			echo '
+		echo '
 <h1>404 Not found</h1>
 <p>Siden du ba om finnes ikke.</p>
 <dl class="dl_50px">
 	<dt>Adresse</dt>
 	<dd>'.htmlspecialchars($_SERVER['REQUEST_URI']).'</dd>
 </dl>'.$more_info;
-			
-			self::load_page();
-			die;
-		}
-			
-		// sett opp html etc
-		echo '<!DOCTYPE html>
-<html lang="no">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="author" content="Henrik Steen; http://www.henrist.net" />
-<title>404 Not Found</title>
-<style>
-<!--
-body { font-family: tahoma; font-size: 14px; }
-h1 { font-size: 23px; }
-.hsws { color: #CCCCCC; font-size: 12px; }
-.subtitle { font-size: 16px; font-weight: bold; }
--->
-</style>
-</head>
-<body>
-<h1>404 Not Found</h1>
-<p>Siden du ba om finnes ikke.</p>
-<dl>
-	<dt>Adresse</dt>
-	<dd>'.htmlspecialchars($_SERVER['REQUEST_URI']).'</dd>
-</dl>'.$more_info.'
-<p class="hsws"><a href="http://www.henrist.net">HenriSt Websystem</a></p>
-</body>
-</html>';
 		
+		self::load_page();
 		die;
 	}
 }
