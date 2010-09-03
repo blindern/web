@@ -1,5 +1,5 @@
 						<h1>Studentboliger</h1>
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" width="200" height="133" border="1" align="left">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" width="200" height="133" border="1" align="right">
 						<h2>Hva slags bolig tilbyr BS?</h2>
 						<p>
 							Det er plass til over 220 studenter p&aring;
@@ -8,15 +8,14 @@
 							de aller fleste f&oslash;rst inn p&aring; dobbeltrom
 							eller kombinasjonsrom. Et kombinasjonsrom er to rom
 							hvor man m&aring; g&aring; gjennom det ene rommet for
-							&aring; komme til det andre. Etter et kort opphold p&aring;
+							&aring; komme til det andre.</p>
+						<p>Etter et kort opphold p&aring;
 							dobbeltrom eller kombinasjonsrom vil man f&aring; et
 							enkeltrom tildelt. Romfordelingen er basert p&aring;
 							ansiennitet, og desto lengre tid du bor p&aring; Studenterhjemmet,
 							jo st&oslash;rre og nyere rom vil du kunne f&aring;.
 							Du kan bli n&aelig;rmere kjent med rommene gjennom
-							<a href="omvisning">
-								den digitale omvisningen.
-							</a>
+							<a href="studentboliger/omvisning">den digitale omvisningen</a>.
 						</p>
 						<h2>Hva er inkludert i husleien?</h2>
 						

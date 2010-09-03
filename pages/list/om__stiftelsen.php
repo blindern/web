@@ -15,12 +15,13 @@
                             <p>
 								Blindern Studenterkollegium best&aring;r av seks medlemmer
                             	og velges av beboerne. Funksjonstiden er to semestre,
-                            	og normalt velges tre nye medlemmer hvert semester.
-                            	Kollegiet er leddet mellom studentene og Studenterhjemmets
+                            	og normalt velges tre nye medlemmer hvert semester.</p>
+                            <p>Kollegiet er leddet mellom studentene og Studenterhjemmets
                             	administrasjon. Fordi urneavstemninger og allmannam&oslash;ter
                             	er bindende for Kollegiet, har beboerne anledning
                             	til &aring; p&aring;virke deres avgj&oslash;relser
-                            	direkte. P&aring; oppslagstavlen finnes oppdatert
+                            	direkte.</p>
+                            <p>P&aring; oppslagstavlen finnes oppdatert
                             	informasjon om Kollegiets virksomhet, og det er Kollegiet
                             	beboerne oppfordres til &aring; kontakte vedr&oslash;rende
                             	sp&oslash;rsm&aring;l om interne forhold.

@@ -37,7 +37,7 @@
 								Blindern Studenterhjem<br>
                             	Blindernveien 41<br>
                             	0313 OSLO<br>
-                            	<a href="beliggenhet">
+                            	<a href="studentboliger/beliggenhet">
 									Se vegbeskrivelse her.
 								</a>
                             </p>

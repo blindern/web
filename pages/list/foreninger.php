@@ -57,7 +57,7 @@
 								Hytta ligger i fint turterreng og er en flott laftet
 								t&oslash;mmerbygning med stor peisestue og badstue.
 							</p>
-							<p>Se mer informasjon om Småbruket og leie på <a href="hyttestyret">hyttestyret</a> sine sider.</p>
+							<p>Se mer informasjon om Småbruket og leie på <a href="foreninger/hyttestyret">hyttestyret</a> sine sider.</p>
 
 							<p><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/haarnocblaese.jpg" width="200" height="206" border="1" style="float: right" /></p>
 							<h2>Blindern Haarn oc Blaese Orchester</h2>

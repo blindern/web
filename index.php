@@ -2,6 +2,8 @@
 
 ob_start();
 
+require "base/cache.php";
+
 class pagedata
 {
 	public $path;
@@ -63,6 +65,19 @@ class bs_side
 		self::check_request();
 	}
 	
+	public static $redirs = array(
+		"smaabruket" => "foreninger/hyttestyret"
+	);
+	
+	protected static function check_redirect($path)
+	{
+		if (isset(self::$redirs[$path]))
+		{
+			redir(self::$redirs[$path]);
+			die;
+		}
+	}
+	
 	protected static function check_request()
 	{
 		$request = str_replace("/", "__", self::$pagedata->path);
@@ -80,6 +95,7 @@ class bs_side
 		
 		else
 		{
+			self::check_redirect($request);
 			self::page_not_found();
 		}
 		
@@ -238,6 +254,19 @@ h1 { font-size: 23px; }
 		
 		die;
 	}
+}
+
+function redir($page = "")
+{
+	$addr = isset($_SERVER['HTTP_X_FORWARDED_HOST']) ? $_SERVER['HTTP_X_FORWARDED_HOST'] : $_SERVER['SERVER_ADDR'];
+	$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
+	$port = $_SERVER['SERVER_PORT'] != 80 ? ($_SERVER['SERVER_PORT'] == 443 && $https ? "" : ":".$_SERVER['SERVER_PORT']) : "";
+	$location = "http".$https."://".$addr.$port.dirname($_SERVER['SCRIPT_NAME']) . "/$page";
+	
+	// send til siden
+	header("HTTP/1.1 302 Found");
+	header("Location: $location");
+	die('<HTML><HEAD><TITLE>302 Found</TITLE></HEAD><BODY><H1>Found</H1>You have been redirected <A HREF="'.$location.'">here</A>.<P></BODY></HTML>');
 }
 
 bs_side::main();

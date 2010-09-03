@@ -271,19 +271,21 @@ fieldset legend {
 
 
 /*Tabell for leiepriser*/
-.leiepriser{
+.leiepriser {
 	border: 1px solid black;
 	border-collapse:collapse;
 	width: 400px;
+	margin-bottom: 1em;
 }
 
-.leiepriser td{
+.leiepriser th {
+	text-align: left;
+	background-color: #EEEEEE;
+}
+
+.leiepriser td, .leiepriser th {
 	border: 1px solid black;
 	padding: 2px;
-}
-.leiepriser td p{
-	padding:0;
-	margin:0;
 }
 .roed {
 	background-color:red;
@@ -309,4 +311,53 @@ ul.arrangementer {
 }
 ul.arrangementer li {
 	margin-left: 2em;
+}
+
+/* Hyttestyret */
+.hyttestyret_kalender {
+	width: 100%;
+	border: 2px solid #DDD;
+	border-collapse: collapse;
+}
+.hyttestyret_kalender th {
+	text-align: center;
+	background-color: #EEEEEE;
+}
+.hyttestyret_kalender td, .hyttestyret_kalender th {
+	border: 1px solid #DDD;
+	padding: 5px;
+}
+.hyttestyret_kalender td.uke {
+	background-color: #FAFAFA;
+	text-align: center;
+	font-size: 11px;
+}
+.hyttestyret_kalender td.ledig {
+	background-color: #DDFFAA;
+}
+.hyttestyret_kalender td.reservert {
+	background-color: #FFFFAA;
+}
+.hyttestyret_kalender td.reservert:after {
+	content: " (reservert)";
+}
+.hyttestyret_kalender td.opptatt {
+	background-color: #FFAAAA;
+}
+.hyttestyret_kalender td {
+	text-align: right;
+	font-size: 10px;
+}
+.hyttestyret_kalender td.idag {
+	border-bottom: 4px solid #AAA;
+}
+.hyttestyret_kalender td.idag:after {
+	content: " (i dag)";
+	font-weight: bold;
+}
+.hyttestyret_kalender td.idag span {
+	font-weight: bold;
+}
+.hyttestyret_kalender td .month {
+	font-weight: bold;
 }

@@ -4,7 +4,7 @@ bs_side::$head .= '
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script type="text/javascript">
 		var flashvars = {};
-		flashvars.baseURL="simpleviewer/";
+		flashvars.baseURL="'.bs_side::$pagedata->doc_path.'/simpleviewer/";
 		flashvars.galleryURL = "gallery.xml";
 		var params = {};
 		params.bgcolor = "222222";

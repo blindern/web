@@ -14,7 +14,7 @@
 	                            som finnes p&aring; BS. Dersom du &oslash;nsker en
 	                            mer inng&aring;ende innf&oslash;ring i de ulike arrangementene
 	                            s&aring; kan du
-								<a href="files/bsh_informasjonshefte.pdf" target="_blank">
+								<a href="<?php echo bs_side::$pagedata->doc_path; ?>/files/bsh_informasjonshefte.pdf" target="_blank">
 									laste ned heftet &quot;Blindern Studenterhjem for
 									pygm&eacute;er&quot; her.
 								</a>
@@ -87,7 +87,7 @@
 								Dette er bare noen av mange arrangementer
                             	som foreg&aring;r p&aring; BS. Dersom du &oslash;nsker
                             	mer informasjon kan du
-								<a href="../files/bsh_informasjonshefte.pdf" target="_blank">
+								<a href="<?php echo bs_side::$pagedata->doc_path; ?>/files/bsh_informasjonshefte.pdf" target="_blank">
 									laste ned dette heftet
 								</a>. Mer kommer vi ikke til &aring;
                             	r&oslash;pe her fordi noen overraskelser m&aring;

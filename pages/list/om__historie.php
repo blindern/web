@@ -7,8 +7,8 @@
                             og tegnet av arkitekt Nicolai Beer. Det var fru Alette
                             Schreiner som tok initiativ til bygningen av Studenterhjemmet,
                             etter &aring; ha blitt rystet over den sosiale n&oslash;den
-                            og underern&aelig;ringen blant hovedstadens studenter.
-                            I begynnelsen var allikevel Studenterhjemmet hovedsaklig
+                            og underern&aelig;ringen blant hovedstadens studenter.</p>
+                        <p>I begynnelsen var allikevel Studenterhjemmet hovedsaklig
                             for de privilegerte blant studentene, som kom fra
                             velst&aring;ende hjem og studerte jus eller medisin.
                             I 1941 ble Studenterhjemmet okkupert av Gestapo, og
@@ -22,7 +22,8 @@
                             &aring;pnet for at ogs&aring; jenter kunne flytte
                             inn. N&aring; er det et m&aring;l for Studenterhjemmet
                             at kj&oslash;nnene er noenlunde likt fordelt blant
-                            beboerne. Da Studenterhjemmet ble bygget l&aring;
+                            beboerne.</p>
+                        <p>Da Studenterhjemmet ble bygget l&aring;
                             Blindern fremdeles &#8221;p&aring; landet&#8221;,
                             men senere har byen omkranset omr&aring;det og i dag
                             er Studenterhjemmet sentralt plassert b&aring;de i
