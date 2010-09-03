@@ -73,7 +73,7 @@ class bs_side
 	{
 		if (isset(self::$redirs[$path]))
 		{
-			redir(self::$redirs[$path]);
+			redir(self::$redirs[$path], true);
 			die;
 		}
 	}
