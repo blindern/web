@@ -19,7 +19,7 @@ Søk deg inn
 
 Foreninger
 	foreninger	Foreninger
-	foreninger/hyttestyret	Hyttestyret
+	smaabruket	Hyttestyret
 	foreninger/tradisjoner	Tradisjoner
 	foreninger/arrangementplan	Arrangementplan
 

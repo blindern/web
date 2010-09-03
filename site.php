@@ -1,47 +1,41 @@
 <?php
 
-function redir($page = "")
-{
-	$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
-	$port = $_SERVER['SERVER_PORT'] != 80 ? ($_SERVER['SERVER_PORT'] == 443 && $https ? "" : ":".$_SERVER['SERVER_PORT']) : "";
-	$location = "http".$https."://".$_SERVER['SERVER_ADDR'].$port.dirname($_SERVER['SCRIPT_NAME']) . "/$page";
-	
-	// send til siden
-	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: $location");
-	die('<HTML><HEAD><TITLE>301 Moved Permanently</TITLE></HEAD><BODY><H1>Found</H1>You have been redirected <A HREF="'.$location.'">here</A>.<P></BODY></HTML>');
-}
+/*
+ * Denne siden sørger for videresending fra gamle adresser til nye adresser.
+ */
+
+require "base/base.php";
 
 if (!isset($_GET['category']) || !isset($_GET['id'])) redir();
 
 $map = array(
 	array(
 		"index",
-		"historie",
-		"stiftelsen",
-		"bruketsvenner"
+		"om/historie",
+		"om/stiftelsen",
+		"om/bruketsvenner"
 	),
 	array(
 		"studentboliger",
-		"velferdstilbud",
-		"omvisning",
-		"leiepriser",
-		"beliggenhet"
+		"studentboliger/velferdstilbud",
+		"studentboliger/omvisning",
+		"studentboliger/leiepriser",
+		"studentboliger/beliggenhet"
 	),
 	array(
 		"hvem_bor_soke",
-		"sok_om_plass"
+		"hvem_bor_soke/sok_om_plass"
 	),
 	array(
 		"foreninger",
-		"hyttestyret",
-		"tradisjoner",
-		"arrangementplan"
+		"smaabruket",
+		"foreninger/tradisjoner",
+		"foreninger/arrangementplan"
 	),
 	array(
 		"administrasjonen",
-		"ansatte",
-		"om_nettsidene"
+		"administrasjonen/ansatte",
+		"administrasjonen/om_nettsidene"
 	)
 );
 
