@@ -157,7 +157,8 @@ h1 {
 	margin-bottom: 10px;
 
 }
-h2 {
+h2 { margin: 0 }
+#content h2 {
 	margin: 15px 0 0 0;
 }
 
@@ -193,6 +194,29 @@ ul li {
 	margin: 3px 0;
 }
 
+/* Administrasjon */
+.adm_kontakt dt {
+	font-weight: normal;
+	margin-right: 0.5em;
+}
+.adm_kontakt dt:after {
+	content: ":";
+}
+.adm_kontakt dd {
+	margin-left: 80px;
+}
+
+.adm_konto dt {
+	margin-top: 1em;
+	float: none;
+	font-weight: normal;
+}
+.adm_konto dt:after {
+	content: ":";
+}
+.adm_konto dd {
+	margin: 0;
+}
 
 /* Ansatte */
 .ansatteFrame, .ansatteFrame2 {
@@ -206,7 +230,7 @@ ul li {
 	float: right;
 	margin-right: 40px;
 }
-/*.ansatteFrame2*/ h2 {
+#content /*.ansatteFrame2*/ h2 {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EEE;
@@ -361,3 +385,23 @@ ul.arrangementer li {
 .hyttestyret_kalender td .month {
 	font-weight: bold;
 }
+
+/* Ledige plasser */
+.ledigeplasser {
+	background-color: #fdb0af;
+	border: 2px solid #AAA;
+	width: 148px;
+	margin: 0 0 10px 0;
+	float: left;
+	clear: left;
+	padding: 3px;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.ledigeplasser h2 {
+	text-decoration: underline;
+	margin-bottom: 2px;
+}
+.ledigeplasser p { margin: 10px 0 0 }

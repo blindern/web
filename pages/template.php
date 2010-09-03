@@ -21,6 +21,11 @@ echo '
 			<div id="menu_sub_wrap">
 				'.bs_side::$menu_sub.'
 			</div>
+			<div class="ledigeplasser">
+				<h2>Ledige plasser i høst</h2>
+				<p>Vi har fremdeles ledige plasser i høst.</p>
+				<p>Send inn <a href="site.php?category=2&id=1">elektronisk søknad</a> som blir behandlet fortløpende!</p>
+			</div>
 			<div id="content_clear"></div>
 		</div>
 		<div id="footer">
