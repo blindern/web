@@ -416,63 +416,6 @@ Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 
 		mail($data['email'], "Kvittering for søknad til Blindern Studenterhjem", $message_receipt, $headers);
 		
 		return $message;
-		/*
-}
-function sendEmail($navn, $kjonn,$foednr, $mob, $tlf, $epost, $studiested, $studium, $addr, $postnr, $hjemaddr, $hjempostnr,$onsketdato, $antMnd, $omperson, $kommentar){
-	$to = "post@blindern-studenterhjem.no";
-	$subject = "Soknad: Blindern-Studenterhjem";
-	#$headers .= "To: Blindern Studenterhjem <post@blindern-studenterhjem.no> \r\n";
-	$headers .= "To: Henrik Steen <henrist@henrist.net> \r\n";
-	$headers = "From: ".$navn." <".$epost."> \r\n";
-	$headers .= "Reply-To: ".$epost."\r\nContent-Type: text/plain; charset=UTF-8\r\n";
-	$headers .= "Cc: hjemmesideoppmann@blindern-studenterhjem.no \r\n";
-	$message = 	"Navn: ".$navn."\r\n" .
-				"Kjønn: ".$kjonn."\r\n" .
-				"Personnummer: ".$foednr."\r\n" .
-				"Mobil tlf.: ".$mob."\r\n" .
-				"Fast tlf.: ".$tlf."\r\n" .
-				"E-post: ".$epost."\r\n" .
-				"Studiested: ".$studiested."\r\n" .
-				"Studium: ".$studium."\r\n" .
-				"Nåværende Bosted \r\n" .
-				"Adresse: ".$addr."\r\n" .
-				"Postnr og sted: ".$postnr."\r\n".
-				"Opprinnelig bosted\r\n".
-				"Adresse: ".$hjemaddr."\r\n".
-				"Postnr og sted: ".$hjempostnr."\r\n".
-				"Ønsket innflyttningsdato: ".$onsketdato."\r\n".
-				"Ant. mnd søknaden gjelder: ".$antMnd."\r\n".
-				"Beskrivelse: ".$omperson."\r\n".
-				"Annet: ".$kommentar."\r\n".
-				"\r\n\r\nSøknad sendt dato: ".date("d.M Y \k\l:H:i:s");
-	mail($to, $subject, $message, $headers);
-	$messageToSender = "Følgende søknad er bekreftet mottatt:\n".$message;
-	$messageToSender .= "\n\nBehandlingstiden er maks 7 dager. Dersom vi ikke har tatt kontakt innen dette, ".
-						"kan det være at vi alikevell ikke har mottatt din søknad. Vi ber deg derfor sende en beskjed ".
-						"til post@blindern-studenterhjem.no og legge ved denne søknaden.\n\n".
-						"Skulle du ha yttligere spørsmål, kan du kontakte kontoret på telefon 23 33 15 00 i kontortiden ".
-						"mellom 09.00 - 15.00 på hverdager.";
-
-	//Dette er en funksjon som aktiveres når søknaden ikke vil bli besvart innen syv dager.
-/*
-	if(date("md")>"0509" && date("md")< "0518"){
-		$awayMessage = "\n\nOBS! OBS!\nPå grunn av ferie vil ikke søknaden din bli behandlet før tidligst\n18.Mai, og senest 26.Mai. ".
-					"Spørsmål kan i \nmellomtiden rettes til daglig leder på tlf 23 33 15 58, og vi \nvil ta kontakt når søknaden er behandlet.";
-		$message .= $awayMessage;
-		$messageToSender .= $awayMessage;
-	}
-
-	//Varsling om at dette må fjernes når tider er ute...
-	if(date("md") == "0504" || date("md")> "0519"){
-		mail("simen@buodd.no", "Fjern away-melding", "Nå må du huske å fjerne 'away' meldingen fra BS-sidene!!!", "Replay-To: none");
-	}
-*-/
-	$headers = "To: ".$navn." <".$epost."> \r\n";
-	$headers .= "From: Blindern Studenterhjem <post@blindern-studenterhjem.no> \r\n";
-	$headers .= "Replay-To: post@blindern-studenterhjem.no \r\n";
-	$headers .= "Replay-To: ".$epost."\r\nContent-Type: text/plain; charset=UTF-8\r\n";
-	mail($epost, "Bekreftelse paa soknad til Blindern Studenterhjem", $messageToSender, $headers);
-	return $message;*/
 	}
 }
 
