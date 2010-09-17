@@ -146,7 +146,7 @@ body {
 	font-size:13px;
 	font-family: arial;
 }
-p, .soknadskjema {
+p {
 	margin: 0 0 13px 0;
 }
 
@@ -158,13 +158,13 @@ h1 {
 
 }
 h2 { margin: 0 }
-#content h2 {
+#content h2, #content h3 {
 	margin: 15px 0 0 0;
 }
 
 .clear { clear: both }
 
-#menu_sub h1, h2, legend {
+#menu_sub h1, h2, h3, legend {
 	font-family: arial;
 	font-size:13px;
 }
@@ -230,7 +230,7 @@ ul li {
 	float: right;
 	margin-right: 40px;
 }
-#content /*.ansatteFrame2*/ h2 {
+#content /*.ansatteFrame2*/ h2, #content h3 {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EEE;
@@ -251,46 +251,6 @@ ul li {
 }
 .ansatteFrame2 dd {
 	margin-left: 120px;
-}
-
-
-
-/*For forms*/
-label{
-	width: 150px;
-	float: left;
-	margin-right: 2px;
-	display:inline;
-}
-.formText{
-	width: 150px;
-	display:block;
-	float:left;
-}
-.submit input {
-	margin-left: 160px;
-}
-
-fieldset {
-	border: 1px solid black;
-	width: 450px;
-	padding:5px;
-}
-
-fieldset div{
-	padding: 0;
-	display:block;
-	clear:both;
-}
-
-fieldset p{
-	display:block;
-}
-
-fieldset legend {
-	font-family: arial;
-	font-size:13px;
-	font-weight:bold;
 }
 
 
@@ -356,16 +316,16 @@ ul.arrangementer li {
 	text-align: center;
 	font-size: 11px;
 }
-.hyttestyret_kalender td.ledig {
+.hyttestyret_legend.ledig span, .hyttestyret_kalender td.ledig {
 	background-color: #DDFFAA;
 }
-.hyttestyret_kalender td.reservert {
+.hyttestyret_legend.reservert span, .hyttestyret_kalender td.reservert {
 	background-color: #FFFFAA;
 }
 .hyttestyret_kalender td.reservert:after {
 	content: " (reservert)";
 }
-.hyttestyret_kalender td.opptatt {
+.hyttestyret_legend.opptatt span, .hyttestyret_kalender td.opptatt {
 	background-color: #FFAAAA;
 }
 .hyttestyret_kalender td {
@@ -384,6 +344,17 @@ ul.arrangementer li {
 }
 .hyttestyret_kalender td .month {
 	font-weight: bold;
+}
+.hyttestyret_legend {
+	margin: 10px 15px 0 0;
+	float: right;
+}
+.hyttestyret_legend span {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
 }
 
 /* Ledige plasser */
@@ -405,3 +376,38 @@ ul.arrangementer li {
 	margin-bottom: 2px;
 }
 .ledigeplasser p { margin: 10px 0 0 }
+
+
+/* Søknadsskjema for plass på BS */
+.soknadsskjema {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.soknadsskjema legend {
+	display: none;
+}
+#content .soknadsskjema h3 {
+	border: none;
+	padding: 0;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.soknadsskjema dt {
+	font-weight: normal;
+	width: 150px;
+	float: left;
+	clear: both;
+	margin-right: 2px;
+}
+.soknadsskjema textarea {
+	width: 80%;
+}
+.soknadsskjema .soknad_submit {
+	text-align: center;
+	clear: both;
+}
+
+.soknad_feil {
+	color: #FF0000;
+}

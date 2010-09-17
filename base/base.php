@@ -236,3 +236,9 @@ function redir($page = "", $permanent = false)
 	header("Location: $location");
 	die('<HTML><HEAD><TITLE>'.$code.'</TITLE></HEAD><BODY><H1>Found</H1>You have been redirected <A HREF="'.$location.'">here</A>.<P></BODY></HTML>');
 }
+
+function postval($name, $default = "")
+{
+	if (!isset($_POST[$name])) return $default;
+	return $_POST[$name];
+}

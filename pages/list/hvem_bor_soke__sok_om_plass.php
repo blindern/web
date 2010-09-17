@@ -1,193 +1,430 @@
 <?php
-	$thisYear = date("Y");
-?>
-							<h1>S&oslash;knad om plass</h1>
-                            <h2>S&oslash;knadsskjema</h2>
-                            <p>
-                            	Dersom du har lest gjennom denne Internettsiden og
-                            	er klar for &aring; s&oslash;ke deg inn p&aring; BS
-                            	s&aring; har du valget mellom &aring; sende en skriftlig,
-                            	eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
-                            	blir behandlet med lik verdi.
-                            </p>
-                          	<h2>Opptak av beboere for h&oslash;sten <?php echo $thisYear;?></h2>
-                          	<p>
-							  	Opptak av beboere for h&oslash;sten <?php echo $thisYear;?> skjer
-							  	fortl&oslash;pende fra og med februar <?php echo $thisYear;?>.
-							</p>
-                          	<h2>Elektronisk s&oslash;knad</h2>
-                          	<p>
-                            	Fyll ut alle feltene i formularet under
-                            	for &aring; sende en elektronisk s&oslash;knad. Dersom
-                            	du ikke har f&aring;tt svar innen 7 arbeidsdager s&aring;
-                            	ber vi deg om &aring; sende en ny s&oslash;knad p&aring;
-                            	e-post til <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.
-                            </p>
-<?php
 
-$scheme = file_get_contents(dirname(__FILE__)."/../skjema.php");
-$navn="";
-$kjonn="";
-$foednr="";
-$mob="";
-$tlf="";
-$epost="";
-$studiested="";
-$studium="";
-$addr="";
-$postnr="";
-$hjemaddr="";
-$hjempostnr="";
-$onsketdato="";
-$antMnd="";
-$omperson="";
-$kommentar="";
-
-if(!isset($_POST['submit'])){
-	printf($scheme, $navn, "selected", "", $foednr, $mob, $tlf, $epost, $studiested, $studium, $addr, $postnr, $hjemaddr,
-		$hjempostnr,$onsketdato, "selected", "", "", "", "", "", $omperson, $kommentar);
-} else {
-	$proceed = true;
-
-	//Checks that name is set, it is longer than 5 letters, and contains at least one space
-	if(!isset($_POST['navn']) || strlen($_POST['navn']) < 5 || strpos($_POST['navn'], " ")==FALSE){
-		$proceed = false;
-		$errorMsg[] = "Du har glemt &aring; fylle ut navnet ditt. Både for- og etternavn må fylles inn.";
-	} else
-		$navn = strip_tags($_POST['navn']);
-
-	//Validates the "Kjønn"
-	$kjonn = explode(" ", $_POST['kjonn']);
-	$kjonn = strip_tags($kjonn[0]);
-
-	//Checks that personnummer is valid
-	if(!sjekkFoedselsNr($_POST['personnummer'])){
-		$proceed = false;
-		$errorMsg[] = "Du har ikke fyllt ut et korrekt personnummer.";
-	} else
-		$foednr = $_POST['personnummer'];
-
-	//Validates that the phonenumbers are valid, and at leas one of them is correct
-	if((isset($_POST['mob']) && sjekkTlf($_POST['mob'])) || (isset($_POST['tlf'])&&sjekkTlf($_POST['tlf']))){
-		if(isset($_POST['mob']) && sjekkTlf($_POST['mob']))
-			$mob = $_POST['mob'];
-		if(isset($_POST['tlf']) && sjekkTlf($_POST['tlf']))
-			$tlf = $_POST['tlf'];
-	} else {
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut minst ett mobilnummer.";
-	}
-
-	//Validates the epost.
-	if(!sjekkEpost($_POST['epost'])){
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut en korrekt e-post adresse.";
-	} else
-		$epost = $_POST['epost'];
-
-	//Validates that at studiested is set
-	if(!isset($_POST['studiested']) || strlen($_POST['studiested']) < 1){
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut studiested.";
-	} else
-		$studiested = strip_tags($_POST['studiested']);
-
-	//Validates that studium is set
-	if(!isset($_POST['studium'])|| strlen($_POST['studium'])<1 ){
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut studium.";
-	} else
-		$studium = strip_tags($_POST['studium']);
-
-	//Validates that at least one adress is set
-	if((isset($_POST['hjemaddr'])&& isset($_POST['hjempostnr'])) || (isset($_POST['addr']) && isset($_POST['postnr']))){
-		if(isset($_POST['hjemaddr'])&&isset($_POST['hjempostnr'])){
-			$hjemaddr = strip_tags($_POST['hjemaddr']);
-			$hjempostnr = strip_tags($_POST['hjempostnr']);
+class bs_soknad
+{
+	protected static $error = array();
+	protected static $sent = false;
+	
+	public static function main()
+	{
+		if (isset($_POST['submit']))
+		{
+			self::process();
 		}
-		if(isset($_POST['addr'])&&isset($_POST['postnr'])) {
-			$addr = strip_tags($_POST['addr']);
-			$postnr = strip_tags($_POST['postnr']);
+		
+		if (!self::$sent) self::show_form();
+	}
+	
+	protected static function process()
+	{
+		$data = array(
+			"name" => postval("navn"),
+			"gender" => postval("kjonn"),
+			"personnummer" => postval("personnummer"),
+			"mobile" => postval("mob"),
+			"phone" => postval("tlf"),
+			"email" => postval("epost"),
+			"studiested" => postval("studiested"),
+			"studium" => postval("studium"),
+			"adresse" => postval("addr"),
+			"postnr" => postval("postnr"),
+			"hjem_adresse" => postval("hjemaddr"),
+			"hjem_postnr" => postval("hjempostnr"),
+			"onsket_dato" => postval("onsketdato"),
+			"antall_mnd" => postval("antMnd"),
+			"beskrivelse" => postval("omperson"),
+			"annet" => postval("kommentar")
+		);
+		foreach ($data as &$val) $val = trim($val);
+		
+		// kontroller navn
+		if (empty($data['name']))
+		{
+			self::$error['name'] = "Må fylles inn";
 		}
-	} else {
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut adresse og postnummer p&aring; opprinnelig bosted";
+		elseif (mb_strlen($data['name']) < 5)
+		{
+			self::$error['name'] = "For kort";
+		}
+		
+		// kontroller kjønn
+		if ($data['gender'] != "Mann" && $data['gender'] != "Kvinne")
+		{
+			self::$error['gender'] = "Må fylles inn";
+		}
+		
+		// kontroller personnummer
+		if (empty($data['personnummer']))
+		{
+			self::$error['personnummer'] = "Må fylles inn";
+		}
+		elseif (!self::check_fodselsnr($data['personnummer']))
+		{
+			self::$error['personnummer'] = "Ugyldig";
+		}
+		
+		// kontroller telefonnummer
+		$phone = false;
+		
+		if (!empty($data['mobile']))
+		{
+			$phone = true;
+			if (!self::check_phone($data['mobile']))
+			{
+				self::$error['mobile'] = "Ugyldig";
+			}
+		}
+		
+		if (!empty($data['tlf']))
+		{
+			$phone = true;
+			if (!self::check_phone($data['tlf']))
+			{
+				self::$error['tlf'] = "Ugyldig";
+			}
+		}
+		
+		if (!$phone)
+		{
+			self::$error['mobile'] = "Minst ett nummer må fylles inn";
+		}
+		
+		// kontroller e-post
+		if (empty($data['email']))
+		{
+			self::$error['email'] = "Må fylles inn";
+		}
+		elseif (!self::check_email($data['email']))
+		{
+			self::$error['email'] = "Ugyldig";
+		}
+		
+		// kontroller studiested
+		if (empty($data['studiested']))
+		{
+			self::$error['studiested'] = "Må fylles inn";
+		}
+		if (empty($data['studium']))
+		{
+			self::$error['studium'] = "Må fylles inn";
+		}
+		
+		// kontroller adresser
+		$addr = false;
+		
+		if (!empty($data['adresse']))
+		{
+			$addr = true;
+			if (empty($data['postnr']))
+			{
+				self::$error['postnr'] = "Må fylles inn";
+			}
+		}
+		
+		if (!empty($data['hjem_adresse']))
+		{
+			$addr = true;
+			if (empty($data['hjem_postnr']))
+			{
+				self::$error['hjem_postnr'] = "Må fylles inn";
+			}
+		}
+		
+		if (!$addr)
+		{
+			self::$error['adresse'] = "Minst en adresse må fylles inn";
+		}
+		
+		// kontroller ønsket dato for innflytting
+		if (empty($data['onsket_dato']))
+		{
+			self::$error['onsket_dato'] = "Må fylles inn";
+		}
+		#elseif (!self::check_date($data['onsket_dato']))
+		#{
+		#	self::$error['onsket_dato'] = "Ugyldig";
+		#}
+		
+		// kontroller antall måneder søknaden skal være gyldig
+		if ($data['antall_mnd'] == "")
+		{
+			self::$error['antall_mnd'] = "Må fylles inn";
+		}
+		elseif (!is_numeric($data['antall_mnd']))
+		{
+			self::$error['antall_mnd'] = "Ugyldig";
+		}
+		
+		// kontroller beskrivelse
+		if (empty($data['beskrivelse']))
+		{
+			self::$error['beskrivelse'] = "Du må skrive litt om deg selv og dine interesser.";
+		}
+		
+		// skal vi sende søknaden?
+		if (count(self::$error) == 0)
+		{
+			// send søknad
+			$ret = self::send_email($data);
+			
+			echo '
+		<h2>Søknad sendt</h2>
+		<p>Takk for din søknad!</p>
+		<p>Søknaden din er nå sendt, og du skal også ha mottatt en kvittering på e-posten din. Din søknad inneholdt følgende:</p>
+		<pre class="soknad_sendt_tekst">
+'.htmlspecialchars($ret).'</pre>
+		<p>Dersom du skulle ha ytterligere spørsmål eller det er noe galt med søknaden, ta kontakt med oss på <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>. Svar gjerne på kvitteringen du har fått på e-post.</p>';
+			
+			self::$sent = true;
+		}
 	}
-
-	//Validates that a wished date for moving in is pressent
-	if(!sjekkDato($_POST['onsketdato'])){
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; fylle ut en &oslash;nsket innflyttingsdato";
-	} else {
-		$onsketdato = strip_tags($_POST['onsketdato']);
+	
+	protected static function get_error($name, $format = null)
+	{
+		if (isset(self::$error[$name]))
+		{
+			$data = ' <span class="soknad_feil">'.self::$error[$name].'</span>';
+			if ($format) return sprintf($format, $data);
+			return $data;
+		}
+		
+		return '';
 	}
-
-	//Validates that number of months wished is set
-	$antMnd = explode(" ", $_POST['antMnd']);
-	$antMnd = (is_numeric($antMnd[0])) ? $antMnd[0] : "1";
-
-	//Validates that omperson is filled in
-	if(!isset($_POST['omperson'])||strlen($_POST['omperson']) <1 ){
-		$proceed = false;
-		$errorMsg[] = "Du m&aring; skrive litt om deg selv, og dine interesser.";
-	} else
-		$omperson = strip_tags($_POST['omperson']);
-
-	//Validates the kommentar-field
-	if(isset($_POST['kommentar']))
-		$kommentar = strip_tags($_POST['kommentar']);
-
-	if($proceed){
-		$sendtMessage = sendEmail($navn, $kjonn, $foednr, $mob, $tlf, $epost,
-				$studiested, $studium, $addr, $postnr, $hjemaddr, $hjempostnr,
-				$onsketdato, $antMnd, $omperson, $kommentar);
-	} else {
-		echo "<h2 style='background-color:red'>S&oslash;knaden ble ikke sendt!</h2>";
-		foreach($errorMsg as $melding)
-			echo "<p>".$melding."</p>";
-		$scheme = file_get_contents(dirname(__FILE__)."/../skjema.php");
-
-		$antMndSel[$antMnd-1] = "selected";
-		printf($scheme, $navn, $kjonnSel[0], $kjonnSel[1], $foednr, $mob, $tlf, $epost,
-				$studiested, $studium, $addr, $postnr, $hjemaddr, $hjempostnr,
-				$onsketdato, $antMndSel[0], $antMndSel[1], $antMndSel[2], $antMndSel[3],
-				$antMndSel[4], $antMndSel[5], $omperson, $kommentar);
+	
+	protected static function show_form()
+	{
+		echo '
+			<h2>Elektronisk s&oslash;knad</h2>
+			<p>
+				Fyll ut alle feltene i formularet under
+				for &aring; sende en elektronisk s&oslash;knad. Dersom
+				du ikke har f&aring;tt svar innen 7 arbeidsdager s&aring;
+				ber vi deg om &aring; sende en ny s&oslash;knad p&aring;
+				e-post til <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.
+			</p>
+			<form action="" method="POST">
+				<fieldset class="soknadsskjema">
+					<legend>Søknad om plass på Blindern Studenterhjem</legend>
+					<h3>Personalia</h3>
+					<dl>
+						<dt><label for="navn">Navn</label></dt>
+						<dd><input type=text name="navn" id="name" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
+						
+						<dt><label for="kjonn">Kjønn</label></dt>
+						<dd><select name="kjonn" id="kjonn">';
+		
+		$opt = postval("kjonn");
+		if ($opt != "Mann" && $opt != "Kvinne" && $opt != "") $opt =  "";
+		
+		if ($opt == "") echo '
+								<option value="">Velg..</option>';
+		
+		echo '
+								<option value="Mann"'.($opt == "Mann" ? ' selected="selected"' : '').'>Mann</option>
+								<option value="Kvinne"'.($opt == "Kvinne" ? ' selected="selected"' : '').'>Kvinne</option>
+						</select>*'.self::get_error("gender").'</dd>
+						
+						<dt><label for="personnummer">Personnummer</label></dt>
+						<dd><input type="text" name="personnummer" id="personnummer" value="'.htmlspecialchars(postval("personnummer")).'" />*'.self::get_error("personnummer").'</dd>
+						
+						<dt><label for="mob">Mobiltelefonnr</label></dt>
+						<dd><input type="text" name="mob" id="mob" value="'.htmlspecialchars(postval("mob")).'" />'.self::get_error("mobile").'</dd>
+						
+						<dt><label for="tlf">Evt. fasttelefon</label></dt>
+						<dd><input type="text" name="tlf" id="tlf" value="'.htmlspecialchars(postval("tlf")).'" />'.self::get_error("phone").'</dd>
+						
+						<dt><label for="epost">E-post</label></dt>
+						<dd><input type="text" name="epost" id="epost" value="'.htmlspecialchars(postval("epost")).'" />*'.self::get_error("email").'</dd>
+						
+						<dt><label for="studiested">Studiested</label></dt>
+						<dd><input type="text" name="studiested" id="studiested" value="'.htmlspecialchars(postval("studiested")).'" />*'.self::get_error("studiested").'</dd>
+						
+						<dt><label for="studium">Studium</label></dt>
+						<dd><input type="text" name="studium" id="studium" value="'.htmlspecialchars(postval("studium")).'" />*'.self::get_error("studium").'</dd>
+					</dl>
+					
+					<h3>N&aring;v&aelig;rende Bosted</h3>
+					<dl>
+						<dt><label for="addr">Adresse</label></dt>
+						<dd><input type="text" name="addr" id="addr" value="'.htmlspecialchars(postval("addr")).'" />'.self::get_error("adresse").'</dd>
+						
+						<dt><label for="postnr">Postnummer og sted</label></dt>
+						<dd><input type="text" name="postnr" id="postnr" value="'.htmlspecialchars(postval("postnr")).'" />'.self::get_error("postnr").'</dd>
+					</dl>
+					
+					<h3>Opprinnelig bosted (hjemstedsadresse)</h3>
+					<dl>
+						<dt><label for="hjemaddr">Adresse</label></dt>
+						<dd><input type="text" name="hjemaddr" id="hjemaddr" value="'.htmlspecialchars(postval("hjemaddr")).'" />'.self::get_error("hjem_adresse").'</dd>
+						
+						<dt><label for="hjempostnr">Postnummer og sted</label></dt>
+						<dd><input type="text" name="hjempostnr" id="hjempostnr" value="'.htmlspecialchars(postval("hjempostnr")).'" />'.self::get_error("hjem_postnr").'</dd>
+					</dl>
+					
+					<h3>Om søknaden</h3>
+					<dl>
+						<dt><label for="onsketdato">&Oslash;nsket innflyttningsdato</label></dt>
+						<dd><input type="text" name="onsketdato" id="onsketdato" value="'.htmlspecialchars(postval("onsketdato")).'" />*'.self::get_error("onsket_dato").'</dd>
+					</dl>
+					
+					<p><label for="antMnd">Dersom du ikke får plass ved hjemmet til den datoen du ønsker, hvor mange måender vil du at søknaden skal gjelde etter denne datoen?</label>
+						<select name="antMnd" id="antMnd">';
+		
+		for ($i = 1; $i <= 6; $i++)
+		{
+			echo '
+								<option value="'.$i.'"'.($i == postval("antMnd") ? ' selected="selected"' : '').'>'.$i.'</option>';
+		}
+		
+		echo '
+						</select>'.self::get_error("antall_mnd").'
+					</p>
+					
+					<p><label for="omperson">
+							Skriv en beskrivelse av deg selv og dine
+							interesser. Dette kreves for at din søknad
+							skal tas i betraktning. Skriv ogs&aring; navn på
+							tidligere beboere eller n&aring;v&aelig;rende beboere
+							dersom du ønsker/har referanser. <!--Se tekst
+							om hva som legges vekt på ved søknad her.-->
+							</label><br />'.self::get_error("beskrivelse", '%s<br />').'
+						<textarea name="omperson" cols="40" rows="8" id="omperson">'.htmlspecialchars(postval("omperson")).'</textarea>*
+					</p>
+					
+					<p>
+						<label for="kommentar">Kommentarer eller &oslash;vrige opplysninger</label><br />'.self::get_error("annet", '%s<br />').'
+						<textarea name="kommentar" cols="40" rows="5" class="text_contact" id="kommentar">'.htmlspecialchars(postval("kommentar")).'</textarea>
+					</p>
+					
+					<p class="soknad_submit"><input type="submit" value="Send søknad" name="submit" /></p>
+				</fieldset>
+			</form>';
 	}
-	echo "<h2>Meldingen er sendt</h2>";
-	echo "<p>F&oslash;lgende s&oslash;knad er sendt, og du skal ha mottatt en kopi av den per mail:</p><pre>";
-	echo $sendtMessage."</pre><br><br><p>Dersom du skulle ha yttligere sp&oslash;rsm&aring;l, ";
-	echo "eller noe er galt med s&oslash;knaden, ta kontakt med oss p&aring; <a href='mailto:post@blinderen-studenterhjem.no'>";
-	echo "post@blinderen-studenterhjem.no</a></p>";
-}
+	
+	/**
+	 * Kontroller fødselsnummer
+	 * @param $foedselsnr
+	 */
+	protected static function check_fodselsnr($value)
+	{
+		if (!preg_match("/^(\\d\\d)(\\d\\d)(\\d\\d)(\\d{3})(\\d\\d)$/", $value, $matches)) return false;
+		if ($matches[1] < 0 || $matches[1] > 31) return false;
+		if ($matches[2] < 0 || $matches[2] > 12) return false;
+		
+		// valider kontrollsifferene
+		$validater = array(
+			array(3, 7, 6, 1, 8, 9, 4, 5, 2, 1, 0),
+			array(5, 4, 3, 2, 7, 6, 5, 4, 3, 2, 1)
+		);
+		#$x = 0;
+		foreach ($validater as $vekst)
+		{
+			$sum = 0;
+			
+			for ($i = 0; $i < 11; $i++)
+			{
+				$sum += $vekst[$i] * substr($value, $i, 1);
+			}
+			
+			if ($sum % 11 != 0) return false;
+			#$x++;
+		}
+		
+		return true;
+	}
+	
+	/**
+	 * Kontroller telefonnnummer
+	 * @param $tlf
+	 */
+	protected static function check_phone($value)
+	{
+		return preg_match("/^\\+?[\\d]{7,}$/", $value);
+	}
+	
+	protected static function check_date($value)
+	{
+		return strlen($value) >= 4;
+	}
+	
+	protected static function check_email($value)
+	{
+		$pattern = "/^((\\\"[^\\\"\\f\\n\\r\\t\\b]+\\\")|([A-Za-z0-9_][A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*(\\.[A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*)*))@((\\[(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))\\])|(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))|((([A-Za-z0-9])(([A-Za-z0-9\\-])*([A-Za-z0-9]))?(\\.(?=[A-Za-z0-9\\-]))?)+[A-Za-z]+))$/D";
+		return preg_match($pattern, $value);
+	}
+	
+	protected static function send_email($data)
+	{
+		#$to = "post@blindern-studenterhjem.no";
+		$to = "henrist@henrist.net";
+		$subject = "Søknad for Blindern Studenterhjem";
+		
+		$headers = "To: Henrik Steen <henrist@henrist.net>\r\n";
+		$headers .= "From: {$data['name']} <{$data['email']}>\r\n";
+		$headers .= "Reply-To: {$data['email']} <{$data['email']}>\r\n";
+		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+		$headers .= "Cc: hjemmesideoppmann@blindern-studenterhjem.no\r\n";
+		
+		$message = 'Søknad mottatt for Blindern Studenterhjem:
 
-function sjekkFoedselsNr($foedselsnr) {
-	if(is_numeric($foedselsnr) && strlen($foedselsnr) > 10)
-		return true;
-	else
-		return false;
-}
-function sjekkTlf($tlf){
-	if(is_numeric($tlf)&& strlen($tlf) > 7)
-		return true;
-	else
-		return false;
-}
-function sjekkDato($dato){
-	if(strlen($dato)<4)
-		return false;
-	else
-		return true;
-}
-function sjekkEpost($epost){
-	$pattern = "/^((\\\"[^\\\"\\f\\n\\r\\t\\b]+\\\")|([A-Za-z0-9_][A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*(\\.[A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*)*))@((\\[(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))\\])|(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))|((([A-Za-z0-9])(([A-Za-z0-9\\-])*([A-Za-z0-9]))?(\\.(?=[A-Za-z0-9\\-]))?)+[A-Za-z]+))$/D";
-	return preg_match($pattern, $epost);
+Navn:         '.$data['name'].'
+Kjønn:        '.$data['gender'].'
+Personnummer: '.$data['personnummer'].'
+
+Mobil:   '.$data['mobile'].'
+Telefon: '.$data['phone'].'
+E-post:  '.$data['email'].'
+
+Studiested: '.$data['studiested'].'
+Studium:    '.$data['studium'].'
+
+Nåværende bosted
+Adresse:        '.$data['adresse'].'
+Postnr og sted: '.$data['postnr'].'
+
+Opprinnelig bosted
+Adresse:        '.$data['hjem_adresse'].'
+Postnr og sted: '.$data['hjem_postnr'].'
+
+Ønsket innflyttingsdato:   '.$data['onsket_dato'].'
+Ant. mnd søknaden gjelder: '.$data['antall_mnd'].'
+
+Beskrivelse:
+'.$data['beskrivelse'].'
+
+Annet:
+'.$data['annet'].'
+
+
+Søknaden ble sendt '.date("j.n.Y H:i:s");
+		
+		mail($to, $subject, $message, $headers);
+		
+		// melding til avsender
+		$message_receipt = 'Kvittering for mottatt søknad:
+
+'.$message.'
+
+Behandlingstiden er maks 7 dager. Dersom vi ikke har tatt kontakt innen dette, kan det være at vi allikevel ikke har mottatt din søknad. Vi ber deg derfor svare på denne e-posten, slik at vi kan bekrefte at den er mottatt.
+
+Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 15 00 i kontortiden mellom 09.00 - 15.00 på hverdager. Se også www.blindern-studenterhjem.no for oppdatert informasjon.';
+		
+		$headers = "To: {$data['name']} <{$data['email']}>\r\n";
+		$headers .= "From: Blindern Studenterhjem <post@blindern-studenterhjem.no>\r\n";
+		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+		
+		mail($data['email'], "Kvittering for søknad til Blindern Studenterhjem", $message_receipt, $headers);
+		
+		return $message;
+		/*
 }
 function sendEmail($navn, $kjonn,$foednr, $mob, $tlf, $epost, $studiested, $studium, $addr, $postnr, $hjemaddr, $hjempostnr,$onsketdato, $antMnd, $omperson, $kommentar){
 	$to = "post@blindern-studenterhjem.no";
 	$subject = "Soknad: Blindern-Studenterhjem";
-	$headers .= "To: Blindern Studenterhjem <post@blindern-studenterhjem.no> \r\n";
+	#$headers .= "To: Blindern Studenterhjem <post@blindern-studenterhjem.no> \r\n";
+	$headers .= "To: Henrik Steen <henrist@henrist.net> \r\n";
 	$headers = "From: ".$navn." <".$epost."> \r\n";
-	$headers .= "Replay-To: ".$epost."\r\nContent-Type: text/plain; charset=UTF-8\r\n";
+	$headers .= "Reply-To: ".$epost."\r\nContent-Type: text/plain; charset=UTF-8\r\n";
 	$headers .= "Cc: hjemmesideoppmann@blindern-studenterhjem.no \r\n";
 	$message = 	"Navn: ".$navn."\r\n" .
 				"Kjønn: ".$kjonn."\r\n" .
@@ -229,12 +466,32 @@ function sendEmail($navn, $kjonn,$foednr, $mob, $tlf, $epost, $studiested, $stud
 	if(date("md") == "0504" || date("md")> "0519"){
 		mail("simen@buodd.no", "Fjern away-melding", "Nå må du huske å fjerne 'away' meldingen fra BS-sidene!!!", "Replay-To: none");
 	}
-*/
+*-/
 	$headers = "To: ".$navn." <".$epost."> \r\n";
 	$headers .= "From: Blindern Studenterhjem <post@blindern-studenterhjem.no> \r\n";
 	$headers .= "Replay-To: post@blindern-studenterhjem.no \r\n";
 	$headers .= "Replay-To: ".$epost."\r\nContent-Type: text/plain; charset=UTF-8\r\n";
 	mail($epost, "Bekreftelse paa soknad til Blindern Studenterhjem", $messageToSender, $headers);
-	return $message;
+	return $message;*/
+	}
 }
-?>
+
+$thisYear = date("Y");
+
+echo '
+			<h1>S&oslash;knad om plass</h1>
+			<h2>S&oslash;knadsskjema</h2>
+			<p>
+				Dersom du har lest gjennom denne Internettsiden og
+				er klar for &aring; s&oslash;ke deg inn p&aring; BS
+				s&aring; har du valget mellom &aring; sende en skriftlig,
+				eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
+				blir behandlet med lik verdi.
+			</p>
+			<h2>Opptak av beboere for h&oslash;sten '.$thisYear.'</h2>
+			<p>
+				Opptak av beboere for h&oslash;sten '.$thisYear.' skjer
+				fortl&oslash;pende fra og med februar '.$thisYear.'.
+			</p>';
+
+bs_soknad::main();

@@ -24,7 +24,7 @@ echo '
 			<div class="ledigeplasser">
 				<h2>Ledige plasser i høst</h2>
 				<p>Vi har fremdeles ledige plasser i høst.</p>
-				<p>Send inn <a href="site.php?category=2&id=1">elektronisk søknad</a> som blir behandlet fortløpende!</p>
+				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/hvem_bor_soke/sok_om_plass">elektronisk søknad</a> som blir behandlet fortløpende!</p>
 			</div>
 			<div id="content_clear"></div>
 		</div>
