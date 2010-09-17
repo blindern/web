@@ -20,7 +20,7 @@ class bs_soknad
 		$data = array(
 			"name" => postval("navn"),
 			"gender" => postval("kjonn"),
-			"personnummer" => postval("personnummer"),
+			"birth" => postval("birth"),
 			"mobile" => postval("mob"),
 			"phone" => postval("tlf"),
 			"email" => postval("epost"),
@@ -53,14 +53,14 @@ class bs_soknad
 			self::$error['gender'] = "Må fylles inn";
 		}
 		
-		// kontroller personnummer
-		if (empty($data['personnummer']))
+		// kontroller fødselsdato
+		if (empty($data['birth']))
 		{
-			self::$error['personnummer'] = "Må fylles inn";
+			self::$error['birth'] = "Må fylles inn";
 		}
-		elseif (!self::check_fodselsnr($data['personnummer']))
+		elseif (!self::check_birth($data['birth']))
 		{
-			self::$error['personnummer'] = "Ugyldig";
+			self::$error['birth'] = "Ugyldig, må være på formen dd.mm.yyyy";
 		}
 		
 		// kontroller telefonnummer
@@ -201,7 +201,15 @@ class bs_soknad
 				du ikke har f&aring;tt svar innen 7 arbeidsdager s&aring;
 				ber vi deg om &aring; sende en ny s&oslash;knad p&aring;
 				e-post til <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.
-			</p>
+			</p>';
+		
+		if (count(self::$error) > 0)
+		{
+			echo '
+			<p class="soknad_feil_info">Søknaden ble ikke korrekt fylt ut og er <u>ikke</u> sendt inn. Korriger feilene nedenfor og send inn på nytt.</p>';
+		}
+		
+		echo '
 			<form action="" method="POST">
 				<fieldset class="soknadsskjema">
 					<legend>Søknad om plass på Blindern Studenterhjem</legend>
@@ -224,8 +232,8 @@ class bs_soknad
 								<option value="Kvinne"'.($opt == "Kvinne" ? ' selected="selected"' : '').'>Kvinne</option>
 						</select>*'.self::get_error("gender").'</dd>
 						
-						<dt><label for="personnummer">Personnummer</label></dt>
-						<dd><input type="text" name="personnummer" id="personnummer" value="'.htmlspecialchars(postval("personnummer")).'" />*'.self::get_error("personnummer").'</dd>
+						<dt><label for="birth">Fødselsdato</label></dt>
+						<dd><input type="text" name="birth" id="birth" value="'.htmlspecialchars(postval("birth")).'" />*'.self::get_error("birth").'</dd>
 						
 						<dt><label for="mob">Mobiltelefonnr</label></dt>
 						<dd><input type="text" name="mob" id="mob" value="'.htmlspecialchars(postval("mob")).'" />'.self::get_error("mobile").'</dd>
@@ -302,38 +310,6 @@ class bs_soknad
 	}
 	
 	/**
-	 * Kontroller fødselsnummer
-	 * @param $foedselsnr
-	 */
-	protected static function check_fodselsnr($value)
-	{
-		if (!preg_match("/^(\\d\\d)(\\d\\d)(\\d\\d)(\\d{3})(\\d\\d)$/", $value, $matches)) return false;
-		if ($matches[1] < 0 || $matches[1] > 31) return false;
-		if ($matches[2] < 0 || $matches[2] > 12) return false;
-		
-		// valider kontrollsifferene
-		$validater = array(
-			array(3, 7, 6, 1, 8, 9, 4, 5, 2, 1, 0),
-			array(5, 4, 3, 2, 7, 6, 5, 4, 3, 2, 1)
-		);
-		#$x = 0;
-		foreach ($validater as $vekst)
-		{
-			$sum = 0;
-			
-			for ($i = 0; $i < 11; $i++)
-			{
-				$sum += $vekst[$i] * substr($value, $i, 1);
-			}
-			
-			if ($sum % 11 != 0) return false;
-			#$x++;
-		}
-		
-		return true;
-	}
-	
-	/**
 	 * Kontroller telefonnnummer
 	 * @param $tlf
 	 */
@@ -367,24 +343,24 @@ class bs_soknad
 		
 		$message = 'Søknad mottatt for Blindern Studenterhjem:
 
-Navn:         '.$data['name'].'
-Kjønn:        '.$data['gender'].'
-Personnummer: '.$data['personnummer'].'
+Navn:               '.$data['name'].'
+Kjønn:              '.$data['gender'].'
+Fødselsdato:        '.$data['birth'].' ('.self::calc_age($data['birth']).' år)
 
-Mobil:   '.$data['mobile'].'
-Telefon: '.$data['phone'].'
-E-post:  '.$data['email'].'
+Mobil:              '.$data['mobile'].'
+Telefon:            '.$data['phone'].'
+E-post:             '.$data['email'].'
 
-Studiested: '.$data['studiested'].'
-Studium:    '.$data['studium'].'
+Studiested:         '.$data['studiested'].'
+Studium:            '.$data['studium'].'
 
 Nåværende bosted
-Adresse:        '.$data['adresse'].'
-Postnr og sted: '.$data['postnr'].'
+Adresse:            '.$data['adresse'].'
+Postnr og sted:     '.$data['postnr'].'
 
 Opprinnelig bosted
-Adresse:        '.$data['hjem_adresse'].'
-Postnr og sted: '.$data['hjem_postnr'].'
+Adresse:            '.$data['hjem_adresse'].'
+Postnr og sted:     '.$data['hjem_postnr'].'
 
 Ønsket innflyttingsdato:   '.$data['onsket_dato'].'
 Ant. mnd søknaden gjelder: '.$data['antall_mnd'].'
@@ -416,6 +392,32 @@ Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 
 		mail($data['email'], "Kvittering for søknad til Blindern Studenterhjem", $message_receipt, $headers);
 		
 		return $message;
+	}
+	
+	/**
+	 * Kontroller fødselsdato
+	 */
+	protected static function check_birth($value)
+	{
+		return preg_match("/^(0?[1-9]|[1-2][0-9]|3[0-1])\\.(0?[1-9]|1[0-2])\\.((?:19|20)\\d\\d)\$/", $value);
+	}
+	
+	/**
+	 * Kalkuler alder
+	 */
+	protected static function calc_age($birth)
+	{
+		// fødselsdato
+		$birth = explode(".", $birth);
+		
+		// alder
+		$date = new DateTime();
+		$date->setTimezone(new DateTimeZone("Europe/Oslo"));
+		$n_day = $date->format("j");
+		$n_month = $date->format("n");
+		$n_year = $date->format("Y");
+		
+		return ($n_year - $birth[2] - (($n_month < $birth[1] || ($birth[1] == $n_month && $n_day < $birth[0])) ? 1 : 0));
 	}
 }
 

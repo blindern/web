@@ -408,6 +408,11 @@ ul.arrangementer li {
 	clear: both;
 }
 
+.soknad_feil_info {
+	color: #CC3333;
+	border: 2px solid #CC3333;
+	padding: 5px;
+}
 .soknad_feil {
 	color: #FF0000;
 }
