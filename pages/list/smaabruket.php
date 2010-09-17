@@ -277,7 +277,10 @@ else
 	
 	echo '
 								</tbody>
-							</table>';
+							</table>
+							<p class="hyttestyret_legend ledig"><span></span>Ledig</p>
+							<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
+							<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>';
 }
 
 ?>
