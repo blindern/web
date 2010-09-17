@@ -267,7 +267,7 @@ class bs_soknad
 						<dd><input type="text" name="onsketdato" id="onsketdato" value="'.htmlspecialchars(postval("onsketdato")).'" />*'.self::get_error("onsket_dato").'</dd>
 					</dl>
 					
-					<p><label for="antMnd">Dersom du ikke får plass ved hjemmet til den datoen du ønsker, hvor mange måender vil du at søknaden skal gjelde etter denne datoen?</label>
+					<p><label for="antMnd">Dersom du ikke får plass ved hjemmet til den datoen du ønsker, hvor mange måneder vil du at søknaden skal gjelde etter denne datoen?</label>
 						<select name="antMnd" id="antMnd">';
 		
 		for ($i = 1; $i <= 6; $i++)
