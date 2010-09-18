@@ -72,6 +72,10 @@ html, body {
 	-webkit-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
+.contentFullsize #content {
+	float: none;
+	width: auto;
+}
 #content img {
 	border: 1px solid #000;
 	margin: 5px;
@@ -88,6 +92,9 @@ html, body {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+}
+.contentFullsize #menu_sub_wrap {
+	display: none;
 }
 
 #menu_sub {
@@ -193,6 +200,7 @@ ul {
 ul li {
 	margin: 3px 0;
 }
+
 
 /* Administrasjon */
 .adm_kontakt dt {
@@ -371,6 +379,9 @@ ul.arrangementer li {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
+.contentFullsize .ledigeplasser {
+	display: none;
+}
 .ledigeplasser h2 {
 	text-decoration: underline;
 	margin-bottom: 2px;
@@ -415,4 +426,99 @@ ul.arrangementer li {
 }
 .soknad_feil {
 	color: #FF0000;
+}
+
+/* Bildegalleri */
+#omvisning_bilde_w {
+	min-height: 700px;
+}
+
+#omvisning_nav {
+	text-align: center;
+	margin: 15px 0;
+	font-size: 10px;
+	color: #888;
+}
+#omvisning_back span { background: url(../graphics/arrow_undo.png) left 0 no-repeat; padding: 0 0 0 20px }
+#omvisning_prev span { background: url(../graphics/arrow_left.png) left 0 no-repeat; padding: 0 0 0 20px }
+#omvisning_next span { background: url(../graphics/arrow_right.png) right 0 no-repeat; padding: 0 20px 0 0 }
+#omvisning_back,
+#omvisning_prev,
+#omvisning_next {
+	background-color: #E5E5E5;
+	text-decoration: none;
+	padding: 5px;
+	border: 2px solid #DDD;
+	cursor: pointer;
+	opacity: 0.75;
+	display: inline-block;
+	font-size: 13px;
+	color: #333;
+}
+#omvisning_back:hover, #omvisning_prev:hover, #omvisning_next:hover {
+	background-color: #E5E5E5;
+	text-decoration: none;
+	border-color: #CCC;
+	opacity: 1;
+}
+
+
+
+#omvisning_bilde {
+	background-color: #F3F3F3;
+	padding: 5px;
+	text-align: center;
+	margin: 0 0 30px;
+	cursor: pointer;
+}
+#omvisning_bilde img {
+	max-width: 98%;
+	border: none;
+}
+#omvisning_bilde p {
+	margin: 5px -5px -5px -5px;
+	background-color: #DDD;
+	color: #333;
+	padding: 4px 10px;
+}
+.omvisning_bilde_skjult {
+	display: none;
+}
+
+#omvisning_bilder_h {
+	font-size: 15px;
+	text-align: center;
+	padding: 10px;
+}
+#omvisning_bilder {
+	overflow: hidden;
+}
+#omvisning_bilder p {
+	display: inline-block;
+	width: 134px;
+	background-color: #F3F3F3;
+	margin: 2px 0;
+	padding: 8px 5px;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+}
+#omvisning_bilder p:hover {
+	background-color: #333;
+	cursor: pointer;
+}
+#omvisning_bilder a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: -8px -5px;
+	padding: 8px 5px;
+}
+#omvisning_bilder img {
+	margin: 0;
+	vertical-align: middle;
+	border: 0;
+}
+#omvisning_bilder .omvisning_aktiv, #omvisning_bilder .omvisning_aktiv:hover {
+	background-color: #3388DD;
 }
