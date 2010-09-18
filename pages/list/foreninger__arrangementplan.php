@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Arrangementplan"); ?>
 			<h1>Arrangementer</h1>
 			<h2>Arrangementplan for h&oslash;sten 2010</h2>
 			<dl class="arrangementer">

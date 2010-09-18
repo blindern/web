@@ -1,5 +1,7 @@
 <?php
 
+bs_side::set_title("Søk om plass");
+
 class bs_soknad
 {
 	protected static $error = array();

@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Tradisjoner"); ?>
 							<h1>Tradisjoner</h1>
                             <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/cumshotskonsert.jpg" width="200" height="150" border="1" align="right">
 							<h2>

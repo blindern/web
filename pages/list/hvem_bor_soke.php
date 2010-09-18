@@ -1,5 +1,9 @@
 <?php
-	$thisYear = date("Y");
+
+bs_side::set_title("Hvem bør søke?");
+
+$thisYear = date("Y");
+
 ?>
 
 							<h1>Hvem b&oslash;r s&oslash;ke</h1>

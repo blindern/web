@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Studentbolig"); ?>
 						<h1>Studentboliger</h1>
 						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" width="200" height="133" border="1" align="right">
 						<h2>Hva slags bolig tilbyr BS?</h2>

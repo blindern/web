@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Leiepriser"); ?>
 							<h1>Leiepriser h&oslash;stsemesteret 2010</h1>
                             <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" width="200" height="150" border="1" align="right">
 							<h2>Om Leieprisen</h2>

@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Velferdstilbud"); ?>
 							<h1>Felles velferdstilbud</h1>
                             <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hyttenibaerumsmarka.jpg" width="200" height="133" border="1" align="left">
                             <h2>Velferdstilbud</h2>

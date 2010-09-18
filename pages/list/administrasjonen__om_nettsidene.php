@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Om nettsidene"); ?>
                         <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/trapp_paerealle.jpg" width="302" height="201" border="1" align="right">
 						<h1>Om nettsidene</h1>
                         <p>

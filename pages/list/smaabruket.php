@@ -1,5 +1,7 @@
 <?php
 
+bs_side::set_title("Hyttestyret - Foreningen Småbruket");
+
 class smaabruket_kalender
 {
 	const WEEKS_SHOW = 20;

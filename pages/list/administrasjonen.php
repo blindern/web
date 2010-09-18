@@ -1,6 +1,5 @@
+<?php bs_side::set_title("Administrasjonen"); ?>
 							<h1>Administrasjonen</h1>
-							
-							<h2>Kontakt Administrasjonen</h2>
 							<p>
 								Dersom du har sp&oslash;rsm&aring;l
 								eller det er noe du lurer p&aring; s&aring; kontakt

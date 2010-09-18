@@ -51,6 +51,7 @@ class bs_side
 	public static $content;
 	public static $head;
 	public static $title = "Blindern Studenterhjem - Et godt hjem for studenter";
+	protected static $title_format = "%s - Blindern Studenterhjem";
 	
 	public static $menu_main;
 	public static $menu_main_list = array();
@@ -221,6 +222,14 @@ class bs_side
 		self::load_page();
 		die;
 	}
+	
+	/**
+	 * Endre tittel
+	 */
+	public static function set_title($title)
+	{
+		self::$title = sprintf(self::$title_format, $title);
+	}
 }
 
 function redir($page = "", $permanent = false)
@@ -241,4 +250,12 @@ function postval($name, $default = "")
 {
 	if (!isset($_POST[$name])) return $default;
 	return $_POST[$name];
+}
+
+function get_right_img($name, $gallery_id = null)
+{
+	$d = '<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/'.$name.'" />';
+	if ($gallery_id) $d = '<a href="'.bs_side::$pagedata->doc_path.'/studentboliger/omvisning#?img='.$gallery_id.'">'.$d.'</a>';
+	
+	return '<p class="img_right">'.$d.'</p>';
 }

@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Brukets venner"); ?>
 						<h1>Brukets venner</h1>
                         <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
 						<p>

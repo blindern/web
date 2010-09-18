@@ -1,5 +1,7 @@
 <?php
 
+bs_side::set_title("Digital omvisning");
+
 $images_raw = <<<IMAGELIST
 trapp_paere.jpg
 	Bunnen av pærealleen. T-banen ligger ca 70 meter til venstre for denne trappen. Foto: Cecilie Sæle Merkesvik
@@ -308,7 +310,7 @@ echo '
 	<p id="omvisning_bilde"></p>
 </div>
 <div id="omvisning_bilde_inactive">
-	<p id="omvisning_bilder_h">Trykk på et bilde for å vise stort bilde.</p>
+	<p id="omvisning_bilder_h">Trykk på et bilde for å vise stort bilde og beskrivelse.</p>
 	<div id="omvisning_bilder">';
 
 foreach ($images as $image)

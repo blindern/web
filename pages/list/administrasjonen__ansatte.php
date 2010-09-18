@@ -1,3 +1,4 @@
+<?php bs_side::set_title("Ansatte"); ?>
 						<div class='ansatteFrame'>
 							<h1>Ansatte</h1>
 							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/deansatte.jpg" width="200" height="133" border="1" />
