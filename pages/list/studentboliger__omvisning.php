@@ -245,12 +245,12 @@ window.addEvent("domready", function()
 		p.addClass("omvisning_aktiv");
 	}
 	
-	window.addEvent("keydown", function(event)
+	document.addEvent("keydown", function(event)
 	{
 		// 37: left, 39: right
 		if (event.code == 37 || event.code == 39)
 		{
-			var t = event.target.get("tag");
+			var t = $(event.target).get("tag");
 			if (t != "html" && t != "body") return;
 			rotate_img(event.code == 37, event);
 		}
