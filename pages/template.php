@@ -6,6 +6,7 @@ echo '
 <head>
 <title>'.bs_side::$title.'</title>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="keywords" content="Blindern Studenterhjem, student, bolig, studenthybel, blindern, oslo" />
 <link rel="stylesheet" type="text/css" href="'.bs_side::$pagedata->doc_path.'/layout/layout.css" />'.bs_side::$head.'
 </head>
 <body>
