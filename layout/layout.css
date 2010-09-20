@@ -90,7 +90,7 @@ html, body {
 	float: none;
 	width: auto;
 }
-#content img {
+/*#content*/ img {
 	border: 1px solid #000;
 	margin: 5px;
 }
@@ -225,6 +225,24 @@ ul li {
 }
 ul.spaced li {
 	margin: 0.8em 0;
+}
+
+
+.subsection {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#content .subsection h2 {
+	margin-top: 5px;
+}
+.subsection .subimg {
+	float: right;
+	clear: right;
+}
+.subsection.subimgleft .subimg {
+	float: left;
+	clear: left;
+	margin: 5px 5px 5px 0;
 }
 
 

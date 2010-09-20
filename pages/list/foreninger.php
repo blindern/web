@@ -1,84 +1,96 @@
 <?php bs_side::set_title("Foreninger"); ?>
 							<h1>Foreninger</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/IFBS1.jpg" width="200" height="150" border="1" align="right">
-							<h2>Foreningsstyret</h2>
-							<p>
-								Det eksisterer mange klubber, foreninger og lag p&aring;
-								Blindern Studenterhjem. De fleste av dem er organisert
-								under foreningsstyret. Foreningsstyret st&aring;r
-								for fordeling av midler til de ulike foreningene.
-							</p>
-							<p>
-								Midlene kommer fra en del av husleien og overskudd
-								fra fester. Du kan f&aring; en kort oversikt over
-								noen av foreningene her.
-							</p>
+							
+							<div class="subsection">
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/IFBS1.jpg" class="subimg" />
+								<h2>Foreningsstyret</h2>
+								<p>
+									Det eksisterer mange klubber, foreninger og lag p&aring;
+									Blindern Studenterhjem. De fleste av dem er organisert
+									under foreningsstyret. Foreningsstyret st&aring;r
+									for fordeling av midler til de ulike foreningene.
+								</p>
+								<p>
+									Midlene kommer fra en del av husleien og overskudd
+									fra fester. Du kan f&aring; en kort oversikt over
+									noen av foreningene her.
+								</p>
+							</div>
 
 
-							<p class="clear"><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernrevy.jpg" width="200" height="150" border="1" align="right"></p>
-							<h2>UKEstyret</h2>
-							<p>
-								Den aller f&oslash;rste revyen p&aring; Blindern Studenterhjem
-								ble arrangert i 1932, og kunne alledere da tilby et
-								omfattende sosialt program ved siden av selve forestillingen.
-								Siden den gang har Blindernrevyen blitt arrangert
-								med jevne mellomrom, og siden 1961 annenhvert &aring;r.
-								I 2003 skiftet arrangementet navn til Uka p&aring;
-								Blindern, en tittel som bedre dekker alle de opplevelser
-								og inntrykk Uka formidler.
-							</p>
+							<div class="subsection">
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernrevy.jpg" class="subimg" />
+								<h2>UKEstyret</h2>
+								<p>
+									Den aller f&oslash;rste revyen p&aring; Blindern Studenterhjem
+									ble arrangert i 1932, og kunne alledere da tilby et
+									omfattende sosialt program ved siden av selve forestillingen.
+									Siden den gang har Blindernrevyen blitt arrangert
+									med jevne mellomrom, og siden 1961 annenhvert &aring;r.
+									I 2003 skiftet arrangementet navn til Uka p&aring;
+									Blindern, en tittel som bedre dekker alle de opplevelser
+									og inntrykk Uka formidler.
+								</p>
+	
+								<p>
+									N&aring; som da er det frivillig arbeid fra de aller
+									fleste av BS' 220 beboere som skaper Uka p&aring;
+									Blindern. Hver tekst som synges, hver drink som blandes
+									og hver plakat som henges opp er et resultat av et
+									enest&aring;ende kollektivt l&oslash;ft. De mest ihuga
+									ildsjelene begynner arbeidet allerede et &aring;rs
+									tid i forveien, og i de tolv dagene arrangementet
+									varer er det de f&aelig;rreste som tilbringer timer
+									p&aring; lesesal.
+									<a href="http://www.blindernuka.no" target="_blank">
+										Se egen hjemmeside.
+									</a>
+								</p>
+							</div>
+							
+							<div class="subsection">
+								<h2>Festforeningen</h2>
+								<p>
+									Festforeningen velges ut for et semester av gangen.
+									Oppgavene deres er &aring; organisere de fleste festene
+									og s&oslash;rge for at BS' egen pub er &aring;pen
+									hver onsdag. &Aring; v&aelig;re med her betyr mye
+									arbeid, men det er et minne for livet og s&aring;
+									absolutt verdt det.
+								</p>
+							</div>
+							
+							<div class="subsection">
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hytte_dugnad.jpg" class="subimg" />
+								<h2>Sm&aring;bruket</h2>
+								<p>
+									Sm&aring;bruket ligger ved Brunkollen i B&aelig;rumsmarka.
+									Hytta ligger i fint turterreng og er en flott laftet
+									t&oslash;mmerbygning med stor peisestue og badstue.
+								</p>
+								<p>Se mer informasjon om Småbruket og leie på <a href="foreninger/hyttestyret">hyttestyret</a> sine sider.</p>
+							</div>
 
-							<p>
-								N&aring; som da er det frivillig arbeid fra de aller
-								fleste av BS' 220 beboere som skaper Uka p&aring;
-								Blindern. Hver tekst som synges, hver drink som blandes
-								og hver plakat som henges opp er et resultat av et
-								enest&aring;ende kollektivt l&oslash;ft. De mest ihuga
-								ildsjelene begynner arbeidet allerede et &aring;rs
-								tid i forveien, og i de tolv dagene arrangementet
-								varer er det de f&aelig;rreste som tilbringer timer
-								p&aring; lesesal.
-								<a href="http://www.blindernuka.no" target="_blank">
-									Se egen hjemmeside.
-								</a>
-							</p>
-
-							<h2>Festforeningen</h2>
-							<p>
-								Festforeningen velges ut for et semester av gangen.
-								Oppgavene deres er &aring; organisere de fleste festene
-								og s&oslash;rge for at BS' egen pub er &aring;pen
-								hver onsdag. &Aring; v&aelig;re med her betyr mye
-								arbeid, men det er et minne for livet og s&aring;
-								absolutt verdt det.
-							</p>
-							<h2>Sm&aring;bruket</h2>
-							<p>
-								Sm&aring;bruket ligger ved Brunkollen i B&aelig;rumsmarka.
-								Hytta ligger i fint turterreng og er en flott laftet
-								t&oslash;mmerbygning med stor peisestue og badstue.
-							</p>
-							<p>Se mer informasjon om Småbruket og leie på <a href="foreninger/hyttestyret">hyttestyret</a> sine sider.</p>
-
-							<p><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/haarnocblaese.jpg" width="200" height="206" border="1" style="float: right" /></p>
-							<h2>Blindern Haarn oc Blaese Orchester</h2>
-							<p>
-								Blindern Haarn oc Blaese Orchester</strong><br>
-								Dette orkesteret er ikke som andre orkestere. Med
-								schl&aelig;gers som Derrick, Final Countdown, Super
-								Mario og annet snadder sprer de glede og galskap.
-								P&aring; CV'en kan de skryte med gjentatte opptredener
-								p&aring; P3, og &aring; ha sneket seg inn forran slottet
-								i barnetoget p&aring; 17.mai.
-							</p>
-							<ul>
-								<li><a href="files/BS_musikk/HaarnocBlaese1.mp3" target="_blank">
-									Haarn oc Blaese og P3morgen tar imot folk som ankommer p&aring; Gardermoen (mp3)
-								</a></li>
-								<li><a href="http://www.youtube.com/watch?v=X77unZfzhqQ&mode=related&search=" target="_blank">
-									Haarn oc Blaese i 17.mai barnetoget (Youtube)
-								</a></li>
-							</ul>
+							<div class="subsection">
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images_nye/haarn_oc_blaese.jpg" class="subimg" />
+								<h2>Blindern Haarn oc Blaese Orchester</h2>
+								<p>
+									Dette orkesteret er ikke som andre orkestere. Med
+									schl&aelig;gers som Derrick, Final Countdown, Super
+									Mario og annet snadder sprer de glede og galskap.
+									P&aring; CV'en kan de skryte med gjentatte opptredener
+									p&aring; P3, og &aring; ha sneket seg inn forran slottet
+									i barnetoget p&aring; 17.mai.
+								</p>
+								<ul>
+									<li><a href="files/BS_musikk/HaarnocBlaese1.mp3" target="_blank">
+										Haarn oc Blaese og P3morgen tar imot folk som ankommer p&aring; Gardermoen (mp3)
+									</a></li>
+									<li><a href="http://www.youtube.com/watch?v=X77unZfzhqQ&mode=related&search=" target="_blank">
+										Haarn oc Blaese i 17.mai barnetoget (Youtube)
+									</a></li>
+								</ul>
+							</div>
 
 							<h2 class="clear">cHorus Buchus</h2>
 							<p>

@@ -76,7 +76,7 @@ class smaabruket_kalender
 					"end" => $endTime,
 					"end_text" => date("r", $endTime),
 					"value" => (string) $gd->where->attributes()->valueString,
-					"calendar" => (string) $xml->title
+					"calendar" => substr((string)$item->title, 0, 10) == "Reservert:" ? "Reservert" : (string) $xml->title
 				);
 			}
 		}
