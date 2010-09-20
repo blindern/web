@@ -12,7 +12,7 @@ echo '
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="'.bs_side::$pagedata->doc_path.'/"><img src="'.bs_side::$pagedata->doc_path.'/graphics/layout/new_header.jpg" width="800" height="100" border=0></a>
+			<a href="'.bs_side::$pagedata->doc_path.'/"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a>
 		</div>
 		'.bs_side::$menu_main.'
 		<div id="contentContainer">

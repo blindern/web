@@ -20,7 +20,15 @@ html, body {
 }
 
 #header {
-	height:100px;
+	/*height: 100px;*/
+}
+#header a {
+	display: block;
+	height: 100px;
+	background: url(../graphics/layout/new_header.jpg) no-repeat;
+}
+#header span {
+	display: none;
 }
 
 #menu_main {
@@ -29,12 +37,14 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	line-height: 19px;
 }
 
 #menu_main li {
 	display: inline;
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 #menu_main li:before {
 	content: " - ";
@@ -49,6 +59,10 @@ html, body {
 	font-size: 17px;
 	text-decoration:none;
 	font-style:italic;
+	padding: 3px 0;
+}
+#menu_main a:hover {
+	text-decoration: underline;
 }
 
 #contentContainer {
@@ -132,16 +146,16 @@ html, body {
 	margin: 2px -3px 0 -3px;
 	padding: 0 3px;
 	
-	text-decoration:none;
-	line-height:20px;
+	text-decoration: none;
+	line-height: 20px;
 	
 	color: black;
 	
 	font-size: 11px;
-	font-family:Arial;
 }
 #menu_sub a:before {
 	content: "» ";
+	text-decoration: none;
 }
 
 #menu_sub .active a, #menu_sub a:hover{
@@ -158,8 +172,9 @@ html, body {
 #footer p { margin: 3px 0 }
 
 body {
-	font-size:13px;
-	font-family: arial;
+	font-size: 13px;
+	font-family: Arial;
+	/*line-height: 1.4em;*/
 }
 p {
 	margin: 0 0 13px 0;
@@ -207,6 +222,9 @@ ul {
 }
 ul li {
 	margin: 3px 0;
+}
+ul.spaced li {
+	margin: 0.8em 0;
 }
 
 
@@ -326,6 +344,7 @@ ul.arrangementer li {
 .hyttestyret_kalender td, .hyttestyret_kalender th {
 	border: 1px solid #DDD;
 	padding: 5px;
+	line-height: 1em;
 }
 .hyttestyret_kalender td.uke {
 	background-color: #FAFAFA;
