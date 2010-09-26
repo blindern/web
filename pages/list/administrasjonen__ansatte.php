@@ -1,17 +1,15 @@
 <?php bs_side::set_title("Ansatte"); ?>
-						<div class='ansatteFrame'>
-							<h1>Ansatte</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/deansatte.jpg" width="200" height="133" border="1" />
-							<p>
-								Dersom du trenger &aring; komme i kontakt med noen av de
-								ulike avdelingene ved Blindern Studenterhjem s&aring;
-								finner du kontaktinformasjon her.
-							</p>
-						</div>
-
-
+					<div id="ansatte">
+						<h1>Ansatte</h1>
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/deansatte.jpg" class="img_right" />
+						<p>
+							Dersom du trenger &aring; komme i kontakt med noen av de
+							ulike avdelingene ved Blindern Studenterhjem s&aring;
+							finner du kontaktinformasjon her.
+						</p>
+						
+						<h2>Styret</h2>
 						<div class='ansatteFrame2'>
-							<h2>Styret</h2>
 							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/.jpg" width="75" height="113" align="left">-->
 							<div class="ansatte_info">
 								<dl>
@@ -24,9 +22,9 @@
 								</dl>
 							</div>
 						</div>
-
+						
+						<h2>Administrasjon</h2>
 						<div class='ansatteFrame2'>
-							<h2>Administrasjon</h2>
 							<div class="ansatte_info">
 								<dl>
 									<dt>E-post</dt>
@@ -42,6 +40,8 @@
 								<dl>
 									<dt>Daglig leder</dt>
 									<dd>Gro Osland</dd>
+									<dt>E-post</dt>
+									<dd><a href="mailto:gro.osland@blindern-studenterhjem.no">gro.osland@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
 									<dd>23 33 15 58</dd>
 								</dl>
@@ -61,8 +61,8 @@
 							</div>
 						</div>
 
+						<h2>Kj&oslash;kken</h2>
 						<div class='ansatteFrame2'>
-							<h2>Kj&oslash;kken</h2>
 							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/" width="75" height="113" border="1" align="left">-->
 							<div class="ansatte_info">
 								<dl>
@@ -76,8 +76,8 @@
 							</div>
 						</div>
 
+						<h2>Vedlikehold</h2>
 						<div class='ansatteFrame2'>
-							<h2>Vedlikehold</h2>
 							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/vedlikeholdsleder.jpg" width="75" height="113" border="1" />
 							<div class="ansatte_info">
 								<dl>
@@ -92,3 +92,4 @@
 								</dl>
 							</div>
 						</div>
+					</div>

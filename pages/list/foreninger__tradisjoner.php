@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Tradisjoner"); ?>
 							<h1>Tradisjoner</h1>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/cumshotskonsert.jpg" width="200" height="150" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/cumshotskonsert.jpg" class="img_right" />
 							<h2>
 								Hva vil du oppleve som nyinnflyttet p&aring; Blindern
                             	Studenterhjem?
@@ -34,7 +34,7 @@
 	                            s&aring; sitter ordene garantert litt l&oslash;sere
 	                            i munnen n&aring;.
 	                        </p>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_1.jpg" width="250" height="167" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_1.jpg" class="img_right" />
 							<h2>Rebusl&oslash;p</h2>
 							<p>
 	                            Etter hytteturen er det rebusl&oslash;p. De nyinnflyttede
@@ -54,7 +54,7 @@
 	                            f&oslash;r, s&aring; vil du oppleve ditt f&oslash;rste
 	                            p&aring; dette arrangementet.
 	                        </p>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_2.jpg" width="150" height="225" border="1" align="left">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hostball_2.jpg" class="img_right">
 							<h2>H&oslash;stball</h2>
 							<p>
 	                            Et av de flotteste arrangementene p&aring; BS er ballet.
@@ -89,8 +89,7 @@
                             	som foreg&aring;r p&aring; BS. Dersom du &oslash;nsker
                             	mer informasjon kan du
 								<a href="<?php echo bs_side::$pagedata->doc_path; ?>/files/bsh_informasjonshefte.pdf" target="_blank">
-									laste ned dette heftet
-								</a>. Mer kommer vi ikke til &aring;
+									laste ned dette heftet</a>. Mer kommer vi ikke til &aring;
                             	r&oslash;pe her fordi noen overraskelser m&aring;
                             	gjenst&aring;..
 							</p>

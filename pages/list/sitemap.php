@@ -6,7 +6,7 @@ bs_side::$no_extra_col = true;
 echo '
 <h1>Sidekart</h1>
 
-<ul>';
+<ul id="sitemap">';
 
 foreach (bs_side::$menu_all as $section)
 {

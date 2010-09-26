@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Om stiftelsen"); ?>
 							<h1>Om stiftelsen</h1>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/posthyller.jpg" width="201" height="296" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/posthyller.jpg" class="img_right" />
                             <h2>Styre og r&aring;d</h2>
                             <p>
 								R&aring;det er Studenterhjemmets &oslash;verste

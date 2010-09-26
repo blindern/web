@@ -22,14 +22,12 @@ echo '
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'
-		<div id="contentContainer">
-			<div id="content">
-				'.bs_side::$content.'
-				<div id="content_clear"></div>
-			</div>
+		<div id="content">
+			'.bs_side::$content.'
+			<div id="content_clear"></div>
 		</div>
 		<div id="footer">
-			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').'</p>
+			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').' | <a href="'.bs_side::$pagedata->doc_path.'/administrasjonen/om_nettsidene">Hjemmesideoppmann</a></p>
 		</div>
 	</div>
 

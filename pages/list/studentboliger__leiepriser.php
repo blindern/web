@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Leiepriser"); ?>
 							<h1>Leiepriser h&oslash;stsemesteret 2010</h1>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" width="200" height="150" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" class="img_right" />
 							<h2>Om Leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,
@@ -27,15 +27,15 @@
 									<td><u>En av f&oslash;lgende</u></td>
 								</tr>
 								<tr>
-									<td>&nbsp;&nbsp;&nbsp;&nbsp;Enkeltrom:</td>
+									<td class="td_indent">Enkeltrom:</td>
 									<td>5800,-</td>
 								</tr>
 								<tr>
-									<td>&nbsp;&nbsp;&nbsp;&nbsp;Dobbeltrom:</td>
+									<td class="td_indent">Dobbeltrom:</td>
 									<td>5460,-</td>
 								</tr>
 								<tr>
-									<td>&nbsp;&nbsp;&nbsp;&nbsp;Kombinasjonsrom:</td>
+									<td class="td_indent">Kombinasjonsrom:</td>
 									<td>5675,-</td>
 								</tr>
 								<tr>
@@ -43,19 +43,19 @@
 									<td><u>Alle de f&oslash;lgende</u></td>
 								</tr>
 								<tr>
-									<td>Vaskeriavgift:</td>
+									<td class="td_indent">Vaskeriavgift:</td>
 									<td>20,-</td>
 								</tr>
 								<tr>
-									<td>Telefonavgift:</td>
+									<td class="td_indent">Telefonavgift:</td>
 									<td>35,-</td>
 								</tr>
 								<tr>
-									<td>Foreningsavgift:</td>
+									<td class="td_indent">Foreningsavgift:</td>
 									<td>25,-</td>
 								</tr>
 								<tr>
-									<td>Dataavgift:</td>
+									<td class="td_indent">Dataavgift:</td>
 									<td>20,-</td>
 								</tr>
 								<tr>

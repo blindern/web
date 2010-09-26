@@ -23,7 +23,7 @@ Foreninger
 	foreninger/tradisjoner	Tradisjoner
 	foreninger/arrangementplan	Arrangementplan
 
-Administrasion
+Administrasjon
 	administrasjonen	Kontakt administrasjonen
 	administrasjonen/ansatte	Ansatte
 	administrasjonen/om_nettsidene	Om nettsidene

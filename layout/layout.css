@@ -1,24 +1,29 @@
 /** {
 	margin: 0;
-	padding:0;
+	padding: 0;
 }*/
 
 html, body {
 	margin: 0;
 	padding: 0;
 }
+html {
+	 overflow-y: scroll;
+}
 
 #container {
+	width: 900px;
+	
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	width: 900px;
+	background-color: #DDD;
 }
 
 #header {
 	height: 210px;
 	position: relative;
-	background: url(../graphics/layout/toppbilde2.jpg) no-repeat;
+	background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
 }
 #header h1 {
 	/*background: url(../graphics/layout/toppbilde_tekst.png) no-repeat;*/
@@ -35,45 +40,42 @@ html, body {
 
 /** hovedmenyen */
 #menu_main {
-	background-color: #333;
-	text-align:center;
+	background: #333 url(../graphics/layout/menu_bg.png) repeat-x center center;
+	/*text-align: center;*/
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 0;
 	overflow: hidden;
 	line-height: 20px;
 }
 
 #menu_main li {
-	display: inline;
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-#menu_main li:before {
-	content: " -";
-	padding-left: 10px;
-	visibility: hidden;
-}
-#menu_main li:first-child:before {
-	content: "";
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 }
 #menu_main li.activesub a {
 	/*text-decoration: underline;*/
-	background-color: #555;
-	padding: 2px 2px;
-	margin: 1px -2px;
+	background-color: #DDD;
+	color: #333;
+	/*padding: 2px 2px;
+	margin: 1px -2px;*/
 	
-	-moz-border-radius: 3px;
+	/*-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 3px;*/
 }
 
-#menu_main a, #menu_main {
+#menu_main a {
+	display: block;
 	color: #EEE;
 	font-size: 16px;
 	text-decoration: none;
-	font-style: italic;
-	padding: 3px 0;
+	padding: 10px;
+}
+#menu_main li:first-child a {
+	padding-left: 20px;
 }
 #menu_main a:hover {
 	text-decoration: underline;
@@ -81,8 +83,8 @@ html, body {
 
 /** undermenyen */
 /*#menu_sub_wrap {
-	background-color:#cecece;
-	width:150px;
+	background-color: #cecece;
+	width: 150px;
 	float: left;
 
 	padding: 4px;
@@ -94,15 +96,15 @@ html, body {
 }*/
 #menu_sub {
 	background-color: #DDD;
-	text-align: center;
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	
 	margin: 0 0 -10px 0;
-	padding: 8px 0 0;
+	padding: 8px 0 0 10px;
 	
 	overflow: hidden;
 }
 #menu_sub li {
-	display: inline;
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -115,13 +117,13 @@ html, body {
 }*/
 
 #menu_sub a {
-	background-color: #444;
+	background: #444 url(../graphics/layout/menu_bg.png) repeat-x top;
+	
 	color: #FFF;
 	font-size: 14px;
 	text-decoration: none;
-	font-style: italic;
-	margin: 0 1px;
-	padding: 4px 6px;
+	margin-right: 5px;
+	padding: 4px 10px;
 	
 	line-height: 25px;
 	
@@ -131,9 +133,10 @@ html, body {
 }
 #menu_sub .active a, #menu_sub a:hover {
 	background-color: #FFF;
+	background-image: none;
 	color: #222;
-	border-bottom: 1px solid #EEE;
-	padding-bottom: 3px;
+	/*border-bottom: 1px solid #EEE;*/
+	/*padding-bottom: 3px;*/
 }
 #menu_sub a:hover {
 	text-decoration: underline;
@@ -141,34 +144,23 @@ html, body {
 
 
 
-#contentContainer {
-	background-color: #DDD;
-	padding-top:10px;
-	padding-left:10px;
-	padding-right: 10px;
-}
-
-#content_clear { clear: both }
-
 #content {
-	padding:10px;
-	margin:0;
-	width:590px;
-	background-color:white;
-	float:right;
-
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
+	padding: 10px;
+	margin: 10px 10px 0 10px;
+	background-color: #FFF;
+	
+	-moz-border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
 }
-/*.contentFullsize */#content {
-	float: none;
-	width: auto;
-}
-/*#content*/ img {
+#content p { max-width: 600px }
+#content ul { max-width: 570px }
+img {
 	border: 1px solid #000;
 	margin: 5px;
 }
+#content_clear { clear: both }
+
 
 .img_right {
 	float: right;
@@ -179,9 +171,8 @@ html, body {
 }
 
 #footer {
-	background-color:#cecece;
-	text-align:center;
-
+	background-color: #cecece;
+	text-align: center;
 	overflow: hidden;
 }
 #footer p { margin: 3px 0 }
@@ -189,7 +180,7 @@ html, body {
 body {
 	background: #A8A8A8 url(../graphics/layout/Athene-backgr2.gif) repeat;
 	font-size: 14px;
-	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-family: Arial;
 	line-height: 1.4em;
 	color: #222;
 }
@@ -213,7 +204,7 @@ h2 { margin: 0 }
 
 #menu_sub h1, h2, h3, legend {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
-	font-size:13px;
+	font-size: 13px;
 }
 
 h3 {
@@ -235,7 +226,8 @@ dl dd {
 }
 
 ul {
-	margin-top: 0;
+	margin: 0 0 10px;
+	padding: 0 0 0 30px;
 }
 ul li {
 	margin: 3px 0;
@@ -255,6 +247,7 @@ ul.spaced li {
 .subsection .subimg {
 	float: right;
 	clear: right;
+	margin-right: 0;
 }
 .subsection.subimgleft .subimg {
 	float: left;
@@ -263,7 +256,7 @@ ul.spaced li {
 }
 
 
-/* Administrasjon */
+/** Administrasjon */
 .adm_kontakt dt {
 	font-weight: normal;
 	margin-right: 0.5em;
@@ -288,25 +281,28 @@ ul.spaced li {
 }
 
 /* Ansatte */
+#ansatte h2 {
+	margin-top: 1.5em;
+}
 .ansatteFrame, .ansatteFrame2 {
 	overflow: hidden;
-	margin-bottom: 1.5em;
+}
+.ansatteFrame2 {
+	margin-left: 30px;
+	padding-left: 10px;
+	max-width: 560px;
 }
 .ansatteFrame img {
 	float: right;
 }
 #content .ansatteFrame2 img {
 	float: right;
-	margin-right: 40px;
-}
-#content /*.ansatteFrame2*/ h2, #content h3 {
-	/*margin-bottom: 5px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #EEE;*/
 }
 .ansatte_info {
-	margin-left: 40px;
 	overflow: hidden;
+}
+.ansatteFrame2:hover {
+	background-color: #EEE;
 }
 .ansatteFrame2 dl {
 	margin: 1em 0;
@@ -323,10 +319,10 @@ ul.spaced li {
 }
 
 
-/*Tabell for leiepriser*/
+/** Tabell for leiepriser */
 .leiepriser {
 	border: 1px solid black;
-	border-collapse:collapse;
+	border-collapse: collapse;
 	width: 54%;
 	margin-bottom: 1em;
 }
@@ -340,8 +336,9 @@ ul.spaced li {
 	border: 1px solid black;
 	padding: 2px;
 }
+.leiepriser .td_indent { padding-left: 20px }
 .roed {
-	background-color:red;
+	background-color: red;
 }
 
 /* Arrangementsplan */
@@ -511,7 +508,7 @@ ul.arrangementer li {
 #omvisning_next {
 	background-color: #E5E5E5;
 	text-decoration: none;
-	padding: 5px;
+	padding: 5px 5px 4px;
 	border: 2px solid #DDD;
 	cursor: pointer;
 	opacity: 0.75;
@@ -587,3 +584,9 @@ ul.arrangementer li {
 #omvisning_bilder .omvisning_aktiv, #omvisning_bilder .omvisning_aktiv:hover {
 	background-color: #3388DD;
 }
+#content #omvisning_bilde_w p { max-width: none }
+
+/** Sidekart */
+#sitemap li { margin: 10px 0 0 }
+#sitemap ul { margin-top: 3px }
+#sitemap li ul li { margin: 0 }

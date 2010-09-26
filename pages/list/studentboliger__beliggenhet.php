@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Beliggenhet"); ?>
 							<h1>Beliggenhet</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_stort.jpg" width="213" height="218" border="1" align="right">
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_stort.jpg" class="img_right" />
                           	<h2>Sentralt i Oslo</h2>
 							<p>
                             	Blindern Studenterhjem ligger sentralt i Oslo. Stedet

@@ -7,7 +7,7 @@ $thisYear = date("Y");
 ?>
 
 							<h1>Hvem b&oslash;r s&oslash;ke</h1>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/paerealle.jpg" width="200" height="125" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/paerealle.jpg" class="img_right" />
 							<h2>Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?></h2>
 							<p>
                             	Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?> skjer
@@ -41,7 +41,7 @@ $thisYear = date("Y");
                             </p>
 
                             <h2>Et sosialt engasjement</h2>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/glade.jpg" width="242" height="161" border="1" align="right">
+                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/glade.jpg" class="img_right" />
 							<p>
                             	Noe av det mest unike ved Blindern Studenterhjem er
                             	det sosiale milj&oslash;et, med en rekke arrangementer

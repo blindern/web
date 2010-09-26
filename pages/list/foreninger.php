@@ -119,35 +119,40 @@
 								</a></li>
 							</ul>
 							
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" width="218" height="145" border="1" align="right">
-							<h2>Idrettsforeningen ved Blindern Studenterhjem (IFBS)</h2>
-							<p>
-								Dette er BS' idrettsforening. Deres oppgaver
-								er &aring; organisere turer, idrettsarrangementer
-								og &aring; holde orden i gymsalen. Blant annet blir
-								det &aring;rlig arrangert tur til Hemsedal i midten
-								av v&aring;rsemesteret.
-							</p>
-
-							<h2 class="clear">Blindern Bad og Badstu forening (BBB)</h2>
-							<p>
-								Denne ordenen ble startet i 1986 for &aring; fremme
-								psykisk og fysisk velv&aelig;re blant Blindern Studenterhjems
-								gutter. Det er opptak til foreningen en gang i semesteret,
-								og de som blir valgt ut blir satt p&aring; pr&oslash;ve
-								en hel kveld. N&aring;r man f&oslash;rst er blitt
-								medlem best&aring;r stort sett aktivitetene i &aring;
-								sitte i badstuen, drikke &oslash;l og nyte et &aring;ndelig
-								broderskap som varer livet ut.
-							</p>
-
-							<h2>Pigefaarsamlingen</h2>
-							<p>
-								Pigefaarsamlingen ble startet opp i 1992, og hensikten
-								var &aring; samle jentene p&aring; studenterhjemmet,
-								ved &aring; arrangere diverse sammenkomster og utflukter.
-							</p>
+							<div class="subsection">
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" class="subimg" />
+								<h2>Idrettsforeningen ved Blindern Studenterhjem (IFBS)</h2>
+								<p>
+									Dette er BS' idrettsforening. Deres oppgaver
+									er &aring; organisere turer, idrettsarrangementer
+									og &aring; holde orden i gymsalen. Blant annet blir
+									det &aring;rlig arrangert tur til Hemsedal i midten
+									av v&aring;rsemesteret.
+								</p>
+							</div>
 							
+							<div class="subsection">
+								<h2 class="clear">Blindern Bad og Badstu forening (BBB)</h2>
+								<p>
+									Denne ordenen ble startet i 1986 for &aring; fremme
+									psykisk og fysisk velv&aelig;re blant Blindern Studenterhjems
+									gutter. Det er opptak til foreningen en gang i semesteret,
+									og de som blir valgt ut blir satt p&aring; pr&oslash;ve
+									en hel kveld. N&aring;r man f&oslash;rst er blitt
+									medlem best&aring;r stort sett aktivitetene i &aring;
+									sitte i badstuen, drikke &oslash;l og nyte et &aring;ndelig
+									broderskap som varer livet ut.
+								</p>
+							</div>
+							
+							<div class="subsection">
+								<h2>Pigefaarsamlingen</h2>
+								<p>
+									Pigefaarsamlingen ble startet opp i 1992, og hensikten
+									var &aring; samle jentene p&aring; studenterhjemmet,
+									ved &aring; arrangere diverse sammenkomster og utflukter.
+								</p>
+							</div>
 <?php
 
 bs_side::$head .= '

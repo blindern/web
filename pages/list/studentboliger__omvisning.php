@@ -224,7 +224,6 @@ window.addEvent("domready", function()
 		{
 			$("omvisning_bilde_inactive").setStyle("display", "");
 			$("omvisning_bilde_w").addClass("omvisning_bilde_skjult");
-			$("contentContainer").removeClass("contentFullsize");
 			if (id) window.HM.remove("img");
 			
 			if (pa) pa.goto(-30);
@@ -234,7 +233,6 @@ window.addEvent("domready", function()
 		
 		$$("#omvisning_bilder p").removeClass("omvisning_aktiv");
 		$("omvisning_bilde_inactive").setStyle("display", "none");
-		$("contentContainer").addClass("contentFullsize");
 		
 		var c = $("omvisning_bilde");
 		c.empty().getParent().removeClass("omvisning_bilde_skjult");
