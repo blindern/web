@@ -118,7 +118,7 @@
 									cHorus Buchus - Opp&aring; kauk&aring;sen (mp3)
 								</a></li>
 							</ul>
-
+							
 							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" width="218" height="145" border="1" align="right">
 							<h2>Idrettsforeningen ved Blindern Studenterhjem (IFBS)</h2>
 							<p>
@@ -147,3 +147,23 @@
 								var &aring; samle jentene p&aring; studenterhjemmet,
 								ved &aring; arrangere diverse sammenkomster og utflukter.
 							</p>
+							
+<?php
+
+bs_side::$head .= '
+ 	<script type="text/javascript" src="/lib/kaltura-html5player-widget/jquery-1.4.2.min.js"></script> 
+	<style type="text/css"> 
+    	@import url("/lib/kaltura-html5player-widget/skins/jquery.ui.themes/redmond/jquery-ui-1.7.2.css");
+	</style>  
+	<style type="text/css"> 
+		@import url("/lib/kaltura-html5player-widget/mwEmbed-player-static.css");
+	</style>	
+	<script type="text/javascript" src="/lib/kaltura-html5player-widget/mwEmbed-player-static.js" ></script>';
+
+?>
+							<h2>Olav Trygvason fremført av cHorus Buchus på Bukkeballet våren 2010</h2>
+							<div style="margin: 20px">
+								<video id="vid1" poster="" width="100%">
+									<source src="<?php echo bs_side::$pagedata->doc_path; ?>/10150138573435697_26751.mp4" />
+								</video>
+							</div>
