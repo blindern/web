@@ -163,7 +163,7 @@ bs_side::$head .= '
 ?>
 							<h2>Olav Trygvason fremført av cHorus Buchus på Bukkeballet våren 2010</h2>
 							<div style="margin: 20px">
-								<video id="vid1" poster="" width="550" height="309">
+								<video id="vid1" poster="" width="830" height="466">
 									<source src="<?php echo bs_side::$pagedata->doc_path; ?>/10150138573435697_26751.mp4" />
 								</video>
 							</div>

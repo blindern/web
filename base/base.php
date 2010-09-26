@@ -170,7 +170,11 @@ class bs_side
 		
 		foreach (self::$menu_main_list as $key => $item)
 		{
-			$highlight = $key == $category_active ? ' class="active"' : '';
+			$highlight = $category_active == $key
+				? ' class="active activesub"'
+				: (isset(self::$menu_all[$key][1][$category_active])
+					? ' class="activesub"'
+					: '');
 			if ($key == "index") $key = "";
 			
 			self::$menu_main .= '
@@ -183,7 +187,7 @@ class bs_side
 	
 	protected static function menu_add($category, $category_first, $subs, $active)
 	{
-		self::$menu_all[] = array(
+		self::$menu_all[$category_first] = array(
 			$category,
 			$subs
 		);
@@ -194,7 +198,6 @@ class bs_side
 		if ($active)
 		{
 			self::$menu_sub = '
-		<p id="active_page">'.htmlspecialchars($category).'</p>
 		<ul id="menu_sub">';
 			
 			foreach ($subs as $key => $item)

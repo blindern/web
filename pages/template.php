@@ -12,22 +12,21 @@ echo '
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="'.bs_side::$pagedata->doc_path.'/"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a>
-		</div>
-		'.bs_side::$menu_main.'
-		<div id="contentContainer"'.(bs_side::$no_extra_col ? ' class="contentFullsize"' : '').'>
-			<div id="content">
-				'.bs_side::$content.'
-			</div>
-			<div id="menu_sub_wrap">
-				'.bs_side::$menu_sub.'
-			</div>
+			<h1><a href="'.bs_side::$pagedata->doc_path.'/"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a></h1>
+			
 			<div class="ledigeplasser">
 				<h2>Ledige plasser i høst</h2>
 				<p>Vi har fremdeles ledige plasser i høst.</p>
 				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/hvem_bor_soke/sok_om_plass">elektronisk søknad</a> som blir behandlet fortløpende!</p>
 			</div>
-			<div id="content_clear"></div>
+		</div>
+		'.bs_side::$menu_main.'
+		'.bs_side::$menu_sub.'
+		<div id="contentContainer">
+			<div id="content">
+				'.bs_side::$content.'
+				<div id="content_clear"></div>
+			</div>
 		</div>
 		<div id="footer">
 			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').'</p>
