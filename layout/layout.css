@@ -1,14 +1,16 @@
-/** {
-	margin: 0;
-	padding: 0;
-}*/
-
 html, body {
 	margin: 0;
 	padding: 0;
 }
 html {
 	 overflow-y: scroll;
+}
+body {
+	background: #A8A8A8 url(../graphics/layout/Athene-backgr2.gif) repeat;
+	font-size: 14px;
+	font-family: Arial;
+	line-height: 1.4em;
+	color: #222;
 }
 
 #container {
@@ -26,7 +28,6 @@ html {
 	background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
 }
 #header h1 {
-	/*background: url(../graphics/layout/toppbilde_tekst.png) no-repeat;*/
 	height: 210px;
 	margin: 0;
 }
@@ -38,7 +39,7 @@ html {
 	display: none;
 }
 
-/** hovedmenyen */
+/* hovedmenyen */
 #menu_main {
 	background: #333 url(../graphics/layout/menu_bg.png) repeat-x center center;
 	/*text-align: center;*/
@@ -47,7 +48,6 @@ html {
 	overflow: hidden;
 	line-height: 20px;
 }
-
 #menu_main li {
 	float: left;
 	list-style: none;
@@ -56,17 +56,9 @@ html {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 }
 #menu_main li.activesub a {
-	/*text-decoration: underline;*/
 	background-color: #DDD;
 	color: #333;
-	/*padding: 2px 2px;
-	margin: 1px -2px;*/
-	
-	/*-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;*/
 }
-
 #menu_main a {
 	display: block;
 	color: #EEE;
@@ -81,19 +73,7 @@ html {
 	text-decoration: underline;
 }
 
-/** undermenyen */
-/*#menu_sub_wrap {
-	background-color: #cecece;
-	width: 150px;
-	float: left;
-
-	padding: 4px;
-	margin-bottom: 10px;
-
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-}*/
+/* undermenyen */
 #menu_sub {
 	background-color: #DDD;
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
@@ -109,23 +89,17 @@ html {
 	margin: 0;
 	padding: 0;
 }
-/*#menu_sub li:before {
-	content: " - ";
-}
-#menu_sub li:first-child:before {
-	content: "";
-}*/
-
 #menu_sub a {
+	display: block;
 	background: #444 url(../graphics/layout/menu_bg.png) repeat-x top;
 	
 	color: #FFF;
 	font-size: 14px;
 	text-decoration: none;
 	margin-right: 5px;
-	padding: 4px 10px;
+	padding: 5px 10px;
 	
-	line-height: 25px;
+	line-height: 15px;
 	
 	-moz-border-radius: 3px 3px 0 0;
 	-webkit-border-radius: 3px 3px 0 0;
@@ -135,8 +109,6 @@ html {
 	background-color: #FFF;
 	background-image: none;
 	color: #222;
-	/*border-bottom: 1px solid #EEE;*/
-	/*padding-bottom: 3px;*/
 }
 #menu_sub a:hover {
 	text-decoration: underline;
@@ -155,13 +127,12 @@ html {
 }
 #content p { max-width: 600px }
 #content ul { max-width: 570px }
+#content_clear { clear: both }
+
 img {
 	border: 1px solid #000;
 	margin: 5px;
 }
-#content_clear { clear: both }
-
-
 .img_right {
 	float: right;
 	margin: 5px 0 5px 5px;
@@ -177,17 +148,9 @@ img {
 }
 #footer p { margin: 3px 0 }
 
-body {
-	background: #A8A8A8 url(../graphics/layout/Athene-backgr2.gif) repeat;
-	font-size: 14px;
-	font-family: Arial;
-	line-height: 1.4em;
-	color: #222;
-}
 p {
 	margin: 0 0 13px 0;
 }
-
 h1 {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	font-size: 24px;
@@ -199,17 +162,12 @@ h2 { margin: 0 }
 #content h2, #content h3 {
 	margin: 15px 0 0 0;
 }
-
-.clear { clear: both }
-
 #menu_sub h1, h2, h3, legend {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	font-size: 13px;
 }
 
-h3 {
-
-}
+.clear { clear: both }
 
 dl {
 	margin: 0 0 1em 0;
@@ -280,7 +238,8 @@ ul.spaced li {
 	margin: 0;
 }
 
-/* Ansatte */
+
+/** Ansatte */
 #ansatte h2 {
 	margin-top: 1.5em;
 }
@@ -341,7 +300,8 @@ ul.spaced li {
 	background-color: red;
 }
 
-/* Arrangementsplan */
+
+/** Arrangementsplan */
 dl.arrangementer {
 	margin: 1em 0;
 	line-height: 1.3em;
@@ -363,7 +323,8 @@ ul.arrangementer li {
 	margin-left: 2em;
 }
 
-/* Hyttestyret */
+
+/** Hyttestyret */
 .hyttestyret_kalender {
 	width: 100%;
 	border: 2px solid #DDD;
@@ -424,7 +385,8 @@ ul.arrangementer li {
 	margin-right: 5px;
 }
 
-/* Ledige plasser */
+
+/** Ledige plasser */
 .ledigeplasser {
 	position: absolute;
 	right: 20px;
@@ -450,7 +412,7 @@ ul.arrangementer li {
 .ledigeplasser p { margin: 10px 0 0 }
 
 
-/* Søknadsskjema for plass på BS */
+/** Søknadsskjema for plass på BS */
 .soknadsskjema {
 	border: none;
 	margin: 0;
@@ -489,7 +451,8 @@ ul.arrangementer li {
 	color: #FF0000;
 }
 
-/* Bildegalleri */
+
+/** Bildegalleri */
 #omvisning_bilde_w {
 	min-height: 700px;
 }
@@ -522,8 +485,6 @@ ul.arrangementer li {
 	border-color: #CCC;
 	opacity: 1;
 }
-
-
 
 #omvisning_bilde {
 	background-color: #F3F3F3;
