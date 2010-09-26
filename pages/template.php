@@ -15,7 +15,7 @@ echo '
 			<a href="'.bs_side::$pagedata->doc_path.'/"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a>
 		</div>
 		'.bs_side::$menu_main.'
-		<div id="contentContainer">
+		<div id="contentContainer"'.(bs_side::$no_extra_col ? ' class="contentFullsize"' : '').'>
 			<div id="content">
 				'.bs_side::$content.'
 			</div>
@@ -30,7 +30,7 @@ echo '
 			<div id="content_clear"></div>
 		</div>
 		<div id="footer">
-			<p>Blindern Studenterhjem 2010</p>
+			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').'</p>
 		</div>
 	</div>
 

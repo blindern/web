@@ -52,11 +52,13 @@ class bs_side
 	public static $head;
 	public static $title = "Blindern Studenterhjem - Et godt hjem for studenter";
 	protected static $title_format = "%s - Blindern Studenterhjem";
+	public static $no_extra_col = false;
 	
 	public static $menu_main;
 	public static $menu_main_list = array();
 	public static $menu_sub;
 	public static $menu_active = "index";
+	public static $menu_all = array();
 	
 	public static function main()
 	{
@@ -114,8 +116,11 @@ class bs_side
 		require "pages/template.php";
 	}
 	
-	protected static function load_menu()
+	public static function load_menu()
 	{
+		// allerede lastet inn?
+		if (self::$menu_main) return;
+		
 		$data = file("pages/map.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		if (!$data) throw new Exception("Mangler menykartet.");
 		
@@ -178,6 +183,11 @@ class bs_side
 	
 	protected static function menu_add($category, $category_first, $subs, $active)
 	{
+		self::$menu_all[] = array(
+			$category,
+			$subs
+		);
+		
 		self::$menu_main_list[$category_first] = $category;
 		
 		// mekk html for undermeny

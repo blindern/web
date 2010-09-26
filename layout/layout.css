@@ -55,8 +55,8 @@ html, body {
 
 #menu_main a, #menu_main a:visited, #menu_main {
 	color:white;
-	font-family:Times new roman;
-	font-size: 17px;
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-size: 16px;
 	text-decoration:none;
 	font-style:italic;
 	padding: 3px 0;
@@ -151,7 +151,7 @@ html, body {
 	
 	color: black;
 	
-	font-size: 11px;
+	font-size: 12px;
 }
 #menu_sub a:before {
 	content: "» ";
@@ -172,16 +172,17 @@ html, body {
 #footer p { margin: 3px 0 }
 
 body {
-	font-size: 13px;
-	font-family: Arial;
-	/*line-height: 1.4em;*/
+	font-size: 14px;
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	line-height: 1.4em;
+	color: #222;
 }
 p {
 	margin: 0 0 13px 0;
 }
 
 h1 {
-	font-family: arial;
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	font-size:20px;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -195,7 +196,7 @@ h2 { margin: 0 }
 .clear { clear: both }
 
 #menu_sub h1, h2, h3, legend {
-	font-family: arial;
+	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	font-size:13px;
 }
 
