@@ -27,10 +27,9 @@ echo '
 			<div id="content_clear"></div>
 		</div>
 		<div id="footer">
-			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').' | <a href="'.bs_side::$pagedata->doc_path.'/administrasjonen/om_nettsidene">Hjemmesideoppmann</a></p>
+			<p>Blindern Studenterhjem 2010'.(bs_side::$menu_active != "sitemap" ? ' | <a href="'.bs_side::$pagedata->doc_path.'/sitemap">Nettstedskart</a>' : '').'</p>
 		</div>
 	</div>
-
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
