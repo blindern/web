@@ -79,7 +79,7 @@ body {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
 	
 	margin: 0 0 -10px 0;
-	padding: 8px 0 0 10px;
+	padding: 10px 0 0 10px;
 	
 	overflow: hidden;
 }
@@ -117,7 +117,7 @@ body {
 
 
 #content {
-	padding: 10px;
+	padding: 10px 10px 0;
 	margin: 10px 10px 0 10px;
 	background-color: #FFF;
 	
@@ -125,9 +125,14 @@ body {
 	-webkit-border-radius: 0 5px 0 0;
 	border-radius: 0 5px 0 0;
 }
+#content.content_no_sub {
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
 #content p { max-width: 600px }
 #content ul { max-width: 570px }
-#content_clear { clear: both }
+#content_clear { clear: both; height: 1px; margin-top: -4px }
 
 img {
 	border: 1px solid #000;
@@ -374,7 +379,7 @@ ul.arrangementer li {
 	font-weight: bold;
 }
 .hyttestyret_legend {
-	margin: 10px 15px 0 0;
+	margin: 10px 15px 10px 0;
 	float: right;
 }
 .hyttestyret_legend span {
@@ -435,11 +440,12 @@ ul.arrangementer li {
 	margin-right: 2px;
 }
 .soknadsskjema textarea {
-	width: 80%;
+	width: 100%;
 }
 .soknadsskjema .soknad_submit {
 	text-align: center;
 	clear: both;
+	margin-bottom: 20px;
 }
 
 .soknad_feil_info {

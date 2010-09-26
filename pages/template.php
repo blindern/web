@@ -22,7 +22,7 @@ echo '
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'
-		<div id="content">
+		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub"' : '').'>
 			'.bs_side::$content.'
 			<div id="content_clear"></div>
 		</div>
