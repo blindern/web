@@ -14,7 +14,6 @@ switch (bs_side::$lang)
 
 
 bs_side::load_menu();
-bs_side::$no_extra_col = true;
 
 echo '
 <h1>'.$title.'</h1>

@@ -207,6 +207,8 @@ window.addEvent("domready", function()
 		window.HM.set("img", this.get("id").substring(4));
 		prepare(get_upcoming(this));
 		
+		(function(){$("omvisning_bilde").getParent().goto(-10);}).delay(1);
+		
 		e.stop();
 	});
 	$("omvisning_back").addEvent("click", function(){ window.HM.remove("img"); }).addEvent("mousedown", function(e){e.stop()});
@@ -239,7 +241,6 @@ window.addEvent("domready", function()
 		
 		prepare(p).inject(c);
 		new Element("p", {text: p.getElement("img").get("alt")}).inject(c);
-		//c.getParent().goto(-10);
 		
 		// sett thumbnail som aktivt
 		p.addClass("omvisning_aktiv");
@@ -259,8 +260,10 @@ window.addEvent("domready", function()
 		else if (event.code == 37 || event.code == 39)
 		{
 			var t = $(event.target).get("tag");
-			if (t != "html" && t != "body") return;
+			if (t == "input" || t == "textarea") return;
 			rotate_img(event.code == 37, event);
+			
+			event.stop();
 		}
 	});
 	

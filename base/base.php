@@ -51,21 +51,29 @@ class bs_side
 	public static $content;
 	public static $head;
 	public static $title = null;
+	
+	public static $description = null;
+	public static $description_default = array(
+		"en" => "In a stunning gardens located at Blindern, near the University of Oslo, Blindern Studenterhjem offer a rich homeshare for 220 students.",
+		"other" => "I et praktfullt beliggende hageanlegg på Blindern, like ved Universitetet i Oslo, kan Blindern Studenterhjem tilby et rikt bofelleskap for 220 studenter."
+	);
+	
 	public static $lang = "no";
 	public static $lang_crosslink = array();
+	
 	protected static $keywords = array(
-		"en" => "Blindern Studenterhjem, student, bolig, studenthybel, blindern, oslo",
-		"other" => "Blindern Studenterhjem, student, bolig, studenthybel, blindern, oslo"
+		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
+		"other" => "Blindern Studenterhjem, studentbolig, studenthybel, student, bolig, blindern, oslo"
 	);
+	
 	protected static $title_default = array(
-		"en" => "Blindern Studenterhjem - Et godt hjem for studenter",
+		"en" => "Blindern Studenterhjem - A good home for students",
 		"other" => "Blindern Studenterhjem - Et godt hjem for studenter"
 	);
 	protected static $title_format = array(
 		"en" => "%s - Blindern Studenterhjem",
 		"other" => "%s - Blindern Studenterhjem"
 	);
-	public static $no_extra_col = false;
 	
 	public static $menu_main;
 	public static $menu_main_list = array();
@@ -299,6 +307,17 @@ class bs_side
 		
 		if (isset(self::$title_default[self::$lang])) return self::$title_default[self::$lang];
 		return self::$title_default['other'];
+	}
+	
+	/**
+	 * Hent ut beskrivelse
+	 */
+	public static function get_description()
+	{
+		if (self::$description) return self::$description;
+		
+		if (isset(self::$description_default[self::$lang])) return self::$description_default[self::$lang];
+		return self::$description_default['other'];
 	}
 }
 

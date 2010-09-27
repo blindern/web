@@ -7,12 +7,25 @@ echo '
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <title>'.bs_side::get_title().'</title>
 <meta name="keywords" content="'.bs_side::get_keywords().'" />
+<meta name="description" content="'.bs_side::get_description().'" />
 <link rel="stylesheet" type="text/css" href="'.bs_side::$pagedata->doc_path.'/layout/layout.css" />'.bs_side::$head.'
 </head>
-<body>
+<body class="lang_'.bs_side::$lang.'">
 	<div id="container">
 		<div id="header">
-			<h1><a href="'.bs_side::$pagedata->doc_path.'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a></h1>
+			<h1><a href="'.bs_side::$pagedata->doc_path.'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />';
+
+switch (bs_side::$lang)
+{
+	case "en":
+		echo 'A good home for students';
+	break;
+	
+	default:
+		echo 'Et godt hjem for studenter';
+}
+
+echo '</span></a></h1>
 			<div class="ledigeplasser">';
 
 switch (bs_side::$lang)

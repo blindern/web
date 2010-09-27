@@ -28,4 +28,4 @@ echo '
 					student home history and structure. You can also read about different student associations.</p>
 				<p><b>Please note</b> that the english version of this webpage is very limited. To get all information we recommend
 					using <a href="http://translate.google.com/translate?sl=no&tl=en&u=http://blindern-studenterhjem.no/">Google Translate to translate the Norwegian site into English</a>.</p>
-				<p>Do not hesitate to <a href="administration">contact us</a> if you have any questions.</p>';
+				<p>Do not hesitate to <a href="en/administration">contact us</a> if you have any questions.</p>';

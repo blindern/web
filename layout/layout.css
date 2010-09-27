@@ -27,6 +27,9 @@ body {
 	position: relative;
 	background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
 }
+.lang_en #header {
+	background-image: url(../graphics/layout/toppbilde_en.jpg);
+}
 #header h1 {
 	height: 210px;
 	margin: 0;
