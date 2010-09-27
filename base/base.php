@@ -50,8 +50,21 @@ class bs_side
 	
 	public static $content;
 	public static $head;
-	public static $title = "Blindern Studenterhjem - Et godt hjem for studenter";
-	protected static $title_format = "%s - Blindern Studenterhjem";
+	public static $title = null;
+	public static $lang = "no";
+	public static $lang_crosslink = array();
+	protected static $keywords = array(
+		"en" => "Blindern Studenterhjem, student, bolig, studenthybel, blindern, oslo",
+		"other" => "Blindern Studenterhjem, student, bolig, studenthybel, blindern, oslo"
+	);
+	protected static $title_default = array(
+		"en" => "Blindern Studenterhjem - Et godt hjem for studenter",
+		"other" => "Blindern Studenterhjem - Et godt hjem for studenter"
+	);
+	protected static $title_format = array(
+		"en" => "%s - Blindern Studenterhjem",
+		"other" => "%s - Blindern Studenterhjem"
+	);
 	public static $no_extra_col = false;
 	
 	public static $menu_main;
@@ -121,7 +134,11 @@ class bs_side
 		// allerede lastet inn?
 		if (self::$menu_main) return;
 		
-		$data = file("pages/map.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		// filen vi skal hente fra
+		if (self::$lang == "en") $file = "pages/map_en.txt";
+		else $file = "pages/map.txt";
+		
+		$data = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		if (!$data) throw new Exception("Mangler menykartet.");
 		
 		$category = null; // teksten på kategorien
@@ -179,6 +196,23 @@ class bs_side
 			
 			self::$menu_main .= '
 			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';
+		}
+		
+		// språkvalg
+		if (self::$lang != "no")
+		{
+			$link = isset(self::$lang_crosslink['no']) ? self::$lang_crosslink['no'] : '';
+			
+			self::$menu_main .= '
+			<li class="langsel langsel_no" lang="no"><a href="'.self::$pagedata->doc_path.'/'.$link.'">På norsk</a></li>';
+		}
+		
+		if (self::$lang != "en")
+		{
+			$link = isset(self::$lang_crosslink['en']) ? self::$lang_crosslink['en'] : 'en';
+			
+			self::$menu_main .= '
+			<li class="langsel langsel_en" lang="en"><a href="'.self::$pagedata->doc_path.'/'.$link.'">In English</a></li>';
 		}
 		
 		self::$menu_main .= '
@@ -241,7 +275,30 @@ class bs_side
 	 */
 	public static function set_title($title)
 	{
-		self::$title = sprintf(self::$title_format, $title);
+		if (isset(self::$title_format[self::$lang])) $format = self::$title_format[self::$lang];
+		else $format = self::$title_format['other'];
+		
+		self::$title = sprintf($format, $title);
+	}
+	
+	/**
+	 * Hent ut nøkkelord
+	 */
+	public static function get_keywords()
+	{
+		if (isset(self::$keywords[self::$lang])) return self::$keywords[self::$lang];
+		return self::$keywords['other'];
+	}
+	
+	/**
+	 * Hent ut tittel
+	 */
+	public static function get_title()
+	{
+		if (self::$title) return self::$title;
+		
+		if (isset(self::$title_default[self::$lang])) return self::$title_default[self::$lang];
+		return self::$title_default['other'];
 	}
 }
 

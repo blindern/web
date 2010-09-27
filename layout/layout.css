@@ -39,6 +39,7 @@ body {
 	display: none;
 }
 
+
 /* hovedmenyen */
 #menu_main {
 	background: #333 url(../graphics/layout/menu_bg.png) repeat-x center center;
@@ -71,6 +72,12 @@ body {
 }
 #menu_main a:hover {
 	text-decoration: underline;
+}
+#menu_main .langsel {
+	float: right;
+}
+#menu_main .langsel:last-child a {
+	padding-right: 20px;
 }
 
 /* undermenyen */
@@ -199,6 +206,8 @@ ul li {
 ul.spaced li {
 	margin: 0.8em 0;
 }
+
+.u { text-decoration: underline }
 
 
 .subsection {

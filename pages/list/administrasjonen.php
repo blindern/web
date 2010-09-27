@@ -1,4 +1,9 @@
-<?php bs_side::set_title("Administrasjonen"); ?>
+<?php
+
+bs_side::set_title("Administrasjonen");
+bs_side::$lang_crosslink['en'] = "en/administration";
+
+?>
 							<h1>Administrasjonen</h1>
 							<p>
 								Dersom du har sp&oslash;rsm&aring;l

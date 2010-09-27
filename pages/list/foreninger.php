@@ -1,4 +1,9 @@
-<?php bs_side::set_title("Foreninger"); ?>
+<?php
+
+bs_side::set_title("Foreninger");
+bs_side::$lang_crosslink['en'] = "en/associations";
+
+?>
 							<h1>Foreninger</h1>
 							
 							<div class="subsection">

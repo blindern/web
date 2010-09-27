@@ -1,6 +1,7 @@
 <?php
 
 bs_side::set_title("Hyttestyret - Foreningen Småbruket");
+bs_side::$lang_crosslink['en'] = "en/smaabruket";
 
 class smaabruket_kalender
 {

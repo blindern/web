@@ -1,4 +1,9 @@
-<?php bs_side::set_title("Studentbolig"); ?>
+<?php
+
+bs_side::set_title("Studentbolig");
+bs_side::$lang_crosslink['en'] = "en/housing";
+
+?>
 						<h1>Studentboliger</h1>
 						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" class="img_right" />
 						<h2>Hva slags bolig tilbyr BS?</h2>
@@ -21,25 +26,25 @@
 						<h2>Hva er inkludert i husleien?</h2>
 						
 						<ul class="spaced">
-							<li><u>Rommet er fullt m&oslash;blert</u>
+							<li><span class="u">Rommet er fullt m&oslash;blert</span>
 							n&aring;r du flytter inn, men du har ogs&aring;
 							mulighet til &aring; bytte ut noen av Studenterhjemmets
 							m&oslash;bler med dine egne.</li>
 							
-							<li><u>Tilgang til Internet</u> f&aring;r
+							<li><span class="u">Tilgang til Internet</span> f&aring;r
 							alle beboere gjennom Studentbynettet. Dette er den
 							samme nettforbindelsen som Studentsamskipnaden i Oslo
 							tilbyr i sine studentbyer, og er en av de raskeste
 							tilgjengelige internettforbindelsene i landet.</li>
-							<li><u>Fasttelefon</u> finnes p&aring;
+							<li><span class="u">Fasttelefon</span> finnes p&aring;
 							alle rom. Det er gratis &aring; ringe andre beboere.
 							Dersom du bruker telefonen til &aring; ringe eksternt,
 							belastes dette automatisk p&aring; den m&aring;nedlige
 							fakturaen.</li>
-							<li><u>Str&oslash;mforbruk er inkludert i
-							den faste leieprisen.</u> Dette bidrar til
+							<li><span class="u">Str&oslash;mforbruk er inkludert i
+							den faste leieprisen.</span> Dette bidrar til
 							&aring; gi beboerne en forutsigbar &oslash;konomi.</li>
-							<li><u>Studentvaskeriet</u> gir mulighet for
+							<li><span class="u">Studentvaskeriet</span> gir mulighet for
 							vask av kl&aelig;r, senget&oslash;y og lignende.</li>
 						</ul>
 						
@@ -54,10 +59,10 @@
 							dagen hente kaffe og te fra matsalen.
 						</p>
 						<ul class="spaced">
-							<li><u>Frokostbuffeten</u> inkluderer et bredt
+							<li><span class="u">Frokostbuffeten</span> inkluderer et bredt
 							utvalg av br&oslash;d, knekkebr&oslash;d, p&aring;legg
 							og frokostblandinger, samt ulike typer melk og juice.</li>
-							<li><u>Middagen</u> som serveres hver dag er variert
+							<li><span class="u">Middagen</span> som serveres hver dag er variert
 							og n&aelig;ringsrik. Som beboer vil du i l&oslash;pet
 							av en uke f&aring; servert b&aring;de kj&oslash;tt
 							og fisk, samt et sortiment av gr&oslash;nnsaker og
@@ -66,7 +71,7 @@
 							av hamburgere, tacos, eller bugnende buffeter med
 							meksikansk eller orientalsk tema, og s&oslash;ndag
 							middag er spesielt forseggjort og inkluderer dessert.</li>
-							<li><u>Kveldsmaten</u> er ogs&aring; en buffet
+							<li><span class="u">Kveldsmaten</span> er ogs&aring; en buffet
 							som stort sett tilsvarer frokostbuffeten. og er stort
 							sett lik utvalget man har til frokostbuffeten.</li>
 						</ul>

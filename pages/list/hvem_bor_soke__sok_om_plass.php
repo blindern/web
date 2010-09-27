@@ -1,6 +1,7 @@
 <?php
 
 bs_side::set_title("Søk om plass");
+bs_side::$lang_crosslink['en'] = "en/who_can_apply/application";
 
 class bs_soknad
 {
@@ -225,7 +226,7 @@ class bs_soknad
 					<h3 style="margin-top: 0">Personalia</h3>
 					<dl>
 						<dt><label for="navn">Navn</label></dt>
-						<dd><input type="text" class="soknad_felt" name="navn" id="name" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
+						<dd><input type="text" class="soknad_felt" name="navn" id="navn" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
 						
 						<dt><label for="kjonn">Kjønn</label></dt>
 						<dd><select name="kjonn" id="kjonn">';

@@ -1,6 +1,7 @@
 <?php
 
 bs_side::set_title("Hvem bør søke?");
+bs_side::$lang_crosslink['en'] = "en/who_can_apply";
 
 $thisYear = date("Y");
 

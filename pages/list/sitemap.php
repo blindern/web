@@ -1,10 +1,23 @@
 <?php
 
+switch (bs_side::$lang)
+{
+	case "en":
+		$title = "Sitemap";
+	break;
+	
+	default:
+		$title = "Sidekart";
+		bs_side::set_title("Sidekart");
+		bs_side::$lang_crosslink['en'] = "en/sitemap";
+}
+
+
 bs_side::load_menu();
 bs_side::$no_extra_col = true;
 
 echo '
-<h1>Sidekart</h1>
+<h1>'.$title.'</h1>
 
 <ul id="sitemap">';
 
@@ -26,6 +39,12 @@ foreach (bs_side::$menu_all as $section)
 		</ul>
 	</li>';
 }
+
+if (bs_side::$lang != "no") echo '
+	<li><a href="'.bs_side::$pagedata->doc_path.'/sitemap" lang="no">På norsk</a></li>';
+
+if (bs_side::$lang != "en") echo '
+	<li><a href="'.bs_side::$pagedata->doc_path.'/en/sitemap" lang="en">In English</a></li>';
 
 echo '
 </ul>';
