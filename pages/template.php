@@ -12,7 +12,7 @@ echo '
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><a href="'.bs_side::$pagedata->doc_path.'/"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a></h1>
+			<h1><a href="'.bs_side::$pagedata->doc_path.'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />Et godt hjem for studenter</span></a></h1>
 			<div class="ledigeplasser">';
 
 switch (bs_side::$lang)
