@@ -165,11 +165,11 @@ h1 {
 }
 h2 { margin: 0 }
 #content h2, #content h3 {
-	margin: 15px 0 0 0;
+	margin: 15px 0 2px 0;
 }
 #menu_sub h1, h2, h3, legend {
 	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .clear { clear: both }
@@ -245,6 +245,9 @@ ul.spaced li {
 
 
 /** Ansatte */
+#ansatte {
+	margin-bottom: 20px;
+}
 #ansatte h2 {
 	margin-top: 1.5em;
 }
@@ -252,7 +255,7 @@ ul.spaced li {
 	overflow: hidden;
 }
 .ansatteFrame2 {
-	margin-left: 30px;
+	margin: 5px 0 5px 30px;
 	padding-left: 10px;
 	max-width: 560px;
 }
@@ -269,7 +272,7 @@ ul.spaced li {
 	background-color: #EEE;
 }
 .ansatteFrame2 dl {
-	margin: 1em 0;
+	margin: 10px 0;
 	line-height: 1.4em;
 }
 .ansatteFrame2 dt {
@@ -438,6 +441,10 @@ ul.arrangementer li {
 	float: left;
 	clear: both;
 	margin-right: 2px;
+	margin-bottom: 5px;
+}
+.soknadsskjema dd {
+	margin-bottom: 5px;
 }
 .soknadsskjema textarea {
 	width: 100%;
@@ -455,6 +462,9 @@ ul.arrangementer li {
 }
 .soknad_feil {
 	color: #FF0000;
+}
+.soknad_sendt_tekst {
+	font-family: Courier New, Courier;
 }
 
 
@@ -554,6 +564,7 @@ ul.arrangementer li {
 #content #omvisning_bilde_w p { max-width: none }
 
 /** Sidekart */
+#sitemap { margin: 20px 0 }
 #sitemap li { margin: 10px 0 0 }
 #sitemap ul { margin-top: 3px }
 #sitemap li ul li { margin: 0 }

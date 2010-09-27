@@ -169,16 +169,27 @@ class bs_soknad
 			// send søknad
 			$ret = self::send_email($data);
 			
+			$ret = self::create_html($ret);
+			
 			echo '
 		<h2>Søknad sendt</h2>
 		<p>Takk for din søknad!</p>
 		<p>Søknaden din er nå sendt, og du skal også ha mottatt en kvittering på e-posten din. Din søknad inneholdt følgende:</p>
-		<pre class="soknad_sendt_tekst">
-'.htmlspecialchars($ret).'</pre>
+		<p class="soknad_sendt_tekst">
+'.$ret.'</p>
 		<p>Dersom du skulle ha ytterligere spørsmål eller det er noe galt med søknaden, ta kontakt med oss på <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>. Svar gjerne på kvitteringen du har fått på e-post.</p>';
 			
 			self::$sent = true;
 		}
+	}
+	
+	protected static function create_html($text)
+	{
+		$text = htmlspecialchars($text, null, "UTF-8");
+		$text = str_replace("  ", "&nbsp;&nbsp;", $text);
+		$text = nl2br($text);
+		
+		return $text;
 	}
 	
 	protected static function get_error($name, $format = null)
@@ -215,7 +226,7 @@ class bs_soknad
 			<form action="" method="POST">
 				<fieldset class="soknadsskjema">
 					<legend>Søknad om plass på Blindern Studenterhjem</legend>
-					<h3>Personalia</h3>
+					<h3 style="margin-top: 0">Personalia</h3>
 					<dl>
 						<dt><label for="navn">Navn</label></dt>
 						<dd><input type=text name="navn" id="name" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
@@ -295,10 +306,10 @@ class bs_soknad
 							interesser. Dette kreves for at din søknad
 							skal tas i betraktning. Skriv ogs&aring; navn på
 							tidligere beboere eller n&aring;v&aelig;rende beboere
-							dersom du ønsker/har referanser. <!--Se tekst
+							dersom du ønsker/har referanser. * <!--Se tekst
 							om hva som legges vekt på ved søknad her.-->
 							</label><br />'.self::get_error("beskrivelse", '%s<br />').'
-						<textarea name="omperson" cols="40" rows="8" id="omperson">'.htmlspecialchars(postval("omperson")).'</textarea>*
+						<textarea name="omperson" cols="40" rows="8" id="omperson">'.htmlspecialchars(postval("omperson")).'</textarea>
 					</p>
 					
 					<p>
@@ -317,7 +328,7 @@ class bs_soknad
 	 */
 	protected static function check_phone($value)
 	{
-		return preg_match("/^\\+?[\\d]{7,}$/", $value);
+		return preg_match("/^\\+?[\\d]{7,}$/u", $value);
 	}
 	
 	protected static function check_date($value)
@@ -327,17 +338,17 @@ class bs_soknad
 	
 	protected static function check_email($value)
 	{
-		$pattern = "/^((\\\"[^\\\"\\f\\n\\r\\t\\b]+\\\")|([A-Za-z0-9_][A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*(\\.[A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*)*))@((\\[(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))\\])|(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))|((([A-Za-z0-9])(([A-Za-z0-9\\-])*([A-Za-z0-9]))?(\\.(?=[A-Za-z0-9\\-]))?)+[A-Za-z]+))$/D";
+		$pattern = "/^((\\\"[^\\\"\\f\\n\\r\\t\\b]+\\\")|([A-Za-z0-9_][A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*(\\.[A-Za-z0-9_\\!\\#\\$\\%\\&\\'\\*\\+\\-\\~\\/\\=\\?\\^\\`\\|\\{\\}]*)*))@((\\[(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))\\])|(((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9]))\\.((25[0-5])|(2[0-4][0-9])|([0-1]?[0-9]?[0-9])))|((([A-Za-z0-9])(([A-Za-z0-9\\-])*([A-Za-z0-9]))?(\\.(?=[A-Za-z0-9\\-]))?)+[A-Za-z]+))$/Du";
 		return preg_match($pattern, $value);
 	}
 	
 	protected static function send_email($data)
 	{
 		#$to = "post@blindern-studenterhjem.no";
-		$to = "henrist@henrist.net";
-		$subject = "Søknad for Blindern Studenterhjem";
+		$to = "henrist@gmail.com";
+		$subject = "=?UTF-8?B?U8O4a25hZCBmb3IgQmxpbmRlcm4gU3R1ZGVudGVyaGplbQ==?="; #Søknad for Blindern Studenterhjem
 		
-		$headers = "To: Henrik Steen <henrist@henrist.net>\r\n";
+		$headers = "To: Henrik Steen <henrist@gmail.com>\r\n";
 		$headers .= "From: {$data['name']} <{$data['email']}>\r\n";
 		$headers .= "Reply-To: {$data['email']} <{$data['email']}>\r\n";
 		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
@@ -391,7 +402,8 @@ Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 
 		$headers .= "From: Blindern Studenterhjem <post@blindern-studenterhjem.no>\r\n";
 		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 		
-		mail($data['email'], "Kvittering for søknad til Blindern Studenterhjem", $message_receipt, $headers);
+		mail($data['email'], "Kvittering for =?UTF-8?B?c8O4a25hZCB0aWwgQmxpbmRlcm4gU3R1ZGVu?=
+ =?UTF-8?B?dGVyaGplbQ==?="/*Kvittering for søknad til Blindern Studenterhjem*/, $message_receipt, $headers);
 		
 		return $message;
 	}
