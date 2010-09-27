@@ -35,7 +35,8 @@ class bs_soknad
 			"onsket_dato" => postval("onsketdato"),
 			"antall_mnd" => postval("antMnd"),
 			"beskrivelse" => postval("omperson"),
-			"annet" => postval("kommentar")
+			"annet" => postval("kommentar"),
+			"allergi" => postval("allergi")
 		);
 		foreach ($data as &$val) $val = trim($val);
 		
@@ -134,7 +135,7 @@ class bs_soknad
 		
 		if (!$addr)
 		{
-			self::$error['adresse'] = "Minst en adresse må fylles inn";
+			self::$error['hjem_adresse'] = "Minst en adresse må fylles inn";
 		}
 		
 		// kontroller ønsket dato for innflytting
@@ -142,10 +143,6 @@ class bs_soknad
 		{
 			self::$error['onsket_dato'] = "Må fylles inn";
 		}
-		#elseif (!self::check_date($data['onsket_dato']))
-		#{
-		#	self::$error['onsket_dato'] = "Ugyldig";
-		#}
 		
 		// kontroller antall måneder søknaden skal være gyldig
 		if ($data['antall_mnd'] == "")
@@ -175,8 +172,7 @@ class bs_soknad
 		<h2>Søknad sendt</h2>
 		<p>Takk for din søknad!</p>
 		<p>Søknaden din er nå sendt, og du skal også ha mottatt en kvittering på e-posten din. Din søknad inneholdt følgende:</p>
-		<p class="soknad_sendt_tekst">
-'.$ret.'</p>
+		<p class="soknad_sendt_tekst">'.$ret.'</p>
 		<p>Dersom du skulle ha ytterligere spørsmål eller det er noe galt med søknaden, ta kontakt med oss på <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>. Svar gjerne på kvitteringen du har fått på e-post.</p>';
 			
 			self::$sent = true;
@@ -229,7 +225,7 @@ class bs_soknad
 					<h3 style="margin-top: 0">Personalia</h3>
 					<dl>
 						<dt><label for="navn">Navn</label></dt>
-						<dd><input type=text name="navn" id="name" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
+						<dd><input type="text" class="soknad_felt" name="navn" id="name" value="'.htmlspecialchars(postval("navn")).'" />*'.self::get_error("name").'</dd>
 						
 						<dt><label for="kjonn">Kjønn</label></dt>
 						<dd><select name="kjonn" id="kjonn">';
@@ -246,46 +242,52 @@ class bs_soknad
 						</select>*'.self::get_error("gender").'</dd>
 						
 						<dt><label for="birth">Fødselsdato</label></dt>
-						<dd><input type="text" name="birth" id="birth" value="'.htmlspecialchars(postval("birth")).'" />*'.self::get_error("birth").'</dd>
+						<dd><input type="text" class="soknad_felt_lite" name="birth" id="birth" value="'.htmlspecialchars(postval("birth")).'" />*'.self::get_error("birth").'</dd>
 						
 						<dt><label for="mob">Mobiltelefonnr</label></dt>
-						<dd><input type="text" name="mob" id="mob" value="'.htmlspecialchars(postval("mob")).'" />'.self::get_error("mobile").'</dd>
+						<dd><input type="text" class="soknad_felt_lite" name="mob" id="mob" value="'.htmlspecialchars(postval("mob")).'" />'.self::get_error("mobile").'</dd>
 						
 						<dt><label for="tlf">Evt. fasttelefon</label></dt>
-						<dd><input type="text" name="tlf" id="tlf" value="'.htmlspecialchars(postval("tlf")).'" />'.self::get_error("phone").'</dd>
+						<dd><input type="text" class="soknad_felt_lite" name="tlf" id="tlf" value="'.htmlspecialchars(postval("tlf")).'" />'.self::get_error("phone").'</dd>
 						
 						<dt><label for="epost">E-post</label></dt>
-						<dd><input type="text" name="epost" id="epost" value="'.htmlspecialchars(postval("epost")).'" />*'.self::get_error("email").'</dd>
+						<dd><input type="text" class="soknad_felt" name="epost" id="epost" value="'.htmlspecialchars(postval("epost")).'" />*'.self::get_error("email").'</dd>
 						
 						<dt><label for="studiested">Studiested</label></dt>
-						<dd><input type="text" name="studiested" id="studiested" value="'.htmlspecialchars(postval("studiested")).'" />*'.self::get_error("studiested").'</dd>
+						<dd><input type="text" class="soknad_felt" name="studiested" id="studiested" value="'.htmlspecialchars(postval("studiested")).'" />*'.self::get_error("studiested").'</dd>
 						
 						<dt><label for="studium">Studium</label></dt>
-						<dd><input type="text" name="studium" id="studium" value="'.htmlspecialchars(postval("studium")).'" />*'.self::get_error("studium").'</dd>
+						<dd><input type="text" class="soknad_felt" name="studium" id="studium" value="'.htmlspecialchars(postval("studium")).'" />*'.self::get_error("studium").'</dd>
 					</dl>
 					
-					<h3>N&aring;v&aelig;rende Bosted</h3>
-					<dl>
-						<dt><label for="addr">Adresse</label></dt>
-						<dd><input type="text" name="addr" id="addr" value="'.htmlspecialchars(postval("addr")).'" />'.self::get_error("adresse").'</dd>
-						
-						<dt><label for="postnr">Postnummer og sted</label></dt>
-						<dd><input type="text" name="postnr" id="postnr" value="'.htmlspecialchars(postval("postnr")).'" />'.self::get_error("postnr").'</dd>
-					</dl>
-					
-					<h3>Opprinnelig bosted (hjemstedsadresse)</h3>
+					<h3>Hjemstedsadresse</h3>
 					<dl>
 						<dt><label for="hjemaddr">Adresse</label></dt>
-						<dd><input type="text" name="hjemaddr" id="hjemaddr" value="'.htmlspecialchars(postval("hjemaddr")).'" />'.self::get_error("hjem_adresse").'</dd>
+						<dd><input type="text" class="soknad_felt" name="hjemaddr" id="hjemaddr" value="'.htmlspecialchars(postval("hjemaddr")).'" />'.self::get_error("hjem_adresse").'</dd>
 						
 						<dt><label for="hjempostnr">Postnummer og sted</label></dt>
-						<dd><input type="text" name="hjempostnr" id="hjempostnr" value="'.htmlspecialchars(postval("hjempostnr")).'" />'.self::get_error("hjem_postnr").'</dd>
+						<dd><input type="text" class="soknad_felt" name="hjempostnr" id="hjempostnr" value="'.htmlspecialchars(postval("hjempostnr")).'" />'.self::get_error("hjem_postnr").'</dd>
+					</dl>
+					
+					<h3>N&aring;v&aelig;rende bosted</h3>
+					<dl>
+						<dt><label for="addr">Adresse</label></dt>
+						<dd><input type="text" class="soknad_felt" name="addr" id="addr" value="'.htmlspecialchars(postval("addr")).'" />'.self::get_error("adresse").'</dd>
+						
+						<dt><label for="postnr">Postnummer og sted</label></dt>
+						<dd><input type="text" class="soknad_felt" name="postnr" id="postnr" value="'.htmlspecialchars(postval("postnr")).'" />'.self::get_error("postnr").'</dd>
+					</dl>
+					
+					<h3>Relevante opplysninger</h3>
+					<dl>
+						<dt><label for="allergi">Allergier</label></dt>
+						<dd><input type="text" class="soknad_felt_stor" name="allergi" id="allergi" value="'.htmlspecialchars(postval("allergi")).'" />'.self::get_error("allergi").'</dd>
 					</dl>
 					
 					<h3>Om søknaden</h3>
 					<dl>
 						<dt><label for="onsketdato">&Oslash;nsket innflyttningsdato</label></dt>
-						<dd><input type="text" name="onsketdato" id="onsketdato" value="'.htmlspecialchars(postval("onsketdato")).'" />*'.self::get_error("onsket_dato").'</dd>
+						<dd><input type="text" class="soknad_felt" name="onsketdato" id="onsketdato" value="'.htmlspecialchars(postval("onsketdato")).'" />*'.self::get_error("onsket_dato").'</dd>
 					</dl>
 					
 					<p><label for="antMnd">Dersom du ikke får plass ved hjemmet til den datoen du ønsker, hvor mange måneder vil du at søknaden skal gjelde etter denne datoen?</label>
@@ -374,6 +376,8 @@ Postnr og sted:     '.$data['postnr'].'
 Opprinnelig bosted
 Adresse:            '.$data['hjem_adresse'].'
 Postnr og sted:     '.$data['hjem_postnr'].'
+
+Allergi:            '.$data['allergi'].'
 
 Ønsket innflyttingsdato:   '.$data['onsket_dato'].'
 Ant. mnd søknaden gjelder: '.$data['antall_mnd'].'

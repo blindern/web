@@ -35,7 +35,7 @@ body {
 	display: block;
 	height: 210px;
 }
-#header span {
+#header h1 span {
 	display: none;
 }
 
@@ -117,7 +117,7 @@ body {
 
 
 #content {
-	padding: 10px 10px 0;
+	padding: 10px;
 	margin: 10px 10px 0 10px;
 	background-color: #FFF;
 	
@@ -177,6 +177,7 @@ h2 { margin: 0 }
 dl {
 	margin: 0 0 1em 0;
 	line-height: 1.3em;
+	overflow: hidden;
 }
 dl dt {
 	float: left;
@@ -437,11 +438,11 @@ ul.arrangementer li {
 }
 .soknadsskjema dt {
 	font-weight: normal;
-	width: 150px;
+	width: 160px;
 	float: left;
 	clear: both;
 	margin-right: 2px;
-	margin-bottom: 5px;
+	margin-top: 4px;
 }
 .soknadsskjema dd {
 	margin-bottom: 5px;
@@ -465,6 +466,15 @@ ul.arrangementer li {
 }
 .soknad_sendt_tekst {
 	font-family: Courier New, Courier;
+}
+input.soknad_felt_lite {
+	width: 100px;
+}
+input.soknad_felt {
+	width: 160px;
+}
+input.soknad_felt_stor {
+	width: 250px;
 }
 
 
