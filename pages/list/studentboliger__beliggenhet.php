@@ -1,4 +1,9 @@
-<?php bs_side::set_title("Beliggenhet"); ?>
+<?php
+
+bs_side::set_title("Beliggenhet");
+bs_side::$lang_crosslink['en'] = 'en/housing/location';
+
+?>
 							<h1>Beliggenhet</h1>
 							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_stort.jpg" class="img_right" />
                           	<h2>Sentralt i Oslo</h2>
@@ -63,4 +68,5 @@
 							</p>
                             <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_bs.jpg" width="371" height="398" border="1">-->
                             
-                            <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13&amp;output=embed"></iframe><br /><small><a href="http://maps.google.no/maps?f=q&amp;source=embed&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13" style="color:#0000FF;text-align:left">Vis større kart</a></small>
+                            <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13&amp;output=embed"></iframe>
+                            <p><a href="http://maps.google.no/maps?f=q&amp;source=embed&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13" style="color:#0000FF;text-align:left">Vis større kart</a></p>

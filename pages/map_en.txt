@@ -5,14 +5,15 @@ About Blindern Studenterhjem
 
 Studenthousing
 	en/housing	Studenthousing
+	en/housing/location	Location
 
 Apply
 	en/who_can_apply	Who can apply?
 	en/who_can_apply/application	Send application
 
-Associations
-	en/associations	Associations
-	en/smaabruket	Charlet Board
+#Associations
+#	en/associations	Associations
+#	en/smaabruket	Charlet Board
 
 Administration
 	en/administration	Contact administration

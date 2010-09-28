@@ -33,7 +33,7 @@ switch (bs_side::$lang)
 	case "en":
 		echo '
 				<h2>Available places</h2>
-				<p>We still have places in the fall.</p>
+				<p>We still have places this fall.</p>
 				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/who_can_apply/application">electronic application</a> which will be processed continuously!</p>';
 	break;
 	
