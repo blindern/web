@@ -79,5 +79,5 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 						<h2>Parkering</h2>
 						<p>
 							Studenthjemmet har et begrenset antall parkeringsplasser
-							til utleie. Prisen er kr 500,- per m&aring;ned.
+							til utleie. Prisen er kr 500,- per semester.
 						</p>
