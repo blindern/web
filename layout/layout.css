@@ -152,6 +152,9 @@ img {
 	float: right;
 	margin: 5px 0 5px 5px;
 }
+.img_top {
+	margin-top: 0;
+}
 #content .img_right img {
 	margin: 0;
 }
@@ -269,20 +272,24 @@ ul.spaced li {
 }
 .ansatteFrame2 {
 	margin: 5px 0 5px 30px;
-	padding-left: 10px;
-	max-width: 560px;
+	padding: 1px 1px 1px 11px;
+	max-width: 540px;
 }
 .ansatteFrame img {
 	float: right;
 }
 #content .ansatteFrame2 img {
 	float: right;
+	border: 1px solid #555;
 }
 .ansatte_info {
 	overflow: hidden;
 }
 .ansatteFrame2:hover {
-	background-color: #EEE;
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	border: 1px solid #EEE;
+	padding: 0 0 0 10px;
 }
 .ansatteFrame2 dl {
 	margin: 10px 0;

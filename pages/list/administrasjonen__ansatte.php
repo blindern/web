@@ -1,7 +1,7 @@
 <?php bs_side::set_title("Ansatte"); ?>
 					<div id="ansatte">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte.jpg" class="img_right img_top" />
 						<h1>Ansatte</h1>
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/deansatte.jpg" class="img_right" />
 						<p>
 							Dersom du trenger &aring; komme i kontakt med noen av de
 							ulike avdelingene ved Blindern Studenterhjem s&aring;
@@ -10,15 +10,15 @@
 						
 						<h2>Styret</h2>
 						<div class='ansatteFrame2'>
-							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/.jpg" width="75" height="113" align="left">-->
+							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_netti.jpg" alt="Netti" />-->
 							<div class="ansatte_info">
 								<dl>
 									<dt>Husfar og styreleder</dt>
 									<dd>Netti Fuglesang</dd>
 									<dt>E-post</dt>
-									<dd>...</dd>
-									<dt>Mobiltelefon</dt>
-									<dd>...</dd>
+									<dd><a href="mailto:netti.fuglesang@mitchi.no">netti.fuglesang@mitchi.no</a></dd>
+									<!--<dt>Mobiltelefon</dt>
+									<dd>...</dd>-->
 								</dl>
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 							</div>
 						</div>
 						<div class="ansatteFrame2">
-							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/" width="75" height="113" border="1" />-->
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_regine.jpg" alt="Regine" />
 							<div class="ansatte_info">
 								<dl>
 									<dt>Boligkonsulent</dt>
@@ -63,7 +63,7 @@
 
 						<h2>Kj&oslash;kken</h2>
 						<div class='ansatteFrame2'>
-							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/" width="75" height="113" border="1" align="left">-->
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_annekarine.jpg" alt="Anne Karine" />
 							<div class="ansatte_info">
 								<dl>
 									<dt>Kj&oslash;kkensjef</dt>
@@ -78,7 +78,7 @@
 
 						<h2>Vedlikehold</h2>
 						<div class='ansatteFrame2'>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/vedlikeholdsleder.jpg" width="75" height="113" border="1" />
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_petter.jpg" alt="Petter" />
 							<div class="ansatte_info">
 								<dl>
 									<dt>Vedlikeholdsleder</dt>
