@@ -360,7 +360,7 @@ ul.arrangementer li {
 }
 .hyttestyret_kalender th {
 	text-align: center;
-	background-color: #EEEEEE;
+	background-color: #EEE;
 }
 .hyttestyret_kalender td, .hyttestyret_kalender th {
 	border: 1px solid #DDD;
@@ -368,12 +368,12 @@ ul.arrangementer li {
 	line-height: 1em;
 }
 .hyttestyret_kalender td.uke {
-	background-color: #FAFAFA;
+	background-color: #F3F3F3;
 	text-align: center;
 	font-size: 11px;
 }
 .hyttestyret_legend.ledig span, .hyttestyret_kalender td.ledig {
-	background-color: #DDFFAA;
+	background-color: #FFFFFF;
 }
 .hyttestyret_legend.reservert span, .hyttestyret_kalender td.reservert {
 	background-color: #FFFFAA;
@@ -411,6 +411,7 @@ ul.arrangementer li {
 	width: 15px;
 	height: 15px;
 	margin-right: 5px;
+	border: 1px solid #AAA;
 }
 
 
