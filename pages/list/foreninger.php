@@ -77,7 +77,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 							</div>
 
 							<div class="subsection">
-								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images_nye/haarn_oc_blaese.jpg" class="subimg" />
+								<img src="<?php /*http://www.facebook.com/photo.php?pid=100193&id=118776114828317*/ echo bs_side::$pagedata->doc_path; ?>/graphics/images_nye/haarn_oc_blaese.jpg" class="subimg" alt="Haarn oc Blaese - Foto: Fra Facebook" />
 								<h2>Blindern Haarn oc Blaese Orchester</h2>
 								<p>
 									Dette orkesteret er ikke som andre orkestere. Med
