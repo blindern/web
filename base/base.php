@@ -78,7 +78,7 @@ class bs_side
 	public static $menu_main;
 	public static $menu_main_list = array();
 	public static $menu_sub;
-	public static $menu_active = "index";
+	public static $menu_active = null;
 	public static $menu_all = array();
 	
 	public static function main()
