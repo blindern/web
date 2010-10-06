@@ -68,7 +68,9 @@ switch (bs_side::$lang)
 
 echo '</p>
 		</div>
-	</div>
+	</div>';
+
+if (strpos($_SERVER['SERVER_NAME'], "blindern-studenterhjem.no") !== false) echo '
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
@@ -78,6 +80,8 @@ echo '</p>
 		var pageTracker = _gat._getTracker("UA-13059225-1");
 		pageTracker._trackPageview();
 		} catch(err) {}
-	</script>
+	</script>';
+
+echo '
 </body>
 </html>';
