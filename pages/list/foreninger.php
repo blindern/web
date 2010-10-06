@@ -163,7 +163,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 bs_side::$head .= '
  	<script type="text/javascript" src="/lib/kaltura-html5player-widget/jquery-1.4.2.min.js"></script> 
 	<style type="text/css"> 
-    	@import url("/lib/kaltura-html5player-widget/skins/jquery.ui.themes/redmond/jquery-ui-1.7.2.css");
+		@import url("/lib/kaltura-html5player-widget/skins/jquery.ui.themes/redmond/jquery-ui-1.7.2.css");
 	</style>  
 	<style type="text/css"> 
 		@import url("/lib/kaltura-html5player-widget/mwEmbed-player-static.css");

@@ -1,10 +1,10 @@
 <?php bs_side::set_title("Brukets venner"); ?>
 						<h1>Brukets venner</h1>
-                        <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
 						<p>
 							<em>Et fredet bruk er ogs&aring; et krevende bruk. Vi
 							er kommet s&aring; langt i Blindern Studenterhjems
-                            liv, at viktige konstruksjonselementer og beplantninger
+							liv, at viktige konstruksjonselementer og beplantninger
 							n&aelig;rmer seg slutten p&aring; sitt naturlige
 							livsl&oslash;p. Denne situasjonen krever at vi
 							forbereder oss &oslash;konomisk. </em>
@@ -22,8 +22,8 @@
 							de &oslash;konomiske utfordringer man vet vil komme.
 						</p>
 
-                        <p>
-                        	Fondets inntekstkilde vil f&oslash;rst og fremst
+						<p>
+							Fondets inntekstkilde vil f&oslash;rst og fremst
 							v&aelig;re medlemskontigenten til foreningen &rdquo;Brukets
 							venner&rdquo;, &aring;pen for alle som noensinne har bodd
 							p&aring; Blindern Studenterhjem. Vi vil etablere
@@ -65,7 +65,7 @@
 							medlemsnummer vil aldri bli gjenbrukt.
 						</p>
 
-                        <p>
+						<p>
 							Med dette i tankene synes vi at det er en fin premiering
 							for beste forslag &aring; gi medlemsnummer 1. til
 							vinneren. Presentasjon av det nye navnet og vinneren
@@ -74,7 +74,7 @@
 						<p>
 							Brukets Venners nettside finnes p&aring; <a href="http://www.bruketsvenner.no/">www.bruketsvenner.no</a>.
 						</p>
-                        <p>
+						<p>
 							For "Brukets venner"<br>
-                            <strong>Nils Astrup og Ragna W. Kristoffersen</strong>
+							<strong>Nils Astrup og Ragna W. Kristoffersen</strong>
 						</p>

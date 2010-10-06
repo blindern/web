@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Leiepriser"); ?>
 							<h1>Leiepriser h&oslash;stsemesteret 2010</h1>
-                            <img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" class="img_right" />
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" class="img_right" />
 							<h2>Om Leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,
@@ -9,9 +9,9 @@
 								f.eks velferdsgoder og m&aring;ltider som er bakt inn i
 								leieprisen slik at n&aring;r leia er betalt, har
 								du alt du trenger for resten av m&aring;neden.
-                            </p>
-                            <h2>Leieprisens oppbyggning</h2>
-                            <p>
+							</p>
+							<h2>Leieprisens oppbyggning</h2>
+							<p>
 								Den totale m&aring;nedsleien best&aring;r av en rekke
 								mindre poster. Dette er alle postene som p&aring;l&oslash;per
 								hver m&aring;ned, og som ikke kan avbestilles.
