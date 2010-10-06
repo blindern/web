@@ -34,14 +34,14 @@ switch (bs_side::$lang)
 		echo '
 				<h2>Available places</h2>
 				<p>We still have places this fall.</p>
-				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/who_can_apply/application">electronic application</a> which will be processed continuously!</p>';
+				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/application">electronic application</a> which will be processed continuously!</p>';
 	break;
 	
 	default:
 		echo '
 				<h2>Ledige plasser i høst</h2>
 				<p>Vi har fremdeles ledige plasser i høst.</p>
-				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/hvem_bor_soke/sok_om_plass">elektronisk søknad</a> som blir behandlet fortløpende!</p>';
+				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/opptak/sok_om_plass">elektronisk søknad</a> som blir behandlet fortløpende!</p>';
 }
 
 echo '

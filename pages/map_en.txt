@@ -7,9 +7,8 @@ Studenthousing
 	en/housing	Studenthousing
 	en/housing/location	Location
 
-Apply
-	en/who_can_apply	Who can apply?
-	en/who_can_apply/application	Send application
+Application
+	en/application	Send application
 
 #Associations
 #	en/associations	Associations

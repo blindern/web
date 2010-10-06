@@ -1,7 +1,7 @@
 <?php
 
 bs_side::set_title("Søk om plass");
-bs_side::$lang_crosslink['en'] = "en/who_can_apply/application";
+bs_side::$lang_crosslink['en'] = "en/application";
 
 class bs_soknad
 {

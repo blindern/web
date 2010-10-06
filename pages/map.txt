@@ -14,8 +14,8 @@ Studentbolig
 	studentboliger/beliggenhet	Beliggenhet
 
 Søk deg inn
-	hvem_bor_soke	Hvem bør søke?
-	hvem_bor_soke/sok_om_plass	Søknad om plass
+	opptak	Opptak
+	opptak/sok_om_plass	Søknad om plass
 
 Foreninger
 	foreninger	Foreninger
