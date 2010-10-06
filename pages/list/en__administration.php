@@ -33,17 +33,17 @@ echo '
 								Pb 4 Blindern<br>
 								NO-0313 OSLO
 							</p>
-							<h2>Office address</h2>
+							<h2>Visit address</h2>
 							<p>
 								Blindern Studenterhjem<br>
 								Blindernveien 41<br>
 								0313 OSLO<br>
-								<a href="studentboliger/beliggenhet">Se vegbeskrivelse her</a>
+								<a href="housing/location">See directions here</a>
 							</p>
 							<h2>To call a resident</h2>
 							<p>
 								For a direct line you call: 23 33 1x xx (xxx is replaced with the line number of the student).
-								Do you not know the student\'s line number you can call the office during office hours: 23 33 15 00.</p>
+								Do you not know the student\'s line number you can call the office: 23 33 15 00.</p>
 							<h2>The International Summer School (ISS)</h2>
 							<dl class="adm_kontakt">
 								<dt>Phone</dt>
