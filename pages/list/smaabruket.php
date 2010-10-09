@@ -134,11 +134,13 @@ class smaabruket_kalender
 }
 
 echo '
+							<div style="float: right"><iframe width="220" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=105022761788034398758.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;output=embed"></iframe></div>
 							'.get_right_img("hytta_fra_bekken.jpg").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_utenfor_dugnad_V2010.jpg").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_ved_peisen1.jpg").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_baal.jpg").' <!-- Foto: Henrik Steen, V2010 -->
-							<h1>Hyttestyret</h1>
+							'.get_right_img("hytta_bordet.jpg").' <!-- Foto: Henrik Steen, H2010 -->
+							<h1>Småbruket</h1>
 							
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
@@ -147,7 +149,7 @@ echo '
 								av gode tur- og skimuligheter som kan gi flotte naturopplevelser.</p>
 								<p>For dem som trives best inne, varmer peisen i den
 								store stua, mens badstuen gj&oslash;r seg klar i kjelleren.
-								Det er et godt utstyrt kj&oslash;kken som gir matlagingsmuligheter.</p>
+								Det er et godt utstyrt kj&oslash;kken som gir gode matlagingsmuligheter.</p>
 								<p>Sm&aring;bruket passer til kollokvieturer, rekreasjon,
 								klasseturer og til alle som &oslash;nsker et avbrekk
 								fra byens mas og jag.
@@ -160,9 +162,13 @@ echo '
 								<li>Brettspill, kort, gitar og stereoanlegg</li>
 								<li>Flott kj&oslash;kken (oppf&oslash;rt i 2007) med stort kj&oslash;leskap, komfyr, nytt servise, og det du ellers skulle trenge for &aring; lage et gourmetm&aring;ltid</li>
 								<li>Vedfyrt badstue</li>
+								<li>Utendørs vannkran åpen året rundt</li>
+								<li>2 dusjer</li>
+								<li>Utedo</li>
 							</ul>
 							
 							<h2>Leie Småbruket</h2>
+							
 							<p>Dersom du er interessert i &aring; leie Sm&aring;bruket s&aring; kontakt utleieansvarlig på <a href="mailto:hyttestyret@gmail.com">hyttestyret@gmail.com</a>. Nedenfor kan du også se hvilke datoer hytta er ledig.</p>
 							<p>
 								S&aring; snart du har tatt kontakt med oss s&aring;
@@ -185,7 +191,7 @@ echo '
 								som brukte hytta samt hvor mange vedsekker som er
 								brukt.
 							</p>
-
+							
 							<h2>Priser for leie av Småbruket</h2>
 							<p>Per døgn per person:</p>
 							<ul>
@@ -193,10 +199,10 @@ echo '
 								<li>SiO-medlem: kr 70,-</li>
 								<li>Andre: kr 90,-</li>
 							</ul>
-							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg.</p>
+							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg. I tillegg tilkommer forbruk av ved med kr 120,- per vedsekk.</p>
 							
 							<h2>Ledige datoer for utleie</h2>
-							<p>Her er en oversikt som viser hvilke dager hytte er reservert/utleid.</p>';
+							<p>Her er en oversikt som viser hvilke dager hytta er reservert/utleid.</p>';
 
 $calendar_data = smaabruket_kalender::get_calendar_status();
 if (!$calendar_data)
@@ -283,7 +289,9 @@ else
 	echo '
 								</tbody>
 							</table>
-							<p class="hyttestyret_legend ledig"><span></span>Ledig</p>
-							<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
-							<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>';
+							<div id="hyttestyret_legends">
+								<p class="hyttestyret_legend ledig"><span></span>Ledig</p>
+								<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
+								<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>
+							</div>';
 }

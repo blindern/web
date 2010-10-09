@@ -355,7 +355,7 @@ ul.arrangementer li {
 
 /** Hyttestyret */
 .hyttestyret_kalender {
-	width: 100%;
+	width: 600px;
 	border: 2px solid #DDD;
 	border-collapse: collapse;
 }
@@ -402,8 +402,11 @@ ul.arrangementer li {
 .hyttestyret_kalender td .month {
 	font-weight: bold;
 }
+#hyttestyret_legends {
+	max-width: 600px;
+}
 .hyttestyret_legend {
-	margin: 10px 15px 10px 0;
+	margin: 10px 0 10px 15px;
 	float: right;
 }
 .hyttestyret_legend span {
