@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Velferdstilbud"); ?>
+							<?php echo get_right_img("hyttenibaerumsmarka.jpg"); ?> <!-- Foto: -->
 							<h1>Felles velferdstilbud</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hyttenibaerumsmarka.jpg" class="img_right">
 							<h2>Velferdstilbud</h2>
 							<p>
 								Det finnes en rekke felles velferdstilbud
@@ -27,7 +27,7 @@
 								ekstra</li>
 							</ul>
 							
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/lesesalen_2.jpg" class="img_right" />
+							<?php echo get_right_img("lesesalen_2.jpg"); ?> <!-- Foto: -->
 							<ul>
 								
 								<li><b>Bibliotek og lesesal</b> -
@@ -51,7 +51,7 @@
 								Canal Digital-abonnement.</li>
 							</ul>
 							
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/peisestuen.jpg" class="img_right" />
+							<?php echo get_right_img("peisestuen.jpg"); ?> <!-- Foto: -->
 							<ul>
 								<li><b>Flere musikkrom</b> -
 								Det finnes flere musikkrom p&aring; Blindern Studenterhjem,

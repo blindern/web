@@ -150,6 +150,7 @@ img {
 }
 .img_right {
 	float: right;
+	clear: right;
 	margin: 5px 0 5px 5px;
 }
 .img_top {

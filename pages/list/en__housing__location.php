@@ -5,8 +5,9 @@ bs_side::$lang_crosslink['no'] = 'studentboliger/beliggenhet';
 bs_side::set_title("Location");
 
 echo '
+	'.get_right_img("kart_stort.jpg").'
+	'.get_right_img("kart_bs.jpg").'
 	<h1>Location</h1>
-	<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/kart_stort.jpg" class="img_right" />
 	
 	<h2>In central Oslo</h2>
 	<p>Blindern Studenterhjem is located in central Oslo. The site is located next to the University of Oslo at Blindern.

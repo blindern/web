@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Brukets venner"); ?>
 						<h1>Brukets venner</h1>
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" width="200" height="93" align="left">
+						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernhistorielogo.jpg" style="float: left; margin-top: 0; margin-left: 0" alt="Brukets Venner">
 						<p>
 							<em>Et fredet bruk er ogs&aring; et krevende bruk. Vi
 							er kommet s&aring; langt i Blindern Studenterhjems

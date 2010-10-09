@@ -7,8 +7,9 @@ $thisYear = date("Y");
 
 ?>
 
+							<?php echo get_right_img("paerealle.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
+							<?php echo get_right_img("glade.jpg"); ?> <!-- Foto: Anders Fagereng -->
 							<h1>Opptak</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/paerealle.jpg" class="img_right" />
 							<p>
 								Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?> skjer
 								fortl&oslash;pende fra og med februar <?php echo $thisYear; ?>.
@@ -25,7 +26,6 @@ $thisYear = date("Y");
 							</p>
 							
 							<h2>Et sosialt engasjement</h2>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/glade.jpg" class="img_right" />
 							<p>
 								Noe av det mest unike ved Blindern Studenterhjem er
 								det sosiale milj&oslash;et, med en rekke arrangementer

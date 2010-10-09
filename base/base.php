@@ -341,10 +341,10 @@ function postval($name, $default = "")
 	return $_POST[$name];
 }
 
-function get_right_img($name, $gallery_id = null)
+function get_right_img($name, $gallery_id = null, $alt = "")
 {
-	$d = '<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/'.$name.'" />';
+	$d = '<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/'.$name.'" alt="'.htmlspecialchars($alt).'" />';
 	if ($gallery_id) $d = '<a href="'.bs_side::$pagedata->doc_path.'/studentboliger/omvisning#?img='.$gallery_id.'">'.$d.'</a>';
 	
-	return '<p class="img_right">'.$d.'</p>';
+	return '<div class="img_right">'.$d.'</div>';
 }

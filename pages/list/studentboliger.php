@@ -4,8 +4,8 @@ bs_side::set_title("Studentbolig");
 bs_side::$lang_crosslink['en'] = "en/housing";
 
 ?>
+						<?php echo get_right_img("matsal.jpg"); ?> <!-- Foto: Cecile Merkesvik -->
 						<h1>Studentboliger</h1>
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/matsal.jpg" class="img_right" />
 						<h2>Hva slags bolig tilbyr BS?</h2>
 						<p>
 							Det er plass til over 220 studenter p&aring;
@@ -48,7 +48,7 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 							vask av kl&aelig;r, senget&oslash;y og lignende.</li>
 						</ul>
 						
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/middagsmaaltid.jpg" class="img_right" />
+						<?php echo get_right_img("middagsmaaltid.jpg"); ?>
 						
 						<h2>Tre daglige m&aring;ltider pluss matpakke</h2>
 						<p>

@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Leiepriser"); ?>
+							<?php echo get_right_img("bs_inngang_liten.jpg"); ?> <!-- Foto: -->
 							<h1>Leiepriser h&oslash;stsemesteret 2010</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_inngang_liten.jpg" class="img_right" />
 							<h2>Om Leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,

@@ -1,5 +1,6 @@
+				<?php echo get_right_img("bs_hovedbygg1_liten.jpg"); ?> <!-- Foto: -->
+				<?php echo get_right_img("rom1.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
 				<h1>Velkommen til Blindern Studenterhjem</h1>
-				<?php echo get_right_img("bs_hovedbygg1_liten.jpg"); ?>
 				<h2> Like ved UiO</h2>
 				<p>
 					I et praktfullt beliggende hageanlegg p&aring; Blindern,

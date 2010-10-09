@@ -4,10 +4,10 @@ bs_side::set_title("Foreninger");
 bs_side::$lang_crosslink['en'] = "en/associations";
 
 ?>
+							<?php echo get_right_img("IFBS1.jpg"); ?> <!-- Foto: -->
 							<h1>Foreninger</h1>
 							
 							<div class="subsection">
-								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/IFBS1.jpg" class="subimg" />
 								<h2>Foreningsstyret</h2>
 								<p>
 									Det eksisterer mange klubber, foreninger og lag p&aring;
@@ -24,7 +24,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 
 
 							<div class="subsection">
-								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernrevy.jpg" class="subimg" />
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/blindernrevy.jpg" class="subimg" /> <!-- Foto: -->
 								<h2>UKEstyret</h2>
 								<p>
 									Den aller f&oslash;rste revyen p&aring; Blindern Studenterhjem
@@ -66,7 +66,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 							</div>
 							
 							<div class="subsection">
-								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hytte_dugnad.jpg" class="subimg" />
+								<a href="foreninger/hyttestyret"><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hytta_utenfor_dugnad_v2010.jpg" class="subimg" /></a> <!-- Foto: Henrik Steen -->
 								<h2>Sm&aring;bruket</h2>
 								<p>
 									Sm&aring;bruket ligger ved Brunkollen i B&aelig;rumsmarka.
@@ -77,7 +77,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 							</div>
 
 							<div class="subsection">
-								<img src="<?php /*http://www.facebook.com/photo.php?pid=100193&id=118776114828317*/ echo bs_side::$pagedata->doc_path; ?>/graphics/images_nye/haarn_oc_blaese.jpg" class="subimg" alt="Haarn oc Blaese - Foto: Fra Facebook" />
+								<img src="<?php /*http://www.facebook.com/photo.php?pid=100193&id=118776114828317*/ echo bs_side::$pagedata->doc_path; ?>/graphics/images_nye/haarn_oc_blaese.jpg" class="subimg" alt="Haarn oc Blaese - Foto: Fra Facebook" /> <!-- Foto: -->
 								<h2>Blindern Haarn oc Blaese Orchester</h2>
 								<p>
 									Dette orkesteret er ikke som andre orkestere. Med
@@ -125,7 +125,7 @@ bs_side::$lang_crosslink['en'] = "en/associations";
 							</ul>
 							
 							<div class="subsection">
-								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" class="subimg" />
+								<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/fotballbane.jpg" class="subimg" /> <!-- Foto: Cecilie Merkesvik -->
 								<h2>Idrettsforeningen ved Blindern Studenterhjem (IFBS)</h2>
 								<p>
 									Dette er BS' idrettsforening. Deres oppgaver

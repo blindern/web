@@ -1,6 +1,6 @@
 <?php bs_side::set_title("Ansatte"); ?>
+					<?php echo get_right_img("ansatte.jpg"); ?> <!-- Foto: Henrik Steen -->
 					<div id="ansatte">
-						<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte.jpg" class="img_right img_top" />
 						<h1>Ansatte</h1>
 						<p>
 							Dersom du trenger &aring; komme i kontakt med noen av de

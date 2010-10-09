@@ -133,10 +133,13 @@ class smaabruket_kalender
 	}
 }
 
-?>
+echo '
+							'.get_right_img("hytta_fra_bekken.jpg").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_utenfor_dugnad_V2010.jpg").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_ved_peisen1.jpg").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_baal.jpg").' <!-- Foto: Henrik Steen, V2010 -->
 							<h1>Hyttestyret</h1>
 							
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/hytte_dugnad.jpg" class="img_right" />
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
 								Sm&aring;bruket er en t&oslash;mmerhytte som ligger
@@ -193,8 +196,7 @@ class smaabruket_kalender
 							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg.</p>
 							
 							<h2>Ledige datoer for utleie</h2>
-							<p>Her er en oversikt som viser hvilke dager hytte er reservert/utleid.</p>
-<?php
+							<p>Her er en oversikt som viser hvilke dager hytte er reservert/utleid.</p>';
 
 $calendar_data = smaabruket_kalender::get_calendar_status();
 if (!$calendar_data)
@@ -285,5 +287,3 @@ else
 							<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
 							<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>';
 }
-
-?>

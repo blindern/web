@@ -4,9 +4,10 @@ bs_side::set_title("Beliggenhet");
 bs_side::$lang_crosslink['en'] = 'en/housing/location';
 
 ?>
+							<?php echo get_right_img("kart_stort.jpg"); ?>
+							<?php echo get_right_img("kart_bs.jpg"); ?>
 							<h1>Beliggenhet</h1>
-							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_stort.jpg" class="img_right" />
-						  	<h2>Sentralt i Oslo</h2>
+							<h2>Sentralt i Oslo</h2>
 							<p>
 								Blindern Studenterhjem ligger sentralt i Oslo. Stedet
 								ligger like ved Universitetet p&aring; Blindern. Universitetsbiblioteket
