@@ -48,6 +48,9 @@ tirill_solecup.jpg
 tennis.jpg
 	Studenterhjemmet disponerer også sin egen tennisbane. Denne kan fritt benyttes av alle brukets beboere, og innimellom arrangerer IFBS også egene tennisturneringer. Foto: Cecilie Sæle Merkesvik
 
+fotball.jpg
+	På brukets store tomt ligger det også en fotballbane og en sandvollyballbane. Foto: Cecilie Sæle Merkesvik
+
 billa1.jpg
 	Når baren ikke er åpen, benyttes lokalet til hygge. Lokalet er åpent hele tiden, og billjardbordet er flittig i bruk på ettermiddagene. Foto: Cecilie Sæle Merkesvik
 
@@ -57,29 +60,17 @@ badstue1.jpg
 moebelkjeller.jpg
 	Dersom du har egene møbler, kan disse lagres i møbelkjelleren over sommeren. Foto: Simen Buodd
 
-milla_valhal.jpg
-	Valhall er stedet for spontane fester, bursdager og annen hygge. Foto: Milla Melgaard
-
-matsal.jpg
-	I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere osm har utmerket seg oppigjennom årene. Foto: Simen Buodd
-
 musikksalong.jpg
 	Dette er brukets Musikksalong, det fineste møteromet. Her holder bl.a. Kollegiet sine ukentlige møter, og under spesielle begivenheter åpnes det bar er inne. Foto: Simen Buodd
 
 romellen1.jpg
 	Flittig student på et av rommene på Hovedbygget. Skrivebord, hylle, stol og seng er standardinventar og står klart på alle rom. Foto: Simen Buodd
 
-fotball.jpg
-	På brukets store tomt ligger det også en fotballbane og en sandvollyballbane. Foto: Cecilie Sæle Merkesvik
-
 romellen2.jpg
 	Det sies at fra enkelte av rommene på hovedbygget kan man se helt til Oslofjorden. 
 
 skjold.jpg
 	Beboere som utmerker seg spesielt i løpet av sin botid på Bruket, kan få et skjold på veggen. Her henger det skjold helt tilbake fra Brukets spede barndom. Foto: Simen Buodd
-
-peisestue.jpg
-	Erik og Johan slapper av i en av lesekrokene i peisestuen. Foto: Simen Buodd
 
 milla_hornoch.jpg
 	Blindern Haarn oc Blaese Orchester er brukets eget orkester, og spiller opp til både små og store anledninger. Foto: Milla Melgaard
@@ -120,23 +111,23 @@ milla_cHorusBuchus.jpg
 vaskeri.jpg
 	Studentvaskeriet står åpent året rundt. Her er det bare å skrive seg opp på liste, så får man både vasket og tørket tøyet sitt. Foto: Cecilie Sæle Merkesvik
 
+matsal.jpg
+	I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere som har utmerket seg oppigjennom årene. Foto: Simen Buodd
+
 matsal1.jpg
 	Kjøkkenet serverer variert og god, norsk mat. Det serveres tre måltider om dagen, der en av dem er varmmat. Foto: Cecilie Sæle Merkesvik
 
 gymsal.jpg
 	Gymsalen benyttes til alt fra yoga og vektløfting til konserter og diskotek. Salen står åpen hele døgnet, og kan benyttes av alle. Foto: Cecilie Sæle Merkesvik
 
-valhal1.jpg
-	Har du med deg glassflasker til Valhall, blir kvelden ekstra morsom etterhvert som flaskene blir tomme. Bank flasken tre ganger i bordet, og prøv å treffe blinken. Her nytter det ikke å feste uten sko! Foto: Cecilie Sæle Merkesvik
-
 peisestue1.jpg
 	Peisestua byr på et rolig lesemiljø på dagtid der mange velger å sitte å studere. Utover ettermiddagen overtar andre aktiviteter som brettspill, fyring i peisen og andre aktiviteter. Foto: Cecilie Sæle Merkesvik
 
-jan_vi.jpg
-	Jan IV er Brukets øverste beskytter. Foto: Cecilie Sæle Merkesvik
-
 balla.jpg
 	Balustraden på hovedbygget er et yppelig sted for kollokviegrupper, brettspill eller vors med gode venner. Foto: Cecilie Sæle Merkesvik
+
+jan_vi.jpg
+	Jan IV er Brukets øverste beskytter. Foto: Cecilie Sæle Merkesvik
 
 bukkekollegiet.jpg
 	Bukkekollegiet er et av brukets eldste tradisjoner. Disse har ansvaret for å utnevne beboere som har vist en spesiel ånd for bruket til hel- eller halv-bukk slik at de får skjold på veggen i matsalen. Foto: Cecilie Sæle Merkesvik
@@ -146,6 +137,12 @@ dagligeledere.jpg
 
 valhall.jpg
 	Døren inn til festrommet Valhall. Foto: Cecilie Sæle Merkesvik
+
+milla_valhal.jpg
+	Valhall er stedet for spontane fester, bursdager og annen hygge. Foto: Milla Melgaard
+
+valhal1.jpg
+	Har du med deg glassflasker til Valhall, blir kvelden ekstra morsom etterhvert som flaskene blir tomme. Bank flasken tre ganger i bordet, og prøv å treffe blinken. Her nytter det ikke å feste uten sko! Foto: Cecilie Sæle Merkesvik
 
 lysekrone.jpg
 	Bygget er fredet, og derfor er også stilen bevart på inventar. Lysekroner slik som denne finnes det mange av. Foto: Cecilie Sæle Merkesvik
