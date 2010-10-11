@@ -1,16 +1,23 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 html {
-	 overflow-y: scroll;
+	overflow-y: scroll;
 }
 body {
-	background: #A9A9A2 url(../graphics/layout/athene-bakgrunn.gif) repeat;
 	font-size: 14px;
 	font-family: Arial;
 	line-height: 1.4em;
 	color: #222;
+	
+	background: #A9A9A2 url(../graphics/layout/athene-bakgrunn.gif) repeat;
+}
+
+#body_wrap {
+	background: url(../graphics/layout/bakgrunn-opacity.png) repeat-x;
+	min-height: 100%;
 }
 
 #container {
@@ -18,8 +25,10 @@ body {
 	
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
 	background-color: #DDD;
+}
+#footer_spacer {
+	height: 10px;
 }
 
 #header {
