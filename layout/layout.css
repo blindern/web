@@ -21,10 +21,14 @@ body {
 }
 
 #container {
-	width: 900px;
+	width: 1110px;
 	
 	margin-left: auto;
 	margin-right: auto;
+}
+#main {
+	float: left;
+	width: 900px;
 	background-color: #DDD;
 }
 #footer_spacer {
@@ -49,6 +53,19 @@ body {
 }
 #header h1 span {
 	display: none;
+}
+
+/* lenke til UKA på Blindern 2011 */
+#uka11banner {
+	float: right;
+	width: 200px;
+}
+#uka11banner img {
+	position: fixed;
+	top: 0;
+	border: 0;
+	margin: 10px 0 0 0;
+	display: block;
 }
 
 
@@ -446,7 +463,7 @@ ul.arrangementer li {
 .ledigeplasser {
 	position: absolute;
 	right: 20px;
-	top: 40px;
+	bottom: 20px;
 	
 	background-color: #fdb0af;
 	width: 148px;
@@ -457,9 +474,6 @@ ul.arrangementer li {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-}
-.contentFullsize .ledigeplasser {
-	display: none;
 }
 .ledigeplasser h2 {
 	text-decoration: underline;

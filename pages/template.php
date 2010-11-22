@@ -12,7 +12,7 @@ echo '
 </head>
 <body class="lang_'.bs_side::$lang.'">
 <div id="body_wrap">
-	<div id="container">
+	<div id="container"><div id="main">
 		<div id="header">
 			<h1><a href="'.bs_side::$pagedata->doc_path.'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />';
 
@@ -69,6 +69,8 @@ switch (bs_side::$lang)
 
 echo '</p>
 		</div>
+		</div>
+		<div id="uka11banner"><a href="http://blindernuka.no/"><img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs456.snc4/50515_162180520472565_2615791_n.jpg" alt="UKA på Blindern 2011" /></a></div>
 	</div>
 	<div id="footer_spacer"></div>
 </div>';
