@@ -7,8 +7,8 @@ $thisYear = date("Y");
 
 ?>
 
-							<?php echo get_right_img("paerealle.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
-							<?php echo get_right_img("glade.jpg"); ?> <!-- Foto: Anders Fagereng -->
+							<?php echo get_right_img("paerealle.jpg", null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
+							<?php echo get_right_img("glade.jpg", null, "", "Det er et fantastisk miljø på Blindern Studenterhjem. Foto: Anders Fagereng"); ?>
 							<h1>Opptak</h1>
 							<p>
 								Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?> skjer
@@ -31,8 +31,8 @@ $thisYear = date("Y");
 								det sosiale milj&oslash;et, med en rekke arrangementer
 								og fester, klubber, foreninger og verv. Av denne grunn
 								&oslash;nsker vi beboere med evner og kapasitet til
-								&aring; bidra til et levende studentmilj&oslash;.
-								Dersom du liker &aring; organisere fester, bidra til
+								&aring; bidra til et levende studentmilj&oslash;.</p>
+							<p>Dersom du liker &aring; organisere fester, bidra til
 								&aring; f&aring; et arrangement p&aring; bena, spiller
 								et instrument, synger, skriver tekster eller lignende,
 								er dette et stort pluss. Skriv gjerne om dine interesser
@@ -46,7 +46,8 @@ $thisYear = date("Y");
 								klubber, idrettsgrupper og foreninger s&oslash;ker
 								&aring; ivareta beboernes forskjellige interesser
 								og hobbyer. Aktivitetene er i stor grad avhengig av
-								engasjement fra beboernes side. For at tradisjonene
+								engasjement fra beboernes side.</p>
+							<p>For at tradisjonene
 								skal videref&oslash;res m&aring; nye beboere sosialiseres
 								inn i det sterke milj&oslash;et ved studenterhjemmet.
 								Derfor er et perspektiv p&aring; minst to &aring;rs
@@ -62,12 +63,14 @@ $thisYear = date("Y");
 								her. Fordi disse s&oslash;kerne kjenner til stedet
 								fra f&oslash;r og er innstilt p&aring; &aring; delta
 								i milj&oslash;et, kan dette v&aelig;re et pluss i
-								s&oslash;knaden. Det teller ogs&aring; positivt hvis
+								s&oslash;knaden.</p>
+							<p>Det teller ogs&aring; positivt hvis
 								du blir anbefalt av en tidligere eller n&aring;v&aelig;rende
 								beboer som har bidratt positivt til livet p&aring;
 								Studenterhjemmet. Dette kan skje gjennom et vedlagt
 								brev, eller ved at beboeren p&aring; forh&aring;nd
-								kontakter administrasjonen. En anbefaling er imidlertid
+								kontakter administrasjonen.</p>
+							<p>En anbefaling er imidlertid
 								ingen n&oslash;dvendighet, og ofte vil en entusiastisk
 								s&oslash;knad v&aelig;re tilstrekkelig til &aring;
 								sikre deg plass.
@@ -79,3 +82,5 @@ $thisYear = date("Y");
 								for bruk av narkotika. Brudd p&aring; denne regelen
 								medf&oslash;rer utkastelse fra Studenterhjemmet.
 							</p>
+							
+							<p><a href="opptak/sok_om_plass">Søk om plass ved Blindern Studenterhjem &raquo;</a></p>

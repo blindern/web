@@ -2,7 +2,14 @@
 
 bs_side::set_title("Digital omvisning");
 
+/*kollegievegg.jpg
+	Veggene på foajeen er dekorert med bilder av alle Kollegiene, helt tilbake til 1925. Foto: Simen Buodd
+
+*/
+
 $images_raw = <<<IMAGELIST
+:Fasade
+
 trapp_paere.jpg
 	Bunnen av pærealleen. T-banen ligger ca 70 meter til venstre for denne trappen. Foto: Cecilie Sæle Merkesvik
 
@@ -27,17 +34,30 @@ hovedbygg1.jpg
 hovedbygg2.jpg
 	Bygget som er fra 1925 ble i 1997 fredet av riksantivkvaren. Foto: Cecilie Sæle Merkesvik
 
+
+:Fellesareal
+
 sykkelkjeller2.jpg
 	I sykkelkjelleren kan man sette sykkelen om vinteren. Foto:Simen Buodd
 
 foaje.jpg
 	Helt inners ser man hoveddøren. Til høyre i foajeen er peisestuen, og til venstre er matsalen. Foto: Cecilie Sæle Merkesvik
 
-kollegievegg.jpg
-	Veggene på foajeen er dekorert med bilder av alle Kollegiene, helt tilbake til 1925. Foto: Simen Buodd
-
 posthyller.jpg
 	Her sorteres og legges posten hver morgen. Hvert rom har sin hylle. Foto: Simen Buodd
+
+moebelkjeller.jpg
+	Dersom du har egene møbler, kan disse lagres i møbelkjelleren over sommeren. Foto: Simen Buodd
+
+musikksalong.jpg
+	Dette er brukets Musikksalong, det fineste møteromet. Her holder bl.a. Kollegiet sine ukentlige møter, og under spesielle begivenheter åpnes det bar er inne. Foto: Simen Buodd
+
+vaskeri.jpg
+	Studentvaskeriet står åpent året rundt. Her er det bare å skrive seg opp på liste, så får man både vasket og tørket tøyet sitt. Foto: Cecilie Sæle Merkesvik
+
+
+
+:Idrett og arrangementer
 
 bordtennis.jpg
 	Foreningen Blindern Studenterhjem og IFBS disponerer bl.a. et bordtennisbord som kan fritt benyttes av alle beboere. Foto: Simen Buodd
@@ -57,11 +77,11 @@ billa1.jpg
 badstue1.jpg
 	I kjelleren på hovedbygget er det en nyoppusset badstue som kan benyttes av alle brukets beboere. Dette er også tilholdsstedet for gutteforeningen BBB - Blindern Bad og Badstue. Foto: Simen Buodd
 
-moebelkjeller.jpg
-	Dersom du har egene møbler, kan disse lagres i møbelkjelleren over sommeren. Foto: Simen Buodd
+gymsal.jpg
+	Gymsalen benyttes til alt fra yoga og vektløfting til konserter og diskotek. Salen står åpen hele døgnet, og kan benyttes av alle. Foto: Cecilie Sæle Merkesvik
 
-musikksalong.jpg
-	Dette er brukets Musikksalong, det fineste møteromet. Her holder bl.a. Kollegiet sine ukentlige møter, og under spesielle begivenheter åpnes det bar er inne. Foto: Simen Buodd
+
+:Rom og diverse
 
 romellen1.jpg
 	Flittig student på et av rommene på Hovedbygget. Skrivebord, hylle, stol og seng er standardinventar og står klart på alle rom. Foto: Simen Buodd
@@ -72,14 +92,14 @@ romellen2.jpg
 skjold.jpg
 	Beboere som utmerker seg spesielt i løpet av sin botid på Bruket, kan få et skjold på veggen. Her henger det skjold helt tilbake fra Brukets spede barndom. Foto: Simen Buodd
 
-milla_hornoch.jpg
-	Blindern Haarn oc Blaese Orchester er brukets eget orkester, og spiller opp til både små og store anledninger. Foto: Milla Melgaard
+matsal.jpg
+	I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere som har utmerket seg oppigjennom årene. Foto: Simen Buodd
+
+matsal1.jpg
+	Kjøkkenet serverer variert og god, norsk mat. Det serveres tre måltider om dagen, der en av dem er varmmat. Foto: Cecilie Sæle Merkesvik
 
 dassbilla.jpg
 	Doen i Billa-bar har meget spesiell innredning. Her kan man finne sangglade mennesker og synge alle slags sviser ut i de sene nattetimer. Foto: Simen Buodd
-
-tirill_hornoch.jpg
-	Blindern Haarn oc Blaese Orchester har statig oppdrag utenfor studenterhjemmet. Det anbefales på det sterkeste å bli med i en forening, og Haarn oc Blaese er intet dumt valg. Foto: Simen Buodd
 
 dusj1.jpg
 	For tiden holdes dusjene på å pusses opp. Slik ser en nyoppusset dusj ut. Foto: Simen Buodd
@@ -90,35 +110,14 @@ rom1.jpg
 bad1.jpg
 	Nyoppusset bad fra 2009. Foto: Simen Buodd
 
-fagereng_glade.jpg
-	Det sosiale er meget viktig på Bruket, og det tar ikke lange tiden før nyinnflyttede glir inn i det gode miljøet på bruket. Foto: Anders Fagereng
-
 romellen3.jpg
 	Nok et enkelt innredet rom. Dette er et enkeltrom på hovedbygget. Foto: Simen Buodd
 
 dusj2.jpg
 	De fleste rommene deler dusj med naboen. Foto: Simen Buodd
 
-milla_advent.jpg
-	Pigefaareningen arrangerer av og til arrangementer som her, juleverksted. Foto: Milla Melgaard
-
 romerbad2.jpg
 	Brukets eget romerbad. Her arrangeres både årlig togafest, og annenhvert år omdannes dette til Ulka - brukets bruneste pub. Foto: Simen Buodd
-
-milla_cHorusBuchus.jpg
-	cHorus Buchus er brukets egene mannskor. Her under fremføringen av "Father Christmas" på julemøtet. Foto: Milla Melgaard
-
-vaskeri.jpg
-	Studentvaskeriet står åpent året rundt. Her er det bare å skrive seg opp på liste, så får man både vasket og tørket tøyet sitt. Foto: Cecilie Sæle Merkesvik
-
-matsal.jpg
-	I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere som har utmerket seg oppigjennom årene. Foto: Simen Buodd
-
-matsal1.jpg
-	Kjøkkenet serverer variert og god, norsk mat. Det serveres tre måltider om dagen, der en av dem er varmmat. Foto: Cecilie Sæle Merkesvik
-
-gymsal.jpg
-	Gymsalen benyttes til alt fra yoga og vektløfting til konserter og diskotek. Salen står åpen hele døgnet, og kan benyttes av alle. Foto: Cecilie Sæle Merkesvik
 
 peisestue1.jpg
 	Peisestua byr på et rolig lesemiljø på dagtid der mange velger å sitte å studere. Utover ettermiddagen overtar andre aktiviteter som brettspill, fyring i peisen og andre aktiviteter. Foto: Cecilie Sæle Merkesvik
@@ -135,6 +134,30 @@ bukkekollegiet.jpg
 dagligeledere.jpg
 	På veggen opp til 2. etg henger bilder av alle Brukets tidligere daglige ledere. Foto: Cecilie Sæle Merkesvik
 
+lysekrone.jpg
+	Bygget er fredet, og derfor er også stilen bevart på inventar. Lysekroner slik som denne finnes det mange av. Foto: Cecilie Sæle Merkesvik
+
+billa.jpg
+	Billa-Bar, Brukets egen bar. Bar med alle rettigheter, holder åpent hver onsdag, og ca en Lørdag i måneden. Her holdes både større og mindre fester, og festforeningen har ansvaret for driften. Foto: Cecilie Sæle Merkesvik
+
+
+: Fest og stemning
+
+fagereng_glade.jpg
+	Det sosiale er meget viktig på Bruket, og det tar ikke lange tiden før nyinnflyttede glir inn i det gode miljøet på bruket. Foto: Anders Fagereng
+
+tirill_hornoch.jpg
+	Blindern Haarn oc Blaese Orchester har statig oppdrag utenfor studenterhjemmet. Det anbefales på det sterkeste å bli med i en forening, og Haarn oc Blaese er intet dumt valg. Foto: Simen Buodd
+
+milla_hornoch.jpg
+	Blindern Haarn oc Blaese Orchester er brukets eget orkester, og spiller opp til både små og store anledninger. Foto: Milla Melgaard
+
+milla_cHorusBuchus.jpg
+	cHorus Buchus er brukets egene mannskor. Her under fremføringen av "Father Christmas" på julemøtet. Foto: Milla Melgaard
+
+milla_advent.jpg
+	Pigefaareningen arrangerer av og til arrangementer som her, juleverksted. Foto: Milla Melgaard
+
 valhall.jpg
 	Døren inn til festrommet Valhall. Foto: Cecilie Sæle Merkesvik
 
@@ -144,17 +167,16 @@ milla_valhal.jpg
 valhal1.jpg
 	Har du med deg glassflasker til Valhall, blir kvelden ekstra morsom etterhvert som flaskene blir tomme. Bank flasken tre ganger i bordet, og prøv å treffe blinken. Her nytter det ikke å feste uten sko! Foto: Cecilie Sæle Merkesvik
 
-lysekrone.jpg
-	Bygget er fredet, og derfor er også stilen bevart på inventar. Lysekroner slik som denne finnes det mange av. Foto: Cecilie Sæle Merkesvik
 
-billa.jpg
-	Billa-Bar, Brukets egen bar. Bar med alle rettigheter, holder åpent hver onsdag, og ca en Lørdag i måneden. Her holdes både større og mindre fester, og festforeningen har ansvaret for driften. Foto: Cecilie Sæle Merkesvik
+
+
 IMAGELIST;
 
 // parse images
 $images = array();
 $lines = explode("\n", $images_raw);
 $lines[] = "dummy"; // for å lagre siste bilde
+$cat = "Usortert";
 $file = null; $desc = null;
 foreach ($lines as $line)
 {
@@ -164,11 +186,16 @@ foreach ($lines as $line)
 		$desc .= ($desc ? "\n" : "") . trim($line);
 	}
 	
+	elseif (substr($line, 0, 1) == ":")
+	{
+		$cat = trim(substr($line, 1));
+	}
+	
 	else
 	{
 		if ($file)
 		{
-			$images[] = array(
+			$images[$cat][] = array(
 				$file,
 				$desc
 			);
@@ -281,6 +308,15 @@ window.addEvent("domready", function()
 	function get_upcoming(elm, prev)
 	{
 		var to = prev ? elm.getPrevious("p") : elm.getNext("p");
+		
+		// prøv neste gruppe
+		if (!to)
+		{
+			to = elm.getParent(".omvisning_bilder_cat")[prev ? "getPrevious" : "getNext"](".omvisning_bilder_cat");
+			if (to) to = to[prev ? "getLast" : "getFirst"]("p");
+		}
+		
+		// roter til første/siste bilde
 		if (!to)
 		{
 			if (prev) to = $("omvisning_bilder").getLast("p");
@@ -308,7 +344,6 @@ window.addEvent("domready", function()
 
 echo '
 <h1>Digital Omvisning</h1>
-<h2>Blider fra Blinderen Studenterhjem</h2>
 <div id="omvisning_bilde_w" class="omvisning_bilde_skjult">
 	<p id="omvisning_nav">
 		<span id="omvisning_back"><span>Tilbake til oversikt</span></span>
@@ -318,27 +353,62 @@ echo '
 	<p id="omvisning_bilde"></p>
 </div>
 <div id="omvisning_bilde_inactive">
+	<ul id="omvisning_liste">
+		<li>Bilder
+			<ul>';
+
+foreach ($images as $category => $imgs)
+{
+	$c = preg_replace("/[^\\w]/", "", strtolower($category));
+	echo '
+				<li><a href="#c'.$c.'">'.$category.'</a></li>';
+}
+
+echo '
+			</ul>
+		</li>
+		<li><a href="#cmedia">Media om Blindern Studenterhjem</a></li>
+	</ul>
 	<p id="omvisning_bilder_h">Trykk på et bilde for å vise stort bilde og beskrivelse.</p>
 	<div id="omvisning_bilder">';
 
-foreach ($images as $image)
+foreach ($images as $category => $imgs)
 {
-	$key = substr(md5($image[0]), 0, 7);
+	$c = preg_replace("/[^\\w]/", "", strtolower($category));
 	
 	echo '
-		<p id="img_'.$key.'">
-			<a href="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image[0]).'">
-				<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/thumbnails/'.htmlspecialchars($image[0]).'" alt="'.htmlspecialchars($image[1]).'" />
-			</a>
-		</p>';
+		<div class="omvisning_bilder_cat">
+			<h2 id="c'.$c.'">'.$category.'</h2>';
+	
+	foreach ($imgs as $image)
+	{
+		$key = substr(md5($image[0]), 0, 7);
+		
+		// TODO: thumbnail
+		
+		echo '
+			<p id="img_'.$key.'">
+				<a href="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image[0]).'">
+					<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image[0]).'" alt="'.htmlspecialchars($image[1]).'" title="'.htmlspecialchars($image[1]).'" width="180" />
+				</a>
+			</p>';
+	}
+	
+	echo '
+		</div>';
 }
 
 echo '
 	</div>
-	<h2>Media om Blindern Studenterhjem: </h2>
-	<p>Blindern Studenterhjem ble k&aring;ret av TV-Norge til beste studentbolig i Oslo.</p>
-	<object width="425" height="350">
-		<param name="movie" value="http://www.youtube.com/v/0q4U6N6Qsd4"></param>
-		<embed src="http://www.youtube.com/v/0q4U6N6Qsd4" type="application/x-shockwave-flash" width="425" height="350"></embed>
-	</object>
+	
+	<div id="omvisning_media">
+		<h2 id="cmedia">Media om Blindern Studenterhjem</h2>
+		<p>Blindern Studenterhjem ble k&aring;ret av TV-Norge til beste studentbolig i Oslo.</p>
+		<!--<object width="425" height="350">
+			<param name="movie" value="http://www.youtube.com/v/0q4U6N6Qsd4"></param>
+			<embed src="http://www.youtube.com/v/0q4U6N6Qsd4" type="application/x-shockwave-flash" width="425" height="350"></embed>
+		</object>-->
+		
+		<object width="640" height="505"><param name="movie" value="http://www.youtube.com/v/0q4U6N6Qsd4?fs=1&amp;hl=nb_NO&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/0q4U6N6Qsd4?fs=1&amp;hl=nb_NO&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="505"></embed></object>
+	</div>
 </div>';

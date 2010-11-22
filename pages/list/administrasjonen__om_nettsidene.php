@@ -1,5 +1,5 @@
 <?php bs_side::set_title("Om nettsidene"); ?>
-						<?php echo get_right_img("trapp_paerealle.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
+						<?php echo get_right_img("trapp_paerealle.jpg", null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
 						<h1>Om nettsidene</h1>
 						<p>
 							<strong>Henrik Steen</strong> har

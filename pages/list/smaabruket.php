@@ -135,11 +135,11 @@ class smaabruket_kalender
 
 echo '
 							<div style="float: right"><iframe width="220" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=105022761788034398758.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;output=embed"></iframe></div>
-							'.get_right_img("hytta_fra_bekken.jpg").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_utenfor_dugnad_V2010.jpg").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_ved_peisen1.jpg").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_baal.jpg").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_bordet.jpg").' <!-- Foto: Henrik Steen, H2010 -->
+							'.get_right_img("hytta_fra_bekken.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_utenfor_dugnad_V2010.jpg", null, "", "Hyttedugnad våren 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_ved_peisen1.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_baal.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
+							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->
 							<h1>Småbruket</h1>
 							
 							<h2>Kort om Sm&aring;bruket</h2>

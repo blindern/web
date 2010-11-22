@@ -1,5 +1,7 @@
 <?php
 
+$page_class = bs_side::$page_class;
+
 echo '
 <!DOCTYPE html>
 <html lang="'.bs_side::$lang.'">
@@ -50,7 +52,7 @@ echo '
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'
-		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub"' : '').'>
+		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub'.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'"' : (bs_side::$page_class ? ' class="'.bs_side::$page_class.'"' : '')).'>
 			'.bs_side::$content.'
 			<div id="content_clear"></div>
 		</div>

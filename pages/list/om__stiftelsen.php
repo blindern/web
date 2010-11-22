@@ -1,5 +1,5 @@
 <?php bs_side::set_title("Om stiftelsen"); ?>
-							<?php echo get_right_img("posthyller.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
+							<?php echo get_right_img("posthyller.jpg", null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
 							<h1>Om stiftelsen</h1>
 							<h2>Styre og r&aring;d</h2>
 							<p>

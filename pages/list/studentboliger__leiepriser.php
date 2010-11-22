@@ -1,7 +1,8 @@
 <?php bs_side::set_title("Leiepriser"); ?>
-							<?php echo get_right_img("bs_inngang_liten.jpg"); ?> <!-- Foto: -->
-							<h1>Leiepriser h&oslash;stsemesteret 2010</h1>
-							<h2>Om Leieprisen</h2>
+							<?php echo get_right_img("ostfloy.jpg", null, "", "Foto: Christophe Cunen"); ?>
+							<?php echo get_right_img("i_love_bs.jpg", null, "", "Blindern Studenterhjem er et unikt sted å bo. Foto: Anders Fagereng"); ?>
+							<h1>Leiepriser h&oslash;stsemesteret 2010 og våren 2011</h1>
+							<h2>Om leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,
 								da Blinderen Studenterhjem sikter mot &aring; v&aelig;re

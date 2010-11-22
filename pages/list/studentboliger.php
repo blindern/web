@@ -4,7 +4,10 @@ bs_side::set_title("Studentbolig");
 bs_side::$lang_crosslink['en'] = "en/housing";
 
 ?>
-						<?php echo get_right_img("matsal.jpg"); ?> <!-- Foto: Cecile Merkesvik -->
+						<?php echo get_right_img("enkeltrom.jpg", null, "", "Rommet er et sted man tilbringer lite tid utenom soving under sin botid på studenterhjemmet. Foto: Cecilie Sæle Merkesvik"); ?>
+						<?php echo get_right_img("matsal.jpg", null, "", "Matsalen er dekorert med skjold for beboere som har utmerket seg helt tilbake til 1920-årene. Foto: Cecilie Sæle Merkesvik"); ?>
+						<?php echo get_right_img("gang_500_h10.jpg", null, "", "De fleste studentene bor i en av fløyene, her fra 500-gangen i østfløyen. Foto: Henrik Steen"); ?>
+						<?php echo get_right_img("sjakk_bsg_h10.jpg", null, "", "Sjakkturnering høsten 2010 av den nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært. Foto: Henrik Steen"); ?>
 						<h1>Studentboliger</h1>
 						<h2>Hva slags bolig tilbyr BS?</h2>
 						<p>
@@ -47,8 +50,6 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 							<li><span class="u">Studentvaskeriet</span> gir mulighet for
 							vask av kl&aelig;r, senget&oslash;y og lignende.</li>
 						</ul>
-						
-						<?php echo get_right_img("middagsmaaltid.jpg"); ?>
 						
 						<h2>Tre daglige m&aring;ltider pluss matpakke</h2>
 						<p>

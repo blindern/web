@@ -61,6 +61,8 @@ class bs_side
 	public static $lang = "no";
 	public static $lang_crosslink = array();
 	
+	public static $page_class;
+	
 	protected static $keywords = array(
 		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
 		"other" => "Blindern Studenterhjem, studentbolig, studenthybel, student, bolig, blindern, oslo"
@@ -341,10 +343,12 @@ function postval($name, $default = "")
 	return $_POST[$name];
 }
 
-function get_right_img($name, $gallery_id = null, $alt = "")
+function get_right_img($name, $gallery_id = null, $alt = "", $text = "")
 {
 	$d = '<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/'.$name.'" alt="'.htmlspecialchars($alt).'" />';
 	if ($gallery_id) $d = '<a href="'.bs_side::$pagedata->doc_path.'/studentboliger/omvisning#?img='.$gallery_id.'">'.$d.'</a>';
 	
-	return '<div class="img_right">'.$d.'</div>';
+	if ($text) $text = '<span>'.$text.'</span>';
+	
+	return '<p class="img img_right">'.$d.$text.'</p>';
 }

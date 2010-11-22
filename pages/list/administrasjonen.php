@@ -3,6 +3,8 @@
 bs_side::set_title("Administrasjonen");
 bs_side::$lang_crosslink['en'] = "en/administration";
 
+echo get_right_img("postrommet.jpg", null, "Postrommet og døren til administrasjonen.", "Foto: Henrik Steen");
+
 ?>
 							<h1>Administrasjonen</h1>
 							<p>

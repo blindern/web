@@ -1,5 +1,5 @@
 <?php bs_side::set_title("Historie"); ?>
-						<?php echo get_right_img("godthjem.jpg"); ?> <!-- Foto: Cecilie Merkesvik -->
+						<?php echo get_right_img("godthjem.jpg", null, "Blindern Studenterhjem - Et godt hjem for studenter", "Ved porten som leder opp mot Blindern Studenterhjem står dette skiltet. Foto: Cecilie Sæle Merkesvik"); ?>
 						<h1>Historie</h1>
 						<h2>Historien fra 1925 til 1950..</h2>
 						<p>

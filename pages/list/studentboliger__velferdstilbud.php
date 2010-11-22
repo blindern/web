@@ -1,7 +1,9 @@
 <?php bs_side::set_title("Velferdstilbud"); ?>
-							<?php echo get_right_img("hyttenibaerumsmarka.jpg"); ?> <!-- Foto: -->
-							<?php echo get_right_img("lesesalen_2.jpg"); ?> <!-- Foto: -->
-							<?php echo get_right_img("peisestuen.jpg"); ?> <!-- Foto: -->
+							
+							<?php echo get_right_img("badstua.jpg", null, "", "Badstua styres av Blindern Bad og Badstueforening og kan brukes av alle beboere. Foto: Henrik Steen"); ?>
+							<?php echo get_right_img("bandrommet.jpg", null, "", "På et av stedets svært mange rom finner man her bandrommet. Foto: Henrik Steen"); ?>
+							<?php echo get_right_img("tvstua.jpg", null, "", "TV-stua kan benyttes fritt av alle beboere. Her får man inn så godt som alle kanalene man skulle ha behov for. Foto: Henrik Steen"); ?>
+							<?php echo get_right_img("bibliotek.jpg", null, "", "Biblioteket har mange plasser og er et fint sted og jobbe med studier. Med varm kaffe fra matsalen har man alt man trenger. Foto: Henrik Steen"); ?>
 							<h1>Felles velferdstilbud</h1>
 							<h2>Velferdstilbud</h2>
 							<p>

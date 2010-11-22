@@ -61,8 +61,6 @@ body {
 	width: 200px;
 }
 #uka11banner img {
-	position: fixed;
-	top: 0;
 	border: 0;
 	margin: 10px 0 0 0;
 	display: block;
@@ -250,16 +248,44 @@ ul.spaced li {
 #content .subsection h2 {
 	margin-top: 5px;
 }
-.subsection .subimg {
+.subsection img.subimg {
 	float: right;
 	clear: right;
 	margin-right: 0;
 }
-.subsection.subimgleft .subimg {
+.subsection.subimgleft img.subimg {
 	float: left;
 	clear: left;
 	margin: 5px 5px 5px 0;
 }
+.subsection p.subimg {
+	float: right;
+	clear: right;
+	margin-right: 0;
+}
+
+
+p.img {
+	display: inline-block;
+	margin: 5px;
+}
+p.img_right {
+	margin-right: 0;
+}
+p.img img {
+	display: block;
+	margin: 0;
+}
+p.img span {
+	display: block;
+	font-style: italic;
+	font-size: 11px;
+	
+	max-width: 220px;
+	line-height: 1.3em;
+	margin-top: 2px;
+}
+
 
 .creds {
 	font-style: italic;
@@ -390,6 +416,30 @@ ul.arrangementer {
 }
 ul.arrangementer li {
 	margin-left: 2em;
+}
+
+
+/** Foreninger */
+.foreninger .subsection {
+	width: 600px;
+	padding: 20px;
+	margin: 40px auto;
+	background-color: #F3F3F3;
+}
+.foreninger .subsection h2 {
+	font-size: 16px;
+	margin-bottom: 15px !important;
+	border-bottom: 1px solid #DDD;
+}
+.foreninger .subsection p {
+	max-width: 350px !important;
+	text-align: justify;
+}
+.foreninger .subsection h2 {
+	max-width: 350px;
+}
+.foreninger .subsection.noimg p, .foreninger .subsection.noimg h2 {
+	max-width: none !important;
 }
 
 
@@ -541,7 +591,7 @@ input.soknad_felt_stor {
 
 /** Bildegalleri */
 #omvisning_bilde_w {
-	min-height: 700px;
+	min-height: 900px;
 }
 
 #omvisning_nav {
@@ -594,20 +644,34 @@ input.soknad_felt_stor {
 	display: none;
 }
 
+#omvisning_liste {
+	margin: 50px;
+}
+
 #omvisning_bilder_h {
 	font-size: 15px;
 	text-align: center;
-	margin: 20px 0;
+	margin: 40px 0 20px 0;
 	color: #555;
 	max-width: none !important;
 }
 #omvisning_bilder {
 	overflow: hidden;
 }
+.omvisning_bilder_cat, #omvisning_media {
+	width: 710px;
+	margin: 20px auto;
+	padding: 5px 0 20px 20px;
+	background-color: #F3F3F3;
+}
+#omvisning_bilder h2, #omvisning_media h2 {
+	clear: both;
+	margin-bottom: 15px;
+}
 #omvisning_bilder p {
 	display: inline-block;
-	width: 158px;
-	background-color: #F3F3F3;
+	width: 216px;
+	background-color: #DDD;
 	margin: 2px 0;
 	padding: 8px 5px;
 	vertical-align: middle;
@@ -634,6 +698,10 @@ input.soknad_felt_stor {
 	background-color: #3388DD;
 }
 #content #omvisning_bilde_w p { max-width: none }
+#omvisning_media { text-align: center }
+#omvisning_media h2 { text-align: left }
+#omvisning_media p { max-width: none }
+
 
 /** Sidekart */
 #sitemap { margin: 20px 0 }
