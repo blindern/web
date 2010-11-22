@@ -177,3 +177,4 @@ bs_side::$head .= '
 									<source src="<?php echo bs_side::$pagedata->doc_path; ?>/10150138573435697_26751.mp4" />
 								</video>
 							</div>
+							<p class="creds">Video: Anders Fagereng</p>
