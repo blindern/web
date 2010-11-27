@@ -41,3 +41,4 @@
 							stedet kan fortsette &aring; v&aelig;re et attraktivt
 							og godt hjem for kommende generasjoner av studenter.
 						</p>
+						<p><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/bs_oversikt_gammelt.jpg" alt="Blindern Studenterhjem i sine tidlige år" style="border:0;margin:0" /></p>

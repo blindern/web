@@ -11,6 +11,7 @@ echo '
 <meta name="keywords" content="'.bs_side::get_keywords().'" />
 <meta name="description" content="'.bs_side::get_description().'" />
 <link rel="stylesheet" type="text/css" href="'.bs_side::$pagedata->doc_path.'/layout/layout.css" />'.bs_side::$head.'
+<link rel="shortcut icon" href="'.bs_side::$pagedata->doc_path.'/favicon.ico" />
 </head>
 <body class="lang_'.bs_side::$lang.'">
 <div id="body_wrap">

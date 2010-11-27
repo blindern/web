@@ -1,5 +1,6 @@
 <?php
 
+define("BASE", dirname(__FILE__));
 ob_start();
 
 class pagedata
