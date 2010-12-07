@@ -1,211 +1,7 @@
 <?php
 
 bs_side::set_title("Digital omvisning");
-
-/*kollegievegg.jpg
-	Veggene på foajeen er dekorert med bilder av alle Kollegiene, helt tilbake til 1925. Foto: Simen Buodd
-
-*/
-
-$images_raw = <<<IMAGELIST
-:Fasade
-
-trapp_paere.jpg
-	Bunnen av pærealleen. T-banen ligger ca 70 meter til venstre for denne trappen. Foto: Cecilie Sæle Merkesvik
-
-etgodthjem.jpg
-	Skiltet med "Et godt hjem for studenter" kan sees på den ene stolpen i bunnen av pærealleen. Under dette mottoet ble studenterhjemmet bygget. Foto: Cecilie Sæle Merkesvik
-
-paere1.jpg
-	Den mektige pærealleen. Foto: Cecilie Sæle Merkesvik
-
-paere2.jpg
-	Pærealleen og østfløy. Det er på denne plenen sølecuppen arrangeres. Foto: Cecilie Sæle Merkesvik
-
-paere3.jpg
-	Østfløy sett fra pærealleen en vakker sommerdag. Foto: Cecilie Sæle Merkesvik
-
-hovedbyggvinter.jpg
-	Hovedbygget en kald vinterkveld. Foto: Simen Buodd
-
-hovedbygg1.jpg
-	Tre travle karer. Er det Onsdag, og er de på vei til Bunnpris som ligger rett over veien? Foto: Cecilie Sæle Merkesvik
-
-hovedbygg2.jpg
-	Bygget som er fra 1925 ble i 1997 fredet av riksantivkvaren. Foto: Cecilie Sæle Merkesvik
-
-
-:Fellesareal
-
-sykkelkjeller2.jpg
-	I sykkelkjelleren kan man sette sykkelen om vinteren. Foto:Simen Buodd
-
-foaje.jpg
-	Helt inners ser man hoveddøren. Til høyre i foajeen er peisestuen, og til venstre er matsalen. Foto: Cecilie Sæle Merkesvik
-
-posthyller.jpg
-	Her sorteres og legges posten hver morgen. Hvert rom har sin hylle. Foto: Simen Buodd
-
-moebelkjeller.jpg
-	Dersom du har egene møbler, kan disse lagres i møbelkjelleren over sommeren. Foto: Simen Buodd
-
-musikksalong.jpg
-	Dette er brukets Musikksalong, det fineste møteromet. Her holder bl.a. Kollegiet sine ukentlige møter, og under spesielle begivenheter åpnes det bar er inne. Foto: Simen Buodd
-
-vaskeri.jpg
-	Studentvaskeriet står åpent året rundt. Her er det bare å skrive seg opp på liste, så får man både vasket og tørket tøyet sitt. Foto: Cecilie Sæle Merkesvik
-
-
-
-:Idrett og arrangementer
-
-bordtennis.jpg
-	Foreningen Blindern Studenterhjem og IFBS disponerer bl.a. et bordtennisbord som kan fritt benyttes av alle beboere. Foto: Simen Buodd
-
-tirill_solecup.jpg
-	Et av brukets mange tradisjoner er sølecup. Her er det ikke nødvendigvis den med flest mål som vinner. Foto: Tiril Stensgård Finnanger
-
-tennis.jpg
-	Studenterhjemmet disponerer også sin egen tennisbane. Denne kan fritt benyttes av alle brukets beboere, og innimellom arrangerer IFBS også egene tennisturneringer. Foto: Cecilie Sæle Merkesvik
-
-fotball.jpg
-	På brukets store tomt ligger det også en fotballbane og en sandvollyballbane. Foto: Cecilie Sæle Merkesvik
-
-billa1.jpg
-	Når baren ikke er åpen, benyttes lokalet til hygge. Lokalet er åpent hele tiden, og billjardbordet er flittig i bruk på ettermiddagene. Foto: Cecilie Sæle Merkesvik
-
-badstue1.jpg
-	I kjelleren på hovedbygget er det en nyoppusset badstue som kan benyttes av alle brukets beboere. Dette er også tilholdsstedet for gutteforeningen BBB - Blindern Bad og Badstue. Foto: Simen Buodd
-
-gymsal.jpg
-	Gymsalen benyttes til alt fra yoga og vektløfting til konserter og diskotek. Salen står åpen hele døgnet, og kan benyttes av alle. Foto: Cecilie Sæle Merkesvik
-
-
-:Rom og diverse
-
-romellen1.jpg
-	Flittig student på et av rommene på Hovedbygget. Skrivebord, hylle, stol og seng er standardinventar og står klart på alle rom. Foto: Simen Buodd
-
-romellen2.jpg
-	Det sies at fra enkelte av rommene på hovedbygget kan man se helt til Oslofjorden. 
-
-skjold.jpg
-	Beboere som utmerker seg spesielt i løpet av sin botid på Bruket, kan få et skjold på veggen. Her henger det skjold helt tilbake fra Brukets spede barndom. Foto: Simen Buodd
-
-matsal.jpg
-	I matsalen serveres det tre måltider hver dag. Veggene er prydet med tradisjonsrike skjold over beboere som har utmerket seg oppigjennom årene. Foto: Simen Buodd
-
-matsal1.jpg
-	Kjøkkenet serverer variert og god, norsk mat. Det serveres tre måltider om dagen, der en av dem er varmmat. Foto: Cecilie Sæle Merkesvik
-
-dassbilla.jpg
-	Doen i Billa-bar har meget spesiell innredning. Her kan man finne sangglade mennesker og synge alle slags sviser ut i de sene nattetimer. Foto: Simen Buodd
-
-dusj1.jpg
-	For tiden holdes dusjene på å pusses opp. Slik ser en nyoppusset dusj ut. Foto: Simen Buodd
-
-rom1.jpg
-	Rommene er både store og lyse. Dette er et dobbeltrom med utgang til en egen balkong. Foto: Cecilie Sæle Merkesvik
-
-bad1.jpg
-	Nyoppusset bad fra 2009. Foto: Simen Buodd
-
-romellen3.jpg
-	Nok et enkelt innredet rom. Dette er et enkeltrom på hovedbygget. Foto: Simen Buodd
-
-dusj2.jpg
-	De fleste rommene deler dusj med naboen. Foto: Simen Buodd
-
-romerbad2.jpg
-	Brukets eget romerbad. Her arrangeres både årlig togafest, og annenhvert år omdannes dette til Ulka - brukets bruneste pub. Foto: Simen Buodd
-
-peisestue1.jpg
-	Peisestua byr på et rolig lesemiljø på dagtid der mange velger å sitte å studere. Utover ettermiddagen overtar andre aktiviteter som brettspill, fyring i peisen og andre aktiviteter. Foto: Cecilie Sæle Merkesvik
-
-balla.jpg
-	Balustraden på hovedbygget er et yppelig sted for kollokviegrupper, brettspill eller vors med gode venner. Foto: Cecilie Sæle Merkesvik
-
-jan_vi.jpg
-	Jan IV er Brukets øverste beskytter. Foto: Cecilie Sæle Merkesvik
-
-bukkekollegiet.jpg
-	Bukkekollegiet er et av brukets eldste tradisjoner. Disse har ansvaret for å utnevne beboere som har vist en spesiel ånd for bruket til hel- eller halv-bukk slik at de får skjold på veggen i matsalen. Foto: Cecilie Sæle Merkesvik
-
-dagligeledere.jpg
-	På veggen opp til 2. etg henger bilder av alle Brukets tidligere daglige ledere. Foto: Cecilie Sæle Merkesvik
-
-lysekrone.jpg
-	Bygget er fredet, og derfor er også stilen bevart på inventar. Lysekroner slik som denne finnes det mange av. Foto: Cecilie Sæle Merkesvik
-
-billa.jpg
-	Billa-Bar, Brukets egen bar. Bar med alle rettigheter, holder åpent hver onsdag, og ca en Lørdag i måneden. Her holdes både større og mindre fester, og festforeningen har ansvaret for driften. Foto: Cecilie Sæle Merkesvik
-
-
-: Fest og stemning
-
-fagereng_glade.jpg
-	Det sosiale er meget viktig på Bruket, og det tar ikke lange tiden før nyinnflyttede glir inn i det gode miljøet på bruket. Foto: Anders Fagereng
-
-tirill_hornoch.jpg
-	Blindern Haarn oc Blaese Orchester har statig oppdrag utenfor studenterhjemmet. Det anbefales på det sterkeste å bli med i en forening, og Haarn oc Blaese er intet dumt valg. Foto: Simen Buodd
-
-milla_hornoch.jpg
-	Blindern Haarn oc Blaese Orchester er brukets eget orkester, og spiller opp til både små og store anledninger. Foto: Milla Melgaard
-
-milla_cHorusBuchus.jpg
-	cHorus Buchus er brukets egene mannskor. Her under fremføringen av "Father Christmas" på julemøtet. Foto: Milla Melgaard
-
-milla_advent.jpg
-	Pigefaareningen arrangerer av og til arrangementer som her, juleverksted. Foto: Milla Melgaard
-
-valhall.jpg
-	Døren inn til festrommet Valhall. Foto: Cecilie Sæle Merkesvik
-
-milla_valhal.jpg
-	Valhall er stedet for spontane fester, bursdager og annen hygge. Foto: Milla Melgaard
-
-valhal1.jpg
-	Har du med deg glassflasker til Valhall, blir kvelden ekstra morsom etterhvert som flaskene blir tomme. Bank flasken tre ganger i bordet, og prøv å treffe blinken. Her nytter det ikke å feste uten sko! Foto: Cecilie Sæle Merkesvik
-
-
-
-
-IMAGELIST;
-
-// parse images
-$images = array();
-$lines = explode("\n", $images_raw);
-$lines[] = "dummy"; // for å lagre siste bilde
-$cat = "Usortert";
-$file = null; $desc = null;
-foreach ($lines as $line)
-{
-	if (substr($line, 0, 1) == "\t")
-	{
-		if (!$file) continue;
-		$desc .= ($desc ? "\n" : "") . trim($line);
-	}
-	
-	elseif (substr($line, 0, 1) == ":")
-	{
-		$cat = trim(substr($line, 1));
-	}
-	
-	else
-	{
-		if ($file)
-		{
-			$images[$cat][] = array(
-				$file,
-				$desc
-			);
-		}
-		
-		$file = trim($line);
-		$desc = null;
-	}
-}
-
+require BASE."/omvisning.php";
 
 bs_side::$head .= '
 <script src="/lib/mootools/mootools-1.2.x-core-nc.js" type="text/javascript"></script>
@@ -319,8 +115,8 @@ window.addEvent("domready", function()
 		// roter til første/siste bilde
 		if (!to)
 		{
-			if (prev) to = $("omvisning_bilder").getLast("p");
-			else to = $("omvisning_bilder").getFirst("p");
+			f = prev ? "getLast" : "getFirst";
+			to = $("omvisning_bilder")[f]("div")[f]("p");
 		}
 		
 		return to;
@@ -343,7 +139,7 @@ window.addEvent("domready", function()
 
 
 echo '
-<h1>Digital Omvisning</h1>
+<h1>Digital omvisning</h1>
 <div id="omvisning_bilde_w" class="omvisning_bilde_skjult">
 	<p id="omvisning_nav">
 		<span id="omvisning_back"><span>Tilbake til oversikt</span></span>
@@ -357,7 +153,7 @@ echo '
 		<li>Bilder
 			<ul>';
 
-foreach ($images as $category => $imgs)
+foreach (array_keys(omvisning::$groups) as $category)
 {
 	$c = preg_replace("/[^\\w]/", "", strtolower($category));
 	echo '
@@ -372,7 +168,7 @@ echo '
 	<p id="omvisning_bilder_h">Trykk på et bilde for å vise stort bilde og beskrivelse.</p>
 	<div id="omvisning_bilder">';
 
-foreach ($images as $category => $imgs)
+foreach (omvisning::$groups as $category => $imgs)
 {
 	$c = preg_replace("/[^\\w]/", "", strtolower($category));
 	
@@ -382,16 +178,17 @@ foreach ($images as $category => $imgs)
 	
 	foreach ($imgs as $image)
 	{
-		$key = substr(md5($image[0]), 0, 7);
+		$key = substr(md5($image['o_file']), 0, 7);
 		
-		// TODO: thumbnail
+		$text = $image['o_text'];
+		if ($text && $image['o_foto']) $text .= " ";
+		if ($image['o_foto']) $text .= "Foto: " . $image['o_foto'];
 		
-		echo '
-			<p id="img_'.$key.'">
-				<a href="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image[0]).'">
-					<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image[0]).'" alt="'.htmlspecialchars($image[1]).'" title="'.htmlspecialchars($image[1]).'" width="180" />
-				</a>
-			</p>';
+		echo '<!-- avoid inline-block spacing
+			--><p id="img_'.$key.'"><!--
+				--><a href="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image['o_file']).'"><!--
+					--><img src="'.omvisning::$link.'/thumb.php?file='.htmlspecialchars($image['o_file']).'" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
+				--></a></p>';
 	}
 	
 	echo '

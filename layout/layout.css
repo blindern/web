@@ -18,6 +18,7 @@ body {
 #body_wrap {
 	background: url(../graphics/layout/bakgrunn-opacity.png) repeat-x;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 #container {
@@ -673,7 +674,7 @@ input.soknad_felt_stor {
 	display: inline-block;
 	width: 216px;
 	background-color: #DDD;
-	margin: 2px 0;
+	margin: 2px;
 	padding: 8px 5px;
 	vertical-align: middle;
 	text-align: center;
@@ -702,6 +703,30 @@ input.soknad_felt_stor {
 #omvisning_media { text-align: center }
 #omvisning_media h2 { text-align: left }
 #omvisning_media p { max-width: none }
+
+#omvisning_meta {
+	
+}
+#omvisning_meta p {
+	overflow: hidden;
+	max-width: none;
+	background-color: #FAFAFA;
+	border: 1px solid #DDD;
+	padding: 5px;
+}
+#omvisning_meta img {
+	float: left;
+	margin-right: 10px;
+}
+#omvisning_meta b {
+	display: block;
+	float: left;
+	width: 100px;
+}
+#omvisning_meta textarea {
+	width: 500px;
+	height: 100px;
+}
 
 
 /** Sidekart */
