@@ -7,9 +7,7 @@
 							med administrasjonen og
 							<strong>Kollegiet Buodd</strong> h&oslash;sten 2010.
 							<strong>Inger Merete Hobbelstad</strong> har opprinnelig skrevet
-							tekstene til nettsiden. <strong>Peter Holme</strong>
-							og <strong>Cecilie S&aelig;le Merkesvik</strong> st&aring;r
-							bak fotografiene p&aring; nettsiden hvor annet ikke er nevnt.
+							tekstene til nettsiden. <strong>Cecilie S&aelig;le Merkesvik</strong> har tatt bildet som brukes i toppen.
 						</p>
 						<p>
 							Dersom du lurer p&aring; noe ang&aring;ende
