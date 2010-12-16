@@ -21,7 +21,7 @@ Foreninger
 	foreninger	Foreninger
 	smaabruket	Hyttestyret
 	foreninger/tradisjoner	Tradisjoner
-	foreninger/arrangementplan	Arrangementplan
+	foreninger/arrangementsplan	Arrangementsplan
 
 Administrasjon
 	administrasjonen	Kontakt administrasjonen

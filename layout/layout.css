@@ -405,12 +405,12 @@ dl.arrangementer {
 dl.arrangementer dt {
 	float: left;
 	clear: left;
-	width: 100px;
+	width: 150px;
 	text-align: right;
 	font-weight: normal;
 }
 dl.arrangementer dd {
-	margin-left: 120px;
+	margin-left: 170px;
 }
 ul.arrangementer {
 	margin: 1em 0;
@@ -578,7 +578,7 @@ ul.arrangementer li {
 	color: #CC3333;
 }
 .soknad_sendt_tekst {
-	font-family: Courier New, Courier;
+	font-family: monospace, "Courier New", Courier;
 }
 input.soknad_felt_lite {
 	width: 100px;
