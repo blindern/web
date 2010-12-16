@@ -1,8 +1,8 @@
 RewriteEngine On
 
+RewriteCond %{HTTP_HOST} ^www.blindern-studenterhjem.no$ [NC]
+RewriteRule ^(.*)$ http://blindern-studenterhjem.no/$1 [R,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
-
-RewriteCond %{HTTP_HOST} ^www.blindern-studenterhjem.no$ [NC]
-RewriteRule ^(.*)$ http://blindern-studenterhjem.no/$1 [R,L]
