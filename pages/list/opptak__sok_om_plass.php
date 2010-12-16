@@ -437,7 +437,7 @@ If you have any futher questions, you can contact the administration on phone (+
 					<p><label for="antMnd">'.self::get_lang("app_num_months").'</label>
 						<select name="antMnd" id="antMnd">';
 		
-		for ($i = 1; $i <= 6; $i++)
+		for ($i = 0; $i <= 6; $i++)
 		{
 			echo '
 								<option value="'.$i.'"'.($i == postval("antMnd") ? ' selected="selected"' : '').'>'.$i.'</option>';
@@ -483,11 +483,11 @@ If you have any futher questions, you can contact the administration on phone (+
 	
 	protected static function send_email($data)
 	{
-		#$to = "post@blindern-studenterhjem.no";
-		$to = "henrist@gmail.com";
+		$to = "post@blindern-studenterhjem.no";
+		#$to = "henrist@gmail.com";
 		$subject = "=?UTF-8?B?U8O4a25hZCBmb3IgQmxpbmRlcm4gU3R1ZGVudGVyaGplbQ==?="; #Søknad for Blindern Studenterhjem
 		
-		$headers = "To: Henrik Steen <henrist@gmail.com>\r\n";
+		$headers = "To: Blindern Studenterhjem <post@blindern-studenterhjem.no>\r\n";
 		$headers .= "From: {$data['name']} <{$data['email']}>\r\n";
 		$headers .= "Reply-To: {$data['email']} <{$data['email']}>\r\n";
 		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
@@ -549,8 +549,6 @@ If you have any futher questions, you can contact the administration on phone (+
 	}
 }
 
-$thisYear = date("Y");
-
 switch (bs_side::$lang)
 {
 	case "en":
@@ -571,10 +569,10 @@ switch (bs_side::$lang)
 				eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
 				blir behandlet med lik verdi.
 			</p>
-			<h2>Opptak av beboere for h&oslash;sten '.$thisYear.'</h2>
+			<h2>Opptak av beboere for h&oslash;sten 2011</h2>
 			<p>
-				Opptak av beboere for h&oslash;sten '.$thisYear.' skjer
-				fortl&oslash;pende fra og med februar '.$thisYear.'.
+				Opptak av beboere for h&oslash;sten 2011 skjer
+				fortl&oslash;pende. Det er for øyeblikket også ledige plasser fra januar 2011.
 			</p>';
 }
 
