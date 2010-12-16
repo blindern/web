@@ -117,7 +117,7 @@ bs_side::$page_class = "foreninger";
 							<div class="subsection">
 								<p class="img subimg">
 									<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/chorusbuchus_v10.jpg" alt="" />
-									<span>cHorus Buchus synker på Holmenkollen Restaurant i anledning bukkefesten våren 2010. Foto: Anders Fagereng</span>
+									<span>cHorus Buchus synger på Holmenkollen Restaurant i anledning bukkefesten våren 2010. Foto: Anders Fagereng</span>
 								</p>
 								<h2>cHorus Buchus</h2>
 								<p>
