@@ -48,7 +48,8 @@ bs_side::$lang_crosslink['en'] = 'en/housing/location';
 								odontologisk fakultet s&aring; ligger det kun to trikkestopp
 								unna. <!--F&oslash;lg kartet under for &aring; finne studenthjemmet
 								fra trikkestoppet.-->
-						  <h2>Bil fra E18 (Kristansand, Stavanger) til Oslo.</h2>
+							</p>
+							<h2>Bil fra E18 (Kristansand, Stavanger) til Oslo.</h2>
 							<p>
 								Kj&oslash;r mot Oslo helt til et skilt hvor det st&aring;r
 								Ring 2 Majorstuen. Ta av der og f&oslash;lg ring 2
@@ -69,5 +70,5 @@ bs_side::$lang_crosslink['en'] = 'en/housing/location';
 							</p>
 							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/kart_bs.jpg" width="371" height="398" border="1">-->
 							
-							<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13&amp;output=embed"></iframe>
-							<p><a href="http://maps.google.no/maps?f=q&amp;source=embed&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13" style="color:#0000FF;text-align:left">Vis større kart</a></p>
+							<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Blindernveien+41,+0371+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Blindernveien+41,+0371+Sankt+Hanshaugen+-+Ullev%C3%A5l,+Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13&amp;output=embed"></iframe>
+							<p><a href="http://maps.google.no/maps?f=q&amp;source=embed&amp;hl=no&amp;geocode=&amp;q=Blindern+Studenterhjem,+Blindernveien+41,+0371+Oslo&amp;sll=59.939705,10.718805&amp;sspn=0.008841,0.00868&amp;g=Blindern+Studenterhjem,+Blindernveien+41,+0371+Oslo&amp;ie=UTF8&amp;hq=Blindern+Studenterhjem,&amp;hnear=Oslo&amp;ll=59.947102,10.721626&amp;spn=0.038686,0.10128&amp;z=13" style="color:#0000FF;text-align:left">Vis større kart</a></p>
