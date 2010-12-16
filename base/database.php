@@ -4,7 +4,7 @@
 // for Blindern Studenterhjem
 
 
-if (strpos(__FILE__, ":\\") !== false) // testserver/utvikling
+if (strpos(__FILE__, ":\\") !== false || substr($_SERVER['DOCUMENT_ROOT'], 0, 8) == "/var/www") // testserver/utvikling
 {
 	$db_settings = array(
 		"host" => "127.0.0.1",
