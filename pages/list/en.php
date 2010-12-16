@@ -3,8 +3,8 @@
 bs_side::$lang = "en";
 
 echo '
-				'.get_right_img("bs_hovedbygg1_liten.jpg").' <!-- Foto: -->
-				'.get_right_img("rom1.jpg").' <!-- Foto: Cecilie Merkesvik -->
+				'.get_right_img("bs_fra_uio.jpg", null, "", "Blindern Studenterhjem seen from University of Oslo. Foto: Mats Julius Stensrud").'
+				'.get_right_img("rom1.jpg", null, "", "Foto: Cecilie Sæle Merkesvik").'
 				<h1>Welcome to Blindern Studenterhjem</h1>
 				
 				<p>Blindern Studenterhjem (BS) is a private foundation that is operated without financial gain. The place should be a good student home for students
