@@ -197,6 +197,7 @@ bs_side::$page_class = "foreninger";
 							</div>
 <?php
 
+/*
 bs_side::$head .= '
  	<script type="text/javascript" src="/lib/kaltura-html5player-widget/jquery-1.4.2.min.js"></script> 
 	<style type="text/css"> 
@@ -215,3 +216,4 @@ bs_side::$head .= '
 								</video>
 							</div>
 							<p class="creds">Video: Anders Fagereng</p>
+*/
