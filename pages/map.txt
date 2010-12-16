@@ -1,0 +1,29 @@
+# Fil for menyen
+
+Om Blindern Studenterhjem
+	index	Kort om BS
+	om/historie	Historie
+	om/stiftelsen	Om stiftelsen
+	om/bruketsvenner	Brukets Venner
+
+Studentbolig
+	studentboliger	Studentboliger
+	studentboliger/velferdstilbud	Felles velferdstilbud
+	studentboliger/omvisning	Digital omvisning
+	studentboliger/leiepriser	Leiepriser
+	studentboliger/beliggenhet	Beliggenhet
+
+Søk deg inn
+	opptak	Opptak
+	opptak/sok_om_plass	Søknad om plass
+
+Foreninger
+	foreninger	Foreninger
+	smaabruket	Hyttestyret
+	foreninger/tradisjoner	Tradisjoner
+	foreninger/arrangementsplan	Arrangementsplan
+
+Administrasjon
+	administrasjonen	Kontakt administrasjonen
+	administrasjonen/ansatte	Ansatte
+	administrasjonen/om_nettsidene	Om nettsidene

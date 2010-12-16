@@ -1,0 +1,18 @@
+# Fil for menyen på engelsk
+
+About Blindern Studenterhjem
+	en	Short about BS
+
+Studenthousing
+	en/housing	Studenthousing
+	en/housing/location	Location
+
+Application
+	en/application	Send application
+
+#Associations
+#	en/associations	Associations
+#	en/smaabruket	Charlet Board
+
+Administration
+	en/administration	Contact administration

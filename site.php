@@ -1,21 +1,47 @@
 <?php
 
-/**
- * This displays the standard menues, and a page according to the GET-varables
- * category and id.
- *
- * @version $Id$
- * @copyright 2009
+/*
+ * Denne siden sørger for videresending fra gamle adresser til nye adresser.
  */
 
-error_reporting(E_ALL & ~E_NOTICE);
+require "base/base.php";
 
-include "code/layout.php";
-include "code/menu.php";
+if (!isset($_GET['category']) || !isset($_GET['id'])) redir();
 
+$map = array(
+	array(
+		"index",
+		"om/historie",
+		"om/stiftelsen",
+		"om/bruketsvenner"
+	),
+	array(
+		"studentboliger",
+		"studentboliger/velferdstilbud",
+		"studentboliger/omvisning",
+		"studentboliger/leiepriser",
+		"studentboliger/beliggenhet"
+	),
+	array(
+		"hvem_bor_soke",
+		"hvem_bor_soke/sok_om_plass"
+	),
+	array(
+		"foreninger",
+		"smaabruket",
+		"foreninger/tradisjoner",
+		"foreninger/arrangementplan"
+	),
+	array(
+		"administrasjonen",
+		"administrasjonen/ansatte",
+		"administrasjonen/om_nettsidene"
+	)
+);
 
-$layoutObj = new layout();
-$layoutObj->getTopMenu();
-$layoutObj->getPageContent($_GET['category'], $_GET['id']);
-$layoutObj->getRightMenu($_GET['category'], $_GET['id']);
-$layoutObj->printBuffer();
+if (!isset($map[$_GET['category']][$_GET['id']]))
+{
+	redir();
+}
+
+redir($map[$_GET['category']][$_GET['id']]);
