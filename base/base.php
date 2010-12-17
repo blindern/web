@@ -51,6 +51,7 @@ class bs_side
 	
 	public static $content;
 	public static $head;
+	public static $footer;
 	public static $title = null;
 	
 	public static $description = null;

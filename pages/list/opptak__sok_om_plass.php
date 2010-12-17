@@ -329,6 +329,12 @@ If you have any futher questions, you can contact the administration on phone (+
 			
 			echo sprintf(self::get_lang("sent"), $ret);
 			self::$sent = true;
+			
+			// legg til sporing for statistikk
+			bs_side::$footer .= '
+	<script type="text/javascript">
+	_gaq.push(["_trackEvent", "Søknad", "Sendt", "lang:'.bs_side::$lang.'"]);
+	</script>';
 		}
 	}
 	
