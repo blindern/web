@@ -20,6 +20,7 @@ if (isset($_GET['edit']))
 			{
 				$all[$image['o_id']] = &$image;
 			}
+			unset($image);
 		}
 		
 		// finn ut hva som har blitt endret
