@@ -80,12 +80,12 @@ class omvisning
 		}
 		
 		// gyldig filendelse?
-		if (!preg_match("/(^.+?)\\.(jpe?g|gif|png)$/i", $name, $match))
+		if (!preg_match("/(^.+?)\\.(jpe?g|gif|png)$/i", strtolower(preg_replace("/[^a-z0-9_\\-\\.]/i", "_", $name)), $match))
 		{
 			return "error_ext";
 		}
 		$name_prefix = $match[1];
-		$name_suffix = strtolower(preg_replace("/[^a-z0-9_\\-\\.]/i", "_", $match[2]));
+		$name_suffix = $match[2];
 		
 		// les bildet
 		$image = @imagecreatefromstring(@file_get_contents($src));
