@@ -13,7 +13,7 @@
 							Dersom du lurer p&aring; noe ang&aring;ende
 							nettsidene s&aring; kan sp&oslash;rsm&aring;l
 							rettes til hjemmesideoppmann ved Blindern Studenterhjem.
-							For tiden er dette <strong>Henrik Steen</strong>.
+							For tiden er dette <a href="http://henrist.net"><strong>Henrik Steen</strong></a>.
 						</p>
 						<p>
 							E-postadressen til hjemmesideoppmann er:<br />
