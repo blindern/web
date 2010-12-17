@@ -30,7 +30,7 @@ $map = array(
 		"foreninger",
 		"smaabruket",
 		"foreninger/tradisjoner",
-		"foreninger/arrangementplan"
+		"foreninger/arrangementsplan"
 	),
 	array(
 		"administrasjonen",

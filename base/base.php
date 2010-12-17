@@ -330,7 +330,7 @@ function redir($page = "", $permanent = false)
 	$addr = isset($_SERVER['HTTP_X_FORWARDED_HOST']) ? $_SERVER['HTTP_X_FORWARDED_HOST'] : $_SERVER['SERVER_NAME'];
 	$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
 	$port = $_SERVER['SERVER_PORT'] != 80 ? ($_SERVER['SERVER_PORT'] == 443 && $https ? "" : ":".$_SERVER['SERVER_PORT']) : "";
-	$location = "http".$https."://".$addr.$port.dirname($_SERVER['SCRIPT_NAME']) . "/$page";
+	$location = "http".$https."://".$addr.$port.rtrim(dirname($_SERVER['SCRIPT_NAME']), "/") . "/$page";
 	
 	// send til siden
 	$code = $permanent ? "301 Moved Permanently" : "302 Found";
