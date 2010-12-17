@@ -150,7 +150,7 @@ class omvisning
 		}
 		
 		// legg til i databasen
-		db_query("INSERT INTO omvisning SET o_order = $order, o_category = ".db_quote($category).", o_category_order = $order, o_file = ".db_quote($new_name).", o_size = ".filesize($new));
+		db_query("INSERT INTO omvisning SET o_order = $order, o_category = ".db_quote($category).", o_category_order = $c_order, o_file = ".db_quote($new_name).", o_size = ".filesize($new));
 		
 		return array($new_name, $new, mysql_insert_id());
 	}
