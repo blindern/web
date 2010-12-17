@@ -1,6 +1,6 @@
 <?php
 
-bs_side::set_title("Brukets venner");
+bs_side::set_title("Brukets Venner");
 
 echo '
 		<h1>Blindern Studenterhjem Alumnus - Brukets Venner</h1>
