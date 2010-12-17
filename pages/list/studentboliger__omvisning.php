@@ -174,7 +174,8 @@ foreach (omvisning::$groups as $category => $imgs)
 	
 	echo '
 		<div class="omvisning_bilder_cat">
-			<h2 id="c'.$c.'">'.$category.'</h2>';
+			<h2 id="c'.$c.'">'.$category.'</h2>
+			<div class="omvisning_bilder_g">';
 	
 	foreach ($imgs as $image)
 	{
@@ -186,12 +187,13 @@ foreach (omvisning::$groups as $category => $imgs)
 		
 		echo '<!-- avoid inline-block spacing
 			--><p id="img_'.$key.'"><!--
-				--><a href="'.bs_side::$pagedata->doc_path.'/graphics/images/slideshow/images/'.htmlspecialchars($image['o_file']).'"><!--
+				--><a href="'.omvisning::$link.'/'.htmlspecialchars($image['o_file']).'"><!--
 					--><img src="'.omvisning::$link.'/thumb.php?file='.htmlspecialchars($image['o_file']).'" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
 				--></a></p>';
 	}
 	
 	echo '
+			</div>
 		</div>';
 }
 

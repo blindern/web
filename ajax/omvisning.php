@@ -14,7 +14,7 @@ if (isset($_GET['move']) && isset($_POST['id']) && isset($_POST['cat']) && isset
 	$order = (int) $_POST['order'];
 	
 	// hent nåværende info
-	$result = db_query("SELECT o_category, o_order FROM omvisning WHERE o_id = $id");
+	$result = db_query("SELECT o_category, IFNULL(o_order, 0) o_order FROM omvisning WHERE o_id = $id");
 	$row = mysql_fetch_assoc($result);
 	if (!$row) die("404");
 	
@@ -26,6 +26,15 @@ if (isset($_GET['move']) && isset($_POST['id']) && isset($_POST['cat']) && isset
 	// endre kategori?
 	if ($row['o_category'] != $cat)
 	{
+		// finn kategori_order
+		$result = db_query("SELECT o_category_order FROM omvisning WHERE o_category = ".db_quote($cat)." LIMIT 1");
+		if (mysql_num_rows($result) == 0)
+		{
+			$result = db_query("SELECT MAX(o_category_order) FROM omvisning");
+			$c_order = mysql_result($result, 0) + 1;
+		}
+		else $c_order = mysql_result($result, 0);
+		
 		// korriger order på gammel kategori
 		db_query("UPDATE omvisning SET o_order = o_order - 1 WHERE o_category = ".db_quote($row['o_category'])." AND o_order > {$row['o_order']}");
 		
@@ -33,7 +42,7 @@ if (isset($_GET['move']) && isset($_POST['id']) && isset($_POST['cat']) && isset
 		db_query("UPDATE omvisning SET o_order = o_order + 1 WHERE o_category = ".db_quote($cat)." AND o_order >= $order");
 		
 		// flytt
-		db_query("UPDATE omvisning SET o_order = $order, o_category = ".db_quote($cat)." WHERE o_id = $id");
+		db_query("UPDATE omvisning SET o_order = $order, o_category = ".db_quote($cat).", o_category_order = $c_order WHERE o_id = $id");
 	}
 	
 	// ikke flyttet?

@@ -3,7 +3,7 @@
 if (!isset($_GET['file'])) die;
 
 $file = "./".$_GET['file'];
-if (!preg_match("/^[a-z0-9_\\-\\.]+$/i", $_GET['file']) || !file_exists($file))
+if (!preg_match("/^[a-z0-9_\\-\\. æøåÆØÅ]+$/i", $_GET['file']) || !file_exists($file))
 {
 	die("hmf");
 }

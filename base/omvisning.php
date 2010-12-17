@@ -18,7 +18,7 @@ class omvisning
 		self::$images_group = array();
 		
 		$result = db_query("
-			SELECT o_id, o_category, o_order, o_file, o_size, o_text, o_date, o_foto
+			SELECT o_id, o_active, o_category, o_order, o_file, o_size, o_text, o_date, o_foto
 			FROM omvisning
 			ORDER BY o_category_order, o_order");
 		
@@ -33,6 +33,108 @@ class omvisning
 	{
 		// last inn data
 		self::get_images();
+	}
+	
+	/**
+	 * Lagre endringer til bilder
+	 */
+	public static function handle_edit($changeset)
+	{
+		// changeset = [ key => [ col => new_data, ... ], ... ]
+		
+		$num = 0;
+		foreach ($changeset as $key => $data)
+		{
+			$key = (int) $key;
+			
+			$upd = array();
+			foreach ($data as $col => $value)
+			{
+				$upd[] = "$col = ".db_quote($value, $col != "o_active");
+			}
+			
+			// kjør oppdatering for denne raden
+			db_query("UPDATE omvisning SET ".implode(", ", $upd)." WHERE o_id = $key");
+			$num++;
+		}
+		
+		return $num;
+	}
+	
+	/**
+	 * Behandle opplasting av bilde
+	 */
+	public static function handle_upload($file, $category)
+	{
+		if (empty($category)) $category = "Annet";
+		
+		$src = $file['tmp_name'];
+		$org = $file['name'];
+		$name = basename($org);
+		
+		// skjekk om det er et gyldig bilde
+		if (!is_uploaded_file($src))
+		{
+			print_r($file);
+			return "error";
+		}
+		
+		// gyldig filendelse?
+		if (!preg_match("/(^.+?)\\.(jpe?g|gif|png)$/i", $name, $match))
+		{
+			return "error_ext";
+		}
+		$name_prefix = $match[1];
+		$name_suffix = strtolower(preg_replace("/[^a-z0-9_\\-\\.]/i", "_", $match[2]));
+		
+		// les bildet
+		$image = @imagecreatefromstring(@file_get_contents($src));
+		if (!$image)
+		{
+			return "error";
+		}
+		imagedestroy($image);
+		
+		// finn nytt filnavn (som ikke er i bruk)
+		$i = 1;
+		do
+		{
+			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".".$name_suffix;
+			$new = omvisning::$dir."/".$new_name;
+			$i++;
+		} while(file_exists($new));
+		
+		// forsøk å kopier over
+		if (!move_uploaded_file($src, $new))
+		{
+			return "error_move";
+		}
+		
+		// har vi denne kategorien?
+		$order = 1;
+		$result = db_query("SELECT o_category_order FROM omvisning WHERE o_category = ".db_quote($category)." LIMIT 1");
+		$c_order = mysql_result($result, 0);
+		if (!$c_order)
+		{
+			// finn høyeste sortering
+			$result = db_query("SELECT MAX(o_category_order) FROM omvisning");
+			$c_order = mysql_result($result, 0);
+			if (!$c_order) $c_order = 1;
+		}
+		
+		else
+		{
+			// finn bildesortering
+			$result = db_query("SELECT MAX(o_order) FROM omvisning WHERE o_category = ".db_quote($category));
+			$order = mysql_result($result, 0);
+			if (!$order) $order = 1;
+			else $order++;
+		}
+		
+		// legg til i databasen
+		db_query("INSERT INTO omvisning SET o_category = ".db_quote($category).", o_category_order = $order, o_file = ".db_quote($new_name).", o_size = ".filesize($new));
+		
+		return array($new_name, $new, mysql_insert_id());
 	}
 }
 
