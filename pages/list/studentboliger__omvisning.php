@@ -185,6 +185,9 @@ foreach (omvisning::$groups as $category => $imgs)
 		if ($text && $image['o_foto']) $text .= " ";
 		if ($image['o_foto']) $text .= "Foto: " . $image['o_foto'];
 		
+		if ($text && $image['o_date']) $text .= " ";
+		if ($image['o_date']) $text .= "(".$image['o_date'].")";
+		
 		echo '<!-- avoid inline-block spacing
 			--><p id="img_'.$key.'"><!--
 				--><a href="'.omvisning::$link.'/'.htmlspecialchars($image['o_file']).'"><!--
