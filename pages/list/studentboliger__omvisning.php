@@ -109,14 +109,14 @@ window.addEvent("domready", function()
 		if (!to)
 		{
 			to = elm.getParent(".omvisning_bilder_cat")[prev ? "getPrevious" : "getNext"](".omvisning_bilder_cat");
-			if (to) to = to[prev ? "getLast" : "getFirst"]("p");
+			if (to) to = to.getElement("div")[prev ? "getLast" : "getFirst"]("p");
 		}
 		
 		// roter til første/siste bilde
 		if (!to)
 		{
 			f = prev ? "getLast" : "getFirst";
-			to = $("omvisning_bilder")[f]("div")[f]("p");
+			to = $("omvisning_bilder")[f]("div").getElement("div")[f]("p");
 		}
 		
 		return to;

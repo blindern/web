@@ -93,22 +93,40 @@ class omvisning
 		{
 			return "error";
 		}
-		imagedestroy($image);
+		
+		// resize
+		$w = imagesx($image);
+		$h = imagesy($image);
+		
+		// dimensjoner
+		$width = 840;
+		$max_h = 900;
+		$height = floor($width / $w * $h);
+		if ($height > $max_h) $height = $max_h;
+		elseif ($height < 1) $height = 10;
+		
+		// opprett nytt bilde
+		$img_new = imagecreatetruecolor($width, $height);
+		
+		// kopier det andre bildet over hit
+		imagecopyresampled($img_new, $image, 0, 0, 0, 0, $width, $height, $w, $h);
 		
 		// finn nytt filnavn (som ikke er i bruk)
 		$i = 1;
 		do
 		{
-			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".".$name_suffix;
+			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".png";
 			$new = omvisning::$dir."/".$new_name;
 			$i++;
 		} while(file_exists($new));
 		
-		// forsøk å kopier over
-		if (!move_uploaded_file($src, $new))
+		// lagre bildet
+		if (!imagepng($img_new, $new))
 		{
 			return "error_move";
 		}
+		imagedestroy($image);
+		imagedestroy($img_new);
 		
 		// har vi denne kategorien?
 		$order = 1;

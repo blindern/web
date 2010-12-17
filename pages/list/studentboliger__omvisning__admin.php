@@ -111,7 +111,7 @@ if (isset($_FILES['file']) && isset($_POST['cat']))
 	if (is_array($ret))
 	{
 		$msg = '
-	<p>Bildet ble lastet opp! ('.htmlspecialchars($ret[1]).')</p>';
+	<p>Bildet ble lastet opp! ('.htmlspecialchars($ret[0]).')</p>';
 		
 		// last inn bilder på nytt
 		omvisning::get_images();
