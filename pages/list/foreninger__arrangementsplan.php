@@ -1,4 +1,4 @@
-<?php bs_side::set_title("Arrangementplan"); ?>
+<?php bs_side::set_title("Arrangementsplan"); ?>
 			<?php echo get_right_img("schussrenn_2010v.jpg", null, "Schüssrennet våren 2010", "Schüssrennet våren 2010. Foto: Anders Fagereng"); ?> <!-- Foto: Anders Fagereng -->
 			<h1>Arrangementer</h1>
 			<h2>Arrangementsplan for våren 2011</h2>
