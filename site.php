@@ -44,4 +44,4 @@ if (!isset($map[$_GET['category']][$_GET['id']]))
 	redir();
 }
 
-redir($map[$_GET['category']][$_GET['id']]);
+redir($map[$_GET['category']][$_GET['id']], true);
