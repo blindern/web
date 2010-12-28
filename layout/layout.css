@@ -379,7 +379,7 @@ p.img span {
 .leiepriser {
 	border: 1px solid black;
 	border-collapse: collapse;
-	width: 54%;
+	/*width: 54%;*/
 	margin-bottom: 1em;
 }
 
@@ -390,7 +390,7 @@ p.img span {
 
 .leiepriser td, .leiepriser th {
 	border: 1px solid black;
-	padding: 2px;
+	padding: 2px 4px;
 }
 .leiepriser .td_indent { padding-left: 20px }
 .roed {

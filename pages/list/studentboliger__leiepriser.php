@@ -16,65 +16,72 @@
 								Den totale m&aring;nedsleien best&aring;r av en rekke
 								mindre poster. Dette er alle postene som p&aring;l&oslash;per
 								hver m&aring;ned, og som ikke kan avbestilles.
-								Disse ser slik ut for h&oslash;sten 2010:
+								Disse ser slik ut for våren 2011 til våren 2012:
 							</p>
 							<table class="leiepriser">
 								<tr>
 									<th>Postens navn:</th>
-									<th>Pris:</th>
+									<th>Vår 2011</th>
+									<th>Høst 2011/Vår 2012</th>
 								</tr>
 								<tr>
 									<td><u>Kost og Losji:</u></td>
-									<td><u>En av f&oslash;lgende</u></td>
+									<td colspan="2"><i style="color: #888">En av f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Enkeltrom:</td>
-									<td>5800,-</td>
+									<td style="text-align: right">5800,-</td>
+									<td style="text-align: right">6000,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dobbeltrom:</td>
-									<td>5460,-</td>
+									<td style="text-align: right">5460,-</td>
+									<td style="text-align: right">5650,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Kombinasjonsrom:</td>
-									<td>5675,-</td>
+									<td style="text-align: right">5675,-</td>
+									<td style="text-align: right">5875,-</td>
 								</tr>
 								<tr>
 									<td><u>Andre utgifter:</u></td>
-									<td><u>Alle de f&oslash;lgende</u></td>
+									<td colspan="2"><i style="color: #888">Alle de f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Vaskeriavgift:</td>
-									<td>20,-</td>
+									<td colspan="2" style="text-align: center">20,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Telefonavgift:</td>
-									<td>35,-</td>
+									<td colspan="2" style="text-align: center">35,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Foreningsavgift:</td>
-									<td>25,-</td>
+									<td colspan="2" style="text-align: center">25,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dataavgift:</td>
-									<td>20,-</td>
+									<td colspan="2" style="text-align: center">20,-</td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
-									<td><strong>5900,-</strong></td>
+									<td style="text-align: right"><strong>5900,-</strong></td>
+									<td style="text-align: right"><strong>6100,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. dobbeltrom i mnd.</strong></td>
-									<td><strong>5560,-</strong></td>
+									<td style="text-align: right"><strong>5560,-</strong></td>
+									<td style="text-align: right"><strong>5750,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. kombinasjonsrom i mnd.</strong></td>
-									<td><strong>5775,-</strong></td>
+									<td style="text-align: right"><strong>5775,-</strong></td>
+									<td style="text-align: right"><strong>5975,-</strong></td>
 								</tr>
 							</table>
 							<p>
 								Det vil si at dersom du bor p&aring; dobbeltrom,
-								s&aring; betaler du 5560,- per m&aring;ned, og
+								s&aring; betaler du 5750,- per m&aring;ned (høst 2011), og
 								da har du betalt for str&oslash;m, mat, internett,
 								tilgang til vaskemaskin, interntelefon og fri
 								tilgang til &aring; v&aelig;re med i alle
@@ -85,7 +92,7 @@
 							<p>Resten av stipendet kan n&aring;
 								brukes p&aring; andre ting uten bekymringer over
 								bokostnader. Leieprisen blir fastsatt en gang i &aring;ret,
-								og h&oslash;sten -11 vil prisen variere fra denne oversikten.
+								og h&oslash;sten -12 vil prisen variere fra denne oversikten.
 							</p>
 							
 							<h2>Dugnad</h2>
