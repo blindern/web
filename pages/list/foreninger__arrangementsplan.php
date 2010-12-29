@@ -15,6 +15,9 @@
 				<dt>16. januar</dt>
 				<dd>Pygmemiddag m/cafe avec</dd>
 				
+				<dt>22. januar</dt>
+				<dd>UKEvors</dd>
+				
 				<dt>26. jan - 6. feb</dt>
 				<dd><b>UKA på Blindern 2011</b> - se <a href="http://blindernuka.no/">blindernuka.no</a></dd>
 				
@@ -31,7 +34,7 @@
 				<dd>Ski-VM i Oslo (IFBS arrangerer camp)</dd>
 				
 				<dt>5. mars</dt>
-				<dd>Revyball m/cafe avec</dd>
+				<dd>UKEball m/cafe avec</dd>
 				
 				<dt>18. mars</dt>
 				<dd>Pigefaarsamlingens semestermøte og PPP</dd>
@@ -63,7 +66,7 @@
 				<dt>4. juni</dt>
 				<dd>Bukkehaugsfestivalen</dd>
 			</dl>
-			<p>Sist oppdatert 16. desember 2010.</p>
+			<p>Sist oppdatert 29. desember 2010.</p>
 			
 			<!--<h2>Arrangementsplan for h&oslash;sten 2010</h2>
 			<dl class="arrangementer">
