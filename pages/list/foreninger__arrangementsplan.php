@@ -49,7 +49,7 @@
 				<dd>Scüssrenn</dd>
 				
 				<dt>22. april</dt>
-				<dd>Hyttedugnad til <a href="<?php echo bs_side::$pagedata->doc_path; ?>/smaabruket">Småbruket</a></dd>
+				<dd><span style="text-decoration: line-through">Hyttedugnad til <a href="<?php echo bs_side::$pagedata->doc_path; ?>/smaabruket">Småbruket</a></span> (må flyttes grunnet påskeferie)</dd>
 				
 				<dt>30. april</dt>
 				<dd>Russefest</dd>
@@ -66,7 +66,7 @@
 				<dt>4. juni</dt>
 				<dd>Bukkehaugsfestivalen</dd>
 			</dl>
-			<p>Sist oppdatert 29. desember 2010.</p>
+			<p>Sist oppdatert 15. januar 2011.</p>
 			
 			<!--<h2>Arrangementsplan for h&oslash;sten 2010</h2>
 			<dl class="arrangementer">
