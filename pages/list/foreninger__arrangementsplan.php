@@ -54,7 +54,7 @@
 				<dt>30. april</dt>
 				<dd>Russefest</dd>
 				
-				<dt>9. mai</dt>
+				<dt>7. mai</dt>
 				<dd>Temafest</dd>
 				
 				<dt>17. mai</dt>
@@ -66,7 +66,10 @@
 				<dt>4. juni</dt>
 				<dd>Bukkehaugsfestivalen</dd>
 			</dl>
-			<p>Sist oppdatert 15. januar 2011.</p>
+			<p>Sist oppdatert 31. januar 2011.</p>
+			<ul>
+				<li>31. januar 2011: Korrigert dato for temafest fra 9. mai til 7. mai.</li>
+			</ul>
 			
 			<!--<h2>Arrangementsplan for h&oslash;sten 2010</h2>
 			<dl class="arrangementer">
