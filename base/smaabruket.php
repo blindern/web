@@ -37,7 +37,8 @@ class smaabruket_kalender
 		$data = array();
 		foreach (self::$xml_files as $file)
 		{
-			$data[] = file_get_contents($file."?singleevents=true&start-min=$start_text&start-max=$end_text&max-results=50");
+			$d = @file_get_contents($file."?singleevents=true&start-min=$start_text&start-max=$end_text&max-results=50");
+			if ($d) $data[] = $d;
 		}
 		
 		cache::store($cache_id, $data, 600);
