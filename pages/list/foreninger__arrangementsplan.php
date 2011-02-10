@@ -48,14 +48,14 @@
 				<dt>9. april</dt>
 				<dd>Scüssrenn</dd>
 				
-				<dt>22. april</dt>
-				<dd><span style="text-decoration: line-through">Hyttedugnad til <a href="<?php echo bs_side::$pagedata->doc_path; ?>/smaabruket">Småbruket</a></span> (må flyttes grunnet påskeferie)</dd>
-				
 				<dt>30. april</dt>
 				<dd>Russefest</dd>
 				
 				<dt>7. mai</dt>
 				<dd>Temafest</dd>
+				
+				<dt>13.-15. mai</dt>
+				<dd>Hyttedugnad til <a href="<?php echo bs_side::$pagedata->doc_path; ?>/smaabruket">Småbruket</a></dd>
 				
 				<dt>17. mai</dt>
 				<dd>17. mai med cafe avec</dd>
@@ -69,6 +69,7 @@
 			<p>Sist oppdatert 31. januar 2011.</p>
 			<ul>
 				<li>31. januar 2011: Korrigert dato for temafest fra 9. mai til 7. mai.</li>
+				<li>10. februar 2011: Flyttet hyttedugnaden fra 22. april til 13. mai (kollisjon med påske).</li>
 			</ul>
 			<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 			
