@@ -17,12 +17,13 @@ body {
 
 #body_wrap {
 	background: url(../graphics/layout/bakgrunn-opacity.png) repeat-x;
+	min-width: 900px;
 	min-height: 100%;
 	overflow: hidden;
 }
 
 #container {
-	width: 1110px;
+	width: 900px;
 	
 	margin-left: auto;
 	margin-right: auto;
