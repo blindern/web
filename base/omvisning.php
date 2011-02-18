@@ -121,7 +121,7 @@ class omvisning
 		} while(file_exists($new));
 		
 		// lagre bildet
-		if (!imagejpeg($img_new, $new, 90))
+		if (!imagejpeg($img_new, $new, 85))
 		{
 			return "error_move";
 		}
