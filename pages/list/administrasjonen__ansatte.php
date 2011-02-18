@@ -10,7 +10,7 @@
 						
 						<h2>Styret</h2>
 						<div class='ansatteFrame2'>
-							<!--<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_netti.jpg" alt="Netti" />-->
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/netti.jpg" alt="Netti" />
 							<div class="ansatte_info">
 								<dl>
 									<dt>Husfar og styreleder</dt>
