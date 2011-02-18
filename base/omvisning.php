@@ -115,13 +115,13 @@ class omvisning
 		$i = 1;
 		do
 		{
-			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".png";
+			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".jpg";
 			$new = omvisning::$dir."/".$new_name;
 			$i++;
 		} while(file_exists($new));
 		
 		// lagre bildet
-		if (!imagepng($img_new, $new))
+		if (!imagejpeg($img_new, $new, 90))
 		{
 			return "error_move";
 		}
