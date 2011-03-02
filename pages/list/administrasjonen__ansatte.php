@@ -17,8 +17,8 @@
 									<dd>Netti Fuglesang</dd>
 									<dt>E-post</dt>
 									<dd><a href="mailto:netti.fuglesang@mitchi.no">netti.fuglesang@mitchi.no</a></dd>
-									<!--<dt>Mobiltelefon</dt>
-									<dd>...</dd>-->
+									<dt>Mobiltelefon</dt>
+									<dd>924 55 910</dd>
 								</dl>
 							</div>
 						</div>
