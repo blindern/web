@@ -57,6 +57,9 @@
 				<dt>13.-15. mai</dt>
 				<dd>Hyttedugnad til <a href="<?php echo bs_side::$pagedata->doc_path; ?>/smaabruket">Småbruket</a></dd>
 				
+				<dt>14. mai</dt>
+				<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
+				
 				<dt>17. mai</dt>
 				<dd>17. mai med cafe avec</dd>
 				
@@ -70,6 +73,7 @@
 			<ul>
 				<li>31. januar 2011: Korrigert dato for temafest fra 9. mai til 7. mai.</li>
 				<li>10. februar 2011: Flyttet hyttedugnaden fra 22. april til 13. mai (kollisjon med påske).</li>
+				<li>22. mars 2011: Lagt til Holmenkollstafetten 14. mai.</li>
 			</ul>
 			<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 			
