@@ -43,7 +43,7 @@ echo '
 </ol>
 <p><b>Avmelding:</b></p>
 <ol>
-	<li>Send en e-post til <b>sympa@studorg.uoi.no</b> med emnet:<br />
+	<li>Send en e-post til <b>sympa@studorg.uio.no</b> med emnet:<br />
 		<code>unsubscribe blindernbeboere</code></li>
 	<li>Du vil motta en bekreftelse for at du ble avmeldt</li>
 	<li>Se <a href="http://www.uio.no/tjenester/it/e-post-kalender/e-postlister/abonnere/unsub.html">brukerveiledningen</a> for hjelp</li>
