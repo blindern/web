@@ -195,6 +195,16 @@ bs_side::$page_class = "foreninger";
 									ved &aring; arrangere diverse sammenkomster og utflukter.
 								</p>
 							</div>
+							
+							<div class="subsection">
+								<p class="img subimg">
+									<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/sjakk_bsg_h10.jpg" alt="Sjakkmesterskap med BSG høsten 2010" /></a>
+									<span>Sjakkmesterskap arrangert av BSG høsten 2010. Foto: Henrik Steen</span>
+								</p>
+								<h2>Blindern Spill og Gåte (BSG)</h2>
+								<p>Blindern Spill og Gåte er det nyeste tilskuddet blant foreningene på Blindern Studenterhjem. Hvis du liker å stimulere intellektet i upretensiøse omgivelser er dette foreningen for deg.</p>
+								<p>Bocketurnerningen – den prestisjetunge sjakkturneringen – arrangeres av BSG hvert semester. Andre arrangementer inkluderer blant annet Data-LAN, film-maraton og brettspillturnerninger. BSG har også som regel åpen kaffebar under alle arrangementer.</p>
+							</div>
 <?php
 
 /*
