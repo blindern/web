@@ -48,6 +48,9 @@
 				<dt>9. april</dt>
 				<dd>Scüssrenn</dd>
 				
+				<dt>17. april</dt>
+				<dd>Sjakkturnering (BSG)</dd>
+				
 				<dt>30. april</dt>
 				<dd>Russefest</dd>
 				
@@ -69,12 +72,13 @@
 				<dt>4. juni</dt>
 				<dd>Bukkehaugsfestivalen</dd>
 			</dl>
-			<p>Sist oppdatert 28. mars 2011.</p>
+			<p>Sist oppdatert 29. mars 2011.</p>
 			<ul>
 				<li>31. januar 2011: Korrigert dato for temafest fra 9. mai til 7. mai.</li>
 				<li>10. februar 2011: Flyttet hyttedugnaden fra 22. april til 13. mai (kollisjon med påske).</li>
 				<li>22. mars 2011: Lagt til Holmenkollstafetten 14. mai.</li>
 				<li>28. mars 2011: Flyttet hyttedugnaden fra 13. mai til 14. mai (kollisjon med Holmenkollstafetten).</li>
+				<li>29. mars 2011: Lagt til sjakkturnering til BSG 17. april.</li>
 			</ul>
 			<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 			
