@@ -69,6 +69,9 @@
 				<dt>19. mai</dt>
 				<dd>Allmannamøte</dd>
 				
+				<dt>20. mai</dt>
+				<dd>UKAs funksjonærfest</dd>
+				
 				<dt>4. juni</dt>
 				<dd>Bukkehaugsfestivalen</dd>
 			</dl>
@@ -79,6 +82,7 @@
 				<li>22. mars 2011: Lagt til Holmenkollstafetten 14. mai.</li>
 				<li>28. mars 2011: Flyttet hyttedugnaden fra 13. mai til 14. mai (kollisjon med Holmenkollstafetten).</li>
 				<li>29. mars 2011: Lagt til sjakkturnering til BSG 17. april.</li>
+				<li>8. april 2011: Lagt til UKAs funksjonærfest 20. mai.</li>
 			</ul>
 			<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 			
