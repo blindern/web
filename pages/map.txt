@@ -3,6 +3,7 @@
 Om Blindern Studenterhjem
 	index	Kort om BS
 	om/historie	Historie
+	om/digitalt_arkiv	Digitalt arkiv
 	om/stiftelsen	Om stiftelsen
 	om/bruketsvenner	Brukets Venner
 
