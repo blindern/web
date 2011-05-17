@@ -7,7 +7,7 @@ get_right_img("godthjem.jpg", null, "Blindern Studenterhjem - Et godt hjem for s
 echo '
 <h1>Digitalt arkiv</h1>
 
-<p>I 2010-2011 ble de fleste av Blindernårene og bøkene som har blitt produsert ved Blindern Studenterhjem digitalisert. Her finner du den digitale versjonen av bøkene.</p>
+<p>I 2010-2011 tok arkivar Peter Hagen på seg oppgaven med å digitalisere alle bøkene som hadde blitt produsert ved Blindern Studenterhjem opp gjennom tidene. Her er disse digitale versjonene lagt ut slik at de er til glede både for gamle og nåværende beboere, samt for personer som ønsker mer innsikt i hverdagen som har vært på Blindern Studenterhjem opp gjennom tidene.</p>
 <p>Alle bøkene er i PDF-format. <span style="color: #FF0000">Merk at noen av filene er ganske store, og at det kan ta noe tid før dokumentet blir lastet inn.</span></p>
 
 <h2>Jubileumsbøker</h2>
