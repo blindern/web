@@ -75,8 +75,8 @@
 				<dt>20. mai</dt>
 				<dd>UKAs funksjonærfest</dd>
 				
-				<dt>4. juni</dt>
-				<dd>Bukkehaugsfestivalen</dd>
+				<dt>3. juni</dt>
+				<dd>Bukkehaugsfestivalen <span style="color: #FF0000">NB! Ny dato!</span></dd>
 			</dl>
 			<p>Sist oppdatert 10. mai 2011.</p>
 			<ul>
@@ -87,6 +87,7 @@
 				<li>29. mars 2011: Lagt til sjakkturnering til BSG 17. april.</li>
 				<li>8. april 2011: Lagt til UKAs funksjonærfest 20. mai.</li>
 				<li>10. mai 2011: Lagt til Foreningens semestermøte 12. mai.</li>
+				<li>19. mai 2011: Flyttet Bukkehaugsfestivalen fra 4. juni til 3. juni.</li>
 			</ul>
 			<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 			
