@@ -36,16 +36,16 @@ switch (bs_side::$lang)
 {
 	case "en":
 		echo '
-				<h2>Available places</h2>
-				<p>We have places available from january 2011.</p>
-				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/application">electronic application</a> which will be processed continuously!</p>';
+				<h2>Applications</h2>
+				<p>Applications for fall 2011 are evaluated throughout the summer.</p>
+				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/application">electronic application &raquo;</a></p>';
 	break;
 	
 	default:
 		echo '
-				<h2>Ledige plasser til våren</h2>
-				<p>Vi har ledige plasser fra januar 2011.</p>
-				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/opptak/sok_om_plass">elektronisk søknad</a> som blir behandlet fortløpende!</p>';
+				<h2>Inntak</h2>
+				<p>Søknad for plass til høsten 2011 evalueres fortløpende utover sommeren.</p>
+				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/opptak/sok_om_plass">elektronisk søknad &raquo;</a></p>';
 }
 
 echo '
