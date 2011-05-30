@@ -197,6 +197,13 @@ class bs_side
 		self::$menu_main = '
 		<ul id="menu_main">';
 		
+		// beboerlenke (beboere har IP-adresser på 193.157.250.0/24)
+		if (substr($_SERVER['REMOTE_ADDR'], 0, 11) == "193.157.250" || strpos($_SERVER['DOCUMENT_ROOT'], "webdev") !== false)
+		{
+			self::$menu_main .= '
+			<li class="beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a></li>';
+		}
+		
 		foreach (self::$menu_main_list as $key => $item)
 		{
 			$highlight = $category_active == $key

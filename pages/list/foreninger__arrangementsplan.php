@@ -79,9 +79,9 @@
 				<dd>IFBS-sommerleker</dd>
 				
 				<dt>3. juni</dt>
-				<dd><b>Bukkehaugsfestivalen</b> <span style="color: #FF0000">NB! Ny dato!</span></dd>
+				<dd><a href="http://www.facebook.com/event.php?eid=191738997538769"><b>Bukkehaugsfestivalen</b></a> <span style="color: #FF0000">NB! Ny dato!</span></dd>
 			</dl>
-			<p>Sist oppdatert 19. mai 2011.</p>
+			<p><i>Endringer:</i></p>
 			<ul>
 				<li>31. januar 2011: Korrigert dato for temafest fra 9. mai til 7. mai.</li>
 				<li>10. februar 2011: Flyttet hyttedugnaden fra 22. april til 13. mai (kollisjon med påske).</li>

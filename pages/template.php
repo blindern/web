@@ -72,11 +72,8 @@ switch (bs_side::$lang)
 
 echo '</p>
 		</div>
-		</div>';
-
-//		<div id="uka11banner"><a href="http://blindernuka.no/"><img src="'.bs_side::$pagedata->doc_path.'/graphics/images/uka2011.jpg" alt="UKA på Blindern 2011" /></a></div>
-
-echo '
+		</div>
+		<div id="banner"><a href="'.bs_side::$pagedata->doc_path.'/foreninger/arrangementsplan"><img src="'.bs_side::$pagedata->doc_path.'/graphics/images/bukkehaug2011.jpg" alt="Bukkehaugsfestivalen 2011" /></a></div>
 	</div>
 	<div id="footer_spacer"></div>
 </div>';

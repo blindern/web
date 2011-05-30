@@ -23,7 +23,8 @@ body {
 }
 
 #container {
-	width: 900px;
+	/*width: 900px; /* uten banner */
+	width: 1110px; /* med banner */
 	
 	margin-left: auto;
 	margin-right: auto;
@@ -58,12 +59,12 @@ body {
 	display: none;
 }
 
-/* lenke til UKA på Blindern 2011 */
-#uka11banner {
+/* lenke til arrangement */
+#banner {
 	float: right;
 	width: 200px;
 }
-#uka11banner img {
+#banner img {
 	border: 0;
 	margin: 0;
 	display: block;
@@ -105,6 +106,12 @@ body {
 }
 #menu_main .langsel {
 	float: right;
+}
+#menu_main .beboerlenke {
+	float: left;
+}
+#menu_main .beboerlenke a {
+	color: #FBF2BB;
 }
 #menu_main .langsel:last-child a {
 	padding-right: 20px;
