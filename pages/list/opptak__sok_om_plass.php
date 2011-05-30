@@ -34,12 +34,11 @@ class bs_soknad
 				Fyll ut alle feltene i formularet under
 				for &aring; sende en elektronisk s&oslash;knad. Dersom
 				du ikke har f&aring;tt svar innen 10 arbeidsdager s&aring;
-				ber vi deg om &aring; sende en ny s&oslash;knad p&aring;
-				e-post til <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.
+				ber vi deg <a href="mailto:post@blindern-studenterhjem.no">ta kontakt</a> for å undersøke om vi har mottatt søknaden.
 			</p>', '
 			<h2>Electronic application</h2>
 			<p>Fill in the fields below to send an electronic application. If you do not get any reply within 10 work days,
-				we ask you to send a new application by email to <a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a>.</p>'),
+				we ask you to <a href="mailto:post@blindern-studenterhjem.no">contact us</a> so we can check if we have received your application.</p>'),
 		"app_error"        => array('
 			<p class="soknad_feil_info">Søknaden ble ikke korrekt fylt ut og er <span class="u">ikke</span> sendt inn. Korriger feilene nedenfor og send inn på nytt.</p>', '
 			<p class="soknad_feil_info">Your application was not filled correctly and is <span class="u">not</span> sent. Correct the errors below and try again.</p>'),
