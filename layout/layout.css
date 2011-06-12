@@ -23,8 +23,8 @@ body {
 }
 
 #container {
-	/*width: 900px; /* uten banner */
-	width: 1110px; /* med banner */
+	width: 900px; /* uten banner */
+	/*width: 1110px; /* med banner */
 	
 	margin-left: auto;
 	margin-right: auto;
