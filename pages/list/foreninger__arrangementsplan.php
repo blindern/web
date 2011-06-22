@@ -40,17 +40,23 @@ echo '
 <div class="arrangementer_group" id="arr_h11">
 	<h2>Arrangementsplan for høsten 2011</h2>
 	<dl class="arrangementer">
+		<dt>10.-14. juli</dt>
+		<dd><a href="http://www.facebook.com/event.php?eid=192136654169267">Sommertur</a> til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+		
 		<dt>18. august</dt>
 		<dd>Pygmémøte</dd>
+		
+		<dt>20. august</dt>
+		<dd>Velkommen hjem-fest</dd>
 		
 		<dt>26. august</dt>
 		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
 		
 		<dt>27. august</dt>
-		<dd>Rebusløp &amp; velkommen hjem-fest</dd>
+		<dd>Rebusløp</dd>
 		
 		<dt>28. august</dt>
-		<dd>Pygmemiddag m/cafe avec (dato ikke endelig fastsatt)</dd>
+		<dd>Pygmemiddag m/cafe avec</dd>
 		
 		<dt>10. september</dt>
 		<dd>Sølecup</dd>
