@@ -428,6 +428,20 @@ ul.arrangementer li {
 	margin-left: 2em;
 }
 
+#arrangementer_head {
+	margin: 0;
+	padding: 0;
+}
+#arrangementer_head:before {
+	content: "Periode: ";
+}
+#arrangementer_head li {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+	display: inline-block;
+}
+
 
 /** Foreninger */
 .foreninger .subsection {
