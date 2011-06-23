@@ -76,6 +76,9 @@ echo '
 		<dt>7. november</dt>
 		<dd>Åpent Kollegiemøte</dd>
 		
+		<dt>10. november</dt>
+		<dd>Allmannamøte</dd>
+		
 		<dt>12. november</dt>
 		<dd>Togafest</dd>
 		
