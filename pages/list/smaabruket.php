@@ -1,7 +1,10 @@
 <?php
 
-bs_side::set_title("Hyttestyret - Foreningen Småbruket");
-bs_side::$lang_crosslink['en'] = "en/smaabruket";
+bs_side::set_title("Hyttestyret for Småbruket");
+#bs_side::$lang_crosslink['en'] = "en/smaabruket";
+
+bs_side::$keywords = "Småbruket, Brunkollen, studenthytte, Blindern Studenterhjem, bærumsmarka, utleiehytte";
+bs_side::$description = "Småbruket er Blindern Studenterhjem sin hytte i Bærumsmarka. Hytta brukes av beboere på studenterhjemmet, og leies ut til studenter, bedrifter og ivrige turmennesker.";
 
 require BASE."/smaabruket.php";
 
@@ -14,7 +17,7 @@ echo '
 							'.get_right_img("hytta_ved_peisen1.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_baal.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->
-							<h1>Småbruket</h1>
+							<h1>Hyttestyret for Småbruket</h1>
 							
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
