@@ -65,7 +65,8 @@ class bs_side
 	
 	public static $page_class;
 	
-	protected static $keywords = array(
+	public static $keywords;
+	protected static $keywords_default = array(
 		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
 		"other" => "Blindern Studenterhjem, studentbolig, studenthybel, student, bolig, blindern, oslo"
 	);
@@ -305,8 +306,10 @@ class bs_side
 	 */
 	public static function get_keywords()
 	{
-		if (isset(self::$keywords[self::$lang])) return self::$keywords[self::$lang];
-		return self::$keywords['other'];
+		if (self::$keywords) return self::$keywords;
+		
+		if (isset(self::$keywords_default[self::$lang])) return self::$keywords_default[self::$lang];
+		return self::$keywords_default['other'];
 	}
 	
 	/**
