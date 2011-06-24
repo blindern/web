@@ -58,7 +58,7 @@ echo '
 			<div id="content_clear"></div>
 		</div>
 		<div id="footer">
-			<p>Blindern Studenterhjem 2010';
+			<p>Blindern Studenterhjem 2011';
 
 switch (bs_side::$lang)
 {

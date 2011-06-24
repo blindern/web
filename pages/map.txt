@@ -8,11 +8,11 @@ Om Blindern Studenterhjem
 	om/bruketsvenner	Brukets Venner
 
 Studentbolig
-	studentboliger	Studentboliger
-	studentboliger/velferdstilbud	Felles velferdstilbud
-	studentboliger/omvisning	Digital omvisning
-	studentboliger/leiepriser	Leiepriser
-	studentboliger/beliggenhet	Beliggenhet
+	studentbolig	Studentbolig
+	studentbolig/velferdstilbud	Felles velferdstilbud
+	studentbolig/omvisning	Digital omvisning
+	studentbolig/leiepriser	Leiepriser
+	studentbolig/beliggenhet	Beliggenhet
 
 Søk deg inn
 	opptak	Opptak

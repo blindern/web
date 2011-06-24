@@ -185,7 +185,7 @@ bs_side::$page_class = "foreninger";
 							
 							<div class="subsection">
 								<p class="img subimg">
-									<a href="studentboliger/omvisning#?img=afb76a1"><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/pige_juleverksted_h09.jpg" alt="" /></a>
+									<a href="studentbolig/omvisning#?img=afb76a1"><img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/pige_juleverksted_h09.jpg" alt="" /></a>
 									<span>Pigefaarsamlingen arrangerer her juleverksted julen 2009. Foto: Milla Melgaard</span>
 								</p>
 								<h2>Pigefaarsamlingen</h2>

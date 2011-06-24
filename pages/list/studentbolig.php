@@ -8,12 +8,12 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 						<?php echo get_right_img("matsal.jpg", null, "", "Matsalen er dekorert med skjold for beboere som har utmerket seg helt tilbake til 1920-årene. Foto: Cecilie Sæle Merkesvik"); ?>
 						<?php echo get_right_img("gang_500_h10.jpg", null, "", "De fleste studentene bor i en av fløyene, her fra 500-gangen i østfløyen. Foto: Henrik Steen"); ?>
 						<?php echo get_right_img("sjakk_bsg_h10.jpg", null, "", "Sjakkturnering høsten 2010 av den nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært. Foto: Henrik Steen"); ?>
-						<h1>Studentboliger</h1>
+						<h1>Studentbolig i Oslo</h1>
 						<h2>Hva slags bolig tilbyr BS?</h2>
 						<p>
 							Det er plass til over 220 studenter p&aring;
-							Studenterhjemmet. For &aring; hjelpe beboerne inn i
-							Studenterhjemmets unike sosiale milj&oslash; flytter
+							studenterhjemmet. For &aring; hjelpe beboerne inn i
+							studenterhjemmets unike sosiale milj&oslash; flytter
 							de aller fleste f&oslash;rst inn p&aring; dobbeltrom
 							eller kombinasjonsrom. Et kombinasjonsrom er to rom
 							hvor man m&aring; g&aring; gjennom det ene rommet for
@@ -21,21 +21,21 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 						<p>Etter et kort opphold p&aring;
 							dobbeltrom eller kombinasjonsrom vil man f&aring; et
 							enkeltrom tildelt. Romfordelingen er basert p&aring;
-							ansiennitet, og desto lengre tid du bor p&aring; Studenterhjemmet,
+							ansiennitet, og desto lengre tid du bor p&aring; studenterhjemmet,
 							jo st&oslash;rre og nyere rom vil du kunne f&aring;.
 							Du kan bli n&aelig;rmere kjent med rommene gjennom
-							<a href="studentboliger/omvisning">den digitale omvisningen</a>.
+							<a href="studentbolig/omvisning">den digitale omvisningen</a>.
 						</p>
 						<h2>Hva er inkludert i husleien?</h2>
 						
 						<ul class="spaced">
 							<li><span class="u">Rommet er fullt m&oslash;blert</span>
 							n&aring;r du flytter inn, men du har ogs&aring;
-							mulighet til &aring; bytte ut noen av Studenterhjemmets
+							mulighet til &aring; bytte ut noen av studenterhjemmets
 							m&oslash;bler med dine egne.</li>
 							
 							<li><span class="u">Tilgang til Internet</span> f&aring;r
-							alle beboere gjennom Studentbynettet. Dette er den
+							alle beboere gjennom studentbynettet. Dette er den
 							samme nettforbindelsen som Studentsamskipnaden i Oslo
 							tilbyr i sine studentbyer, og er en av de raskeste
 							tilgjengelige internettforbindelsene i landet.</li>
@@ -49,6 +49,7 @@ bs_side::$lang_crosslink['en'] = "en/housing";
 							&aring; gi beboerne en forutsigbar &oslash;konomi.</li>
 							<li><span class="u">Studentvaskeriet</span> gir mulighet for
 							vask av kl&aelig;r, senget&oslash;y og lignende.</li>
+							<li><span class="u">Det vide og unike <a href="studentbolig/velferdstilbud">velferdstilbudet</a></span> og miljøet studenterhjemmet byr på.</li>
 						</ul>
 						
 						<h2>Tre daglige m&aring;ltider pluss matpakke</h2>

@@ -1,7 +1,7 @@
 <?php bs_side::set_title("Leiepriser"); ?>
 							<?php echo get_right_img("ostfloy.jpg", null, "", "Foto: Christophe Cunen"); ?>
 							<?php echo get_right_img("i_love_bs.jpg", null, "", "Blindern Studenterhjem er et unikt sted å bo. Foto: Anders Fagereng"); ?>
-							<h1>Leiepriser h&oslash;stsemesteret 2010 og våren 2011</h1>
+							<h1>Leiepriser h&oslash;stsemesteret 2011 og våren 2012</h1>
 							<h2>Om leieprisen</h2>
 							<p>
 								Den totale leieprisen best&aring;r av en rekke ting,
@@ -13,69 +13,62 @@
 							</p>
 							<h2>Leieprisens oppbyggning</h2>
 							<p>
-								Den totale m&aring;nedsleien best&aring;r av en rekke
+								Den totale m&aring;nedsleien best&aring;r av noen
 								mindre poster. Dette er alle postene som p&aring;l&oslash;per
 								hver m&aring;ned, og som ikke kan avbestilles.
-								Disse ser slik ut for våren 2011 til våren 2012:
+								Disse ser slik ut for høsten 2011 til våren 2012:
 							</p>
 							<table class="leiepriser">
 								<tr>
 									<th>Postens navn:</th>
-									<th>Vår 2011</th>
-									<th>Høst 2011/Vår 2012</th>
+									<th>Høst 2011-Vår 2012</th>
 								</tr>
 								<tr>
 									<td><u>Kost og Losji:</u></td>
-									<td colspan="2"><i style="color: #888">En av f&oslash;lgende</i></td>
+									<td style="text-align: right"><i style="color: #888">En av f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Enkeltrom:</td>
-									<td style="text-align: right">5800,-</td>
 									<td style="text-align: right">6000,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dobbeltrom:</td>
-									<td style="text-align: right">5460,-</td>
 									<td style="text-align: right">5650,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Kombinasjonsrom:</td>
-									<td style="text-align: right">5675,-</td>
 									<td style="text-align: right">5875,-</td>
 								</tr>
 								<tr>
 									<td><u>Andre utgifter:</u></td>
-									<td colspan="2"><i style="color: #888">Alle de f&oslash;lgende</i></td>
+									<td style="text-align: right"><i style="color: #888">Alle de f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Vaskeriavgift:</td>
-									<td colspan="2" style="text-align: center">20,-</td>
+									<td style="text-align: right">20,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Telefonavgift:</td>
-									<td colspan="2" style="text-align: center">35,-</td>
+									<td style="text-align: right">35,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Foreningsavgift:</td>
-									<td colspan="2" style="text-align: center">25,-</td>
+									<td style="text-align: right">25,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dataavgift:</td>
-									<td colspan="2" style="text-align: center">20,-</td>
+									<td style="text-align: right">20,-</td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5900,-</strong></td>
 									<td style="text-align: right"><strong>6100,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. dobbeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5560,-</strong></td>
 									<td style="text-align: right"><strong>5750,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. kombinasjonsrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5775,-</strong></td>
 									<td style="text-align: right"><strong>5975,-</strong></td>
 								</tr>
 							</table>
@@ -115,3 +108,4 @@
 								er fastsatt utifra hva driftskostnadene til disse
 								velferdsgodene koster &aring; vedlikeholde.
 							</p>
+							<p>Leieøkningen for høsten 2011 fra høsten 2010 var på 3,5 %.</p>

@@ -4,6 +4,7 @@ RewriteCond %{HTTP_HOST} ^www.blindern-studenterhjem.no$ [NC]
 RewriteRule ^(.*)$ http://blindern-studenterhjem.no/$1 [R=301,L]
 
 RewriteRule ^index$ / [R=301,L]
+RewriteRule ^studentboliger(/?|/.*)$ /studentbolig$1 [R=301,L]
 
 RewriteRule ^velkommen.pdf$ /dokumenter/velkommen.pdf [L,R=301]
 

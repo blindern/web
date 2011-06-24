@@ -1,7 +1,7 @@
 <?php
 
 bs_side::$lang = "en";
-bs_side::$lang_crosslink['no'] = 'studentboliger/beliggenhet';
+bs_side::$lang_crosslink['no'] = 'studentbolig/beliggenhet';
 bs_side::set_title("Location");
 
 echo '

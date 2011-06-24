@@ -16,11 +16,11 @@ $map = array(
 		"om/bruketsvenner"
 	),
 	array(
-		"studentboliger",
-		"studentboliger/velferdstilbud",
-		"studentboliger/omvisning",
-		"studentboliger/leiepriser",
-		"studentboliger/beliggenhet"
+		"studentbolig",
+		"studentbolig/velferdstilbud",
+		"studentbolig/omvisning",
+		"studentbolig/leiepriser",
+		"studentbolig/beliggenhet"
 	),
 	array(
 		"hvem_bor_soke",

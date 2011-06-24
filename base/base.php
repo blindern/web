@@ -358,7 +358,7 @@ function postval($name, $default = "")
 function get_right_img($name, $gallery_id = null, $alt = "", $text = "")
 {
 	$d = '<img src="'.bs_side::$pagedata->doc_path.'/graphics/images/'.$name.'" alt="'.htmlspecialchars($alt).'" />';
-	if ($gallery_id) $d = '<a href="'.bs_side::$pagedata->doc_path.'/studentboliger/omvisning#?img='.$gallery_id.'">'.$d.'</a>';
+	if ($gallery_id) $d = '<a href="'.bs_side::$pagedata->doc_path.'/studentbolig/omvisning#?img='.$gallery_id.'">'.$d.'</a>';
 	
 	if ($text) $text = '<span>'.$text.'</span>';
 	
