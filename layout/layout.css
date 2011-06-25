@@ -754,3 +754,46 @@ input.soknad_felt_stor {
 #sitemap li { margin: 10px 0 0 }
 #sitemap ul { margin-top: 3px }
 #sitemap li ul li { margin: 0 }
+
+
+/** Oppsett for digitalt arkiv */
+ul.books {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#content ul.books {
+	max-width: none;
+}
+ul.books li {
+	margin: 8px 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 212px;
+}
+ul.books li a {
+	font-size: 12px;
+	text-decoration: none;
+}
+ul.books li img {
+	display: block;
+	text-align: center;
+}
+ul.books span.filedesc {
+	/*display: block;*/
+	text-decoration: underline;
+}
+ul.books span.filesize {
+	/*display: none;*/
+	font-size: 11px;
+	text-decoration: none;
+	color: #333333;
+}
+ul.jubbooks span.filesize {
+	display: block;
+}
+/*ul.books li a span {
+	display: inline-block;
+}*/
