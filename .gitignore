@@ -1,1 +1,5 @@
 fix_perm.sh
+graphics/omvisning/thumbs/*
+.buildpath
+.project
+.settings/
