@@ -68,7 +68,7 @@ class bs_side
 	public static $keywords;
 	protected static $keywords_default = array(
 		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
-		"other" => "Blindern Studenterhjem, studentbolig, studenthybel, student, bolig, blindern, oslo"
+		"other" => "Blindern Studenterhjem, studentbolig i oslo, studenthybel, student, bolig, blindern, oslo"
 	);
 	
 	protected static $title_default = array(
