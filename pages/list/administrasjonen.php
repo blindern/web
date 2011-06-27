@@ -45,7 +45,7 @@ echo get_right_img("postrommet.jpg", null, "Postrommet og døren til administras
 							<p>
 								Blindern Studenterhjem<br>
 								Blindernveien 41<br>
-								0313 OSLO<br>
+								0371 OSLO<br>
 								<a href="studentbolig/beliggenhet">Se vegbeskrivelse her</a>
 							</p>
 							<h2>For &aring; ringe en beboer:</h2>
