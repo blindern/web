@@ -1,6 +1,6 @@
 <?php
 
-bs_side::set_title("Arrangementsplan");
+bs_side::set_title("Arrangementplan");
 bs_side::$head .= '
 <script src="/lib/mootools/mootools-1.2.x-core-nc.js" type="text/javascript"></script>
 <script src="/lib/mootools/mootools-1.2.x-more-nc.js" type="text/javascript"></script>
@@ -38,7 +38,7 @@ echo '
 </ul>
 
 <div class="arrangementer_group" id="arr_h11">
-	<h2>Arrangementsplan for høsten 2011</h2>
+	<h2>Arrangementplan for høsten 2011</h2>
 	<dl class="arrangementer">
 		<dt>10.-14. juli</dt>
 		<dd><a href="http://www.facebook.com/event.php?eid=192136654169267">Sommertur</a> til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
@@ -95,7 +95,7 @@ echo '
 </div>
 
 <div class="arrangementer_group" id="arr_v11">
-	<h2>Arrangementsplan for våren 2011</h2>
+	<h2>Arrangementplan for våren 2011</h2>
 	<dl class="arrangementer">
 		<dt>8. januar</dt>
 		<dd>Uoffisiell velkommen hjem-fest</dd>
@@ -190,7 +190,7 @@ echo '
 </div>
 
 <div class="arrangementer_group" id="arr_h10">
-	<h2>Arrangementsplan for h&oslash;sten 2010</h2>
+	<h2>Arrangementplan for h&oslash;sten 2010</h2>
 	<dl class="arrangementer">
 		<dt>21. august</dt>
 		<dd>Rebusløp og velkommen hjem fest</dd>
