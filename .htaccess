@@ -7,7 +7,7 @@ RewriteRule ^index$ / [R=301,L]
 RewriteRule ^studentboliger(/?|/.*)$ /studentbolig$1 [R=301,L]
 RewriteRule ^foreninger/arrangementsplan$ /foreninger/arrangementplan [R=301,L]
 
-RewriteRule ^velkommen.pdf$ /dokumenter/velkommen.pdf [L,R=301]
+RewriteRule ^velkommen.pdf$ /dokumenter/velkomstbok_jun_2011.pdf [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
