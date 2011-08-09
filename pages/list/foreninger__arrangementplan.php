@@ -64,6 +64,9 @@ echo '
 		<dt>24. september</dt>
 		<dd>Temafest</dd>
 		
+		<dt>30. sep - 2. okt</dt>
+		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+		
 		<dt>7. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
@@ -91,6 +94,7 @@ echo '
 	<p><i>Endringer:</i></p>
 	<ul>
 		<li>22. juni 2011: Foreløpig semesterplan lagt inn.</li>
+		<li>9. august 2011: Hyttedugnad 30. sep - 2. okt lagt inn</li>
 	</ul>
 </div>
 
