@@ -65,7 +65,7 @@ echo '
 		<dd>Temafest</dd>
 		
 		<dt>30. sep - 2. okt</dt>
-		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
 		
 		<dt>7. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
