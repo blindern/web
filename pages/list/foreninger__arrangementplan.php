@@ -43,11 +43,11 @@ echo '
 		<dt>10.-14. juli</dt>
 		<dd><a href="http://www.facebook.com/event.php?eid=192136654169267">Sommertur</a> til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
 		
-		<dt>18. august</dt>
-		<dd>Pygmémøte</dd>
-		
 		<dt>20. august</dt>
 		<dd>Velkommen hjem-fest</dd>
+		
+		<dt>25. august</dt>
+		<dd>Pygmémøte</dd>
 		
 		<dt>26. august</dt>
 		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
@@ -95,6 +95,7 @@ echo '
 	<ul>
 		<li>22. juni 2011: Foreløpig semesterplan lagt inn.</li>
 		<li>9. august 2011: Hyttedugnad 30. sep - 2. okt lagt inn</li>
+		<li>15. august 2011: Pygmémøtet flyttet fra 18. august til 25. august</li>
 	</ul>
 </div>
 
