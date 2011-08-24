@@ -61,6 +61,9 @@ echo '
 		<dt>24. september</dt>
 		<dd>Temafest</dd>
 		
+		<dt>26. september</dt>
+		<dd>Barskingen (IFBS)</dd>
+		
 		<dt>30. sep - 2. okt</dt>
 		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
 		
@@ -93,6 +96,7 @@ echo '
 		<li>22. juni 2011: Foreløpig semesterplan lagt inn.</li>
 		<li>9. august 2011: Hyttedugnad 30. sep - 2. okt lagt inn</li>
 		<li>15. august 2011: Pygmémøtet flyttet fra 18. august til 25. august</li>
+		<li>24. august 2011: La til Barskingen 26. september</li>
 	</ul>
 </div>
 
