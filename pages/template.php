@@ -29,27 +29,35 @@ switch (bs_side::$lang)
 		echo 'Et godt hjem for studenter';
 }
 
-echo '</span></a></h1>
+echo '</span></a></h1>';
+
+$show_application_box = false;
+if ($show_application_box)
+{
+	echo '
 			<div class="ledigeplasser">';
 
-switch (bs_side::$lang)
-{
-	case "en":
-		echo '
+	switch (bs_side::$lang)
+	{
+		case "en":
+			echo '
 				<h2>Applications</h2>
 				<p>Applications for fall 2011 are evaluated throughout the summer.</p>
 				<p>Apply an <a href="'.bs_side::$pagedata->doc_path.'/en/application">electronic application &raquo;</a></p>';
-	break;
-	
-	default:
-		echo '
+		break;
+		
+		default:
+			echo '
 				<h2>Inntak</h2>
 				<p>Søknad for plass til høsten 2011 evalueres fortløpende utover sommeren.</p>
 				<p>Send inn <a href="'.bs_side::$pagedata->doc_path.'/opptak/sok_om_plass">elektronisk søknad &raquo;</a></p>';
+	}
+
+	echo '
+			</div>';
 }
 
 echo '
-			</div>
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'

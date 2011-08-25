@@ -4,7 +4,7 @@
 // for Blindern Studenterhjem
 
 
-if (strpos(__FILE__, ":\\") !== false || substr($_SERVER['DOCUMENT_ROOT'], 0, 8) == "/var/www") // testserver/utvikling
+if (strpos(__FILE__, ":\\") !== false || substr($_SERVER['DOCUMENT_ROOT'], 0, 8) != "/var/www") // testserver/utvikling
 {
 	$db_settings = array(
 		"host" => "127.0.0.1",
@@ -16,8 +16,9 @@ if (strpos(__FILE__, ":\\") !== false || substr($_SERVER['DOCUMENT_ROOT'], 0, 8)
 
 else
 {
+	require "/etc/mysqlserver.php";
 	$db_settings = array(
-		"host" => "127.0.0.1",
+		"host" => $mysqlserver,
 		"user" => "blindern_dugnad",
 		"pass" => "7YbByOAe",
 		"db" => "blindern_dugnad"

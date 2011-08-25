@@ -1,6 +1,6 @@
 <?php
 
-bs_side::set_title("Studentbolig");
+bs_side::set_title("Studentbolig i Oslo");
 bs_side::$lang_crosslink['en'] = "en/housing";
 
 ?>

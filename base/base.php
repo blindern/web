@@ -21,16 +21,16 @@ class pagedata
 		$script = $_SERVER['SCRIPT_NAME'];
 		$this->doc_path = substr($script, 0, strrpos($script, "/"));
 		
-		if (!isset($_SERVER['REDIRECT_URL']) && !isset($_SERVER['PATH_INFO']))
+		if (!isset($_SERVER['REQUEST_URI']) && !isset($_SERVER['PATH_INFO']))
 		{
 			$this->path = "";
 			$this->path_parts = array();
 			return;
 		}
 		
-		if (isset($_SERVER['REDIRECT_URL']))
+		if (isset($_SERVER['REQUEST_URI']))
 		{
-			$this->redirect = $_SERVER['REDIRECT_URL'];
+			$this->redirect = $_SERVER['REQUEST_URI'];
 			$this->path = substr($this->redirect, strlen($this->doc_path)+1);
 		}
 		else
@@ -68,7 +68,7 @@ class bs_side
 	public static $keywords;
 	protected static $keywords_default = array(
 		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
-		"other" => "Blindern Studenterhjem, studentbolig, studenthybel, student, bolig, blindern, oslo"
+		"other" => "Blindern Studenterhjem, studentbolig i oslo, studenthybel, student, bolig, blindern, oslo"
 	);
 	
 	protected static $title_default = array(
