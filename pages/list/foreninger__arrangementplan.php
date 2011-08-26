@@ -61,7 +61,7 @@ echo '
 		<dt>24. september</dt>
 		<dd>Temafest</dd>
 		
-		<dt>26. september</dt>
+		<dt>24. september</dt>
 		<dd>Barskingen (IFBS)</dd>
 		
 		<dt>30. sep - 2. okt</dt>
@@ -97,6 +97,7 @@ echo '
 		<li>9. august 2011: Hyttedugnad 30. sep - 2. okt lagt inn</li>
 		<li>15. august 2011: Pygmémøtet flyttet fra 18. august til 25. august</li>
 		<li>24. august 2011: La til Barskingen 26. september</li>
+		<li>26. august 2011: Korrigerte dato på Barskingen til 24. september</li>
 	</ul>
 </div>
 
