@@ -88,6 +88,9 @@ echo '
 		<dt>15.-17. november</dt>
 		<dd>Kollegievalg</dd>
 		
+		<dt>16. november</dt>
+		<dd>Foreningens semestermøte</dd>
+		
 		<dt>2. desember</dt>
 		<dd>Julemøte</dd>
 	</dl>
@@ -98,6 +101,7 @@ echo '
 		<li>15. august 2011: Pygmémøtet flyttet fra 18. august til 25. august</li>
 		<li>24. august 2011: La til Barskingen 26. september</li>
 		<li>26. august 2011: Korrigerte dato på Barskingen til 24. september</li>
+		<li>26. august 2011: La inn foreningens semestermøte 16. november</li>
 	</ul>
 </div>
 
