@@ -35,39 +35,35 @@ echo '
 							<h2>Hva kan Sm&aring;bruket tilby?</h2>
 							<ul>
 								<li>24 sengeplasser og hems med madrasser (plass til 34 personer)</li>
-								<li>Stor stue med peis</li>
+								<li>Stor stue med peis og ovn</li>
 								<li>Brettspill, kort, gitar og stereoanlegg</li>
-								<li>Flott kj&oslash;kken (oppf&oslash;rt i 2007) med stort kj&oslash;leskap, komfyr, nytt servise, og det du ellers skulle trenge for &aring; lage et gourmetm&aring;ltid</li>
+								<li>Flott kj&oslash;kken (oppf&oslash;rt i 2007) med stort kj&oslash;leskap, komfyr, mye servise, og det du ellers skulle trenge for &aring; lage et gourmetm&aring;ltid</li>
 								<li>Vedfyrt badstue</li>
 								<li>Utendørs vannkran åpen året rundt</li>
 								<li>2 dusjer</li>
 								<li>Utedo</li>
+								<li>Flott utsikt over Oslofjorden</li>
 							</ul>
 							
 							<h2>Leie Småbruket</h2>
 							
 							<p>Dersom du er interessert i &aring; leie Sm&aring;bruket s&aring; kontakt utleieansvarlig på <a href="mailto:hyttestyret@gmail.com">hyttestyret@gmail.com</a>. Nedenfor kan du også se hvilke datoer hytta er ledig.</p>
 							<p>
-								S&aring; snart du har tatt kontakt med oss s&aring;
-								vil du motta en epost fra oss med veibeskrivelse
-								og videre informasjon.
-							</p>
-							<p>
 								Et reserveringsdepositum p&aring; kr 600,- m&aring; betales
 								senest en uke etter reservering av hytta. Du har da
-								gjort endelig reservering. Husk &aring; merke giroen
-								med navn og dato for leien. Minst en uke f&oslash;r
+								gjort endelig reservering. Senest en uke f&oslash;r
 								avreise tar du kontakt med utleieansvarlig for &aring;
 								avtale overlevering av n&oslash;kkel, samt skrive
 								under en leiekontrakt.
 							</p>
 							<p>
 								Etter turen tar du kontakt med utleieansvarlig for
-								&aring; levere tilbake n&oslash;kkel og lignende.
+								&aring; levere tilbake n&oslash;kkel.
 								Du m&aring; ogs&aring; opplyse hvor mange personer
 								som brukte hytta samt hvor mange vedsekker som er
 								brukt.
 							</p>
+							<p>Flere praktiske opplysninger rundt leien kan leses i <a href="/dokumenter/Infoskriv_hyttestyret.pdf">infoskrivet</a> vårt.</p>
 							
 							<h2>Priser for leie av Småbruket</h2>
 							<p>Per døgn per person:</p>
