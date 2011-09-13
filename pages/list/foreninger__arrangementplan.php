@@ -59,16 +59,19 @@ echo '
 		<dd>Sølecup</dd>
 		
 		<dt>24. september</dt>
-		<dd>Temafest</dd>
-		
-		<dt>24. september</dt>
 		<dd>Barskingen (IFBS)</dd>
 		
+		<dt>24. september</dt>
+		<dd>Temafest</dd>
+		
 		<dt>30. sep - 2. okt</dt>
-		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> - IFBS tar turen opp på lørdagen og blir over til søndag</dd>
 		
 		<dt>7. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
+		
+		<dt>9. oktober</dt>
+		<dd>Stupekurs (IFBS)</dd>
 		
 		<dt>22. oktober</dt>
 		<dd>Høstball</dd>
@@ -93,6 +96,20 @@ echo '
 		
 		<dt>2. desember</dt>
 		<dd>Julemøte</dd>
+		
+		<dt>16.-24. desember</dt>
+		<dd>Skiferie på Tynset (IFBS)</dd>
+	</dl>
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-table for nærmere informasjon. Tidspunktene nedenfor er kun veiledelde og de vanlige tidspunktene aktivitetene foregår.</p>
+	<dl class="arrangementer">
+		<dt>Mandager</dt>
+		<dd>Løping kl 18</dd>
+		<dt>Onsdager</dt>
+		<dd>Ballspill kl 16</dd>
+		<dt>Torsdager</dt>
+		<dd>&quot;Back-to-basic&quot;-styrkesirkel kl 20</dd>
+		<dt>Søndager</dt>
+		<dd>Svømming/bading kl 12</dd>
 	</dl>
 	<p><i>Endringer:</i></p>
 	<ul>
@@ -102,6 +119,7 @@ echo '
 		<li>24. august 2011: La til Barskingen 26. september</li>
 		<li>26. august 2011: Korrigerte dato på Barskingen til 24. september</li>
 		<li>26. august 2011: La inn foreningens semestermøte 16. november</li>
+		<li>13. september 2011: La i nn stupekurs 9. oktober og skiferie i desember og la inn informasjon om IFBS-aktiviteter på ukedagene</li>
 	</ul>
 </div>
 
