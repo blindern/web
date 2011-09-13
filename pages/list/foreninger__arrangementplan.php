@@ -119,7 +119,7 @@ echo '
 		<li>24. august 2011: La til Barskingen 26. september</li>
 		<li>26. august 2011: Korrigerte dato på Barskingen til 24. september</li>
 		<li>26. august 2011: La inn foreningens semestermøte 16. november</li>
-		<li>13. september 2011: La i nn stupekurs 9. oktober og skiferie i desember og la inn informasjon om IFBS-aktiviteter på ukedagene</li>
+		<li>13. september 2011: La inn stupekurs 9. oktober og skiferie i desember og la inn informasjon om IFBS-aktiviteter på ukedagene</li>
 	</ul>
 </div>
 
