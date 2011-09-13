@@ -100,7 +100,7 @@ echo '
 		<dt>16.-24. desember</dt>
 		<dd>Skiferie på Tynset (IFBS)</dd>
 	</dl>
-	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-table for nærmere informasjon. Tidspunktene nedenfor er kun veiledelde og de vanlige tidspunktene aktivitetene foregår.</p>
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon. Tidspunktene nedenfor er kun veiledelde og de vanlige tidspunktene aktivitetene foregår.</p>
 	<dl class="arrangementer">
 		<dt>Mandager</dt>
 		<dd>Løping kl 18</dd>
