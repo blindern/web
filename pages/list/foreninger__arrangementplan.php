@@ -58,11 +58,14 @@ echo '
 		<dt>10. september</dt>
 		<dd>Sølecup</dd>
 		
-		<dt>24. september</dt>
-		<dd>Barskingen (IFBS)</dd>
+		<dt>23. september</dt>
+		<dd>Filmmaraton med Pirates of the Caribbean (BSG)</d>
 		
 		<dt>24. september</dt>
 		<dd>Temafest</dd>
+		
+		<dt>25. september</dt>
+		<dd>Spillkveld og kaffebar (BSG)</dd>
 		
 		<dt>30. sep - 2. okt</dt>
 		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> - IFBS tar turen opp på lørdagen og blir over til søndag</dd>
@@ -70,8 +73,17 @@ echo '
 		<dt>7. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
+		<dt>8. oktober</dt>
+		<dd>Barskingen (IFBS)</dd>
+		
 		<dt>9. oktober</dt>
 		<dd>Stupekurs (IFBS)</dd>
+		
+		<dt>9. oktober</dt>
+		<dd>Spillkveld og kaffebar (BSG)</dd>
+		
+		<dt>16. okboer</dt>
+		<dd>Bocketurnering (BSG)</d>
 		
 		<dt>22. oktober</dt>
 		<dd>Høstball</dd>
@@ -88,14 +100,26 @@ echo '
 		<dt>12. november</dt>
 		<dd>Togafest</dd>
 		
+		<dt>13. november</dt>
+		<dd>Filmmaraton med Twilight (BSG)</d>
+		
 		<dt>15.-17. november</dt>
 		<dd>Kollegievalg</dd>
 		
 		<dt>16. november</dt>
 		<dd>Foreningens semestermøte</dd>
 		
+		<dt>20. november</dt>
+		<dd>Spillkveld og kaffebar (BSG)</dd>
+		
 		<dt>2. desember</dt>
 		<dd>Julemøte</dd>
+		
+		<dt>4. desember</dt>
+		<dd>Spillkveld og kaffebar (BSG)</dd>
+		
+		<dt>10. desember</dt>
+		<dd>Filmmaraton med Harry Potter (BSG)</d>
 		
 		<dt>16.-24. desember</dt>
 		<dd>Skiferie på Tynset (IFBS)</dd>
@@ -120,6 +144,8 @@ echo '
 		<li>26. august 2011: Korrigerte dato på Barskingen til 24. september</li>
 		<li>26. august 2011: La inn foreningens semestermøte 16. november</li>
 		<li>13. september 2011: La inn stupekurs 9. oktober og skiferie i desember og la inn informasjon om IFBS-aktiviteter på ukedagene</li>
+		<li>19. september 2011: Flyttet barskingen fra 24. september til 8. oktober</li>
+		<li>19. september 2011: La inn arrangementer for BSG.</li>
 	</ul>
 </div>
 
