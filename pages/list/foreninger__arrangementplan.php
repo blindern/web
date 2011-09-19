@@ -82,7 +82,7 @@ echo '
 		<dt>9. oktober</dt>
 		<dd>Spillkveld og kaffebar (BSG)</dd>
 		
-		<dt>16. okboer</dt>
+		<dt>16. oktober</dt>
 		<dd>Bocketurnering (BSG)</d>
 		
 		<dt>22. oktober</dt>
