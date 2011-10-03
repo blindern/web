@@ -519,6 +519,7 @@ ul.arrangementer li {
 }
 #hyttestyret_legends {
 	max-width: 600px;
+	overflow: hidden;
 }
 .hyttestyret_legend {
 	margin: 10px 0 10px 15px;
