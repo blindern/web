@@ -75,6 +75,7 @@ class smaabruket_kalender
 					$endTime = strtotime($gd->recurrence->when->attributes()->endTime);
 				}
 				
+				$reserved = substr((string)$item->title, 0, 10) == "Reservert:";
 				$start[] = $startTime;
 				$items[] = array(
 					"title" => (string) $item->title,
@@ -83,7 +84,7 @@ class smaabruket_kalender
 					"end" => $endTime,
 					"end_text" => date("r", $endTime),
 					"value" => (string) $gd->where->attributes()->valueString,
-					"calendar" => substr((string)$item->title, 0, 10) == "Reservert:" ? "Reservert" : (string) $xml->title
+					"calendar" => $reserved ? "Reservert".((string)$xml->title == "Hyttestyret" ? "2" : "") : (string) $xml->title
 				);
 			}
 		}
