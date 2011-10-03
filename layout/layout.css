@@ -481,6 +481,7 @@ ul.arrangementer li {
 .hyttestyret_kalender th span {
 	display: block;
 	font-size: 9px;
+	font-weight: normal;
 	color: #555;
 }
 .hyttestyret_kalender th span:before {
