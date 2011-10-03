@@ -112,6 +112,9 @@ class smaabruket_kalender
 		{
 			$days[$date_start->format("Y-m-d")] = false;
 			$date_start->modify("+1 day");
+			
+			// ikke vis datoer langt ut i 2012 enda
+			if ($date_start->format("Y-m-d") == "2012-01-16") break;
 		}
 		
 		foreach ($items as $item)
