@@ -478,6 +478,17 @@ ul.arrangementer li {
 	text-align: center;
 	background-color: #EEE;
 }
+.hyttestyret_kalender th span {
+	display: block;
+	font-size: 9px;
+	color: #555;
+}
+.hyttestyret_kalender th span:before {
+	content: "(";
+}
+.hyttestyret_kalender th span:after {
+	content: ")";
+}
 .hyttestyret_kalender td, .hyttestyret_kalender th {
 	border: 1px solid #DDD;
 	padding: 5px;
@@ -494,7 +505,12 @@ ul.arrangementer li {
 .hyttestyret_legend.reservert span, .hyttestyret_kalender td.reservert {
 	background-color: #FFFFAA;
 }
-.hyttestyret_kalender td.reservert:after {
+.hyttestyret_legend.reservert2 span, .hyttestyret_kalender td.reservert2 {
+	background-color: #AAAAFF;
+}
+.hyttestyret_kalender td.reservert:after,
+.hyttestyret_kalender td.reservert2:after
+ {
 	content: " (reservert)";
 }
 .hyttestyret_legend.opptatt span, .hyttestyret_kalender td.opptatt {

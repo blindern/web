@@ -1,6 +1,6 @@
 <?php
 
-bs_side::set_title("Hyttestyret for Småbruket");
+bs_side::set_title("Småbruket");
 #bs_side::$lang_crosslink['en'] = "en/smaabruket";
 
 bs_side::$keywords = "Småbruket, Brunkollen, studenthytte, Blindern Studenterhjem, bærumsmarka, utleiehytte";
@@ -17,7 +17,7 @@ echo '
 							'.get_right_img("hytta_ved_peisen1.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_baal.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->
-							<h1>Hyttestyret for Småbruket</h1>
+							<h1>Småbruket</h1>
 							
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
@@ -29,18 +29,18 @@ echo '
 								Det er et godt utstyrt kj&oslash;kken som gir gode matlagingsmuligheter.</p>
 								<p>Sm&aring;bruket passer til kollokvieturer, rekreasjon,
 								klasseturer og til alle som &oslash;nsker et avbrekk
-								fra byens mas og jag.
+								fra byens mas og jag. En meget stor stue gjør muligheter for mange
+								ulike aktiviteter.
 							</p>
 							
 							<h2>Hva kan Sm&aring;bruket tilby?</h2>
 							<ul>
-								<li>24 sengeplasser og hems med madrasser (plass til 34 personer)</li>
+								<li>24 sengeplasser og hems med madrasser (senger/madrasser til 34 personer)</li>
 								<li>Stor stue med peis og ovn</li>
 								<li>Brettspill, kort, gitar og stereoanlegg</li>
 								<li>Flott kj&oslash;kken (oppf&oslash;rt i 2007) med stort kj&oslash;leskap, komfyr, mye servise, og det du ellers skulle trenge for &aring; lage et gourmetm&aring;ltid</li>
-								<li>Vedfyrt badstue</li>
+								<li>Vedfyrt badstue og 2 dusjer</li>
 								<li>Utendørs vannkran åpen året rundt</li>
-								<li>2 dusjer</li>
 								<li>Utedo</li>
 								<li>Flott utsikt over Oslofjorden</li>
 							</ul>
@@ -77,9 +77,15 @@ echo '
 								<li>Andre: kr 90,-</li>
 							</ul>
 							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg. I tillegg tilkommer forbruk av ved med kr 120,- per vedsekk.</p>
+							<p>Hvis man kun leier ett døgn i en helg er det fint om man opplyser når man satser på ankomst/avreise så ikke begge døgnene går med.</p>
 							
 							<h2>Ledige datoer for utleie</h2>
-							<p>Her er en oversikt som viser hvilke dager hytta er reservert/utleid.</p>';
+							<p>Her er en oversikt som viser hvilke dager hytta er reservert/utleid.</p>
+							<ul>
+								<li><b>Reservert:</b> Vi har ikke mottatt depositum fra leietaker.</li>
+								<li><b>Reservert av hyttestyret:</b> Hyttestyret holder av flere helger før fastsettelse av dato for egne arrangementer. Sannsynligvis blir kun ett alternativ beholdt.</li>
+								<li><b>Opptatt:</b> Depositum er mottatt. Leien <i>kan</i> fremdeles bli avlyst.</li>
+							</ul>';
 
 $kal = new smaabruket_kalender();
 $calendar_data = $kal->get_calendar_status();
@@ -96,13 +102,13 @@ else
 								<thead>
 									<tr>
 										<th>Uke</th>
-										<th>Mandag</th>
-										<th>Tirsdag</th>
-										<th>Onsdag</th>
-										<th>Torsdag</th>
-										<th>Fredag</th>
-										<th>Lørdag</th>
-										<th>Søndag</th>
+										<th>Mandag <span>til tirsdag</span></th>
+										<th>Tirsdag <span>til onsdag</span></th>
+										<th>Onsdag <span>til torsdag</span></th>
+										<th>Torsdag <span>til fredag</span></th>
+										<th>Fredag <span>til lørdag</span></th>
+										<th>Lørdag <span>til søndag</span></th>
+										<th>Søndag <span>til mandag</span></th>
 									</tr>
 								</thead>
 								<tbody>';
@@ -148,6 +154,7 @@ else
 		
 		if (!$status) $class = 'ledig';
 		elseif ($status == "Reservert") $class = "reservert";
+		elseif ($status == "Reservert2") $class = "reservert2";
 		else $class = "opptatt";
 		
 		$is_today = $date == $today;
@@ -170,6 +177,7 @@ else
 							<div id="hyttestyret_legends">
 								<p class="hyttestyret_legend ledig"><span></span>Ledig</p>
 								<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
+								<p class="hyttestyret_legend reservert2"><span></span>Reservert av hyttestyret</p>
 								<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>
 							</div>
 							<p><b>Utleiedatoer for 2012 er ikke tilgjengelig enda.</b> Dette grunnet planlegging av egne turer og fortrinnsrett for beboere ved Blindern Studenterhjem. Ta evt. kontakt for muligheter rundt reservasjon.</p>';
