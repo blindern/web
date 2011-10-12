@@ -8,30 +8,49 @@ bs_side::$head .= '
 <style type="text/css">
 #content h2 {
 	font-size: 18px;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom: 10px;
 }
+.info_beboer {
+	margin: 20px 0;
+	padding: 10px;
+	background-color: #FCF0AD;
+	border: 1px solid #000;
+	max-width: 600px;
+}
+.info_kontakter {
+	color: #FF0000;
+}
+
 </style>';
 
 echo '
 <h1>Beboer ved Blindern Studenterhjem</h1>
 
-<p style="color: #FF0000">Dette er en intern side for beboere ved Blindern Studenterhjem.</p>
+<p class="info_beboer">Dette er en intern side for beboere ved Blindern Studenterhjem. Ikke videreformidle denne siden til eksterne.</p>
 
-<h2>Nyttige dokumenter/ressurser</h2>
+<ul>
+	<li><a href="#nyttig">Nyttige dokumenter/ressurser</a></li>
+	<li><a href="#dugnaden">Dugnaden</a></li>
+	<li><a href="#internmail">E-postliste (internmail)</a></li>
+	<li><a href="#velferden">Velferdens oppmenn</a></li>
+	<li><a href="#kollegiet">Kollegiets stillinger</a></li>
+</ul>
+
+<h2 id="nyttig">Nyttige dokumenter/ressurser</h2>
 <ul>
 	<li><a href="/velkommen.pdf">Velkomsthefte for Blindern Studenterhjem</a> (PDF, revidert høst 2011)</li>
 	<li><a href="/dokumenter/Statutter_2011-09-12.pdf">Statutter for Blinderen Studenterhjem</a> (PDF, oppdatert 12. september 2011)</li>
 	<li><a href="/foreninger/arrangementsplan">Arrangementsplan</a> (oppdateres fortløpende)</li>
 </ul>
 
-<h2>Dugnaden</h2>
+<h2 id="dugnaden">Dugnaden</h2>
 <p>Ved hvert semester blir du satt opp på to dugnader du plikter å gjennomføre.</p>
 <ul>
 	<li>Du kan <a href="/dugnaden/">bytte dugnad på dugnaddsiden</a></li>
 </ul>
 
-<h2>E-postliste (internmail)</h2>
+<h2 id="internmail">E-postliste (internmail)</h2>
 <p>På internmailen kommer beskjeder fra andre beboere og vedlikehold/administrasjonen. Det kan være veldig praktisk å få med seg beskjedene gitt på denne listen.</p>
 <p><b>Påmelding:</b></p>
 <ol>
@@ -50,4 +69,14 @@ echo '
 </ol>
 <p><b>Sende e-post til lista:</b></p>
 <p>Send e-posten til <code>blindernbeboere@studorg.uio.no</code> så blir den sendt ut til alle som er på lista.</p>
-<p>Hvis e-postadressen du sender fra ikke ligger inne i systemet vil e-posten bli godkjent av internmailoppmann før den blir sendt ut.</p>';
+<p>Hvis e-postadressen du sender fra ikke ligger inne i systemet vil e-posten bli godkjent av internmailoppmann før den blir sendt ut.</p>
+
+<h2 id="velferden">Velferdens oppmenn</h2>
+<p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
+<iframe width="700" height="500" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdG15RG1vYk5EdlR2bEk5dkpVbHUydVE&single=true&gid=0&output=html&widget=true"></iframe>
+
+<h2 id="kollegiet">Kollegiets stillinger</h2>
+<p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
+<iframe width="700" height="600" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE&single=true&gid=0&output=html&widget=true"></iframe>
+
+';
