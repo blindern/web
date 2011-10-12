@@ -12,7 +12,7 @@ bs_side::$head .= '
 	margin-bottom: 10px;
 }
 .info_beboer {
-	margin: 20px 0;
+	margin: 0 0 25px;
 	padding: 10px;
 	background-color: #FCF0AD;
 	border: 1px solid #000;
@@ -25,9 +25,9 @@ bs_side::$head .= '
 </style>';
 
 echo '
+<p class="info_beboer">Dette er en intern side for beboere ved Blindern Studenterhjem. Ikke videreformidle denne siden til eksterne.</p>
 <h1>Beboer ved Blindern Studenterhjem</h1>
 
-<p class="info_beboer">Dette er en intern side for beboere ved Blindern Studenterhjem. Ikke videreformidle denne siden til eksterne.</p>
 
 <ul>
 	<li><a href="#nyttig">Nyttige dokumenter/ressurser</a></li>
