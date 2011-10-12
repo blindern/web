@@ -775,6 +775,15 @@ input.soknad_felt_stor {
 
 
 /** Oppsett for digitalt arkiv */
+.books_beboer {
+	padding: 0 10px 10px;
+	background-color: #FCF0AD;
+	border: 1px solid #000;
+	max-width: 600px;
+}
+.books_beboer p {
+	margin: 10px 0 0 0;
+}
 ul.books {
 	list-style: none;
 	margin: 0;
@@ -791,15 +800,16 @@ ul.books li {
 	text-align: center;
 	width: 212px;
 }
+ul.books li,
 ul.books li a {
-	font-size: 12px;
+	font-size: 13px;
 	text-decoration: none;
 }
 ul.books li img {
 	display: block;
 	text-align: center;
 }
-ul.books span.filedesc {
+ul.books a span.filedesc {
 	/*display: block;*/
 	text-decoration: underline;
 }
