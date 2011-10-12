@@ -86,9 +86,21 @@ class bs_side
 	public static $menu_active = null;
 	public static $menu_all = array();
 	
+	/**
+	 * Er vi på internt nettverk?
+	 */
+	public static $is_beboer;
+	
 	public static function main()
 	{
 		self::$pagedata = new pagedata();
+		
+		// beboerlenke (beboere har IP-adresser på 193.157.250.0/24)
+		if (substr($_SERVER['REMOTE_ADDR'], 0, 11) == "193.157.250" || strpos($_SERVER['DOCUMENT_ROOT'], "webdev") !== false)
+		{
+			self::$is_beboer = true;
+		}
+		
 		self::check_request();
 	}
 	
@@ -198,8 +210,7 @@ class bs_side
 		self::$menu_main = '
 		<ul id="menu_main">';
 		
-		// beboerlenke (beboere har IP-adresser på 193.157.250.0/24)
-		if (substr($_SERVER['REMOTE_ADDR'], 0, 11) == "193.157.250" || strpos($_SERVER['DOCUMENT_ROOT'], "webdev") !== false)
+		if (bs_side::$is_beboer)
 		{
 			self::$menu_main .= '
 			<li class="beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a></li>';

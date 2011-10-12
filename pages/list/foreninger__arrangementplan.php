@@ -118,6 +118,9 @@ echo '
 		<dt>4. desember</dt>
 		<dd>Spillkveld og kaffebar (BSG)</dd>
 		
+		<dt>7. desember</dt>
+		<dd>Nansen-foredrag av Carl Emil Vogt (Biblioteket)</dd>
+		
 		<dt>10. desember</dt>
 		<dd>Filmmaraton med Harry Potter (BSG)</d>
 		
@@ -146,6 +149,7 @@ echo '
 		<li>13. september 2011: La inn stupekurs 9. oktober og skiferie i desember og la inn informasjon om IFBS-aktiviteter på ukedagene</li>
 		<li>19. september 2011: Flyttet barskingen fra 24. september til 8. oktober</li>
 		<li>19. september 2011: La inn arrangementer for BSG.</li>
+		<li>10. oktober 2011: La inn Nansen-foredrag 7. desember.</li>
 	</ul>
 </div>
 
