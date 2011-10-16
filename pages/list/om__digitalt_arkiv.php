@@ -72,6 +72,7 @@ $books1 = array(
 	array("/dokumenter/blindernaar/interne/blindernaaret_1995.pdf", "/graphics/blindernaar/Blindern året 1995.pdf.jpg", "Blindernåret 1995", "8,4 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_1996.pdf", "/graphics/blindernaar/Blindern året 1996.pdf.jpg", "Blindernåret 1996", "7,9 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_1997.pdf", "/graphics/blindernaar/Blindern året 1997.pdf.jpg", "Blindernåret 1997", "14 MB"),
+	array("/dokumenter/blindernaar/interne/blindernaaret_1998.pdf", "/graphics/blindernaar/blindernaaret_1998.jpg", "Blindernåret 1998", "0,3 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_1999.pdf", "/graphics/blindernaar/Blindern året 1999.pdf.jpg", "Blindernåret 1999", "5,2 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_2000.pdf", "/graphics/blindernaar/Blindern året 2000.pdf.jpg", "Blindernåret 2000", "12 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_2001.pdf", "/graphics/blindernaar/Blindern året 2001.pdf.jpg", "Blindernåret 2001", "1,2 MB"),
