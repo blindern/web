@@ -384,18 +384,20 @@ p.img span {
 
 
 /** Tabell for leiepriser */
-.leiepriser {
+.table, .leiepriser {
 	border: 1px solid black;
 	border-collapse: collapse;
 	/*width: 54%;*/
 	margin-bottom: 1em;
 }
 
+.table th,
 .leiepriser th {
 	text-align: left;
 	background-color: #EEEEEE;
 }
 
+.table td, .table th,
 .leiepriser td, .leiepriser th {
 	border: 1px solid black;
 	padding: 2px 4px;
