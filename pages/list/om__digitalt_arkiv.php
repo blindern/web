@@ -17,7 +17,7 @@ $books0 = array(
 	array("/dokumenter/blindernaar/blindernaaret_1940.pdf", "/graphics/blindernaar/Blindern året 1940.pdf.jpg", "Blindernåret 1940", "21 MB"),
 	array("/dokumenter/blindernaar/blindernaaret_1941.pdf", "/graphics/blindernaar/Blindern året 1941.pdf.jpg", "Blindernåret 1941", "6,0 MB"),
 	array("/dokumenter/blindernaar/blindernaaret_1942.pdf", "/graphics/blindernaar/Blindern året 1942.pdf.jpg", "Blindernåret 1942", "679 KB"),
-	array("/dokumenter/blindernaar/blindernaaret_1943-44.pdf", "/graphics/blindernaar/Blindern året 1943-44.pdf.jpg", "Blindernåret 1943-44", "5,7 MB"),
+	array("/dokumenter/blindernaar/blindernaaret_1943-45.pdf", "/graphics/blindernaar/Blindern året 1943-45.pdf.jpg", "Blindernåret 1943-45", "5,7 MB"),
 );
 
 $books1 = array(
