@@ -40,7 +40,7 @@ echo '
 <h2 id="nyttig">Nyttige dokumenter/ressurser</h2>
 <ul>
 	<li><a href="/velkommen.pdf">Velkomsthefte for Blindern Studenterhjem</a> (PDF, revidert høst 2011)</li>
-	<li><a href="/dokumenter/Statutter_2011-09-12.pdf">Statutter for Blinderen Studenterhjem</a> (PDF, oppdatert 12. september 2011)</li>
+	<li><a href="/dokumenter/Statutter_2011-10-17.pdf">Statutter for Blinderen Studenterhjem</a> (PDF, oppdatert 17. oktober 2011)</li>
 	<li><a href="/foreninger/arrangementsplan">Arrangementsplan</a> (oppdateres fortløpende)</li>
 </ul>
 
