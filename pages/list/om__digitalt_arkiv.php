@@ -97,7 +97,7 @@ echo '
 </ul>
 
 <h2>Blindernår</h2>
-<p>Komplett samling frem til 2004.</p>
+<p>Alle Blindernår gjennom historien utenom 1982. Har du Blindernåret 1982 ta kontakt med Arkivar eller <a href="'.bs_side::$pagedata->doc_path.'/administrasjonen/om_nettsidene">Hjemmesideoppmann</a>.</p>
 <p><b>Blindernår frem til krigen</b> - fritt tilgjengelig:</p>
 <ul class="books">';
 
@@ -132,5 +132,5 @@ foreach ($books1 as $row)
 
 echo '
 </ul>
-<p>Etter år 2004 skle tradisjonen med Blindernår ut. Blindernåret 2007 eksisterer. Vi forventer også at Blindernårene for 2010 og 2011 blir utgitt.</p>';
+<p>Blindernåret eksisterer ikke for periodene 2005, 2006, 2008 og 2009. 2010 er i produksjon, og Blindernåret 2010 og Blindernåret 2011 forventes å bli publisert.</p>';
 
