@@ -444,14 +444,16 @@ ul.arrangementer li {
 
 
 /** Foreninger */
-.foreninger .subsection {
+.foreninger .subsection,
+.hytta .subsection {
 	width: 600px;
 	padding: 20px;
 	margin: 40px auto;
 	background-color: #F3F3F3;
 	border: 1px solid #DDD;
 }
-.foreninger .subsection h2 {
+.foreninger .subsection h2,
+.hytta .subsection h2 {
 	font-size: 16px;
 	margin-bottom: 15px !important;
 	border-bottom: 1px solid #DDD;
@@ -469,28 +471,36 @@ ul.arrangementer li {
 
 
 /** Hyttestyret */
-.hyttestyret_kalender {
-	width: 600px;
+.hytta .subsection {
+	width: 540px;
+	margin: 30px 0 25px 20px;
+	padding-bottom: 10px;
+}
+.hyttestyret_table {
 	border: 2px solid #DDD;
 	border-collapse: collapse;
+	margin-top: 20px;
 }
-.hyttestyret_kalender th {
+.subsection .hyttestyret_table {
+	width: 540px;
+}
+.hyttestyret_table th {
 	text-align: center;
 	background-color: #EEE;
 }
-.hyttestyret_kalender th span {
+.hyttestyret_table th span {
 	display: block;
 	font-size: 9px;
 	font-weight: normal;
 	color: #555;
 }
-.hyttestyret_kalender th span:before {
+.hyttestyret_table th span:before {
 	content: "(";
 }
-.hyttestyret_kalender th span:after {
+.hyttestyret_table th span:after {
 	content: ")";
 }
-.hyttestyret_kalender td, .hyttestyret_kalender th {
+.hyttestyret_table td, .hyttestyret_table th {
 	border: 1px solid #DDD;
 	padding: 5px;
 	line-height: 1em;
