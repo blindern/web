@@ -18,6 +18,9 @@ class pagedata
 	
 	public function load_page_path()
 	{
+		//phpinfo();
+		//die;
+		
 		$script = $_SERVER['SCRIPT_NAME'];
 		$this->doc_path = substr($script, 0, strrpos($script, "/"));
 		
@@ -31,7 +34,10 @@ class pagedata
 		if (isset($_SERVER['REQUEST_URI']))
 		{
 			$this->redirect = $_SERVER['REQUEST_URI'];
-			$this->path = substr($this->redirect, strlen($this->doc_path)+1);
+			
+			//$this->path = substr($this->redirect, strlen($this->doc_path)+1);
+			$this->path = substr($_SERVER['REQUEST_URI'], 1);
+			if (($pos = strpos($this->path, "?")) !== false) $this->path = substr($this->path, 0, $pos);
 		}
 		else
 		{
