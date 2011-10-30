@@ -3,71 +3,27 @@
 // last inn database
 require BASE."/database.php";
 
-class omvisning
-{
-	public static $dir;
-	public static $link;
-	public static $datafile;
+class omvisning_category {
+	public $id;
+	public $data;
+	public $active;
+	public $images = array();
 	
-	public static $groups;
-	public static $images_group;
-	
-	public static function get_images()
-	{
-		self::$groups = array();
-		self::$images_group = array();
-		
-		$result = db_query("
-			SELECT o_id, o_active, o_category, o_order, o_file, o_size, o_text, o_date, o_foto
-			FROM omvisning
-			ORDER BY o_category_order, o_order");
-		
-		while ($row = mysql_fetch_assoc($result))
-		{
-			self::$groups[$row['o_category']][$row['o_id']] = $row;
-			self::$images_group[$row['o_id']] = &self::$groups[$row['o_category']][$row['o_id']];
-		}
+	public function __construct($data) {
+		$this->data = $data;
+		$this->id = $data['oc_id'];
+		$this->active = $data['oc_active'];
 	}
 	
-	public static function init()
-	{
-		// last inn data
-		self::get_images();
-	}
-	
-	/**
-	 * Lagre endringer til bilder
-	 */
-	public static function handle_edit($changeset)
-	{
-		// changeset = [ key => [ col => new_data, ... ], ... ]
-		
-		$num = 0;
-		foreach ($changeset as $key => $data)
-		{
-			$key = (int) $key;
-			
-			$upd = array();
-			foreach ($data as $col => $value)
-			{
-				$upd[] = "$col = ".db_quote($value, $col != "o_active");
-			}
-			
-			// kjør oppdatering for denne raden
-			db_query("UPDATE omvisning SET ".implode(", ", $upd)." WHERE o_id = $key");
-			$num++;
-		}
-		
-		return $num;
+	public function add_image($data) {
+		$this->images[$data['oi_id']] = new omvisning_item($data);
 	}
 	
 	/**
 	 * Behandle opplasting av bilde
 	 */
-	public static function handle_upload($file, $category)
+	public static function handle_upload($file)
 	{
-		if (empty($category)) $category = "Annet";
-		
 		$src = $file['tmp_name'];
 		$org = $file['name'];
 		$name = basename($org);
@@ -128,35 +84,130 @@ class omvisning
 		imagedestroy($image);
 		imagedestroy($img_new);
 		
-		// har vi denne kategorien?
-		$order = 1;
-		$result = db_query("SELECT o_category_order FROM omvisning WHERE o_category = ".db_quote($category)." LIMIT 1");
-		$c_order = mysql_result($result, 0);
-		if (!$c_order)
-		{
-			// finn høyeste sortering
-			$result = db_query("SELECT MAX(o_category_order) FROM omvisning");
-			$c_order = mysql_result($result, 0);
-			if (!$c_order) $c_order = 1;
-		}
-		
-		else
-		{
-			// finn bildesortering
-			$result = db_query("SELECT MAX(o_order) FROM omvisning WHERE o_category = ".db_quote($category));
-			$order = mysql_result($result, 0);
-			if (!$order) $order = 1;
-			else $order++;
-		}
+		// finn bildesortering
+		$order = omvisning_item::get_next_order($this->id);
 		
 		// legg til i databasen
-		db_query("INSERT INTO omvisning SET o_order = $order, o_category = ".db_quote($category).", o_category_order = $c_order, o_file = ".db_quote($new_name).", o_size = ".filesize($new));
+		db_query("INSERT INTO omvisning_item SET oi_order = $order, oi_oc_id = $this->id, oi_file = ".db_quote($new_name).", oi_size = ".filesize($new));
 		
 		return array($new_name, $new, mysql_insert_id());
+	}
+	
+	/**
+	 * Gjør endringer til galleriet
+	 */
+	public function edit(array $edit_set) {
+		$fields = array("active" => "oc_active", "title" => "oc_title", "order" => "oc_order");
+		$update = array();
+		
+		foreach ($fields as $name => $field) {
+			if (isset($edit_set[$name])) {
+				$update[] = "$field = ".db_quote($edit_set[$name]);
+				unset($edit_set[$name]);
+			}
+		}
+		
+		if (count($edit_set) > 0) throw new Exception("Unknown fields to update found.");
+		
+		if (count($update) > 0) {
+			db_query("UPDATE omvisning_category SET ".implode(", ", $update)." WHERE oc_id = $this->id");
+		}
+	}
+}
+
+class omvisning_item {
+	public $id;
+	public $data;
+	
+	public function __construct($data) {
+		$this->data = $data;
+		$this->id = $data['oi_id'];
+	}
+	
+	/**
+	 * Finn neste sorteringsnummer for bildene i et galleri
+	 */
+	public static function get_next_order($category) {
+		$result = db_query("SELECT MAX(oi_order) FROM omvisning_item WHERE oi_oc_id = ".db_quote($category));
+		return mysql_result($result, 0);
+	}
+	
+	/**
+	 * Gjør endringer til bildet
+	 */
+	public function edit(array $edit_set) {
+		$fields = array(
+			"active" => "oi_active",
+			"title" => "oi_title",
+			"order" => "oi_order",
+			"text" => "oi_text",
+			"date" => "oi_date",
+			"foto" => "oi_foto"
+		);
+		$update = array();
+		
+		foreach ($fields as $name => $field) {
+			if (isset($edit_set[$name])) {
+				$update[] = "$field = ".db_quote($edit_set[$name]);
+				unset($edit_set[$name]);
+			}
+		}
+		
+		if (count($edit_set) > 0) throw new Exception("Unknown fields to update found.");
+		
+		if (count($update) > 0) {
+			db_query("UPDATE omvisning_item SET ".implode(", ", $update)." WHERE oc_id = $this->id");
+		}
+	}
+}
+
+class omvisning {
+	public static $dir;
+	public static $link;
+	public static $datafile;
+	
+	public static $categories;
+	public static $images_category;
+	
+	public static function load_data() {
+		self::load_categories();
+		self::load_images();
+	}
+	
+	public static function load_categories() {
+		self::$categories = array();
+		
+		$result = db_query("
+			SELECT oc_id, oc_active, oc_title, oc_order
+			FROM omvisning_category
+			ORDER BY oc_order");
+		
+		while ($row = mysql_fetch_assoc($result)) {
+			self::$categories[$row['oc_id']] = new omvisning_category($row);
+		}
+	}
+	
+	public static function load_images() {
+		self::$images_category = array();
+		
+		$result = db_query("
+			SELECT *
+			FROM omvisning_item
+			ORDER BY oi_order");
+		
+		while ($row = mysql_fetch_assoc($result)) {
+			self::$categories[$row['oi_oc_id']]->add_image($row);
+			self::$images_category[$row['oi_id']] = $row['oi_oc_id'];
+		}
+	}
+	
+	public static function init()
+	{
+		// last inn data
+		self::load_data();
 	}
 }
 
 omvisning::$dir = dirname(BASE)."/graphics/omvisning";
 if (bs_side::$pagedata) omvisning::$link = bs_side::$pagedata->doc_path."/graphics/omvisning";
 omvisning::$datafile = BASE."/omvisning_data.txt";
-omvisning::init();
