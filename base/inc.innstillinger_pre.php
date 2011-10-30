@@ -5,7 +5,7 @@ define("ROOT", dirname(dirname(__FILE__)));
 
 // IP-adresse for å hoppe over lockdown status på hovedserveren
 // regex
-define("ADMIN_IP", "/(10.8.0.10|127.0.0.1|193.157.250.217)/");
+define("ADMIN_IP", "/(10.8.0.\\d+|127.0.0.1)/");
 
 // er HTTPS aktivert?
 define("HTTPS", (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : ""));
@@ -100,10 +100,6 @@ define("DBPASS", "passord");
 define("DBNAME", "databasenavn");
 
 
-// salg av billetter aktivert?
-define("PROGRAM_SELLING", false);
-
-
 // kommenter eller fjern neste linje ETTER at innstillingene ovenfor er korrigert
 die("Innstillingene må redigeres får serveren kan benyttes. Se base/inc.innstillinger_local.php.");';
 	
@@ -129,7 +125,7 @@ if ($local_settings_version < 1.1)
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="author" content="Henrik Steen; http://www.henrist.net" />
-<title>StreetzMafia</title>
+<title>Feil</title>
 <style>
 <!--
 body { font-family: tahoma; font-size: 14px; }

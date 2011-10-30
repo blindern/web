@@ -3,3 +3,4 @@ graphics/omvisning/thumbs/*
 .buildpath
 .project
 .settings/
+base/inc.innstillinger_local.php

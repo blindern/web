@@ -1,8 +1,5 @@
 <?php
 
-define("BASE", dirname(__FILE__));
-ob_start();
-
 class pagedata
 {
 	public $path;
@@ -73,18 +70,18 @@ class bs_side
 	
 	public static $keywords;
 	protected static $keywords_default = array(
-		"en" => "Blindern Studenterhjem, Blindern Student Home, student home, student residence, blindern, oslo",
-		"other" => "Blindern Studenterhjem, studentbolig i oslo, studenthybel, student, bolig, blindern, oslo"
+		"en" => array("Blindern Studenterhjem", "Blindern Student Home", "student home", "student residence", "blindern", "oslo"),
+		"other" => array("Blindern Studenterhjem", "studentbolig i oslo", "studenthybel", "student", "bolig", "blindern", "oslo")
 	);
 	
 	protected static $title_default = array(
 		"en" => "Blindern Studenterhjem - A good home for students",
 		"other" => "Blindern Studenterhjem - Et godt hjem for studenter"
 	);
-	protected static $title_format = array(
+	/*protected static $title_format = array(
 		"en" => "%s - Blindern Studenterhjem",
 		"other" => "%s - Blindern Studenterhjem"
-	);
+	);*/
 	
 	public static $menu_main;
 	public static $menu_main_list = array();
@@ -155,15 +152,32 @@ class bs_side
 		self::load_page();
 	}
 	
+	public static function show_page()
+	{
+		self::load_page();
+	}
+	
 	protected static function load_page()
 	{
+		// sett opp variabler avhengig av språk etc
+		$p = ess::$b->page;
+		if (count($p->title) == 1) {
+			$p->title[0] = self::get_title();
+		}
+		$p->keywords = array_merge(self::get_keywords(), $p->keywords);
+		if (!$p->description) $p->description = self::get_description();
+		
 		// sett opp meny
 		self::load_menu();
 		
-		self::$content .= ob_get_contents();
-		ob_clean();
+		if (self::$content) {
+			self::$content .= ob_get_contents();
+			ob_clean();
+			
+			echo self::$content;
+		}
 		
-		require "pages/template.php";
+		ess::$b->page->load();
 	}
 	
 	public static function load_menu()
@@ -318,10 +332,7 @@ class bs_side
 	 */
 	public static function set_title($title)
 	{
-		if (isset(self::$title_format[self::$lang])) $format = self::$title_format[self::$lang];
-		else $format = self::$title_format['other'];
-		
-		self::$title = sprintf($format, $title);
+		ess::$b->page->add_title($title);
 	}
 	
 	/**
@@ -329,8 +340,6 @@ class bs_side
 	 */
 	public static function get_keywords()
 	{
-		if (self::$keywords) return self::$keywords;
-		
 		if (isset(self::$keywords_default[self::$lang])) return self::$keywords_default[self::$lang];
 		return self::$keywords_default['other'];
 	}
@@ -340,8 +349,6 @@ class bs_side
 	 */
 	public static function get_title()
 	{
-		if (self::$title) return self::$title;
-		
 		if (isset(self::$title_default[self::$lang])) return self::$title_default[self::$lang];
 		return self::$title_default['other'];
 	}
@@ -351,8 +358,6 @@ class bs_side
 	 */
 	public static function get_description()
 	{
-		if (self::$description) return self::$description;
-		
 		if (isset(self::$description_default[self::$lang])) return self::$description_default[self::$lang];
 		return self::$description_default['other'];
 	}
@@ -370,12 +375,6 @@ function redir($page = "", $permanent = false)
 	header("HTTP/1.1 $code");
 	header("Location: $location");
 	die('<HTML><HEAD><TITLE>'.$code.'</TITLE></HEAD><BODY><H1>Found</H1>You have been redirected <A HREF="'.$location.'">here</A>.<P></BODY></HTML>');
-}
-
-function postval($name, $default = "")
-{
-	if (!isset($_POST[$name])) return $default;
-	return $_POST[$name];
 }
 
 function get_right_img($name, $gallery_id = null, $alt = "", $text = "")

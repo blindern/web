@@ -36,7 +36,7 @@ class theme_a_default
 <body class="'.self::$class_browser.'">'.ess::$b->page->body_start.'
 	<div id="a_wrap">
 		<div id="a_top">
-			<p>Administrasjon <a href="'.ess::$s['rpath'].'/">blindernuka.no</a></p>
+			<p>Administrasjon <a href="'.ess::$s['rpath'].'/">blindern-studenterhjem.no</a></p>
 		</div>
 		<div id="a_main">
 			<div id="a_menu_bg"></div>
@@ -59,24 +59,12 @@ class theme_a_default
 				echo '
 				<ul>';
 				
-				if (access::has("web")) echo '
-					<li><a href="'.ess::$s['rpath'].'/a/nodes.php">Meny/innholdsoversikt</a></li>
-					<li><a href="'.ess::$s['rpath'].'/a/news.php">Nyheter</a></li>';
-				
-				if (access::has("grafikk")) echo '
-					<li><a href="'.ess::$s['rpath'].'/a/images.php">Bildebehandler</a></li>';
-				
 				if (access::has("galleri")) echo '
 					<li><a href="'.ess::$s['rpath'].'/a/galleries.php">Bildegalleri</a></li>';
 				
 				echo '
 				</ul>';
 			}
-			
-			if (access::has("billett") || access::has("vakt")) echo '
-				<ul>
-					<li><a href="'.ess::$s['rpath'].'/a/program.php">Programmet</a></li>
-				</ul>';
 		}
 		
 		else

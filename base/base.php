@@ -19,6 +19,8 @@ class base
 		
 		ess::$b->dt("load_es-gu_pre");
 		
+		require ROOT."/base/bs_side.php";
+		
 		// hent inn brukerinformasjon
 		login::init();
 		ess::$b->dt("post");

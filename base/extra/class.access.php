@@ -13,10 +13,7 @@ class access
 		"bruker" => array(1),
 		"admin" => array(9, 10),
 		"sadmin" => array(10),
-		"vakt" => array(2),
-		"billett" => array(3),
-		"grafikk" => array(4),
-		"web" => array(5, 4),
+		"web" => array(5),
 		"galleri" => array(6, 5)
 	);
 	

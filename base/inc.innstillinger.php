@@ -71,11 +71,11 @@ $_lang = array(
 
 global $__page;
 $__page = array(
-	"title" => "UKA på Blindern 2011",
+	"title" => "Blindern Studenterhjem",
 	"title_direction" => "left",
-	"title_split" => " | ",
-	"keywords_default" => array("uka", "oslo", "blindern", "uka på blindern", "revy", "studentfestival", "kulturfestival", "blindern studenterhjem", "blindernuka"),
-	"description_default" => "Velkommen til UKA på Blindern, kjent som Norges mest intime studentfestival 26. januar - 6. februar 2011!",
+	"title_split" => " - ",
+	"keywords_default" => array(),
+	"description_default" => "",
 	"theme" => "bs"
 );
 
