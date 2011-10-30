@@ -6,6 +6,8 @@ bs_side::set_title("Småbruket");
 bs_side::$keywords = "Småbruket, Brunkollen, studenthytte, Blindern Studenterhjem, bærumsmarka, utleiehytte";
 bs_side::$description = "Småbruket er Blindern Studenterhjem sin hytte i Bærumsmarka. Hytta brukes av beboere på studenterhjemmet, og leies ut til studenter, bedrifter og ivrige turmennesker.";
 
+jquery();
+
 bs_side::$head .= '
 <style>
 .hytte_box {
@@ -18,7 +20,7 @@ bs_side::$head .= '
 	display: none;
 }
 </style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 $(document).ready(function() {
 	$(".hytteoff").show();
@@ -31,7 +33,7 @@ $(document).ready(function() {
 });
 </script>';
 
-require BASE."/smaabruket.php";
+require ROOT."/base/smaabruket.php";
 
 echo '
 						<div class="hytta">

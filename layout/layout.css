@@ -681,17 +681,21 @@ input.soknad_felt_stor {
 	padding: 5px;
 	text-align: center;
 	margin: 0 0 30px;
-	cursor: pointer;
+	/*cursor: pointer;*/
+}
+#omvisning_bilde h1 {
+	font-size: 18px;
 }
 #omvisning_bilde img {
 	max-width: 98%;
 	border: none;
 }
-#omvisning_bilde p {
+#omvisning_bilde_tekst {
 	margin: 5px -5px -5px -5px;
 	background-color: #DDD;
 	color: #333;
 	padding: 4px 10px;
+	display: block;
 }
 .omvisning_bilde_skjult {
 	display: none;

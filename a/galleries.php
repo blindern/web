@@ -572,8 +572,11 @@ class a_galleries
 					$description = isset($_POST['description'][$key]) ? $_POST['description'][$key] : "";
 					$visible = isset($_POST['visible'][$key]) ? 1 : 0;
 					
+					$shot_person = isset($_POST['shot_person'][$key]) ? $_POST['shot_person'][$key] : "";
+					$shot_date = isset($_POST['shot_date'][$key]) ? $_POST['shot_date'][$key] : "";
+					
 					// oppdater
-					ess::$b->db->query("UPDATE gallery_images SET gi_title = ".ess::$b->db->quote($title).", gi_description = ".ess::$b->db->quote($description).", gi_visible = $visible WHERE gi_id = $key AND gi_gc_id = {$this->active->id}");
+					ess::$b->db->query("UPDATE gallery_images SET gi_title = ".ess::$b->db->quote($title).", gi_description = ".ess::$b->db->quote($description).", gi_shot_person = ".ess::$b->db->quote($shot_person).", gi_shot_date = ".ess::$b->db->quote($shot_date).", gi_visible = $visible WHERE gi_id = $key AND gi_gc_id = {$this->active->id}");
 					$updated += mysql_affected_rows();
 				}
 				
@@ -583,7 +586,7 @@ class a_galleries
 		}
 		
 		// hent bildene
-		$result = ess::$b->db->query("SELECT gi_id, gi_title, gi_description, gi_visible FROM gallery_images WHERE gi_gc_id = {$this->active->id} AND gi_id IN (".implode(",", $gi_id).") ORDER BY gi_priority");
+		$result = ess::$b->db->query("SELECT gi_id, gi_title, gi_description, gi_shot_person, gi_shot_date, gi_visible FROM gallery_images WHERE gi_gc_id = {$this->active->id} AND gi_id IN (".implode(",", $gi_id).") ORDER BY gi_priority");
 		
 		if (mysql_num_rows($result) == 0)
 		{
@@ -608,6 +611,9 @@ class a_galleries
 			$title = isset($_POST['title'][$row['gi_id']]) ? $_POST['title'][$row['gi_id']] : $row['gi_title'];
 			$description = isset($_POST['description'][$row['gi_id']]) ? $_POST['description'][$row['gi_id']] : $row['gi_description'];
 			
+			$shot_person = isset($_POST['shot_person'][$row['gi_id']]) ? $_POST['shot_person'][$row['gi_id']] : $row['gi_shot_person'];
+			$shot_date = isset($_POST['shot_date'][$row['gi_id']]) ? $_POST['shot_date'][$row['gi_id']] : $row['gi_shot_date'];
+			
 			echo '
 	<div class="hr"></div>
 	<input type="hidden" name="gi_id[]" value="'.$row['gi_id'].'" />
@@ -618,6 +624,10 @@ class a_galleries
 		<dd><input type="checkbox" name="visible['.$row['gi_id'].']"'.($row['gi_visible'] != 0 ? ' checked="checked"' : '').' /></dd>
 		<dt>Tittel</dt>
 		<dd><input type="text" name="title['.$row['gi_id'].']" class="w350" value="'.htmlspecialchars($title).'" maxlength="150" /></dd>
+		<dt>Fotograf</dt>
+		<dd><input type="text" name="shot_person['.$row['gi_id'].']" class="w200" value="'.htmlspecialchars($shot_person).'" maxlength="100" /></dd>
+		<dt>Bildedato</dt>
+		<dd><input type="text" name="shot_date['.$row['gi_id'].']" class="w80" value="'.htmlspecialchars($shot_date).'" maxlength="50" /> YYYY-MM-DD</dd>
 		<dt>Beskrivelse</dt>
 		<dd><textarea name="description['.$row['gi_id'].']" cols="30" rows="10" class="bbkode w400">'.htmlspecialchars($description).'</textarea></dd>
 	</dl>';
@@ -1343,7 +1353,7 @@ function setDescRows(int)
 <form action="" method="post">';
 	
 			// hent bildene på denne siden
-			$result = $pageinfo->query("SELECT gi_id, gi_title, gi_description, gi_time, gi_visible FROM gallery_images WHERE gi_gc_id = {$this->active->id} ORDER BY gi_priority");
+			$result = $pageinfo->query("SELECT gi_id, gi_title, gi_description, gi_shot_person, gi_shot_date, gi_time, gi_visible FROM gallery_images WHERE gi_gc_id = {$this->active->id} ORDER BY gi_priority");
 	
 			// vis bildene på denne siden
 			$table = new tbody(min($pageinfo->total, 3));

@@ -48,10 +48,10 @@ switch ($_GET['a'])
 				140,
 				140
 			),
-			"glimt" => array(
-				"glimt",
-				80,
-				160
+			"thumb_omvisning" => array(
+				"thumb_omvisning",
+				180,
+				300
 			)
 		);
 		if (!isset($sizes[$_GET['gi_size']]))

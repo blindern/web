@@ -1,206 +1,143 @@
 <?php
 
-bs_side::set_title("Digital omvisning");
-require BASE."/omvisning.php";
-
-bs_side::$head .= '
-<script src="/lib/mootools/mootools-1.2.x-core-nc.js" type="text/javascript"></script>
-<!--<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>-->
-<script src="/lib/mootools/mootools-1.2.x-more-nc.js" type="text/javascript"></script>
-<script src="'.bs_side::$pagedata->doc_path.'/default.js"></script>
-<script>
-window.addEvent("domready", function()
-{
-	active_img = null;
-	load_hm();
-	var images = {};
+class studentbolig__omvisning {
+	private $galleries; // alle galleriene
+	private $images_gallery = array(); // bilde->galleri relasjon
 	
-	window.HM.addEvent("img-changed", function(data) {
-		set_img(data);
-	});
-	window.HM.addEvent("img-removed", function() {
-		set_img(null);
-	});
+	private $image_id;
 	
-	$$("#omvisning_bilder p").addEvent("click", function(e)
-	{
-		window.HM.set("img", this.get("id").substring(4));
-		prepare(get_upcoming(this));
+	const PATH = "/studentbolig/omvisning";
+	
+	public function __construct() {
+		bs_side::set_title("Digital omvisning");
+		jquery();
+		ess::$b->page->add_js_file(ess::$s['rpath'].'/omvisning.js');
+		ess::$b->page->add_js_file("http://balupton.github.com/history.js/scripts/bundled/html4+html5/jquery.history.js");
 		
-		(function(){$("omvisning_bilde").getParent().goto(-10);}).delay(1);
+		// hent inn alle bildene
+		$this->get_images();
 		
-		e.stop();
-	});
-	$("omvisning_back").addEvent("click", function(){ window.HM.remove("img"); }).addEvent("mousedown", function(e){e.stop()});
-	$("omvisning_prev").addEvent("click", function(){ rotate_img(true); }).addEvent("mousedown", function(e){e.stop()});
-	$("omvisning_next").addEvent("click", function(){ rotate_img(); }).addEvent("mousedown", function(e){e.stop()});
-	$("omvisning_bilde").addEvent("click", function(){ rotate_img(); });
+		// sjekk for korrekt adresse
+		$this->check_subpage();
+		
+		// vise oversikt eller spesifikt bilde?
+		if (!$this->image_id) {
+			$this->show_main();
+		} else {
+			$this->show_image();
+		}
+	}
 	
-	window.HM.recheck();
-	
-	function set_img(id)
-	{
-		var pa = active_img;
-		var p = active_img = $("img_"+id);
-		if (!p)
-		{
-			$("omvisning_bilde_inactive").setStyle("display", "");
-			$("omvisning_bilde_w").addClass("omvisning_bilde_skjult");
-			if (id) window.HM.remove("img");
+	/**
+	 * Sjekk for korrekt adresse
+	 */
+	private function check_subpage() {
+		$part_base = 2; // 2 = studentbolig/omvisning (2 deler i adressen)
+		
+		if (count(bs_side::$pagedata->path_parts) > $part_base) {
+			if (count(bs_side::$pagedata->path_parts) > $part_base+1 || !is_numeric(bs_side::$pagedata->path_parts[$part_base])) {
+				bs_side::page_not_found();
+			}
 			
-			if (pa) pa.goto(-30);
+			$this->image_id = bs_side::$pagedata->path_parts[$part_base];
 			
-			return;
+			// verifiser at vi har bildet
+			if (!isset($this->images_gallery[$this->image_id])) {
+				bs_side::page_not_found("<pP>Bildet du refererte til ble ikke funnet.</p>");
+			}
 		}
-		
-		$$("#omvisning_bilder p").removeClass("omvisning_aktiv");
-		$("omvisning_bilde_inactive").setStyle("display", "none");
-		
-		var c = $("omvisning_bilde");
-		c.empty().getParent().removeClass("omvisning_bilde_skjult");
-		
-		prepare(p).inject(c);
-		new Element("p", {text: p.getElement("img").get("alt")}).inject(c);
-		
-		// sett thumbnail som aktivt
-		p.addClass("omvisning_aktiv");
 	}
 	
-	document.addEvent("keydown", function(event)
-	{
-		if (event.alt || event.control || event.meta || event.shift) return;
+	/**
+	 * Last inn bildegalleriene og bildene i dem
+	 */
+	private function get_images() {
+		// hent alle galleriene
+		$result = ess::$b->db->q("
+			SELECT gc_id, gc_title
+			FROM gallery_categories
+			WHERE gc_visible != 0 AND gc_parent_gc_id = 0
+			ORDER BY gc_priority");
 		
-		// 27: esc
-		if (event.code == 27)
-		{
-			window.HM.remove("img");
+		$this->galleries = array();
+		while ($row = $result->fetch()) {
+			$this->galleries[$row['gc_id']] = array(
+				"title" => $row['gc_title'],
+				"images" => array()
+			);
 		}
 		
-		// 37: left, 39: right
-		else if (event.code == 37 || event.code == 39)
-		{
-			var t = $(event.target).get("tag");
-			if (t == "input" || t == "textarea") return;
-			rotate_img(event.code == 37, event);
+		// hent alle bildene
+		if (count($this->galleries) > 0) {
+			$gc_ids = implode(", ", array_keys($this->galleries));
+			$result = ess::$b->db->q("
+				SELECT gi_id, gi_gc_id, gi_description, gi_shot_person, gi_shot_date
+				FROM gallery_images
+				WHERE gi_gc_id IN ($gc_ids) AND gi_visible != 0
+				ORDER BY gi_priority");
 			
-			event.stop();
+			while ($row = $result->fetch()) {
+				$this->galleries[$row['gi_gc_id']]['images'][$row['gi_id']] = $row;
+				$this->images_gallery[$row['gi_id']] = $row['gi_gc_id'];
+			}
 		}
-	});
-	
-	function rotate_img(prev, event)
-	{
-		// har vi bilde som referanse?
-		if (!active_img) return;
 		
-		// hent bildet vi skal gå til
-		var to = get_upcoming(active_img, prev);
-		
-		// last inn neste bilde vi forventer at blir vist
-		prepare(get_upcoming(to, prev));
-		
-		window.HM.set("img", to.get("id").substring(4));
+		// fjern gallerier uten bilder
+		// må gjøre dette for at get_prev_next() skal fungere på en enkel måte
+		foreach ($this->galleries as $gc_id => $data) {
+			if (count($data['images']) == 0) unset($this->galleries[$gc_id]);
+		}
 	}
 	
-	function get_upcoming(elm, prev)
-	{
-		var to = prev ? elm.getPrevious("p") : elm.getNext("p");
-		
-		// prøv neste gruppe
-		if (!to)
-		{
-			to = elm.getParent(".omvisning_bilder_cat")[prev ? "getPrevious" : "getNext"](".omvisning_bilder_cat");
-			if (to) to = to.getElement("div")[prev ? "getLast" : "getFirst"]("p");
-		}
-		
-		// roter til første/siste bilde
-		if (!to)
-		{
-			f = prev ? "getLast" : "getFirst";
-			to = $("omvisning_bilder")[f]("div").getElement("div")[f]("p");
-		}
-		
-		return to;
-	}
-	
-	function prepare(p)
-	{
-		var id = p.get("id").substring(4);
-		if (!images[id])
-		{
-			images[id] = new Element("img");
-			images[id].set("src", p.getElement("a").get("href"));
-		}
-		
-		return images[id];
-	}
-});
-</script>';
-
-
-
-echo '
+	/**
+	 * Vise vanlig side
+	 */
+	private function show_main() {
+		echo '
 <h1>Digital omvisning</h1>
-<div id="omvisning_bilde_w" class="omvisning_bilde_skjult">
-	<p id="omvisning_nav">
-		<span id="omvisning_back"><span>Tilbake til oversikt</span></span>
-		<span id="omvisning_prev"><span>Forrige bilde</span></span>
-		<span id="omvisning_next"><span>Neste bilde</span></span><br />(Piltaster kan også benyttes.)
-	</p>
-	<p id="omvisning_bilde"></p>
-</div>
 <div id="omvisning_bilde_inactive">
 	<ul id="omvisning_liste">
 		<li>Bilder
 			<ul>';
-
-foreach (array_keys(omvisning::$groups) as $category)
-{
-	$c = preg_replace("/[^\\w]/", "", strtolower($category));
-	echo '
-				<li><a href="#c'.$c.'">'.$category.'</a></li>';
-}
-
-echo '
+		
+		foreach ($this->galleries as $id => $data)
+		{
+			echo '
+				<li><a href="#c'.$id.'">'.htmlspecialchars($data['title']).'</a></li>';
+		}
+		
+		echo '
 			</ul>
 		</li>
 		<li><a href="#cmedia">Media om Blindern Studenterhjem</a></li>
 	</ul>
 	<p id="omvisning_bilder_h">Trykk på et bilde for å vise stort bilde og beskrivelse.</p>
 	<div id="omvisning_bilder">';
-
-foreach (omvisning::$groups as $category => $imgs)
-{
-	$c = preg_replace("/[^\\w]/", "", strtolower($category));
-	
-	echo '
+		
+		foreach ($this->galleries as $gallery_id => $gallery)
+		{
+			echo '
 		<div class="omvisning_bilder_cat">
-			<h2 id="c'.$c.'">'.$category.'</h2>
+			<h2 id="c'.$gallery_id.'">'.htmlspecialchars($gallery['title']).'</h2>
 			<div class="omvisning_bilder_g">';
-	
-	foreach ($imgs as $image)
-	{
-		$key = substr(md5($image['o_file']), 0, 7);
-		
-		$text = $image['o_text'];
-		if ($text && $image['o_foto']) $text .= " ";
-		if ($image['o_foto']) $text .= "Foto: " . $image['o_foto'];
-		
-		if ($text && $image['o_date']) $text .= " ";
-		if ($image['o_date']) $text .= "(".$image['o_date'].")";
-		
-		echo '<!-- avoid inline-block spacing
-			--><p id="img_'.$key.'"><!--
-				--><a href="'.omvisning::$link.'/'.htmlspecialchars($image['o_file']).'"><!--
-					--><img src="'.omvisning::$link.'/thumb.php?file='.htmlspecialchars($image['o_file']).'" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
+			
+			foreach ($gallery['images'] as $image)
+			{
+				$text = $this->get_image_text($image);
+				
+				echo '<!-- avoid inline-block spacing
+			--><p id="img_'.$image['gi_id'].'"><!--
+				--><a href="'.self::PATH.'/'.$image['gi_id'].'"><!--
+					--><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=thumb_omvisning" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
 				--></a></p>';
-	}
-	
-	echo '
+			}
+			
+			echo '
 			</div>
 		</div>';
-}
-
-echo '
+		}
+		
+		echo '
 	</div>
 	
 	<div id="omvisning_media">
@@ -214,3 +151,123 @@ echo '
 		<object width="640" height="505"><param name="movie" value="http://www.youtube.com/v/0q4U6N6Qsd4?fs=1&amp;hl=nb_NO&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/0q4U6N6Qsd4?fs=1&amp;hl=nb_NO&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="505"></embed></object>
 	</div>
 </div>';
+	}
+	
+	/**
+	 * Vis spesifikt bilde
+	 */
+	private function show_image() {
+		list($prev, $next) = $this->get_prev_next();
+		$image = $this->get_img($this->image_id);
+		$gal_title = $this->galleries[$this->images_gallery[$this->image_id]]['title'];
+		
+		// lagre alle bilder for javascript
+		list($img_i, $data) = $this->get_js_array();
+		
+		ess::$b->page->add_js('
+var omvisning_i = '.$img_i.';
+var omvisning_data = '.json_encode($data).';');
+		
+		echo '
+<div id="omvisning_bilde_w">
+	<p id="omvisning_nav">
+		<a href="'.self::PATH.'" id="omvisning_back"><span>Tilbake til oversikt</span></a>
+		<a href="'.self::PATH.'/'.$prev.'" id="omvisning_prev"><span>Forrige bilde</span></a>
+		<a href="'.self::PATH.'/'.$next.'" id="omvisning_next"><span>Neste bilde</span></a>
+	</p>
+	<div id="omvisning_bilde">
+		<h1>Omvisning - <span id="omvisning_cat">'.htmlspecialchars($gal_title).'</span></h1>
+		<p><a href="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=original"><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=inside" alt="'.htmlspecialchars($image['gi_description']).'" /></a></p>
+		<p id="omvisning_bilde_tekst">'.$image['gi_description'].'</p>
+	</div>
+</div>';
+	}
+	
+	/**
+	 * Lag array for javascript over bildene
+	 */
+	private function get_js_array() {
+		$data = array();
+		
+		$img_i = 0;
+		$i = 0;
+		foreach ($this->galleries as $gallery) {
+			foreach ($gallery['images'] as $row) {
+				if ($row['gi_id'] == $this->image_id) $img_i = $i;
+				$data[] = array(
+					$gallery['title'],
+					$row['gi_id'],
+					$this->get_image_text($row)
+				);
+				$i++;
+			}
+		}
+		
+		return array($img_i, $data);
+	}
+	
+	/**
+	 * Lag bildetekst
+	 */
+	private function get_image_text($image) {
+		$text = $image['gi_description'];
+		
+		if ($text && $image['gi_shot_person']) $text .= " ";
+		if ($image['gi_shot_person']) $text .= "Foto: " . $image['gi_shot_person'];
+		
+		if ($text && $image['gi_shot_date']) $text .= " ";
+		if ($image['gi_shot_date']) $text .= "(".$image['gi_shot_date'].")";
+		
+		return $text;
+	}
+	
+	/**
+	 * Returner et bilde utifra ID
+	 */
+	private function get_img($id) {
+		return $this->galleries[$this->images_gallery[$id]]['images'][$id];
+	}
+	
+	/**
+	 * Finn ID for forrige og neste bilde
+	 */
+	private function get_prev_next() {
+		$prev = false;
+		$next = false;
+		
+		$last_img = 0;
+		foreach ($this->galleries as $gal_id => $gallery) {
+			foreach ($gallery['images'] as $row) {
+				if ($prev !== false) {
+					$next = $row['gi_id'];
+					break 2;
+				}
+				
+				if ($row['gi_id']  == $this->image_id) {
+					$prev = $last_img;
+					continue;
+				}
+				
+				$last_img = $row['gi_id'];
+			}
+		}
+		
+		// siste bildet er prev
+		if (!$prev) {
+			$gal = end($this->galleries);
+			$img = end($gal['images']);
+			$prev = $img['gi_id'];
+		}
+		
+		// første bildet er next
+		if (!$next) {
+			$gal = reset($this->galleries);
+			$img = reset($gal['images']);
+			$next = $img['gi_id'];
+		}
+		
+		return array($prev, $next);
+	}
+}
+
+new studentbolig__omvisning();
