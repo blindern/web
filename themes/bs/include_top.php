@@ -7,7 +7,6 @@ ess::$b->page->head = '<meta http-equiv="Content-Type" content="text/html; chars
 <meta name="author" content="Hjemmesideoppmann Blindern Studenterhjem" />
 <meta name="keywords" content="'.ess::$b->page->generate_keywords().'" />
 <meta name="description" content="'.ess::$b->page->description.'" />
-<base href="'.ess::$s['path'].'/" />
 <link rel="shortcut icon" href="'.ess::$s['rpath'].'/favicon.ico" />
 <link href="'.ess::$s['rpath'].'/layout/layout.css?'.@filemtime(dirname(dirname(dirname(__FILE__)))."/layout/layout.css").'" rel="stylesheet" type="text/css" />
 <!--[if lte IE 8]>
