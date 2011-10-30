@@ -461,3 +461,11 @@ function fix_path($path, $absolute = false)
 	return ess::$s[$absolute ? 'path' : 'rpath'].'/'.$path;
 }
 
+
+
+function jquery() {
+	if (isset(ess::$b->page->params['jquery'])) return;
+	ess::$b->page->params['jquery'] = true;
+	
+	ess::$b->page->add_js_file("http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js");
+}
