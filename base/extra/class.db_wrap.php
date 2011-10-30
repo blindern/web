@@ -269,6 +269,34 @@ class db_wrap
 		
 		die;
 	}
+	
+	/**
+	 * Utfør spørring med objekt
+	 * @return db_result
+	 */
+	public function q($query, $critical = true, $debug = false) {
+		$result = $this->query($query, $critical, $debug);
+		return new db_result($result);
+	}
+}
+
+class db_result {
+	public $result;
+	public function __construct($result) {
+		$this->result = $result;
+	}
+	
+	public function fetch() {
+		return mysql_fetch_assoc($this->result);
+	}
+	
+	public function fetch_row() {
+		return mysql_fetch_row($this->result);
+	}
+	
+	public function num() {
+		return mysql_num_rows($this->result);
+	}
 }
 
 
