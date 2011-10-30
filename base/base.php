@@ -132,11 +132,17 @@ class bs_side
 		
 		if ($request === "") $request = "index";
 		
+		// omvisning med underside?
+		if (substr($request, 0, 25) == "studentbolig__omvisning__") {
+			$request = "studentbolig__omvisning";
+			self::$menu_active = "studentbolig/omvisning";
+		}
+		
 		// finnes denne filen?
 		$file = "pages/list/$request.php";
 		if (file_exists($file))
 		{
-			self::$menu_active = self::$pagedata->path ? self::$pagedata->path : "index";
+			if (!self::$menu_active) self::$menu_active = self::$pagedata->path ? self::$pagedata->path : "index";
 			require $file;
 		}
 		
