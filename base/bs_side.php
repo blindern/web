@@ -167,6 +167,8 @@ class bs_side
 		$p->keywords = array_merge(self::get_keywords(), $p->keywords);
 		if (!$p->description) $p->description = self::get_description();
 		
+		if (self::$head) ess::$b->page->add_head(self::$head);
+		
 		// sett opp meny
 		self::load_menu();
 		
