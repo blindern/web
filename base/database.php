@@ -35,6 +35,8 @@ if (!@mysql_select_db($db_settings['db']))
 	throw new SQLSelectDatabaseException(mysql_error(), mysql_errno());
 }
 
+mysql_set_charset("utf8", $db_conn);
+
 
 // for å kjøre spørringer
 function db_query($query)
