@@ -13,10 +13,7 @@ ess::$b->page->head = '<meta http-equiv="Content-Type" content="text/html; chars
 <!--[if lte IE 8]>
 <script src="'.ess::$s['rpath'].'/html5ie.js" type="text/javascript"></script>
 <![endif]-->
-<meta name="robots" content="noindex, nofollow" />
-<script type="text/javascript" src="'.ess::$s['rpath'].'/mootools.1.3.js"></script>
-<script type="text/javascript" src="'.ess::$s['rpath'].'/mootools-more.1.3.js"></script>
-<script type="text/javascript" src="'.ess::$s['rpath'].'/blindernuka.js?update='.@filemtime(dirname(dirname(dirname(__FILE__)))."/blindernuka.js").'"></script>'.ess::$b->page->head;
+<meta name="robots" content="noindex, nofollow" />'.ess::$b->page->head;
 
 // sett opp nettleser "layout engine" til CSS
 $list = array(

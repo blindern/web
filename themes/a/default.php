@@ -4,6 +4,8 @@ if (!defined("SCRIPT_START")) {
 	die("Mangler hovedscriptet! Kan ikke fortsette!");
 }
 
+jquery();
+
 class theme_a_default
 {
 	protected static $date_now;
