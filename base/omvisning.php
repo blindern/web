@@ -5,6 +5,8 @@ class omvisning {
 	protected $images_gallery = array(); // bilde->galleri relasjon
 	protected $image_id;
 	
+	protected $show_hidden;
+	
 	const PATH = "/studentbolig/omvisning";
 	
 	/**
@@ -12,10 +14,11 @@ class omvisning {
 	 */
 	protected function get_images() {
 		// hent alle galleriene
+		$hidden = $this->show_hidden ? "" : "gc_visible != 0 AND ";
 		$result = ess::$b->db->q("
 			SELECT gc_id, gc_title
 			FROM gallery_categories
-			WHERE gc_visible != 0 AND gc_parent_gc_id = 0
+			WHERE {$hidden}gc_parent_gc_id = 0
 			ORDER BY gc_priority");
 		
 		$this->galleries = array();
@@ -29,10 +32,11 @@ class omvisning {
 		// hent alle bildene
 		if (count($this->galleries) > 0) {
 			$gc_ids = implode(", ", array_keys($this->galleries));
+			$hidden = $this->show_hidden ? "" : " AND gi_visible != 0";
 			$result = ess::$b->db->q("
 				SELECT gi_id, gi_gc_id, gi_description, gi_shot_person, gi_shot_date
 				FROM gallery_images
-				WHERE gi_gc_id IN ($gc_ids) AND gi_visible != 0
+				WHERE gi_gc_id IN ($gc_ids)$hidden
 				ORDER BY gi_priority");
 			
 			while ($row = $result->fetch()) {

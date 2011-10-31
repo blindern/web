@@ -21,21 +21,21 @@ echo get_right_img_gal(115, null, "Biblioteket har mange plasser og er et fint s
 								<li><a href="omvisning/114">TV-stue</a></li>
 								<li><a href="omvisning/109">Egen pub og festlokaler</a></li>
 								<li><a href="../smaabruket">Hytte i Bærumsmarka</a></li>
-								<li><a href="omvisning/14">Vaskeri</a></li>
+								<li><a href="omvisning/140">Vaskeri</a></li>
 								<li><a href="omvisning/115">Bibliotek og lesesal</a></li>
 								<li>Kollokvierom</li>
 								<li>Kopimaskin</li>
 								<li>Telefon på alle rom</li>
-								<li><a href="omvisning/34">Peisestue med trådløst nettverk</a></li>
+								<li><a href="omvisning/148">Peisestue med trådløst nettverk</a></li>
 								<li><a href="omvisning/110">Studentkjøkken</a> med mulighet for bakst og egne måltider</li>
-								<li><a href="omvisning/20">Badstue</a></li>
+								<li><a href="omvisning/127">Badstue</a></li>
 								<li><a href="omvisning/17">Tennisbane</a></li>
-								<li><a href="omvisning/18">Fotballbane</a></li>
-								<li><a href="omvisning/18">Sandvolleyballbane</a></li>
+								<li><a href="omvisning/141">Fotballbane</a></li>
+								<li><a href="omvisning/125">Sandvolleyballbane</a></li>
 								<li><a href="omvisning/15">Bordtennisbord</a></li>
-								<li><a href="omvisning/19">Biljardbord</a></li>
+								<li><a href="omvisning/142">Biljardbord</a></li>
 								<li><a href="omvisning/112">Musikkrom</a>, musikksallong med flygel, <a href="omvisning/111">bandrom</a></li>
-								<li><a href="omvisning/21">Gymsal og styrkerom</a></li>
+								<li><a href="omvisning/143">Gymsal og styrkerom</a></li>
 								<li>Store grøntområder</li>
 								<li>Projektor til utlån</li>
 								<li>Mange forskjellige hagespill</li>

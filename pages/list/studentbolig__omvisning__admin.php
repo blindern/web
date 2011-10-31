@@ -3,6 +3,8 @@
 require ROOT."/base/omvisning.php";
 
 class studentbolig__omvisning__admin extends omvisning {
+	protected $show_hidden = true;
+	
 	public function __construct() {
 		bs_side::set_title("Digital omvisning", "Omorganiser bilder");
 		jquery();
