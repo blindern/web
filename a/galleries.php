@@ -89,9 +89,16 @@ class a_galleries
 				continue;
 			}
 			
+			// har vi modifikasjonsdato?
+			$date = null;
+			if (isset($_POST['filemodificationdate'.$i])) {
+				$p = explode("/", substr($_POST['filemodificationdate'.$i], 0, 10));
+				if (count($p) == 3) $date = "{$p[2]}-{$p[1]}-{$p[0]}";
+			}
+			
 			// forsøk å åpne og legge til bildet
 			$data = @file_get_contents($row['tmp_name']);
-			$result = $gallery->image_add($data, $title, null);
+			$result = $gallery->image_add($data, $title, null, $date);
 			
 			if (!$result)
 			{
@@ -918,8 +925,8 @@ class a_galleries
 	<param name="lang" value="no" />
 	<param name="showLogWindow" value="false" />
 	<param name="showStatusBar" value="false" />
-	<param name="maxPicWidth" value="1280" />
-	<param name="maxPicHeight" value="1024" />
+	<param name="maxPicWidth" value="1600" />
+	<param name="maxPicHeight" value="1600" />
 	<param name="pictureCompressionQuality" value="0.9" />
 	<param name="fileChooserIconFromFileContent" value="-1" />
 	<param name="afterUploadURL" value="'.ess::$s['relative_path'].'/a/galleries.php?gc_id='.$this->active->id.'" />
@@ -1014,10 +1021,10 @@ class a_galleries
 				$img_height = imagesy($img);
 
 				// maksimal størrelse:
-				// bredde: 1280
-				// høyde: 1024
-				$max_width = 1280;
-				$max_height = 1024;
+				// bredde: 1600
+				// høyde: 1600
+				$max_width = 1600;
+				$max_height = 1600;
 
 				$copy = true;
 

@@ -186,7 +186,7 @@ class gallery
 	 * Last opp bilde
 	 * @return array($id, $filename, $p);
 	 */
-	public function image_add($data, $title, $description)
+	public function image_add($data, $title, $description, $shot_date = null)
 	{
 		// forsøk å åpne bildet
 		$img = @imagecreatefromstring($data);
@@ -263,7 +263,7 @@ class gallery
 		// legg til i databasen
 		ess::$b->db->query("
 			INSERT INTO gallery_images
-			SET gi_gc_id = $this->id, gi_title = ".ess::$b->db->quote($title).", gi_description = ".ess::$b->db->quote($description).", gi_time = ".time().", gi_priority = $priority, gi_visible = 0");
+			SET gi_gc_id = $this->id, gi_title = ".ess::$b->db->quote($title).", gi_description = ".ess::$b->db->quote($description).", gi_shot_date = ".ess::$b->db->quote($shot_date).", gi_time = ".time().", gi_priority = $priority, gi_visible = 0");
 		
 		// hent ut ID
 		$id = mysql_insert_id();

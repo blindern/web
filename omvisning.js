@@ -1,8 +1,9 @@
 $(document).ready(function() {
-	if (!$("#omvisning_bilde_w")) return;
+	if ($("#omvisning_bilde_w").length == 0) return;
 	
 	$("#omvisning_nav").append('<br />(Piltaster kan også benyttes.)</span>');
 	
+	var back_link = $("#omvisning_back");
 	var prev_link = $("#omvisning_prev");
 	var next_link = $("#omvisning_next");
 	var cat = $("#omvisning_cat");
@@ -21,7 +22,8 @@ $(document).ready(function() {
 		
 		// 27: esc
 		if (e.keyCode == 27) {
-			alert("not implementet");
+			window.location.href = "/studentbolig/omvisning#c"+omvisning_data[omvisning_i][3];
+			return false;
 		}
 		
 		// 37: left, 39: right
@@ -70,6 +72,7 @@ $(document).ready(function() {
 		text.text(omvisning_data[i][2]);
 		
 		// oppdater adresse
+		back_link.attr("href", "/studentbolig/omvisning#c"+omvisning_data[omvisning_i][3]);
 		if (!ignore_history) set_state(i);
 	}
 	
@@ -84,4 +87,38 @@ $(document).ready(function() {
 			images[i].attr("src", '/o.php?a=gi&gi_id='+omvisning_data[i][1]+'&gi_size=inside');
 		}
 	}
+});
+
+$(document).ready(function() {
+	if (!$(".omvisning_bilder_sort")) return;
+	
+	var wrap = $(".omvisning_bilder_sort");
+	wrap.sortable({
+		opacity: 0.7,
+		connectWith: ".omvisning_bilder_sort",
+		update: function(e, ui) {
+			// hvis flyttet til ny kategori: sørg for at dette er den nye
+			if ($(ui.item[0]).parent(".omvisning_bilder_sort").index(this) == -1) {
+				return;
+			}
+			
+			var order = $(ui.item[0]).prevAll("p").length + 1;
+			
+			$.ajax({
+				beforeSend: function() {
+					console.log("sending");
+				},
+				complete: function() {
+					console.log("saved");
+				},
+				data: {
+					"id": $(ui.item[0]).attr("id").substring(4),
+					"cat": $(this).parent().find("h2:first").attr("id").substring(1),
+					"order": order
+				},
+				type: "post",
+				url: "/ajax/omvisning.php?move"
+			});
+		}
+	}); // wrap.sortable
 });

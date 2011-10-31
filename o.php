@@ -35,8 +35,8 @@ switch ($_GET['a'])
 			),
 			"inside" => array(
 				"inside",
-				600,
-				600
+				840,
+				900
 			),
 			"fullside" => array(
 				"fullside",
@@ -51,6 +51,11 @@ switch ($_GET['a'])
 			"thumb_omvisning" => array(
 				"thumb_omvisning",
 				180,
+				300
+			),
+			"pageright" => array(
+				"pageright",
+				220,
 				300
 			)
 		);
