@@ -131,7 +131,7 @@ class bs_side
 		
 		// omvisning med underside?
 		if (substr($request, 0, 25) == "studentbolig__omvisning__") {
-			$request = "studentbolig__omvisning";
+			if ($request != "studentbolig__omvisning__admin") $request = "studentbolig__omvisning";
 			self::$menu_active = "studentbolig/omvisning";
 		}
 		
@@ -387,4 +387,13 @@ function get_right_img($name, $gallery_id = null, $alt = "", $text = "")
 	if ($text) $text = '<span>'.$text.'</span>';
 	
 	return '<p class="img img_right">'.$d.$text.'</p>';
+}
+
+function get_right_img_gal($gallery_id, $alt, $text, $fototext = null) {
+	if ($alt === null && $text) $alt = strip_tags($text);
+	
+	if ($fototext) $text .= ($text ? " " : "").$fototext;
+	if ($text) $text = '<span>'.$text.'</span>';
+	
+	return '<p class="img img_right"><a href="/studentbolig/omvisning/'.$gallery_id.'"><img src="/o.php?a=gi&amp;gi_id='.$gallery_id.'&amp;gi_size=pageright" alt="'.htmlspecialchars($alt).'" />'.$text.'</a></p>';
 }
