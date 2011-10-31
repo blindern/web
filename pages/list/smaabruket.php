@@ -37,11 +37,29 @@ require ROOT."/base/smaabruket.php";
 
 echo '
 						<div class="hytta">
+							<p style="float: right">Trykk for større bilder og bildegalleri.</p>
+							'.get_right_img_gal(87, null, "Skilt som peker i retningen mot Småbruket ved Brunkollen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(104, null, "Småbruket tar seg vakkert ut i Bærumsmarka.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(92, null, "Hovedsoverommet med 8. I tillegg er det 16 senger i annekset og 10 madrasser på hemsen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(94, null, "Hytta har en stor stue.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(106, null, "Lite slår den gode stemningen med en kveld rundt peisen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(99, null, "Stua rommer en hel folkemasse. Her fra tur med hele 49 personer, hvor også alle overnattet.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(91, null, "Hytta er godt utstyrt med mye servise.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(105, null, "Flott utsikt utover Oslofjorden.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(102, null, "Ute er det en flott bålplass med benker rundt.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(97, null, "Flott vedfyrt badstue.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(108, null, "Pygmétur høsten 2010.", "Foto: Henrik Steen").'
+							';
+
+/*
+							
 							'.get_right_img("hytta_fra_bekken.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_utenfor_dugnad_v2010.jpg", null, "", "Hyttedugnad våren 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_ved_peisen1.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_baal.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->
+							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->*/
+
+echo '
 							<h1>Småbruket</h1>
 							
 						<div class="subsection">

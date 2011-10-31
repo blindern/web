@@ -187,6 +187,10 @@ img {
 	clear: right;
 	margin: 5px 0 5px 5px;
 }
+.img_right a {
+	text-decoration: none;
+	color: inherit;
+}
 .img_top {
 	margin-top: 0;
 }
@@ -445,6 +449,7 @@ ul.arrangementer li {
 
 /** Foreninger */
 .foreninger .subsection,
+.subsection_left .subsection,
 .hytta .subsection {
 	width: 600px;
 	padding: 20px;
@@ -453,6 +458,7 @@ ul.arrangementer li {
 	border: 1px solid #DDD;
 }
 .foreninger .subsection h2,
+.subsection_left .subsection h2,
 .hytta .subsection h2 {
 	font-size: 16px;
 	margin-bottom: 15px !important;
@@ -471,7 +477,8 @@ ul.arrangementer li {
 
 
 /** Hyttestyret */
-.hytta .subsection {
+.hytta .subsection,
+.subsection_left .subsection {
 	width: 540px;
 	margin: 30px 0 25px 20px;
 	padding-bottom: 10px;

@@ -1,9 +1,14 @@
-<?php bs_side::set_title("Velferdstilbud"); ?>
-							
-							<?php echo get_right_img("badstua.jpg", null, "", "Badstua styres av Blindern Bad og Badstueforening og kan brukes av alle beboere. Foto: Henrik Steen"); ?>
-							<?php echo get_right_img("bandrommet.jpg", null, "", "På et av stedets svært mange rom finner man her bandrommet. Foto: Henrik Steen"); ?>
-							<?php echo get_right_img("tvstua.jpg", null, "", "TV-stua kan benyttes fritt av alle beboere. Her får man inn så godt som alle kanalene man skulle ha behov for. Foto: Henrik Steen"); ?>
-							<?php echo get_right_img("bibliotek.jpg", null, "", "Biblioteket har mange plasser og er et fint sted og jobbe med studier. Med varm kaffe fra matsalen har man alt man trenger. Foto: Henrik Steen"); ?>
+<?php
+
+bs_side::set_title("Velferdstilbud");
+
+echo get_right_img_gal(127, null, "Badstua er fast tilholdssted for Blindern Bad og Badstueforening, men kan også brukes av alle øvrige beboere.", "Foto: Henrik Steen");
+echo get_right_img_gal(111, null, "På et av stedets svært mange rom finner man her bandrommet.", "Foto: Henrik Steen");
+echo get_right_img_gal(114, null, "TV-stua kan benyttes fritt av alle beboere. Her får man inn alle kanalene man skulle ha behov for.", "Foto: Henrik Steen");
+echo get_right_img_gal(115, null, "Biblioteket har mange plasser og er et fint sted og jobbe med studier. Med varm kaffe fra matsalen har man alt man trenger.", "Foto: Henrik Steen");
+
+?>
+
 							<h1>Felles velferdstilbud</h1>
 							<h2>Velferdstilbud</h2>
 							<p>
@@ -13,32 +18,32 @@
 							</p>
 							
 							<ul>
-								<li>TV-stue</li>
-								<li><a href="omvisning#?img=c20785a">Egen pub og festlokaler</a></li>
+								<li><a href="omvisning/114">TV-stue</a></li>
+								<li><a href="omvisning/109">Egen pub og festlokaler</a></li>
 								<li><a href="../smaabruket">Hytte i Bærumsmarka</a></li>
-								<li><a href="omvisning#?img=2e683c1">Vaskeri</a></li>
-								<li>Bibliotek og lesesal</li>
+								<li><a href="omvisning/14">Vaskeri</a></li>
+								<li><a href="omvisning/115">Bibliotek og lesesal</a></li>
 								<li>Kollokvierom</li>
 								<li>Kopimaskin</li>
 								<li>Telefon på alle rom</li>
-								<li><a href="omvisning#?img=5e9cd07">Peisestue med trådløst nettverk</a></li>
-								<li>Studentkjøkken med mulighet for bakst og egne måltider</li>
-								<li><a href="omvisning#?img=ea39fff">Badstue</a></li>
-								<li><a href="omvisning#?img=9caf503">Tennisbane</a></li>
-								<li><a href="omvisning#?img=60e5af3">Fotballbane</a></li>
-								<li><a href="omvisning#?img=60e5af3">Sandvolleyballbane</a></li>
-								<li><a href="omvisning#?img=9f5c52f">Bordtennisbord</a></li>
-								<li>Biljardbord</li>
-								<li>Musikkrom, musikksallong med flygel, bandrom</li>
-								<li><a href="omvisning#?img=e8dab86">Gymsal og styrkerom</a></li>
+								<li><a href="omvisning/34">Peisestue med trådløst nettverk</a></li>
+								<li><a href="omvisning/110">Studentkjøkken</a> med mulighet for bakst og egne måltider</li>
+								<li><a href="omvisning/20">Badstue</a></li>
+								<li><a href="omvisning/17">Tennisbane</a></li>
+								<li><a href="omvisning/18">Fotballbane</a></li>
+								<li><a href="omvisning/18">Sandvolleyballbane</a></li>
+								<li><a href="omvisning/15">Bordtennisbord</a></li>
+								<li><a href="omvisning/19">Biljardbord</a></li>
+								<li><a href="omvisning/112">Musikkrom</a>, musikksallong med flygel, <a href="omvisning/111">bandrom</a></li>
+								<li><a href="omvisning/21">Gymsal og styrkerom</a></li>
 								<li>Store grøntområder</li>
-								<li>Projektor</li>
+								<li>Projektor til utlån</li>
 								<li>Mange forskjellige hagespill</li>
 								<li>En rekke brettspill</li>
-								<li><a href="omvisning#?img=f27adde">Sykkelkjeller</a></li>
-								<li><a href="omvisning#?img=5264ecf">Møbelkjeller</a></li>
+								<li><a href="omvisning/9">Sykkelkjeller</a></li>
+								<li><a href="omvisning/12">Møbelkjeller</a></li>
 								<li>Skistall</li>
-								<li><a href="omvisning#?img=c8c2102">Festrom som tåler en støyt</a></li>
+								<li><a href="omvisning/48">Festrom som tåler en støyt</a></li>
 							</ul>
 								
 							<?php /*
