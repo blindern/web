@@ -1,96 +1,93 @@
+$(document).ready(function() {
+	boxHandleObj.locate(document);
+})
+
+
 /**
  * Markeringsbokser (som rader)
  */
 var boxHandleElms = {};
-var boxHandleItem = new Class({
-	initialize: function(wrap, box)
-	{
-		box.setStyle("display", "none");
+
+function boxHandleItem(wrap, box) {
+	this.init = function(wrap, box) {
+		wrap = $(wrap); box = $(box);
+		box.css("display", "none");
 		
 		// deaktivert?
 		this.disabled = false;
-		if (box.get("disabled"))
-		{
+		if (box.prop("disabled")) {
 			this.disabled = true;
 		}
 		
 		// legg til elementet
-		this.name = box.get("rel") || box.get("name").replace(new RegExp("^(.*)\\[.+?\\]$"), "$1[]");
-		//this.multiple = !this.name.test("\\[\\]$");
-		this.multiple = box.get("type") == "checkbox";
+		this.name = box.attr("rel") || box.prop("name")+"".replace(new RegExp("^(.*)\\[.+?\\]$"), "$1[]");
+		this.multiple = box.attr("type") == "checkbox";
 		boxHandleElms[this.name] = boxHandleElms[this.name] || [];
 		boxHandleElms[this.name].push(this);
 		
 		this.wrap = wrap;
 		this.box = box;
-		this.elements = this.wrap.get("tag") == "tr" ? this.wrap.getChildren("td") : [this.wrap];
+		this.elements = this.wrap.tagName == "tr" ? this.wrap.find("td") : [this.wrap];
+		
 		
 		// sjekk for mellomrom i cellen
-		if (this.wrap.get("tag") == "tr" || this.wrap.get("tag") == "td")
+		/* FIXME if (this.wrap.tagName == "tr" || this.wrap.tagName == "td")
 		{
-			//var height = 0;
-			//console.log(this.wrap.getSize().y);
-			//console.log(this.elements[0].getStyle("height") == "auto");
-			//height = Math.max(this.wrap.getSize().y, this.elements[0].getStyle("height").toInt()+this.elements[0].getStyle("paddingTop").toInt())
-			//console.log(height);
 			if (this.wrap.getSize().y < 25 || this.elements[0].getStyle("height") == "auto") this.wrap.addClass("spacerfix");
-			//console.log(this.elements[0].getStyle("minHeight"));
-		}
+		}*/
 		
-		if (!this.disabled)
-		{
+		if (!this.disabled) {
 			// sett pointer
-			this.wrap.setStyle("cursor", "pointer");
-			
-			wrap.addEvent("mouseenter", this.mouseover.bind(this));
-			wrap.addEvent("mouseleave", this.mouseout.bind(this));
-			wrap.addEvent("click", this.click.bind(this));
+			wrap.css("cursor", "pointer");
+			var self = this;
+			wrap.hover(function() {
+					self.mouseover();
+				}, function() {
+					self.mouseout();
+				}).click(function(e) {
+					console.log(e.target.tagName);
+					self.click(e);
+				});
 		}
 		
 		this.hover = false;
-		this.checked = this.box.get("checked");
+		this.checked = this.box.prop("checked");
 		this.classname = null;
 		this.showimg = !this.wrap.hasClass("box_handle_noimg");
 		
 		// TODO
-		if (this.showimg && false)
-		{
-			this.elements[0].setStyles({
-				"backgroundImage": 'url('+static_link+'/other/checkbox_'+(this.disabled ? 'disabled' : (this.checked ? 'yes' : 'no'))+'.gif)',
-				"backgroundPosition": 'left center',
-				"backgroundRepeat": 'no-repeat',
+		if (this.showimg && false) {
+			this.elements[0].css({
+				"background-image": 'url(https://hsw.no/static/other/checkbox_'+(this.disabled ? 'disabled' : (this.checked ? 'yes' : 'no'))+'.gif)',
+				"background-position": 'left center',
+				"background-repeat": 'no-repeat',
 				"paddingLeft": '25px'
 			});
 		}
 		
 		if (!this.disabled) this.check();
-	},
-	mouseover: function()
-	{
+	};
+	
+	this.mouseover = function() {
 		this.hover = true;
-		this.setBackground();
-	},
-	mouseout: function()
-	{
+		this.set_background();
+	};
+	
+	this.mouseout = function() {
 		this.hover = false;
-		this.setBackground();
-	},
-	click: function(event)
-	{
+		this.set_background();
+	};
+	
+	this.click = function(e) {
 		// klikket vi en link?
-		if ($(event.target).get("tag") == "a")
-		{
-			return;
-		}
+		if ($(e.target).tagName == "a") return;
 		
 		this.checked = !this.checked;
 		
 		// har vi noen andre elementer som må krysses ut?
 		var self = this;
-		if (this.checked && !this.multiple && boxHandleElms[this.name].length > 1)
-		{
-			boxHandleElms[this.name].each(function(obj)
-			{
+		if (this.checked && !this.multiple && boxHandleElms[this.name].length > 1) {
+			boxHandleElms[this.name].each(function(i, obj) {
 				if (!obj.checked || obj == self) return;
 				obj.checked = false;
 				obj.check();
@@ -98,84 +95,73 @@ var boxHandleItem = new Class({
 		}
 		
 		this.check();
-	},
-	check: function()
-	{
-		this.box.set("checked", this.checked);
-		this.box.fireEvent((this.checked ? "" : "un")+"click");
+	};
+	
+	this.check = function() {
+		this.box.prop("checked", this.checked);
+		//this.box.trigger((this.checked ? "" : "un")+"click");
 		
 		// TODO
 		if (this.showimg && false)
 		{
-			this.elements[0].setStyle("backgroundImage", 'url('+static_link+'/other/checkbox_'+(this.checked ? 'yes' : 'no')+'.gif)');
+			this.elements[0].css("background-image", 'url(https://hsw.no/other/checkbox_'+(this.checked ? 'yes' : 'no')+'.gif)');
 		}
-		this.setBackground();
-	},
-	setBackground: function()
-	{
+		this.set_background();
+	};
+	
+	this.set_background = function() {
 		// finn ut fargen
 		var classname = this.checked ? (this.hover ? "box_handle_checked_hover" : "box_handle_checked") : (this.hover ? "box_handle_hover" : "box_handle_normal");
-		if (classname != this.classname)
-		{
+		if (classname != this.classname) {
+			
 			var self = this;
-			this.elements.each(function(elm)
-			{
-				elm.removeClass(self.classname).addClass(classname);
+			$(this.elements).each(function(i, elm) {
+				$(elm).removeClass(self.classname).addClass(classname);
 			});
 			
 			this.classname = classname;
 		}
 		
 		return;
-			
-		//var color = this.checked ? (this.hover ? this.colors[3] : this.colors[2]) : (this.hover ? this.colors[1] : this.colors[0]);
-		
-		/*this.elements.each(function(elm)
-		{
-			elm.setStyle("backgroundColor", color);
-		});*/
-	}
-});
+	};
+	
+	this.init(wrap, box);
+}
 var boxHandleObj = {
-	locate: function(element)
-	{
+	locate: function(element) {
 		// finn alle bokswrappere
-		$(element).getElements(".box_handle").each(function(wrap)
-		{
+		$(element).find(".box_handle").each(function(i, wrap) {
 			// finn boksen
-			var box = wrap.getElement("input");
+			var box = $(wrap).find("input:first");
 			
 			// allerede gått gjennom denne?
-			if (box.retrieve("boxHandle")) return;
-			box.store("boxHandle", true);
+			if (box.data("boxHandle")) return;
+			box.data("boxHandle", true);
 			
 			// legg til boksen
 			new boxHandleItem(wrap, box);
 		});
 		
 		// finn alle toogle linker
-		$(element).getElements(".box_handle_toggle").each(function(elm)
-		{
+		$(element).find(".box_handle_toggle").each(function(i, elm) {
+			elm = $(elm);
+			
 			// allerede gått gjennom denne?
-			if (elm.retrieve("boxHandleOK")) return;
-			elm.store("boxHandleOK", true);
+			if (elm.data("boxHandleOK")) return;
+			elm.data("boxHandleOK", true);
 			
 			// finn navn
-			var name = elm.get("rel");
+			var name = elm.attr("rel");
 			if (!name || !boxHandleElms[name] || !boxHandleElms[name][0].multiple) return;
 			
 			// legg til event
-			elm.addEvent("click", function(event)
-			{
-				event.stop();
-				
-				//var checked = !boxHandleElms[name][0].checked;
-				boxHandleElms[name].each(function(obj)
-				{
+			elm.click(function() {
+				$(boxHandleElms[name]).each(function(i, obj) {
 					obj.checked = !obj.checked;
-					//obj.checked = checked;
 					obj.check();
 				});
+				
+				return false;
 			});
 		});
 	}
