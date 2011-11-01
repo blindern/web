@@ -6,19 +6,63 @@ bs_side::set_title("Småbruket");
 bs_side::$keywords = "Småbruket, Brunkollen, studenthytte, Blindern Studenterhjem, bærumsmarka, utleiehytte";
 bs_side::$description = "Småbruket er Blindern Studenterhjem sin hytte i Bærumsmarka. Hytta brukes av beboere på studenterhjemmet, og leies ut til studenter, bedrifter og ivrige turmennesker.";
 
-require BASE."/smaabruket.php";
+jquery();
+
+bs_side::$head .= '
+<style>
+.hytte_box {
+	max-width: 400px;
+	border: 1px dotted #888;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+#hytteoff {
+	display: none;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".hytteoff").show();
+	$(".hytteoff a.activate").click(function(event) {
+		event.preventDefault();
+		$($(this).parents(".hytteoff").get(0)).hide("slow")
+		.next(".hytteon").show("slow");
+	});
+	$(".hytteon").hide();
+});
+</script>';
+
+require ROOT."/base/smaabruket.php";
 
 echo '
-							<div style="float: right">
-								<iframe width="220" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;output=embed"></iframe><br /><small>Vis <a href="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;source=embed" style="color:#0000FF;text-align:left">Småbruket</a> i et større kart</small>
-							</div>
+						<div class="hytta">
+							<p style="float: right">Trykk for større bilder og bildegalleri.</p>
+							'.get_right_img_gal(87, null, "Skilt som peker i retningen mot Småbruket ved Brunkollen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(104, null, "Småbruket tar seg vakkert ut i Bærumsmarka.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(92, null, "Hovedsoverommet med 8. I tillegg er det 16 senger i annekset og 10 madrasser på hemsen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(94, null, "Hytta har en stor stue.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(106, null, "Lite slår den gode stemningen med en kveld rundt peisen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(99, null, "Stua rommer en hel folkemasse. Her fra tur med hele 49 personer, hvor også alle overnattet.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(91, null, "Hytta er godt utstyrt med mye servise.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(105, null, "Flott utsikt utover Oslofjorden.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(102, null, "Ute er det en flott bålplass med benker rundt.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(97, null, "Flott vedfyrt badstue.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(108, null, "Pygmétur høsten 2010.", "Foto: Henrik Steen").'
+							';
+
+/*
+							
 							'.get_right_img("hytta_fra_bekken.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_utenfor_dugnad_v2010.jpg", null, "", "Hyttedugnad våren 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_ved_peisen1.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
 							'.get_right_img("hytta_baal.jpg", null, "", "Foto: Henrik Steen").' <!-- Foto: Henrik Steen, V2010 -->
-							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->
+							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->*/
+
+echo '
 							<h1>Småbruket</h1>
 							
+						<div class="subsection">
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
 								Sm&aring;bruket er en t&oslash;mmerhytte som ligger
@@ -32,7 +76,9 @@ echo '
 								fra byens mas og jag. En meget stor stue gjør muligheter for mange
 								ulike aktiviteter.
 							</p>
+						</div>
 							
+						<div class="subsection">
 							<h2>Hva kan Sm&aring;bruket tilby?</h2>
 							<ul>
 								<li>24 sengeplasser og hems med madrasser (senger/madrasser til 34 personer)</li>
@@ -44,32 +90,57 @@ echo '
 								<li>Utedo</li>
 								<li>Flott utsikt over Oslofjorden</li>
 							</ul>
-							
+						</div>
+						
+						<!--<div class="subsection">
+							<h2>Bildegalleri</h2>
+							<p>Kommer!</p>
+						</div>-->
+						
+						<div class="subsection">
 							<h2>Ankomstmuligheter</h2>
 							<p>Sommerløype: Se eget <a href="http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=205357112404663307536.000492263fbcdabf214fa">kart med anbefalte løyper</a>.</p>
 							<p>Vintertraseer: Se <a href="http://maps.google.no/?q=http://www.skiforeningen.no/markadb/kml/loypestatus/1.kml">kart fra markadatabasen</a>. Hytta ligger like ved Brunkollen. Den store grusveien på kartet ovenfor er også måkt og kan brukes som gangvei.</p>
+							<p>Det er ikke muligheter for å kjøre bil frem til hytta. En evt. kjøretillatelse <i>kan</i> gis på spesielt grunnlag av Løvenskiold Skog som håndhever veiene i marka.</p>
 							
+							<iframe width="540" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;output=embed"></iframe>
+							<br /><small>Vis <a href="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;source=embed" style="color:#0000FF;text-align:left">Småbruket</a> i et større kart</small>
+						</div>
+						
+						<div class="subsection">
 							<h2>Leie Småbruket</h2>
 							
-							<p>Dersom du er interessert i &aring; leie Sm&aring;bruket s&aring; kontakt utleieansvarlig på <a href="mailto:hyttestyret@gmail.com">hyttestyret@gmail.com</a>. Nedenfor kan du også se hvilke datoer hytta er ledig.</p>
-							<p>
-								Et reserveringsdepositum p&aring; kr 600,- m&aring; betales
-								senest en uke etter reservering av hytta. Du har da
-								gjort endelig reservering. Senest en uke f&oslash;r
-								avreise tar du kontakt med utleieansvarlig for &aring;
-								avtale overlevering av n&oslash;kkel, samt skrive
-								under en leiekontrakt.
-							</p>
-							<p>
-								Etter turen tar du kontakt med utleieansvarlig for
-								&aring; levere tilbake n&oslash;kkel.
-								Du m&aring; ogs&aring; opplyse hvor mange personer
-								som brukte hytta samt hvor mange vedsekker som er
-								brukt.
-							</p>
-							<p>Flere praktiske opplysninger rundt leien kan leses i <a href="/dokumenter/Infoskriv_hyttestyret.pdf">infoskrivet</a> vårt.</p>
+							<p>Dersom du er interessert i &aring; leie Sm&aring;bruket kontakt oss på <a href="mailto:hyttestyret@gmail.com">hyttestyret@gmail.com</a>. Nedenfor kan du også se hvilke datoer hytta er ledig.</p>
 							
-							<h2>Priser for leie av Småbruket</h2>
+							<p><b>Tidsgrenser:</b> Man kan oppholde seg på Småbruket frem til senest kl 14. Småbruket er tilgjengelig for leie fra kl 15. Det kan avtales andre tidspunkter ved spesielle behov.</p>
+							
+							<h3>Reservasjonsdepositum</h3>
+							<p>Et reservasjonsdepositum tilsvarende minstepris m&aring; betales
+							senest en uke etter reservering av hytta. Du har da
+							gjort endelig reservering. Dette må være innbetalt før nøkkel kan hentes. Ved
+							reservasjoner rett før utleiedato kan depositumet evt. betales kontant ved henting av nøkkel.</p>
+							<div class="hytteoff">
+								<p><a href="#" class="activate">Vis flere bestemmelser om depositumet</a></p>
+							</div>
+							<div class="hytteon">
+								<ul>
+									<li>Betales ikke depositum innen 7 dager vil reservasjonen bli strøket for å gi andre muligheten til å betale leie til de aktuelle datoene.
+								Vi gir beskjed hvis vi stryker en reservasjon.</li>
+									<li>Depositumet innbetales til kontonr. 6094.05.44834 etter at reservasjon er bekreftet av oss. Merkes navn og utleiedato.</li>
+									<li>Hvis utleien avlyses når det er under 14 dager før utleie vil ikke depositumet bli refundert.</li>
+									<li>Depositumet refunderes etter innbetalt leie. Normalt trekker vi depositumet fra totalbeløpet.</li>
+								</ul>
+							</div>
+							
+							<h3>Henting av nøkkel og kontrakt</h3>
+							<p>Senest en uke f&oslash;r avreise tar du kontakt med utleieansvarlig for &aring;
+								avtale overlevering av n&oslash;kkel, samt skrive under en leiekontrakt.</p>
+							<p>Etter turen tar du kontakt med utleieansvarlig for &aring; levere tilbake n&oslash;kkel.
+								Du m&aring; ogs&aring; opplyse hvor mange personer som brukte hytta samt hvor mange vedsekker som er brukt.</p>
+						</div>
+						
+						<div class="subsection">
+							<h2>Priser for leie av Småbruket (gjeldende for 2011)</h2>
 							<p>Per døgn per person:</p>
 							<ul>
 								<li>BS-beboer: kr 30,-</li>
@@ -78,7 +149,65 @@ echo '
 							</ul>
 							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg. I tillegg tilkommer forbruk av ved med kr 120,- per vedsekk.</p>
 							<p>Hvis man kun leier ett døgn i en helg er det fint om man opplyser når man satser på ankomst/avreise så ikke begge døgnene går med.</p>
+						</div>
+						
+						<div class="subsection">
+							<h2>Priser for leie av Småbruket gjeldende fra 2012</h2>
+							<p style="color: #FF0000">Nye priser er gjeldende fra januar 2012:</p>
+							<ul>
+								<li>Minstepris:
+									<ul>
+										<li>Per døgn til en hverdag: kr 300</li>
+										<li>Per døgn til en helgdag: kr 500</li>
+										<li>Vedforbruk regnes utenom minsteprisen</li>
+									</ul>
+								</li>
+								<li>Per person SiO-medlem: kr 100 per natt</li>
+								<li>Per person andre: kr 130 per natt</li>
+								<li>Per vedsekk (80-liter-sekk): kr 120</li>
+							</ul>
+							<p>For beboere ved Blindern Studenterhjem gjelder egne priser. Gamle beboere ved studenterhjemmet får pris tilsvarende SiO-medlemmer.</p>
+							<div class="hytteoff">
+								<p><a href="#" class="activate">Vis priseksempler</a></p>
+							</div>
+							<div class="hytteon">
+								<hr />
+								<p><b>Eksempler på reservasjonsdepositum (minstepris):</b></p>
+								<ul>
+									<li>Overnatting mandag-onsdag: kr 300 + kr 300 = <u>kr 600</u></li>
+									<li>Overnatting fredag-søndag: kr 500 + kr 500 = <u>kr 1000</u></li>
+									<li>Overnatting fredag-lørdag: kr 500 = <u>kr 500</u></li>
+								</ul>
+								<p><b>Priseksempel: 1 døgn i helg, 10 SiO-medlemmer, 2 vedsekker</b></p>
+								<ul>
+									<li>10 SiO-medlemmer 1 døgn: kr 100 * 10 = <u>kr 1 000</u></li>
+									<li>Totalt gjester: <u>kr 1 000</u></li>
+									<li>Minstepris: kr 500 (totalbeløpet er over minsteprisen)</li>
+									<li>2 vedsekker: kr 120 * 2 = <u>kr 240</u></li>
+									<li>Å betale: kr 1 000 + kr 240 = <b><u>kr 1 240</u></b></li>
+								</ul>
+								<p><b>Priseksempel: 2 døgn i helg, 4 SiO-medlemmer, 10 øvrige (5 kun ett døgn), 5 vedsekker</b></p>
+								<ul>
+									<li>4 SiO-medlemmer 2 døgn: kr 100 * 4 * 2 = <u>kr 800</u></li>
+									<li>10 øvrige 1 døgn: kr 130 * 10 * 1 = <u>kr 1 300</u></li>
+									<li>5 øvrige 1 døgn: kr 130 * 5 * 1 = <u>kr 650</u></li>
+									<li>Totalt gjester: kr 800 + kr 1 300 + kr 650 = <u>kr 2 750</u></li>
+									<li>Minstepris: kr 500 * 2 = kr 1 000 (totalbeløpet er over minsteprisen)</li>
+									<li>5 vedsekker: kr 120 * 5 = <u>kr 600</u></li>
+									<li>Å betale: kr 2 750 + kr 600 = <b><u>kr 3 350</u></b></li>
+								</ul>
+								<p><b>Priseksempel: 1 døgn i hverdag og 1 døgn i helg, 3 SiO-medlemmer, 2 vedsekker</b></p>
+								<ul>
+									<li>3 SiO-medlemmer 2 døgn: kr 100 * 3 * 2 = <u>kr 600</u></li>
+									<li>Minstepris: kr 300 + kr 500 = <u>kr 800</u></li>
+									<li>Totalt gjester: <u>kr 800</u> (minstepris blir gjeldende)</li>
+									<li>2 vedsekker: kr 120 * 2 = <u>kr 240</u></li>
+									<li>Å betale: kr 800 + kr 240 = <b><u>kr 1 040</u></b></li>
+								</ul>
+							</div>
+						</div>
 							
+						<div class="subsection">
 							<h2>Ledige datoer for utleie</h2>
 							<p>Her er en oversikt som viser hvilke dager hytta er reservert/utleid.</p>
 							<ul>
@@ -98,7 +227,7 @@ if (!$calendar_data)
 else
 {
 	echo '
-							<table class="hyttestyret_kalender">
+							<table class="hyttestyret_table hyttestyret_kalender">
 								<thead>
 									<tr>
 										<th>Uke</th>
@@ -180,5 +309,7 @@ else
 								<p class="hyttestyret_legend reservert2"><span></span>Reservert av hyttestyret</p>
 								<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>
 							</div>
-							<p><b>Utleiedatoer for 2012 er ikke tilgjengelig enda.</b> Dette grunnet planlegging av egne turer og fortrinnsrett for beboere ved Blindern Studenterhjem. Ta evt. kontakt for muligheter rundt reservasjon.</p>';
+							<!--<p><b>Utleiedatoer for 2012 er ikke tilgjengelig enda.</b> Dette grunnet planlegging av egne turer og fortrinnsrett for beboere ved Blindern Studenterhjem. Ta evt. kontakt for muligheter rundt reservasjon.</p>-->
+						</div>
+						</div>';
 }

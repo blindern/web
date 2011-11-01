@@ -1,162 +1,141 @@
 <?php
 
-// last inn database
-require BASE."/database.php";
-
-class omvisning
-{
-	public static $dir;
-	public static $link;
-	public static $datafile;
+class omvisning {
+	protected $galleries; // alle galleriene
+	protected $images_gallery = array(); // bilde->galleri relasjon
+	protected $image_id;
 	
-	public static $groups;
-	public static $images_group;
+	protected $show_hidden;
 	
-	public static function get_images()
-	{
-		self::$groups = array();
-		self::$images_group = array();
-		
-		$result = db_query("
-			SELECT o_id, o_active, o_category, o_order, o_file, o_size, o_text, o_date, o_foto
-			FROM omvisning
-			ORDER BY o_category_order, o_order");
-		
-		while ($row = mysql_fetch_assoc($result))
-		{
-			self::$groups[$row['o_category']][$row['o_id']] = $row;
-			self::$images_group[$row['o_id']] = &self::$groups[$row['o_category']][$row['o_id']];
-		}
-	}
-	
-	public static function init()
-	{
-		// last inn data
-		self::get_images();
-	}
+	const PATH = "/studentbolig/omvisning";
 	
 	/**
-	 * Lagre endringer til bilder
+	 * Last inn bildegalleriene og bildene i dem
 	 */
-	public static function handle_edit($changeset)
-	{
-		// changeset = [ key => [ col => new_data, ... ], ... ]
+	protected function get_images() {
+		// hent alle galleriene
+		$hidden = $this->show_hidden ? "" : "gc_visible != 0 AND ";
+		$result = ess::$b->db->q("
+			SELECT gc_id, gc_title
+			FROM gallery_categories
+			WHERE {$hidden}gc_parent_gc_id = 0
+			ORDER BY gc_priority");
 		
-		$num = 0;
-		foreach ($changeset as $key => $data)
-		{
-			$key = (int) $key;
+		$this->galleries = array();
+		while ($row = $result->fetch()) {
+			$this->galleries[$row['gc_id']] = array(
+				"title" => $row['gc_title'],
+				"images" => array()
+			);
+		}
+		
+		// hent alle bildene
+		if (count($this->galleries) > 0) {
+			$gc_ids = implode(", ", array_keys($this->galleries));
+			$hidden = $this->show_hidden ? "" : " AND gi_visible != 0";
+			$result = ess::$b->db->q("
+				SELECT gi_id, gi_gc_id, gi_description, gi_shot_person, gi_shot_date
+				FROM gallery_images
+				WHERE gi_gc_id IN ($gc_ids)$hidden
+				ORDER BY gi_priority");
 			
-			$upd = array();
-			foreach ($data as $col => $value)
-			{
-				$upd[] = "$col = ".db_quote($value, $col != "o_active");
+			while ($row = $result->fetch()) {
+				$this->galleries[$row['gi_gc_id']]['images'][$row['gi_id']] = $row;
+				$this->images_gallery[$row['gi_id']] = $row['gi_gc_id'];
 			}
-			
-			// kjør oppdatering for denne raden
-			db_query("UPDATE omvisning SET ".implode(", ", $upd)." WHERE o_id = $key");
-			$num++;
 		}
 		
-		return $num;
+		// fjern gallerier uten bilder
+		// må gjøre dette for at get_prev_next() skal fungere på en enkel måte
+		foreach ($this->galleries as $gc_id => $data) {
+			if (count($data['images']) == 0) unset($this->galleries[$gc_id]);
+		}
 	}
 	
 	/**
-	 * Behandle opplasting av bilde
+	 * Lag array for javascript over bildene
 	 */
-	public static function handle_upload($file, $category)
-	{
-		if (empty($category)) $category = "Annet";
+	protected function get_js_array() {
+		$data = array();
 		
-		$src = $file['tmp_name'];
-		$org = $file['name'];
-		$name = basename($org);
-		
-		// skjekk om det er et gyldig bilde
-		if (!is_uploaded_file($src))
-		{
-			print_r($file);
-			return "error";
+		$img_i = 0;
+		$i = 0;
+		foreach ($this->galleries as $gallery_id => $gallery) {
+			foreach ($gallery['images'] as $row) {
+				if ($row['gi_id'] == $this->image_id) $img_i = $i;
+				$data[] = array(
+					$gallery['title'],
+					$row['gi_id'],
+					$this->get_image_text($row),
+					$gallery_id
+				);
+				$i++;
+			}
 		}
 		
-		// gyldig filendelse?
-		if (!preg_match("/(^.+?)\\.(jpe?g|gif|png)$/i", strtolower(preg_replace("/[^a-z0-9_\\-\\.]/i", "_", $name)), $match))
-		{
-			return "error_ext";
-		}
-		$name_prefix = $match[1];
-		$name_suffix = $match[2];
+		return array($img_i, $data);
+	}
+	
+	/**
+	 * Lag bildetekst
+	 */
+	protected function get_image_text($image) {
+		$text = $image['gi_description'];
 		
-		// les bildet
-		$image = @imagecreatefromstring(@file_get_contents($src));
-		if (!$image)
-		{
-			return "error";
-		}
+		if ($text && $image['gi_shot_person']) $text .= " ";
+		if ($image['gi_shot_person']) $text .= "Foto: " . $image['gi_shot_person'];
 		
-		// resize
-		$w = imagesx($image);
-		$h = imagesy($image);
+		if ($text && $image['gi_shot_date']) $text .= " ";
+		if ($image['gi_shot_date']) $text .= "(".$image['gi_shot_date'].")";
 		
-		// dimensjoner
-		$width = 840;
-		$max_h = 900;
-		$height = floor($width / $w * $h);
-		if ($height > $max_h) $height = $max_h;
-		elseif ($height < 1) $height = 10;
+		return $text;
+	}
+	
+	/**
+	 * Returner et bilde utifra ID
+	 */
+	protected function get_img($id) {
+		return $this->galleries[$this->images_gallery[$id]]['images'][$id];
+	}
+	
+	/**
+	 * Finn ID for forrige og neste bilde
+	 */
+	protected function get_prev_next() {
+		$prev = false;
+		$next = false;
 		
-		// opprett nytt bilde
-		$img_new = imagecreatetruecolor($width, $height);
-		
-		// kopier det andre bildet over hit
-		imagecopyresampled($img_new, $image, 0, 0, 0, 0, $width, $height, $w, $h);
-		
-		// finn nytt filnavn (som ikke er i bruk)
-		$i = 1;
-		do
-		{
-			$new_name = $name_prefix.($i <= 1 ? "" : "($i)").".jpg";
-			$new = omvisning::$dir."/".$new_name;
-			$i++;
-		} while(file_exists($new));
-		
-		// lagre bildet
-		if (!imagejpeg($img_new, $new, 85))
-		{
-			return "error_move";
-		}
-		imagedestroy($image);
-		imagedestroy($img_new);
-		
-		// har vi denne kategorien?
-		$order = 1;
-		$result = db_query("SELECT o_category_order FROM omvisning WHERE o_category = ".db_quote($category)." LIMIT 1");
-		$c_order = mysql_result($result, 0);
-		if (!$c_order)
-		{
-			// finn høyeste sortering
-			$result = db_query("SELECT MAX(o_category_order) FROM omvisning");
-			$c_order = mysql_result($result, 0);
-			if (!$c_order) $c_order = 1;
+		$last_img = 0;
+		foreach ($this->galleries as $gal_id => $gallery) {
+			foreach ($gallery['images'] as $row) {
+				if ($prev !== false) {
+					$next = $row['gi_id'];
+					break 2;
+				}
+				
+				if ($row['gi_id']  == $this->image_id) {
+					$prev = $last_img;
+					continue;
+				}
+				
+				$last_img = $row['gi_id'];
+			}
 		}
 		
-		else
-		{
-			// finn bildesortering
-			$result = db_query("SELECT MAX(o_order) FROM omvisning WHERE o_category = ".db_quote($category));
-			$order = mysql_result($result, 0);
-			if (!$order) $order = 1;
-			else $order++;
+		// siste bildet er prev
+		if (!$prev) {
+			$gal = end($this->galleries);
+			$img = end($gal['images']);
+			$prev = $img['gi_id'];
 		}
 		
-		// legg til i databasen
-		db_query("INSERT INTO omvisning SET o_order = $order, o_category = ".db_quote($category).", o_category_order = $c_order, o_file = ".db_quote($new_name).", o_size = ".filesize($new));
+		// første bildet er next
+		if (!$next) {
+			$gal = reset($this->galleries);
+			$img = reset($gal['images']);
+			$next = $img['gi_id'];
+		}
 		
-		return array($new_name, $new, mysql_insert_id());
+		return array($prev, $next);
 	}
 }
-
-omvisning::$dir = dirname(BASE)."/graphics/omvisning";
-if (bs_side::$pagedata) omvisning::$link = bs_side::$pagedata->doc_path."/graphics/omvisning";
-omvisning::$datafile = BASE."/omvisning_data.txt";
-omvisning::init();

@@ -3,7 +3,7 @@
 class smaabruket_kalender
 {
 	public $weeks_show_before = 0;
-	public $weeks_show_after = 20;
+	public $weeks_show_after = 25;
 	
 	public static $xml_files = array(
 		// utleid
@@ -115,7 +115,7 @@ class smaabruket_kalender
 			$date_start->modify("+1 day");
 			
 			// ikke vis datoer langt ut i 2012 enda
-			if ($date_start->format("Y-m-d") == "2012-01-16") break;
+			//if ($date_start->format("Y-m-d") == "2012-01-16") break;
 		}
 		
 		foreach ($items as $item)

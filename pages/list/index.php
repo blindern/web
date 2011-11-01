@@ -1,5 +1,5 @@
-				<?php echo get_right_img("bs_fra_uio.jpg", null, "", "Blindern Studenterhjem sett fra Universitet i Oslo. Foto: Mats Julius Stensrud"); ?>
-				<?php echo get_right_img("rom1.jpg", null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
+				<?php echo get_right_img_gal(155, null, "Blindern Studenterhjem sett fra Universitet i Oslo.", "Foto: Mats Julius Stensrud"); ?>
+				<?php echo get_right_img_gal(152, null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
 				<h1>Velkommen til Blindern Studenterhjem</h1>
 				<h2> Like ved UiO</h2>
 				<p>

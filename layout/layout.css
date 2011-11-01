@@ -187,6 +187,10 @@ img {
 	clear: right;
 	margin: 5px 0 5px 5px;
 }
+.img_right a {
+	text-decoration: none;
+	color: inherit;
+}
 .img_top {
 	margin-top: 0;
 }
@@ -446,14 +450,18 @@ ul.arrangementer li {
 
 
 /** Foreninger */
-.foreninger .subsection {
+.foreninger .subsection,
+.subsection_left .subsection,
+.hytta .subsection {
 	width: 600px;
 	padding: 20px;
 	margin: 40px auto;
 	background-color: #F3F3F3;
 	border: 1px solid #DDD;
 }
-.foreninger .subsection h2 {
+.foreninger .subsection h2,
+.subsection_left .subsection h2,
+.hytta .subsection h2 {
 	font-size: 16px;
 	margin-bottom: 15px !important;
 	border-bottom: 1px solid #DDD;
@@ -471,28 +479,37 @@ ul.arrangementer li {
 
 
 /** Hyttestyret */
-.hyttestyret_kalender {
-	width: 600px;
+.hytta .subsection,
+.subsection_left .subsection {
+	width: 540px;
+	margin: 30px 0 25px 20px;
+	padding-bottom: 10px;
+}
+.hyttestyret_table {
 	border: 2px solid #DDD;
 	border-collapse: collapse;
+	margin-top: 20px;
 }
-.hyttestyret_kalender th {
+.subsection .hyttestyret_table {
+	width: 540px;
+}
+.hyttestyret_table th {
 	text-align: center;
 	background-color: #EEE;
 }
-.hyttestyret_kalender th span {
+.hyttestyret_table th span {
 	display: block;
 	font-size: 9px;
 	font-weight: normal;
 	color: #555;
 }
-.hyttestyret_kalender th span:before {
+.hyttestyret_table th span:before {
 	content: "(";
 }
-.hyttestyret_kalender th span:after {
+.hyttestyret_table th span:after {
 	content: ")";
 }
-.hyttestyret_kalender td, .hyttestyret_kalender th {
+.hyttestyret_table td, .hyttestyret_table th {
 	border: 1px solid #DDD;
 	padding: 5px;
 	line-height: 1em;
@@ -673,17 +690,21 @@ input.soknad_felt_stor {
 	padding: 5px;
 	text-align: center;
 	margin: 0 0 30px;
-	cursor: pointer;
+	/*cursor: pointer;*/
+}
+#omvisning_bilde h1 {
+	font-size: 18px;
 }
 #omvisning_bilde img {
 	max-width: 98%;
 	border: none;
 }
-#omvisning_bilde p {
+#omvisning_bilde_tekst {
 	margin: 5px -5px -5px -5px;
 	background-color: #DDD;
 	color: #333;
 	padding: 4px 10px;
+	display: block;
 }
 .omvisning_bilde_skjult {
 	display: none;
