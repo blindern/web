@@ -78,7 +78,8 @@ $books1 = array(
 	array("/dokumenter/blindernaar/interne/blindernaaret_2001.pdf", "/graphics/blindernaar/Blindern året 2001.pdf.jpg", "Blindernåret 2001", "1,2 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_2002.pdf", "/graphics/blindernaar/Blindern året 2002.pdf.jpg", "Blindernåret 2002", "20 MB"),
 	array("/dokumenter/blindernaar/interne/blindernaaret_2003.pdf", "/graphics/blindernaar/Blindern året 2003.pdf.jpg", "Blindernåret 2003", "30 MB"),
-	array("/dokumenter/blindernaar/interne/blindernaaret_2004.pdf", "/graphics/blindernaar/Blindern året 2004.pdf.jpg", "Blindernåret 2004", "36 MB")
+	array("/dokumenter/blindernaar/interne/blindernaaret_2004.pdf", "/graphics/blindernaar/Blindern året 2004.pdf.jpg", "Blindernåret 2004", "36 MB"),
+	array("/dokumenter/blindernaar/interne/blindernaaret_2007.pdf", "/graphics/blindernaar/blindernaaret_2007.jpg", "Blindernåret 2007", "22 MB")
 );
 
 echo '
@@ -97,7 +98,7 @@ echo '
 </ul>
 
 <h2>Blindernår</h2>
-<p>Alle Blindernår gjennom historien utenom 1982. Har du Blindernåret 1982 ta kontakt med Arkivar eller <a href="'.bs_side::$pagedata->doc_path.'/administrasjonen/om_nettsidene">Hjemmesideoppmann</a>.</p>
+<p>Alle Blindernår gjennom historien utenom 1982. Blindernåret 1982 kom til rette etter at resten av Blindernårene var scannet inn og vil bli scannet inn og digitalisert ved en senere anledning.</p>
 <p><b>Blindernår frem til krigen</b> - fritt tilgjengelig:</p>
 <ul class="books">';
 
