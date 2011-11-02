@@ -3,8 +3,8 @@
 bs_side::set_title("Småbruket");
 #bs_side::$lang_crosslink['en'] = "en/smaabruket";
 
-bs_side::$keywords = "Småbruket, Brunkollen, studenthytte, Blindern Studenterhjem, bærumsmarka, utleiehytte";
-bs_side::$description = "Småbruket er Blindern Studenterhjem sin hytte i Bærumsmarka. Hytta brukes av beboere på studenterhjemmet, og leies ut til studenter, bedrifter og ivrige turmennesker.";
+ess::$b->page->add_keyword("Småbruket", "Brunkollen", "studenthytte", "Blindern Studenterhjem", "bærumsmarka", "utleiehytte");
+ess::$b->page->description = "Småbruket er Blindern Studenterhjem sin hytte i Bærumsmarka. Hytta brukes av beboere på studenterhjemmet, og leies ut til studenter, bedrifter og ivrige turmennesker.";
 
 jquery();
 
