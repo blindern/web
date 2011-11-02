@@ -164,7 +164,7 @@ class bs_side
 		if (count($p->title) == 1) {
 			$p->title[0] = self::get_title();
 		}
-		$p->keywords = array_merge(self::get_keywords(), $p->keywords);
+		if (count($p->keywords) == 0) $p->keywords = array_merge(self::get_keywords(), $p->keywords);
 		if (!$p->description) $p->description = self::get_description();
 		
 		if (self::$head) ess::$b->page->add_head(self::$head);
