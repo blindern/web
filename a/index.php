@@ -37,7 +37,7 @@ if (empty($groups)) $groups = "Ingen";
 echo '
 <h2>Administrasjon</h2>
 <p>Du er logget inn som <b>'.htmlspecialchars_utf8(login::$user->data['u_user']).'</b>. <a href="loggut.php?sid='.login::$info['ses_id'].'">Logg ut</a></p>
-<p>Dette er administrasjonsidene til blindernuka.no sine hjemmesider.</p>
+<p>Dette er administrasjonsidene til blindern-studenterhjem.no sine hjemmesider.</p>
 <ul>
 	<li>E-post: <a href="'.htmlspecialchars_utf8(login::$user->data['u_email']).'">'.htmlspecialchars_utf8(login::$user->data['u_email']).'</a></li>
 	<li>Tilgangsgrupper: '.htmlspecialchars_utf8($groups).'</li>

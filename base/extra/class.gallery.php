@@ -5,7 +5,7 @@ class gallery
 	public static $root_data = array(
 		"gc_id" => 0,
 		"gc_parent_gc_id" => null,
-		"gc_title" => "Glimt fra UKA",
+		"gc_title" => "Galleri",
 		"gc_description" => null,
 		"gc_gi_id" => null,
 		"gc_views" => 0,

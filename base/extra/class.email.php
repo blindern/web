@@ -20,7 +20,7 @@ class email
 	 *
 	 * @param string $sender avsender
 	 */
-	public function __construct($sender = "=?UTF-8?B?VUtBIHDDpSBCbGluZGVybiAyMDEx?= <kontakt@blindernuka.no>")
+	public function __construct($sender = "=?UTF-8?B?VUtBIHDDpSBCbGluZGVybiAyMDEx?= <hjemmesideoppmann@blindern-studenterhjem.no>")
 	{
 		$this->headers["From"] = $sender;
 		$this->headers["MIME-Version"] = "1.0";

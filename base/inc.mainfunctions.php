@@ -292,7 +292,7 @@ h1 { font-size: 23px; }
 	<dt>Adresse</dt>
 	<dd>'.htmlspecialchars_utf8($_SERVER['REQUEST_URI']).'</dd>
 </dl>'.$more_info.'
-<p><a href="http://blindernuka.no">blindernuka.no</a></p>
+<p><a href="http://blindern-studenterhjem.no">blindern-studenterhjem.no</a></p>
 <p class="hsws"><a href="http://hsw.no">hsw.no</a></p>
 </body>
 </html>';
