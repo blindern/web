@@ -94,6 +94,9 @@ echo '
 		<dt>7. november</dt>
 		<dd>Åpent Kollegiemøte</dd>
 		
+		<dt>9. november</dt>
+		<dd>Båltur i Oslomarka (IFBS)</dd>
+		
 		<dt>10. november</dt>
 		<dd>Allmannamøte</dd>
 		
