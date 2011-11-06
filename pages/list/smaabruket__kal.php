@@ -3,7 +3,7 @@
 bs_side::set_title("Historisk kalender - Småbruket");
 #bs_side::$lang_crosslink['en'] = "en/smaabruket";
 
-require BASE."/smaabruket.php";
+require ROOT."/base/smaabruket.php";
 
 $kal = new smaabruket_kalender();
 $kal->weeks_show_before = 52;
