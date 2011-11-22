@@ -112,7 +112,7 @@ echo '
 		<dt>16. november</dt>
 		<dd>Foreningens semestermøte</dd>
 		
-		<dt>20. november</dt>
+		<dt>27. november</dt>
 		<dd>Spillkveld og kaffebar (BSG)</dd>
 		
 		<dt>2. desember</dt>
@@ -153,6 +153,7 @@ echo '
 		<li>19. september 2011: Flyttet barskingen fra 24. september til 8. oktober</li>
 		<li>19. september 2011: La inn arrangementer for BSG.</li>
 		<li>10. oktober 2011: La inn Nansen-foredrag 7. desember.</li>
+		<li>22. november 211: Flyttet spillkveld og kaffebarg med BSG fra 20. november til 27. november.</li>
 	</ul>
 </div>
 
