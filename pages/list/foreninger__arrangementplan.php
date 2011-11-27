@@ -115,6 +115,9 @@ echo '
 		<dt>27. november</dt>
 		<dd>Spillkveld og kaffebar (BSG)</dd>
 		
+		<dt>27. november</dt>
+		<dd>Pigefaarsamlingens juleverksted</dd>
+		
 		<dt>2. desember</dt>
 		<dd>Julemøte</dd>
 		
@@ -153,7 +156,8 @@ echo '
 		<li>19. september 2011: Flyttet barskingen fra 24. september til 8. oktober</li>
 		<li>19. september 2011: La inn arrangementer for BSG.</li>
 		<li>10. oktober 2011: La inn Nansen-foredrag 7. desember.</li>
-		<li>22. november 211: Flyttet spillkveld og kaffebarg med BSG fra 20. november til 27. november.</li>
+		<li>22. november 2011: Flyttet spillkveld og kaffebarg med BSG fra 20. november til 27. november.</li>
+		<li>27. november 2011: La inn Pigefaarsamlingens juleverksted 27. nov</li>
 	</ul>
 </div>
 
