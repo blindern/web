@@ -571,8 +571,9 @@ ul.arrangementer li {
 }
 
 
-/** Ledige plasser */
-.ledigeplasser {
+/** Infoboks i toppen */
+.ledigeplasser,
+.rehabinfo {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
@@ -587,11 +588,18 @@ ul.arrangementer li {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-.ledigeplasser h2 {
+.ledigeplasser h2,
+.rehabinfo h2 {
 	text-decoration: underline;
 	margin-bottom: 2px;
 }
-.ledigeplasser p { margin: 10px 0 0 }
+.ledigeplasser p,
+.rehabinfo p { margin: 10px 0 0 }
+
+.rehabinfo {
+	width: 250px;
+}
+
 
 
 /** Søknadsskjema for plass på BS */

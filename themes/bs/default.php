@@ -75,6 +75,19 @@ class theme_bs_default
 			</div>';
 		}
 		
+		
+		if (bs_side::$lang == "no") {
+			echo '
+			<div class="rehabinfo">
+				<h2>Ledige rom våren 2012</h2>
+				<p>Vestfløyen på Blindern Studenterhjem skal rehabilitert fra 1. april 2012. Dette gir begrensede plasser for våren 2012.</p>
+				<p>Vi kan tilby korttidsleie i perioden januar tom. mars 2012.</p>
+				<p><a href="'.ess::$s['rpath'].'/om/rehabilitering_2012">Mer informasjon og søknad &raquo;</a></p>
+			</div>';
+		}
+		
+		
+		
 		echo '
 		</div>
 		'.bs_side::$menu_main.'
