@@ -8,7 +8,7 @@ echo '
 <p>Konsekvensen av dette er at Blindern Studenterhjem har begrenset med plasser våren 2012. Beboere som høsten 2011 bor på vestfløyen på Blindern Studenterhjem får alternative bomuligheter under rehabiliteringen.</p>
 
 <h2>Bomuligheter våren 2012</h2>
-<p><span style="color: #FF0000">Frem til 31. mars 2012 har Blindern Studenterhjem kapasitet for nye beboere.</span> Hvis du ønsker å bo på Blindern Studenterhjem frem til denne datoen, <a href="mailto:post@blindern-studenterhjem.no">ta kontakt med Regine</a>. Det vil bli laget en egen korttidskontrakt kontrakt som gjelder frem til 31. mars 2012.</p>
+<p><span style="color: #FF0000">Frem til 31. mars 2012 har Blindern Studenterhjem kapasitet for nye beboere på korttidskontrakt.</span> Hvis du ønsker å bo på Blindern Studenterhjem frem til denne datoen, <a href="mailto:post@blindern-studenterhjem.no">ta kontakt med Regine</a>. Det vil bli laget en egen korttidskontrakt kontrakt som gjelder frem til 31. mars 2012.</p>
 <p>Tilbudet inkluderer full kost og losji med tre måltider om dagen på lik linje med de øvrige studentene som bor her. Se <a href="'.ess::$s['rpath'].'/studentbolig/leiepriser">leiepriser</a> og mer informasjon på <a href="'.ess::$s['rpath'].'/studentbolig">studentboligsiden</a>.</p>
 <p>Har du spørsmål, <a href="'.ess::$s['rpath'].'/administrasjonen">ta gjerne kontakt</a>.</p>
 
