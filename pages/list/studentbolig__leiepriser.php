@@ -49,7 +49,7 @@
 								</tr>
 								<tr>
 									<td class="td_indent">Telefonavgift:</td>
-									<td style="text-align: right">35,-</td>
+									<td style="text-align: right">20,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Foreningsavgift:</td>
@@ -57,7 +57,7 @@
 								</tr>
 								<tr>
 									<td class="td_indent">Dataavgift:</td>
-									<td style="text-align: right">20,-</td>
+									<td style="text-align: right"><span style="font-size: 10px">Fra 1. jan 2012:</span> 75,-</td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
