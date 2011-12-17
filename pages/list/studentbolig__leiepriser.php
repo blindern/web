@@ -16,7 +16,7 @@
 								Den totale m&aring;nedsleien best&aring;r av noen
 								mindre poster. Dette er alle postene som p&aring;l&oslash;per
 								hver m&aring;ned, og som ikke kan avbestilles.
-								Disse ser slik ut for høsten 2011 til våren 2012:
+								Disse ser slik ut for høsten 2011 og våren 2012:
 							</p>
 							<table class="leiepriser">
 								<tr>
@@ -61,20 +61,20 @@
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>6100,-</strong></td>
+									<td style="text-align: right"><strong>6140,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. dobbeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5750,-</strong></td>
+									<td style="text-align: right"><strong>5790,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. kombinasjonsrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5975,-</strong></td>
+									<td style="text-align: right"><strong>6015,-</strong></td>
 								</tr>
 							</table>
 							<p>
 								Det vil si at dersom du bor p&aring; dobbeltrom,
-								s&aring; betaler du 5750,- per m&aring;ned (høst 2011), og
+								s&aring; betaler du 5790,- per m&aring;ned (vår 2012), og
 								da har du betalt for str&oslash;m, mat, internett,
 								tilgang til vaskemaskin, interntelefon og fri
 								tilgang til &aring; v&aelig;re med i alle
