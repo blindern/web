@@ -140,20 +140,8 @@ echo '
 						</div>
 						
 						<div class="subsection">
-							<h2>Priser for leie av Småbruket (gjeldende for 2011)</h2>
-							<p>Per døgn per person:</p>
-							<ul>
-								<li>BS-beboer: kr 30,-</li>
-								<li>SiO-medlem: kr 70,-</li>
-								<li>Andre: kr 90,-</li>
-							</ul>
-							<p>Minstepris er kr 300,- for BS-beboere og kr 600,- for SiO-medlemmer og andre per helg. I tillegg tilkommer forbruk av ved med kr 120,- per vedsekk.</p>
-							<p>Hvis man kun leier ett døgn i en helg er det fint om man opplyser når man satser på ankomst/avreise så ikke begge døgnene går med.</p>
-						</div>
-						
-						<div class="subsection">
-							<h2>Priser for leie av Småbruket gjeldende fra 2012</h2>
-							<p style="color: #FF0000">Nye priser er gjeldende fra januar 2012:</p>
+							<h2>Priser for leie av Småbruket</h2>
+							<p style="color: #FF0000">Nye priser fra januar 2012:</p>
 							<ul>
 								<li>Minstepris:
 									<ul>
