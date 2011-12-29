@@ -98,8 +98,8 @@ class bs_side
 	{
 		self::$pagedata = new pagedata();
 		
-		// beboerlenke (beboere har IP-adresser på 193.157.250.0/24)
-		if (substr($_SERVER['REMOTE_ADDR'], 0, 11) == "193.157.250" || strpos($_SERVER['DOCUMENT_ROOT'], "webdev") !== false)
+		// beboerlenke (beboere har IP-adresser på 146.247.180.0/24 (tror jeg?))
+		if (substr($_SERVER['REMOTE_ADDR'], 0, 11) == "146.247.180" || strpos($_SERVER['DOCUMENT_ROOT'], "webdev") !== false)
 		{
 			self::$is_beboer = true;
 		}
