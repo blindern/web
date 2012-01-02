@@ -32,10 +32,150 @@ echo '
 <h1>Arrangementer</h1>
 
 <ul id="arrangementer_head" style="display: none">
+	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
 	<li><a href="#" id="arr_h11_group">Høst 2011</a></li>
 	<li><a href="#" id="arr_v11_group">Vår 2011</a></li>
 	<li><a href="#" id="arr_h10_group">Høst 2010</a></li>
 </ul>
+
+<div class="arrangementer_group" id="arr_v12">
+	<h2>Arrangementplan for våren 2012</h2>
+	<dl class="arrangementer">
+		<dt>11. januar</dt>
+		<dd>Uoffisiell velkommen hjem-fest</dd>
+		
+		<dt>13. januar</dt>
+		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
+		
+		<dt>14. januar</dt>
+		<dd>Skitur til Småbruket ifm. pygmétur (IFBS)</dd>
+		
+		<dt>14. januar</dt>
+		<dd>Velkommen hjem-fest</dd>
+		
+		<dt>15. januar</dt>
+		<dd>Pygmémiddag</dd>
+		
+		<dt>20.-21. januar</dt>
+		<dd>Overnattingstur til Katnosdammen (IFBS) <sup><a href="#note12-1">note 1</a></sup></dd>
+		
+		<dt>28. januar</dt>
+		<dd>Temafest</dd>
+		
+		<dt>3.-5. februar</dt>
+		<dd>Skiweekend i Hamar (IFBS) <sup><a href="#note12-2">note 2</a></sup></dd>
+		
+		<dt>22. februar</dt>
+		<dd>Båltur til Sognsvann (IFBS)</dd>
+		
+		<dt>25. februar</dt>
+		<dd>Ulympiske vinterleker (FFR/IFBS)</dd>
+		
+		<dt>3. mars</dt>
+		<dd>Bukkefest</dd>
+		
+		<dt>4. mars</dt>
+		<dd>Café Avec</dd>
+		
+		<dt>10.-11. mars</dt>
+		<dd>Tur til Snøhetta (IFBS) <sup><a href="#note12-3">note 3</a></sup></dd>
+		
+		<dt>16. mars</dt>
+		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
+		
+		<dt>24. mars</dt>
+		<dd>Uoffisiell utflyttingsfest ifm. oppussingen fra 1. april</dd>
+		
+		<dt>23.-25. mars</dt>
+		<dd>Hemsedaltur (IFBS) <sup><a href="#note12-4">note 4</a></sup></dd>
+		
+		<dt>29. mars</dt>
+		<dd>Utflyttingsfest ifm. oppussingen fra 1. april</dd>
+		
+		<dt>14. april</dt>
+		<dd>Schussrenn</dd>
+		
+		<dt>30. april</dt>
+		<dd>Russefest</dd>
+		
+		<dt>12. mai</dt>
+		<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
+		
+		<dt>16. mai</dt>
+		<dd>Temafest</dd>
+		
+		<dt>17. mai</dt>
+		<dd>17. maifeiring på Hardangerjøkulen (IFBS) <sup><a href="#note12-5">note 5</a></sup></dd>
+		
+		<dt>17. mai</dt>
+		<dd>Café Avec</dd>
+		
+		<dt>1. juni</dt>
+		<dd>Bukkehaugsfestivalen</dd>
+	</dl>
+	
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
+		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
+	<dl class="arrangementer">
+		<dt>Mandager</dt>
+		<dd>Intervalltrening på ski</dd>
+		<dt>Onsdager</dt>
+		<dd>Ballspill kl 16</dd>
+		<dt>Torsdager</dt>
+		<dd>&quot;Back-to-basic&quot;-styrkesirkel kl 20</dd>
+	</dl>
+	
+	<p><i>Noter:</i></p>
+	<ol>
+		<li id="note12-1"><b>Skitur til Katnosdammen:</b> Toget til Hakadalen lørdag formiddag. 28 km på ski inn til Katnosdammen hvor vi
+			lager middag og overnatter. Katnosdammen er en gammel damvokterbolig som akkurat ha fått nyoppusset kjøkken og
+			freshet opp stue! Søndag går vi tilbake til Blindern via Kikut. Vil man ikke gå så lang tur går man tilbake
+			til Hakadalen og tar toget derfra.</li>
+		<li id="note12-2"><b>Langrenn-, skøyte- og slalåm/snowboard/telemark-weekend i Hamar:</b>
+			Tuva inviterer til skihelg i Hamar. Vi bor i et hus nede ved Mjøsa, med 18 sengeplasser,
+			en koie og en rød stuga. Vi tar toget til Hamar fredag ettermiddag (1 1/2 time).
+			Pris 390 kr, tur-retur, og eneste nødvendige utgift for turen. Kost og losji er gratis.<br />
+			<br />
+			Lørdag:
+			<ul>
+				<li>Alt. 1:Langrenn i Vangsåsa (folk velger tur etter nivå), evt. Steinfjellrunden som seeding til Birken.</li>
+				<li>Alt. 2: Skøytebane rett utenfor huset dersom Mjøsa er islagt.</li>
+				<li>Alt. 3: Svømmehall med det beste stupetårnet i landet!</li>
+				<li>Alt. 4: Bli igjen i huset og kose seg.</li>
+			</ul>
+			Søndag: Hafjell (1 times kjøring) eller langrenn og ellers samme alternativer som lørdag.</li>
+		<li id="note12-3"><b>Skitur til Snøhetta:</b>
+			Vi tar toget/kjører til Dovrefjell og Kongsvold Fjellstue. Her starter kvisteløypa på 17 km som tar oss inn
+			til Reinheim, selvbetjent turisthytte hvor vi overnatter.<br />
+			Neste dag går vi opp til Snøhetta. Vi avslutter dagen med en skikkelig hyttemiddag på Reinheim
+			før vi neste dag spenner på skiene og kommer oss tilbake til Kongsvold.</li>
+		<li id="note12-4"><b>Hemsedaltur:</b> Tradisjonstro arrangerer IFBS tur til Hemsedal. Vi har allerede booket to leiligheter,
+			hvor vi tilsammen har plass til 16 stk. Påmelding i slutten av januar etter prinsippet førstemann til mølla.
+			Er påmeldingen stor kan vi prøve å booke enda en leilighet.</li>
+		<li id="note12-5"><b>Nasjonaldagen på Finse:</b> 17. mai-feiringen på Finse har blitt en tradisjon. Opptil 3.000 mennesker
+			velger å feire nasjonaldagen med å gå på ski fra Finse til Hardangerjøkulen. Ved 1.800 meters høyde ved Jøkulhytta
+			holdes det en gudstjeneste, før det arrangeres 17. mai-tog og en legendarisk fotballkamp.</li>
+	</ol>
+	
+	<p><i>Dato kommer:</i></p>
+	<ul>
+		<li>Hyttedugnad</li>
+		<li>Foreningens semestermøte</li>
+		<li>Allmannamøte</li>
+		<li>Skismøringskurs i januar (IFBS)</li>
+		<li>Skøytetur i januar (IFBS)</li>
+		<li>Innebandyturnerig i april (IFBS)</li>
+		<li>Sommerleker i mai (IFBS)</li>
+		<li>Padletur i Oslofjorden eller på Mjøsa i juni (IFBS)</li>
+		<li>Stupekurs i juni (IFBS)</li>
+		<li>BSG-arrangementer</li>
+	</ul>
+	
+	<p><i>Endringer:</i></p>
+	<ul>
+		<li>2. januar 2012: Foreløpig arrangementplan lagt inn.</li>
+	</ul>
+</div>
 
 <div class="arrangementer_group" id="arr_h11">
 	<h2>Arrangementplan for høsten 2011</h2>
