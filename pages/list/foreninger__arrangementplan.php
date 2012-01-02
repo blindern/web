@@ -69,7 +69,7 @@ echo '
 		<dd>Båltur til Sognsvann (IFBS)</dd>
 		
 		<dt>25. februar</dt>
-		<dd>Ulympiske vinterleker (FFR/IFBS)</dd>
+		<dd>Ulympiske vinterleker (FFR/IFBS) <span style="color: #FF0000">(foreløpig dato)</span></dd>
 		
 		<dt>3. mars</dt>
 		<dd>Bukkefest</dd>
