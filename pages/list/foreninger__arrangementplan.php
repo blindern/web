@@ -84,13 +84,13 @@ echo '
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
 		<dt>24. mars</dt>
-		<dd>Uoffisiell utflyttingsfest ifm. oppussingen fra 1. april</dd>
+		<dd>Uoffisiell utflyttingsfest ifm. oppussingen fra 1. april <span style="color: #FF0000">(ubekreftet dato)</span></dd>
 		
 		<dt>23.-25. mars</dt>
 		<dd>Hemsedaltur (IFBS) <sup><a href="#note12-4">note 4</a></sup></dd>
 		
 		<dt>29. mars</dt>
-		<dd>Utflyttingsfest ifm. oppussingen fra 1. april</dd>
+		<dd>Utflyttingsfest ifm. oppussingen fra 1. april <span style="color: #FF0000">(ubekreftet dato)</span></dd>
 		
 		<dt>14. april</dt>
 		<dd>Schussrenn</dd>
