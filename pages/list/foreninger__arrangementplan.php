@@ -59,6 +59,9 @@ echo '
 		<dt>20.-21. januar</dt>
 		<dd>Overnattingstur til Katnosdammen (IFBS) <sup><a href="#note12-1">note 1</a></sup></dd>
 		
+		<dt>21. januar</dt>
+		<dd><a href="https://www.facebook.com/events/311279098892859/">Beer Olympics</a></dd>
+		
 		<dt>28. januar</dt>
 		<dd>Temafest</dd>
 		
@@ -175,6 +178,7 @@ echo '
 	<ul>
 		<li>2. januar 2012: Foreløpig arrangementplan lagt inn.</li>
 		<li>4. januar 2012: Korrigert dato for uoffisiell utflyttingsfest ifm. vestfløyen fra 24. til 28. mars.</li>
+		<li>5. januar 2012: La inn Beer Olympics 21. januar.</li>
 	</ul>
 </div>
 
