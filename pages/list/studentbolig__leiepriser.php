@@ -29,15 +29,15 @@
 								</tr>
 								<tr>
 									<td class="td_indent">Enkeltrom:</td>
-									<td style="text-align: right">6000,-</td>
+									<td style="text-align: right">6 000,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dobbeltrom:</td>
-									<td style="text-align: right">5650,-</td>
+									<td style="text-align: right">5 650,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Kombinasjonsrom:</td>
-									<td style="text-align: right">5875,-</td>
+									<td style="text-align: right">5 875,-</td>
 								</tr>
 								<tr>
 									<td><u>Andre utgifter:</u></td>
@@ -49,7 +49,7 @@
 								</tr>
 								<tr>
 									<td class="td_indent">Telefonavgift:</td>
-									<td style="text-align: right">20,-</td>
+									<td style="text-align: right"><span style="font-size: 10px">Fra 1. jan 2012:</span> 15,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Foreningsavgift:</td>
@@ -61,15 +61,15 @@
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>6140,-</strong></td>
+									<td style="text-align: right"><strong>6 135,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. dobbeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5790,-</strong></td>
+									<td style="text-align: right"><strong>5 785,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. kombinasjonsrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>6015,-</strong></td>
+									<td style="text-align: right"><strong>6 010,-</strong></td>
 								</tr>
 							</table>
 							<p>
