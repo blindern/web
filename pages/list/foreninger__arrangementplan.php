@@ -62,8 +62,14 @@ echo '
 		<dt>21. januar</dt>
 		<dd><a href="https://www.facebook.com/events/311279098892859/">Beer Olympics</a></dd>
 		
+		<dt>27. januar</dt>
+		<dd>Filmmaraton (BSG)</dd>
+		
 		<dt>28. januar</dt>
 		<dd>Temafest</dd>
+		
+		<dt>29. januar</dt>
+		<dd>Spillkveld (BSG)</dd>
 		
 		<dt>3.-5. februar</dt>
 		<dd>Skiweekend i Hamar (IFBS) <sup><a href="#note12-2">note 2</a></sup></dd>
@@ -74,6 +80,9 @@ echo '
 		<dt>25. februar</dt>
 		<dd>Ulympiske vinterleker (FFR/IFBS)</dd>
 		
+		<dt>26. februar</dt>
+		<dd>Spillkveld (BSG)</dd>
+		
 		<dt>3. mars</dt>
 		<dd>Bukkefest</dd>
 		
@@ -83,11 +92,20 @@ echo '
 		<dt>10.-11. mars</dt>
 		<dd>Tur til Snøhetta (IFBS) <sup><a href="#note12-3">note 3</a></sup></dd>
 		
+		<dt>11. mars</dt>
+		<dd>Sjakkturnering (BSG)</dd>
+		
 		<dt>16. mars</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
 		<dt>23.-25. mars</dt>
 		<dd>Hemsedaltur (IFBS) <sup><a href="#note12-4">note 4</a></sup></dd>
+		
+		<dt>25. mars</dt>
+		<dd>Spillkveld (BSG)</dd>
+		
+		<dt>26. mars - 1. april</dt>
+		<dd>Påskejakten (BSG)</dd>
 		
 		<dt>28. mars</dt>
 		<dd>Uoffisiell utflyttingsfest ifm. oppussingen fra 1. april</dd>
@@ -97,6 +115,12 @@ echo '
 		
 		<dt>14. april</dt>
 		<dd>Schussrenn</dd>
+		
+		<dt>20.-21. april</dt>
+		<dd>Filmmaraton (BSG)</dd>
+		
+		<dt>29. april</dt>
+		<dd>Spillkveld (BSG)</dd>
 		
 		<dt>30. april</dt>
 		<dd>Russefest</dd>
