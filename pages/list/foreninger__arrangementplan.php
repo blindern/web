@@ -125,6 +125,9 @@ echo '
 		<dt>30. april</dt>
 		<dd>Russefest</dd>
 		
+		<dt>4.-6. mai</dt>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+		
 		<dt>12. mai</dt>
 		<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
 		
@@ -186,7 +189,6 @@ echo '
 	
 	<p><i>Dato kommer:</i></p>
 	<ul>
-		<li>Hyttedugnad</li>
 		<li>Foreningens semestermøte</li>
 		<li>Allmannamøte</li>
 		<li>Skismøringskurs i januar (IFBS)</li>
@@ -195,7 +197,6 @@ echo '
 		<li>Sommerleker i mai (IFBS)</li>
 		<li>Padletur i Oslofjorden eller på Mjøsa i juni (IFBS)</li>
 		<li>Stupekurs i juni (IFBS)</li>
-		<li>BSG-arrangementer</li>
 	</ul>
 	
 	<p><i>Endringer:</i></p>
@@ -203,6 +204,8 @@ echo '
 		<li>2. januar 2012: Foreløpig arrangementplan lagt inn.</li>
 		<li>4. januar 2012: Korrigert dato for uoffisiell utflyttingsfest ifm. vestfløyen fra 24. til 28. mars.</li>
 		<li>5. januar 2012: La inn Beer Olympics 21. januar.</li>
+		<li>17. januar 2012: La inn arrangementer for BSG.</li>
+		<li>17. januar 2012: La inn hyttedugnad 4.-6. mai.</li>
 	</ul>
 </div>
 
