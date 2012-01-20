@@ -2,6 +2,7 @@
 				<?php echo get_right_img_gal(152, null, "", "Foto: Cecilie Sæle Merkesvik"); ?>
 				<h1>Velkommen til Blindern Studenterhjem</h1>
 				<h2> Like ved UiO</h2>
+				<p>Hei Regine</p>
 				<p>
 					I et praktfullt beliggende hageanlegg p&aring; Blindern,
 					like ved Universitetet i Oslo, kan Blindern Studenterhjem
