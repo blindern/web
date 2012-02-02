@@ -74,6 +74,9 @@ echo '
 		<dt>3.-5. februar</dt>
 		<dd>Skiweekend i Hamar (IFBS) <sup><a href="#note12-2">note 2</a></sup></dd>
 		
+		<dt>16. februar</dt>
+		<dd>Ekstraordinært allmannamøte</dd>
+		
 		<dt>22. februar</dt>
 		<dd>Båltur til Sognsvann (IFBS)</dd>
 		
@@ -206,6 +209,7 @@ echo '
 		<li>5. januar 2012: La inn Beer Olympics 21. januar.</li>
 		<li>17. januar 2012: La inn arrangementer for BSG.</li>
 		<li>17. januar 2012: La inn hyttedugnad 4.-6. mai.</li>
+		<li>3. februar 2012: La inn ekstraordinært allmannamøte 16. februar.</li>
 	</ul>
 </div>
 
