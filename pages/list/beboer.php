@@ -32,6 +32,7 @@ echo '
 <ul>
 	<li><a href="#nyttig">Nyttige dokumenter/ressurser</a></li>
 	<li><a href="#dugnaden">Dugnaden</a></li>
+	<li><a href="#matmeny">Matmeny</a></li>
 	<li><a href="#internmail">E-postliste (internmail)</a></li>
 	<li><a href="#velferden">Velferdens oppmenn</a></li>
 	<li><a href="#kollegiet">Kollegiets stillinger</a></li>
@@ -49,6 +50,11 @@ echo '
 <ul>
 	<li>Du kan <a href="/dugnaden/">bytte dugnad på dugnaddsiden</a></li>
 </ul>
+
+<h2 id="matmeny">Matmeny</h2>
+<p>Frem til sommeren 2012 vil matmenyen bli lagt ut her. Menyen legges ut helgen før den aktuelle uken.</p>
+<p>Det gjøres oppmerksom på at det kan forekomme endringer i menyen, og at ikke nødvendigvis alle endringer blir oppdatert på nettsiden.</p>
+<div style="margin-right: 5px"><iframe src="https://docs.google.com/document/pub?id=1QHc5IH2enxtrPeKI_ehrUSA35nE5VxLggiUq-E-KYBQ&amp;embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
 
 <h2 id="internmail">E-postliste (internmail)</h2>
 <p>På internmailen kommer beskjeder fra andre beboere og vedlikehold/administrasjonen. Det kan være veldig praktisk å få med seg beskjedene gitt på denne listen.</p>
