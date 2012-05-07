@@ -7,8 +7,7 @@ echo '
 				'.get_right_img("rom1.jpg", null, "", "Foto: Cecilie Sæle Merkesvik").'
 				<h1>Welcome to Blindern Studenterhjem</h1>
 				
-				<p>Blindern Studenterhjem (BS) is a private foundation that is operated without financial gain. The place should be a good student home for students
-					from all parts of the country, including exchange students, regardless of study.</p>
+				<p>Blindern Studenterhjem (BS) is a private foundation operated without financial gain, established to be a good home for students regardless of their origin or study.</p>
 				
 				<h2>A unique social environment</h2>
 				<p>Blindern Studenterhjem is known for its strong social environment. Every year a number of traditional events and
