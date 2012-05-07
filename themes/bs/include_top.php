@@ -2,6 +2,11 @@
 
 header("Content-Type: text/html; charset=utf-8");
 
+// spesifiser åpent for søkemotorer hvis ikke allerede satt
+$robots = '';
+if (!preg_match("~<meta.*name=(|'|\")robots~", ess::$b->page->head)) $robots = '
+<meta name="robots" content="index, follow" />';
+
 // sett opp head
 ess::$b->page->head = '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="Hjemmesideoppmann Blindern Studenterhjem" />
@@ -11,8 +16,8 @@ ess::$b->page->head = '<meta http-equiv="Content-Type" content="text/html; chars
 <link href="'.ess::$s['rpath'].'/layout/layout.css?'.@filemtime(dirname(dirname(dirname(__FILE__)))."/layout/layout.css").'" rel="stylesheet" type="text/css" />
 <!--[if lte IE 8]>
 <script src="'.ess::$s['rpath'].'/html5ie.js" type="text/javascript"></script>
-<![endif]-->
-<meta name="robots" content="index, follow" />'.ess::$b->page->head;
+<![endif]-->'.$robots.'
+'.ess::$b->page->head;
 
 // sett opp nettleser "layout engine" til CSS
 $list = array(
