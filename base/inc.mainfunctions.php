@@ -168,18 +168,6 @@ function force_https($mode = true)
 	}
 }
 
-/**
- * Formattere ord (flertallsendinger)
- *
- * @param mixed $single
- * @param mixed $multiple
- * @param int $num
- * @return mixed
- */
-function fword($single, $multiple, $num)
-{
-	return $num == 1 ? $single : $multiple;
-}
 
 /**
  * Formattere ord (flertalls-endinger) gjennom sprintf
@@ -312,34 +300,6 @@ function format_num($float, $decimals = 0)
 	return number_format($float, $decimals, ",", " ");
 }
 
-// TODO: Har vi noe bruk for denne?
-function parse_intval($number)
-{
-	$negative = preg_match('/^\s*\-/', $number);
-	$number = preg_replace('/[^0-9\.E\+]/', '', $number);
-	$number = preg_replace('/^0*/', '', $number);
-	
-	// E tall?
-	$matches = false;
-	if (preg_match('/^([0-9])(?:\.([0-9]+))?E\+([0-9]+)$/D', $number, $matches))
-	{
-		$number = $matches[1];
-		
-		// før desimaltallet
-		$e = intval($matches[3]);
-		$matches[2] = str_pad($matches[2], $e, "0", STR_PAD_RIGHT);
-		for ($i = 0; $i < $e; $i++)
-		{
-			$number .= substr($matches[2], $i, 1);
-		}
-	}
-	
-	$number = preg_replace('/[^0-9\.]/', '', $number);
-	$number = explode(".", $number, 2);
-	$number = $number[0];
-	if (empty($number)) $number = 0;
-	return ($negative ? '-' : '').$number;
-}
 
 // sjekk for gyldig e-postadresse
 function validemail($address)
