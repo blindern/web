@@ -601,6 +601,7 @@ ul.arrangementer li {
 	border: none;
 	margin: 0;
 	padding: 0;
+	max-width: 600px;
 }
 .soknadsskjema legend {
 	display: none;
@@ -650,6 +651,20 @@ input.soknad_felt {
 }
 input.soknad_felt_stor {
 	width: 250px;
+}
+
+
+#soknad2_table {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#soknad4_table {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 

@@ -42,6 +42,11 @@ class bs_soknad
 		"app_error"        => array('
 			<p class="soknad_feil_info">Søknaden ble ikke korrekt fylt ut og er <span class="u">ikke</span> sendt inn. Korriger feilene nedenfor og send inn på nytt.</p>', '
 			<p class="soknad_feil_info">Your application was not filled correctly and is <span class="u">not</span> sent. Correct the errors below and try again.</p>'),
+		
+		"app_part1_legend" => array("Introduksjon", "Introduction"),
+		
+		"app_part2_legend" => array("Muligheten for et godt sosialt liv utenom studiene", "Muligheten for et godt sosialt liv utenom studiene"),
+		
 		"app_legend"       => array('Søknad om plass på Blindern Studenterhjem', 'Application for Blindern Studenterhjem'),
 		"app_personal"     => array("Personalia", "Personal"),
 		"app_name"         => array("Navn", "Name"),
@@ -69,6 +74,8 @@ class bs_soknad
 		                          'Write a description of yourself and your interests. This is required for your application to be considered. Write the names of former residents or current residents should you have any references.'),
 		"app_comment"      => array('Kommentarer eller øvrige opplysninger', 'Comments or other information'),
 		"app_submit"       => array("Send søknad", "Send application"),
+		
+		"app_part4_legend" => array("Romfordeling", "Romfordeling"),
 		
 		"receipt_subject"  => array('Kvittering for =?UTF-8?B?c8O4a25hZCB0aWwgQmxpbmRlcm4gU3R1ZGVu?=  =?UTF-8?B?dGVyaGplbQ==?=' /* Kvittering for søknad til Blindern Studenterhjem */, 'Receipt for application for Blindern Studenterhjem'),
 		"email"            => array(
@@ -368,9 +375,85 @@ If you have any futher questions, you can contact the administration on phone (+
 		}
 		
 		echo '
-			<form action="" method="POST">
-				<fieldset class="soknadsskjema">
-					<legend>'.self::get_lang("app_legend").'</legend>
+			<form action="" method="POST">';
+		
+		self::show_form_part1();
+		self::show_form_part2();
+		self::show_form_part3();
+		self::show_form_part4();
+		
+		echo '
+			</form>';
+	}
+	
+	protected static function show_form_part1()
+	{
+		echo '
+				<fieldset class="soknadsskjema" id="soknadsskjema_part_1">
+					<h3>'.self::get_lang("app_part1_legend").'</h3>
+					<p>
+						<label for="bogrunner">Se gjennom hjemmesiden til Blindern Studenterhjem og gi tre grunner til hvorfor du ønsker å bo her: *</label><br />'.self::get_error("bogrunner", '%s<br />').'
+						<textarea name="bogrunner" cols="40" rows="8" id="bogrunner">'.htmlspecialchars(postval("bogrunner")).'</textarea>
+					</p>
+					<ol>
+						<li>Har du gitt tre grunner til hvorfor du ønsker å bo på Blindern Studenterhjem?</li>
+						<li>Kunne du tenkt deg å bo på Blindern Studenterhjem?</li>
+						<li>Er ordningen med måltider noe som gjør det attrivktivt å flytte inn?</li>
+						<li>&quot;Jeg er en person som kunne tenkt å engasjere meg utenom studiene?&quot;</li>
+						<li>&quot;Jeg er en person som ser verdien av frivillig arbeid?&quot;</li>
+						<li>&quot;Jeg er en person som er åpen for nye opplevelser?&quot;</liI>
+					</ol>
+				</fieldset>';
+	}
+	
+	protected static function show_form_part2()
+	{
+		echo '
+				<fieldset class="soknadsskjema" id="soknadsskjema_part_2">
+					<h3>'.self::get_lang("app_part2_legend").'</h3>
+					<p>Har du kommet forbi introduksjonen kan du anse deg selv som en person vi trenger på
+						Blindern Studenterhjem; en som har et ønske om å delta og engasjere seg.</p>
+					<p>Det som gjør dette stedet unikt er at de fleste engasjerer seg på en eller annen måte.
+						Noen gjør det gjennom å ta verv i foreninger, andre bidrar ved å delta på åforeningenes arrangementer.
+						For å holde liv i de fantastiske tradisjonene er vi avhengig av å få inn de
+						som faktisk ønsker å gjøre noe for dette stedet.</p>
+					<p>Vi ber deg om å lese  om de forskjellige foreningene som er her og velge en forening du kunne tenkt deg å være aktiv i:</p>';
+		
+		$foreninger = array(
+			array("BSG", "#"),
+			array("IFBS", "#"),
+			array("Festforeningen", "#"),
+			array("Småbruket", "#"),
+			array("Blindern Haarn oc Blaese Orchester", "#"),
+			array("cHorus Buchus (for gutter)", "#"),
+			array("Pigefaarsamlingen (for jenter)", "#"),
+			array("Jentekoret (navn...)", "#")
+		);
+		
+		echo '
+					<table class="table" id="soknad2_table">
+						<tbody>';
+		
+		foreach ($foreninger as $row)
+		{
+			echo '
+							<tr>
+								<td><a href="'.htmlspecialchars($row[1]).'">'.htmlspecialchars($row[0]).'</a></td>
+								<td>...</td>
+							</tr>';
+		}
+		
+		echo '
+						</tbody>
+					</table>
+				</fieldset>';
+	}
+	
+	protected static function show_form_part3()
+	{
+		echo '
+				<fieldset class="soknadsskjema" id="soknadsskjema_part_3">
+					<h3>'.self::get_lang("app_legend").'</h3>
 					<h3 style="margin-top: 0">'.self::get_lang("app_personal").'</h3>
 					<dl>
 						<dt><label for="navn">'.self::get_lang("app_name").'</label></dt>
@@ -462,8 +545,63 @@ If you have any futher questions, you can contact the administration on phone (+
 					</p>
 					
 					<p class="soknad_submit"><input type="submit" value="'.self::get_lang("app_submit").'" name="submit" /></p>
-				</fieldset>
-			</form>';
+				</fieldset>';
+	}
+	
+	protected static function show_form_part4()
+	{
+		$q = array(
+			"Kjeder du deg fort?",
+			"Liker du å bruke mye tid på å lese og studere på egenhånd?",
+			"Er du pratsom?",
+			"Har du få, men gode venner?",
+			"Er du livlig?",
+			"Er du en person som ikke klarer å konsentrere deg uten litt liv og røre rundt deg (musikk, andre mennesker)?",
+			"Konsentrerer du deg best når det er helt stille?",
+			"Er du en person som liker å feste?",
+			"Er du en rolig person?"
+		);
+		
+		echo '
+				<fieldset class="soknadsskjema" id="soknadsskjema_part_4">
+					<h3>'.self::get_lang("app_part4_legend").'</h3>
+					
+					<p>På Blindern respektiverer vi at noen liker at det er mye liv og røre rundt dem eller ønsker privatliv, ro og orden. På Blindern Studenterhjem har vi derfor forskjellige ganger med forskjellige toleransenivåer for støy. Vi har alt fra begge ender av skalaen. Hvor kunne du tenkt deg å bo?</p>
+					
+					<table class="table" id="soknad4_table">
+						<thead>
+							<tr>
+								<th>Påstand</th>
+								<th style="text-align: center">1</th>
+								<th style="text-align: center">2</th>
+								<th style="text-align: center">3</th>
+								<th style="text-align: center">4</th>
+								<th style="text-align: center">5</th>
+								<th style="text-align: center">6</th>
+							</tr>
+						</thead>
+						<tbody>';
+		
+		$i = 0;
+		foreach ($q as $v)
+		{
+			$i++;
+			echo '
+							<tr>
+								<td>'.htmlspecialchars($v).'</td>
+								<td><input type="radio" name="part4['.$i.']" value="1" /></td>
+								<td><input type="radio" name="part4['.$i.']" value="2" /></td>
+								<td><input type="radio" name="part4['.$i.']" value="3" /></td>
+								<td><input type="radio" name="part4['.$i.']" value="4" /></td>
+								<td><input type="radio" name="part4['.$i.']" value="5" /></td>
+								<td><input type="radio" name="part4['.$i.']" value="6" /></td>
+							</tr>';
+		}
+		
+		echo '
+						</tbody>
+					</table>
+				</fieldset>';
 	}
 	
 	/**
@@ -488,11 +626,12 @@ If you have any futher questions, you can contact the administration on phone (+
 	
 	protected static function send_email($data)
 	{
-		$to = "post@blindern-studenterhjem.no";
-		#$to = "henrist@gmail.com";
+		#$to = "post@blindern-studenterhjem.no";
+		$to = "henrist@gmail.com";
 		$subject = "=?UTF-8?B?U8O4a25hZCBmb3IgQmxpbmRlcm4gU3R1ZGVudGVyaGplbQ==?="; #Søknad for Blindern Studenterhjem
 		
-		$headers = "To: Blindern Studenterhjem <post@blindern-studenterhjem.no>\r\n";
+		#$headers = "To: Blindern Studenterhjem <post@blindern-studenterhjem.no>\r\n";
+		$headers = "To: Blindern Studenterhjem <henrist@gmail.com>\r\n";
 		$headers .= "From: {$data['name']} <{$data['email']}>\r\n";
 		$headers .= "Reply-To: {$data['email']} <{$data['email']}>\r\n";
 		$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
