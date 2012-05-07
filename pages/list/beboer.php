@@ -4,6 +4,9 @@ bs_side::set_title("Beboere");
 bs_side::$head .= '
 <meta name="robots" content="noindex, nofollow" />';
 
+// gi status som beboer siden vi ser på denne siden
+bs::beboer_cookie_set();
+
 bs_side::$head .= '
 <style type="text/css">
 #content h2 {
