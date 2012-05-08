@@ -29,7 +29,7 @@ window.addEvent("domready", function()
 echo get_right_img("schussrenn_2010v.jpg", null, "Schussrennet våren 2010", "Schussrennet våren 2010. Foto: Anders Fagereng").' <!-- Foto: Anders Fagereng -->';
 
 echo '
-<h1>Arrangementer</h1>
+<h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
 
 <ul id="arrangementer_head" style="display: none">
 	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
@@ -83,6 +83,9 @@ echo '
 		<dt>22. februar</dt>
 		<dd>Båltur til Sognsvann (IFBS)</dd>
 		
+		<dt>24. februar</dt>
+		<dd>Smørekurs (IFBS)</dd>
+		
 		<dt>25. februar</dt>
 		<dd>Ulympiske vinterleker (FFR/IFBS)</dd>
 		
@@ -125,6 +128,9 @@ echo '
 		<dt>20.-21. april</dt>
 		<dd>Filmmaraton (BSG)</dd>
 		
+		<dt>24. april</dt>
+		<dd>Elefantfest (kun for elefanter)</dd>
+		
 		<dt>29. april</dt>
 		<dd>Spillkveld (BSG)</dd>
 		
@@ -134,8 +140,20 @@ echo '
 		<dt>4.-6. mai</dt>
 		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
 		
+		<dt>7. mai</dt>
+		<dd>Åpent kollegiemøte</dd>
+		
+		<dt>9. mai</dt>
+		<dd>Foredrag om eugenikk og rasehygienisk tenkning i Norge, holdes av Espen Søbye (Biblioteksutvalget og FFR)</dd>
+		
+		<dt>10. mai</dt>
+		<dd>Allmannamøte</dd>
+		
 		<dt>12. mai</dt>
 		<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
+		
+		<dt>14.-16. mai</dt>
+		<dd>Kollegievalg</dd>
 		
 		<dt>16. mai</dt>
 		<dd>Temafest</dd>
@@ -146,20 +164,28 @@ echo '
 		<dt>17. mai</dt>
 		<dd>Café Avec</dd>
 		
+		<dt>26. mai</dt>
+		<dd>Sommerleker (IFBS)</dd>
+		
 		<dt>1. juni</dt>
 		<dd>Bukkehaugsfestivalen</dd>
+		
+		<dt>1. juni</dt>
+		<dd>Kollegiekonstituering</dd>
 	</dl>
 	
 	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
 		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
 	<dl class="arrangementer">
 		<dt>Mandager</dt>
-		<dd>Intervalltrening på ski</dd>
+		<dd>Løpetreninger kl 18. (Vintertid: Intervalltrening på ski)</dd>
 		<dt>Onsdager</dt>
 		<dd>Ballspill kl 16</dd>
 		<dt>Torsdager</dt>
 		<dd>&quot;Back-to-basic&quot;-styrkesirkel kl 20</dd>
 	</dl>
+	
+	<p>Festforeningen arrangerer &quot;kino&quot; med visning av to filmer på søndager.</p>
 	
 	<p><i>Noter:</i></p>
 	<ol>
@@ -196,13 +222,14 @@ echo '
 	<p><i>Dato kommer:</i></p>
 	<ul>
 		<li>Foreningens semestermøte</li>
-		<li>Allmannamøte</li>
-		<li>Skismøringskurs i januar (IFBS)</li>
-		<li>Skøytetur i januar (IFBS)</li>
-		<li>Innebandyturnerig i april (IFBS)</li>
-		<li>Sommerleker i mai (IFBS)</li>
 		<li>Padletur i Oslofjorden eller på Mjøsa i juni (IFBS)</li>
 		<li>Stupekurs i juni (IFBS)</li>
+	</ul>
+	
+	<p><i>Utgått/ukjent:</i></p>
+	<ul>
+		<li>Skøytetur i januar (IFBS)</li>
+		<li>Innebandyturnerig i april (IFBS)</li>
 	</ul>
 	
 	<p><i>Endringer:</i></p>
@@ -213,6 +240,7 @@ echo '
 		<li>17. januar 2012: La inn arrangementer for BSG.</li>
 		<li>17. januar 2012: La inn hyttedugnad 4.-6. mai.</li>
 		<li>3. februar 2012: La inn juridisk aften 15. februar og ekstraordinært allmannamøte 16. februar.</li>
+		<li>8. mai 2012: La inn foredrag 9. mai, allmannamøtet 10. mai, kollegievalg 14.-16. mai, sommerleker 26. mai og kollegiekonstituering 1. juni. Lagt inn noen mindre arrangementer som allerede har blitt avholdt.</li>
 	</ul>
 </div>
 
@@ -479,7 +507,5 @@ echo '
 	</dl>
 	<p>Sist oppdatert 14. oktober 2010.</p>
 </div>
-
-<p><a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none" alt="" /></a></p>
 
 ';
