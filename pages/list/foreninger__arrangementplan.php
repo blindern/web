@@ -164,6 +164,9 @@ echo '
 		<dt>17. mai</dt>
 		<dd>Café Avec</dd>
 		
+		<dt>24. mai</dt>
+		<dd>Foreningens semestermøte</dd>
+		
 		<dt>26. mai</dt>
 		<dd>Sommerleker (IFBS)</dd>
 		
@@ -221,7 +224,6 @@ echo '
 	
 	<p><i>Dato kommer:</i></p>
 	<ul>
-		<li>Foreningens semestermøte</li>
 		<li>Padletur i Oslofjorden eller på Mjøsa i juni (IFBS)</li>
 		<li>Stupekurs i juni (IFBS)</li>
 	</ul>
@@ -241,6 +243,7 @@ echo '
 		<li>17. januar 2012: La inn hyttedugnad 4.-6. mai.</li>
 		<li>3. februar 2012: La inn juridisk aften 15. februar og ekstraordinært allmannamøte 16. februar.</li>
 		<li>8. mai 2012: La inn foredrag 9. mai, allmannamøtet 10. mai, kollegievalg 14.-16. mai, sommerleker 26. mai og kollegiekonstituering 1. juni. Lagt inn noen mindre arrangementer som allerede har blitt avholdt.</li>
+		<li>11. mai 2012: La inn foreningens semestermøte 24. mai.</li>
 	</ul>
 </div>
 
