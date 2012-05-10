@@ -77,8 +77,9 @@ body {
 	/*text-align: center;*/
 	margin: 0;
 	padding: 0 0 0 0;
-	overflow: hidden;
+	/*overflow: hidden; erstattet med height for å kunne ha flytende undermeny utenfor */
 	line-height: 20px;
+	height: 40px;
 }
 #menu_main li {
 	float: left;
@@ -109,6 +110,7 @@ body {
 }
 #menu_main .beboerlenke {
 	float: left;
+	position: relative;
 }
 #menu_main .beboerlenke a {
 	color: #FBF2BB;
@@ -116,6 +118,37 @@ body {
 #menu_main .langsel:last-child a {
 	padding-right: 20px;
 }
+
+/* spesialmeny beboerlenke */
+#menu_main .beboerlenke ul {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 40px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	opacity: 0.95;
+}
+#menu_main .beboerlenke:hover ul {
+	display: block;
+}
+#menu_main .beboerlenke li {
+	background-color: #333;
+	float: none;
+}
+
+#menu_main .beboerlenke li a {
+	padding: 5px 10px 7px 10px;
+}
+#menu_main .beboerlenke .beboerlenke_quicklinks_desc {
+	color: #DDD;
+	padding: 10px 10px 5px 10px;
+	font-style: italic;
+	font-size: 16px;
+	background-color: #444;
+}
+
 
 /* undermenyen */
 #menu_sub {

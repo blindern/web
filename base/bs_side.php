@@ -238,7 +238,14 @@ class bs_side
 		if (bs_side::$is_beboer)
 		{
 			self::$menu_main .= '
-			<li class="beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a></li>';
+			<li class="beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a>
+				<ul>
+					<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
+					<li><a href="'.self::$pagedata->doc_path.'/foreninger/arrangementplan">Arrangementplan</a></li>
+					<li><a href="/dugnaden/">Dugnaden</a></li>
+					<li><a href="/dokumenter/statutter">Statuttene</a></li>
+				</ul>
+			</li>';
 		}
 		
 		foreach (self::$menu_main_list as $key => $item)
