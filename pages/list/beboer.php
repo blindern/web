@@ -39,6 +39,7 @@ echo '
 	<li><a href="#internmail">E-postliste (internmail)</a></li>
 	<li><a href="#velferden">Velferdens oppmenn</a></li>
 	<li><a href="#kollegiet">Kollegiets stillinger</a></li>
+	<li><a href="#tennis">Booking av tennisbanen</a> <span style="color: red; font-weight: bold; font-size: 11px">NY</span></li>
 </ul>
 
 <h2 id="nyttig">Nyttige dokumenter/ressurser</h2>
@@ -89,4 +90,13 @@ echo '
 <p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
 <iframe width="700" height="600" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE&single=true&gid=0&output=html&widget=true"></iframe>
 
+<h2 id="tennis">Booking av tennisbanen</h2>
+<p>Tennisbanen bookes ved å bruke Google Calendar. Logg inn med <i>ifbs.tennis@gmail.com</i> på <a href="https://www.google.com/calendar/">https://www.google.com/calendar/</a>. Passordet er <i>togafest</i>.</p>
+<p>Regler for booking av banen:</p>
+<ul>
+	<li>Du kan ikke reservere banen lenger enn syv dager frem i tid</li>
+	<li>Maksimal spilletid er 90 minutter</li>
+	<li>Du må møte opp til reservert tid. Hvis du er mer enn fem minutter for sen, blir reservasjonen ugyldig. Da kan hvem som helst spille</li>
+</ul>
+<p>Husk at vi leier ut banen til eksterne mellom 11.00 og 13.00 hver mandag. Da kan vi dessverre ikke benytte oss av banen.</p>
 ';
