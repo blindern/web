@@ -99,4 +99,5 @@ echo '
 	<li>Du må møte opp til reservert tid. Hvis du er mer enn fem minutter for sen, blir reservasjonen ugyldig. Da kan hvem som helst spille</li>
 </ul>
 <p>Husk at vi leier ut banen til eksterne mellom 11.00 og 13.00 hver mandag. Da kan vi dessverre ikke benytte oss av banen.</p>
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=pssckmifkj9dk4qqd3hmp15n78%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FOslo" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
 ';
