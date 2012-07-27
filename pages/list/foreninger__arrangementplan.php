@@ -32,11 +32,92 @@ echo '
 <h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
 
 <ul id="arrangementer_head" style="display: none">
+	<li><a href="#" id="arr_h12_group">Høst 2012</a></li>
 	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
 	<li><a href="#" id="arr_h11_group">Høst 2011</a></li>
 	<li><a href="#" id="arr_v11_group">Vår 2011</a></li>
 	<li><a href="#" id="arr_h10_group">Høst 2010</a></li>
 </ul>
+
+<div class="arrangementer_group" id="arr_h12">
+	<h2>Arrangementplan for høsten 2012</h2>
+	<dl class="arrangementer">
+		<dt>20. august</dt>
+		<dd><a href="http://blindernuka.no/2012/">miniUKA</a> - Pub-til-pub</dd>
+		
+		<dt>21. august</dt>
+		<dd><a href="http://blindernuka.no/2012/">miniUKA</a> - Konsertkveld</dd>
+		
+		<dt>22. august</dt>
+		<dd><a href="http://blindernuka.no/2012/">miniUKA</a> - Internaften</dd>
+		
+		<dt>23. august</dt>
+		<dd>Pygmémøte</dd>
+		
+		<dt>25. august</dt>
+		<dd>Rebusløp og velkommen hjem-fest</dd>
+		
+		<dt>26. august</dt>
+ 		<dd>Pygmémiddag m/café avec</dd>
+ 		
+ 		<dt>1. september</dt>
+		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
+		
+		<dt>8. september</dt>
+		<dd>Sølecup</dd>
+		
+		<dt>22. september</dt>
+		<dd>Temafest<dd>
+		
+		<dt>5. oktober</dt>
+		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
+		
+		<dt>20. oktober</dt>
+		<dd>Høstball</dd>
+		
+		<dt>21. oktober</dt>
+		<dd>Café avec</dd>
+		
+		<dt>10. november</dt>
+		<dd>Togafest</dd>
+		
+		<dt>24. november</dt>
+		<dd>Temafest (ubekreftet dato)</dd>
+		
+		<dt>7. desember</dt>
+		<dd>Julemøte</dd>
+		
+		<dt>14. desember</dt>
+		<dd>Julemiddag</dd>
+	</dl>
+	
+	<p><i>Dato kommer:</i></p>
+	<ul>
+		<li>UKA: Revysus</li>
+		<li>Kollegiet
+			<ul>
+				<li>Allmannamøte</li>
+				<li>Kollegievalg</li>
+				<li>Åpent kollegiemøte</li>
+				<li>Kollegiekonstituering</li>
+			</ul>
+		</li>
+		<li>Hyttestyret: Hyttedugnad</li>
+		<li>Foreningen: Foreningens semestermøte</li>
+		<li>Pigefaarsamlingen: Juleverksted</li>
+		<li>IFBS: Alle arrangementer</li>
+		<li>BSG: Alle arrangementer</li>
+	</ul>
+	
+	<!--<p><i>Utgått/ukjent:</i></p>
+	<ul>
+	</ul>-->
+	
+	<p><i>Historikk:</i></p>
+	<ul>
+		<li>27. juli 2012: Foreløpig arrangementplan lagt inn.</li>
+	</ul>
+</div>
 
 <div class="arrangementer_group" id="arr_v12">
 	<h2>Arrangementplan for våren 2012</h2>
