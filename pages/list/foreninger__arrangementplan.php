@@ -60,7 +60,7 @@ echo '
 		<dt>26. august</dt>
  		<dd>Pygmémiddag m/café avec</dd>
  		
- 		<dt>30. august</dt>
+ 		<dt>31. august</dt>
 		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
 		
 		<dt>8. september</dt>
@@ -117,6 +117,7 @@ echo '
 	<ul>
 		<li>27. juli 2012: Foreløpig arrangementplan lagt inn.</li>
 		<li>27. juli 2012: Korrigert dato pygmétur 1. september til 31. august.</li>
+		<li>29. juli 2012: Korrigert oppført dato for pygmétur fra 30. august til 31. august.</li>
 	</ul>
 </div>
 
