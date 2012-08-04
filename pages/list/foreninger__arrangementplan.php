@@ -69,6 +69,9 @@ echo '
 		<dt>22. september</dt>
 		<dd>Temafest<dd>
 		
+		<dt>28.-30. september</dt>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
+		
 		<dt>5. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
@@ -102,7 +105,6 @@ echo '
 				<li>Kollegiekonstituering</li>
 			</ul>
 		</li>
-		<li>Hyttestyret: Hyttedugnad</li>
 		<li>Foreningen: Foreningens semestermøte</li>
 		<li>Pigefaarsamlingen: Juleverksted</li>
 		<li>IFBS: Alle arrangementer</li>
@@ -118,6 +120,7 @@ echo '
 		<li>27. juli 2012: Foreløpig arrangementplan lagt inn.</li>
 		<li>27. juli 2012: Korrigert dato pygmétur 1. september til 31. august.</li>
 		<li>29. juli 2012: Korrigert oppført dato for pygmétur fra 30. august til 31. august.</li>
+		<li>4. august 2012: La inn hyttedugnad 28. til 30. september.</li>
 	</ul>
 </div>
 
