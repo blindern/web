@@ -15,6 +15,9 @@ RewriteRule ^dokumenter/statutter.pdf$ /dokumenter/statutter/statutter.pdf [L]
 RewriteRule ^undersokelse/(.*)$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749&token=$1 [L,R=302]
 RewriteRule ^undersokelse$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749 [L,R=302]
 
+# Facebook Oppslagstavle
+RewriteRule ^(fb|facebook)/?$ https://www.facebook.com/groups/274958321716/ [L,R]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+?)/$ /$1 [L,R=301]
