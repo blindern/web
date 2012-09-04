@@ -81,6 +81,9 @@ echo '
 		<dt>21. oktober</dt>
 		<dd>Café avec</dd>
 		
+		<dt>27. oktober</li>
+		<dd>Tur med biblioteksutvalget til Det Norske Teateret for å se Himmlers fødselsdag av østerrikeren Thomas Bernhard. Påmelding innen 16. september (Lars Hektoen)</dd>
+		
 		<dt>10. november</dt>
 		<dd>Togafest</dd>
 		
@@ -93,6 +96,21 @@ echo '
 		<dt>14. desember</dt>
 		<dd>Julemiddag</dd>
 	</dl>
+	
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
+		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
+	<dl class="arrangementer">
+		<dt>Mandager</dt>
+		<dd>Løpetreninger kl 18.</dd>
+		<dt>Onsdager</dt>
+		<dd>Styrkesirkel</dd>
+		<dt>Torsdager</dt>
+		<dd>Ballspill kl 16 (på Blindern Athletica)</dd>
+		<dt>Fredager</dt>
+		<dd>Sprint-trening med Tormod</dd>
+	</dl>
+	
+	<p>Festforeningen arrangerer &quot;Billa kino&quot; med visning av to filmer på søndager.</p>
 	
 	<p><i>Dato kommer:</i></p>
 	<ul>
@@ -107,7 +125,7 @@ echo '
 		</li>
 		<li>Foreningen: Foreningens semestermøte</li>
 		<li>Pigefaarsamlingen: Juleverksted</li>
-		<li>IFBS: Alle arrangementer</li>
+		<li>IFBS: Dansetimer</li>
 		<li>BSG: Alle arrangementer</li>
 	</ul>
 	
@@ -121,6 +139,8 @@ echo '
 		<li>27. juli 2012: Korrigert dato pygmétur 1. september til 31. august.</li>
 		<li>29. juli 2012: Korrigert oppført dato for pygmétur fra 30. august til 31. august.</li>
 		<li>4. august 2012: La inn hyttedugnad 28. til 30. september.</li>
+		<li>4. september 2012: La inn info om løpetreninger, styrkesirkler, ballspill, sprint-treninger samt Billa kino.</li>
+		<li>4. september 2012: Tur med biblioteksutvalget 27. oktober.</li>
 	</ul>
 </div>
 
