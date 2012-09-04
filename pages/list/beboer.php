@@ -56,10 +56,8 @@ echo '
 </ul>
 
 <h2 id="matmeny">Matmeny</h2>
-<p>Frem til sommeren 2012 vil matmenyen bli lagt ut her. Menyen legges ut helgen før den aktuelle uken.</p>
-<p>Det gjøres oppmerksom på at det kan forekomme endringer i menyen, og at ikke nødvendigvis alle endringer blir oppdatert på nettsiden.</p>
-<p>Få matmenyen rett inn i kalenderen din! <a href="http://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Ftfcd2k5j3vu6lmoif5dqs8lb4g%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="//www.google.com/calendar/images/ext/gc_button1.gif" style="border: 0; vertical-align: -9px"></a></p>
-<div style="margin-right: 5px"><iframe src="https://docs.google.com/document/pub?id=1QHc5IH2enxtrPeKI_ehrUSA35nE5VxLggiUq-E-KYBQ&amp;embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+<p>Senvåren 2012 ble matmenyen til BS lagt ut på denne nettsiden da det var mange som bodde på SiO ifm. rehabiliteringen av vestfløy.</p>
+<p>Fra høsten 2012 vil ikke menyen være tilgjengelig. Dersom det er interesse for at den legges ut er det allikevel ingenting i veien for at vi kan gjøre det. Ta i så fall kontakt med <a href="/administrasjonen/om_nettsidene">hjemmesideoppmann</a>.</p>
 
 <h2 id="internmail">E-postliste (internmail)</h2>
 <p>På internmailen kommer beskjeder fra andre beboere og vedlikehold/administrasjonen. Det kan være veldig praktisk å få med seg beskjedene gitt på denne listen.</p>
