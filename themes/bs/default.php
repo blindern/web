@@ -98,12 +98,8 @@ class theme_bs_default
 		
 		echo '</p>
 		</div>
-		</div>';
-		
-/*
-		<div id="banner"><a href="'.ess::$s['rpath'].'/foreninger/arrangementsplan"><img src="'.ess::$s['rpath'].'/graphics/images/bukkehaug2011.jpg" alt="Bukkehaugsfestivalen 2011" /></a></div>*/
-		
-		echo '
+		</div>
+		<div id="banner"><a href="http://blindernuka.no/"><img src="'.ess::$s['rpath'].'/graphics/images/miniuka12.png" alt="miniUKA på Blindern 2012" /></a></div>
 	</div>
 	<div id="footer_spacer"></div>
 </div>';
