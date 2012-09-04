@@ -7,6 +7,8 @@ class bs
 	 */
 	public static function is_beboer()
 	{
+		// sjekk IP
+		if (substr($_SERVER['REMOTE_ADDR'], 0, 10) == "37.191.255") return true;
 		return (self::beboer_cookie_check() || login::$logged_in);
 	}
 	
