@@ -76,12 +76,6 @@ class theme_bs_default
 		}
 		
 		echo '
-			<div class="ledigeplasser">
-				<h2>Ny beboer?</h2>
-				<p>På kvelden torsdag 23. august vil det bli avholdt &laquo;pygmémøte&raquo;. Dette er et informasjonsmøte rettet mot nye beboere.</p>
-			</div>';
-		
-		echo '
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'
