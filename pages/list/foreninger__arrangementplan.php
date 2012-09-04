@@ -102,6 +102,8 @@ echo '
 	<dl class="arrangementer">
 		<dt>Mandager</dt>
 		<dd>Løpetreninger kl 18.</dd>
+		<dt>Tirsdager</dt>
+		<dd>Hiphop kl 18-19</dd>
 		<dt>Onsdager</dt>
 		<dd>Styrkesirkel</dd>
 		<dt>Torsdager</dt>
@@ -141,6 +143,7 @@ echo '
 		<li>4. august 2012: La inn hyttedugnad 28. til 30. september.</li>
 		<li>4. september 2012: La inn info om løpetreninger, styrkesirkler, ballspill, sprint-treninger samt Billa kino.</li>
 		<li>4. september 2012: Tur med biblioteksutvalget 27. oktober.</li>
+		<li>4. september 2012: La inn info om hiphop på tirsdager.</li>
 	</ul>
 </div>
 
