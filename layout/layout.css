@@ -561,8 +561,12 @@ ul.arrangementer li {
 .hyttestyret_legend.reservert2 span, .hyttestyret_kalender td.reservert2 {
 	background-color: #AAAAFF;
 }
+.hyttestyret_legend.reservert3 span, .hyttestyret_kalender td.reservert3 {
+	background-color: #AAFFAA;
+}
 .hyttestyret_kalender td.reservert:after,
-.hyttestyret_kalender td.reservert2:after
+.hyttestyret_kalender td.reservert2:after,
+.hyttestyret_kalender td.reservert3:after
  {
 	content: " (reservert)";
 }
@@ -591,7 +595,7 @@ ul.arrangementer li {
 	overflow: hidden;
 }
 .hyttestyret_legend {
-	margin: 10px 0 10px 15px;
+	margin: 10px 0 0 15px;
 	float: right;
 }
 .hyttestyret_legend span {

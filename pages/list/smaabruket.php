@@ -201,6 +201,7 @@ echo '
 							<ul>
 								<li><b>Reservert:</b> Vi har ikke mottatt depositum fra leietaker.</li>
 								<li><b>Reservert av hyttestyret:</b> Hyttestyret holder av flere helger før fastsettelse av dato for egne arrangementer. Sannsynligvis blir kun ett alternativ beholdt.</li>
+								<li><b>Reservert for beboere:</b> Datoene holdes av for beboere ved Blindern Studenterhjem. Beboere tar kontakt med hyttestyret for å reservere utleie. Datoene blir frigjort kun kort tid før dersom ingen beboere drar opp.</li>
 								<li><b>Opptatt:</b> Depositum er mottatt. Leien <i>kan</i> fremdeles bli avlyst.</li>
 							</ul>';
 
@@ -272,6 +273,7 @@ else
 		if (!$status) $class = 'ledig';
 		elseif ($status == "Reservert") $class = "reservert";
 		elseif ($status == "Reservert2") $class = "reservert2";
+		elseif ($status == "Reservert3") $class = "reservert3";
 		else $class = "opptatt";
 		
 		$is_today = $date == $today;
@@ -295,6 +297,7 @@ else
 								<p class="hyttestyret_legend ledig"><span></span>Ledig</p>
 								<p class="hyttestyret_legend reservert"><span></span>Reservert</p>
 								<p class="hyttestyret_legend reservert2"><span></span>Reservert av hyttestyret</p>
+								<p class="hyttestyret_legend reservert3"><span></span>Reservert for beboere</p>
 								<p class="hyttestyret_legend opptatt"><span></span>Opptatt</p>
 							</div>
 							<!--<p><b>Utleiedatoer for 2012 er ikke tilgjengelig enda.</b> Dette grunnet planlegging av egne turer og fortrinnsrett for beboere ved Blindern Studenterhjem. Ta evt. kontakt for muligheter rundt reservasjon.</p>-->

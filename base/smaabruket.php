@@ -84,7 +84,7 @@ class smaabruket_kalender
 					"end" => $endTime,
 					"end_text" => date("r", $endTime),
 					"value" => (string) $gd->where->attributes()->valueString,
-					"calendar" => $reserved ? "Reservert".((string)$xml->title == "Hyttestyret" ? "2" : "") : (string) $xml->title
+					"calendar" => $reserved ? "Reservert".((string)$xml->title == "Hyttestyret" ? "2" : "") : ((string)$xml->title == "Hyttestyret" && substr((string)$item->title, 0, 6) == "Beboer" ? "Reservert3" : (string)$xml->title)
 				);
 			}
 		}
