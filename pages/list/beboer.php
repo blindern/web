@@ -47,6 +47,7 @@ echo '
 	<li><a href="/velkommen.pdf">Velkomsthefte for Blindern Studenterhjem</a> (PDF, revidert høst 2012)</li>
 	<li><a href="/dokumenter/statutter/">Statutter for Blinderen Studenterhjem</a> (egen nettside med katalog)</li>
 	<li><a href="/foreninger/arrangementsplan">Arrangementsplan</a> (oppdateres fortløpende)</li>
+	<li>Facebook-gruppen <a href="/fb">&laquo;Oppslagstavle Blindern Studenterhjem&raquo;</a></li>
 </ul>
 
 <h2 id="dugnaden">Dugnaden</h2>
