@@ -135,7 +135,6 @@ echo '
 		</li>
 		<li>Foreningen: Foreningens semestermøte</li>
 		<li>Pigefaarsamlingen: Juleverksted</li>
-		<li>IFBS: Dansetimer</li>
 		<li>BSG: Alle arrangementer</li>
 	</ul>
 	
