@@ -75,6 +75,9 @@ echo '
 		<dt>5. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
+		<dt>15. oktober</dt>
+		<dd>Åpent kollegiemøte kl 19:30</dd>
+		
 		<dt>20. oktober</dt>
 		<dd>Høstball</dd>
 		
@@ -84,8 +87,17 @@ echo '
 		<dt>27. oktober</li>
 		<dd>Tur med biblioteksutvalget til Det Norske Teateret for å se Himmlers fødselsdag av østerrikeren Thomas Bernhard. Påmelding innen 16. september (Lars Hektoen)</dd>
 		
+		<dt>3. november</dt>
+		<dd>Revysus</dd>
+		
+		<dt>8. november</dt>
+		<dd>Allmannamøte</dd>
+		
 		<dt>10. november</dt>
 		<dd>Togafest</dd>
+		
+		<dt>12.-15. november</dt>
+		<dd>Kollegievalg</dd>
 		
 		<dt>24. november</dt>
 		<dd>Temafest (ubekreftet dato)</dd>
@@ -116,12 +128,8 @@ echo '
 	
 	<p><i>Dato kommer:</i></p>
 	<ul>
-		<li>UKA: Revysus</li>
 		<li>Kollegiet
 			<ul>
-				<li>Allmannamøte</li>
-				<li>Kollegievalg</li>
-				<li>Åpent kollegiemøte</li>
 				<li>Kollegiekonstituering</li>
 			</ul>
 		</li>
@@ -144,6 +152,7 @@ echo '
 		<li>4. september 2012: La inn info om løpetreninger, styrkesirkler, ballspill, sprint-treninger samt Billa kino.</li>
 		<li>4. september 2012: Tur med biblioteksutvalget 27. oktober.</li>
 		<li>4. september 2012: La inn info om hiphop på tirsdager.</li>
+		<li>10. september 2012: La inn dato for revysus, åpent kollegiemøte, allmannamøte og kollegievalg.</li>
 	</ul>
 </div>
 
