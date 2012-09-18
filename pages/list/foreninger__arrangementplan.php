@@ -66,6 +66,9 @@ echo '
 		<dt>8. september</dt>
 		<dd>Sølecup</dd>
 		
+		<dt>18. september</dt>
+		<dd>Båltur (IFBS) - avreise BS kl 19</dd>
+		
 		<dt>22. september</dt>
 		<dd>Temafest<dd>
 		
@@ -152,6 +155,7 @@ echo '
 		<li>4. september 2012: Tur med biblioteksutvalget 27. oktober.</li>
 		<li>4. september 2012: La inn info om hiphop på tirsdager.</li>
 		<li>10. september 2012: La inn dato for revysus, åpent kollegiemøte, allmannamøte og kollegievalg.</li>
+		<li>18. september 2012: La inn dato for båltur 18. september.</li>
 	</ul>
 </div>
 
