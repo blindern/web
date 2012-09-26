@@ -201,7 +201,7 @@ echo '
 							<ul>
 								<li><b>Reservert:</b> Vi har ikke mottatt depositum fra leietaker.</li>
 								<li><b>Reservert av hyttestyret:</b> Hyttestyret holder av flere helger før fastsettelse av dato for egne arrangementer. Sannsynligvis blir kun ett alternativ beholdt.</li>
-								<li><b>Reservert for beboere:</b> Datoene holdes av for beboere ved Blindern Studenterhjem. Beboere tar kontakt med hyttestyret for å reservere utleie. Datoene blir frigjort kun kort tid før dersom ingen beboere drar opp.</li>
+								<li><b>Reservert for beboere:</b> Datoene holdes av for beboere ved Blindern Studenterhjem. Beboere tar kontakt med hyttestyret for å reservere utleie. Datoene blir <i>ikke</i> frigjort for andre interessenter.</li>
 								<li><b>Opptatt:</b> Depositum er mottatt. Leien <i>kan</i> fremdeles bli avlyst.</li>
 							</ul>';
 
