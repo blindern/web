@@ -91,16 +91,16 @@ echo '
 		<dd>Tur med biblioteksutvalget til Det Norske Teateret for å se Himmlers fødselsdag av østerrikeren Thomas Bernhard. Påmelding innen 16. september (Lars Hektoen)</dd>
 		
 		<dt>3. november</dt>
-		<dd>Revysus</dd>
+		<dd>Togafest</dd>
 		
 		<dt>8. november</dt>
 		<dd>Allmannamøte</dd>
 		
-		<dt>10. november</dt>
-		<dd>Togafest</dd>
-		
 		<dt>12.-15. november</dt>
 		<dd>Kollegievalg</dd>
+		
+		<dt>17. november</dt>
+		<dd>Revysus</dd>
 		
 		<dt>24. november</dt>
 		<dd>Temafest (ubekreftet dato)</dd>
@@ -156,6 +156,8 @@ echo '
 		<li>4. september 2012: La inn info om hiphop på tirsdager.</li>
 		<li>10. september 2012: La inn dato for revysus, åpent kollegiemøte, allmannamøte og kollegievalg.</li>
 		<li>18. september 2012: La inn dato for båltur 18. september.</li>
+		<li>27. september 2012: Flyttet revysus fra 3. november til 17. november.</li>
+		<li>27. september 2012: Flyttet togafest fra 10. november til 3. november.</li>
 	</ul>
 </div>
 
