@@ -91,11 +91,11 @@
 							<h2>Dugnad</h2>
 							<p>
 								I tillegg til dette plikter man &aring; delta p&aring;
-								to dugnader i semesteret. Det er disse dugnadene som gj&oslash;r at
+								to dugnader i semesteret. Det er disse dugnadene som bidrar til at
 								leieprisene kan holdes s&aring; lave. Mange ser dugnaden
 								som b&aring;de et godt sosialt tiltak, og en god m&aring;te
 								&aring; redusere husleia p&aring; fremfor &aring; kanskje
-								&aring; m&aring;tte ta deltidsjobb vedsiden av studiene.
+								&aring; m&aring;tte ta deltidsjobb ved siden av studiene.
 							</p>
 							<h2>Hvem fastsetter prisen</h2>
 							<p>
