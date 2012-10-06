@@ -21,61 +21,54 @@
 							<table class="leiepriser">
 								<tr>
 									<th>Postens navn:</th>
-									<th>Vår 2012</th>
 									<th>Høst 2012/Vår 2013</th>
 								</tr>
 								<tr>
 									<td><u>Kost og Losji:</u></td>
-									<td colspan="2" style="text-align: right"><i style="color: #888">En av f&oslash;lgende</i></td>
+									<td style="text-align: right"><i style="color: #888">En av f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Enkeltrom:</td>
-									<td style="text-align: right">6 000,-</td>
 									<td style="text-align: right">6 180,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dobbeltrom:</td>
-									<td style="text-align: right">5 650,-</td>
 									<td style="text-align: right">5 820,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Kombinasjonsrom:</td>
-									<td style="text-align: right">5 875,-</td>
 									<td style="text-align: right">6 050,-</td>
 								</tr>
 								<tr>
 									<td><u>Andre utgifter:</u></td>
-									<td colspan="2" style="text-align: right"><i style="color: #888">Alle de f&oslash;lgende</i></td>
+									<td style="text-align: right"><i style="color: #888">Alle de f&oslash;lgende</i></td>
 								</tr>
 								<tr>
 									<td class="td_indent">Vaskeriavgift:</td>
-									<td colspan="2" style="text-align: right">20,-</td>
+									<td style="text-align: right">20,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Telefonavgift:</td>
-									<td colspan="2" style="text-align: right"><span style="font-size: 10px">Fra 1. jan 2012:</span> 15,-</td>
+									<td style="text-align: right">15,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Foreningsavgift:</td>
-									<td colspan="2" style="text-align: right">25,-</td>
+									<td style="text-align: right">25,-</td>
 								</tr>
 								<tr>
 									<td class="td_indent">Dataavgift:</td>
-									<td colspan="2" style="text-align: right"><span style="font-size: 10px">Fra 1. jan 2012:</span> 75,-</td>
+									<td style="text-align: right">75,-</td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. enkeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>6 135,-</strong></td>
 									<td style="text-align: right"><strong>6 315,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. dobbeltrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>5 785,-</strong></td>
 									<td style="text-align: right"><strong>5 955,-</strong></td>
 								</tr>
 								<tr>
 									<td><strong>Totalt pr.pers. kombinasjonsrom i mnd.</strong></td>
-									<td style="text-align: right"><strong>6 010,-</strong></td>
 									<td style="text-align: right"><strong>6 185,-</strong></td>
 								</tr>
 							</table>
@@ -115,4 +108,4 @@
 								er fastsatt utifra hva driftskostnadene til disse
 								velferdsgodene koster &aring; vedlikeholde.
 							</p>
-							<p>Leieøkningen for høsten 2011 fra høsten 2010 var på 3,5 %. For høsten 2012 blir det en økning på 3,0 %.</p>
+							<p>Leieøkningen for høsten 2012 fra høsten 2011 var på 3,0 % mot 3,5 % fra 2010 til 2011.</p>
