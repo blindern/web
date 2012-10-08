@@ -78,6 +78,9 @@ echo '
 		<dt>5. oktober</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 		
+		<dt>11.-14. oktober</dt>
+		<dd><a href="http://bc2012.no/">Bergen Challenge</a> med IFBS</dd>
+		
 		<dt>15. oktober</dt>
 		<dd>Åpent kollegiemøte kl 19:30</dd>
 		
@@ -96,7 +99,7 @@ echo '
 		<dt>8. november</dt>
 		<dd>Allmannamøte</dd>
 		
-		<dt>12.-15. november</dt>
+		<dt>12.-14. november</dt>
 		<dd>Kollegievalg</dd>
 		
 		<dt>17. november</dt>
@@ -158,6 +161,8 @@ echo '
 		<li>18. september 2012: La inn dato for båltur 18. september.</li>
 		<li>27. september 2012: Flyttet revysus fra 3. november til 17. november.</li>
 		<li>27. september 2012: Flyttet togafest fra 10. november til 3. november.</li>
+		<li>9. oktober 2012: Korrigert dato for kollegievalg fra 12.-15. nov til 12.-14. nov.</li>
+		<li>9. oktober 2012: La inn Bergen Challenge med IFBS fra 11. til 14. oktober.</li>
 	</ul>
 </div>
 
