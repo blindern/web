@@ -92,4 +92,18 @@
 								</dl>
 							</div>
 						</div>
+
+						<h2>Husøkonom</h2>
+						<div class="ansatteFrame2">
+							<div class="ansatte_info">
+								<dl>
+									<dt>Husøkonom</dt>
+									<dd>Dagfrid Birketveit</dd>
+									<dt>E-post</dt>
+									<dd><a href="mailto:dagfrid.birketveit@blindern-studenterhjem.no">dagfrid.birketveit@blindern-studenterhjem.no</a></dd>
+									<dt>Telefon</dt>
+									<dd>23 33 15 56</dd>
+								</dl>
+							</div>
+						</div>
 					</div>
