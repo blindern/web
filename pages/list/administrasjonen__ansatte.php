@@ -95,6 +95,7 @@
 
 						<h2>Husøkonom</h2>
 						<div class="ansatteFrame2">
+							<img src="<?php echo bs_side::$pagedata->doc_path; ?>/graphics/images/ansatte_dagfrid.jpg" alt="Dagfrid" />
 							<div class="ansatte_info">
 								<dl>
 									<dt>Husøkonom</dt>
@@ -102,7 +103,7 @@
 									<dt>E-post</dt>
 									<dd><a href="mailto:dagfrid.birketveit@blindern-studenterhjem.no">dagfrid.birketveit@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 56</dd>
+									<dd>23 33 15 52</dd>
 								</dl>
 							</div>
 						</div>
