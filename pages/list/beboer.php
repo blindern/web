@@ -57,8 +57,81 @@ echo '
 </ul>
 
 <h2 id="matmeny">Matmeny</h2>
-<p>Senvåren 2012 ble matmenyen til BS lagt ut på denne nettsiden da det var mange som bodde på SiO ifm. rehabiliteringen av vestfløy.</p>
-<p>Fra høsten 2012 vil ikke menyen være tilgjengelig. Dersom det er interesse for at den legges ut er det allikevel ingenting i veien for at vi kan gjøre det. Ta i så fall kontakt med <a href="/administrasjonen/om_nettsidene">hjemmesideoppmann</a>.</p>
+<p>Matmenyen er tilbake! Matmenyen ble lagt ut våren 2012 ifm. rehabiliteringen av vestfløy og folk som bodde midlertidig på SiO-hyblene. På grunn av stor interesse kommer denne fra nå (midten av november 2012) til å legges ut hver uke.</p>
+
+<table class="table matmeny">
+	<thead>
+		<tr>
+			<th>&nbsp;</th>
+			<th>Forrige uke</th>
+			<th>Denne uke</th>
+			<th>Neste uke</th>
+		</tr>
+	</thead>
+	<tbody>';
+
+// les inn matmenyen
+class matmeny {
+	public $data = array();
+	public $uke;
+	public $dag;
+
+	public function load_data() {
+		$c = file_get_contents(dirname(__FILE__)."/../matmeny.csv");
+		$c = explode("\n", str_replace("\r", "", $c));
+
+		foreach ($c as $r) {
+			$row = str_getcsv($r);
+			if (count($row) != 3) continue; // three cols in each entry
+
+			$this->data[$row[0]][$row[1]] = $row[2];
+		}
+
+		$this->uke = date("W");
+	}
+
+	public function get_meny($uke_rel, $dag) {
+		$uke = $this->uke + $uke_rel;
+		if (!isset($this->data[$uke][$dag])) {
+			return '<i style="color: #CCC">Ingen data</i>';
+		}
+
+		return $this->data[$uke][$dag];
+	}
+
+	public function print_rows() {
+		$ignores = array();
+		$days = array(1 => "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag");
+
+		$y = date("N");
+		$this_day = date("z");
+		for ($i = 1; $i <= 7; $i++) {
+			echo '
+		<tr>
+			<th>'.$days[$i].'</th>';
+
+			for ($x = -1; $x <= 1; $x++) {
+				$d = date("z", time()+$x*7*86400+($i-$y)*86400);
+				echo '
+			<td'.($d == $this_day ? ' style="background-color: #00FF00"' : '').'>'.$this->get_meny($x, $i).'</td>';
+			}
+
+			echo '
+		</tr>';
+		}
+	}
+}
+
+$mat = new matmeny();
+$mat->load_data();
+$mat->print_rows();
+
+echo '
+	</tbody>
+</table>
+<p><i>Genereres automatisk. Oppsettet for tabellen skal forbedres. Dette er bare et kjapt og enkelt oppsett.</i> <span style="background-color: #00FF00">Grønt</span> er dagens.</p>
+<p>Det blir til og med kanskje mulig å hente historikk og statistikk over matmenyen etter hvert! Gøy med data!</p>
+
 
 <h2 id="internmail">E-postliste (internmail)</h2>
 <p>På internmailen kommer beskjeder fra andre beboere og vedlikehold/administrasjonen. Det kan være veldig praktisk å få med seg beskjedene gitt på denne listen.</p>
