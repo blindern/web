@@ -101,18 +101,24 @@ echo '
 		
 		<dt>12.-14. november</dt>
 		<dd>Kollegievalg</dd>
+
+		<dt>27. januar</dt>
+		<dd>RISK-turnering (BSG)</dd>
 		
 		<dt>17. november</dt>
 		<dd>Revysus</dd>
 		
-		<dt>24. november</dt>
-		<dd>Temafest (ubekreftet dato)</dd>
+		<dt>22. november</dt>
+		<dd>Foreningens semestermøte</dd>
+
+		<dt>23. november</dt>
+		<dd>Kollegiekonstituering</dd>
+
+		<dt>2. desember</dt>
+		<dd>Pigefaarsamlingens juleverksted</dd>
 		
 		<dt>7. desember</dt>
 		<dd>Julemøte</dd>
-		
-		<dt>14. desember</dt>
-		<dd>Julemiddag</dd>
 	</dl>
 	
 	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
@@ -132,21 +138,13 @@ echo '
 	
 	<p>Festforeningen arrangerer &quot;Billa kino&quot; med visning av to filmer på søndager.</p>
 	
-	<p><i>Dato kommer:</i></p>
-	<ul>
-		<li>Kollegiet
-			<ul>
-				<li>Kollegiekonstituering</li>
-			</ul>
-		</li>
-		<li>Foreningen: Foreningens semestermøte</li>
-		<li>Pigefaarsamlingen: Juleverksted</li>
-		<li>BSG: Alle arrangementer</li>
-	</ul>
-	
-	<!--<p><i>Utgått/ukjent:</i></p>
-	<ul>
-	</ul>-->
+	<p><i>Utgått/ukjent:</i></p>
+	<dl class="arrangementer">
+		<dt>24. november</dt>
+		<dd><strike>Temafest (ubekreftet dato)</strike> (ikke avholdt)</dd>
+		<dt>14. desember</dt>
+		<dd><strike>Julemiddag</strike> (feil i tilsendt plan)</dd>
+	</dl>
 	
 	<p><i>Historikk:</i></p>
 	<ul>
@@ -163,6 +161,7 @@ echo '
 		<li>27. september 2012: Flyttet togafest fra 10. november til 3. november.</li>
 		<li>9. oktober 2012: Korrigert dato for kollegievalg fra 12.-15. nov til 12.-14. nov.</li>
 		<li>9. oktober 2012: La inn Bergen Challenge med IFBS fra 11. til 14. oktober.</li>
+		<li>29. november 2012: Fjernet julemiddag 14. desember (feil i tilsendt plan). Fjernet ubekreftet temafest 24. november. La in juleverksted 2. desember. La inn allerede avholdte arrangementer: Foreningens semestermøte (22. nov), BSG sin RISK-turnering (15. nov) og kollegiekonstituering (23. nov).</li>
 	</ul>
 </div>
 
