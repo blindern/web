@@ -6,7 +6,7 @@ bs_side::set_title("Location");
 
 echo '
 	'.get_right_img("kart_stort.jpg").'
-	'.get_right_img("kart_bs.jpg").'
+	<!-- gale linjenummer på T-bane: '.get_right_img("kart_bs.jpg").'-->
 	<h1>Location</h1>
 	
 	<h2>In central Oslo</h2>
@@ -20,7 +20,7 @@ echo '
 	<p>It is very close to recreation areas at Sognsvann and further to Bærumsmarka.</p>
 	
 	<h2>Metro</h2>
-	<p>From Railway Square, Parliament, the National Theatre. The following lines stop at Blindern: Line 3 Sognsvann, Storo Line 5 and Line 4 Ring. Metro stop at Blindern is close to the dorms so just follow the map above to find out. With metro it is easy to get to the Faculty of Law in the city center.</p>
+	<p>From Railway Square, Parliament, the National Theatre. The following lines stop at Blindern: Line 3 Storo, line 4 Ringen and line 6 Sognsvann. Metro stop at Blindern is close to the dorms so just follow the map above to find out. With metro it is easy to get to the Faculty of Law in the city center.</p>
 	
 	<h2>Tram</h2>
 	<p>Tram line to the hospital passes Blindern. It is easy to get to Bislett and Oslo University College. For those who attend medical or dental faculty there is only two tram stops away.</p>

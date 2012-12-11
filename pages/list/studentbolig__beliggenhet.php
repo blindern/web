@@ -5,7 +5,7 @@ bs_side::$lang_crosslink['en'] = 'en/housing/location';
 
 ?>
 							<?php echo get_right_img("kart_stort.jpg"); ?>
-							<?php echo get_right_img("kart_bs.jpg"); ?>
+							<!-- gale linjenummer på T-bane: <?php echo get_right_img("kart_bs.jpg"); ?>-->
 							<h1>Beliggenhet</h1>
 							<h2>Sentralt i Oslo</h2>
 							<p>
@@ -32,8 +32,8 @@ bs_side::$lang_crosslink['en'] = 'en/housing/location';
 							<h2>T-bane</h2>
 							<p>
 								Fra Jernbanetorget, Stortinget, Nationaltheateret.
-								F&oslash;lgende linjer stopper ved Blindern. Linje
-								3 Sognsvann, Linje 5 Storo og Linje 4 Ringen. T-banestoppet
+								F&oslash;lgende linjer stopper ved Blindern: Linje 3 Storo, linje
+								6 Sognsvann og linje 4 Ringen. T-banestoppet
 								p&aring; Blindern er like ved studenthjemmet s&aring;
 								det er bare &aring; f&oslash;lge kartet over for &aring;
 								finne frem. Med t-banen er det enkelt &aring; komme
