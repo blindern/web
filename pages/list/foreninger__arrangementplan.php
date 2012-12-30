@@ -32,12 +32,112 @@ echo '
 <h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
 
 <ul id="arrangementer_head" style="display: none">
+	<li><a href="#" id="arr_v13_group">Vår 2013</a></li>
 	<li><a href="#" id="arr_h12_group">Høst 2012</a></li>
 	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
 	<li><a href="#" id="arr_h11_group">Høst 2011</a></li>
 	<li><a href="#" id="arr_v11_group">Vår 2011</a></li>
 	<li><a href="#" id="arr_h10_group">Høst 2010</a></li>
 </ul>
+
+<div class="arrangementer_group" id="arr_v13">
+	<h2>Arrangementplan for våren 2013</h2>
+	<p>Merk endringer i måltider for hverdager fra nyttår:<br />
+		Frokost: 07.15 – 09.00<br />
+		Middag: kl. 14.30 – 17.30<br />
+		Kveldsmat: kl. 19.30 – 20.30</p>
+	<dl class="arrangementer">
+		<dt>5. januar</dt>
+		<dd>Uoffisiell velkommen hjem-fest</dd>
+		
+		<dt>10. januar</dt>
+		<dd>Pygmémøte</dd>
+
+		<dt>11. januar</dt>
+		<dd>Velkommen hjem-fest</dd>
+		
+		<dt>13. januar</dt>
+		<dd>Pygmémiddag</dd>
+
+		<dt>19. januar</dt>
+		<dd>UKEvors</dd>
+		
+		<dt>23. jan - 3. feb</dt>
+		<dd>UKA på Blindern 2013</b> - se <a href="http://blindernuka.no/">blindernuka.no</a></dd>
+
+		<dt>15.-16. februar</dt>
+		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta) - være over til søndag de som ønsker</dd>
+
+		<dt>16. februar</dt>
+		<dd>Temafest</dd>
+
+		<dt>20.-24. februar</dt>
+		<dd><a href="http://sl2013.no/">Studentlekene i Trondheim</a> (IFBS)</dd>
+		
+		<dt>2. mars</dt>
+		<dd>UKEball</dd>
+
+		<dt>3. mars</dt>
+		<dd>Café Avec</dd>
+
+		<dt>15. mars</dt>
+		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
+
+		<dt>6. april</dt>
+		<dd>Schussrenn</dd>
+		
+		<dt>30. april</dt>
+		<dd>Russefest</dd>
+		
+		<dt>3.-5. mai</dt>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
+
+		<dt>6. mai</dt>
+		<dd>Åpent kollegiemøte kl 20</dd>
+
+		<dt>11. mai</dt>
+		<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
+
+		<dt>15. mai</dt>
+		<dd>Allmannamøte (obs: onsdag)</dd>
+
+		<dt>17. mai</dt>
+		<dd>Café Avec</dd>
+
+		<dt>18. mai</dt>
+		<dd>Frist for meldelse av valgkandiatur for kollegievalget til Vice-Præces.</dd>
+
+		<dt>21.-23. mai</dt>
+		<dd>Kollegievalg</dd>
+
+		<dt>31. mai</dt>
+		<dd>Kollegiekonstituering</dd>
+
+		<dt>1. juni</dt>
+		<dd>Bukkehaugsfestivalen</dd>
+	</dl>
+	<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
+	<ul>
+		<li>Sommerleker (IFBS)</li>
+		<li>Hemsedaltur</li>
+		<li>Foreningens semestermøte</li>
+		<li>Faste IFBS-arrangementer</li>
+		<li>Øvrige IFBS-arrangementer</li>
+		<li>BSG-arrangementer</li>
+		<li>FFC-kino</li>
+		<li>UKAs funksjonærfest</li>
+		<li>Sikkert mange andre ting...</li>
+	</ul>
+	
+	<!--<p><i>Utgått/ukjent:</i></p>
+	<dl class="arrangementer">
+	</dl>-->
+	
+	<p><i>Historikk:</i></p>
+	<ul>
+		<li>30. desember 2012: Foreløpig arrangementplan lagt inn.</li>
+	</ul>
+</div>
 
 <div class="arrangementer_group" id="arr_h12">
 	<h2>Arrangementplan for høsten 2012</h2>
