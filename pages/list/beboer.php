@@ -91,7 +91,9 @@ class matmeny {
 	}
 
 	public function get_meny($uke_rel, $dag) {
-		$uke = $this->uke + $uke_rel;
+		$uke = date("W", time()+$uke_rel*86400*7);
+		var_dump($uke);
+
 		if (!isset($this->data[$uke][$dag])) {
 			return '<i style="color: #CCC">Ingen data</i>';
 		}
