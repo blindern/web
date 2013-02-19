@@ -98,16 +98,16 @@ echo '
 		<dt>11. mai</dt>
 		<dd><a href="http://www.holmenkollstafetten.no/">Holmenkollstafetten (IFBS)</a></dd>
 
-		<dt>15. mai</dt>
-		<dd>Allmannamøte (obs: onsdag)</dd>
+		<dt>7. mai</dt>
+		<dd>Allmannamøte (obs: tirsdag)</dd>
 
 		<dt>17. mai</dt>
 		<dd>Café Avec</dd>
 
-		<dt>18. mai</dt>
+		<dt>10. mai</dt>
 		<dd>Frist for meldelse av valgkandiatur for kollegievalget til Vice-Præces.</dd>
 
-		<dt>21.-23. mai</dt>
+		<dt>13.-15. mai</dt>
 		<dd>Kollegievalg</dd>
 
 		<dt>31. mai</dt>
@@ -119,7 +119,6 @@ echo '
 	<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
 	<ul>
 		<li>Sommerleker (IFBS)</li>
-		<li>Hemsedaltur</li>
 		<li>Foreningens semestermøte</li>
 		<li>Faste IFBS-arrangementer</li>
 		<li>Øvrige IFBS-arrangementer</li>
@@ -127,6 +126,10 @@ echo '
 		<li>FFC-kino</li>
 		<li>UKAs funksjonærfest</li>
 		<li>Sikkert mange andre ting...</li>
+	</ul>
+	<p><i>Annen informasjon:</i></p>
+	<ul>
+		<li>Hemsedaltur utgår grunnet Studentlekene i Trondheim.</li>
 	</ul>
 	
 	<!--<p><i>Utgått/ukjent:</i></p>
@@ -136,6 +139,11 @@ echo '
 	<p><i>Historikk:</i></p>
 	<ul>
 		<li>30. desember 2012: Foreløpig arrangementplan lagt inn.</li>
+		<li>19. februar 2013: Oppdatert:<ul>
+			<li>Allmannamøte fra 15. mai til 7. mai.</li>
+			<li>Frist for å melde valgkandidatur for kollegievalg fra 18. mai til 10. mai.</li>
+			<li>Kollegievalget fra perioden 21.-23. mai til perioden 13.-15. mai.</li>
+		</ul></li>
 	</ul>
 </div>
 
