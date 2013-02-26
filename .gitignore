@@ -4,3 +4,4 @@ graphics/omvisning/thumbs/*
 .project
 .settings/
 base/inc.innstillinger_local.php
+.tags*
