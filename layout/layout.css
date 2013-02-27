@@ -692,7 +692,7 @@ input.soknad_felt_stor {
 
 /** Bildegalleri */
 #omvisning_bilde_w {
-	min-height: 900px;
+	min-height: 1200px;
 }
 
 #omvisning_nav {
@@ -893,4 +893,104 @@ ul.jubbooks span.filesize {
 /* matmeny */
 .matmeny {
 	width: 600px;
+}
+
+
+
+/* foreninger */
+.foreninger_liste #content_clear { display: none; }
+.foreninger_liste ul#menu_sub {
+	margin-left: 150px;
+}
+.foreninger_wrap {
+	margin: -10px;
+	position: relative;
+}
+.foreninger_wrap:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 150px;
+	height: 100%;
+	content: "";
+	background-color: #DDD;
+	z-index: 0;
+}
+.foreninger_left {
+	display: inline-block;
+	width: 150px;
+	padding: 0;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 12px;
+	position: relative;
+	z-index: 1;
+	vertical-align: top;
+}
+.foreninger_content {
+	display: inline-block;
+	vertical-align: top;
+	width: 680px;
+	padding: 25px;
+}
+
+.foreninger_left ul, .foreninger_left li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.foreninger_left p {
+	margin: 3px 0 0 2px;
+	font-style: italic;
+	color: #888;
+}
+.foreninger_left ul {
+	margin: 3px 0 15px 0;
+}
+.foreninger_left li {
+	padding: 4px 2px;
+}
+.foreninger_left li a {
+	padding: 4px 2px;
+	margin: -4px -2px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	text-decoration: none;
+}
+.foreninger_left li a:hover {
+	background-color: #EEE;
+}
+.foreninger_left li.active a {
+	background-color: #FFF;
+}
+
+.foreninger_content p.img_right {
+	margin-left: 15px;
+}
+#content .foreninger_content p {
+	max-width: 450px;
+}
+
+
+
+
+
+.img_line {
+
+}
+.img_line p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 8px 0 8px;
+}
+.img_line p:first-child {
+	margin-left: 0;
+}
+.img_line p:last-child {
+	margin-right: 0;
+}
+.img_line img {
+	margin: 0;
 }

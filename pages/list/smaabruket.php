@@ -1,6 +1,6 @@
 <?php
 
-bs_side::set_title("Småbruket");
+bs_side::set_title("Småbruket studenthytte");
 #bs_side::$lang_crosslink['en'] = "en/smaabruket";
 
 ess::$b->page->add_keyword("Småbruket", "Brunkollen", "studenthytte", "Blindern Studenterhjem", "bærumsmarka", "utleiehytte");
@@ -60,7 +60,7 @@ echo '
 							'.get_right_img("hytta_bordet.jpg", null, "", "Pygmétur høsten 2010. Foto: Henrik Steen").' <!-- Foto: Henrik Steen, H2010 -->*/
 
 echo '
-							<h1>Småbruket</h1>
+							<h1>Småbruket studenthytte</h1>
 							
 						<div class="subsection">
 							<h2>Kort om Sm&aring;bruket</h2>

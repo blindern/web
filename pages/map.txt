@@ -1,6 +1,6 @@
 # Fil for menyen
 
-Om Blindern Studenterhjem
+Om BS
 	index	Kort om BS
 	om/historie	Historie
 	om/digitalt_arkiv	Digitalt arkiv
@@ -8,24 +8,26 @@ Om Blindern Studenterhjem
 	om/stiftelsen	Om stiftelsen
 	om/bruketsvenner	Brukets Venner
 
-Studentbolig
-	studentbolig	Studentbolig
-	studentbolig/velferdstilbud	Felles velferdstilbud
-	studentbolig/omvisning	Digital omvisning
-	studentbolig/leiepriser	Leiepriser
+Studentbolig i Oslo
+	studentbolig	Studentbolig i Oslo
 	studentbolig/beliggenhet	Beliggenhet
+	studentbolig/velferdstilbud	Felles velferdstilbud
+	studentbolig/leiepriser	Leiepriser
 
 Søk deg inn
-	opptak	Opptak
 	opptak/sok_om_plass	Søknad om plass
+	opptak	Informasjon om søknad
 
-Foreninger
-	foreninger	Foreninger
-	smaabruket	Hyttestyret
-	foreninger/tradisjoner	Tradisjoner
-	foreninger/arrangementplan	Arrangementplan
+Omvisning
+	studentbolig/omvisning	Digital omvisning
 
-Administrasjon
-	administrasjonen	Kontakt administrasjonen
+Livet på BS
+	livet	Foreningsliv på BS
+	livet/liste	Foreninger og grupper på BS
+	livet/arrangementplan	Arrangementplan
+
+Kontakt
+	administrasjonen	Administrasjonen
 	administrasjonen/ansatte	Ansatte
+	smaabruket	Småbruket studenthytte
 	administrasjonen/om_nettsidene	Om nettsidene

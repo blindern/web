@@ -29,6 +29,19 @@ foreach (bs_side::$menu_all as $section)
 	foreach ($section[1] as $key => $item)
 	{
 		if ($key == "index") $key = "";
+		if ($key == "livet/liste") {
+			echo '
+			<li><a href="'.bs_side::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a><span style="display: block; margin-left: 20px">';
+
+			require_once ROOT."/base/foreninger.php";
+			$f = new foreninger();
+			echo $f->sitemap();
+
+			echo '</span>
+			</li>';
+
+			continue;
+		}
 		
 		echo '
 			<li><a href="'.bs_side::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';

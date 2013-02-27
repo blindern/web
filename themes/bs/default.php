@@ -31,7 +31,7 @@ class theme_bs_default
 <html lang="no"'.(MAIN_SERVER ? '' : ' class="devserver"').'>
 <head>
 <title>'.ess::$b->page->generate_title().'</title>'.ess::$b->page->generate_head().'</head>
-<body class="lang_'.bs_side::$lang.'" class="'.self::$class_browser.'">'.ess::$b->page->body_start.'
+<body class="lang_'.bs_side::$lang.' '.self::$class_browser.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'">'.ess::$b->page->body_start.'
 <div id="body_wrap">
 	<div id="container"><div id="main">
 		<div id="header">
@@ -79,7 +79,7 @@ class theme_bs_default
 		</div>
 		'.bs_side::$menu_main.'
 		'.bs_side::$menu_sub.'
-		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub'.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'"' : (bs_side::$page_class ? ' class="'.bs_side::$page_class.'"' : '')).'>
+		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub"' : '').'>
 			'.$content.'
 			<div id="content_clear"></div>
 		</div>

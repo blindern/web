@@ -394,10 +394,35 @@ function get_right_img($name, $gallery_id = null, $alt = "", $text = "")
 }
 
 function get_right_img_gal($gallery_id, $alt, $text, $fototext = null) {
+	return get_img_p($gallery_id, $alt, $text, $fototext, "img img_right");
+}
+
+function get_img_p($gallery_id, $alt, $text, $fototext = null, $class = null, $type = "pageright") {
 	if ($alt === null && $text) $alt = strip_tags($text);
 	
 	if ($fototext) $text .= ($text ? " " : "").$fototext;
 	if ($text) $text = '<span>'.$text.'</span>';
+
+	if ($class) $class = ' class="'.htmlspecialchars($class).'"';
 	
-	return '<p class="img img_right"><a href="/studentbolig/omvisning/'.$gallery_id.'"><img src="/o.php?a=gi&amp;gi_id='.$gallery_id.'&amp;gi_size=pageright" alt="'.htmlspecialchars($alt).'" />'.$text.'</a></p>';
+	return '<p'.$class.'><a href="/studentbolig/omvisning/'.$gallery_id.'"><img src="/o.php?a=gi&amp;gi_id='.$gallery_id.'&amp;gi_size='.$type.'" alt="'.htmlspecialchars($alt).'" />'.$text.'</a></p>';
+}
+
+function get_img_line(array $img_list) {
+	$ret = '
+<div class="img_line">';
+
+	foreach ($img_list as $img) {
+		for ($i = 1; $i <= 3; $i++) {
+			if (!isset($img[$i])) $img[$i] = null;
+		}
+
+		// 0 => gallery_id, alt, text, fototext
+		$ret .= get_img_p($img[0], $img[1], $img[2], $img[3], null, "pageline");
+	}
+
+	$ret .= '
+</div>';
+
+	return $ret;
 }
