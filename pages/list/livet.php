@@ -8,6 +8,8 @@ require ROOT."/base/foreninger.php";
 $foreninger = new foreninger();
 
 // echo get_right_img("IFBS1.jpg");
+echo get_right_img_gal(188, null, "Blindern Studenterhjem er et unikt, godt og trygt sted å bo.", "Foto: Anders Fagereng");
+echo get_right_img_gal(163, null, "Et godt samhold betyr mye felles aktiviteter. Tradisjonene på BS strekker seg langt tilbake i tid.", "Foto: Henrik Steen");
 
 echo '
 <h1>Livet på BS</h1>

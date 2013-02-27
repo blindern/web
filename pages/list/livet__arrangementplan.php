@@ -26,7 +26,9 @@ window.addEvent("domready", function()
 </script>';
 
 
-echo get_right_img("schussrenn_2010v.jpg", null, "Schussrennet våren 2010", "Schussrennet våren 2010. Foto: Anders Fagereng").' <!-- Foto: Anders Fagereng -->';
+echo get_right_img_gal(192, "Schussrennet våren 2010", "Schussrennet våren 2010.", "Foto: Anders Fagereng");
+echo get_right_img_gal(172, null, "Beboerne er her samlet under julemøtet. Da er det god julemiddag, en rekke kåringer for semesteret som gis ut og hyggelig underholdning.", "Foto: Henrik Steen");
+echo get_right_img_gal(162, null, "IFBS-sommerleker fra 2012.", "Foto: Henrik Steen");
 
 echo '
 <h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
