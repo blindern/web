@@ -21,14 +21,14 @@ echo '
 	omfattende sosialt program ved siden av selve forestillingen.
 	Siden den gang har Blindernrevyen blitt arrangert
 	med jevne mellomrom, og siden 1961 annenhvert &aring;r.</p>
-<p>I 2003 skiftet arrangementet navn til Uka p&aring;
+<p>I 2003 skiftet arrangementet navn til UKA p&aring;
 	Blindern, en tittel som bedre dekker alle de opplevelser
 	og inntrykk UKA formidler.
 </p>
 
 <p>
 	N&aring; som da er det frivillig arbeid fra de aller
-	fleste av BS sine 220 beboere som skaper Uka p&aring;
+	fleste av BS sine 220 beboere som skaper UKA p&aring;
 	Blindern. Hver tekst som synges, hver drink som blandes
 	og hver plakat som henges opp er et resultat av et
 	enest&aring;ende kollektivt l&oslash;ft.</p>
@@ -38,6 +38,15 @@ echo '
 	varer er det de f&aelig;rreste som tilbringer timer
 	p&aring; lesesal.
 </p>
+
+<p>Annenhvert &aring;r arrangeres UKA p&aring; Blindern
+	p&aring; Blindern Studenterhjem. Da snus hele Studenterhjemmet
+	p&aring; hodet, og alle beboerne er aktive i gjennomf&oslash;ringen
+	av en halvannen ukes festival. Det spilles revy og
+	arrangeres konserter, og fem-seks forskjellige barer &aring;pnes
+	for beboere og eksterne bes&oslash;kende.
+</p>
+
 <p>Se egen hjemmeside på <a href="http://www.blindernuka.no" target="_blank">blindernuka.no</a>!</p>';
 
 $foreninger->gen_page();

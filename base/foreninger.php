@@ -3,29 +3,34 @@
 class foreninger
 {
 	private $active;
+	public $set_active_menu = true;
 
 	public $list = array(
 		"fbs" => array(
 			array(
+				"foreningsstyret",
+				"Foreningsstyret",
+				"Foreningsstyret"),
+			array(
 				"festforeningen",
 				"Festforeningen",
-				"Festforeningen"),
+				"- Festforeningen"),
 			array(
 				"hyttestyret",
 				"Hyttestyret for Småbruket",
-				"Hyttestyret"),
+				"- Hyttestyret"),
 			array(
 				"ifbs",
 				"Idrettsforeningen Blindern Studenterhjem (IFBS)",
-				"IFBS"),
+				"- IFBS"),
 			array(
 				"uka",
 				"UKA på Blindern",
-				"UKA"),
+				"- UKA"),
 			array(
 				"velferden",
 				"Velferden",
-				"Velferden")
+				"- Velferden")
 		),
 		"andref" => array(
 			array(
@@ -105,7 +110,7 @@ class foreninger
 
 	public function gen_page() {
 		bs_side::$page_class = "foreninger foreninger_liste";
-		bs_side::$menu_active = "livet/liste";
+		if ($this->set_active_menu) bs_side::$menu_active = "livet/liste";
 
 		$data = ob_get_contents();
 		ob_clean();
@@ -113,7 +118,7 @@ class foreninger
 		echo '
 <div class="foreninger_wrap">
 	<section class="foreninger_left">
-		'.$this->group("fbs", "Underlagt foreningsstyret").'
+		'.$this->group("fbs", "Underlagt Foreningen").'
 		'.$this->group("andref", "Øvrige foreninger").'
 		'.$this->group("andre", "Annet").'
 	</section><!--
@@ -124,7 +129,7 @@ class foreninger
 	}
 
 	public function sitemap() {
-		return $this->sitemap_group("fbs", "Underlagt foreningsstyret")
+		return $this->sitemap_group("fbs", "Underlagt Foreningen")
 			.$this->sitemap_group("andref", "Øvrige foreninger")
 			.$this->sitemap_group("andre", "Annet");
 	}

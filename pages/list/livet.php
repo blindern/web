@@ -4,6 +4,9 @@ bs_side::set_title("Livet på BS");
 bs_side::$lang_crosslink['en'] = "en/associations";
 bs_side::$page_class = "foreninger";
 
+require ROOT."/base/foreninger.php";
+$foreninger = new foreninger();
+
 // echo get_right_img("IFBS1.jpg");
 
 echo '
@@ -20,13 +23,13 @@ skal ikke mye til før man føler seg inkludert på studenterhjemmet.</p>
 <h2>Nyinnflyttet</h2>
 <p>Som nyinnflyttet (pygmé) er det et par ting man bør få med seg:</p>
 <ol>
-	<li style="max-width: 560px"><b>Pygmémøte</b> - her gis det en rekke praktiske opplysninger om hjemmet, mange av foreningene
+	<li style="max-width: 410px"><b>Pygmémøte</b> - her gis det en rekke praktiske opplysninger om hjemmet, mange av foreningene
 		presenterer seg og det er en god mulighet for å kunne stille evt. spørsmål man måtte ha.</li>
-	<li style="max-width: 560px"><b>Pygmétur</b> - blir du med på pygméturen er du garantert å ha en kompisgjeng på kort tid. På pygméturen
+	<li style="max-width: 410px"><b>Pygmétur</b> - blir du med på pygméturen er du garantert å ha en kompisgjeng på kort tid. På pygméturen
 		blir det rebus opp til studenterhjemmet hytte, middag på hytta og gode opplevelser ut kvelden.</li>
-	<li style="max-width: 560px"><b>Rebusløp</b> - rebusløpet gjør deg godt kjent med studenterhjemmet og dets foreninger og vil være
+	<li style="max-width: 410px"><b>Rebusløp</b> - rebusløpet gjør deg godt kjent med studenterhjemmet og dets foreninger og vil være
 		noe du sent vil glemme.</li>
-	<li style="max-width: 560px"><b>Pygmémiddag</b> - middag til ære for alle nyinnflyttede. Her vil du sannsynligvis oppleve ditt første midtspiel!</li>
+	<li style="max-width: 410px"><b>Pygmémiddag</b> - middag til ære for alle nyinnflyttede. Her vil du sannsynligvis oppleve ditt første midtspiel!</li>
 </ol>
 <p>Du kan lese mer om disse arrangementene og de ulike foreningene som arrangerer det under <a href="/livet/liste">foreninger og grupper på BS</a>.</p>';
 
@@ -49,3 +52,6 @@ echo '
 	</video>
 </div>
 <p class="creds">Video: Anders Fagereng</p>';*/
+
+$foreninger->set_active_menu = false;
+$foreninger->gen_page();

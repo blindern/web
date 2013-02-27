@@ -49,6 +49,23 @@ echo '
 	p&aring; dette arrangementet.
 </p>
 
+<h2>Bukkehaugsfestivalen</h2>
+<p>...</p>
+
+<h2>Øvrige arrangementer</h2>
+<p>Festforeningen avholder en rekke arrangementer i løpet av semesteret. Som regel er det forskjellige
+fester mellom høstsemesteret og vårsemesteret. Som regel vil du oppleve fester som:</p>
+<ul>
+	<li>Temafester hvert semester</li>
+	<li>Togafest</li>
+	<li>Schussrenn</li>
+	<li>Café Avec</li>
+	<li>Russefest</li>
+	<li>Foredrag i regi av festforeningen</li>
+	<li>Billa Kino</li>
+	<li>Julemøte</li>
+</ul>
+
 ';
 
 $foreninger->gen_page();
