@@ -50,9 +50,24 @@ echo '
 	gjerne kontakt med <a href="administrasjonen">adminstrasjonen</a>.
 </p>';
 
-echo get_img_line(array(
-	array(154),
-	array(109),
-	array(150),
-	array(145)
-));
+// hent fire tilfeldige bilder fra galleriet
+// TODO: tar ikke høyde for at parent galleriet evt. er skjult
+// TODO: kanskje litt lite optimalisert?
+$result = ess::$b->db->query("
+	SELECT gi_id, gi_description, gi_shot_person
+	FROM gallery_images JOIN gallery_categories ON gi_gc_id = gc_id
+	WHERE gc_visible != 0 AND gi_visible != 0");
+$data = array();
+$max = 120;
+while ($row = mysql_fetch_assoc($result)) {
+	$d = $row['gi_description'];
+	if (mb_strlen($d) > $max) $d = mb_substr($d, 0, $max-4)."...";
+
+	$data[] = array($row['gi_id'], null, $d, null);
+}
+
+$s = array_rand($data, 4);
+$c = array();
+foreach ($s as $id) $c[] = $data[$id];
+
+echo get_img_line($c);

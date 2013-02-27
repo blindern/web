@@ -828,6 +828,16 @@ input.soknad_felt_stor {
 	height: 100px;
 }
 
+.omvisninga #container, .omvisninga #main {
+	width: 100%;
+}
+.omvisninga #header, .omvisninga #menu_main {
+	width: 900px;
+}
+.omvisninga .omvisning_bilder_cat {
+	width: 90%;
+}
+
 
 /** Sidekart */
 #sitemap { margin: 20px 0 }
@@ -977,13 +987,13 @@ ul.jubbooks span.filesize {
 
 
 
-.img_line {
-
-}
 .img_line p {
 	display: inline-block;
-	vertical-align: middle;
-	margin: 0 8px 0 8px;
+	vertical-align: top;
+	margin: 5px 9px 4px 8px;
+
+	/*max-height: 185px;*/
+	/*overflow: hidden;*/
 }
 .img_line p:first-child {
 	margin-left: 0;
@@ -991,6 +1001,42 @@ ul.jubbooks span.filesize {
 .img_line p:last-child {
 	margin-right: 0;
 }
+.img_line a {
+	text-decoration: none;
+	color: #555;
+}
+.img_line span.imgwrap1 {
+	display: block;
+	border: 1px solid #000;
+	max-height: 130px;
+	overflow: hidden;
+	position: relative;
+	background-color: #000;
+}
+.img_line span.imgwrap2 {
+	display: block;
+	height: 400px;
+	line-height: 400px;
+	position: relative;
+	top: -135px;
+	vertical-align: middle;
+}
 .img_line img {
+	display: inline-block;
+	
 	margin: 0;
+	border: 0;
+	vertical-align: middle;
+}
+.img_line span.imgtext {
+	display: block;
+	font-style: italic;
+	font-size: 11px;
+	
+	max-width: 200px;
+	line-height: 1.1em;
+	margin: 2px 0 3px;
+
+	/*max-height: 30px;*/
+	/*overflow: hidden;*/
 }

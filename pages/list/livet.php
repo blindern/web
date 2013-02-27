@@ -27,7 +27,8 @@ skal ikke mye til før man føler seg inkludert på studenterhjemmet.</p>
 	<li style="max-width: 560px"><b>Rebusløp</b> - rebusløpet gjør deg godt kjent med studenterhjemmet og dets foreninger og vil være
 		noe du sent vil glemme.</li>
 	<li style="max-width: 560px"><b>Pygmémiddag</b> - middag til ære for alle nyinnflyttede. Her vil du sannsynligvis oppleve ditt første midtspiel!</li>
-</ol>';
+</ol>
+<p>Du kan lese mer om disse arrangementene og de ulike foreningene som arrangerer det under <a href="/livet/liste">foreninger og grupper på BS</a>.</p>';
 
 
 /*bs_side::$head .= '

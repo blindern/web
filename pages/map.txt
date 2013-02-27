@@ -19,10 +19,11 @@ Søk deg inn
 	opptak	Informasjon om søknad
 
 Omvisning
-	studentbolig/omvisning	Digital omvisning
+	omvisning	Digital omvisning
+	omvisning/oversikt	Oversikt over alle bilder
 
 Livet på BS
-	livet	Foreningsliv på BS
+	livet	Livet på BS
 	livet/liste	Foreninger og grupper på BS
 	livet/arrangementplan	Arrangementplan
 

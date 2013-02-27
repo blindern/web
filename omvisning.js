@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	if ($("#omvisning_bilde_w").length == 0) return;
 	
-	$("#omvisning_nav").append('<br />(Piltaster kan også benyttes.)</span>');
+	$("#omvisning_nav").append('<br />Piltaster kan også benyttes til å bla mellom bildene.</span>');
 	
 	var back_link = $("#omvisning_back");
 	var prev_link = $("#omvisning_prev");
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		
 		// 27: esc
 		if (e.keyCode == 27) {
-			window.location.href = "/studentbolig/omvisning#c"+omvisning_data[omvisning_i][3];
+			window.location.href = "/omvisning/oversikt#c"+omvisning_data[omvisning_i][3];
 			return false;
 		}
 		
@@ -72,13 +72,13 @@ $(document).ready(function() {
 		text.text(omvisning_data[i][2]);
 		
 		// oppdater adresse
-		back_link.attr("href", "/studentbolig/omvisning#c"+omvisning_data[omvisning_i][3]);
+		back_link.attr("href", "/omvisning/oversikt#c"+omvisning_data[omvisning_i][3]);
 		if (!ignore_history) set_state(i);
 	}
 	
 	function set_state(i) {
 		if (!History.enabled) return;
-		History.pushState({"id": i}, "", "/studentbolig/omvisning/"+omvisning_data[i][1]);
+		History.pushState({"id": i}, "", "/omvisning/"+omvisning_data[i][1]);
 	}
 	
 	function prepare(i) {
@@ -103,6 +103,13 @@ $(document).ready(function() {
 			}
 			
 			var order = $(ui.item[0]).prevAll("p").length + 1;
+			var data = {
+				"id": $(ui.item[0]).attr("id").substring(4),
+				"cat": $(this).parent().find("h2:first").attr("id").substring(1),
+				"order": order
+			};
+
+			console.log(data);
 			
 			$.ajax({
 				beforeSend: function() {
@@ -111,11 +118,7 @@ $(document).ready(function() {
 				complete: function() {
 					console.log("saved");
 				},
-				data: {
-					"id": $(ui.item[0]).attr("id").substring(4),
-					"cat": $(this).parent().find("h2:first").attr("id").substring(1),
-					"order": order
-				},
+				data: data,
 				type: "post",
 				url: "/ajax/omvisning.php?move"
 			});

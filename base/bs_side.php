@@ -127,9 +127,9 @@ class bs_side
 		if ($request === "") $request = "index";
 		
 		// omvisning med underside?
-		if (substr($request, 0, 25) == "studentbolig__omvisning__") {
-			if ($request != "studentbolig__omvisning__admin") $request = "studentbolig__omvisning";
-			self::$menu_active = "studentbolig/omvisning";
+		if (substr($request, 0, 11) == "omvisning__") {
+			if ($request != "omvisning__oversikt") self::$menu_active = "omvisning";
+			if ($request != "omvisning__admin") $request = "omvisning";
 		}
 		
 		// finnes denne filen?
@@ -401,7 +401,7 @@ function get_img_p($gallery_id, $alt, $text, $fototext = null, $class = null, $t
 	if ($alt === null && $text) $alt = strip_tags($text);
 	
 	if ($fototext) $text .= ($text ? " " : "").$fototext;
-	if ($text) $text = '<span>'.$text.'</span>';
+	if ($text) $text = '<span class="imgtext">'.$text.'</span>';
 
 	if ($class) $class = ' class="'.htmlspecialchars($class).'"';
 	
@@ -418,7 +418,7 @@ function get_img_line(array $img_list) {
 		}
 
 		// 0 => gallery_id, alt, text, fototext
-		$ret .= get_img_p($img[0], $img[1], $img[2], $img[3], null, "pageline");
+		$ret .= preg_replace("~(<img.+?/>)~", '<span class="imgwrap1"><span class="imgwrap2">$1</span></span>', get_img_p($img[0], $img[1], $img[2], $img[3], null, "pageline"));
 	}
 
 	$ret .= '

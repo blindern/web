@@ -40,7 +40,7 @@ if (isset($_GET['move']) && isset($_POST['id']) && isset($_POST['cat']) && isset
 		ess::$b->db->query("UPDATE gallery_images SET gi_priority = gi_priority - 1 WHERE gi_gc_id = {$row['gi_gc_id']} AND gi_priority > {$row['gi_priority']}");
 		
 		// korriger order i ny kategori
-		ess::$b->db->query("UPDATE gallery_images SET gi_priority = gi_priority + 1 WHERE gi_gc_id = {$row['gi_gc_id']} AND gi_priority >= {$row['gi_priority']}");
+		ess::$b->db->query("UPDATE gallery_images SET gi_priority = gi_priority + 1 WHERE gi_gc_id = $cat AND gi_priority >= $order");
 		
 		// flytt
 		ess::$b->db->query("UPDATE gallery_images SET gi_priority = $order, gi_gc_id = $cat WHERE gi_id = $id");

@@ -1,8 +1,9 @@
 <?php
 
 require ROOT."/base/omvisning.php";
+bs_side::$page_class = "omvisninga";
 
-class studentbolig__omvisning__admin extends omvisning {
+class omvisning__admin extends omvisning {
 	protected $show_hidden = true;
 	
 	public function __construct() {
@@ -58,4 +59,4 @@ var omvisning_data = '.json_encode($data).';');
 	}
 }
 
-new studentbolig__omvisning__admin();
+new omvisning__admin();

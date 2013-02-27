@@ -23,6 +23,7 @@ echo '
 	<li>Redaktør for Blindernåret</li>
 	<li>Studentkjøkkenoppmann</li>
 	<li>Vaktsjef</li>
-</ul>';
+</ul>
+<p>Kollegiet kan også kontaktes per e-post på <a href="mailto:kollegiet@blindern-studenterhjem.no">kollegiet@blindern-studenterhjem.no</a>.</p>';
 
 $foreninger->gen_page();

@@ -27,9 +27,14 @@ class studentbolig__omvisning extends omvisning {
 	 * Sjekk for korrekt adresse
 	 */
 	private function check_subpage() {
-		$part_base = 2; // 2 = studentbolig/omvisning (2 deler i adressen)
+		$part_base = 1; // 1 = omvisning (1 del i adressen)
 		
 		if (count(bs_side::$pagedata->path_parts) > $part_base) {
+			// liste?
+			if (bs_side::$pagedata->path_parts[$part_base] == "oversikt") {
+				return;
+			}
+
 			if (count(bs_side::$pagedata->path_parts) > $part_base+1 || !is_numeric(bs_side::$pagedata->path_parts[$part_base])) {
 				bs_side::page_not_found();
 			}
@@ -39,6 +44,15 @@ class studentbolig__omvisning extends omvisning {
 			// verifiser at vi har bildet
 			if (!isset($this->images_gallery[$this->image_id])) {
 				bs_side::page_not_found("<pP>Bildet du refererte til ble ikke funnet.</p>");
+			}
+
+			return;
+		}
+
+		// send til første bilde
+		foreach ($this->galleries as $gallery) {
+			foreach ($gallery['images'] as $image) {
+				redirect::handle("/omvisning/{$image['gi_id']}", redirect::ROOT);
 			}
 		}
 	}
@@ -125,7 +139,7 @@ var omvisning_data = '.json_encode($data).';');
 		echo '
 <div id="omvisning_bilde_w">
 	<p id="omvisning_nav">
-		<a href="'.self::PATH.'#c'.$this->images_gallery[$this->image_id].'" id="omvisning_back"><span>Tilbake til oversikt</span></a>
+		<a href="'.self::PATH.'/oversikt#c'.$this->images_gallery[$this->image_id].'" id="omvisning_back"><span>Til oversikt</span></a>
 		<a href="'.self::PATH.'/'.$prev.'" id="omvisning_prev"><span>Forrige bilde</span></a>
 		<a href="'.self::PATH.'/'.$next.'" id="omvisning_next"><span>Neste bilde</span></a>
 	</p>
