@@ -987,6 +987,9 @@ ul.jubbooks span.filesize {
 
 
 
+.img_line {
+	clear: both;
+}
 .img_line p {
 	display: inline-block;
 	vertical-align: top;
@@ -1039,4 +1042,70 @@ ul.jubbooks span.filesize {
 
 	/*max-height: 30px;*/
 	/*overflow: hidden;*/
+}
+
+
+/* dette er bs */
+.dette_er_bs {
+	float: right;
+	width: 160px;
+	background-color: #F0F0F0;
+	padding: 7px;
+	margin: 0 10px 10px 0;
+	border: 1px solid #CCC;
+	font-size: 12px;
+	text-align: center;
+}
+#content .dette_er_bs h2 {
+	margin: 2px 0;
+	font-size: 16px;
+}
+.dette_er_bs p {
+	margin: 5px 0 0;
+}
+.dette_er_bs .soknadsknapp {
+	padding: 10px;
+	font-style: italic;
+}
+.dette_er_bs .soknadsknapp a {
+	font-style: normal;
+	display: inline-block;
+	text-decoration: none;
+	padding: 6px 10px;
+	margin: 1px 0 0;
+	border-radius: 3px;
+	background-color: #009dca;
+	background-color: rgba(0, 157, 202, .8);
+	color: #FFF;
+}
+.dette_er_bs .soknadsknapp a:hover {
+	background-color: rgba(0, 157, 202, 1);
+}
+
+
+/* kart på kontaktside */
+.img_kontakt_kart {
+	float: left;
+	margin: 0 5px 0 0;
+}
+.img_kontakt_kart img {
+	border: 0;
+	margin: 4px 0 0;
+}
+
+
+/* mat-tider */
+.mattider {
+	float: right;
+	background-color: #F0F0F0;
+	width: 150px;
+	padding: 7px;
+	margin: 0 10px 10px 10px;
+	border: 1px solid #CCC;
+}
+#content .mattider h2 {
+	margin: 0;
+}
+.mattider p {
+	margin: 10px 0 0;
 }

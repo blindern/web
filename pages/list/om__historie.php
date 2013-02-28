@@ -46,4 +46,5 @@ echo '
 	stedet kan fortsette &aring; v&aelig;re et attraktivt
 	og godt hjem for kommende generasjoner av studenter.
 </p>
+<p>Det er skrevet fire jubileumsbøker om Blindern Studenterhjem. Alle bøkene er fritt tilgjengelig på disse nettsidene under <a href="digitalt_arkiv">digitalt arkiv</a>.</p>
 <p><img src="/graphics/images/bs_oversikt_gammelt.jpg" alt="Blindern Studenterhjem i sine tidlige år" style="border:0;margin:0" /></p>';

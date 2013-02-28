@@ -94,6 +94,9 @@ Til sammen inneholder de i underkant av 6 400 oppføringer med navn, informasjon
 	</tbody>
 </table>
 <p style="margin-top: 0; font-size: 95%"><i>Utdrag fra matrikkelen 1925-1942. De ti første oppføringene på &laquo;L&raquo;.</i></p>
-<p>For øyeblikket er ikke matrikkelen allmennt tilgjengelig. Det er usikkerhet rundt personvern og hvem som skal gis tilgang på dataene.
-Derfor bes de som ønsker å søke opp personer ta kontakt med <a href="mailto:hagpet@gmail.com">Arkivar Peter Hagen</a>.</p>
+<p>For øyeblikket er ikke matrikkelen allmennt tilgjengelig. Det er usikkerhet rundt
+	personvern og hvem som skal gis tilgang på dataene. Styret har derfor bestemt at matrikkelen
+	ikke skal ligge offentlig tilgjengelig.
+	Derfor bes de som ønsker å søke opp personer ta
+	kontakt med <a href="mailto:ewullum@gmail.com">Arkivar Endre Wullum</a>.</p>
 <p>Matrikkelen er produsert av Peter Hagen og ble ferdigstilt i 2011.</p>';

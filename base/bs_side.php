@@ -238,7 +238,7 @@ class bs_side
 		if (bs_side::$is_beboer)
 		{
 			self::$menu_main .= '
-			<li class="beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a>
+			<li class="'.(self::$menu_active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a>
 				<ul>
 					<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
 					<li><a href="'.self::$pagedata->doc_path.'/foreninger/arrangementplan">Arrangementplan</a></li>

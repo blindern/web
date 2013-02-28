@@ -22,7 +22,7 @@ class foreninger
 			array(
 				"ifbs",
 				"Idrettsforeningen Blindern Studenterhjem (IFBS)",
-				"- IFBS"),
+				"- IFBS (idrettsforeningen)"),
 			array(
 				"uka",
 				"UKA på Blindern",

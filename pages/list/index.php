@@ -1,54 +1,58 @@
 <?php
 
-echo get_right_img_gal(155, null, "Blindern Studenterhjem sett fra Universitet i Oslo.", "Foto: Mats Julius Stensrud");
+echo '
+<p class="img img_right">
+	<a href="studentbolig/beliggenhet#kart"><img src="/graphics/layout/kart.jpg" alt="Kart over området rundt Blindern Studenterhjem" />
+	<span>Blindern Studenterhjem ligger sentralt plassert mellom universitetsbygningene på Blindern. Trykk for stort kart</span></a>
+</p>';
 echo get_right_img_gal(152, null, "", "Foto: Cecilie Sæle Merkesvik");
 
 echo '
 <h1>Velkommen til Blindern Studenterhjem</h1>
-<h2> Like ved UiO</h2>
-<p>
-	I et praktfullt beliggende hageanlegg p&aring; Blindern,
-	like ved Universitetet i Oslo, kan Blindern Studenterhjem
-	tilby et rikt bofelleskap for 220 studenter.
-</p>
-<h2>&Aring;pent for alle studenter</h2>
-<p>
-	Blindern Studenterhjem (BS) er en privat stiftelse
-	som drives uten &oslash;konomisk fortjeneste som m&aring;l.
-	Stedet skal v&aelig;re et godt studenthjem for studenter
-	fra alle kanter av landet, uansett studieretning.
-</p>
+
+<p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig - det er et hjem.
+Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
+
+<div class="dette_er_bs">
+	<h2>Dette er BS</h2>
+	<p>230 studenter</p>
+	<p>Full kost og losji</p>
+	<p>xx parhybler, xx enkeltrom, xx gjennomgangsrom, xx dobbeltrom, xx kott</p>
+	<p>8 timer dugnad i semesteret</p>
+	<p>Blindernånden sentral</p>
+	<p class="soknadsknapp">
+		Klar for å flytte inn?
+		<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
+	</p>
+</div>
+
+<h2>Like ved Universitetet i Oslo</h2>
+<p>I et praktfullt beliggende hageanlegg p&aring; Blindern, vegg-i-vegg med Universitetet i Oslo,
+kan Blindern Studenterhjem tilby et rikt bofelleskap for 220 studenter.</p>
+<p>Studenterhjemmet ligger sentralt i Oslo, og har god kollektivforbindelse med både T-bane og trikk. Det tar
+i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning på juridisk fakultet i sentrum.</p>
+
 <h2>Et unikt sosialt milj&oslash;</h2>
 <p>
-	Blindern Studenterhjem er kjent for sitt sterke sosiale
-	milj&oslash;, og er mer enn bare en studentbolig i Oslo. Hvert &aring;r arrangeres en rekke tradisjonsrike
-	<a href="livet/arrangementsplan">arrangementer og fester</a>, hvorav noen kan spores tilbake
-	til &aring;pningen av Studenthjemmet i 1925. Som beboer
-	har man mulighet til &aring; engasjere seg i flere
-	<a href="foreninger">foreninger</a>, av sosial eller administrativ art. Studenter
-	sitter i organer som tar aktivt del i avgj&oslash;relsene
+	Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
+	arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
+<p>Som beboer har man mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
+	(Les mer om de under <a href="livet">Livet på BS</a>.)
+	Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
 	p&aring; Studenthjemmet og har stor grad av medbestemmelsesrett.
 </p>
-<h2>Tre m&aring;ltider per dag er inkludert i <a href="studentbolig/leiepriser">husleien</a></h2>
+
+<h2>Tre daglige m&aring;ltider inkludert i husleien</h2>
 <p>
-	Som beboer p&aring; Blindern Studenterhjem
-	f&aring;r man servert tre m&aring;ltider hver dag,
-	alle til fleksible tider. De daglige m&aring;ltidene
-	s&oslash;rger for et sunt kosthold samtidig som de
-	er sv&aelig;rt tidsbesparende for beboerne, og er
-	noe av det som gj&oslash;r Blindern Studenterhjem
-	til et godt og unikt sted &aring; bo.
+	Tre m&aring;ltider serveres hver dag. De daglige m&aring;ltidene
+	s&oslash;rger for et sunt kosthold samtidig som de er sv&aelig;rt tidsbesparende for beboerne,
+	og er noe av det som gj&oslash;r Blindern Studenterhjem til et godt og unikt sted &aring; bo.
 </p>
-<h2>Informasjon og sp&oslash;rsm&aring;l</h2>
-<p>P&aring; denne nettsiden finner du informasjon om
-	hva Blindern Studenterhjem er, hva slags boforhold
-	Studenthjemmet tilbyr og hvordan du kan s&oslash;ke
-	om plass. Videre finner du informasjon om Studenthjemmets
-	historie og oppbygning. Du kan ogs&aring; lese om
-	ulike <a href="foreninger">studenterforeninger</a>. Dersom du har sp&oslash;rsm&aring;l
-	som ikke blir besvart p&aring; disse nettsidene, ta
-	gjerne kontakt med <a href="administrasjonen">adminstrasjonen</a>.
-</p>';
+
+<h2>Søk deg inn</h2>
+<p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
+å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
+som kunne tenke seg å bidra til et godt miljø.</p>';
 
 // hent fire tilfeldige bilder fra galleriet
 // TODO: tar ikke høyde for at parent galleriet evt. er skjult

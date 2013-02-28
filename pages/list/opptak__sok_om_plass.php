@@ -574,9 +574,9 @@ switch (bs_side::$lang)
 				eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
 				blir behandlet med lik verdi.
 			</p>
-			<h2>Opptak av beboere for h&oslash;sten 2012</h2>
+			<h2>Opptak av beboere for h&oslash;sten 2013</h2>
 			<p>
-				Opptak av beboere for h&oslash;sten 2012 skjer fortl&oslash;pende.
+				Opptak av beboere for h&oslash;sten 2013 skjer fortl&oslash;pende.
 			</p>';
 }
 

@@ -15,10 +15,12 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 
 <p>Hverdagslig:</p>
 <ul>
+	<li>Dagens aviser til frokost</li>
 	<li><a href="omvisning/114">TV-stue</a></li>
 	<li><a href="omvisning/140">Vaskeri</a></li>
 	<li><a href="omvisning/115">Bibliotek og lesesal</a></li>
-	<li>Kollokvierom</li>
+	<li>Nyoppusset kollokvierom (biblionette)</li>
+	<li>Møterom (&quot;oldfruekontoret&quot;)</li>
 	<li><a href="omvisning/148">Peisestue med trådløst nettverk</a></li>
 	<li><a href="omvisning/110">Studentkjøkken</a> med mulighet for bakst og egne måltider</li>
 	<li><a href="omvisning/127">Badstue</a></li>

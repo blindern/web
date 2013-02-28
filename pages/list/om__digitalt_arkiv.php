@@ -85,8 +85,12 @@ $books1 = array(
 echo '
 <h1>Digitalt arkiv</h1>
 
-<p>I 2010-2011 tok arkivar Peter Hagen på seg oppgaven med å digitalisere alle bøkene som hadde blitt produsert ved Blindern Studenterhjem opp gjennom tidene. Her er disse digitale versjonene lagt ut slik at de er til glede både for gamle og nåværende beboere, samt for personer som ønsker mer innsikt i hverdagen som har vært på Blindern Studenterhjem opp gjennom tidene.</p>
-<p>Alle bøkene er i PDF-format. <span style="color: #FF0000">Merk at noen av filene er ganske store, og at det kan ta noe tid før dokumentet blir lastet inn.</span></p>
+<p>I 2010-2011 tok daværende arkivar Peter Hagen på seg oppgaven med å digitalisere alle bøkene som hadde blitt produsert
+	ved Blindern Studenterhjem opp gjennom tidene. Her er disse digitale versjonene lagt ut slik at de er til glede både
+	for gamle og nåværende beboere, samt for personer som ønsker mer innsikt i hverdagen som har vært på
+	Blindern Studenterhjem opp gjennom tidene.</p>
+<p>Alle bøkene er i PDF-format. <span style="color: #FF0000">Merk at noen av filene er ganske store,
+	og at det kan ta noe tid før dokumentet blir lastet inn.</span></p>
 
 <h2>Jubileumsbøker</h2>
 <p>Det er utgitt fire jubileumsbøker for Blindern Studenterhjem.</p>
@@ -133,5 +137,8 @@ foreach ($books1 as $row)
 
 echo '
 </ul>
-<p>Blindernåret eksisterer ikke for periodene 2005, 2006, 2008 og 2009. 2010 er i produksjon, og Blindernåret 2010 og Blindernåret 2011 forventes å bli publisert.</p>';
+<p>Blindernåret eksisterer ikke for periodene 2005, 2006, 2008 og 2009.
+	Blindernåret fra 2010, 2011 og 2012 forventes å bli satt sammen og publisert ved en senere anledning.
+	Det meste av innhold til disse eksisterer, men hittil har ingen tatt på seg arbeidet med å
+	sette det sammen i en grafisk profil.</p>';
 

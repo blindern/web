@@ -7,6 +7,8 @@ echo get_right_img_gal(154, null, "Rommet er et sted man tilbringer lite tid ute
 echo get_right_img_gal(144, null, "Matsalen er dekorert med skjold for beboere som har utmerket seg helt tilbake til 1920-årene.", "Foto: Cecilie Sæle Merkesvik");
 echo get_right_img_gal(187, null, "De fleste studentene bor i en av fløyene, her fra 500-gangen i østfløyen.", "Foto: Henrik Steen");
 echo get_right_img_gal(186, null, "Sjakkturnering høsten 2010 av den da nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært.", "Foto: Henrik Steen");
+//echo get_right_img_gal(186, null, "Sjakkturnering høsten 2010 av den da nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært.", "Foto: Henrik Steen");
+// TODO: legge inn bilde av kjøkkenpersonalet og skrive at maten lages av eget kjøkkenpersonale
 
 echo '
 <h1>Studentbolig i Oslo</h1>
@@ -20,38 +22,46 @@ echo '
 	hvor man m&aring; g&aring; gjennom det ene rommet for
 	&aring; komme til det andre.</p>
 <p>Etter et kort opphold p&aring;
-	dobbeltrom eller kombinasjonsrom vil man f&aring; et
-	enkeltrom tildelt. Romfordelingen er basert p&aring;
+	dobbeltrom eller kombinasjonsrom vil man kunne søke om plass
+	på ledige enkeltrom. Romfordelingen er basert p&aring;
 	ansiennitet, og desto lengre tid du bor p&aring; studenterhjemmet,
 	jo st&oslash;rre og nyere rom vil du kunne f&aring;.
-	Du kan bli n&aelig;rmere kjent med rommene gjennom
-	<a href="/omvisning">den digitale omvisningen</a>.
 </p>
+
+
 <h2>Hva er inkludert i husleien?</h2>
 
 <ul class="spaced">
+	<li><span class="u">Full kost og losji</span>. Tre måltider servert hver dag med varierende retter med
+		fokus på et sunt tilbud.</li>
 	<li><span class="u">Rommet er fullt m&oslash;blert</span>
-	n&aring;r du flytter inn, men du har ogs&aring;
-	mulighet til &aring; bytte ut noen av studenterhjemmets
-	m&oslash;bler med dine egne.</li>
+		n&aring;r du flytter inn, men du har ogs&aring;
+		mulighet til &aring; bytte ut noen av studenterhjemmets
+		m&oslash;bler med dine egne.</li>
 	
-	<li><span class="u">Tilgang til Internet</span> f&aring;r
-	alle beboere gjennom studentbynettet. Dette er den
-	samme nettforbindelsen som Studentsamskipnaden i Oslo
-	tilbyr i sine studentbyer, og er en av de raskeste
-	tilgjengelige internettforbindelsene i landet.</li>
-	<li><span class="u">Fasttelefon</span> finnes p&aring;
-	alle rom. Det er gratis &aring; ringe andre beboere.
-	Dersom du bruker telefonen til &aring; ringe eksternt,
-	belastes dette automatisk p&aring; den m&aring;nedlige
-	fakturaen.</li>
-	<li><span class="u">Str&oslash;mforbruk er inkludert i
-	den faste leieprisen.</span> Dette bidrar til
-	&aring; gi beboerne en forutsigbar &oslash;konomi.</li>
-	<li><span class="u">Studentvaskeriet</span> gir mulighet for
-	vask av kl&aelig;r, senget&oslash;y og lignende.</li>
-	<li><span class="u">Det vide og unike <a href="studentbolig/velferdstilbud">velferdstilbudet</a></span> og miljøet studenterhjemmet byr på.</li>
+	<li><span class="u">Tilgang til Internett</span>. Dette er
+		den samme nettforbindelsen som Studentsamskipnaden i Oslo
+		tilbyr i sine studentbyer.</li>
+
+	<li><span class="u">Fasttelefon</span> finnes p&aring; enkelte rom.
+		Det er gratis &aring; ringe andre beboere. Dersom du bruker telefonen til &aring;
+		ringe eksternt, belastes dette automatisk p&aring; den m&aring;nedlige husleiefakturaen.</li>
+
+	<li><span class="u">Str&oslash;mforbruk er inkludert i den faste leieprisen.</span> Dette bidrar til
+		&aring; gi beboerne en forutsigbar &oslash;konomi.</li>
+
+	<li><span class="u">Studentvaskeriet</span> gir mulighet for vask av kl&aelig;r, senget&oslash;y og lignende. Dette
+		betaler man allerede gjennom husleia, og man kan vaske så lenge det er ledige maskiner.</li>
+
+	<li>Ut bredt og unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a></span> samt det gode miljøet studenterhjemmet byr på.</li>
 </ul>
+
+<div class="mattider">
+	<h2>Mat-tider</h2>
+	<p><u>Mandag-fredag:</u><br />Frokost 07.15-09.00. Middag 14.30-17.30. Kveldsmat 19.30-20.30.</p>
+	<p><u>Lørdag:</u><br />Frokost 08.00-10.00. Middag 14.00-15.30. Kveldsmat 18.00-19.30.</p>
+	<p><u>Søndag:</u><br />Frokost 10.00-11.30. Middag 17.00-18.30. Ingen kveldsmat.</p>
+</div>
 
 <h2>Tre daglige m&aring;ltider pluss matpakke</h2>
 <p>
@@ -82,5 +92,7 @@ echo '
 <h2>Parkering</h2>
 <p>
 	Studenthjemmet har et begrenset antall parkeringsplasser
-	til utleie. Prisen er kr 500,- per semester.
+	til utleie. Prisen er kr 500,- per semester. Det er også mulighet
+	for gratis korttidsparkering, man må da ta kontakt med kontoret eller
+	Kollegiet (utenom kontortid).
 </p>';
