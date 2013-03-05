@@ -155,11 +155,18 @@ echo '
 <p>Send e-posten til <code>blindernbeboere@studorg.uio.no</code> så blir den sendt ut til alle som er på lista.</p>
 <p>Hvis e-postadressen du sender fra ikke ligger inne i systemet vil e-posten bli godkjent av internmailoppmann før den blir sendt ut.</p>
 
+<h3>Arkiv over meldinger</h3>
+<p>Et arkiv over alle e-poster sendt siden slutten av februar 2013 er tilgjengelig her:<br />
+<a href="https://sympa.uio.no/studorg.uio.no/arc/blindernbeboere">https://sympa.uio.no/studorg.uio.no/arc/blindernbeboere</a></p>
+
+
 <h2 id="velferden">Velferdens oppmenn</h2>
+<p><a href="https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdG15RG1vYk5EdlR2bEk5dkpVbHUydVE">Rediger liste</a></p>
 <p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
 <iframe width="700" height="500" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdG15RG1vYk5EdlR2bEk5dkpVbHUydVE&single=true&gid=0&output=html&widget=true"></iframe>
 
 <h2 id="kollegiet">Kollegiets stillinger</h2>
+<p><a href="https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE">Rediger liste</a></p>
 <p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
 <iframe width="700" height="600" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE&single=true&gid=0&output=html&widget=true"></iframe>
 
