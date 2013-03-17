@@ -83,6 +83,9 @@ echo '
 		<dt>15. mars</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 
+		<dt>17. mars</dt>
+		<dd>Holmenkollsøndag med Haarn oc Blaese, IFBS m.fl.</dd>
+
 		<dt>6. april</dt>
 		<dd>Schussrenn</dd>
 		
@@ -101,14 +104,17 @@ echo '
 		<dt>7. mai</dt>
 		<dd>Allmannamøte (obs: tirsdag)</dd>
 
-		<dt>17. mai</dt>
-		<dd>Café Avec</dd>
-
 		<dt>10. mai</dt>
 		<dd>Frist for meldelse av valgkandiatur for kollegievalget til Vice-Præces.</dd>
 
+		<dt>17. mai</dt>
+		<dd>Café Avec</dd>
+
 		<dt>13.-15. mai</dt>
 		<dd>Kollegievalg</dd>
+
+		<dt>23. mai</dt>
+		<dd>Foreningens semestermøte</dd>
 
 		<dt>31. mai</dt>
 		<dd>Kollegiekonstituering</dd>
@@ -143,6 +149,10 @@ echo '
 			<li>Allmannamøte fra 15. mai til 7. mai.</li>
 			<li>Frist for å melde valgkandidatur for kollegievalg fra 18. mai til 10. mai.</li>
 			<li>Kollegievalget fra perioden 21.-23. mai til perioden 13.-15. mai.</li>
+		</ul></li>
+		<li>17. mars 2013: Lagt inn:<ul>
+			<li>Holmenkollsøndag 17. mars.</li>
+			<li>Foreningens semestermøte 23. mai.</li>
 		</ul></li>
 	</ul>
 </div>
