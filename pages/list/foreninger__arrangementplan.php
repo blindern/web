@@ -97,6 +97,9 @@ echo '
 
 		<dt>30. april</dt>
 		<dd>Russefest</dd>
+
+		<dt>1. mai</dt>
+		<dd>Recoveryday i Billa og Gymsalen (FFC)</dd>
 		
 		<dt>3.-5. mai</dt>
 		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
@@ -122,10 +125,13 @@ echo '
 		<dt>23. mai</dt>
 		<dd>Foreningens semestermøte</dd>
 
+		<dt>24.-25. mai</dt>
+		<dd>Sommerleker m/IFBS og BSG</dd>
+
 		<dt>31. mai</dt>
 		<dd>Kollegiekonstituering</dd>
 
-		<dt>1. juni</dt>
+		<dt>31. mai</dt>
 		<dd>Bukkehaugsfestivalen</dd>
 	</dl>
 	
@@ -140,11 +146,10 @@ echo '
 
 	<p>Festforeningen arrangerer &quot;Billa kino&quot; (som hovedregel) kl 19 hver søndag.</p>
 
-	<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
+	<!--<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
 	<ul>
-		<li>Sommerleker (IFBS)</li>
 		<li>Sikkert mange andre ting...</li>
-	</ul>
+	</ul>-->
 	<p><i>Annen informasjon:</i></p>
 	<ul>
 		<li>Hemsedaltur utgår grunnet Studentlekene i Trondheim.</li>
@@ -168,6 +173,11 @@ echo '
 			<li>UKAs funksjonærfest 13. april.</li>
 			<li>Foreningens semestermøte 23. mai.</li>
 			<li>Info om &quot;Billa kino&quot; og IFBS-arrangementer.</li>
+		</ul></li>
+		<li>18. mars 2013: Oppdateringer fra FFC:<ul>
+			<li>Lagt inn recoveryday 1. mai.</li>
+			<li>Lagt inn sommerleker 24.-25. mai.</li>
+			<li>Flyttet dato for Bukkehaugsfestivalen fra 1. juni til 31. mai.</li>
 		</ul></li>
 	</ul>
 </div>
