@@ -421,8 +421,44 @@ function get_img_line(array $img_list) {
 		$ret .= preg_replace("~(<img.+?/>)~", '<span class="imgwrap1"><span class="imgwrap2">$1</span></span>', get_img_p($img[0], $img[1], $img[2], $img[3], null, "pageline"));
 	}
 
-	$ret .= '
-</div>';
+	$ret .= '</div>';
 
 	return $ret;
+}
+
+
+function get_rand_images(array $imglist, $num = 1, array $force_descriptions = array()) {
+	$list = implode(",", array_map("intval", $imglist));
+	$result = ess::$b->db->query("
+		SELECT gi_id, gi_description, gi_shot_person
+		FROM gallery_images
+		WHERE gi_id IN ($list) AND gi_visible != 0");
+	$data = array();
+	while ($row = mysql_fetch_assoc($result)) {
+		$data[] = array(
+			"id" => $row['gi_id'],
+			"description" => isset($force_descriptions[$row['gi_id']]) ? $force_descriptions[$row['gi_id']] : $row['gi_description'],
+			"shot_person" => $row['gi_shot_person']
+		);
+	}
+
+	$rand = (array) array_rand($data, $num);
+	$ret = array();
+	foreach ($rand as $key) {
+		$ret[] = $data[$key];
+	}
+
+	return $ret;
+}
+
+function get_rand_images_right(array $imglist, $num = 1, array $force_descriptions = array()) {
+	$images = get_rand_images($imglist, $num, $force_descriptions);
+
+	$ret = '';
+	foreach ($images as $row) {
+		$foto = $row['shot_person'] ? "Foto: ".$row['shot_person'] : null;
+		$ret .= get_img_p($row['id'], null, $row['description'], $foto, "img");
+	}
+
+	return '<div class="right_section">'.$ret.'</div>';
 }

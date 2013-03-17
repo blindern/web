@@ -49,7 +49,7 @@ class theme_bs_default
 		
 		echo '</span></a></h1>';
 		
-		$show_application_box = false;
+		$show_application_box = true;
 		if ($show_application_box)
 		{
 			echo '
@@ -66,9 +66,11 @@ class theme_bs_default
 				
 				default:
 					echo '
-				<h2>Inntak</h2>
-				<p>Søknad for plass til høsten 2011 evalueres fortløpende utover sommeren.</p>
-				<p>Send inn <a href="'.ess::$s['rpath'].'/opptak/sok_om_plass">elektronisk søknad &raquo;</a></p>';
+				<h2>Søk deg inn</h2>
+				<p>Søknad for plass til høsten 2013 behandles fortløpende utover våren.</p>
+				<p class="soknadsknapp">
+					<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
+				</p>';
 			}
 			
 			echo '

@@ -43,7 +43,7 @@ class studentbolig__omvisning extends omvisning {
 			
 			// verifiser at vi har bildet
 			if (!isset($this->images_gallery[$this->image_id])) {
-				bs_side::page_not_found("<pP>Bildet du refererte til ble ikke funnet.</p>");
+				bs_side::page_not_found("<p>Bildet du refererte til ble ikke funnet.</p>");
 			}
 
 			return;
@@ -145,9 +145,12 @@ var omvisning_data = '.json_encode($data).';');
 	</p>
 	<div id="omvisning_bilde">
 		<h1>Omvisning - <span id="omvisning_cat">'.htmlspecialchars($gal_title).'</span></h1>
-		<p><a href="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=original"><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=inside" alt="'.htmlspecialchars($image['gi_description']).'" /></a></p>
+		<p><a href="'.self::PATH.'/'.$next.'"><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=inside" alt="'.htmlspecialchars($image['gi_description']).'" /></a></p>
 		<p id="omvisning_bilde_tekst">'.$this->get_image_text($image).'</p>
 	</div>
+	<p id="omvisning_stort">
+		<a href="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=original">Vis bilde i full størrelse</a>
+	</p>
 </div>';
 	}
 }

@@ -2,13 +2,41 @@
 
 bs_side::set_title("Velferdstilbud");
 
-echo get_right_img_gal(127, null, "Badstua er fast tilholdssted for Blindern Bad og Badstueforening, men kan også brukes av alle øvrige beboere.", "Foto: Henrik Steen");
+echo get_rand_images_right(
+	array(
+		9, // sykkelkjeller
+		12, // møbelkjeller
+		15, // bordtennis
+		17, // tennis
+		48, // valhall
+		52, // uteområder
+		58, // gymsal
+		110, // studentkjøkkenet
+		111, // bandrommet
+		112, // musikkrommet
+		113, // musikkrommet
+		114, // tv-stua
+		115, // biblioteket
+		125, // sandvolleybalbanen
+		127, // badstua
+		140, // studentvaskeriet
+		141, // gressbane
+		162, // volleyballbane
+		209, // musikksalongen (flygelet)
+		210, // peisestua
+	),
+	4);
+
+
+/*echo get_right_img_gal(127, null, "Badstua er fast tilholdssted for Blindern Bad og Badstueforening, men kan også brukes av alle øvrige beboere.", "Foto: Henrik Steen");
 echo get_right_img_gal(111, null, "På et av stedets svært mange rom finner man her bandrommet.", "Foto: Henrik Steen");
 echo get_right_img_gal(114, null, "TV-stua kan benyttes fritt av alle beboere. Her får man inn alle kanalene man skulle ha behov for.", "Foto: Henrik Steen");
 echo get_right_img_gal(115, null, "Biblioteket har mange plasser og er et fint sted og jobbe med studier. Med varm kaffe fra matsalen har man alt man trenger.", "Foto: Henrik Steen");
+*/
 
 echo '
 <h1>Felles velferdstilbud</h1>
+
 <h2>Velferdstilbud</h2>
 <p>Det finnes en rekke felles velferdstilbud p&aring; Blindern Studenterhjem. De fleste
 drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p>
@@ -21,16 +49,15 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 	<li><a href="omvisning/115">Bibliotek og lesesal</a></li>
 	<li>Nyoppusset kollokvierom (biblionette)</li>
 	<li>Møterom (&quot;oldfruekontoret&quot;)</li>
-	<li><a href="omvisning/148">Peisestue med trådløst nettverk</a></li>
+	<li><a href="omvisning/210">Peisestue med trådløst nettverk</a></li>
 	<li><a href="omvisning/110">Studentkjøkken</a> med mulighet for bakst og egne måltider</li>
 	<li><a href="omvisning/127">Badstue</a></li>
-	<li><a href="omvisning/142">Biljardbord</a></li>
-	<li><a href="omvisning/112">Musikkrom</a>, musikksallong med flygel, <a href="omvisning/111">bandrom</a></li>
-	<li><a href="omvisning/143">Gymsal og styrkerom</a></li>
-	<li>Store grøntområder</li>
+	<li>Biljardbord</li>
+	<li><a href="omvisning/112">Musikkrom</a>, <a href="omvisning/209">musikksallong med flygel</a>, <a href="omvisning/111">bandrom</a></li>
+	<li><a href="omvisning/52">Store grøntområder ute</a></li>
 </ul>
 
-<p>Oppbevaring:</p>
+<p>Oppbevaringsmuligheter:</p>
 <ul>
 	<li><a href="omvisning/9">Sykkelkjeller</a></li>
 	<li><a href="omvisning/12">Møbelkjeller</a></li>
@@ -39,6 +66,7 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 
 <p>Sportslige muligheter:</p>
 <ul>
+	<li><a href="omvisning/58">Gymsal og styrkerom</a></li>
 	<li><a href="omvisning/17">Tennisbane</a></li>
 	<li><a href="omvisning/141">Fotballbane</a></li>
 	<li><a href="omvisning/125">Sandvolleyballbane</a></li>
@@ -58,7 +86,7 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 <ul>
 	<li>Projektor til utlån</li>
 	<li>Videokamera til utlån</li>
-	<li>Kopimaskin og fargeskriver</li>
+	<li>Felles kopimaskin og fargeskriver</li>
 </ul>
 	
 

@@ -16,16 +16,15 @@ echo '
 <h2>Sentralt i Oslo</h2>
 <p>
 	Blindern Studenterhjem ligger sentralt i Oslo. Stedet
-	ligger like ved Universitetet p&aring; Blindern. Universitetsbiblioteket
-	er kun 150 meter fra BS. Det ligger ogs&aring; like
-	ved trikkestopp og t-banestopp slik at man er n&aelig;rt
-	knyttet til andre deler av byen.
+	ligger ved siden av Universitetet i Oslo, campus Blindern.
+	Det ligger ogs&aring; like 	ved trikkestopp og t-banestopp slik at man er
+	n&aelig;rt knyttet til andre deler av byen.
 </p>
 
 <h2>Fasiliteter i omr&aring;det</h2>
 <p>
 	Det er n&aelig;rbutikk, apotek, helsetjeneste, bokhandel,
-	treningssenter (Domus Blindern), parfymeri, pub,
+	treningssenter (Blindern Athletica), parfymeri, pub,
 	jobbs&oslash;kingsenter, kaf&eacute;er/snackbarer og
 	bibliotek kun 50 meter fra Blindern Studenterhjem.
 </p>
@@ -35,6 +34,7 @@ echo '
 	Det er enkel og kort vei til friluftsomr&aring;der
 	p&aring; Sognsvann og videre til B&aelig;rumsmarka.
 </p>
+
 <h2>T-bane</h2>
 <p>
 	Fra Jernbanetorget, Stortinget, Nationaltheateret.
@@ -55,6 +55,7 @@ echo '
 	unna. <!--F&oslash;lg kartet under for &aring; finne studenthjemmet
 	fra trikkestoppet.-->
 </p>
+
 <h2>Bil fra E18 (Kristansand, Stavanger) til Oslo.</h2>
 <p>
 	Kj&oslash;r mot Oslo helt til et skilt hvor det st&aring;r

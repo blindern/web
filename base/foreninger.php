@@ -64,13 +64,9 @@ class foreninger
 			array(
 				"pms",
 				"Pigenes Musikalske Selskab (PMS)",
-				"PMS")
+				"PMS (pigekoret)")
 		),
 		"andre" => array(
-			array(
-				"bukkekollegiet",
-				"Bukkekollegiet",
-				"Bukkekollegiet"),
 			array(
 				"ball",
 				"Ballkomitéer",
@@ -82,7 +78,11 @@ class foreninger
 			array(
 				"kollegiet",
 				"Blindern Studenterkollegium",
-				"Kollegiet")
+				"Kollegiet"),
+			array(
+				"bukkekollegiet",
+				"Bukkekollegiet",
+				"Bukkekollegiet")
 		)
 	);
 

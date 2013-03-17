@@ -6,8 +6,9 @@ $(document).ready(function() {
 	var back_link = $("#omvisning_back");
 	var prev_link = $("#omvisning_prev");
 	var next_link = $("#omvisning_next");
+	var next_link2 = $("#omvisning_bilde a")
 	var cat = $("#omvisning_cat");
-	var link = $("#omvisning_bilde a");
+	var link = $("#omvisning_stort a");
 	var img = $("#omvisning_bilde img");
 	var text = $("#omvisning_bilde_tekst");
 	
@@ -16,6 +17,7 @@ $(document).ready(function() {
 	
 	prev_link.click(function() { rotate_img(true); return false; });
 	next_link.click(function() { rotate_img(); return false; });
+	next_link2.click(function() { rotate_img(); return false; });
 	
 	$(document).keydown(function(e) {
 		if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;

@@ -40,7 +40,7 @@ echo '
 							<p style="float: right">Trykk for større bilder og bildegalleri.</p>
 							'.get_right_img_gal(87, null, "Skilt som peker i retningen mot Småbruket ved Brunkollen.", "Foto: Henrik Steen").'
 							'.get_right_img_gal(104, null, "Småbruket tar seg vakkert ut i Bærumsmarka.", "Foto: Henrik Steen").'
-							'.get_right_img_gal(92, null, "Hovedsoverommet med 8. I tillegg er det 16 senger i annekset og 10 madrasser på hemsen.", "Foto: Henrik Steen").'
+							'.get_right_img_gal(92, null, "Hovedsoverommet med 8 soveplasser. I tillegg er det 16 senger i annekset og 10 madrasser på hemsen.", "Foto: Henrik Steen").'
 							'.get_right_img_gal(94, null, "Hytta har en stor stue.", "Foto: Henrik Steen").'
 							'.get_right_img_gal(106, null, "Lite slår den gode stemningen med en kveld rundt peisen.", "Foto: Henrik Steen").'
 							'.get_right_img_gal(99, null, "Stua rommer en hel folkemasse. Her fra tur med hele 49 personer, hvor også alle overnattet.", "Foto: Henrik Steen").'

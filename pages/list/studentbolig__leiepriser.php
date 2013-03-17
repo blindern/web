@@ -2,8 +2,9 @@
 
 bs_side::set_title("Leiepriser");
 
-echo get_right_img_gal(189, null, "", "Foto: Christophe Cunen-Classens");
+//echo get_right_img_gal(189, null, "", "Foto: Christophe Cunen-Classens");
 echo get_right_img_gal(188, null, "Blindern Studenterhjem er et unikt sted å bo.", "Foto: Anders Fagereng");
+echo get_right_img_gal(137, null, "Skiltet med &quot;Et godt hjem for studenter&quot; kan sees på den ene stolpen i bunnen av pærealleen. Under dette mottoet ble studenterhjemmet bygget.", "Foto: Cecilie Sæle Merkesvik");
 
 echo '
 <h1>Leiepriser h&oslash;stsemesteret 2013 og våren 2014</h1>
@@ -117,13 +118,13 @@ echo '
 	den ordinære dugnaden har man også alternativ som dagdugnad som utføres på dagtid i en hverdag.</p>
 
 <h2>Sommerskolen - sommerutflytting</h2>
-<p>Om sommeren (fra 15. juni til 15. august) må alle studentene flytte ut. Da er studenterhjemmet
+<p>Om sommeren (fra 15. juni til 15. august) må du flytte ut. Da er studenterhjemmet
 	bolig for den internasjonale sommerskolen. Overskuddet fra denne virksomheten subsidierer
 	din husleie resten av året. De fleste reiser hjem i denne perioden og sparer mye på
 	å ikke måtte betale leie om sommeren.</p>
-<p>Studentene som flytter inn igjen etter sommeren disponerer egne skap og kan midlertidig lagre møbler i møbelkjelleren.</p>
+<p>Studentene som skal flytte inn igjen etter sommeren disponerer egne skap og kan midlertidig lagre møbler i møbelkjelleren.</p>
 
-<h2>Hvem fastsetter prisen</h2>
+<h2>Hvem fastsetter husleia?</h2>
 <p>
 	Prisen p&aring; rommene blir fastsatt av Styret.
 	Foreningsavgiften blir fastsatt p&aring;

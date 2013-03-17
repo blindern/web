@@ -63,11 +63,11 @@ echo '
 	For direkte linje ringer du: 23 33 1x xx
 	(xxx byttes ut med linjenummeret til beboeren). Kjenner
 	du ikke studentens linjenummer kan du ringe kontoret
-	p&aring; dagtid: 23 33 15 00
+	p&aring; dagtid: 23 33 15 00. Beboere på vestfløyen og i de grå brakkene har ikke telefon.
 </p>
 
 <h2>Den internasjonale sommerskolen (ISS)</h2>
 <dl class="adm_kontakt">
 	<dt>Telefon</dt>
-	<dd>23 33 10 00</dd>
+	<dd>23 33 10 00 <i>(Kun bemannet sommerstid mellom juni og august.)</i></dd>
 </dl>';

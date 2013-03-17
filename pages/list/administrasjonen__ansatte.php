@@ -1,5 +1,10 @@
-<?php bs_side::set_title("Ansatte"); ?>
-					<?php echo get_right_img("ansatte.jpg", null, "Personalet", "Personalet høsten 2010. Foto: Henrik Steen"); ?>
+<?php
+
+bs_side::set_title("Ansatte");
+
+echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_right_img_gal(193, null, "Personalet høsten 2010.", "Foto: Henrik Steen"));
+
+?>
 					<div id="ansatte">
 						<h1>Ansatte</h1>
 						<p>

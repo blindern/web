@@ -7,12 +7,10 @@ $foreninger = new foreninger();
 $foreninger->set_active("bukkekollegiet");
 
 echo '
-<h1>Bukkekollegiet</h1>
+'.get_right_img_gal(121, null, "Bukkefesten er en gammel tradisjon på bruket. Her mottar gamle beboere heder og ære etter god innsats i løpet av sin botid på hjemmet.", "Foto: Anders Fagereng").'
+'.get_right_img_gal(217, null, "Jan IV - brukets beskytter.", "Foto: Petter Gripheim").'
 
-<p class="img img_right">
-	<img src="/o.php?a=gi&amp;gi_id=121&amp;gi_size=pageright" alt="Bukkefest" />
-	<span>Bukkefesten er en gammel tradisjon på bruket. Her mottar gamle beboere heder og ære etter god innsats i løpet av sin botid på hjemmet. Foto: Anders Fagereng</span>
-</p>
+<h1>Bukkekollegiet</h1>
 
 <p>Bukkekollegiet består av tre beboere som forvalter en av studenterhjemmets eldste og mest
 eiendommelige tradisjoner, Bukkeordenen, som ble innstiftet i 1926 av Georg Klem.

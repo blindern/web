@@ -3,12 +3,27 @@
 bs_side::set_title("Studentbolig i Oslo");
 bs_side::$lang_crosslink['en'] = "en/housing";
 
-echo get_right_img_gal(154, null, "Rommet er et sted man tilbringer lite tid utenom soving under sin botid på studenterhjemmet.", "Foto: Cecilie Sæle Merkesvik");
-echo get_right_img_gal(144, null, "Matsalen er dekorert med skjold for beboere som har utmerket seg helt tilbake til 1920-årene.", "Foto: Cecilie Sæle Merkesvik");
-echo get_right_img_gal(187, null, "De fleste studentene bor i en av fløyene, her fra 500-gangen i østfløyen.", "Foto: Henrik Steen");
-echo get_right_img_gal(186, null, "Sjakkturnering høsten 2010 av den da nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært.", "Foto: Henrik Steen");
-//echo get_right_img_gal(186, null, "Sjakkturnering høsten 2010 av den da nyoppstartede foreningen Blindern Spill og Gåte viste seg å være svært populært.", "Foto: Henrik Steen");
-// TODO: legge inn bilde av kjøkkenpersonalet og skrive at maten lages av eget kjøkkenpersonale
+echo get_rand_images_right(
+	array(
+		115, // biblioteket
+		137, // skilt ved pærealeen
+		//155, // oversiktsbilde fra universitetet
+		160, // mat 17. mai
+		190, // østfløy fra sørsiden
+		195, // alette i peisestua
+		197, // dobbeltrom hovedbygget
+		198, // dobbeltrom med standardinventar på vestfløy
+		199, // bad på vestfløy
+		//154, // personlig innredet rom østfløy
+		200, // enkeltrom vestfløy
+		206, // kjøkkenpersonal
+		208, // matsal med personer
+		210, // peisestua
+		216, // porten fra uio
+		218, // skilt fra oslo byes vel
+		219, // skulptur dør hovedbygg
+	),
+	4);
 
 echo '
 <h1>Studentbolig i Oslo</h1>
@@ -53,7 +68,7 @@ echo '
 	<li><span class="u">Studentvaskeriet</span> gir mulighet for vask av kl&aelig;r, senget&oslash;y og lignende. Dette
 		betaler man allerede gjennom husleia, og man kan vaske så lenge det er ledige maskiner.</li>
 
-	<li>Ut bredt og unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a></span> samt det gode miljøet studenterhjemmet byr på.</li>
+	<li>Et bredt og unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a></span> samt det gode <a href="/livet">miljøet</a> studenterhjemmet byr på.</li>
 </ul>
 
 <div class="mattider">

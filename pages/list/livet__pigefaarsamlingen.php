@@ -6,6 +6,8 @@ require ROOT."/base/foreninger.php";
 $foreninger = new foreninger();
 $foreninger->set_active("pigefaarsamlingen");
 
+echo get_right_img_gal(211, null, "", "Foto: Petter Gripheim");
+
 echo '
 <h1>Pigefaarsamlingen</h1>
 <p>

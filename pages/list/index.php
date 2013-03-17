@@ -1,11 +1,16 @@
 <?php
 
+bs_side::$page_class = "forside";
+
 echo '
-<p class="img img_right">
-	<a href="studentbolig/beliggenhet#kart"><img src="/graphics/layout/kart.jpg" alt="Kart over området rundt Blindern Studenterhjem" />
-	<span>Blindern Studenterhjem ligger sentralt plassert mellom universitetsbygningene på Blindern. Trykk for stort kart</span></a>
-</p>';
-echo get_right_img_gal(152, null, "", "Foto: Cecilie Sæle Merkesvik");
+<div class="right_section">
+	<p class="img">
+		<a href="studentbolig/beliggenhet#kart"><img src="/graphics/layout/kart.jpg" alt="Kart over området rundt Blindern Studenterhjem" />
+		<span>Blindern Studenterhjem ligger sentralt plassert mellom universitetsbygningene på Blindern. Trykk for stort kart</span></a>
+	</p>
+	'.get_img_p(201, null, "Vestfløyen ble rehabilitert våren 2012. Her vises et enkeltrom på vestfløyen.", "Foto: Petter Gripheim", "img").'
+	'.get_img_p(198, null, "Slik ser et innflyttingsklart dobbeltrom ut.", "Foto: Petter Gripheim", "img").'
+</div>';
 
 echo '
 <h1>Velkommen til Blindern Studenterhjem</h1>
@@ -19,7 +24,7 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 	<p>Full kost og losji</p>
 	<p>xx parhybler, xx enkeltrom, xx gjennomgangsrom, xx dobbeltrom, xx kott</p>
 	<p>8 timer dugnad i semesteret</p>
-	<p>Blindernånden sentral</p>
+	<p>Blindernånden</p>
 	<p class="soknadsknapp">
 		Klar for å flytte inn?
 		<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
@@ -37,9 +42,8 @@ i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning 
 	Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
 	arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
 <p>Som beboer har man mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
-	(Les mer om de under <a href="livet">Livet på BS</a>.)
 	Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
-	p&aring; Studenthjemmet og har stor grad av medbestemmelsesrett.
+	p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
 </p>
 
 <h2>Tre daglige m&aring;ltider inkludert i husleien</h2>
@@ -52,7 +56,10 @@ i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning 
 <h2>Søk deg inn</h2>
 <p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
 å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
-som kunne tenke seg å bidra til et godt miljø.</p>';
+som kunne tenke seg å bidra til et godt miljø.</p>
+<p>På disse sidene kan du lese mer og bli kjent med studenterhjemmet. Sitter du fremdeles igjen med noen spørsmål, ta kontakt!</p>
+
+<p class="img_line_header">Utdrag fra den digitale omvisningen <span>(trykk på bildene)</span>:</p>';
 
 // hent fire tilfeldige bilder fra galleriet
 // TODO: tar ikke høyde for at parent galleriet evt. er skjult
@@ -60,7 +67,7 @@ som kunne tenke seg å bidra til et godt miljø.</p>';
 $result = ess::$b->db->query("
 	SELECT gi_id, gi_description, gi_shot_person
 	FROM gallery_images JOIN gallery_categories ON gi_gc_id = gc_id
-	WHERE gc_visible != 0 AND gi_visible != 0");
+	WHERE gc_visible != 0 AND gi_visible != 0 AND gc_id != 11"); // ikke hent bilder fra Småbruket (nr=11)
 $data = array();
 $max = 120;
 while ($row = mysql_fetch_assoc($result)) {

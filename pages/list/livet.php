@@ -21,6 +21,7 @@ at du er n&oslash;dt til &aring; f&aring; et innblikk i de sosiale aktivitene, t
 som finnes p&aring; BS.</p>
 <p>Man er alltid på utkikk etter nytt mot, og nye beboere som vil engasjere seg tas godt i mot. Det
 skal ikke mye til før man føler seg inkludert på studenterhjemmet.</p>
+<p>Studenterhjemmet har egen skjenkebevilling og bar med alle rettigheter.</p>
 
 <h2>Nyinnflyttet</h2>
 <p>Som nyinnflyttet (pygmé) er det et par ting man bør få med seg:</p>
