@@ -80,6 +80,9 @@ echo '
 		<dt>3. mars</dt>
 		<dd>Café Avec</dd>
 
+		<dt>10. mars</dt>
+		<dd>Seriemaraton i peisestua (BSG)</dd>
+
 		<dt>15. mars</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 
@@ -88,7 +91,10 @@ echo '
 
 		<dt>6. april</dt>
 		<dd>Schussrenn</dd>
-		
+
+		<dt>13. april</dt>
+		<dd>UKAs funksjonærfest</dd>
+
 		<dt>30. april</dt>
 		<dd>Russefest</dd>
 		
@@ -122,15 +128,21 @@ echo '
 		<dt>1. juni</dt>
 		<dd>Bukkehaugsfestivalen</dd>
 	</dl>
+	
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
+		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
+	<dl class="arrangementer">
+		<dt>Onsdager</dt>
+		<dd>Styrkesirkel (&quot;styrkel&quot;) kl 18</dd>
+		<dt>Torsdager</dt>
+		<dd>Ballspill kl 16 (på Blindern Athletica)</dd>
+	</dl>
+
+	<p>Festforeningen arrangerer &quot;Billa kino&quot; (som hovedregel) kl 19 hver søndag.</p>
+
 	<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
 	<ul>
 		<li>Sommerleker (IFBS)</li>
-		<li>Foreningens semestermøte</li>
-		<li>Faste IFBS-arrangementer</li>
-		<li>Øvrige IFBS-arrangementer</li>
-		<li>BSG-arrangementer</li>
-		<li>FFC-kino</li>
-		<li>UKAs funksjonærfest</li>
 		<li>Sikkert mange andre ting...</li>
 	</ul>
 	<p><i>Annen informasjon:</i></p>
@@ -151,8 +163,11 @@ echo '
 			<li>Kollegievalget fra perioden 21.-23. mai til perioden 13.-15. mai.</li>
 		</ul></li>
 		<li>17. mars 2013: Lagt inn:<ul>
+			<li>Seriemaraton (BSG) 10. mars.</li>
 			<li>Holmenkollsøndag 17. mars.</li>
+			<li>UKAs funksjonærfest 13. april.</li>
 			<li>Foreningens semestermøte 23. mai.</li>
+			<li>Info om &quot;Billa kino&quot; og IFBS-arrangementer.</li>
 		</ul></li>
 	</ul>
 </div>
