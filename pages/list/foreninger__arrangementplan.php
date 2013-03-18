@@ -138,6 +138,8 @@ echo '
 	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
 		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
 	<dl class="arrangementer">
+		<dt>Tirsdager</dt>
+		<dd>Zumba kl 20-21</dd>
 		<dt>Onsdager</dt>
 		<dd>Styrkesirkel (&quot;styrkel&quot;) kl 18</dd>
 		<dt>Torsdager</dt>
@@ -179,6 +181,7 @@ echo '
 			<li>Lagt inn sommerleker 24.-25. mai.</li>
 			<li>Flyttet dato for Bukkehaugsfestivalen fra 1. juni til 31. mai.</li>
 		</ul></li>
+		<li>18. mars 2013: La inn Zumba på tirsdager for IFBS.</li>
 	</ul>
 </div>
 
