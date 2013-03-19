@@ -249,7 +249,7 @@ h1 {
 
 }
 h2 { margin: 0 }
-#content h2, #content h3 {
+h2, h3 {
 	margin: 15px 0 2px 0;
 }
 #menu_sub h1, h2, h3, legend {
@@ -1019,7 +1019,7 @@ ul.jubbooks span.filesize {
 
 /* Bilder i bunn på forsiden */
 .img_line_header {
-	clear: both:;
+	clear: both;
 	background-color: #DDD;
 	margin: 0 -10px;
 	padding: 15px 0 0 0;
@@ -1097,7 +1097,7 @@ ul.jubbooks span.filesize {
 	width: 160px;
 	background-color: #F0F0F0;
 	padding: 7px;
-	margin: 0 15px 15px;
+	margin: 15px 15px 15px;
 	border: 1px solid #CCC;
 	font-size: 12px;
 	text-align: center;
@@ -1162,4 +1162,40 @@ ul.jubbooks span.filesize {
 }
 .right_section .img {
 	margin-right: 0;
+}
+
+
+#showoff {
+	display: none;
+}
+
+
+
+.romgruppe {
+	display: inline-block;
+	padding: 5px;
+	margin: 0 10px 5px 0;
+	border: 1px solid #DDD;
+
+	background-color: rgba(0, 157, 202, .1);
+	border-color: rgba(0, 157, 202, .3);
+
+	/*background-color: #d3e9f1;
+	background-color: rgba(220, 233, 241, .8);*/
+}
+.romgruppe h2 {
+	margin-top: 0;
+}
+.romgruppe p {
+	margin: 3px 0;
+}
+.romgruppe p:last-child {
+	margin-bottom: 0;
+}
+.romgruppe .pris {
+	font-style: italic;
+	text-align: center;
+}
+.romgruppe .more {
+	text-align: center;
 }

@@ -18,6 +18,28 @@ echo '
 <p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig - det er et hjem.
 Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
 
+<div class="romgruppe">
+	<h2>Enkeltrom</h2>
+	<p class="pris">kr x xxx</p>
+	<p>Inkl. mat og strøm</p>
+	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
+</div>
+
+<div class="romgruppe">
+	<h2>Dobbeltrom</h2>
+	<p class="pris">kr x xxx</p>
+	<p>Inkl. mat og strøm</p>
+	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
+</div>
+
+<div class="romgruppe">
+	<h2>Gjennomgangsrom</h2>
+	<p class="pris">kr x xxx</p>
+	<p>Inkl. mat og strøm</p>
+	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
+</div>
+
+
 <div class="dette_er_bs">
 	<h2>Dette er BS</h2>
 	<p>230 studenter</p>
@@ -32,8 +54,6 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 </div>
 
 <h2>Like ved Universitetet i Oslo</h2>
-<p>I et praktfullt beliggende hageanlegg p&aring; Blindern, vegg-i-vegg med Universitetet i Oslo,
-kan Blindern Studenterhjem tilby et rikt bofelleskap for 220 studenter.</p>
 <p>Studenterhjemmet ligger sentralt i Oslo, og har god kollektivforbindelse med både T-bane og trikk. Det tar
 i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning på juridisk fakultet i sentrum.</p>
 
@@ -53,7 +73,7 @@ i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning 
 	og er noe av det som gj&oslash;r Blindern Studenterhjem til et godt og unikt sted &aring; bo.
 </p>
 
-<h2>Søk deg inn</h2>
+<h2>Flytte inn?</h2>
 <p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
 å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
 som kunne tenke seg å bidra til et godt miljø.</p>

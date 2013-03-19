@@ -6,6 +6,16 @@ class foreninger
 	public $set_active_menu = true;
 
 	public $list = array(
+		"none" => array(
+			array(
+				"kollegiet",
+				"Blindern Studenterkollegium",
+				"Kollegiet"),
+			array(
+				"bukkekollegiet",
+				"Bukkekollegiet",
+				"Bukkekollegiet")
+		),
 		"fbs" => array(
 			array(
 				"foreningsstyret",
@@ -55,7 +65,7 @@ class foreninger
 				"Haarn oc Blaese"),
 			array(
 				"katiba",
-				"Katiba", // TODO: langt navn
+				"Katiba Wa Mbilikimo",
 				"Katiba"),
 			array(
 				"pigefaarsamlingen",
@@ -74,15 +84,7 @@ class foreninger
 			array(
 				"biblioteksutvalget",
 				"Biblioteksutvalget",
-				"Biblioteksutvalget"),
-			array(
-				"kollegiet",
-				"Blindern Studenterkollegium",
-				"Kollegiet"),
-			array(
-				"bukkekollegiet",
-				"Bukkekollegiet",
-				"Bukkekollegiet")
+				"Biblioteksutvalget")
 		)
 	);
 
@@ -90,11 +92,11 @@ class foreninger
 		$this->active = $value;
 	}
 
-	private function group($id, $text) {
+	private function group($id, $text = null) {
 		if (!isset($this->list[$id])) throw new Exception("Fant ikke foreningsgruppe.");
 		
-		$ret = '
-		<p>'.$text.'</p>
+		$ret = ($text ? '
+		<p>'.$text.'</p>' : '').'
 		<ul>';
 
 		foreach ($this->list[$id] as $data) {
@@ -118,6 +120,7 @@ class foreninger
 		echo '
 <div class="foreninger_wrap">
 	<section class="foreninger_left">
+		'.$this->group("none").'
 		'.$this->group("fbs", "Underlagt Foreningen").'
 		'.$this->group("andref", "Øvrige foreninger").'
 		'.$this->group("andre", "Annet").'
@@ -129,15 +132,17 @@ class foreninger
 	}
 
 	public function sitemap() {
-		return $this->sitemap_group("fbs", "Underlagt Foreningen")
+		return
+			 $this->sitemap_group("none")
+			.$this->sitemap_group("fbs", "Underlagt Foreningen")
 			.$this->sitemap_group("andref", "Øvrige foreninger")
 			.$this->sitemap_group("andre", "Annet");
 	}
 
-	public function sitemap_group($group, $text) {
+	public function sitemap_group($group, $text = null) {
 		if (!isset($this->list[$group])) throw new Exception("Fant ikke foreningsgruppe.");
 		
-		$ret = '<span style="display: block">'.$text.'</span>
+		$ret = ($text ? '<span style="display: block">'.$text.'</span>' : '').'
 		<ul>';
 
 		foreach ($this->list[$group] as $data) {

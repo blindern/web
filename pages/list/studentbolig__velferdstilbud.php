@@ -35,17 +35,14 @@ echo get_right_img_gal(115, null, "Biblioteket har mange plasser og er et fint s
 */
 
 echo '
-<h1>Felles velferdstilbud</h1>
+<h1>Velferdstilbud</h1>
 
-<h2>Velferdstilbud</h2>
 <p>Det finnes en rekke felles velferdstilbud p&aring; Blindern Studenterhjem. De fleste
 drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p>
 
-<p>Hverdagslig:</p>
 <ul>
 	<li>Dagens aviser til frokost</li>
 	<li><a href="omvisning/114">TV-stue</a></li>
-	<li><a href="omvisning/140">Vaskeri</a></li>
 	<li><a href="omvisning/115">Bibliotek og lesesal</a></li>
 	<li>Nyoppusset kollokvierom (biblionette)</li>
 	<li>Møterom (&quot;oldfruekontoret&quot;)</li>
@@ -57,7 +54,7 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 	<li><a href="omvisning/52">Store grøntområder ute</a></li>
 </ul>
 
-<p>Oppbevaringsmuligheter:</p>
+<p>Oppbevaring:</p>
 <ul>
 	<li><a href="omvisning/9">Sykkelkjeller</a></li>
 	<li><a href="omvisning/12">Møbelkjeller</a></li>

@@ -25,6 +25,7 @@ class theme_bs_default
 	
 	protected static function generate_page($params)
 	{
+		jquery();
 		$content = ess::$b->page->content_get();
 		
 		echo '<!DOCTYPE html>

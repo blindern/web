@@ -2,16 +2,16 @@
 
 Om BS
 	index	Kort om BS
+	om/stiftelsen	Om stiftelsen
 	om/historie	Historie
 	om/digitalt_arkiv	Digitalt arkiv
 	om/matrikkel	Matrikkel
-	om/stiftelsen	Om stiftelsen
 	om/bruketsvenner	Brukets Venner
 
 Studentbolig i Oslo
 	studentbolig	Studentbolig i Oslo
 	studentbolig/beliggenhet	Beliggenhet
-	studentbolig/velferdstilbud	Felles velferdstilbud
+	studentbolig/velferdstilbud	Velferdstilbud
 	studentbolig/leiepriser	Leiepriser
 
 Søk deg inn

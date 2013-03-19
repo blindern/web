@@ -107,6 +107,9 @@ echo '
 </p>
 
 <h2>Dugnad</h2>
+
+<div class="showoff">Alle beboere plikter å delta på to dugnader i semesteret. <a href="#" class="activate">Les mer om dugnadene</a></div>
+<div class="showon">
 <p>
 	Alle beboere plikter &aring; delta p&aring; to dugnader i semesteret. Hver lørdag avholdes dugnaden
 	fra kl 10-14 med en halvtimes pause.
@@ -116,8 +119,9 @@ echo '
 </p>
 <p>Det er også alternativer til dugnaden, slik som ryddevakt og hyttedugnad. For de som ikke kan delta på
 	den ordinære dugnaden har man også alternativ som dagdugnad som utføres på dagtid i en hverdag.</p>
+</div>
 
-<h2>Sommerskolen - sommerutflytting</h2>
+<h2>Den internasjonale sommerskolen - sommerutflytting</h2>
 <p>Om sommeren (fra 15. juni til 15. august) må du flytte ut. Da er studenterhjemmet
 	bolig for den internasjonale sommerskolen. Overskuddet fra denne virksomheten subsidierer
 	din husleie resten av året. De fleste reiser hjem i denne perioden og sparer mye på
@@ -125,6 +129,10 @@ echo '
 <p>Studentene som skal flytte inn igjen etter sommeren disponerer egne skap og kan midlertidig lagre møbler i møbelkjelleren.</p>
 
 <h2>Hvem fastsetter husleia?</h2>
+<div class="showoff">
+<p><a href="#" class="activate">Vis mer</a></p>
+</div>
+<div class="showon">
 <p>
 	Prisen p&aring; rommene blir fastsatt av Styret.
 	Foreningsavgiften blir fastsatt p&aring;
@@ -135,4 +143,5 @@ echo '
 	er fastsatt utifra hva driftskostnadene til disse
 	velferdsgodene koster &aring; vedlikeholde.
 </p>
-<p>Leieøkningen for høsten 2012 fra høsten 2011 var på 3,0 % mot 3,5 % fra 2010 til 2011.</p>';
+<p>Leieøkningen for høsten 2012 fra høsten 2011 var på 3,0 % mot 3,5 % fra 2010 til 2011.</p>
+</div>';

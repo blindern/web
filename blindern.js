@@ -166,3 +166,22 @@ var boxHandleObj = {
 		});
 	}
 };
+
+
+
+$(document).ready(function() {
+	$(".showoff").show();
+	$(".showoff a.activate").click(function(event) {
+		event.preventDefault();
+		var so = $($(this).parents(".showoff").get(0));
+		var so2 = so.next(".showon");
+
+		if (so2.is(":visible")) {
+			so2.hide("slow");
+		} else {
+			so.not(".keepon").hide("slow");
+			so2.show("slow");
+		}
+	});
+	$(".showon").hide();
+});

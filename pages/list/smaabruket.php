@@ -16,22 +16,7 @@ bs_side::$head .= '
 	padding: 0 10px;
 	margin: 10px 0;
 }
-#hytteoff {
-	display: none;
-}
-</style>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".hytteoff").show();
-	$(".hytteoff a.activate").click(function(event) {
-		event.preventDefault();
-		$($(this).parents(".hytteoff").get(0)).hide("slow")
-		.next(".hytteon").show("slow");
-	});
-	$(".hytteon").hide();
-});
-</script>';
+</style>';
 
 require ROOT."/base/smaabruket.php";
 
@@ -119,10 +104,10 @@ echo '
 							senest en uke etter reservering av hytta. Du har da
 							gjort endelig reservering. Dette må være innbetalt før nøkkel kan hentes. Ved
 							reservasjoner rett før utleiedato kan depositumet evt. betales kontant ved henting av nøkkel.</p>
-							<div class="hytteoff">
+							<div class="showoff">
 								<p><a href="#" class="activate">Vis flere bestemmelser om depositumet</a></p>
 							</div>
-							<div class="hytteon">
+							<div class="showon">
 								<ul>
 									<li>Betales ikke depositum innen 7 dager vil reservasjonen bli strøket for å gi andre muligheten til å betale leie til de aktuelle datoene.
 								Vi gir beskjed hvis vi stryker en reservasjon.</li>
@@ -155,10 +140,10 @@ echo '
 								<li>Per vedsekk (80-liter-sekk): kr 120</li>
 							</ul>
 							<p>For beboere ved Blindern Studenterhjem gjelder egne priser. Gamle beboere ved studenterhjemmet får pris tilsvarende SiO-medlemmer.</p>
-							<div class="hytteoff">
+							<div class="showoff">
 								<p><a href="#" class="activate">Vis priseksempler</a></p>
 							</div>
-							<div class="hytteon">
+							<div class="showon">
 								<hr />
 								<p><b>Eksempler på reservasjonsdepositum (minstepris):</b></p>
 								<ul>

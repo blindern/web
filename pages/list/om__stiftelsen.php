@@ -21,8 +21,10 @@ echo '
 
 <h2>Daglig leder</h2>
 <p>
-	Daglig leder står for den daglige og løpende drift av Studenterhjemmet
-	etter de retningslinjer og pålegg styret gir.
+	Daglig leder skal forestå den løpende drift av Hjemmet innenfor
+	de retningslinjer og pålegg styret gir. Daglig leder skal sørge for at driften
+	skjer så effektivt som mulig innenfor stiftelsens formål,
+	slik at pensjonsprisen kan holdes konkurransedyktig, og driften sikres på lang sikt.
 </p>
 
 <h2>Kollegiet</h2>
