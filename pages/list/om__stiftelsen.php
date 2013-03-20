@@ -40,8 +40,8 @@ echo '
 <p>P&aring; oppslagstavlen finnes oppdatert
 	informasjon om Kollegiets virksomhet, og det er Kollegiet
 	beboerne oppfordres til &aring; kontakte vedr&oslash;rende
-	sp&oslash;rsm&aring;l om interne forhold. <a href="/livet/kollegiet">Mer om Kollegiet</a></p>
-</p>
+	sp&oslash;rsm&aring;l om interne forhold.</p>
+<p><a href="/livet/kollegiet">Mer om Kollegiet &raquo;</a></p>
 <h2>Husfar</h2>
 <p>
 	Husfar leder styrem&oslash;tene og deltar aktivt i

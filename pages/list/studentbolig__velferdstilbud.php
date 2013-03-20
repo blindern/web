@@ -67,7 +67,7 @@ rom som er tilgjengelig for studentene brukes fritt av beboerne.</p>
 <p class="ul_header">Sosialt:</p>
 <ul>
 	<li>Mange forskjellige hagespill</li>
-	<li>En rekke brettspill</li>
+	<li><a href="omvisning/186">En rekke brettspill</a></li>
 	<li><a href="omvisning/109">Egen pub og festlokaler</a></li>
 	<li><a href="../smaabruket">Egen <i>hytte</i> i Bærumsmarka</a></li>
 	<li><a href="omvisning/48">Festrom som tåler en støyt</a></li>

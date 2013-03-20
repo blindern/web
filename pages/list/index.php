@@ -4,37 +4,40 @@ bs_side::$page_class = "forside";
 
 echo '
 <div class="right_section">
-	<p style="float: right">Trykk for større bilder og bildegalleri.</p>
 	<p class="img">
 		<a href="studentbolig/beliggenhet#kart"><img src="/graphics/layout/kart.jpg" alt="Kart over området rundt Blindern Studenterhjem" />
 		<span>Blindern Studenterhjem ligger sentralt plassert mellom universitetsbygningene på Blindern. Trykk for stort kart</span></a>
 	</p>
-	'.get_img_p(201, null, "Vestfløyen ble rehabilitert våren 2012. Her vises et enkeltrom på vestfløyen.", "Foto: Petter Gripheim", "img").'
+	<!--'.get_img_p(201, null, "Vestfløyen ble rehabilitert våren 2012. Her vises et enkeltrom på vestfløyen.", "Foto: Petter Gripheim", "img").'-->
+	
+	<section class="dette_er_bs">
+		<h2>Dette er BS</h2>
+		<p>230 studenter</p>
+		<p>Full kost og losji</p>
+		<p>xx xx enkeltrom,<br /> xx gjennomgangsrom,<br /> xx dobbeltrom</p>
+		<p>8 timer dugnad per semester</p>
+		<p>Blindernånden<br />Godt sosialt miljø</p>
+		<p class="soknadsknapp">
+			Klar for å flytte inn?
+			<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
+		</p>
+	</section>
+
 	'.get_img_p(198, null, "Slik ser et innflyttingsklart dobbeltrom ut.", "Foto: Petter Gripheim", "img").'
 </div>';
 
 echo '
 <h1>Velkommen til Blindern Studenterhjem</h1>
 
+<div class="index_group">
 <p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig.
 Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
-
-<section class="dette_er_bs">
-	<h2>Dette er BS</h2>
-	<p>230 studenter</p>
-	<p>Full kost og losji</p>
-	<p>xx xx enkeltrom,<br /> xx gjennomgangsrom,<br /> xx dobbeltrom</p>
-	<p>8 timer dugnad per semester</p>
-	<p>Blindernånden<br />Godt sosialt miljø</p>
-	<p class="soknadsknapp">
-		Klar for å flytte inn?
-		<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
-	</p>
-</section>
 
 <p>På Blindern Studenterhjem er det 143 enkeltrom, 32 kombinasjonsrom og 20 dobbeltrom.
 Det er tre priskategorier; enkeltrom, kominasjonsrom og dobbeltrom. Kombinasjonsrom betyr at
 det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til den som bor ytterst.</p>
+<p><a href="studentbolig">Les mer om boligtilbudet vårt &raquo;</a></p>
+</div>
 
 
 <div class="romgrupper">
@@ -69,24 +72,28 @@ det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til 
 </div>
 
 
-<h2 style="margin-top: 25px">Like ved Universitetet i Oslo</h2>
-<p class="index_kart_img">
-	<a href="/studentbolig/beliggenhet"><img src="/graphics/layout/kart_ikon.png" alt="Kart" /></a>
-</p>
-<p>Studenterhjemmet ligger sentralt i Oslo, midt mellom universitetsbygningene på Blindern. Det er god kollektivforbindelse med både T-bane og trikk. Kort vei til universitetsbygningene i sentrum.</p>
+<div class="index_group">
+	<h2 style="margin-top: 25px">Like ved Universitetet i Oslo</h2>
+	<p class="index_kart_img">
+		<a href="/studentbolig/beliggenhet"><img src="/graphics/layout/kart_ikon.png" alt="Kart" /></a>
+	</p>
+	<p>Studenterhjemmet ligger sentralt i Oslo, midt mellom universitetsbygningene på Blindern. Det er god kollektivforbindelse med både T-bane og trikk. Kort vei til universitetsbygningene i sentrum.</p>
+</div>
 
-<h2 style="margin-top: 25px">Et unikt sosialt milj&oslash;</h2>
-<p>
-	Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
-	arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
-<p>Som beboer har man mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
-	Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
-	p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
-</p>
-
-<p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
-å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
-som kunne tenke seg å bidra til et godt miljø.</p>';
+<div class="index_group">
+	<h2 style="margin-top: 25px">Et unikt sosialt milj&oslash;</h2>
+	<p>
+		Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
+		arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
+	<p>Som beboer har man mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
+		Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
+		p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
+	</p>
+	<p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
+	å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
+	som kunne tenke seg å bidra til et godt miljø.</p>
+	<p><a href="livet">Les mer om livet på BS &raquo;</a></p>
+</div>';
 
 // hent fire tilfeldige bilder fra galleriet
 // TODO: tar ikke høyde for at parent galleriet evt. er skjult
