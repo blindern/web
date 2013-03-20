@@ -40,7 +40,7 @@ echo '
 <p>P&aring; oppslagstavlen finnes oppdatert
 	informasjon om Kollegiets virksomhet, og det er Kollegiet
 	beboerne oppfordres til &aring; kontakte vedr&oslash;rende
-	sp&oslash;rsm&aring;l om interne forhold.
+	sp&oslash;rsm&aring;l om interne forhold. <a href="/livet/kollegiet">Mer om Kollegiet</a></p>
 </p>
 <h2>Husfar</h2>
 <p>
@@ -49,5 +49,5 @@ echo '
 	eller hun er en tidligere Blindern-beboer som gjerne
 	befinner seg i fullt arbeid ved siden av forpliktelsene
 	p&aring; Studenterhjemmet. Husfar disponerer leiligheten
-	nederst i porten, og velges av r&aring;det.
+	i den sørlige delen av porten, og velges av r&aring;det.
 </p>';

@@ -8,7 +8,7 @@ html {
 }
 body {
 	font-size: 14px;
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.4em;
 	color: #222;
 	
@@ -86,7 +86,7 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 #menu_main li.activesub a {
 	background-color: #DDD;
@@ -153,7 +153,7 @@ body {
 /* undermenyen */
 #menu_sub {
 	background-color: #DDD;
-	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-family: Arial, Helvetica, sans-serif;
 	
 	margin: 0 0 -10px 0;
 	padding: 10px 0 0 10px;
@@ -242,7 +242,7 @@ p {
 	margin: 0 0 13px 0;
 }
 h1 {
-	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	margin-top: 5px;
 	margin-bottom: 10px;
@@ -253,12 +253,17 @@ h2, h3 {
 	margin: 15px 0 2px 0;
 }
 #menu_sub h1, h2, h3, legend {
-	font-family: Georgia, 'New Century Schoolbook', 'Nimbus Roman No9 L', serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 }
 
 h2 {
+	font-size: 16px;
+}
+h3 {
 	font-size: 15px;
+	font-style: italic;
+	font-weight: normal;
 }
 
 .clear { clear: both }
@@ -287,6 +292,9 @@ ul li, ol li {
 }
 ul.spaced li {
 	margin: 0.8em 0;
+}
+.ul_header {
+	margin: 15px 0 0;
 }
 
 .u { text-decoration: underline }
@@ -637,7 +645,7 @@ ul.arrangementer li {
 }
 .ledigeplasser h2 {
 	text-decoration: underline;
-	margin-bottom: 2px;
+	margin: 0 0 2px 0;
 }
 .ledigeplasser p { margin: 10px 0 0 }
 .ledigeplasser .soknadsknapp {
@@ -1017,32 +1025,17 @@ ul.jubbooks span.filesize {
 
 
 
-/* Bilder i bunn på forsiden */
-.img_line_header {
-	clear: both;
-	background-color: #DDD;
-	margin: 0 -10px;
-	padding: 15px 0 0 0;
-	max-width: none !important;
-	font-size: 12px;
-	color: #888;
-	text-align: center;
-}
 .img_line {
-	background-color: #EEE;
 	margin: 0 -10px;
 	padding: 0 0 10px 10px;
-	/*clear: both;*/
+	clear: both;
 }
 .img_line p {
 	display: inline-block;
 	vertical-align: top;
-	margin: 10px 9px 4px 8px;
+	margin: 10px 3px 4px 3px;
 	
-	width: 202px;
-
-	/*max-height: 185px;*/
-	/*overflow: hidden;*/
+	width: 80px;
 }
 .img_line p:first-child {
 	margin-left: 0;
@@ -1056,18 +1049,18 @@ ul.jubbooks span.filesize {
 }
 .img_line span.imgwrap1 {
 	display: block;
-	border: 1px solid #000;
-	max-height: 130px;
+	border: none;
+	max-height: 52px;
 	overflow: hidden;
 	position: relative;
 	background-color: #000;
 }
 .img_line span.imgwrap2 {
 	display: block;
-	height: 400px;
-	line-height: 400px;
+	height: 160px;
+	line-height: 160px;
 	position: relative;
-	top: -135px;
+	top: -56px;
 	vertical-align: middle;
 }
 .img_line img {
@@ -1077,18 +1070,8 @@ ul.jubbooks span.filesize {
 	border: 0;
 	vertical-align: middle;
 }
-.img_line span.imgtext {
-	display: block;
-	font-style: italic;
-	font-size: 11px;
-	
-	max-width: 200px;
-	line-height: 1.1em;
-	margin: 2px 0 3px;
 
-	/*max-height: 30px;*/
-	/*overflow: hidden;*/
-}
+
 
 
 /* dette er bs */
@@ -1097,7 +1080,7 @@ ul.jubbooks span.filesize {
 	width: 160px;
 	background-color: #F0F0F0;
 	padding: 7px;
-	margin: 15px 15px 15px;
+	margin: 0 15px 15px 10px;
 	border: 1px solid #CCC;
 	font-size: 12px;
 	text-align: center;
@@ -1171,31 +1154,58 @@ ul.jubbooks span.filesize {
 
 
 
+.romgrupper {
+	text-align: center;
+}
 .romgruppe {
 	display: inline-block;
-	padding: 5px;
-	margin: 0 10px 5px 0;
+	padding: 6px;
+	margin: 0 5px 5px 0;
 	border: 1px solid #DDD;
 
 	background-color: rgba(0, 157, 202, .1);
 	border-color: rgba(0, 157, 202, .3);
 
+	text-align: center;
+
 	/*background-color: #d3e9f1;
 	background-color: rgba(220, 233, 241, .8);*/
 }
-.romgruppe h2 {
-	margin-top: 0;
+.romgruppe a {
+	text-decoration: none;
+	color: inherit;
 }
-.romgruppe p {
+.romgruppe:hover {
+	background-color: rgba(0, 157, 202, .2);
+}
+.romgruppe .h2 {
+	margin-top: 0;
+	font-weight: bold;
+}
+.romgruppe div {
 	margin: 3px 0;
 }
-.romgruppe p:last-child {
+.romgruppe div:last-child {
 	margin-bottom: 0;
 }
 .romgruppe .pris {
 	font-style: italic;
-	text-align: center;
 }
 .romgruppe .more {
-	text-align: center;
+	color: #555;
+}
+.romgruppe:hover .more {
+	color: 000;
+	text-decoration: underline;
+}
+
+
+
+.index_kart_img {
+	float: left;
+	margin: 2px 10px 0 0;
+}
+.index_kart_img img {
+	border: 0;
+	margin: 0;
 }

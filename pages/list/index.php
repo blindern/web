@@ -4,6 +4,7 @@ bs_side::$page_class = "forside";
 
 echo '
 <div class="right_section">
+	<p style="float: right">Trykk for større bilder og bildegalleri.</p>
 	<p class="img">
 		<a href="studentbolig/beliggenhet#kart"><img src="/graphics/layout/kart.jpg" alt="Kart over området rundt Blindern Studenterhjem" />
 		<span>Blindern Studenterhjem ligger sentralt plassert mellom universitetsbygningene på Blindern. Trykk for stort kart</span></a>
@@ -15,49 +16,66 @@ echo '
 echo '
 <h1>Velkommen til Blindern Studenterhjem</h1>
 
-<p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig - det er et hjem.
+<p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig.
 Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
 
-<div class="romgruppe">
-	<h2>Enkeltrom</h2>
-	<p class="pris">kr x xxx</p>
-	<p>Inkl. mat og strøm</p>
-	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
-</div>
-
-<div class="romgruppe">
-	<h2>Dobbeltrom</h2>
-	<p class="pris">kr x xxx</p>
-	<p>Inkl. mat og strøm</p>
-	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
-</div>
-
-<div class="romgruppe">
-	<h2>Gjennomgangsrom</h2>
-	<p class="pris">kr x xxx</p>
-	<p>Inkl. mat og strøm</p>
-	<p class="more"><a href="studentbolig">Se mer &raquo;</a></p>
-</div>
-
-
-<div class="dette_er_bs">
+<section class="dette_er_bs">
 	<h2>Dette er BS</h2>
 	<p>230 studenter</p>
 	<p>Full kost og losji</p>
-	<p>xx parhybler, xx enkeltrom, xx gjennomgangsrom, xx dobbeltrom, xx kott</p>
-	<p>8 timer dugnad i semesteret</p>
-	<p>Blindernånden</p>
+	<p>xx xx enkeltrom,<br /> xx gjennomgangsrom,<br /> xx dobbeltrom</p>
+	<p>8 timer dugnad per semester</p>
+	<p>Blindernånden<br />Godt sosialt miljø</p>
 	<p class="soknadsknapp">
 		Klar for å flytte inn?
 		<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
 	</p>
+</section>
+
+<p>På Blindern Studenterhjem er det 143 enkeltrom, 32 kombinasjonsrom og 20 dobbeltrom.
+Det er tre priskategorier; enkeltrom, kominasjonsrom og dobbeltrom. Kombinasjonsrom betyr at
+det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til den som bor ytterst.</p>
+
+
+<div class="romgrupper">
+
+<div class="romgruppe">
+	<a href="studentbolig">
+		<div class="h2">Enkeltrom</div>
+		<div class="pris">kr x xxx / mnd</div>
+		<div>Inkl. mat og strøm</div>
+		<div class="more">Flere detaljer &raquo;</div>
+	</a>
 </div>
 
-<h2>Like ved Universitetet i Oslo</h2>
-<p>Studenterhjemmet ligger sentralt i Oslo, og har god kollektivforbindelse med både T-bane og trikk. Det tar
-i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning på juridisk fakultet i sentrum.</p>
+<div class="romgruppe">
+	<a href="studentbolig">
+		<div class="h2">Gjennomgangsrom</div>
+		<div class="pris">kr x xxx / mnd</div>
+		<div>Inkl. mat og strøm</div>
+		<div class="more">Flere detaljer &raquo;</div>
+	</a>
+</div>
 
-<h2>Et unikt sosialt milj&oslash;</h2>
+<div class="romgruppe">
+	<a href="studentbolig">
+		<div class="h2">Dobbeltrom</div>
+		<div class="pris">kr x xxx / mnd</div>
+		<div>Inkl. mat og strøm</div>
+		<div class="more">Flere detaljer &raquo;</div>
+	</a>
+</div>
+
+</div>
+
+
+<h2 style="margin-top: 25px">Like ved Universitetet i Oslo</h2>
+<p class="index_kart_img">
+	<a href="/studentbolig/beliggenhet"><img src="/graphics/layout/kart_ikon.png" alt="Kart" /></a>
+</p>
+<p>Studenterhjemmet ligger sentralt i Oslo, midt mellom universitetsbygningene på Blindern. Det er god kollektivforbindelse med både T-bane og trikk. Kort vei til universitetsbygningene i sentrum.</p>
+
+<h2 style="margin-top: 25px">Et unikt sosialt milj&oslash;</h2>
 <p>
 	Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
 	arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
@@ -66,20 +84,9 @@ i underkant av 10 minutter fra man går fra rommet til man sitter i forelesning 
 	p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
 </p>
 
-<h2>Tre daglige m&aring;ltider inkludert i husleien</h2>
-<p>
-	Tre m&aring;ltider serveres hver dag. De daglige m&aring;ltidene
-	s&oslash;rger for et sunt kosthold samtidig som de er sv&aelig;rt tidsbesparende for beboerne,
-	og er noe av det som gj&oslash;r Blindern Studenterhjem til et godt og unikt sted &aring; bo.
-</p>
-
-<h2>Flytte inn?</h2>
 <p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
 å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
-som kunne tenke seg å bidra til et godt miljø.</p>
-<p>På disse sidene kan du lese mer og bli kjent med studenterhjemmet. Sitter du fremdeles igjen med noen spørsmål, ta kontakt!</p>
-
-<p class="img_line_header">Utdrag fra den digitale omvisningen <span>(trykk på bildene)</span>:</p>';
+som kunne tenke seg å bidra til et godt miljø.</p>';
 
 // hent fire tilfeldige bilder fra galleriet
 // TODO: tar ikke høyde for at parent galleriet evt. er skjult
@@ -97,7 +104,7 @@ while ($row = mysql_fetch_assoc($result)) {
 	$data[] = array($row['gi_id'], null, $d, null);
 }
 
-$s = array_rand($data, 4);
+$s = array_rand($data, 10);
 $c = array();
 foreach ($s as $id) $c[] = $data[$id];
 

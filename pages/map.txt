@@ -10,9 +10,9 @@ Om BS
 
 Studentbolig i Oslo
 	studentbolig	Studentbolig i Oslo
-	studentbolig/beliggenhet	Beliggenhet
 	studentbolig/velferdstilbud	Velferdstilbud
 	studentbolig/leiepriser	Leiepriser
+	studentbolig/beliggenhet	Beliggenhet
 
 Søk deg inn
 	opptak/sok_om_plass	Søknad om plass

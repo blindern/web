@@ -38,7 +38,8 @@ echo '
 <h1>Velferdstilbud</h1>
 
 <p>Det finnes en rekke felles velferdstilbud p&aring; Blindern Studenterhjem. De fleste
-drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p>
+drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden. Alle
+rom som er tilgjengelig for studentene brukes fritt av beboerne.</p>
 
 <ul>
 	<li>Dagens aviser til frokost</li>
@@ -54,14 +55,7 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 	<li><a href="omvisning/52">Store grøntområder ute</a></li>
 </ul>
 
-<p>Oppbevaring:</p>
-<ul>
-	<li><a href="omvisning/9">Sykkelkjeller</a></li>
-	<li><a href="omvisning/12">Møbelkjeller</a></li>
-	<li>Skistall</li>
-</ul>
-
-<p>Sportslige muligheter:</p>
+<p class="ul_header">Sportslig:</p>
 <ul>
 	<li><a href="omvisning/58">Gymsal og styrkerom</a></li>
 	<li><a href="omvisning/17">Tennisbane</a></li>
@@ -70,16 +64,23 @@ drives av studentene gjennom oppmennstillingene under Kollegiet og Velferden.</p
 	<li><a href="omvisning/15">Bordtennisbord</a></li>
 </ul>
 
-<p>Sosialt:</p>
+<p class="ul_header">Sosialt:</p>
 <ul>
 	<li>Mange forskjellige hagespill</li>
 	<li>En rekke brettspill</li>
 	<li><a href="omvisning/109">Egen pub og festlokaler</a></li>
+	<li><a href="../smaabruket">Egen <i>hytte</i> i Bærumsmarka</a></li>
 	<li><a href="omvisning/48">Festrom som tåler en støyt</a></li>
-	<li><a href="../smaabruket">Hytte i Bærumsmarka</a></li>
 </ul>
 
-<p>Praktiske formål:</p>
+<p class="ul_header">Oppbevaring:</p>
+<ul>
+	<li><a href="omvisning/9">Sykkelkjeller</a></li>
+	<li><a href="omvisning/12">Møbelkjeller</a></li>
+	<li>Skistall</li>
+</ul>
+
+<p class="ul_header">Praktiske formål:</p>
 <ul>
 	<li>Projektor til utlån</li>
 	<li>Videokamera til utlån</li>

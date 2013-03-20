@@ -27,21 +27,21 @@ echo get_rand_images_right(
 
 echo '
 <h1>Studentbolig i Oslo</h1>
-<h2>Hva slags bolig tilbyr BS?</h2>
-<p>
+
+<p>Romfordelingen på Blindern Studenterhjem er basert på ansiennitetsprinsippet.
+Det betyr at du ikke kan velge rom når du skal flytte inn. Vanligvis flytter
+det inn ca 100 studenter i høstsemesteret og ca 40 av disse flytter inn på dobbeltrom.</p>
+
+<!--<p>
 	Det er plass til over 220 studenter p&aring;
 	studenterhjemmet. For &aring; hjelpe beboerne inn i
 	studenterhjemmets unike sosiale milj&oslash; flytter
 	de aller fleste f&oslash;rst inn p&aring; dobbeltrom
 	eller kombinasjonsrom. Et kombinasjonsrom er to rom
 	hvor man m&aring; g&aring; gjennom det ene rommet for
-	&aring; komme til det andre.</p>
-<p>Etter et kort opphold p&aring;
-	dobbeltrom eller kombinasjonsrom vil man kunne søke om plass
-	på ledige enkeltrom. Romfordelingen er basert p&aring;
-	ansiennitet, og desto lengre tid du bor p&aring; studenterhjemmet,
-	jo st&oslash;rre og nyere rom vil du kunne f&aring;.
-</p>
+	&aring; komme til det andre.</p>-->
+
+
 
 <div class="mattider">
 	<h2>Mat-tider</h2>
@@ -50,6 +50,10 @@ echo '
 	<p><u>Søndag:</u><br />Frokost 10.00-11.30. Middag 17.00-18.30. Ingen kveldsmat.</p>
 </div>
 
+<p>Vanlig botid på dobbeltrom er ca et halvt år. Ettersom botiden og ansienniteten øker kan du
+søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og mer attraktive rom.</p>
+<p>Prisene på enkeltrom, kombinasjonsrom og dobbeltrom er den samme for nye og eldre beboere. <a href="/studentbolig/leiepriser">Se leiepriser &raquo;</a></p>
+
 
 <h2>Hva er inkludert i husleien?</h2>
 
@@ -57,54 +61,58 @@ echo '
 	<li><span class="showoff keepon"><a href="#" class="activate">Tre måltider og matpakke hver dag</a></span>
 		<div class="showon">
 
-			<p>
-				Hver dag serveres tre m&aring;ltider p&aring; Blindern
-				Studenterhjem med varierende retter med fokus på et sunt tilbud.
-				Disse foreg&aring;r til fleksible tider, er inkludert i husleien
-				og er svært tidsbesparende for deg som beboer. I tillegg kan du
-				sm&oslash;re matpakke ved frokost og kvelds og p&aring;
-				dagen hente kaffe og te fra matsalen.
-			</p>
-			<ul class="spaced">
-				<li><span class="u">Frokostbuffeten</span> inkluderer et bredt
-				utvalg av br&oslash;d, knekkebr&oslash;d, p&aring;legg
-				og frokostblandinger, samt ulike typer melk og juice.</li>
+			<p>Menyen som serveres tar utgangspunkt i at det skal være norsk hverdagsmat,
+			med gode råvarer og variert meny, som skal følge ernæringsmessige anbefalinger.
+			Blant annet kan nevnes; havregrøt, vegetarmat, supper, internasjonale retter,
+			hjemmebakt brød og friske grønnsaker.</p>
 
-				<li><span class="u">Middagen</span> som serveres hver dag er variert
-				og n&aelig;ringsrik. Som beboer vil du i l&oslash;pet
-				av en uke f&aring; servert b&aring;de kj&oslash;tt
-				og fisk, samt et sortiment av gr&oslash;nnsaker og
-				annet tilbeh&oslash;r. Hver fredag serveres den s&aring;kalte
-				&#8221;ungdomsmiddagen&#8221; som gjerne best&aring;r
-				av hamburgere, tacos, eller bugnende buffeter med
-				meksikansk eller orientalsk tema, og s&oslash;ndag
-				middag er spesielt forseggjort og inkluderer dessert.</li>
-
-				<li><span class="u">Kveldsmaten</span> er ogs&aring; en buffet
-				som stort sett tilsvarer utvalget man har til frokostbuffeten.</li>
+			<ul>
+				<li>Frokost</li>
+				<li>Middag</li>
+				<li>Kveldsmat</li>
+				<li>Matpakke til frokost og kveldsmat</li>
 			</ul>
 
 		</div></li>
 
 	<li><div class="showoff keepon"><a href="#" class="activate">Møblert rom</a></div>
-		<div class="showon">- Rommet er fullt m&oslash;blert n&aring;r du flytter inn, men du har ogs&aring;
+		<div class="showon">Rommet er fullt m&oslash;blert n&aring;r du flytter inn, men du har ogs&aring;
 		mulighet til &aring; bytte ut noen av studenterhjemmets
 		m&oslash;bler med dine egne.</div></li>
 
-	<li><div class="showoff keepon"><a href="#" class="activate">Internett</a></div>
-		<div class="showon">- Dette er den samme nettforbindelsen som Studentsamskipnaden i Oslo
-		tilbyr i sine studentbyer.</div></li>
+	<li>Internett</li>
 
-	<li><div class="showoff keepon"><a href="#" class="activate">Strøm</a></div>
-		<div class="showon">- Str&oslash;mforbruk er inkludert i den faste leieprisen. Dette bidrar til
-		&aring; gi beboerne en forutsigbar &oslash;konomi.</div></li>
+	<li>Strøm</li>
 
-	<li><div class="showoff keepon"><a href="#" class="activate">Vaskeri</a></div>
-		<div class="showon">
-		Studentvaskeriet gir mulighet for vask av kl&aelig;r, senget&oslash;y og lignende. Dette
-		betaler man allerede gjennom husleia, og man kan vaske så lenge det er ledige maskiner.
-		'.get_img_p(140, "", "").'
-		</div></li>
+	<li>Vaskeri</li>
 
-	<li>Et bredt og unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a> samt det gode <a href="/livet">miljøet</a> studenterhjemmet byr på.</li>
-</ul>';
+	<li>Et unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a> samt et godt og sosialiserende <a href="/livet">miljø</a></li>
+</ul>
+
+
+<h2>Sommerutflytting</h2>
+<p>Årlig botid på Blindern Studenterhjem er 10 måneder, dvs fom. 15. august tom. 15. juni.
+Det betyr at du betaler kun 10 måneders leie hvert år. Om sommeren må du flytte ut av rommet ditt, men du kan lagre tingene dine i boder på BS.
+I de to månedene midt på sommeren leies BS ut til Den Internasjonale Sommerskolen på Universitetet i Oslo.
+Dette bidrar til økte inntekter til BS og å holde husleien lav for studentene.</p>
+
+
+
+<h2>Romtyper</h2>
+<p>Bilder fra ulike rom kan sees i <a href="/omvisning/oversikt#c4">den digitale omvisningen</a>.</p>
+
+<p><i>Enkeltrom</i><br />De fleste bor på enkeltrom. Disse er alt fra xx kvm opp til xx kvm for de største rommene.</p>
+<p>I tillegg finnes også &quot;porten&quot; hvor det er fire enkeltrom som deler entré, kjøkken, bad
+og stor stue, men de som bor her har som regel bodd lenge på studenterhjemmet.</p>
+
+<p><i>Gjennomgangsrom</i><br />Gjennomgangsrom betyr at et rom ligger innenfor det andre. Det ytterste rommet
+kalles for &quot;gjennomgangsrommet&quot; og det innerste for &quot;midtstuen&quot;.
+Noen av midtstuene har også adgang ut til plenen.</p>
+<p>Det er også populært at par bor på disse rommene, slik at man får et
+soverom og en stue.</p>
+
+<p><i>Dobbeltrom</i><br />Det finnes 20 dobbeltrom på studenterhjemmet, og dette er det vanligste rommet
+man flytter inn på. Rommene er fra xx opp til xx kvm. Etter å ha bodd på dobbeltrom sitter man
+igjen med et godt og nært vennskap med personen man har delt rom med.</p>
+
+';

@@ -418,7 +418,7 @@ function get_img_line(array $img_list) {
 		}
 
 		// 0 => gallery_id, alt, text, fototext
-		$ret .= preg_replace("~(<img.+?/>)~", '<span class="imgwrap1"><span class="imgwrap2">$1</span></span>', get_img_p($img[0], $img[1], $img[2], $img[3], null, "pageline"));
+		$ret .= preg_replace("~(<img.+?/>)~", '<span class="imgwrap1"><span class="imgwrap2">$1</span></span>', get_img_p($img[0], $img[1], null, null, null, "pagelinesmall"));
 	}
 
 	$ret .= '</div>';

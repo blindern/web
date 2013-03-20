@@ -11,13 +11,12 @@ echo '
 
 '.get_right_img_gal(155, null, "Blindern Studenterhjem sett fra Universitet i Oslo.", "Foto: Mats Julius Stensrud").'
 
-<h1>Beliggenhet</h1>
+<h1>Beliggenhet sentralt i Oslo</h1>
 
-<h2>Sentralt i Oslo</h2>
 <p>
-	Blindern Studenterhjem ligger sentralt i Oslo. Stedet
+	Blindern Studenterhjem
 	ligger ved siden av Universitetet i Oslo, campus Blindern.
-	Det ligger ogs&aring; like 	ved trikkestopp og t-banestopp slik at man er
+	Det ligger ogs&aring; like ved trikkestopp og t-banestopp slik at man er
 	n&aelig;rt knyttet til andre deler av byen.
 </p>
 
@@ -30,44 +29,36 @@ echo '
 </p>
 
 <h2>Friluftsomr&aring;der</h2>
-<p>
-	Det er enkel og kort vei til friluftsomr&aring;der
-	p&aring; Sognsvann og videre til B&aelig;rumsmarka.
-</p>
+<p>Stien opp til Sognsvann begynner ved Rikshospitalet, som ligger under 5 minutter unna. Om sommeren
+blir det arrangerte ukentlige joggeturer på dette strekket.</p>
+
 
 <h2>T-bane</h2>
-<p>
-	Fra Jernbanetorget, Stortinget, Nationaltheateret.
-	F&oslash;lgende linjer stopper ved Blindern: Linje 3 Storo, linje
-	6 Sognsvann og linje 4 Ringen. T-banestoppet
-	p&aring; Blindern er like ved studenthjemmet s&aring;
-	det er bare &aring; f&oslash;lge kartet over for &aring;
-	finne frem. Med t-banen er det enkelt &aring; komme
-	seg til Juridiskfakultet nede i sentrum, noe som tar ca. 10 minutter dør til dør.
+<p>Linje 3 (Storo/Mortensrud), linje 4 (Ringen/Bergkrystallen) og linje 6 (Sognsvann/Ringen)
+	stopper på Blindern T-banestopp. Alle går gjennom sentrum, og T-banestoppet ligger
+	rett ved siden av studenthjemmet. Se kart nederst på siden.
 </p>
+<p>Med t-banen er det enkelt &aring; komme seg til f.eks. Juridisk fakultet ved Nationaltheateret, noe som tar ca. 10 minutter dør til dør.</p>
 
 <h2>Trikk</h2>
 <p>
-	Trikkelinjen til Rikshospitalet g&aring;r forbi Blindern.
-	Her er det lett &aring; komme seg til Bislett og H&oslash;yskolen
+	Linje 17 (Rikshospitalet/Sinsen-Grefsen stasjon) og linje 18 (Rikshospitalet/Ljabru) stopper på
+	holdeplassen <i>Universitetet Blindern</i>, som ligger like ved studenthjemmet. <i>Forskningsparken</i> er også nærliggende holdeplass.
+</p>Her er det lett &aring; komme seg til Bislett og H&oslash;yskolen
 	i Oslo (ca. 10-12 minutter). For de som g&aring;r p&aring; medisinsk eller
-	odontologisk fakultet s&aring; ligger det kun to trikkestopp
+	odontologisk fakultet s&aring; ligger det kun tre trikkestopp
 	unna. F&oslash;lg kartet under for &aring; finne studenthjemmet
 	fra trikkestoppet.
 </p>
 
-<h2>Bil fra E18 (Kristansand, Stavanger) til Oslo.</h2>
-<p>
-	Kj&oslash;r mot Oslo helt til et skilt hvor det st&aring;r
-	Ring 2 Majorstuen. Ta av der og f&oslash;lg ring 2
-	til Majorstuen. Kj&oslash;r forbi Marinlyst og f&oslash;lg
-	ring 2 helt til det st&aring;r skilt til Blindern.
-	Ta av inn til Blindern. Kj&oslash;r helt inn mot Blindern
-	(Blindernveien) og ta av p&aring; siste avkj&oslash;rsel
-	til h&oslash;yre (Problemveien). Du f&oslash;lger
-	s&aring; denne veien og vil p&aring; venstre side
-	se studenthjemmet ca 100 meter oppe i bakken.
-</p>
+<h2>Bil/vei</h2>
+<p>Følg <i>Ring 3</i>. Ta av mot Rikshospitalet. Følg så mot Forskningsparken og følg
+	trikkeskinnene. Følg så veien videre og du passerer studenterhjemmet på din høyre side.
+	Innkjørsel til studenterhjemmet er gjennom siste innkjøring til parkeringsplassene før man passerer studenthjemmet.</p>
+<p>Kommer man fra sentrum følger man Ring 2 til man kommer til avkjøringen mot Blindern. Følg
+så denne avkjøringen til man passerer studenterhjemmet. De store gule bygningene med stort parkanlegg
+gjør det lett gjenkjennelig.</p>
+<p>Kartet nedenfor gir god forklaring.</p>
 
 <h3>Parkering</h3>
 <p>

@@ -62,6 +62,11 @@ switch ($_GET['a'])
 				"pageline",
 				200,
 				400
+			),
+			"pagelinesmall" => array(
+				"pageline",
+				80,
+				160
 			)
 		);
 		if (!isset($sizes[$_GET['gi_size']]))
