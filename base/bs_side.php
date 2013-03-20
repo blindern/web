@@ -1,5 +1,7 @@
 <?php
 
+define("TILPASNING_FIL", ROOT."/pages/tilpasning.json");
+
 class pagedata
 {
 	public $path;
