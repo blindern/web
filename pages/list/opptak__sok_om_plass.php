@@ -574,10 +574,9 @@ switch (bs_side::$lang)
 				eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
 				blir behandlet med lik verdi.
 			</p>
-			<h2>Opptak av beboere for h&oslash;sten 2013</h2>
-			<p>
-				Opptak av beboere for h&oslash;sten 2013 skjer fortl&oslash;pende.
-			</p>';
+			<h2>Opptak av beboere</h2>
+			<p><b>Vår 2013:</b> Vi har for tiden ledige plasser og behandler søknader om innflytting nå fortløpende.<br />
+			   <b>Høst 2013:</b> Opptak av bebore for høsten 2013 skjer fortløpende utover våren.</p>';
 }
 
 bs_soknad::main();
