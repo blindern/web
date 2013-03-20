@@ -33,11 +33,11 @@ class bs_soknad
 			<p>
 				Fyll ut alle feltene i formularet under
 				for &aring; sende en elektronisk s&oslash;knad. Dersom
-				du ikke har f&aring;tt svar innen 10 arbeidsdager s&aring;
+				du ikke har f&aring;tt svar innen 15 arbeidsdager s&aring;
 				ber vi deg <a href="mailto:post@blindern-studenterhjem.no">ta kontakt</a> for å undersøke om vi har mottatt søknaden.
 			</p>', '
 			<h2>Electronic application</h2>
-			<p>Fill in the fields below to send an electronic application. If you do not get any reply within 10 work days,
+			<p>Fill in the fields below to send an electronic application. If you do not get any reply within 15 work days,
 				we ask you to <a href="mailto:post@blindern-studenterhjem.no">contact us</a> so we can check if we have received your application.</p>'),
 		"app_error"        => array('
 			<p class="soknad_feil_info">Søknaden ble ikke korrekt fylt ut og er <span class="u">ikke</span> sendt inn. Korriger feilene nedenfor og send inn på nytt.</p>', '
@@ -145,14 +145,14 @@ Application was sent on %s'),
 
 %s
 
-Behandlingstiden er maks 10 dager. Dersom vi ikke har tatt kontakt innen dette, kan det være at vi allikevel ikke har registrert din søknad. Ta i så fall kontakt ved å svare på denne e-posten, slik at vi kan bekrefte at den er mottatt.
+Behandlingstiden er maks 15 dager. Dersom vi ikke har tatt kontakt innen dette, kan det være at vi allikevel ikke har registrert din søknad. Ta i så fall kontakt ved å svare på denne e-posten, slik at vi kan bekrefte at den er mottatt.
 
 Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 15 00 i kontortiden mellom 09.00 - 15.00 på hverdager. Se også www.blindern-studenterhjem.no for oppdatert informasjon.',
 			'Receipt for application:
 
 %s
 
-Processing time is maximum 10 days. If we do not contact you within this, it might be because we accidentally didn\'t register your application. We then ask you to reply to this e-mail, so that we can confirm it has been received.
+Processing time is maximum 15 days. If we do not contact you within this, it might be because we accidentally didn\'t register your application. We then ask you to reply to this e-mail, so that we can confirm it has been received.
 
 If you have any futher questions, you can contact the administration on phone (+47) 23 33 15 00 in office time between 09.00-15.00 weekdays (CET/CEST). See also www.blindern-studenterhjem.no/en for updated information.')
 	);
