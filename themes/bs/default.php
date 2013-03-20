@@ -48,30 +48,31 @@ class theme_bs_default
 		}
 		
 		echo '</span></a></h1>';
-		
-		$show_application_box = false;
+
+		require_once ROOT."/base/tilpasning.php";
+		$t = new tilpasning();
+
+		$suffix = bs_side::$lang == "en" ? "_en" : "";
+		if (isset($_POST['tilpasset_hjorne']) && isset($_POST['preview_en'])) $suffix = "_en";
+
+		$show_application_box = isset($_POST['tilpasset_hjorne']) ? isset($_POST['active'.$suffix]) : $t->get("hjorne_active$suffix");
 		if ($show_application_box)
 		{
-			echo '
-			<div class="ledigeplasser">';
-		
-			switch (bs_side::$lang)
-			{
-				case "en":
-					echo '
-				<h2>Applications</h2>
-				<p>Applications for fall 2011 are evaluated throughout the summer.</p>
-				<p>Apply an <a href="'.ess::$s['rpath'].'/en/application">electronic application &raquo;</a></p>';
-				break;
-				
-				default:
-					echo '
-				<h2>Inntak</h2>
-				<p>Søknad for plass til høsten 2011 evalueres fortløpende utover sommeren.</p>
-				<p>Send inn <a href="'.ess::$s['rpath'].'/opptak/sok_om_plass">elektronisk søknad &raquo;</a></p>';
+			if (isset($_POST['tilpasset_hjorne'])) {
+				$title = postval("title$suffix");
+				$c = postval("content$suffix");
+			} else {
+				$title = $t->get("hjorne_title$suffix");
+				$c = $t->get("hjorne_content$suffix");
 			}
-			
+
+			// vi ønsker ikke at kommentarer skal komme med
+			$c = preg_replace("/<!--(?!<!)[^\\[>].*?-->/s", "", $c);
+
 			echo '
+			<div class="ledigeplasser">
+				<h2>'.htmlspecialchars($title).'</h2>
+				'.$c.'
 			</div>';
 		}
 		
