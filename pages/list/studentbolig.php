@@ -76,9 +76,11 @@ søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og me
 		</div></li>
 
 	<li><div class="showoff keepon"><a href="#" class="activate">Møblert rom</a></div>
-		<div class="showon">Rommet er fullt m&oslash;blert n&aring;r du flytter inn, men du har ogs&aring;
-		mulighet til &aring; bytte ut noen av studenterhjemmets
-		m&oslash;bler med dine egne.</div></li>
+		<div class="showon">
+			<p>Rommet er fullt m&oslash;blert n&aring;r du flytter inn og du kan så innrede med dette slik du måtte ønske.</p>
+			<p>Alle rommene har seng, skrivebord, stol, bokhylle, kommode, bordlampe, søppelbøtte og skap.</p>
+
+		</div></li>
 
 	<li>Internett</li>
 
@@ -101,17 +103,22 @@ Dette bidrar til økte inntekter til BS og å holde husleien lav for studentene.
 <h2>Romtyper</h2>
 <p>Bilder fra ulike rom kan sees i <a href="/omvisning/oversikt#c4">den digitale omvisningen</a>.</p>
 
-<p><i>Enkeltrom</i><br />De fleste bor på enkeltrom. Disse er alt fra xx kvm opp til xx kvm for de største rommene.</p>
+<h3>Enkeltrom</h3>
+<p>De fleste bor på enkeltrom. Disse er alt fra xx kvm opp til xx kvm for de største rommene.</p>
 <p>I tillegg finnes også &quot;porten&quot; hvor det er fire enkeltrom som deler entré, kjøkken, bad
 og stor stue, men de som bor her har som regel bodd lenge på studenterhjemmet.</p>
 
-<p><i>Gjennomgangsrom</i><br />Gjennomgangsrom betyr at et rom ligger innenfor det andre. Det ytterste rommet
+<h3>Kombinasjonsrom</h3>
+<p>Kombinasjonsrom betyr at et rom ligger innenfor det andre,
+slik at den som bor på det innerste rommet gå gjennom rommet til den som bor ytterst.
+Det ytterste rommet
 kalles for &quot;gjennomgangsrommet&quot; og det innerste for &quot;midtstuen&quot;.
-Noen av midtstuene har også adgang ut til plenen.</p>
+Noen av midtstuene har også adgang ut til plenen/atriet.</p>
 <p>Det er også populært at par bor på disse rommene, slik at man får et
 soverom og en stue.</p>
 
-<p><i>Dobbeltrom</i><br />Det finnes 20 dobbeltrom på studenterhjemmet, og dette er det vanligste rommet
+<h3>Dobbeltrom</h3>
+<p>Det finnes 18 dobbeltrom på studenterhjemmet, og dette er det vanligste rommet
 man flytter inn på. Rommene er fra xx opp til xx kvm. Etter å ha bodd på dobbeltrom sitter man
 igjen med et godt og nært vennskap med personen man har delt rom med.</p>
 

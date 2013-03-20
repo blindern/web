@@ -12,9 +12,11 @@ echo '
 	
 	<section class="dette_er_bs">
 		<h2>Dette er BS</h2>
-		<p>230 studenter</p>
+		<p>215 studenter</p>
 		<p>Full kost og losji</p>
-		<p>xx xx enkeltrom,<br /> xx gjennomgangsrom,<br /> xx dobbeltrom</p>
+		<p>147 enkeltrom,<br /> 16 gjennomgangsrom,<br /> 18 dobbeltrom</p>
+		<!-- INFO: parrom, f.eks. 712, telles som to enkeltrom
+		           brakkene er ikke talt med, heller ikke kottene -->
 		<p>8 timer dugnad per semester</p>
 		<p>Blindernånden<br />Godt sosialt miljø</p>
 		<p class="soknadsknapp">
@@ -33,9 +35,7 @@ echo '
 <p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig.
 Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
 
-<p>På Blindern Studenterhjem er det 143 enkeltrom, 32 kombinasjonsrom og 20 dobbeltrom.
-Det er tre priskategorier; enkeltrom, kominasjonsrom og dobbeltrom. Kombinasjonsrom betyr at
-det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til den som bor ytterst.</p>
+<p>På Blindern Studenterhjem er det 147 enkeltrom, 16 kombinasjonsrom og 18 dobbeltrom.</p>
 <p><a href="studentbolig">Les mer om boligtilbudet vårt &raquo;</a></p>
 </div>
 
@@ -45,7 +45,7 @@ det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til 
 <div class="romgruppe">
 	<a href="studentbolig">
 		<div class="h2">Enkeltrom</div>
-		<div class="pris">kr x xxx / mnd</div>
+		<div class="pris">kr 6 535 / mnd</div>
 		<div>Inkl. mat og strøm</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
@@ -53,8 +53,8 @@ det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til 
 
 <div class="romgruppe">
 	<a href="studentbolig">
-		<div class="h2">Gjennomgangsrom</div>
-		<div class="pris">kr x xxx / mnd</div>
+		<div class="h2">Kombinasjonsrom</div>
+		<div class="pris">kr 6 395 / mnd</div>
 		<div>Inkl. mat og strøm</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
@@ -63,7 +63,7 @@ det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til 
 <div class="romgruppe">
 	<a href="studentbolig">
 		<div class="h2">Dobbeltrom</div>
-		<div class="pris">kr x xxx / mnd</div>
+		<div class="pris">kr 6 160 / mnd</div>
 		<div>Inkl. mat og strøm</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
@@ -85,13 +85,13 @@ det er to rom, hvor den som bor på det innerste rommet går gjennom rommet til 
 	<p>
 		Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
 		arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
-	<p>Som beboer har man mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
+	<p>Som beboer har du mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
 		Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
 		p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
 	</p>
-	<p>Hvert semester flytter mange nye inn, og du kan være så heldig å få muligheten. Du trenger ikke
+	<p>Hvert semester flytter mange nye inn, og du kan også søke. Du trenger ikke
 	å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
-	som kunne tenke seg å bidra til et godt miljø.</p>
+	som kan tenke seg å bidra til et godt miljø.</p>
 	<p><a href="livet">Les mer om livet på BS &raquo;</a></p>
 </div>';
 

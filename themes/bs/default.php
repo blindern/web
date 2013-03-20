@@ -27,6 +27,14 @@ class theme_bs_default
 	{
 		jquery();
 		$content = ess::$b->page->content_get();
+
+		if (!MAIN_SERVER) {
+			bs_side::$page_class .= " devinfobody";
+			ess::$b->page->body_start .= '
+	<div class="devinfo">
+		<p>Du ser nå på utviklersiden og ikke den offisielle nettsiden.</p>
+	</div>';
+		}
 		
 		echo '<!DOCTYPE html>
 <html lang="no"'.(MAIN_SERVER ? '' : ' class="devserver"').'>

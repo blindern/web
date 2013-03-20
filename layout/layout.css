@@ -14,6 +14,24 @@ body {
 	
 	background: #A9A9A2 url(../graphics/layout/athene-bakgrunn.gif) repeat;
 }
+body.devinfobody {
+	background-position: 0 32px;
+	padding-top: 34px;
+}
+
+.devinfo p {
+	text-align: center;
+	margin: 0;
+	padding: 8px;
+	background: #333;
+	color: #FFF;
+	font-size: 16px;
+	position: fixed;
+	z-index: 10;
+	height: 18px;
+	width: 100%;
+	top: 0;
+}
 
 #body_wrap {
 	background: url(../graphics/layout/bakgrunn-opacity.png) repeat-x;
@@ -263,7 +281,7 @@ h2 {
 h3 {
 	font-size: 15px;
 	font-style: italic;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .clear { clear: both }
