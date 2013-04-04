@@ -131,7 +131,7 @@ echo '
 		<dt>31. mai</dt>
 		<dd>Kollegiekonstituering</dd>
 
-		<dt>31. mai</dt>
+		<dt>7. juni</dt>
 		<dd>Bukkehaugsfestivalen</dd>
 	</dl>
 	
@@ -182,6 +182,7 @@ echo '
 			<li>Flyttet dato for Bukkehaugsfestivalen fra 1. juni til 31. mai.</li>
 		</ul></li>
 		<li>18. mars 2013: La inn Zumba på tirsdager for IFBS.</li>
+		<li>4. april 2013: Flyttet dato for Bukkehaugsfestivalen fra 31. mai til 7. juni.</li>
 	</ul>
 </div>
 
