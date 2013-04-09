@@ -82,3 +82,45 @@
 08,5,Temadag
 08,6,Wienerpølser<br />Rester<br />Frukt
 08,7,Lammegryte<br />Dessert
+09,1,Fisk
+09,2,Kjøttpølser
+09,3,Fish'n chips
+09,4,Grønnsaksgryte
+09,5,Calzone
+09,6,Ertesuppe<br /><span style="color: #FF0000">Middagen serveres fra personalrommet kl 1300-1400<br />Ingen avsatt middag og kveldsmat i dag!</span>
+09,7,Kalvegryte
+10,1,Fisk
+10,2,Lapskaus
+10,3,Fisk i form
+10,4,Salt lammebog
+10,5,Wraps
+10,6,Pannekaker<br />Rester<br />Frukt
+10,7,Koteletter<br />Dessert
+11,1,Fisk
+11,2,&laquo;Fant på frysa show&raquo;
+11,3,Seibiff m/løk
+11,4,Wok
+11,5,&laquo;Howdy cowboy&raquo;
+11,6,Pytt i panne<br />Rester<br />Frukt
+11,7,Kalkunbiff<br />Dessert
+12,1,Fisk
+12,2,Gryter
+12,3,Pasta m/kjøttsaus
+12,4,Fiskesuppe
+12,5,<span style="color: #FF0000">Påskeferie - frokost er siste måltid</span>
+12,6,<span style="color: #FF0000">Påskeferie</span>
+12,7,<span style="color: #FF0000">Påskeferie</span>
+13,1,<span style="color: #FF0000">Påskeferie</span>
+13,2,<span style="color: #FF0000">Påskeferie</span>
+13,3,<span style="color: #FF0000">Påskeferie</span>
+13,4,<span style="color: #FF0000">Påskeferie</span>
+13,5,<span style="color: #FF0000">Påskeferie</span>
+13,6,<span style="color: #FF0000">Påskeferie</span>
+13,7,<span style="color: #FF0000">Påskeferie</span>
+14,1,<span style="color: #FF0000">Påskeferie</span>
+14,2,Lunsjkaker<br />Middag første måltid
+14,3,Helstekt laks
+14,4,Ratatouille
+14,5,Temadag
+14,6,Risgrøt<br />Rester<br />Frukt
+14,7,Urtebakt svinenakke<br />Dessert

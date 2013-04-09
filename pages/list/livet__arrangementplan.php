@@ -76,14 +76,26 @@ echo '
 		<dt>3. mars</dt>
 		<dd>Café Avec</dd>
 
+		<dt>10. mars</dt>
+		<dd>Seriemaraton i peisestua (BSG)</dd>
+
 		<dt>15. mars</dt>
 		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
 
+		<dt>17. mars</dt>
+		<dd>Holmenkollsøndag med Haarn oc Blaese, IFBS m.fl.</dd>
+
 		<dt>6. april</dt>
 		<dd>Schussrenn</dd>
-		
+
+		<dt>13. april</dt>
+		<dd>UKAs funksjonærfest</dd>
+
 		<dt>30. april</dt>
 		<dd>Russefest</dd>
+
+		<dt>1. mai</dt>
+		<dd>Recoveryday i Billa og Gymsalen (FFC)</dd>
 		
 		<dt>3.-5. mai</dt>
 		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a></dd>
@@ -97,32 +109,45 @@ echo '
 		<dt>7. mai</dt>
 		<dd>Allmannamøte (obs: tirsdag)</dd>
 
-		<dt>17. mai</dt>
-		<dd>Café Avec</dd>
-
 		<dt>10. mai</dt>
 		<dd>Frist for meldelse av valgkandiatur for kollegievalget til Vice-Præces.</dd>
+
+		<dt>17. mai</dt>
+		<dd>Café Avec</dd>
 
 		<dt>13.-15. mai</dt>
 		<dd>Kollegievalg</dd>
 
+		<dt>23. mai</dt>
+		<dd>Foreningens semestermøte</dd>
+
+		<dt>24.-25. mai</dt>
+		<dd>Sommerleker m/IFBS og BSG</dd>
+
 		<dt>31. mai</dt>
 		<dd>Kollegiekonstituering</dd>
 
-		<dt>1. juni</dt>
+		<dt>7. juni</dt>
 		<dd>Bukkehaugsfestivalen</dd>
 	</dl>
-	<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
+	
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.
+		Tidspunktene nedenfor er kun veiledende og de vanlige tidspunktene aktivitetene foregår.</p>
+	<dl class="arrangementer">
+		<dt>Tirsdager</dt>
+		<dd>Zumba kl 20-21</dd>
+		<dt>Onsdager</dt>
+		<dd>Styrkesirkel (&quot;styrkel&quot;) kl 18</dd>
+		<dt>Torsdager</dt>
+		<dd>Ballspill kl 16 (på Blindern Athletica)</dd>
+	</dl>
+
+	<p>Festforeningen arrangerer &quot;Billa kino&quot; (som hovedregel) kl 19 hver søndag.</p>
+
+	<!--<p><i>Hjemmesideoppmann har ikke hørt noe om:</i></p>
 	<ul>
-		<li>Sommerleker (IFBS)</li>
-		<li>Foreningens semestermøte</li>
-		<li>Faste IFBS-arrangementer</li>
-		<li>Øvrige IFBS-arrangementer</li>
-		<li>BSG-arrangementer</li>
-		<li>FFC-kino</li>
-		<li>UKAs funksjonærfest</li>
 		<li>Sikkert mange andre ting...</li>
-	</ul>
+	</ul>-->
 	<p><i>Annen informasjon:</i></p>
 	<ul>
 		<li>Hemsedaltur utgår grunnet Studentlekene i Trondheim.</li>
@@ -140,6 +165,20 @@ echo '
 			<li>Frist for å melde valgkandidatur for kollegievalg fra 18. mai til 10. mai.</li>
 			<li>Kollegievalget fra perioden 21.-23. mai til perioden 13.-15. mai.</li>
 		</ul></li>
+		<li>17. mars 2013: Lagt inn:<ul>
+			<li>Seriemaraton (BSG) 10. mars.</li>
+			<li>Holmenkollsøndag 17. mars.</li>
+			<li>UKAs funksjonærfest 13. april.</li>
+			<li>Foreningens semestermøte 23. mai.</li>
+			<li>Info om &quot;Billa kino&quot; og IFBS-arrangementer.</li>
+		</ul></li>
+		<li>18. mars 2013: Oppdateringer fra FFC:<ul>
+			<li>Lagt inn recoveryday 1. mai.</li>
+			<li>Lagt inn sommerleker 24.-25. mai.</li>
+			<li>Flyttet dato for Bukkehaugsfestivalen fra 1. juni til 31. mai.</li>
+		</ul></li>
+		<li>18. mars 2013: La inn Zumba på tirsdager for IFBS.</li>
+		<li>4. april 2013: Flyttet dato for Bukkehaugsfestivalen fra 31. mai til 7. juni.</li>
 	</ul>
 </div>
 
