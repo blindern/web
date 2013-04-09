@@ -83,7 +83,10 @@ i de sene nattetimer.</p>
 
 
 <h2>Bukkehaugsfestivalen</h2>
-<p>...</p>
+<p>Bukkehaugsfestivalen arrangeres sent på våren og er en
+utekonsert som foregår på baksiden av studenterhjemmet.</p>
+<p>En egen person - bukkehaugsgeneralen - står for planlegging
+av arrangementet, og etter utekonsertene fortsetter festen i Billa.</p>
 
 <h2>Øvrige arrangementer</h2>
 <p>Festforeningen avholder en rekke arrangementer i løpet av semesteret. Som regel er det forskjellige

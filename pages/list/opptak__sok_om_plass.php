@@ -566,14 +566,7 @@ switch (bs_side::$lang)
 	default:
 		echo '
 			<h1>S&oslash;knad om plass</h1>
-			<h2>S&oslash;knadsskjema</h2>
-			<p>
-				Dersom du har lest gjennom denne Internettsiden og
-				er klar for &aring; s&oslash;ke deg inn p&aring; BS
-				s&aring; har du valget mellom &aring; sende en skriftlig,
-				eller en elektronisk s&oslash;knad. Begge typer s&oslash;knad
-				blir behandlet med lik verdi.
-			</p>
+			
 			<h2>Opptak av beboere</h2>
 			<p><b>Vår 2013:</b> Vi har for tiden ledige plasser og behandler søknader om innflytting nå fortløpende.<br />
 			   <b>Høst 2013:</b> Opptak av bebore for høsten 2013 skjer fortløpende utover våren.</p>';
