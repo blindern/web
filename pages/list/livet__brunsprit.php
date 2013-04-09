@@ -9,6 +9,6 @@ $foreninger->set_active("brunsprit");
 echo '
 <h1>Brun Sprit</h1>
 
-<p>..</p>';
+<p>Informasjon kommer!</p>';
 
 $foreninger->gen_page();

@@ -54,7 +54,7 @@ class foreninger
 			array(
 				"bsg",
 				"Blindern Spill & Gåte (BSG)",
-				"BSG"),
+				"Blindern Spill & Gåte"),
 			array(
 				"chorus_buchus",
 				"cHorus Buchus",
@@ -70,11 +70,11 @@ class foreninger
 			array(
 				"pigefaarsamlingen",
 				"Pigefaarsamlingen",
-				"Pigefaarsamlingen"),
+				"Pigefaarsamlingen")/*,
 			array(
 				"pms",
 				"Pigenes Musikalske Selskab (PMS)",
-				"PMS (pigekoret)")
+				"PMS (pigekoret)")*/
 		),
 		"andre" => array(
 			array(

@@ -54,6 +54,7 @@ at beboeren blir kalt inn til kollegiemøte og at kollegiet gir en muntlig irett
 <p>Gangtilsynet utnevnes fritt av kollegiet og får delta på velferdsfesten.</p>
 
 <h2>Allmannamøtet</h2>
-<p>...</p>';
+<p>Allmannamøtet er beboernes høyeste organ og kan behandle og uttale seg om alle saker som angår hjemmet og beboerne. Avgjørelser her er bindende for kollegiet. Normalt holdes det orienteringer fra kollegiet, administrasjonen, brannsjef, dugnaden med flere.
+</p>';
 
 $foreninger->gen_page();

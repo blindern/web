@@ -9,6 +9,7 @@ $foreninger->set_active("hyttestyret");
 echo '
 '.get_right_img_gal(104, null, "Småbruket tar seg vakkert ut i Bærumsmarka.", "Foto: Henrik Steen").'
 '.get_right_img_gal(158, null, "Pygmétur i starten av semesteret er en flott mulighet for å bli godt kjent.", "Foto: Henrik Steen").'
+'.get_right_img_gal(226, null, "På vei opp til Småbruket på pygmétur!", "Foto: Christian Samuelsen").'
 
 <h1>Hyttestyret for Småbruket</h1>
 <p>
@@ -22,10 +23,6 @@ echo '
 <h2>Pygmétur</h2>
 <p>Hyttestyret arrangerer pygmétur i starten av hvert semester. Dette er en bli-kjent tur og drar med opp mot 50 personer opp til hytta!</p>
 
-<p class="img img_right">
-	<img src="/graphics/images/hyttetur_h10.jpg" alt="Pygmétur høsten 2010" />
-	<span>Pygmétur høsten 2010. Foto: Henrik Steen</span>
-</p>
 <p>
 	Dersom du flytter inn p&aring; h&oslash;sten s&aring;
 	vil det f&oslash;rste arrangementet du blir invitert til v&aelig;re

@@ -18,14 +18,15 @@ echo '
 		<!-- INFO: parrom, f.eks. 712, telles som to enkeltrom
 		           brakkene er ikke talt med, heller ikke kottene -->
 		<p>8 timer dugnad per semester</p>
-		<p>Blindernånden<br />Godt sosialt miljø</p>
+		<p>Blindernånden<br />Godt og trygt sosialt miljø</p>
 		<p class="soknadsknapp">
 			Klar for å flytte inn?
 			<a href="/opptak/sok_om_plass">Send søknad &raquo;</a>
 		</p>
 	</section>
 
-	'.get_img_p(198, null, "Slik ser et innflyttingsklart dobbeltrom ut.", "Foto: Petter Gripheim", "img").'
+	'.(rand(1,2) == 1 ? get_img_p(198, null, "Slik ser et innflyttingsklart dobbeltrom ut.", "Foto: Petter Gripheim", "img")
+	                  : get_img_p(201, null, "Innredet rom på nyoppusset fløy.", "Foto: Petter Gripheim", "img")).'
 </div>';
 
 echo '

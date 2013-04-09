@@ -33,10 +33,7 @@ echo '
 	veien.
 </p>
 
-<p class="img img_right">
-	<img src="/graphics/images/pygmemiddag_v10.jpg" alt="" />
-	<span>Pygmémiddag våren 2010. Foto: Anders Fagereng</span>
-</p>
+'.get_right_img_gal(225, null, "Pygmémiddag våren 2010.", "Foto: Anders Fagereng").'
 
 <h2>Pygm&eacute;middag</h2>
 <p>

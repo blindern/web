@@ -3,7 +3,7 @@
 bs_side::set_title("Administrasjonen");
 bs_side::$lang_crosslink['en'] = "en/administration";
 
-echo get_right_img_gal(11, null, "Postrommet og døren til administrasjonen.", "Foto: Simen Buodd");
+echo get_right_img_gal(204, null, "Postrommet og døren til administrasjonen.", "Foto: Petter Gripheim");
 
 echo '
 <h1>Administrasjonen</h1>

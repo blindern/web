@@ -1,30 +1,24 @@
 <?php
 
 bs_side::set_title("Arrangementplan");
-bs_side::$head .= '
-<script src="/lib/mootools/mootools-1.2.x-core-nc.js" type="text/javascript"></script>
-<script src="/lib/mootools/mootools-1.2.x-more-nc.js" type="text/javascript"></script>
-<script src="'.bs_side::$pagedata->doc_path.'/default.js"></script>
-<script>
-window.addEvent("domready", function()
-{
+
+ess::$b->page->add_js('
+$(document).ready(function() {
 	function show_period(id) {
-		$$(".arrangementer_group").setStyle("display", "none");
-		$(id).setStyle("display", "block");
+		$(".arrangementer_group").hide();
+		$("#"+id).show();
 	}
 	
 	// vis kun nyeste periode
-	show_period($$(".arrangementer_group")[0].get("id"));
+	show_period($(".arrangementer_group").first().attr("id"));
 	
 	// periode-lenker
-	document.id("arrangementer_head").setStyle("display", "block").getElements("a").addEvent("click", function()
+	$("#arrangementer_head").show().find("a").click(function()
 	{
-		show_period(this.get("id").substring(0, 7));
+		show_period($(this).attr("id").substring(0, 7));
 		return false;
 	});
-});
-</script>';
-
+});');
 
 echo get_right_img_gal(192, "Schussrennet våren 2010", "Schussrennet våren 2010.", "Foto: Anders Fagereng");
 echo get_right_img_gal(172, null, "Beboerne er her samlet under julemøtet. Da er det god julemiddag, en rekke kåringer for semesteret som gis ut og hyggelig underholdning.", "Foto: Henrik Steen");

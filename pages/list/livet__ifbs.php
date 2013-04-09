@@ -9,15 +9,8 @@ $foreninger->set_active("ifbs");
 echo '
 <h1>Idrettsforeningen Blindern Studenterhjem (IFBS)</h1>
 
-<p class="img img_right">
-	<img src="/graphics/images/volleyball.jpg" alt="" />
-	<span>Volleyballturnering på egen volleyballbane under idrettsdagen til IFBS våren 2010. Foto: Anders Fagereng</span>
-</p>
-<p class="img img_right">
-	<img src="/graphics/images/tennisbane.jpg" alt="" />
-	<span>Tennisbanen er ofte i bruk på våren og tidlig på høsten. Her fra idrettsdagen til IFBS våren 2010. Foto: Anders Fagereng</span>
-</p>
-
+'.get_right_img_gal(125, null, "Volleyballturnering på egen volleyballbane under idrettsdagen til IFBS våren 2010.", "Foto: Anders Fagereng").'
+'.get_right_img_gal(238, null, "Tennisbanen er ofte i bruk på våren og tidlig på høsten. Her fra idrettsdagen til IFBS våren 2010.", "Foto: Anders Fagereng").'
 '.get_right_img_gal(58, null, "Ballspill i gymsalen på studenterhjemmet. Spilles normalt i gymsalen på Blindern Athletica.", "Foto: Henrik Roald").'
 
 <p>Dette er BS sin idrettsforening. Deres oppgaver

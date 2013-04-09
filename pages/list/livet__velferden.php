@@ -9,7 +9,19 @@ $foreninger->set_active("velferden");
 echo '
 <h1>Velferden</h1>
 
-<p>Oppmenn under velferden:</p>
+<p>Velferden står for velferdstiltakene på bruket, og fører tilsyn med de forskjellige fellesrom,
+unntatt biblioteket, biblionette og gymsalen.</p>
+
+<p>Velferdssjefen velges av semestermøtet og sitter i ett år.</p>
+
+<p>Velferdssjefen fastsetter velferdsaktivitetene, og utnevner oppmenn til
+disse for ett semester av gangen.</p>
+
+<p>Se listen over <a href="/studentbolig/velferdstilbud">velferdstilbud</a> for en
+liste over mange av tilbudene som finnes på bruket, hvorav de fleste
+ligger under velferdssjefen.</p>
+
+<p>Oppmenn under velferden (per vår 2013):</p>
 <ul>
 	<li>Biljard- og fotballspilloppmann</li>
 	<li>Boccia- og croquetoppmann</li>

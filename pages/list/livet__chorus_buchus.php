@@ -6,12 +6,9 @@ require ROOT."/base/foreninger.php";
 $foreninger = new foreninger();
 $foreninger->set_active("chorus_buchus");
 
-echo '
-<p class="img img_right">
-	<img src="/graphics/images/chorusbuchus_v10.jpg" alt="" />
-	<span>cHorus Buchus synger på Holmenkollen Restaurant i anledning bukkefesten våren 2010. Foto: Anders Fagereng</span>
-</p>
+echo get_right_img_gal(122, null, "cHorus Buchus synger på Holmenkollen Restaurant i anledning bukkefesten våren 2010.", "Foto: Anders Fagereng");
 
+echo '
 <h1>cHorus Buchus</h1>
 <p>
 	Dette mannskoret har ingen andre opptakskrav enn at
@@ -38,6 +35,8 @@ echo '
 		cHorus Buchus - Opp&aring; kauk&aring;sen (mp3)
 	</a></li>
 </ul>
-<p>cHorus Buchus pleier å ha faste øvelser på tirsdager i musikksalongen og opptrer på mange av brukets arrangementer.</p>';
+<p>cHorus Buchus pleier å ha faste øvelser på tirsdager i musikksalongen og opptrer på
+mange av brukets arrangementer. Alle beboere som ønsker å være med inviteres til å møte
+opp på øvelse. Ingen erfaring fra tidligere er nødvendig.</p>';
 
 $foreninger->gen_page();

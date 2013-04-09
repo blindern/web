@@ -9,6 +9,6 @@ $foreninger->set_active("katiba");
 echo '
 <h1>Katiba Wa Mbilikimo</h1>
 
-<p>...</p>';
+<p>Informasjon kommer!</p>';
 
 $foreninger->gen_page();

@@ -246,6 +246,7 @@ class bs_side
 					<li><a href="'.self::$pagedata->doc_path.'/foreninger/arrangementplan">Arrangementplan</a></li>
 					<li><a href="/dugnaden/">Dugnaden</a></li>
 					<li><a href="/dokumenter/statutter">Statuttene</a></li>
+					<li><a href="/wiki/">Wiki</a></li>
 				</ul>
 			</li>';
 		}
