@@ -17,9 +17,8 @@ echo '
 
 <h2>&Aring;pent for alle studenter</h2>
 <p>
-	Blindern Studenterhjem er &aring;pent for alle studenter
-	uavhengig kj&oslash;nn, religion, etnisk bakgrunn
-	og studieretning. Geografisk spredning samt lik fordeling
+	Blindern Studenterhjem er &aring;pent for alle studenter.
+	Geografisk spredning samt lik fordeling
 	av gutter og jenter legges vekt p&aring; n&aring;r
 	s&oslash;knadene vurderes. Det finnes ingen religi&oslash;s
 	form&aring;lsparagraf ved Blindern Studenterhjem.

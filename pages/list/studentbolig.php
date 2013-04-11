@@ -28,32 +28,12 @@ echo get_rand_images_right(
 echo '
 <h1>Studentbolig i Oslo</h1>
 
-<p>Romfordelingen på Blindern Studenterhjem er basert på ansiennitetsprinsippet.
-Det betyr at du ikke kan velge rom når du skal flytte inn. Vanligvis flytter
-det inn ca 100 studenter i høstsemesteret og ca 40 av disse flytter inn på dobbeltrom.</p>
-
-<!--<p>
-	Det er plass til over 220 studenter p&aring;
-	studenterhjemmet. For &aring; hjelpe beboerne inn i
-	studenterhjemmets unike sosiale milj&oslash; flytter
-	de aller fleste f&oslash;rst inn p&aring; dobbeltrom
-	eller kombinasjonsrom. Et kombinasjonsrom er to rom
-	hvor man m&aring; g&aring; gjennom det ene rommet for
-	&aring; komme til det andre.</p>-->
-
-
-
 <div class="mattider">
 	<h2>Mat-tider</h2>
 	<p><u>Mandag-fredag:</u><br />Frokost 07.15-09.00. Middag 14.30-17.30. Kveldsmat 19.30-20.30.</p>
 	<p><u>Lørdag:</u><br />Frokost 08.00-10.00. Middag 14.00-15.30. Kveldsmat 18.00-19.30.</p>
 	<p><u>Søndag:</u><br />Frokost 10.00-11.30. Middag 17.00-18.30. Ingen kveldsmat.</p>
 </div>
-
-<p>Vanlig botid på dobbeltrom er ca et halvt år. Ettersom botiden og ansienniteten øker kan du
-søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og mer attraktive rom.</p>
-<p>Prisene på enkeltrom, kombinasjonsrom og dobbeltrom er den samme for nye og eldre beboere. <a href="/studentbolig/leiepriser">Se leiepriser &raquo;</a></p>
-
 
 <h2>Hva er inkludert i husleien?</h2>
 
@@ -77,7 +57,7 @@ søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og me
 
 	<li><div class="showoff keepon"><a href="#" class="activate">Møblert rom</a></div>
 		<div class="showon">
-			<p>Rommet er fullt m&oslash;blert n&aring;r du flytter inn og du kan så innrede med dette slik du måtte ønske.</p>
+			<p>Rommet er fullt m&oslash;blert n&aring;r du flytter inn og du kan deretter innrede slik du ønsker.</p>
 			<p>Alle rommene har seng, skrivebord, stol, bokhylle, kommode, bordlampe, søppelbøtte og skap.</p>
 
 		</div></li>
@@ -90,6 +70,14 @@ søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og me
 
 	<li>Et unikt <a href="studentbolig/velferdstilbud">velferdstilbud</a> samt et godt og sosialiserende <a href="/livet">miljø</a></li>
 </ul>
+
+<p>Romfordelingen på Blindern Studenterhjem er basert på ansiennitetsprinsippet.
+Det betyr at du ikke kan velge rom når du skal flytte inn. Vanligvis flytter
+det inn ca 100 studenter i høstsemesteret og ca 40 av disse flytter inn på dobbeltrom.</p>
+
+<p>Vanlig botid på dobbeltrom er ca et halvt år. Ettersom botiden og ansienniteten øker kan du
+søke deg over til kombinasjonsrom eller enkeltrom, og etter hvert større og mer attraktive rom.</p>
+<p>Prisene på enkeltrom, kombinasjonsrom og dobbeltrom er den samme for nye og eldre beboere. <a href="/studentbolig/leiepriser">Se leiepriser &raquo;</a></p>
 
 
 <h2>Sommerutflytting</h2>
@@ -112,8 +100,8 @@ og stor stue, men de som bor her har som regel bodd lenge på studenterhjemmet.<
 <p>Kombinasjonsrom betyr at et rom ligger innenfor det andre,
 slik at den som bor på det innerste rommet gå gjennom rommet til den som bor ytterst.
 Det ytterste rommet
-kalles for &quot;gjennomgangsrommet&quot; og det innerste for &quot;midtstuen&quot;.
-Noen av midtstuene har også adgang ut til plenen/atriet.</p>
+kalles for &quot;gjennomgangsrommet&quot; og det innerste for &quot;mellomstuen&quot;.
+Noen av mellomstuene har også adgang ut til plenen/atriet.</p>
 <p>Det er også populært at par bor på disse rommene, slik at man får et
 soverom og en stue.</p>
 

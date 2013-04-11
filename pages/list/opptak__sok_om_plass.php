@@ -56,7 +56,7 @@ class bs_soknad
 		"app_studyplace"   => array("Studiested", "Study place"),
 		"app_study"        => array("Studium", "Study"),
 		"app_homeaddr"     => array("Hjemstedsadresse", "Home address"),
-		"app_addr"         => array("Addresse", "Street address"),
+		"app_addr"         => array("Adresse", "Street address"),
 		"app_place"        => array("Postnummer og sted", "Postal code, city and country"),
 		"app_nowaddr"      => array("Nåværende bosted", "Current residence"),
 		"app_rel"          => array("Relevante opplysninger", "Relevant information"),
@@ -65,7 +65,7 @@ class bs_soknad
 		"app_joindate"     => array("Ønsket innflyttingsdato", "Desired date to move in"),
 		"app_num_months"   => array('Dersom du ikke får plass ved hjemmet til den datoen du ønsker, hvor mange måneder vil du at søknaden skal gjelde etter denne datoen?',
 		                          'If you cannot move in at this date, for how many months do you want the application to be valid after this date?'),
-		"app_about_person" => array('Skriv en beskrivelse av deg selv og dine interesser. Dette kreves for at din søknad skal tas i betraktning. Skriv også navn på tidligere beboere eller nåværende beboer du ønsker/har referanser.',
+		"app_about_person" => array('Skriv litt om deg selv og dine interesser. Dette kreves for at din søknad skal tas i betraktning. Skriv også navn på tidligere beboere eller nåværende beboer du ønsker/har referanser.',
 		                          'Write a description of yourself and your interests. This is required for your application to be considered. Write the names of former residents or current residents should you have any references.'),
 		"app_comment"      => array('Kommentarer eller øvrige opplysninger', 'Comments or other information'),
 		"app_submit"       => array("Send søknad", "Send application"),
@@ -569,7 +569,7 @@ switch (bs_side::$lang)
 			
 			<h2>Opptak av beboere</h2>
 			<p><b>Vår 2013:</b> Vi har for tiden ledige plasser og behandler søknader om innflytting nå fortløpende.<br />
-			   <b>Høst 2013:</b> Opptak av bebore for høsten 2013 skjer fortløpende utover våren.</p>';
+			   <b>Høst 2013:</b> Opptak av beboere for høsten 2013 skjer fortløpende utover våren.</p>';
 }
 
 bs_soknad::main();
