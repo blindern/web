@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	if ($("#omvisning_bilde_w").length == 0) return;
 	
-	$("#omvisning_nav").append('<br />Piltaster kan også benyttes til å bla mellom bildene.</span>');
+	$("#omvisning_nav").append('<br />Piltaster kan også benyttes til å bla mellom bildene.');
 	
 	var back_link = $("#omvisning_back");
 	var prev_link = $("#omvisning_prev");
@@ -19,6 +19,20 @@ $(document).ready(function() {
 	next_link.click(function() { rotate_img(); return false; });
 	next_link2.click(function() { rotate_img(); return false; });
 	
+	var resize_img = function() {
+		img.height("");
+
+		// skaler ned bildet om nødvendig
+		if ($("#omvisning_bilde").height() > $(window).height() - 50) {
+			var new_height = $(window).height() - ($("#omvisning_bilde").height() - img.height()) - 50;
+			if (new_height < 400) new_height = 400;
+			img.height(new_height);
+		}
+	};
+
+	img.bind("load", resize_img);
+	$(window).bind("resize", resize_img);
+
 	$(document).keydown(function(e) {
 		if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
 		
