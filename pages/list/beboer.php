@@ -84,22 +84,30 @@ class matmeny {
 
 		foreach ($c as $r) {
 			$row = str_getcsv($r);
-			if (count($row) != 3) continue; // three cols in each entry
+			if (count($row) != 4) continue; // four cols in each entry
 
-			$this->data[$row[0]][$row[1]] = $row[2];
+			$this->data[$row[0]."-".$row[1]][$row[2]] = $row[3];
 		}
 
-		$this->uke = date("W");
+		$this->uke = date("Y-W");
 	}
 
 	public function get_meny($uke_rel, $dag) {
-		$uke = date("W", time()+$uke_rel*86400*7);
+		$uke = date("Y-W", time()+$uke_rel*86400*7);
 		
 		if (!isset($this->data[$uke][$dag])) {
 			return '<i style="color: #CCC">Ingen data</i>';
 		}
 
-		return $this->data[$uke][$dag];
+		// sett farge på infotekst
+		$data = $this->data[$uke][$dag];
+		$data = explode("<br />", $data);
+		foreach ($data as &$row) {
+			if (substr($row, 0, 2) == "I:") $row = '<span style="color: #FF0000">'.substr($row, 2).'</span>';
+		}
+		$data = implode("<br />", $data);
+
+		return $data;
 	}
 
 	public function print_rows() {
