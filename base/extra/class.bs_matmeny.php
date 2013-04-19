@@ -130,9 +130,9 @@ class bs_matmeny_uke {
 			$lines = explode("<br />", $value);
 			foreach ($lines as $line) {
 				$info = false;
-				if (substr($line, 0, 2) == "I:") {
+				if (mb_substr($line, 0, 2) == "I:") {
 					$info = true;
-					$line = substr($row, 2);
+					$line = mb_substr($line, 2);
 				}
 
 				$new[] = array(
