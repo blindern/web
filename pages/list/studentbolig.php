@@ -92,8 +92,8 @@ Dette bidrar til økte inntekter til BS og å holde husleien lav for studentene.
 <p>Bilder fra ulike rom kan sees i <a href="/omvisning/oversikt#c4">den digitale omvisningen</a>.</p>
 
 <h3>Enkeltrom</h3>
-<p>De fleste bor på enkeltrom. <!--Disse er alt fra xx kvm opp til xx kvm for de største rommene.</p>
-<p>--> I tillegg finnes også &quot;porten&quot; hvor det er fire enkeltrom som deler entré, kjøkken, bad
+<p>De fleste bor på enkeltrom. Disse er alt fra ca. 10 kvm opp til ca. 15 kvm for de største rommene.</p>
+<p>I tillegg finnes også &quot;porten&quot; hvor det er fire enkeltrom som deler entré, kjøkken, bad
 og stor stue, men de som bor her har som regel bodd lenge på studenterhjemmet.</p>
 
 <h3>Kombinasjonsrom</h3>
@@ -103,11 +103,11 @@ Det ytterste rommet
 kalles for &quot;gjennomgangsrommet&quot; og det innerste for &quot;mellomstuen&quot;.
 Noen av mellomstuene har også adgang ut til plenen/atriet.</p>
 <p>Det er også populært at par bor på disse rommene, slik at man får et
-soverom og en stue.</p>
+soverom og en stue. Hvert enkelt rom er ca. 10-15 kvm.</p>
 
 <h3>Dobbeltrom</h3>
 <p>Det finnes 18 dobbeltrom på studenterhjemmet, og dette er det vanligste rommet
-man flytter inn på. <!--Rommene er fra xx opp til xx kvm.--> Etter å ha bodd på dobbeltrom sitter man
+man flytter inn på. Rommene er ca. 15-20 kvm. Etter å ha bodd på dobbeltrom sitter man
 igjen med et godt og nært vennskap med personen man har delt rom med.</p>
 
 ';
