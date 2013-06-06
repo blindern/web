@@ -28,6 +28,7 @@ echo '
 <h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
 
 <ul id="arrangementer_head" style="display: none">
+	<li><a href="#" id="arr_h13_group">Høst 2013</a></li>
 	<li><a href="#" id="arr_v13_group">Vår 2013</a></li>
 	<li><a href="#" id="arr_h12_group">Høst 2012</a></li>
 	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
@@ -35,6 +36,87 @@ echo '
 	<li><a href="#" id="arr_v11_group">Vår 2011</a></li>
 	<li><a href="#" id="arr_h10_group">Høst 2010</a></li>
 </ul>
+
+<div class="arrangementer_group" id="arr_h13">
+	<h2>Arrangementplan for høsten 2013</h2>
+	<p>Kjøkkenet åpner til middag 15. august.</p>
+	<dl class="arrangementer">
+		<dt>21. august</dt>
+		<dd>Uoffisiell velkommen hjem-fest</dd>
+		
+		<dt>22. august</dt>
+		<dd>Pygmémøte kl 20</dd>
+		
+		<dt>23. august</dt>
+		<dd>Velkommen hjem-fest</dd>
+		
+		<dt>24. august</dt>
+		<dd>Rebusløp</dd>
+		
+		<dt>1. september</dt>
+		<dd>Pygmémiddag m/café avec kl 17</dd>
+		
+		<dt>14. september</dt>
+		<dd>Sølecup</dd>
+		
+		<dt>28. september</dt>
+		<dd>Temafest<dd>
+		
+		<dt>11. oktober</dt>
+		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
+		
+		<dt>26. oktober</dt>
+		<dd>Høstball</dd>
+		
+		<dt>27. oktober</dt>
+		<dd>Café avec</dd>
+		
+		<dt>9. november</dt>
+		<dd>Togafest</dd>
+		
+		<dt>14. november</dt>
+		<dd>Allmannamøte</dd>
+		
+		<dt>20.-22. november</dt>
+		<dd>Kollegievalg (frist for å melde kandidatur 17. nov)</dd>
+
+		<dt>6. desember</dt>
+		<dd>Julemøte</dd>
+	</dl>
+
+	<p><i>Avventer info:</i></p>
+	<ul>
+		<li>Pygmétur til Småbruket</li>
+		<li>Hyttedugnad</li>
+		<li>Åpent kollegiemøte</li>
+		<li>Foreningens semestermøte</li>
+		<li>Kollegiekonstituering</li>
+		<li>Pigefaarsamlingens juleverksted</li>
+		<li><i>Evt. andre kommende annonseringer..</i></li>
+	</ul>
+
+	<!-- TODO:
+		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
+		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
+		<dd>Åpent kollegiemøte kl 19:30</dd>
+		<dd>Foreningens semestermøte</dd>
+		<dd>Kollegiekonstituering</dd>
+		<dd>Pigefaarsamlingens juleverksted</dd>
+	-->
+	
+	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.</p>
+	
+	<!-- TODO <p>Festforeningen arrangerer &quot;Billa kino&quot; (som hovedregel) kl 19 hver søndag.</p> -->
+
+	<!--<p><i>Utgått/ukjent:</i></p>
+	<dl class="arrangementer">
+	</dl>-->
+	
+	<p><i>Historikk:</i></p>
+	<ul>
+		<li>6. juni 2013: Arrangementplan tilsendt av kollegiet lagt inn.</li>
+	</ul>
+</div>
 
 <div class="arrangementer_group" id="arr_v13">
 	<h2>Arrangementplan for våren 2013</h2>
