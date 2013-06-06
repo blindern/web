@@ -41,6 +41,7 @@ echo '
 	<li><a href="#internmail">E-postliste (internmail)</a></li>
 	<li><a href="#velferden">Velferdens oppmenn</a></li>
 	<li><a href="#kollegiet">Kollegiets stillinger</a></li>
+	<li><a href="#vakthavende">Oversikt over vakthavende</a></li>
 	<li><a href="#tennis">Booking av tennisbanen</a> <span style="color: red; font-weight: bold; font-size: 11px">NY</span></li>
 </ul>
 
@@ -179,6 +180,10 @@ echo '
 <p><a href="https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE">Rediger liste</a></p>
 <p class="info_kontakter">Denne oversikten er kun ment for beboere og skal ikke videreformidles utenfor bruket.</p>
 <iframe width="700" height="600" frameborder="0" src="https://docs.google.com/spreadsheet/ccc?hl=no&key=0AsmINoGULmbPdDBnR21XWHUzWXFTanhoaGM1b3EwekE&single=true&gid=0&output=html&widget=true"></iframe>
+
+<h2 id="vakthavende">Oversikt over vakthavende</h2>
+<p><a href="https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdGlQaWF0a09sZVNwVnJfWXBFbnlmUmc">Rediger liste</a></p>
+<iframe width="700" height="400" frameborder="0" src="https://docs.google.com/spreadsheet/pub?key=0AsmINoGULmbPdGlQaWF0a09sZVNwVnJfWXBFbnlmUmc&output=html&widget=true&single=true"></iframe>
 
 <h2 id="tennis">Booking av tennisbanen</h2>
 <p>Tennisbanen bookes ved å bruke Google Calendar. Logg inn med <i>ifbs.tennis@gmail.com</i> på <a href="https://www.google.com/calendar/">https://www.google.com/calendar/</a>. Passordet er <i>togafest</i>.</p>
