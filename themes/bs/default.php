@@ -108,11 +108,13 @@ class theme_bs_default
 		
 		echo '</p>
 		</div>
-		</div>
+		</div>';
 		
 
-		<div id="banner"><a href="http://www.facebook.com/events/123473684521823/"><img src="'.ess::$s['rpath'].'/graphics/banners/bukkehaugen_2013.jpg" alt="Bukkehaugfestivalen 2013" /></a></div>
-		
+		/*echo '
+		<div id="banner"><a href="http://www.facebook.com/events/123473684521823/"><img src="'.ess::$s['rpath'].'/graphics/banners/bukkehaugen_2013.jpg" alt="Bukkehaugfestivalen 2013" /></a></div>';*/
+
+		echo '
 	</div>
 	<div id="footer_spacer"></div>
 </div>';
