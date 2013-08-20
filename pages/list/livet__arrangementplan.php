@@ -39,82 +39,23 @@ echo '
 
 <div class="arrangementer_group" id="arr_h13">
 	<h2>Arrangementplan for høsten 2013</h2>
-	<p>Kjøkkenet åpner til middag 15. august.</p>
-	<dl class="arrangementer">
-		<dt>21. august</dt>
-		<dd>Uoffisiell velkommen hjem-fest</dd>
-		
-		<dt>22. august</dt>
-		<dd>Pygmémøte kl 20</dd>
-		
-		<dt>23. august</dt>
-		<dd>Velkommen hjem-fest</dd>
-		
-		<dt>24. august</dt>
-		<dd>Rebusløp</dd>
-		
-		<dt>1. september</dt>
-		<dd>Pygmémiddag m/café avec kl 17</dd>
-		
-		<dt>14. september</dt>
-		<dd>Sølecup</dd>
-		
-		<dt>28. september</dt>
-		<dd>Temafest<dd>
-		
-		<dt>11. oktober</dt>
-		<dd>Pigefaarsamlingens semestermøte og PPP</dd>
-		
-		<dt>26. oktober</dt>
-		<dd>Høstball</dd>
-		
-		<dt>27. oktober</dt>
-		<dd>Café avec</dd>
-		
-		<dt>9. november</dt>
-		<dd>Togafest</dd>
-		
-		<dt>14. november</dt>
-		<dd>Allmannamøte</dd>
-		
-		<dt>20.-22. november</dt>
-		<dd>Kollegievalg (frist for å melde kandidatur 17. nov)</dd>
 
-		<dt>6. desember</dt>
-		<dd>Julemøte</dd>
-	</dl>
+	<p>Arrangementplanen er flyttet. Denne er per i dag kun tilgjengelig gjennom internside for beboere. Spør en medbeboer hvor du finner den!</p>';
 
-	<p><i>Avventer info:</i></p>
-	<ul>
-		<li>Pygmétur til Småbruket</li>
-		<li>Hyttedugnad</li>
-		<li>Åpent kollegiemøte</li>
-		<li>Foreningens semestermøte</li>
-		<li>Kollegiekonstituering</li>
-		<li>Pigefaarsamlingens juleverksted</li>
-		<li><i>Evt. andre kommende annonseringer..</i></li>
-	</ul>
+if (bs_side::$is_beboer) {
+	echo '
+	<div style="display: inline-block; border: 2px solid #00FF00; background-color: #E7FFCF; padding: 10px; font-size: 150%; margin-bottom: 1em">
+		<p>Arrangementplanen ligger nå i wikien:<br />
+		<a href="https://blindern-studenterhjem.no/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan høst 2013</a></p>
+		<p style="margin-bottom: 0">Du ser denne lenken kun fordi du har vært innom beboersiden!</p>
+	</div>';
+}
 
-	<!-- TODO:
-		<dd>Pygmétur til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
-		<dd>Hyttedugnad til <a href="'.bs_side::$pagedata->doc_path.'/smaabruket">Småbruket</a> (hytta)</dd>
-		<dd>Åpent kollegiemøte kl 19:30</dd>
-		<dd>Foreningens semestermøte</dd>
-		<dd>Kollegiekonstituering</dd>
-		<dd>Pigefaarsamlingens juleverksted</dd>
-	-->
-	
-	<p>IFBS arrangerer også regelmessige aktiviteter i ukedagene. Se IFBS-tavlen for nærmere informasjon.</p>
-	
-	<!-- TODO <p>Festforeningen arrangerer &quot;Billa kino&quot; (som hovedregel) kl 19 hver søndag.</p> -->
-
-	<!--<p><i>Utgått/ukjent:</i></p>
-	<dl class="arrangementer">
-	</dl>-->
-	
+echo '
 	<p><i>Historikk:</i></p>
 	<ul>
 		<li>6. juni 2013: Arrangementplan tilsendt av kollegiet lagt inn.</li>
+		<li>21. august 2013: Arrangementplan flyttet til ny side.</li>
 	</ul>
 </div>
 
