@@ -86,7 +86,7 @@ echo '
 							<h2>Ankomstmuligheter</h2>
 							<p>Sommerløype: Se eget <a href="http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=205357112404663307536.000492263fbcdabf214fa">kart med anbefalte løyper</a>.</p>
 							<p>Vintertraseer: Se <a href="http://maps.google.no/?q=http://www.skiforeningen.no/markadb/kml/loypestatus/1.kml">kart fra markadatabasen</a>. Hytta ligger like ved Brunkollen. Den store grusveien på kartet ovenfor er også måkt og kan brukes som gangvei.</p>
-							<p>Det er ikke muligheter for å kjøre bil frem til hytta. En evt. kjøretillatelse <i>kan</i> gis på spesielt grunnlag av Løvenskiold Skog som håndhever veiene i marka.</p>
+							<p>Det er ikke anledning å kjøre bil frem til hytta/Brunkollen. Løvenskiold Skog innvilger ikke kjøretillatelser på veiene til leietakere.</p>
 							
 							<iframe width="540" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;output=embed"></iframe>
 							<br /><small>Vis <a href="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;source=embed" style="color:#0000FF;text-align:left">Småbruket</a> i et større kart</small>
