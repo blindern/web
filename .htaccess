@@ -10,6 +10,8 @@ RewriteRule ^småbruket$ /smaabruket [R=301,L]
 RewriteRule ^studentbolig/omvisning(.*)$ /omvisning$1 [R=301,L]
 RewriteRule ^foreninger/tradisjoner$ /livet [R=301,L]
 RewriteRule ^foreninger(.*)$ /livet$1 [R=301,L]
+RewriteRule ^tennis$ /beboer#tennis [R=302,L,NE]
+RewriteRule ^arr$ /wiki/Arrangementplan_høst_2013 [R=302,L]
 
 RewriteRule ^velkommen.pdf$ /dokumenter/velkomstbok_aug_2012.pdf [L,R=301]
 RewriteRule ^statutter$ /dokumenter/statutter/ [L,R=301]
