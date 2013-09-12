@@ -23,31 +23,28 @@ echo '
 <div class="romgrupper">
 	<div class="romgruppe">
 		<div class="h2">Enkeltrom</div>
-		<div class="pris">vår 2013:<br />kr 6 315 / mnd</div>
 		<div class="pris">høst 2013 / vår 2014:<br />kr 6 535 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Kombinasjonsrom</div>
-		<div class="pris">vår 2013:<br />kr 6 185 / mnd</div>
 		<div class="pris">høst 2013 / vår 2014:<br />kr 6 395 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Dobbeltrom</div>
-		<div class="pris">vår 2013:<br />kr 5 955 / mnd</div>
 		<div class="pris">høst 2013 / vår 2014:<br />kr 6 160 / mnd</div>
 	</div>
 </div>
 
-<p>I disse prisene ligger også foreningsavgift på kr 25, som går til Foreningen.</p>
+<p>I tillegg til disse prisene tilkommer en medlemskontingent på kr 25, som går til Foreningen Blindern Studenterhjem. Denne medlemskontingenten fastsettes av generalforsamlingen (kalt semestermøte) for foreningen.</p>
 
 
 <p>
 	Det vil si at dersom du bor p&aring; dobbeltrom,
-	s&aring; betaler du 6 160,- per m&aring;ned (høst 2013), og
+	s&aring; betaler du 6 160,- per m&aring;ned + medlemskontingent (høst 2013), og
 	har da betalt for mat, str&oslash;m, internett,
-	vaskemaskin osv. Det finnes en rekke andre poster
+	vaskemaskin, en rekke velferdstilbud osv. Det finnes en rekke andre poster
 	som kan skrives p&aring; regningen i tillegg til dette,
 	f.eks ved bruk av kopimaskin, om du tar med deg gjester
 	til m&aring;ltidene o.l.</p>
