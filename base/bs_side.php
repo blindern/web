@@ -243,10 +243,10 @@ class bs_side
 			<li class="'.(self::$menu_active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">Beboer</a>
 				<ul>
 					<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
-					<li><a href="'.self::$pagedata->doc_path.'/foreninger/arrangementplan">Arrangementplan</a></li>
-					<li><a href="/dugnaden/">Dugnaden</a></li>
-					<li><a href="/dokumenter/statutter">Statuttene</a></li>
-					<li><a href="/wiki/">Wiki</a></li>
+					<li><a href="'.self::$pagedata->doc_path.'/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan</a></li>
+					<li><a href="/dugnaden/">Dugnadssystemet</a></li>
+					<li><a href="/dokumenter/statutter">Statuttene osv.</a></li>
+					<li><a href="/wiki/">Wikien</a></li>
 				</ul>
 			</li>';
 		}
