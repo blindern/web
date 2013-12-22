@@ -54,11 +54,11 @@ class matmeny {
 			$this->data[$row[0]."-".$row[1]][$row[2]] = $row[3];
 		}
 
-		$this->uke = date("Y-W");
+		$this->uke = date("o-W");
 	}
 
 	public function get_meny($uke_rel, $dag) {
-		$uke = date("Y-W", time()+$uke_rel*86400*7);
+		$uke = date("o-W", time()+$uke_rel*86400*7);
 		
 		if (!isset($this->data[$uke][$dag])) {
 			return '<i style="color: #CCC">Ingen data</i>';

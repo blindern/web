@@ -75,7 +75,7 @@ class bs_matmeny_uke {
 		$d = ess::$b->date->get();
 		if (!$d->setISODate($this->year, $this->week)) throw new Exception("Ugyldig uke.");
 
-		if ($d->format("W") != $this->week || $d->format("Y") != $this->year) throw new Exception("Ugyldig uke.");
+		if ($d->format("W") != $this->week || $d->format("o") != $this->year) throw new Exception("Ugyldig uke.");
 
 		$this->preload();
 	}

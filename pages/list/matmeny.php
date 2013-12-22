@@ -6,11 +6,11 @@ bs_side::set_title("Redigering av matmeny");
 $weeks = array();
 $d = ess::$b->date->get();
 $d->modify("+7 days");
-$default_week = $d->format("Y-W");
+$default_week = $d->format("o-W");
 $d->modify("-21 days");
 $d->modify("-".($d->format("N")-1)." days");
 for ($i = 0; $i < 5; $i++) {
-	$weeks[$d->format("Y-W")] = $d->format("\\U\\k\\e W Y (\\f\\r\\a d.m)").(bs_matmeny::has_week($d->format("Y"), $d->format("W")) ? ' (har innhold)' : '');
+	$weeks[$d->format("o-W")] = $d->format("\\U\\k\\e W o (\\f\\r\\a d.m)").(bs_matmeny::has_week($d->format("o"), $d->format("W")) ? ' (har innhold)' : '');
 	$d->modify("+7 days");
 }
 
