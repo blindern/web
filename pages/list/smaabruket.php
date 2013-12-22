@@ -122,6 +122,7 @@ echo '
 								avtale overlevering av n&oslash;kkel, samt skrive under en leiekontrakt.</p>
 							<p>Etter turen tar du kontakt med utleieansvarlig for &aring; levere tilbake n&oslash;kkel.
 								Du m&aring; ogs&aring; opplyse hvor mange personer som brukte hytta samt hvor mange vedsekker som er brukt.</p>
+							<p><a href="https://docs.google.com/file/d/0B8mINoGULmbPWVJvX1hkXy1uT3M/edit?usp=sharing">Last ned leiekontrakt</a></p>
 						</div>
 						
 						<div class="subsection">
