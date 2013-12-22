@@ -127,7 +127,7 @@ echo '
 						
 						<div class="subsection">
 							<h2>Priser for leie av Småbruket</h2>
-							<p style="color: #FF0000">Nye priser fra januar 2012:</p>
+							<p style="color: #FF0000">Vedprisen endres fra 1. januar 2014. Informasjon kommer. Pris nedenfor gjelder 2013.</p>
 							<ul>
 								<li>Minstepris:
 									<ul>
