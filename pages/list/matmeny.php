@@ -2,6 +2,14 @@
 
 bs_side::set_title("Redigering av matmeny");
 
+if (!bs::is_adm() && !login::$logged_in) {
+	echo '
+	<h1>Redigering av matmeny</h1>
+	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk eller hvis du er innlogget. <a href="/a/logginn.php?orign='.urlencode('/matmeny').'">Logg inn</a></p>';
+
+	return;
+}
+
 // sett opp uker
 $weeks = array();
 $d = ess::$b->date->get();

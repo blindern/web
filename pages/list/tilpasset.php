@@ -2,6 +2,14 @@
 
 bs_side::set_title("Tilpasning av tekst");
 
+if (!bs::is_adm() && !login::$logged_in) {
+	echo '
+	<h1>Tilpasning av tekst</h1>
+	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk eller hvis du er innlogget. <a href="/a/logginn.php?orign='.urlencode('/tilpasset').'">Logg inn</a></p>';
+
+	return;
+}
+
 require_once ROOT."/base/tilpasning.php";
 
 $t = new tilpasning();
