@@ -5,3 +5,6 @@ graphics/omvisning/thumbs/*
 .settings/
 base/inc.innstillinger_local.php
 .tags*
+/graphics/omvisning/original
+/files/
+/dokumenter/
