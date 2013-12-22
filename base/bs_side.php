@@ -298,7 +298,8 @@ class bs_side
 		self::$menu_main_list[$category_first] = $category;
 		
 		// mekk html for undermeny
-		if ($active)
+		// vis kun undermeny hvis det er flere enn ett alternativ på undermenyen
+		if ($active && count($subs) > 1)
 		{
 			self::$menu_sub = '
 		<ul id="menu_sub">';
