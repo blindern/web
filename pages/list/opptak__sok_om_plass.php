@@ -564,12 +564,12 @@ switch (bs_side::$lang)
 	break;
 	
 	default:
+		// send til opptakssia
+		// boligtorget skal brukes
+		redirect::handle('opptak');
+
 		echo '
-			<h1>S&oslash;knad om plass</h1>
-			
-			<h2>Opptak av beboere</h2>
-			<p><b>Vår 2013:</b> Vi har for tiden ledige plasser og behandler søknader om innflytting nå fortløpende.<br />
-			   <b>Høst 2013:</b> Opptak av beboere for høsten 2013 skjer fortløpende utover våren.</p>';
+			<h1>S&oslash;knad om plass</h1>';
 }
 
 bs_soknad::main();

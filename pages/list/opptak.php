@@ -9,12 +9,21 @@ echo get_right_img("paerealle.jpg", null, "", "Foto: Cecilie Sæle Merkesvik");
 echo get_right_img("glade.jpg", null, "", "Det er et fantastisk miljø på Blindern Studenterhjem. Foto: Anders Fagereng");
 
 echo '
-<h1>Opptak</h1>
+<h1>Informasjon om søknad</h1>
+<p class="boligtorget_lenke">
+	<a href="https://www.boligtorget.no/blindern/">
+		Alle søknader leveres gjennom Boligtorget. Trykk for å gå til Boligtorget.<br />
+		<img src="/graphics/images/boligtorget.jpg" alt="Boligtorget" />
+	</a>
+</p>';
+
+/*
 <p>
 	Opptak av beboere for h&oslash;sten <?php echo $thisYear; ?> skjer
 	fortl&oslash;pende fra og med februar <?php echo $thisYear; ?>.
-</p>
+</p>*/
 
+echo '
 <h2>&Aring;pent for alle studenter</h2>
 <p>
 	Blindern Studenterhjem er &aring;pent for alle studenter.
@@ -82,4 +91,4 @@ echo '
 	medf&oslash;rer utkastelse fra Studenterhjemmet.
 </p>
 
-<p><a href="opptak/sok_om_plass">Søk om plass ved Blindern Studenterhjem &raquo;</a></p>';
+<p><a href="https://www.boligtorget.no/blindern/">Søk om plass ved Blindern Studenterhjem &raquo;</a></p>';
