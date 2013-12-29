@@ -58,7 +58,7 @@ echo '
 							<li><a href="#kalender">Ledige datoer for utleie</a></li>
 						</ul>
 							
-						<div class="subsection">
+						<div class="subsection" id="kortom">
 							<h2>Kort om Sm&aring;bruket</h2>
 							<p>
 								Sm&aring;bruket er en t&oslash;mmerhytte som ligger
@@ -74,7 +74,7 @@ echo '
 							</p>
 						</div>
 							
-						<div class="subsection">
+						<div class="subsection" id="tilbud">
 							<h2>Hva kan Sm&aring;bruket tilby?</h2>
 							<ul>
 								<li>24 sengeplasser og hems med madrasser (senger/madrasser til 34 personer)</li>
@@ -93,7 +93,7 @@ echo '
 							<p>Kommer!</p>
 						</div>-->
 						
-						<div class="subsection">
+						<div class="subsection" id="ankomstmuligheter">
 							<h2>Ankomstmuligheter</h2>
 							<p>Sommerløype: Se eget <a href="http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=205357112404663307536.000492263fbcdabf214fa">kart med anbefalte løyper</a>.</p>
 							<p>Vintertraseer: Se <a href="http://maps.google.no/?q=http://www.skiforeningen.no/markadb/kml/loypestatus/1.kml">kart fra markadatabasen</a>. Hytta ligger like ved Brunkollen. Den store grusveien på kartet ovenfor er også måkt og kan brukes som gangvei.</p>
@@ -103,7 +103,7 @@ echo '
 							<br /><small>Vis <a href="http://maps.google.no/maps/ms?ie=UTF8&amp;hl=no&amp;msa=0&amp;msid=205357112404663307536.000492263fbcdabf214fa&amp;ll=59.963462,10.588868&amp;spn=0.1,0.1&amp;source=embed" style="color:#0000FF;text-align:left">Småbruket</a> i et større kart</small>
 						</div>
 						
-						<div class="subsection">
+						<div class="subsection" id="leie">
 							<h2>Leie Småbruket</h2>
 							
 							<p>Dersom du er interessert i &aring; leie Sm&aring;bruket kontakt oss på <a href="mailto:hyttestyret@gmail.com">hyttestyret@gmail.com</a>. Nedenfor kan du også se hvilke datoer hytta er ledig.</p>
@@ -136,7 +136,7 @@ echo '
 							<p><a href="https://docs.google.com/file/d/0B8mINoGULmbPWVJvX1hkXy1uT3M/edit?usp=sharing">Last ned leiekontrakt</a></p>
 						</div>
 						
-						<div class="subsection">
+						<div class="subsection" id="priser">
 							<h2>Priser for leie av Småbruket</h2>
 							<p style="color: #FF0000">Vedprisen endres fra 1. januar 2014. Informasjon kommer. Pris nedenfor gjelder 2013.</p>
 							<ul>
@@ -192,8 +192,8 @@ echo '
 							</div>
 						</div>
 
-						<div class="subsection">
-							<h2 id="pakkeliste">Pakkeliste</h2>
+						<div class="subsection" id="pakkeliste">
+							<h2>Pakkeliste</h2>
 							<div style="display: inline-block; width: 50%; vertical-align: top">
 								<p><i>For hver enkelt:</i></p>
 								<ul>
@@ -213,8 +213,8 @@ echo '
 							</div>
 						</div>
 
-						<div class="subsection">
-							<h2 id="faq">Ofte spurte spørsmål</a></h2>
+						<div class="subsection" id="faq">
+							<h2>Ofte spurte spørsmål</a></h2>
 							<dl>
 								<dt>Er det strøm på hytta?</dt>
 								<dd>Ja, det er strøm i hele hytta, også i annekset.</dd>
@@ -227,7 +227,7 @@ echo '
 							</dl>
 						</div>
 							
-						<div class="subsection">
+						<div class="subsection" id="kalender">
 							<h2>Ledige datoer for utleie</h2>
 							<p>Her er en oversikt som viser hvilke dager hytta er reservert/utleid.</p>
 							<ul>
