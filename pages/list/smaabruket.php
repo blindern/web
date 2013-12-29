@@ -46,6 +46,17 @@ echo '
 
 echo '
 							<h1>Småbruket studenthytte</h1>
+
+						<ul>
+							<li><a href="#kortom">Kort om Småbruket</a></li>
+							<li><a href="#tilbud">Hva kan Småbruket tilby?</a></li>
+							<li><a href="#ankomstmuligheter">Ankomstmuligheter</a></li>
+							<li><a href="#leie">Leie Småbruket</a></li>
+							<li><a href="#priser">Priser for leie av Småbruket</a></li>
+							<li><a href="#pakkeliste">Pakkeliste</a></li>
+							<li><a href="#faq">Ofte spurte spørsmål</a></li>
+							<li><a href="#kalender">Ledige datoer for utleie</a></li>
+						</ul>
 							
 						<div class="subsection">
 							<h2>Kort om Sm&aring;bruket</h2>
@@ -179,6 +190,41 @@ echo '
 									<li>Å betale: kr 800 + kr 240 = <b><u>kr 1 040</u></b></li>
 								</ul>
 							</div>
+						</div>
+
+						<div class="subsection">
+							<h2 id="pakkeliste">Pakkeliste</h2>
+							<div style="display: inline-block; width: 50%; vertical-align: top">
+								<p><i>For hver enkelt:</i></p>
+								<ul>
+									<li>Gode sko</li>
+									<li>Sovepose</li>
+									<li>Skift og varme klær</li>
+									<li>Drikke <i>(Men er vann på hytta)</i></li>
+									<li>Håndkle <i>(Dusj/badstue på hytta)</i></li>
+									<li>Toalettmappe</li>
+								</ul>
+							</div>
+							<div style="display: inline-block; width: 40%; vertical-align: top">
+								<p><i>For gruppa:</i></p>
+								<ul>
+									<li>Mat/snacks for turen</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="subsection">
+							<h2 id="faq">Ofte spurte spørsmål</a></h2>
+							<dl>
+								<dt>Er det strøm på hytta?</dt>
+								<dd>Ja, det er strøm i hele hytta, også i annekset.</dd>
+								<dt>Er det innlagt vann?</dt>
+								<dd>Nei, men det er borrebrønn rett utenfor hytteveggen med vannpumpe som tilbud vann både sommer og vinter.</dd>
+								<dt>Må vi ta med egen ved?</dt>
+								<dd>Det er masse ved i kjelleren på hytta, så dette skal ikke være nødvendig. Vedsekkene er 80-liters sekker.</dd>
+								<dt>Hvor lang tid tar det å gå opp til hytta?</dt>
+								<dd>Tar man bussen til Ila eller kjører til Skytterkollen, kan man regne ca. 45-50 minutter opp til hytta.</dd>
+							</dl>
 						</div>
 							
 						<div class="subsection">

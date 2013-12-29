@@ -643,6 +643,9 @@ ul.arrangementer li {
 	margin-right: 5px;
 	border: 1px solid #AAA;
 }
+.hytta dt {
+	float: none;
+}
 
 
 /** Infoboks i toppen */
