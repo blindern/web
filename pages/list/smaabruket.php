@@ -54,7 +54,7 @@ echo '
 							<li><a href="#leie">Leie Småbruket</a></li>
 							<li><a href="#priser">Priser for leie av Småbruket</a></li>
 							<li><a href="#pakkeliste">Pakkeliste</a></li>
-							<li><a href="#faq">Ofte spurte spørsmål</a></li>
+							<li><a href="#faq">Ofte stilte spørsmål</a></li>
 							<li><a href="#kalender">Ledige datoer for utleie</a></li>
 						</ul>
 							
@@ -227,7 +227,7 @@ echo '
 						</div>
 
 						<div class="subsection" id="faq">
-							<h2>Ofte spurte spørsmål</a></h2>
+							<h2>Ofte stilte spørsmål</a></h2>
 							<dl>
 								<dt>Er det strøm på hytta?</dt>
 								<dd>Ja, det er strøm i hele hytta, også i annekset.</dd>
