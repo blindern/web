@@ -133,7 +133,7 @@ echo '
 								avtale overlevering av n&oslash;kkel, samt skrive under en leiekontrakt.</p>
 							<p>Etter turen tar du kontakt med utleieansvarlig for &aring; levere tilbake n&oslash;kkel.
 								Du m&aring; ogs&aring; opplyse hvor mange personer som brukte hytta samt hvor mange vedsekker som er brukt.</p>
-							<p><a href="https://docs.google.com/file/d/0B8mINoGULmbPWVJvX1hkXy1uT3M/edit?usp=sharing">Last ned leiekontrakt</a></p>
+							<p><a href="https://docs.google.com/file/d/0B8mINoGULmbPWVJvX1hkXy1uT3M/edit?usp=sharing">Last ned leiekontrakt</a> <i>(Vi har kontrakter liggende klare, så du trenger ikke å ta med.)</i></p>
 						</div>
 						
 						<div class="subsection" id="priser">
@@ -194,21 +194,34 @@ echo '
 
 						<div class="subsection" id="pakkeliste">
 							<h2>Pakkeliste</h2>
-							<div style="display: inline-block; width: 50%; vertical-align: top">
-								<p><i>For hver enkelt:</i></p>
+							<div style="display: inline-block; width: 48%; vertical-align: top">
+								<p style="margin-bottom: 5px"><i><b>For hver enkelt:</b></i></p>
 								<ul>
 									<li>Gode sko</li>
-									<li>Sovepose</li>
+									<li>Sovepose <i>(Det er ikke dyner på hytta.)</i></li>
 									<li>Skift og varme klær</li>
 									<li>Drikke <i>(Men er vann på hytta)</i></li>
+									<li>Evt. vann på turen opp</li>
 									<li>Håndkle <i>(Dusj/badstue på hytta)</i></li>
 									<li>Toalettmappe</li>
 								</ul>
-							</div>
-							<div style="display: inline-block; width: 40%; vertical-align: top">
-								<p><i>For gruppa:</i></p>
+								<p><i>Annet som kan komme nyttig med:</i></p>
 								<ul>
+									<li>Hodelykt</li>
+									<li>Mobillader</li>
+									<li>T-banekort og penger <i><a href="https://www.facebook.com/pages/Brunkollen-Turisthytte/171041842941781?fref=ts">Brunkollen Turisthytte</a> selger ofte boller i helgene, og du skal kanskje ta bussen?</i></li>
+								</ul>
+							</div>
+							<div style="display: inline-block; width: 48%; vertical-align: top">
+								<p style="margin-bottom: 5px"><i><b>For gruppa:</b></i></p>
+								<ul>
+									<li>Nøkkelen til hytta!</li>
 									<li>Mat/snacks for turen</li>
+								</ul>
+								<p><i>Ting det ofte er på hytta, men som kan være greit å ta med hvis man vil være sikker:</i></p>
+								<ul>
+									<li>Telyst/stearinlys o.l.</li>
+									<li>Fyrstikker</li>
 								</ul>
 							</div>
 						</div>
@@ -224,6 +237,10 @@ echo '
 								<dd>Det er masse ved i kjelleren på hytta, så dette skal ikke være nødvendig. Vedsekkene er 80-liters sekker.</dd>
 								<dt>Hvor lang tid tar det å gå opp til hytta?</dt>
 								<dd>Tar man bussen til Ila eller kjører til Skytterkollen, kan man regne ca. 45-50 minutter opp til hytta.</dd>
+								<dt>Hvor mange kan man være på hytta?</dt>
+								<dd>Selv om det kun er 34 "offisielle" soveplasser, er det fremdeles et par ekstra madrasser, sofa i stua og mulig å sove på gulvet. Vi har vært over 50 stk til overnatting på arrangert tur.</dd>
+								<dt>Trenger vi ta med toalettpapir?</dt>
+								<dd>Nei, dette skal det være masse av på hytta. Skulle det være tomt i boden, ring hyttestyret så sier vi hvor dere finner mer.</dd>
 							</dl>
 						</div>
 							

@@ -643,8 +643,15 @@ ul.arrangementer li {
 	margin-right: 5px;
 	border: 1px solid #AAA;
 }
+
+.hytta dl {
+	margin-bottom: 0;
+}
 .hytta dt {
 	float: none;
+}
+.hytta dd {
+	margin:  2px 0 7px 30px;
 }
 
 
