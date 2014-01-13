@@ -25,10 +25,10 @@ echo get_right_img_gal(172, null, "Beboerne er her samlet under julemøtet. Da e
 echo get_right_img_gal(162, null, "IFBS-sommerleker fra 2012.", "Foto: Henrik Steen");
 
 echo '
-<h1>Arrangementer <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a></h1>
+<h1>Arrangementer<!-- <a href="http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fg16bhv7hcpirfk0sdhq0ggl48o%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" style="border: none; vertical-align: -8px; margin-left: 30px" alt="" /></a>--></h1>
 
 <ul id="arrangementer_head" style="display: none">
-	<li><a href="#" id="arr_h13_group">Høst 2013</a></li>
+	<li><a href="#" id="arr_nyy_group">Nyeste</a></li>
 	<li><a href="#" id="arr_v13_group">Vår 2013</a></li>
 	<li><a href="#" id="arr_h12_group">Høst 2012</a></li>
 	<li><a href="#" id="arr_v12_group">Vår 2012</a></li>
@@ -37,26 +37,17 @@ echo '
 	<li><a href="#" id="arr_h10_group">Høst 2010</a></li>
 </ul>
 
-<div class="arrangementer_group" id="arr_h13">
-	<h2>Arrangementplan for høsten 2013</h2>
-
-	<p>Arrangementplanen er flyttet. Denne er per i dag kun tilgjengelig gjennom internside for beboere. Spør en medbeboer hvor du finner den!</p>';
+<div class="arrangementer_group" id="arr_nyy">
+	<h2>Arrangementplan flyttet</h2>
+	<p>Arrangementplanen er fra og med våren 2014 flyttet til <a href="https://blindern-studenterhjem.no/intern/arrplan">ny side</a>.
+Historisk plan for høsten 2013 er per tidspunkt kun tilgjengelig for beboere.</p>';
 
 if (bs_side::$is_beboer) {
 	echo '
-	<div style="display: inline-block; border: 2px solid #00FF00; background-color: #E7FFCF; padding: 10px; font-size: 150%; margin-bottom: 1em">
-		<p>Arrangementplanen ligger nå i wikien:<br />
-		<a href="https://blindern-studenterhjem.no/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan høst 2013</a></p>
-		<p style="margin-bottom: 0">Du ser denne lenken kun fordi du har vært innom beboersiden!</p>
-	</div>';
+	<p>(Du har status som beboer siden du har vært innom beboersiden: Arrangementplanen for høsten 2013 <a href="https://blindern-studenterhjem.no/wiki/Arrangementplan_h%C3%B8st_2013">ligger i wikien</a>.)</p>';
 }
 
 echo '
-	<p><i>Historikk:</i></p>
-	<ul>
-		<li>6. juni 2013: Arrangementplan tilsendt av kollegiet lagt inn.</li>
-		<li>21. august 2013: Arrangementplan flyttet til ny side.</li>
-	</ul>
 </div>
 
 <div class="arrangementer_group" id="arr_v13">
