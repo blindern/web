@@ -138,7 +138,7 @@ echo '
 						
 						<div class="subsection" id="priser">
 							<h2>Priser for leie av Småbruket</h2>
-							<p style="color: #FF0000">Vedprisen endres fra 1. januar 2014. Informasjon kommer. Pris nedenfor gjelder 2013.</p>
+							<p style="color: #FF0000">Vedprisen ble endret fra kr 120 til kr 130 gjeldende per 1. januar 2014.</p>
 							<ul>
 								<li>Minstepris:
 									<ul>
@@ -149,7 +149,7 @@ echo '
 								</li>
 								<li>Per person SiO-medlem: kr 100 per natt</li>
 								<li>Per person andre: kr 130 per natt</li>
-								<li>Per vedsekk (80-liter-sekk): kr 120</li>
+								<li>Per vedsekk (80-liter-sekk): kr 130</li>
 							</ul>
 							<p>For beboere ved Blindern Studenterhjem gjelder egne priser. Gamle beboere ved studenterhjemmet får pris tilsvarende SiO-medlemmer.</p>
 							<div class="showoff">
@@ -168,8 +168,8 @@ echo '
 									<li>10 SiO-medlemmer 1 døgn: kr 100 * 10 = <u>kr 1 000</u></li>
 									<li>Totalt gjester: <u>kr 1 000</u></li>
 									<li>Minstepris: kr 500 (totalbeløpet er over minsteprisen)</li>
-									<li>2 vedsekker: kr 120 * 2 = <u>kr 240</u></li>
-									<li>Å betale: kr 1 000 + kr 240 = <b><u>kr 1 240</u></b></li>
+									<li>2 vedsekker: kr 130 * 2 = <u>kr 260</u></li>
+									<li>Å betale: kr 1 000 + kr 260 = <b><u>kr 1 260</u></b></li>
 								</ul>
 								<p><b>Priseksempel: 2 døgn i helg, 4 SiO-medlemmer, 10 øvrige (5 kun ett døgn), 5 vedsekker</b></p>
 								<ul>
@@ -178,16 +178,16 @@ echo '
 									<li>5 øvrige 1 døgn: kr 130 * 5 * 1 = <u>kr 650</u></li>
 									<li>Totalt gjester: kr 800 + kr 1 300 + kr 650 = <u>kr 2 750</u></li>
 									<li>Minstepris: kr 500 * 2 = kr 1 000 (totalbeløpet er over minsteprisen)</li>
-									<li>5 vedsekker: kr 120 * 5 = <u>kr 600</u></li>
-									<li>Å betale: kr 2 750 + kr 600 = <b><u>kr 3 350</u></b></li>
+									<li>5 vedsekker: kr 130 * 5 = <u>kr 650</u></li>
+									<li>Å betale: kr 2 750 + kr 650 = <b><u>kr 3 400</u></b></li>
 								</ul>
 								<p><b>Priseksempel: 1 døgn i hverdag og 1 døgn i helg, 3 SiO-medlemmer, 2 vedsekker</b></p>
 								<ul>
 									<li>3 SiO-medlemmer 2 døgn: kr 100 * 3 * 2 = <u>kr 600</u></li>
 									<li>Minstepris: kr 300 + kr 500 = <u>kr 800</u></li>
 									<li>Totalt gjester: <u>kr 800</u> (minstepris blir gjeldende)</li>
-									<li>2 vedsekker: kr 120 * 2 = <u>kr 240</u></li>
-									<li>Å betale: kr 800 + kr 240 = <b><u>kr 1 040</u></b></li>
+									<li>2 vedsekker: kr 130 * 2 = <u>kr 260</u></li>
+									<li>Å betale: kr 800 + kr 260 = <b><u>kr 1 060</u></b></li>
 								</ul>
 							</div>
 						</div>
