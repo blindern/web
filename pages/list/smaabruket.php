@@ -232,11 +232,22 @@ echo '
 								<dt>Er det strøm på hytta?</dt>
 								<dd>Ja, det er strøm i hele hytta, også i annekset.</dd>
 								<dt>Er det innlagt vann?</dt>
-								<dd>Nei, men det er borrebrønn rett utenfor hytteveggen med vannpumpe som tilbud vann både sommer og vinter.</dd>
+								<dd>Nei, men det er borrebrønn rett utenfor hytteveggen med vannpumpe som tilbud vann både sommer og vinter.
+								    Om vinteren kan man oppleve at denne har fryst, men da er det kun nødvendig å smelte snø og helle
+								    kokende vann over røret som kommer opp av bakken.</dd>
 								<dt>Må vi ta med egen ved?</dt>
 								<dd>Det er masse ved i kjelleren på hytta, så dette skal ikke være nødvendig. Vedsekkene er 80-liters sekker.</dd>
 								<dt>Hvor lang tid tar det å gå opp til hytta?</dt>
-								<dd>Tar man bussen til Ila eller kjører til Skytterkollen, kan man regne ca. 45-50 minutter opp til hytta.</dd>
+								<dd>Fra Skytterkollen kan man regne ca. 40-60 minutter om sommeren.
+								    Fra Ila (der bussen stopper) til Skytterkollen tar det ca. 10 minutter.
+								    Om vinteren bør man beregne mer tid - kanskje opp mot 2 timer dersom
+								    det er mørkt, mye nysnø, is på bakken og andre mer krevende forhold.</dd>
+								<dt>Hvordan kommer vi oss til Skytterkollen fra Ila?</dt>
+								<dd>Fra buss-stoppen skal man gå opp mot høyre side av fengselet. Før man
+								    kommer til idrettsbanen der skal man krysse rett gjennom skogen oppover,
+								    helt til man kommer til en vei. Der skal man følge veien til venstre til
+								    man kommer til parkeringsplassen (som er Skytterkollen). Stien man skal følge
+								    derfra begynner på venstr side rett før man ankommer parkeringsplassen.</dd>
 								<dt>Hvor mange kan man være på hytta?</dt>
 								<dd>Selv om det kun er 34 "offisielle" soveplasser, er det fremdeles et par ekstra madrasser, sofa i stua og mulig å sove på gulvet. Vi har vært over 50 stk til overnatting på arrangert tur.</dd>
 								<dt>Trenger vi ta med toalettpapir?</dt>
