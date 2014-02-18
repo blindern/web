@@ -28,6 +28,10 @@ echo get_rand_images_right(
 echo '
 <h1>Studentbolig i Oslo</h1>
 
+<div style="text-align: center; margin: 30px 0">
+	<iframe width="560" height="315" src="//www.youtube.com/embed/_TLJbfVuFDE" frameborder="0" allowfullscreen></iframe>
+</div>
+
 <div class="mattider">
 	<h2>Mat-tider</h2>
 	<p><u>Mandag-fredag:</u><br />Frokost 07.15-09.00. Middag 14.30-17.30. Kveldsmat 19.30-20.30.</p>
