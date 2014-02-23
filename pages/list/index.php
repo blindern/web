@@ -50,7 +50,7 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 <div class="romgruppe">
 	<a href="studentbolig">
 		<div class="h2">Enkeltrom</div>
-		<div class="pris">kr 6 535 / mnd</div>
+		<div class="pris">kr 6 784 / mnd</div>
 		<div>Inkl. mat, strøm<br />og internett</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
@@ -59,7 +59,7 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 <div class="romgruppe">
 	<a href="studentbolig">
 		<div class="h2">Kombinasjonsrom</div>
-		<div class="pris">kr 6 395 / mnd</div>
+		<div class="pris">kr 6 636 / mnd</div>
 		<div>Inkl. mat, strøm<br />og internett</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
@@ -68,13 +68,14 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 <div class="romgruppe">
 	<a href="studentbolig">
 		<div class="h2">Dobbeltrom</div>
-		<div class="pris">kr 6 160 / mnd</div>
+		<div class="pris">kr 6 386 / mnd</div>
 		<div>Inkl. mat, strøm<br />og internett</div>
 		<div class="more">Flere detaljer &raquo;</div>
 	</a>
 </div>
 
 </div>
+<p style="text-align: center"><i>Priser gjelder høst 2014 / vår 2015.</i></p>
 
 
 <div class="index_group">
