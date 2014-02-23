@@ -90,14 +90,14 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 	<h2 style="margin-top: 25px">Et unikt sosialt milj&oslash;</h2>
 	<p>
 		Blindern Studenterhjem er kjent for sitt sterke sosiale milj&oslash;. Hvert &aring;r arrangeres en rekke tradisjonsrike
-		arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av Studenthjemmet i 1925.</p>
-	<p>Som beboer har du mulighet til &aring; engasjere seg i flere foreninger, av sosial eller administrativ art.
+		arrangementer og fester, hvorav noen kan spores tilbake til &aring;pningen av studenthjemmet i 1925.</p>
+	<p>Som beboer har du mulighet til &aring; engasjere deg i flere foreninger, av sosial eller administrativ art.
 		Studenter sitter i organer som tar aktivt del i avgj&oslash;relsene
 		p&aring; studenthjemmet og har stor grad av medbestemmelsesrett.
 	</p>
-	<p>Hvert semester flytter mange nye inn, og du kan også søke. Du trenger ikke
+	<p>Hvert semester flytter mange nye inn, og alle studenter kan søke om plass. Du trenger ikke
 	å ha kjent noen som har bodd her før eller ha vært på besøk. Alt vi ønsker er engasjerte personer
-	som kan tenke seg å bidra til et godt miljø.</p>
+	som ønsker å bidra til et godt miljø.</p>
 	<p><a href="livet">Les mer om livet på BS &raquo;</a></p>
 </div>';
 
