@@ -7,7 +7,7 @@ echo get_right_img_gal(208, null, "Beboerne får 3 måltider inkludert i husleie
 echo get_right_img_gal(137, null, "Skiltet med &quot;Et godt hjem for studenter&quot; kan sees på den ene stolpen i bunnen av pærealleen. Under dette mottoet ble studenterhjemmet bygget.", "Foto: Cecilie Sæle Merkesvik");
 
 echo '
-<h1>Leiepriser h&oslash;stsemesteret 2013 og våren 2014</h1>
+<h1>Leiepriser h&oslash;stsemesteret 2014 og våren 2015</h1>
 <p>
 	Den totale leieprisen best&aring;r av en rekke ting,
 	da Blinderen Studenterhjem sikter mot &aring; v&aelig;re
@@ -18,22 +18,23 @@ echo '
 </p>
 <p>Leiekontrakten løper fra 15. august (evt. fra senere opptak) og frem til 15. juni.</p>
 
-<h2>Leieprisen</h2>
-
 <div class="romgrupper">
 	<div class="romgruppe">
 		<div class="h2">Enkeltrom</div>
-		<div class="pris">høst 2013 / vår 2014:<br />kr 6 535 / mnd</div>
+		<div class="pris">vår 2014:<br />kr 6 535 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 784 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Kombinasjonsrom</div>
-		<div class="pris">høst 2013 / vår 2014:<br />kr 6 395 / mnd</div>
+		<div class="pris">vår 2014:<br />kr 6 395 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 636 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Dobbeltrom</div>
-		<div class="pris">høst 2013 / vår 2014:<br />kr 6 160 / mnd</div>
+		<div class="pris">vår 2014:<br />kr 6 160 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 386 / mnd</div>
 	</div>
 </div>
 
@@ -42,7 +43,7 @@ echo '
 
 <p>
 	Det vil si at dersom du bor p&aring; dobbeltrom,
-	s&aring; betaler du 6 160,- per m&aring;ned + medlemskontingent (høst 2013), og
+	s&aring; betaler du 6 386,- per m&aring;ned + medlemskontingent (høst 2014), og
 	har da betalt for mat, str&oslash;m, internett,
 	vaskemaskin, en rekke velferdstilbud osv. Det finnes en rekke andre poster
 	som kan skrives p&aring; regningen i tillegg til dette,
@@ -51,7 +52,7 @@ echo '
 <p>Resten av stipendet kan n&aring;
 	brukes p&aring; andre ting uten bekymringer over
 	bokostnader. Leieprisen blir fastsatt en gang i &aring;ret,
-	og h&oslash;sten -14 vil prisen variere fra denne oversikten.
+	og h&oslash;sten -15 vil prisen variere fra denne oversikten.
 </p>
 
 <h2>Dugnad</h2>
@@ -87,6 +88,4 @@ echo '
 		er fastsatt utifra hva driftskostnadene til disse
 		velferdsgodene koster &aring; vedlikeholde.
 	</p>
-	<p>Leieøkningen for høsten 2013 fra høsten 2012 er på 3,5 %. Fra 2011 til 2012 var den 3,5 %.</p>
-	<!-- 2011->2012 = 3,0 % -->
 </div>';
