@@ -1,0 +1,58 @@
+/**
+ * Prisboks på forsiden og leiepriser
+ */
+.romgrupper {
+	text-align: center;
+	margin: 0 0 10px;
+
+	.romgruppe {
+		display: inline-block;
+		padding: 10px;
+		margin: 0 8px 5px;
+		border: 1px solid #DDD;
+
+		background-color: rgba(0, 157, 202, .1);
+		border-color: rgba(0, 157, 202, .3);
+
+		text-align: center;
+
+		/*background-color: #d3e9f1;
+		background-color: rgba(220, 233, 241, .8);*/
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		&:hover {
+			background-color: rgba(0, 157, 202, .2);
+
+			.more {
+				color: 000;
+				text-decoration: underline;
+			}
+		}
+
+		.h2 {
+			margin-top: 0;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		div {
+			margin: 3px 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.pris {
+			font-style: italic;
+		}
+
+		.more {
+			color: #555;
+		}
+	}
+}

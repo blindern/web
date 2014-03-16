@@ -1,0 +1,23 @@
+/**
+ * Lenke til boligtorget
+ */
+
+.boligtorget_lenke {
+	text-align: center;
+}
+.boligtorget_lenke a {
+	display: inline-block;
+	margin: 10px auto;
+	padding: 15px 15px 10px;
+	background-color: rgba(0, 157, 202, .1);
+	border: 1px solid;
+	border-color: rgba(0, 157, 202, .3);
+	text-decoration: none;
+}
+.boligtorget_lenke a:hover {
+	background-color: rgba(0, 157, 202, .2);
+}
+.boligtorget_lenke img {
+	padding-top: 8px;
+	border: 0;
+}

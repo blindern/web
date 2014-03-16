@@ -1,0 +1,18 @@
+.soknadsknapp {
+	padding: 10px;
+	font-style: italic;
+}
+.soknadsknapp a {
+	font-style: normal;
+	display: inline-block;
+	text-decoration: none;
+	padding: 6px 10px;
+	margin: 1px 0 0;
+	border-radius: 3px;
+	background-color: #009dca;
+	background-color: rgba(0, 157, 202, .8);
+	color: #FFF;
+}
+.soknadsknapp a:hover {
+	background-color: rgba(0, 157, 202, 1);
+}

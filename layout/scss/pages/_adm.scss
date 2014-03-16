@@ -1,0 +1,31 @@
+/** Administrasjon */
+.adm_kontakt {
+	dt {
+		font-weight: normal;
+		margin-right: 0.5em;
+
+		&:after  {
+			content: ":";
+		}
+	}
+
+	dd {
+		margin-left: 80px;
+	}
+}
+
+.adm_konto {
+	dt {
+		margin-top: 1em;
+		float: none;
+		font-weight: normal;
+
+		&:after {
+			content: ":";
+		}
+	}
+
+	dd {
+		margin: 0;
+	}
+}

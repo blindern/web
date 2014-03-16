@@ -1,0 +1,172 @@
+/* Bildegalleri */
+
+
+/*
+ * visning av enkeltbilde
+ */
+#omvisning_bilde_w {
+	min-height: 1200px;
+
+	p {
+		max-width: none !important;
+	}
+	
+	#omvisning_nav {
+		text-align: center;
+		margin: 15px 0;
+		font-size: 10px;
+		color: #888;
+
+		#omvisning_back span { background: url(../graphics/arrow_undo.png) left 0 no-repeat; padding: 0 0 0 20px }
+		#omvisning_prev span { background: url(../graphics/arrow_left.png) left 0 no-repeat; padding: 0 0 0 20px }
+		#omvisning_next span { background: url(../graphics/arrow_right.png) right 0 no-repeat; padding: 0 20px 0 0 }
+		#omvisning_back,
+		#omvisning_prev,
+		#omvisning_next {
+			background-color: #E5E5E5;
+			text-decoration: none;
+			padding: 5px 5px 4px;
+			border: 2px solid #DDD;
+			cursor: pointer;
+			opacity: 0.75;
+			display: inline-block;
+			font-size: 13px;
+			color: #333;
+		}
+		#omvisning_back:hover,
+		#omvisning_prev:hover,
+		#omvisning_next:hover {
+			background-color: #E5E5E5;
+			text-decoration: none;
+			border-color: #CCC;
+			opacity: 1;
+		}
+	}
+
+	#omvisning_bilde {
+		background-color: #F3F3F3;
+		padding: 5px;
+		text-align: center;
+		margin: 0;
+
+		h1 {
+			font-size: 18px;
+		}
+
+		img {
+			max-width: 98%;
+			border: none;
+		}
+
+		#omvisning_bilde_tekst {
+			margin: 5px -5px -5px -5px;
+			background-color: #DDD;
+			color: #333;
+			padding: 4px 10px;
+			display: block;
+		}
+	}
+
+	#omvisning_stort {
+		margin: 10px;
+		text-align: center;
+	}
+}
+
+/*
+ * visning av bildeliste
+ */
+#omvisning_bilde_inactive #omvisning_liste {
+	margin: 50px;
+}
+
+#omvisning_bilder_h {
+	font-size: 15px;
+	text-align: center;
+	margin: 40px 0 20px 0;
+	color: #555;
+	max-width: none !important;
+}
+
+#omvisning_bilder {
+	overflow: hidden;
+
+	.omvisning_bilder_g p {
+		display: inline-block;
+		width: 216px;
+		background-color: #DDD;
+		margin: 2px;
+		padding: 8px 5px;
+		vertical-align: middle;
+		text-align: center;
+		overflow: hidden;
+
+		&:hover {
+			background-color: #555;
+			cursor: pointer;
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			margin: -8px -5px;
+			padding: 8px 5px;
+		}
+
+		img {
+			margin: 0;
+			vertical-align: middle;
+			border: 0;
+		}
+	}
+
+	.omvisning_aktiv,
+	.omvisning_aktiv:hover {
+		background-color: #3388DD;
+	}
+
+	.omvisning_bilder_cat,
+	#omvisning_media {
+		width: 710px;
+		margin: 20px auto;
+		padding: 5px 0 20px 20px;
+		background-color: #F3F3F3;
+	}
+	#omvisning_bilder h2,
+	#omvisning_media h2 {
+		clear: both;
+		margin-bottom: 15px;
+	}
+
+	#omvisning_media {
+		text-align: center;
+
+		h2 {
+			text-align: left;
+		}
+
+		p {
+			max-width: none;
+		}
+	}
+}
+
+/*
+ * admin-sia
+ */
+.omvisninga {
+	#container,
+	#main {
+		width: 100%;
+	}
+
+	#header,
+	#menu_main {
+		width: 900px;
+	}
+
+	.omvisning_bilder_cat {
+		width: 90% !important;
+	}
+}

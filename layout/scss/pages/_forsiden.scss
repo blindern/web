@@ -1,0 +1,100 @@
+.forside {
+	#content_clear {
+		display: none;
+	}
+
+	#content {
+		padding-bottom: 0;
+	}
+
+	.index_group {
+		max-width: 450px;
+		margin: 40px 75px;
+	}
+
+	.index_kart_img {
+		float: left;
+		margin: 2px 10px 0 0;
+
+		img {
+			border: 0;
+			margin: 0;
+		}
+	}
+}
+
+/* dette er bs */
+.dette_er_bs {
+	/*float: right;*/
+	display: block;
+	width: 206px;
+	background-color: #F0F0F0;
+	padding: 7px;
+	margin: 15px 0 20px 0;
+	border: 1px solid #CCC;
+	font-size: 13px;
+	text-align: center;
+
+	h2 {
+		margin: 2px 0;
+		font-size: 16px;
+	}
+
+	p {
+		margin: 5px 0 0;
+	}
+}
+
+
+/* bilder i bunn av siden */
+.img_line {
+	margin: 0 -10px;
+	padding: 0 0 10px 10px;
+	clear: both;
+
+	p {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px 3px 4px 3px;
+		
+		width: 80px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #555;
+	}
+
+	span.imgwrap1 {
+		display: block;
+		border: none;
+		max-height: 52px;
+		overflow: hidden;
+		position: relative;
+		background-color: #000;
+	}
+	span.imgwrap2 {
+		display: block;
+		height: 160px;
+		line-height: 160px;
+		position: relative;
+		top: -56px;
+		vertical-align: middle;
+	}
+
+	img {
+		display: inline-block;
+		
+		margin: 0;
+		border: 0;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,40 @@
+/** Arrangementsplan */
+dl.arrangementer {
+	margin: 1em 0;
+	line-height: 1.3em;
+
+	dt {
+		float: left;
+		clear: left;
+		width: 150px;
+		text-align: right;
+		font-weight: normal;
+	}
+
+	dd {
+		margin-left: 170px;
+	}
+}
+ul.arrangementer {
+	margin: 1em 0;
+
+	li {
+		margin-left: 2em;
+	}
+}
+
+#arrangementer_head {
+	margin: 0;
+	padding: 0;
+
+	&:before {
+		content: "Periode: ";
+	}
+
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0 0 0 10px;
+		display: inline-block;
+	}
+}

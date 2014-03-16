@@ -8,3 +8,6 @@ base/inc.innstillinger_local.php
 /graphics/omvisning/original
 /files/
 /dokumenter/
+/layout/*.css
+/layout/*.map
+.sass-cache

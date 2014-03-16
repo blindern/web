@@ -1,0 +1,55 @@
+/** Ansatte */
+#ansatte {
+	margin-bottom: 20px;
+
+	h2 {
+		margin-top: 1.5em;
+	}
+}
+
+.ansatteFrame,
+.ansatteFrame2 {
+	overflow: hidden;
+}
+.ansatteFrame img {
+	float: right;
+}
+#content .ansatteFrame2 img {
+	float: right;
+	border: 1px solid #555;
+	margin: 10px;
+}
+.ansatte_info {
+	overflow: hidden;
+}
+.ansatteFrame2 {
+	margin: 10px 0 15px 30px;
+	padding: 1px 1px 1px 11px;
+	max-width: 540px;
+
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	border: 1px solid #EEE;
+	padding: 0 0 0 10px;
+
+	&:hover {
+		background-color: rgba(0, 157, 202, .1);
+		border-color: rgba(0, 157, 202, .3);
+	}
+
+	dl {
+		margin: 10px 0;
+		line-height: 1.4em;
+
+		dt {
+			float: left;
+			clear: left;
+			font-weight: bold;
+			padding-right: 10px;
+		}
+
+		dd {
+			margin-left: 120px;
+		}
+	}
+}

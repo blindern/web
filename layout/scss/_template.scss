@@ -1,0 +1,338 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	
+	background: #A9A9A2 url(../graphics/layout/athene-bakgrunn.gif) repeat;
+
+	&.devinfobody {
+		background-position: 0 32px;
+		padding-top: 34px;
+	}
+}
+
+/* linje øverst på utviklersia */
+.devinfo p {
+	text-align: center;
+	margin: 0;
+	padding: 8px;
+	background: #333;
+	color: #FFF;
+	font-size: 16px;
+	position: fixed;
+	z-index: 10;
+	height: 18px;
+	width: 100%;
+	top: 0;
+}
+
+
+
+/* basic oppsett på sia */
+#body_wrap {
+	background: url(../graphics/layout/bakgrunn-opacity.png) repeat-x;
+	min-width: 900px;
+	min-height: 100%;
+	overflow: hidden;
+
+	#container {
+		width: 900px; /* uten banner */
+		
+		margin-left: auto;
+		margin-right: auto;
+
+		&.banner {
+			width: 1110px; /* med banner */
+		}
+
+		#main {
+			float: left;
+			width: 900px;
+			background-color: #DDD;
+			margin-bottom: 10px;
+
+			#header {
+				height: 210px;
+				position: relative;
+				background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
+
+
+				h1 {
+					height: 210px;
+					margin: 0;
+
+					a {
+						display: block;
+						height: 210px;
+					}
+
+					span {
+						display: none;
+					}
+				}
+			}
+
+			#content {
+				padding: 10px;
+				margin: 10px 10px 0 10px;
+				background-color: #FFF;
+				
+				-moz-border-radius: 0 5px 0 0;
+				-webkit-border-radius: 0 5px 0 0;
+				border-radius: 0 5px 0 0;
+
+				&.content_no_sub {
+					-moz-border-radius: 5px 5px 0 0;
+					-webkit-border-radius: 5px 5px 0 0;
+					border-radius: 5px 5px 0 0;
+				}
+
+				p {
+					max-width: 600px;
+				}
+
+				ul {
+					max-width: 570px;
+				}
+
+				#content_clear {
+					clear: both;
+					height: 1px;
+					margin-top: -4px;
+				}
+			}
+
+			#footer {
+				background-color: #cecece;
+				text-align: center;
+				overflow: hidden;
+
+				p {
+					margin: 3px 0;
+				}
+			}
+		}
+
+		/* lenke til arrangement, f.eks. UKA og Bukkehaugsfestivalen */
+		#banner {
+			float: right;
+			width: 200px;
+
+			img {
+				border: 0;
+				margin: 0;
+				display: block;
+			}
+		}
+	}
+
+	#footer_spacer {
+		height: 10px;
+	}
+}
+
+.lang_en #header {
+	background-image: url(../graphics/layout/toppbilde_en.jpg);
+}
+
+
+
+p {
+	margin: 0 0 13px 0;
+}
+#menu_sub h1,
+h2,
+h3,
+legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+h2 {
+	margin: 0;
+	font-size: 16px;
+}
+
+h2,
+h3 {
+	margin: 15px 0 2px 0;
+}
+
+h3 {
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+dl {
+	margin: 0 0 1em 0;
+	line-height: 1.3em;
+	overflow: hidden;
+
+	dt {
+		float: left;
+		clear: left;
+		font-weight: bold;
+	}
+}
+
+ul {
+	margin: 0 0 10px;
+	padding: 0 0 0 30px;
+
+	&.spaced li {
+		margin: 0.8em 0;
+	}
+}
+ul li,
+ol li {
+	margin: 3px 0;
+}
+.ul_header {
+	margin: 15px 0 0;
+}
+
+
+
+/* bilder */
+img {
+	border: 1px solid #000;
+	margin: 5px;
+}
+.img_right {
+	float: right;
+	clear: right;
+	margin: 5px 0 5px 5px;
+}
+.img a {
+	text-decoration: none;
+	color: inherit;
+}
+.img_top {
+	margin-top: 0;
+}
+#content .img_right img {
+	margin: 0;
+}
+p.img {
+	margin: 5px;
+
+	img {
+		display: block;
+		margin: 0;
+	}
+
+	span {
+		display: block;
+		font-style: italic;
+		font-size: 11px;
+		
+		max-width: 220px;
+		line-height: 1.3em;
+		margin-top: 2px;
+	}
+}
+p.img_right {
+	margin-right: 0;
+}
+
+
+
+
+.subsection {
+	overflow: hidden;
+	margin-bottom: 10px;
+
+	h2 {
+		margin-top: 5px;
+	}
+
+	img.subimg {
+		float: right;
+		clear: right;
+		margin-right: 0;
+	}
+
+	&.subimgleft img.subimg {
+		float: left;
+		clear: left;
+		margin: 5px 5px 5px 0;
+	}
+
+	p.subimg {
+		float: right;
+		clear: right;
+		margin-right: 0;
+	}
+}
+
+
+
+
+.clear {
+	clear: both;
+}
+.u { text-decoration: underline }
+.roed {
+	background-color: red;
+}
+
+
+.table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	/*width: 54%;*/
+	margin-bottom: 1em;
+
+	th {
+		text-align: left;
+		background-color: #EEEEEE;
+	}
+
+	td,
+	th {
+		border: 1px solid black;
+		padding: 2px 4px;
+	}
+}
+
+
+
+.right_section {
+	float: right;
+}
+.right_section p.img,
+.right_section p.img img {
+	margin: 0;
+}
+
+
+#showoff {
+	display: none;
+}
+
+
+/* menyen */
+@import 'template/nav';
+
+/* søknadsknapp i toppen (og forsiden) */
+@import 'template/soknadsknapp';
+
+/* boks i toppen av sia */
+@import 'template/ledigeplasser';

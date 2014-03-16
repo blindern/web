@@ -1,0 +1,131 @@
+/** Foreninger */
+.foreninger .subsection,
+.subsection_left .subsection,
+.hytta .subsection {
+	width: 600px;
+	padding: 20px;
+	margin: 40px auto;
+	background-color: #F3F3F3;
+	border: 1px solid #DDD;
+}
+.foreninger .subsection h2,
+.subsection_left .subsection h2,
+.hytta .subsection h2 {
+	font-size: 16px;
+	margin-bottom: 15px !important;
+	border-bottom: 1px solid #DDD;
+}
+.foreninger .subsection {
+	p {
+		max-width: 350px !important;
+		text-align: justify;
+	}
+
+	h2 {
+		max-width: 350px;
+	}
+
+	&.noimg p,
+	&.noimg h2 {
+		max-width: none !important;
+	}
+}
+
+
+
+
+
+
+
+
+/* foreninger */
+.foreninger_liste #content_clear {
+	display: none;
+}
+.foreninger_liste ul#menu_sub {
+	margin-left: 150px;
+}
+.foreninger_wrap {
+	margin: -10px;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 150px;
+		height: 100%;
+		content: "";
+		background-color: #DDD;
+		z-index: 0;
+	}
+}
+.foreninger_left {
+	display: inline-block;
+	width: 150px;
+	padding: 0;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 12px;
+	position: relative;
+	z-index: 1;
+	vertical-align: top;
+
+	ul,
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 3px 0 0 2px;
+		font-style: italic;
+		color: #888;
+	}
+	ul {
+		margin: 3px 0 15px 0;
+	}
+	li {
+		padding: 4px 2px;
+		
+		a {
+			padding: 4px 2px;
+			margin: -4px -2px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #000;
+			text-decoration: none;
+
+			&:hover {
+				background-color: #EEE;
+			}
+		}
+
+		&.active a {
+			background-color: #FFF;
+		}
+	}
+}
+.foreninger_content {
+	display: inline-block;
+	vertical-align: top;
+	width: 680px;
+	padding: 25px;
+
+	p.img_right {
+		margin-left: 15px;
+	}
+}
+
+#content .foreninger_content p {
+	max-width: 450px;
+}
+
+
+/* video (som er skjult..) */
+.creds {
+	font-style: italic;
+	font-size: 10px;
+}

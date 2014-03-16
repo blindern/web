@@ -1,0 +1,134 @@
+/* hovedmenyen */
+#menu_main {
+	background: #333 url(../graphics/layout/menu_bg.png) repeat-x center center;
+	/*text-align: center;*/
+	margin: 0;
+	padding: 0 0 0 0;
+	/*overflow: hidden; erstattet med height for å kunne ha flytende undermeny utenfor */
+	line-height: 20px;
+	height: 40px;
+
+	li {
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+
+		&.activesub a {
+			background-color: #DDD;
+			color: #333;
+		}
+
+		&:first-child a {
+			padding-left: 20px;
+		}
+	}
+
+	a {
+		display: block;
+		color: #EEE;
+		font-size: 16px;
+		text-decoration: none;
+		padding: 10px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.langsel {
+		float: right;
+
+		&:last-child a {
+			padding-right: 20px;
+		}
+	}
+
+	.beboerlenke {
+		float: left;
+		position: relative;
+
+		a {
+			color: #FBF2BB;
+		}
+
+
+		/* spesialmeny beboerlenke */
+		ul {
+			display: none;
+			position: absolute;
+			z-index: 10;
+			left: 0;
+			top: 40px;
+			margin: 0;
+			padding: 0 0 0 10px;
+			opacity: 0.95;
+		}
+		&:hover ul {
+			display: block;
+		}
+		li {
+			background-color: #333;
+			float: none;
+
+			a {
+				padding: 5px 10px 7px 10px;
+			}
+		}
+
+		.beboerlenke_quicklinks_desc {
+			color: #DDD;
+			padding: 10px 10px 5px 10px;
+			font-style: italic;
+			font-size: 16px;
+			background-color: #444;
+		}
+	}
+}
+
+
+/* undermenyen */
+#menu_sub {
+	background-color: #DDD;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	margin: 0 0 -10px 0;
+	padding: 10px 0 0 10px;
+	
+	overflow: hidden;
+
+	li {
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		display: block;
+		background: #444 url(../graphics/layout/menu_bg.png) repeat-x top;
+		
+		color: #FFF;
+		font-size: 14px;
+		text-decoration: none;
+		margin-right: 5px;
+		padding: 5px 10px;
+		
+		line-height: 15px;
+		
+		-moz-border-radius: 3px 3px 0 0;
+		-webkit-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.active a,
+	#menu_sub a:hover {
+		background-color: #FFF;
+		background-image: none;
+		color: #222;
+	}
+}
