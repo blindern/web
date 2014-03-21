@@ -43,7 +43,7 @@ echo '
 							</p>
 							<h2>To call a resident</h2>
 							<p>In March 2014, our old telephone sentral was phased out.
-							   The room phones has therefore no longer in use.</p>
+							   The room phones are no longer in use.</p>
 							<h2>The International Summer School (ISS)</h2>
 							<dl class="adm_kontakt">
 								<dt>Phone</dt>
