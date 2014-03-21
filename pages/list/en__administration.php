@@ -47,5 +47,5 @@ echo '
 							<h2>The International Summer School (ISS)</h2>
 							<dl class="adm_kontakt">
 								<dt>Phone</dt>
-								<dd>23 33 10 00</dd>
+								<dd>23 33 10 08</dd>
 							</dl>';
