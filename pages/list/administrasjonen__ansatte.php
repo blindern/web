@@ -35,7 +35,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 00</dd>
+									<dd>23 33 10 00</dd>
 								</dl>
 							</div>
 						</div>
@@ -48,7 +48,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:gro.osland@blindern-studenterhjem.no">gro.osland@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 58</dd>
+									<dd>23 33 10 01</dd>
 								</dl>
 							</div>
 						</div>
@@ -61,7 +61,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:regine.bahoshy-mathisen@blindern-studenterhjem.no">regine.bahoshy-mathisen@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 00</dd>
+									<dd>23 33 10 00</dd>
 								</dl>
 							</div>
 						</div>
@@ -76,7 +76,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:anne.karine.roe@blindern-studenterhjem.no">anne.karine.roe@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 51</dd>
+									<dd>23 33 10 02</dd>
 								</dl>
 							</div>
 						</div>
@@ -91,7 +91,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:petter.gripheim@blindern-studenterhjem.no">petter.gripheim@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 57</dd>
+									<dd>23 33 10 06</dd>
 									<dt>Mobil</dt>
 									<dd>95 82 75 62</dd>
 								</dl>
@@ -108,7 +108,7 @@ echo preg_replace("~src=\".+?\"~", "src=\"/graphics/images/ansatte.jpg\"", get_r
 									<dt>E-post</dt>
 									<dd><a href="mailto:dagfrid.birketveit@blindern-studenterhjem.no">dagfrid.birketveit@blindern-studenterhjem.no</a></dd>
 									<dt>Telefon</dt>
-									<dd>23 33 15 52</dd>
+									<dd>23 33 10 03</dd>
 								</dl>
 							</div>
 						</div>

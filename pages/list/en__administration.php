@@ -9,13 +9,14 @@ echo '
 							<p>If you have any questions please do not hesitate to contact the administration.</p>
 							
 							<h2>Contact administration</h2>
+							<p style="color: #FF0000">We\'ve got new phone numbers:</p>
 							<dl class="adm_kontakt">
 								<dt>Office hours</dt>
 								<dd>09am - 3pm (CET/CEST)</dd>
 								<dt>Phone</dt>
-								<dd>(+47) 23 33 15 00</dd>
+								<dd>(+47) 23 33 10 00</dd>
 								<dt>Fax</dt>
-								<dd>(+47) 23 33 15 56</dd>
+								<dd>(+47) 23 33 10 19</dd>
 								<dt>E-mail</dt>
 								<dd><a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a></dd>
 							</dl>
@@ -41,9 +42,8 @@ echo '
 								<a href="housing/location">See directions here</a>
 							</p>
 							<h2>To call a resident</h2>
-							<p>
-								For a direct line you call: 23 33 1x xx (xxx is replaced with the line number of the student).
-								Do you not know the student\'s line number you can call the office: 23 33 15 00.</p>
+							<p>In March 2014, our old telephone sentral was phased out.
+							   The room phones has therefore no longer in use.</p>
 							<h2>The International Summer School (ISS)</h2>
 							<dl class="adm_kontakt">
 								<dt>Phone</dt>

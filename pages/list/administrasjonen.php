@@ -17,13 +17,14 @@ echo '
 </p>
 
 <h2>Kontakt administrasjonen</h2>
+<p style="color: #FF0000">OBS! Vi har fått nye telefonnummer:</p>
 <dl class="adm_kontakt">
 	<dt>Kontortid</dt>
 	<dd>09.00 - 15.00</dd>
 	<dt>Telefon</dt>
-	<dd>(+47) 23 33 15 00</dd>
+	<dd>(+47) 23 33 10 00</dd>
 	<dt>Fax</dt>
-	<dd>(+47) 23 33 15 56</dd>
+	<dd>(+47) 23 33 10 19</dd>
 	<dt>E-post</dt>
 	<dd><a href="mailto:post@blindern-studenterhjem.no">post@blindern-studenterhjem.no</a></dd>
 </dl>
@@ -59,15 +60,11 @@ echo '
 </div>
 
 <h2>For &aring; ringe en beboer</h2>
-<p>
-	For direkte linje ringer du: 23 33 1x xx
-	(xxx byttes ut med linjenummeret til beboeren). Kjenner
-	du ikke studentens linjenummer kan du ringe kontoret
-	p&aring; dagtid: 23 33 15 00. Beboere på vestfløyen og i de grå brakkene har ikke telefon.
-</p>
+<p>I mars 2014 ble vår gamle telefonsentral utfaset
+   og tilbudet med romtelefoner har derfor opphørt.</p>
 
 <h2>Den internasjonale sommerskolen (ISS)</h2>
 <dl class="adm_kontakt">
 	<dt>Telefon</dt>
-	<dd>23 33 10 00 <i>(Kun bemannet sommerstid mellom juni og august.)</i></dd>
+	<dd>23 33 10 08 <i>(Kun bemannet sommerstid mellom juni og august.)</i></dd>
 </dl>';

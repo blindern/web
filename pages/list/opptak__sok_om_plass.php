@@ -147,14 +147,14 @@ Application was sent on %s'),
 
 Behandlingstiden er maks 15 dager. Dersom vi ikke har tatt kontakt innen dette, kan det være at vi allikevel ikke har registrert din søknad. Ta i så fall kontakt ved å svare på denne e-posten, slik at vi kan bekrefte at den er mottatt.
 
-Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 15 00 i kontortiden mellom 09.00 - 15.00 på hverdager. Se også www.blindern-studenterhjem.no for oppdatert informasjon.',
+Skulle du ha ytterligere spørsmål, kan du kontakte kontoret på telefon 23 33 10 00 i kontortiden mellom 09.00 - 15.00 på hverdager. Se også www.blindern-studenterhjem.no for oppdatert informasjon.',
 			'Receipt for application:
 
 %s
 
 Processing time is maximum 15 days. If we do not contact you within this, it might be because we accidentally didn\'t register your application. We then ask you to reply to this e-mail, so that we can confirm it has been received.
 
-If you have any futher questions, you can contact the administration on phone (+47) 23 33 15 00 in office time between 09.00-15.00 weekdays (CET/CEST). See also www.blindern-studenterhjem.no/en for updated information.')
+If you have any futher questions, you can contact the administration on phone (+47) 23 33 10 00 in office time between 09.00-15.00 weekdays (CET/CEST). See also www.blindern-studenterhjem.no/en for updated information.')
 	);
 	
 	protected static function get_lang($name)
