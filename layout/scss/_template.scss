@@ -55,78 +55,6 @@ body {
 			width: 1110px; /* med banner */
 		}
 
-		#main {
-			float: left;
-			width: 900px;
-			background-color: #DDD;
-			margin-bottom: 10px;
-
-			#header {
-				height: 210px;
-				position: relative;
-				background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
-
-				/* eget toppbilde på engelsk side */
-				@at-root .lang_en #header {
-					background-image: url(../graphics/layout/toppbilde_en.jpg) !important;
-				}
-
-				h1 {
-					height: 210px;
-					margin: 0;
-
-					a {
-						display: block;
-						height: 210px;
-					}
-
-					span {
-						display: none;
-					}
-				}
-			}
-
-			#content {
-				padding: 10px;
-				margin: 10px 10px 0 10px;
-				background-color: #FFF;
-				
-				-moz-border-radius: 0 5px 0 0;
-				-webkit-border-radius: 0 5px 0 0;
-				border-radius: 0 5px 0 0;
-
-				&.content_no_sub {
-					-moz-border-radius: 5px 5px 0 0;
-					-webkit-border-radius: 5px 5px 0 0;
-					border-radius: 5px 5px 0 0;
-				}
-
-				p {
-					max-width: 600px;
-				}
-
-				ul {
-					max-width: 570px;
-				}
-
-				#content_clear {
-					clear: both;
-					height: 1px;
-					margin-top: -4px;
-				}
-			}
-
-			#footer {
-				background-color: #cecece;
-				text-align: center;
-				overflow: hidden;
-
-				p {
-					margin: 3px 0;
-				}
-			}
-		}
-
 		/* lenke til arrangement, f.eks. UKA og Bukkehaugsfestivalen */
 		#banner {
 			float: right;
@@ -139,9 +67,78 @@ body {
 			}
 		}
 	}
+}
 
-	#footer_spacer {
-		height: 10px;
+/* hovedinnholdet */
+#main {
+	float: left; /* vi floater left i tilfelle vi har banner */
+	width: 900px;
+	background-color: #DDD;
+	margin-bottom: 10px;
+
+	#header {
+		height: 210px;
+		position: relative;
+		background: url(../graphics/layout/toppbilde3.jpg) no-repeat;
+
+		/* eget toppbilde på engelsk side */
+		@at-root .lang_en #header {
+			background-image: url(../graphics/layout/toppbilde_en.jpg) !important;
+		}
+
+		h1 {
+			height: 210px;
+			margin: 0;
+
+			a {
+				display: block;
+				height: 210px;
+			}
+
+			span {
+				display: none;
+			}
+		}
+	}
+
+	#content {
+		padding: 10px;
+		margin: 10px 10px 0 10px;
+		background-color: #FFF;
+		
+		-moz-border-radius: 0 5px 0 0;
+		-webkit-border-radius: 0 5px 0 0;
+		border-radius: 0 5px 0 0;
+
+		&.content_no_sub {
+			-moz-border-radius: 5px 5px 0 0;
+			-webkit-border-radius: 5px 5px 0 0;
+			border-radius: 5px 5px 0 0;
+		}
+
+		p {
+			max-width: 600px;
+		}
+
+		ul {
+			max-width: 570px;
+		}
+
+		#content_clear {
+			clear: both;
+			height: 1px;
+			margin-top: -4px;
+		}
+	}
+
+	#footer {
+		background-color: #cecece;
+		text-align: center;
+		overflow: hidden;
+
+		p {
+			margin: 3px 0;
+		}
 	}
 }
 

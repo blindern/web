@@ -116,7 +116,6 @@ class theme_bs_default
 
 		echo '
 	</div>
-	<div id="footer_spacer"></div>
 </div>';
 		
 		// aktivere google-analytics?
