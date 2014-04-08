@@ -1,126 +1,151 @@
 /** Hyttestyret */
-.hytta .subsection,
-.subsection_left .subsection {
-	width: 540px;
-	margin: 30px 0 25px 20px;
-	padding-bottom: 10px;
-}
 
-.subsection .hyttestyret_table {
-	width: 540px;
-}
-.hyttestyret_table {
-	border: 2px solid #DDD;
-	border-collapse: collapse;
-	margin-top: 20px;
+.hytta {
 
-	th {
-		text-align: center;
-		background-color: #EEE;
+	/* innholdsbokser */
+	.subsection {
+		width: 540px;
+		margin: 30px 0 25px 20px;
+		padding-bottom: 10px;
+		
+		overflow: hidden;
+		
+		h2 {
+			margin-top: 5px;
+		}
+
+		img.subimg {
+			float: right;
+			clear: right;
+			margin-right: 0;
+		}
+
+		&.subimgleft img.subimg {
+			float: left;
+			clear: left;
+			margin: 5px 5px 5px 0;
+		}
+
+		p.subimg {
+			float: right;
+			clear: right;
+			margin-right: 0;
+		}
+	}
+
+	/* kalender */
+	.hyttestyret_kalender {
+		width: 540px;
+
+		border: 2px solid #DDD;
+		border-collapse: collapse;
+		margin-top: 20px;
+
+		th {
+			text-align: center;
+			background-color: #EEE;
+
+			span {
+				display: block;
+				font-size: 9px;
+				font-weight: normal;
+				color: #555;
+			}
+		}
+
+		th span {
+			&:before {
+				content: "(";
+			}
+
+			&:after {
+				content: ")";
+			}
+		}
+
+		td,
+		th {
+			border: 1px solid #DDD;
+			padding: 5px;
+			line-height: 1em;
+		}
+
+		td.uke {
+			background-color: #F3F3F3;
+			text-align: center;
+			font-size: 11px;
+		}
+
+		td.reservert:after,
+		td.reservert2:after,
+		td.reservert3:after {
+			content: " (reservert)";
+		}
+
+		td {
+			text-align: right;
+			font-size: 10px;
+
+			&.idag {
+				border-bottom: 4px solid #AAA;
+
+				&:after {
+					content: " (i dag)";
+					font-weight: bold;
+				}
+
+				span {
+					font-weight: bold;
+				}
+			}
+
+			.month {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.hyttestyret_legend.ledig span,
+	.hyttestyret_kalender td.ledig {
+		background-color: #FFFFFF;
+	}
+	.hyttestyret_legend.reservert span,
+	.hyttestyret_kalender td.reservert {
+		background-color: #FFFFAA;
+	}
+	.hyttestyret_legend.reservert2 span,
+	.hyttestyret_kalender td.reservert2 {
+		background-color: #AAAAFF;
+	}
+	.hyttestyret_legend.reservert3 span,
+	.hyttestyret_kalender td.reservert3 {
+		background-color: #AAFFAA;
+	}
+
+	.hyttestyret_legend.opptatt span,
+	.hyttestyret_kalender td.opptatt {
+		background-color: #FFAAAA;
+	}
+
+	#hyttestyret_legends {
+		max-width: 600px;
+		overflow: hidden;
+	}
+	.hyttestyret_legend {
+		margin: 10px 0 0 15px;
+		float: right;
 
 		span {
 			display: block;
-			font-size: 9px;
-			font-weight: normal;
-			color: #555;
+			float: left;
+			width: 15px;
+			height: 15px;
+			margin-right: 5px;
+			border: 1px solid #AAA;
 		}
 	}
 
-	th span {
-		&:before {
-			content: "(";
-		}
-
-		&:after {
-			content: ")";
-		}
-	}
-
-	td,
-	th {
-		border: 1px solid #DDD;
-		padding: 5px;
-		line-height: 1em;
-	}
-
-	td.uke {
-		background-color: #F3F3F3;
-		text-align: center;
-		font-size: 11px;
-	}
-}
-
-.hyttestyret_legend.ledig span,
-.hyttestyret_kalender td.ledig {
-	background-color: #FFFFFF;
-}
-.hyttestyret_legend.reservert span,
-.hyttestyret_kalender td.reservert {
-	background-color: #FFFFAA;
-}
-.hyttestyret_legend.reservert2 span,
-.hyttestyret_kalender td.reservert2 {
-	background-color: #AAAAFF;
-}
-.hyttestyret_legend.reservert3 span,
-.hyttestyret_kalender td.reservert3 {
-	background-color: #AAFFAA;
-}
-
-.hyttestyret_kalender {
-	td.reservert:after,
-	td.reservert2:after,
-	td.reservert3:after {
-		content: " (reservert)";
-	}
-
-	td {
-		text-align: right;
-		font-size: 10px;
-
-		&.idag {
-			border-bottom: 4px solid #AAA;
-
-			&:after {
-				content: " (i dag)";
-				font-weight: bold;
-			}
-
-			span {
-				font-weight: bold;
-			}
-		}
-
-		.month {
-			font-weight: bold;
-		}
-	}
-}
-
-.hyttestyret_legend.opptatt span,
-.hyttestyret_kalender td.opptatt {
-	background-color: #FFAAAA;
-}
-
-#hyttestyret_legends {
-	max-width: 600px;
-	overflow: hidden;
-}
-.hyttestyret_legend {
-	margin: 10px 0 0 15px;
-	float: right;
-
-	span {
-		display: block;
-		float: left;
-		width: 15px;
-		height: 15px;
-		margin-right: 5px;
-		border: 1px solid #AAA;
-	}
-}
-
-.hytta {
+	/* ofte stilte spørsmål */
 	dl {
 		margin-bottom: 0;
 

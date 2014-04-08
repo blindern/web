@@ -276,7 +276,7 @@ if (!$calendar_data)
 else
 {
 	echo '
-							<table class="hyttestyret_table hyttestyret_kalender">
+							<table class="hyttestyret_kalender">
 								<thead>
 									<tr>
 										<th>Uke</th>
