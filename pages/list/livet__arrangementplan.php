@@ -44,7 +44,7 @@ Historisk plan for høsten 2013 er per tidspunkt kun tilgjengelig for beboere.</
 
 if (bs_side::$is_beboer) {
 	echo '
-	<p>(Du har status som beboer siden du har vært innom beboersiden: Arrangementplanen for høsten 2013 <a href="https://blindern-studenterhjem.no/wiki/Arrangementplan_h%C3%B8st_2013">ligger i wikien</a>.)</p>';
+	<p>(Du har status som beboer siden du har vært innom beboersiden: Arrangementplanen for høsten 2013 <a href="https://foreningenbs.no/wiki/Arrangementplan_h%C3%B8st_2013">ligger i wikien</a>.)</p>';
 }
 
 echo '

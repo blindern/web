@@ -15,4 +15,4 @@ echo '
        <li>Du vil motta en bekreftelse for at du ble avmeldt</li>
        <li>Se <a href="http://www.uio.no/tjenester/it/e-post-kalender/e-postlister/abonnere/unsub.html">brukerveiledningen</a> for hjelp</li>
 </ol>
-<p>Mer informasjon om listen ligger i wikien:<br /><a href="https://blindern-studenterhjem.no/wiki/Internmailen">https://blindern-studenterhjem.no/wiki/Internmailen</a></p>';
+<p>Mer informasjon om listen ligger i wikien:<br /><a href="https://foreningenbs.no/wiki/Internmailen">https://foreningenbs.no/wiki/Internmailen</a></p>';
