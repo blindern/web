@@ -3,6 +3,8 @@
 require ROOT."/base/omvisning.php";
 
 class studentbolig__omvisning extends omvisning {
+	private $page;
+
 	public function __construct() {
 		bs_side::set_title("Digital omvisning");
 		jquery();
@@ -16,10 +18,16 @@ class studentbolig__omvisning extends omvisning {
 		$this->check_subpage();
 		
 		// vise oversikt eller spesifikt bilde?
-		if (!$this->image_id) {
-			$this->show_main();
-		} else {
+		switch ($this->page)
+		{
+		case "image":
 			$this->show_image();
+			break;
+		case "oversikt":
+			$this->show_main();
+			break;
+		default:
+			$this->show_index();
 		}
 	}
 	
@@ -32,6 +40,7 @@ class studentbolig__omvisning extends omvisning {
 		if (count(bs_side::$pagedata->path_parts) > $part_base) {
 			// liste?
 			if (bs_side::$pagedata->path_parts[$part_base] == "oversikt") {
+				$this->page = "oversikt";
 				return;
 			}
 
@@ -40,6 +49,7 @@ class studentbolig__omvisning extends omvisning {
 			}
 			
 			$this->image_id = bs_side::$pagedata->path_parts[$part_base];
+			$this->page = "image";
 			
 			// verifiser at vi har bildet
 			if (!isset($this->images_gallery[$this->image_id])) {
@@ -50,11 +60,32 @@ class studentbolig__omvisning extends omvisning {
 		}
 
 		// send til første bilde
+		$this->page = "index";
+	}
+
+	/**
+	 * Lenke til første bilde
+	 */
+	public function getFirstLink()
+	{
 		foreach ($this->galleries as $gallery) {
 			foreach ($gallery['images'] as $image) {
-				redirect::handle("/omvisning/{$image['gi_id']}", redirect::ROOT);
+				return "/omvisning/{$image['gi_id']}";
 			}
 		}
+	}
+
+	/**
+	 * Vis video og en slags forside
+	 */
+	private function show_index()
+	{
+		echo '
+<h1>Digital omvisning</h1>
+<div style="text-align: center; margin: 30px 0">
+	<iframe width="800" height="450" src="//www.youtube.com/embed/Aas0RHRi_20" frameborder="0" allowfullscreen></iframe>
+</div>
+<p style="text-align: center; max-width: none !important; margin: 30px 0"><a href="'.$this->getFirstLink().'">Vis bildegalleri fra Blindern Studenterhjem</a></p>';
 	}
 	
 	/**

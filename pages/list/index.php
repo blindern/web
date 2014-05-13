@@ -32,10 +32,6 @@ echo '
 echo '
 <h1>Velkommen til Blindern Studenterhjem</h1>
 
-<div style="text-align: center; margin: 30px 0 0 0">
-	<iframe width="560" height="315" src="//www.youtube.com/embed/Aas0RHRi_20" frameborder="0" allowfullscreen></iframe>
-</div>
-
 <div class="index_group">
 <p>Blindern Studenterhjem er en privat stiftelse som åpnet i 1925 og tilbyr mer enn bare en studentbolig.
 Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kanter av landet, uansett studieretning.</p>
