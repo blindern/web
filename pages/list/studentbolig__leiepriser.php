@@ -22,19 +22,19 @@ echo '
 	<div class="romgruppe">
 		<div class="h2">Enkeltrom</div>
 		<div class="pris">vår 2014:<br />kr 6 535 / mnd</div>
-		<div class="pris">høst 2014 / vår 2015:<br />kr 6 784 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 904 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Kombinasjonsrom</div>
 		<div class="pris">vår 2014:<br />kr 6 395 / mnd</div>
-		<div class="pris">høst 2014 / vår 2015:<br />kr 6 636 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 756 / mnd</div>
 	</div>
 
 	<div class="romgruppe">
 		<div class="h2">Dobbeltrom</div>
 		<div class="pris">vår 2014:<br />kr 6 160 / mnd</div>
-		<div class="pris">høst 2014 / vår 2015:<br />kr 6 386 / mnd</div>
+		<div class="pris">høst 2014 / vår 2015:<br />kr 6 506 / mnd</div>
 	</div>
 </div>
 
@@ -43,7 +43,7 @@ echo '
 
 <p>
 	Det vil si at dersom du bor p&aring; dobbeltrom,
-	s&aring; betaler du 6 386,- per m&aring;ned + medlemskontingent (høst 2014), og
+	s&aring; betaler du 6 506,- per m&aring;ned + medlemskontingent (høst 2014), og
 	har da betalt for mat, str&oslash;m, internett,
 	vaskemaskin, en rekke velferdstilbud osv. Det finnes en rekke andre poster
 	som kan skrives p&aring; regningen i tillegg til dette,
