@@ -42,7 +42,7 @@ class theme_bs_default
 <title>'.ess::$b->page->generate_title().'</title>'.ess::$b->page->generate_head().'</head>
 <body class="lang_'.bs_side::$lang.' '.self::$class_browser.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'">'.ess::$b->page->body_start.'
 <div id="body_wrap">
-	<div id="container"><div id="main">
+	<div id="container" class="banner"><div id="main">
 		<div id="header">
 			<h1><a href="'.ess::$s['rpath'].'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />';
 		
@@ -111,8 +111,8 @@ class theme_bs_default
 		</div>';
 		
 
-		/*echo '
-		<div id="banner"><a href="http://www.facebook.com/events/123473684521823/"><img src="'.ess::$s['rpath'].'/graphics/banners/bukkehaugen_2013.jpg" alt="Bukkehaugfestivalen 2013" /></a></div>';*/
+		echo '
+		<div id="banner"><a href="https://www.facebook.com/events/1452497951660225/"><img src="'.ess::$s['rpath'].'/graphics/banners/bukkehaugfestivalen_2014.jpg" alt="Bukkehaugfestivalen 2014" /></a></div>';
 
 		echo '
 	</div>
