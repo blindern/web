@@ -28,6 +28,8 @@ class theme_bs_default
 		jquery();
 		$content = ess::$b->page->content_get();
 
+		$nav = bs_side::get_nav();
+
 		if (!MAIN_SERVER) {
 			bs_side::$page_class .= " devinfobody";
 			ess::$b->page->body_start .= '
@@ -43,7 +45,7 @@ class theme_bs_default
 <body class="lang_'.bs_side::$lang.' '.self::$class_browser.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'">'.ess::$b->page->body_start.'
 <div id="body_wrap">
 	<div id="container"><div id="main">
-		<div id="header">
+		<header>
 			<h1><a href="'.ess::$s['rpath'].'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />';
 		
 		switch (bs_side::$lang)
@@ -86,14 +88,13 @@ class theme_bs_default
 		}
 		
 		echo '
-		</div>
-		'.bs_side::$menu_main.'
-		'.bs_side::$menu_sub.'
+		</header>
+		'.$nav.'
 		<div id="content"'.(!bs_side::$menu_sub ? ' class="content_no_sub"' : '').'>
 			'.$content.'
 			<div id="content_clear"></div>
 		</div>
-		<div id="footer">
+		<footer>
 			<p>Blindern Studenterhjem '.ess::$b->date->get()->format("Y");
 
 		switch (bs_side::$lang)
@@ -107,7 +108,7 @@ class theme_bs_default
 		}
 		
 		echo '</p>
-		</div>
+		</footer>
 		</div>';
 		
 

@@ -185,3 +185,17 @@ $(document).ready(function() {
 	});
 	$(".showon").hide();
 });
+
+
+/* menyen */
+$(document).ready(function() {
+	$(".nav-link").click(function() {
+		$("nav").toggleClass("active");
+		$("#container").toggleClass("active");
+	});
+
+	$(".nav-link-foreninger").click(function() {
+		//$("nav").toggleClass("active");
+		$("#container").toggleClass("foreninger_active");
+	});
+});

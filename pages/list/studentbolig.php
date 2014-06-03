@@ -28,7 +28,7 @@ echo get_rand_images_right(
 echo '
 <h1>Studentbolig i Oslo</h1>
 
-<div style="text-align: center; margin: 30px 0">
+<div class="youtube-film">
 	<iframe width="560" height="315" src="//www.youtube.com/embed/_TLJbfVuFDE" frameborder="0" allowfullscreen></iframe>
 </div>
 

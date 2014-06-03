@@ -85,8 +85,6 @@ class bs_side
 		"other" => "%s - Blindern Studenterhjem"
 	);*/
 	
-	public static $menu_main;
-	public static $menu_main_list = array();
 	public static $menu_sub;
 	public static $menu_active = null;
 	public static $menu_all = array();
@@ -184,7 +182,7 @@ class bs_side
 	public static function load_menu()
 	{
 		// allerede lastet inn?
-		if (self::$menu_main) return;
+		if (self::$menu_all) return;
 		
 		// filen vi skal hente fra
 		if (self::$lang == "en") $file = "pages/map_en.txt";
@@ -232,90 +230,102 @@ class bs_side
 		}
 		
 		if ($category) self::menu_add($category, $category_first, $subs, $active);
-		
-		// mekk html for hovedmenyen
-		self::$menu_main = '
-		<ul id="menu_main">';
-		
-		if (bs_side::$is_beboer)
-		{
-			self::$menu_main .= '
-			<li class="'.(self::$menu_active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">'.(bs::is_adm() || login::$logged_in ? 'Admin' : 'Beboer').'</a>
-				<ul>
-					<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
-					<li><a href="'.self::$pagedata->doc_path.'/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan</a></li>
-					<li><a href="/dugnaden/">Dugnadssystemet</a></li>
-					<li><a href="/dokumenter/statutter">Statuttene osv.</a></li>
-					<li><a href="https://foreningenbs.no/wiki/">Wikien</a></li>'.(bs::is_adm() || login::$logged_in ? '
-					<li class="beboerlenke_quicklinks_desc">Administrasjonen:</li>
-					<li><a href="/matmeny">Endre matmeny</a></li>
-					<li><a href="/tilpasset">Endre infoboks</a></li>' : '').'
-				</ul>
-			</li>';
-		}
-		
-		foreach (self::$menu_main_list as $key => $item)
-		{
-			$highlight = $category_active == $key
-				? ' class="active activesub"'
-				: (isset(self::$menu_all[$key][1][$category_active])
-					? ' class="activesub"'
-					: '');
-			if ($key == "index") $key = "";
-			
-			self::$menu_main .= '
-			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';
-		}
-		
-		// språkvalg
-		if (self::$lang != "no")
-		{
-			$link = isset(self::$lang_crosslink['no']) ? self::$lang_crosslink['no'] : '';
-			
-			self::$menu_main .= '
-			<li class="langsel langsel_no" lang="no"><a href="'.self::$pagedata->doc_path.'/'.$link.'">På norsk</a></li>';
-		}
-		
-		if (self::$lang != "en")
-		{
-			$link = isset(self::$lang_crosslink['en']) ? self::$lang_crosslink['en'] : 'en';
-			
-			self::$menu_main .= '
-			<li class="langsel langsel_en" lang="en"><a href="'.self::$pagedata->doc_path.'/'.$link.'">In English</a></li>';
-		}
-		
-		self::$menu_main .= '
-		</ul>';
 	}
 	
 	protected static function menu_add($category, $category_first, $subs, $active)
 	{
 		self::$menu_all[$category_first] = array(
 			$category,
-			$subs
+			$subs,
+			$active
 		);
-		
-		self::$menu_main_list[$category_first] = $category;
-		
-		// mekk html for undermeny
-		// vis kun undermeny hvis det er flere enn ett alternativ på undermenyen
-		if ($active && count($subs) > 1)
+	}
+
+	/**
+	 * Get html for menu
+	 */
+	public static function get_nav()
+	{
+		$active = self::$menu_active;
+		$html = '
+			<ul>';
+
+		if (bs_side::$is_beboer)
 		{
-			self::$menu_sub = '
-		<ul id="menu_sub">';
-			
-			foreach ($subs as $key => $item)
-			{
-				$highlight = $key == self::$menu_active ? ' class="active"' : '';
-				if ($key == "index") $key = "";
-				
-				self::$menu_sub .= '
-			<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item).'</a></li>';
-			}
-			
-			self::$menu_sub .= '
-		</ul>';
+			$html .= '
+				<li class="'.($active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">'.(bs::is_adm() || login::$logged_in ? 'Admin' : 'Beboer').'</a>
+					<ul>
+						<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
+						<li><a href="'.self::$pagedata->doc_path.'/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan</a></li>
+						<li><a href="/dugnaden/">Dugnadssystemet</a></li>
+						<li><a href="/dokumenter/statutter">Statuttene osv.</a></li>
+						<li><a href="https://foreningenbs.no/wiki/">Wikien</a></li>'.(bs::is_adm() || login::$logged_in ? '
+						<li class="beboerlenke_quicklinks_desc">Administrasjonen:</li>
+						<li><a href="/matmeny">Endre matmeny</a></li>
+						<li><a href="/tilpasset">Endre infoboks</a></li>' : '').'
+					</ul>
+				</li>';
 		}
+		
+		foreach (self::$menu_all as $key => $item)
+		{
+			$highlight = $active == $key
+				? ' class="active activesub"'
+				: ($item[2] && count($item[1]) > 1
+					? ' class="activesub"'
+					: '');
+			if ($key == "index") $key = "";
+			
+			$html .= '
+				<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$key.'">'.htmlspecialchars($item[0]).'</a>';
+
+			// active?
+			if (/*$item[2] && */count($item[1]) > 1)
+			{
+				if ($item[2]) self::$menu_sub = true;
+				$html .= '
+					<ul'.($item[2] ? '' : ' class="not_active"').'>';
+
+				foreach ($item[1] as $subkey => $subval)
+				{
+					$highlight = $subkey == $active ? ' class="active"' : '';
+					if ($subkey == "index") $subkey = "";
+
+					$html .= '
+						<li'.$highlight.'><a href="'.self::$pagedata->doc_path.'/'.$subkey.'">'.htmlspecialchars($subval).'</a></li>';
+				}
+
+				$html .= '
+					</ul>';
+			}
+
+			$html .= '</li>';
+		}
+
+		// språkvalg
+		if (self::$lang != "no")
+		{
+			$link = isset(self::$lang_crosslink['no']) ? self::$lang_crosslink['no'] : '';
+			
+			$html .= '
+				<li class="langsel langsel_no" lang="no"><a href="'.self::$pagedata->doc_path.'/'.$link.'">På norsk</a></li>';
+		}
+		if (self::$lang != "en")
+		{
+			$link = isset(self::$lang_crosslink['en']) ? self::$lang_crosslink['en'] : 'en';
+			
+			$html .= '
+				<li class="langsel langsel_en" lang="en"><a href="'.self::$pagedata->doc_path.'/'.$link.'">In English</a></li>';
+		}
+		
+		$html .= '
+			</ul>';
+
+		return '
+		<nav'.(!self::$menu_sub ? ' class="no_sub"' : '').'>
+			<span class="nav-link"></span>
+			'.$html.'
+		</nav>';
 	}
 	
 	/**

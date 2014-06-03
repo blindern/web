@@ -8,8 +8,17 @@
 	}
 
 	.index_group {
-		max-width: 450px;
-		margin: 40px 75px;
+		@media (min-width: $break-small) {
+			/*max-width: 450px;*/
+			margin: 40px 75px;
+			margin-right: 295px;
+		}
+	}
+
+	@media (min-width: $break-small) {
+		.youtube-film-wrap {
+			margin: 0 250px 0 20px;
+		}
 	}
 
 	.index_kart_img {

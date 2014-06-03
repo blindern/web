@@ -119,6 +119,7 @@ class foreninger
 
 		echo '
 <div class="foreninger_wrap">
+	<span class="nav-link-foreninger"></span>
 	<section class="foreninger_left">
 		'.$this->group("none").'
 		'.$this->group("fbs", "Underlagt Foreningen").'

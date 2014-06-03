@@ -9,22 +9,18 @@ if (!preg_match("~<meta.*name=(|'|\")robots~", ess::$b->page->head)) $robots = '
 
 // sett opp head
 ess::$b->page->head = '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Hjemmesideoppmann Blindern Studenterhjem" />
 <meta name="keywords" content="'.ess::$b->page->generate_keywords().'" />
 <meta name="description" content="'.ess::$b->page->description.'" />
 <link rel="shortcut icon" href="'.ess::$s['rpath'].'/favicon.ico" />
 <link href="'.ess::$s['rpath'].'/layout/layout.css?'.@filemtime(dirname(dirname(dirname(__FILE__)))."/layout/layout.css").'" rel="stylesheet" type="text/css" />
 <!--[if lte IE 8]>
-<script src="'.ess::$s['rpath'].'/html5ie.js" type="text/javascript"></script>
+	<script src="'.ess::$s['rpath'].'/html5ie.js" type="text/javascript"></script>
 <![endif]-->
-<script type="text/javascript">
-var mobile_domain ="blindern-studenterhjem.1881gomo4u.com";
-// Set to false to not redirect on iPad.
-var ipad = false;
-// Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets).
-var other_tablets = false;
-document.write(unescape("%3Cscript src=\'"+location.protocol+"//s3.amazonaws.com/me.static/js/me.redirect.min.js\' type=\'text/javascript\'%3E%3C/script%3E"));
-</script>'.$robots.'
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->'.$robots.'
 '.ess::$b->page->head;
 
 // sett opp nettleser "layout engine" til CSS

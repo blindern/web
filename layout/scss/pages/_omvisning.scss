@@ -89,7 +89,7 @@
 }
 
 #omvisning_bilder {
-	overflow: hidden;
+	/*overflow: hidden;*/
 
 	.omvisning_bilder_g p {
 		display: inline-block;
@@ -99,7 +99,7 @@
 		padding: 8px 5px;
 		vertical-align: middle;
 		text-align: center;
-		overflow: hidden;
+		/*overflow: hidden;*/
 
 		&:hover {
 			background-color: #555;
@@ -128,7 +128,7 @@
 
 	.omvisning_bilder_cat,
 	#omvisning_media {
-		width: 710px;
+		max-width: 710px;
 		margin: 20px auto;
 		padding: 5px 0 20px 20px;
 		background-color: #F3F3F3;
