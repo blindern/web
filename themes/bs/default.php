@@ -35,6 +35,13 @@ class theme_bs_default
 		<p>Du ser nå på utviklersiden og ikke den offisielle nettsiden.</p>
 	</div>';
 		}
+
+		$banner = array(
+			false, // skal banner vises? sett til true for å vise
+			'', // adresse banner skal lenke til
+			'', // bildefil som skal brukes (må være 200px bred
+			'', // alt-tekst på bildet
+		);
 		
 		echo '<!DOCTYPE html>
 <html lang="no"'.(MAIN_SERVER ? '' : ' class="devserver"').'>
@@ -42,7 +49,8 @@ class theme_bs_default
 <title>'.ess::$b->page->generate_title().'</title>'.ess::$b->page->generate_head().'</head>
 <body class="lang_'.bs_side::$lang.' '.self::$class_browser.(bs_side::$page_class ? ' '.bs_side::$page_class : '').'">'.ess::$b->page->body_start.'
 <div id="body_wrap">
-	<div id="container" class="banner"><div id="main">
+	<!-- hvis vi viser banner, endre \'nobanner\' til \'banner\' og aktiver koden nedenfor -->
+	<div id="container"'.($banner[0] ? ' class="banner"' : '').'><div id="main">
 		<div id="header">
 			<h1><a href="'.ess::$s['rpath'].'/'.(bs_side::$lang != "no" ? bs_side::$lang : '').'"><span>Blindern Studenterhjem<br />';
 		
@@ -110,9 +118,11 @@ class theme_bs_default
 		</div>
 		</div>';
 		
-
-		echo '
-		<div id="banner"><a href="https://www.facebook.com/events/1452497951660225/"><img src="'.ess::$s['rpath'].'/graphics/banners/bukkehaugfestivalen_2014.jpg" alt="Bukkehaugfestivalen 2014" /></a></div>';
+		if ($banner[0])
+		{
+			echo '
+				<div id="banner"><a href="'.htmlspecialchars($banner[1]).'"><img src="'.htmlspecialchars($banner[2]).'" alt="'.htmlspecialchars($banner[3]).'" /></a></div>';
+		}
 
 		echo '
 	</div>
