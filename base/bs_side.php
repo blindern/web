@@ -158,16 +158,6 @@ class bs_side
 	
 	protected static function load_page()
 	{
-		// sett opp variabler avhengig av språk etc
-		$p = ess::$b->page;
-		if (count($p->title) == 1) {
-			$p->title[0] = self::get_title();
-		}
-		if (count($p->keywords) == 0) $p->keywords = array_merge(self::get_keywords(), $p->keywords);
-		if (!$p->description) $p->description = self::get_description();
-		
-		if (self::$head) ess::$b->page->add_head(self::$head);
-		
 		// sett opp meny
 		self::load_menu();
 		
@@ -178,7 +168,7 @@ class bs_side
 			echo self::$content;
 		}
 		
-		ess::$b->page->load();
+		require ROOT."/base/template.php";
 	}
 	
 	public static function load_menu()
@@ -345,7 +335,7 @@ class bs_side
 	 */
 	public static function set_title($title)
 	{
-		ess::$b->page->add_title($title);
+		self::$title_default[self::$lang] = $title;
 	}
 	
 	/**
@@ -435,7 +425,9 @@ function get_img_line(array $img_list) {
 
 
 function get_rand_images(array $imglist, $num = 1, array $force_descriptions = array()) {
-	$list = implode(",", array_map("intval", $imglist));
+	return array();
+
+	/*$list = implode(",", array_map("intval", $imglist));
 	$result = ess::$b->db->query("
 		SELECT gi_id, gi_description, gi_shot_person
 		FROM gallery_images
@@ -455,17 +447,17 @@ function get_rand_images(array $imglist, $num = 1, array $force_descriptions = a
 		$ret[] = $data[$key];
 	}
 
-	return $ret;
+	return $ret;*/
 }
 
 function get_rand_images_right(array $imglist, $num = 1, array $force_descriptions = array()) {
-	$images = get_rand_images($imglist, $num, $force_descriptions);
+	//$images = get_rand_images($imglist, $num, $force_descriptions);
 
 	$ret = '';
-	foreach ($images as $row) {
-		$foto = $row['shot_person'] ? "Foto: ".$row['shot_person'] : null;
-		$ret .= get_img_p($row['id'], null, $row['description'], $foto, "img");
-	}
+	//foreach ($images as $row) {
+	//	$foto = $row['shot_person'] ? "Foto: ".$row['shot_person'] : null;
+	//	$ret .= get_img_p($row['id'], null, $row['description'], $foto, "img");
+	//}
 
 	return '<div class="right_section">'.$ret.'</div>';
 }

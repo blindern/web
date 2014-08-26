@@ -9,7 +9,7 @@ class bs
 	{
 		// sjekk IP
 		if (substr($_SERVER['REMOTE_ADDR'], 0, 10) == "37.191.255" || self::is_adm()) return true;
-		return (self::beboer_cookie_check() || login::$logged_in);
+		return self::beboer_cookie_check();
 	}
 	
 	/**

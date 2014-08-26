@@ -10,9 +10,32 @@ class omvisning {
 	const PATH = "/studentbolig/omvisning";
 	
 	/**
+	 * Les inn JSON-fil med data om bilder
+	 */
+	protected static function load_from_json()
+	{
+		$file = ROOT."/images.json";
+		$data = file_get_contents(json_decode($file));
+
+		return $data;
+	}
+
+	/**
 	 * Last inn bildegalleriene og bildene i dem
 	 */
 	protected function get_images() {
+		$data = static::load_from_json();
+
+		// fjern evt. bilder som skal skjules
+		if (!$this->show_hidden)
+		{
+			foreach ($data as $key => $info)
+			{
+				if ($info['visible'] == 0) unset($dat[$key]);
+			}
+		}
+
+
 		// hent alle galleriene
 		$hidden = $this->show_hidden ? "" : "gc_visible != 0 AND ";
 		$result = ess::$b->db->q("

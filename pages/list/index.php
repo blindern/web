@@ -100,7 +100,7 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 // hent fire tilfeldige bilder fra galleriet
 // TODO: tar ikke høyde for at parent galleriet evt. er skjult
 // TODO: kanskje litt lite optimalisert?
-$result = ess::$b->db->query("
+/*$result = ess::$b->db->query("
 	SELECT gi_id, gi_description, gi_shot_person
 	FROM gallery_images JOIN gallery_categories ON gi_gc_id = gc_id
 	WHERE gc_visible != 0 AND gi_visible != 0 AND gc_id != 11"); // ikke hent bilder fra Småbruket (nr=11)
@@ -117,4 +117,4 @@ $s = array_rand($data, 10);
 $c = array();
 foreach ($s as $id) $c[] = $data[$id];
 
-echo get_img_line($c);
+echo get_img_line($c);*/
