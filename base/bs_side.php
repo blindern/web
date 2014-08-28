@@ -463,3 +463,10 @@ function get_rand_images_right(array $imglist, $num = 1, array $force_descriptio
 
 	return '<div class="right_section">'.$ret.'</div>';
 }
+
+
+function postval($name, $default = "")
+{
+	if (!isset($_POST[$name])) return $default;
+	return $_POST[$name];
+}
