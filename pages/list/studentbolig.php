@@ -93,7 +93,7 @@ Dette bidrar til økte inntekter til BS og å holde husleien lav for studentene.
 
 
 <h2>Romtyper</h2>
-<p>Bilder fra ulike rom kan sees i <a href="/omvisning/oversikt#c4">den digitale omvisningen</a>.</p>
+<p>Bilder fra ulike rom kan sees i <a href="/omvisning/oversikt#Beboerrom">den digitale omvisningen</a>.</p>
 
 <h3>Enkeltrom</h3>
 <p>De fleste bor på enkeltrom. Disse er alt fra ca. 10 kvm opp til ca. 15 kvm for de største rommene.</p>

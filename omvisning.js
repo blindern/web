@@ -38,7 +38,7 @@ $(document).ready(function() {
 		
 		// 27: esc
 		if (e.keyCode == 27) {
-			window.location.href = "/omvisning/oversikt#c"+omvisning_data[omvisning_i][3];
+			window.location.href = "/omvisning/oversikt#"+encodeURIComponent(omvisning_data[omvisning_i][3]);
 			return false;
 		}
 		
@@ -88,7 +88,7 @@ $(document).ready(function() {
 		text.text(omvisning_data[i][2]);
 		
 		// oppdater adresse
-		back_link.attr("href", "/omvisning/oversikt#c"+omvisning_data[omvisning_i][3]);
+		back_link.attr("href", "/omvisning/oversikt#"+encodeURIComponent(omvisning_data[omvisning_i][3]));
 		if (!ignore_history) set_state(i);
 	}
 	
