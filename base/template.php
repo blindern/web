@@ -130,7 +130,7 @@ if ($_SERVER['HTTP_HOST'] == "blindern-studenterhjem.no" || !empty($GLOBALS['gaq
 <?php echo $page_head; ?>
 
 </head>
-<body class="lang_<?php echo bs_side::$lang; ?> <?php echo $class_browser; ?><?php if ($is_devserver): ?> devinfobody<?php endif; ?>">
+<body class="lang_<?php echo bs_side::$lang; ?> <?php echo $class_browser; ?><?php if ($is_devserver): ?> devinfobody<?php endif; if (bs_side::$page_class): echo ' '.bs_side::$page_class; endif; ?>">
 
 <?php if ($is_devserver): ?>
 	<div class="devinfo">
