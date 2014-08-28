@@ -17,8 +17,9 @@ RewriteRule ^velkommen.pdf$ /dokumenter/velkomstbok_aug_2012.pdf [L,R=301]
 RewriteRule ^statutter$ /dokumenter/statutter/ [L,R=301]
 RewriteRule ^dokumenter/statutter.pdf$ /dokumenter/statutter/statutter.pdf [L]
 
-RewriteRule ^undersokelse/(.*)$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749&token=$1 [L,R=302]
-RewriteRule ^undersokelse$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749 [L,R=302]
+#RewriteRule ^undersokelse/(.*)$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749&token=$1 [L,R=302]
+#RewriteRule ^undersokelse$ http://lento.no-ip.info/bs-data/survey2/index.php?sid=87749 [L,R=302]
+RewriteRule ^unders(o|ø)kelse$ https://blindern-studenterhjem.no/survey-dugnad/index.php/survey/index/sid/172427 [L]
 
 # Facebook Oppslagstavle
 RewriteRule ^(fb|facebook)/?$ https://www.facebook.com/groups/274958321716/ [L,R]
