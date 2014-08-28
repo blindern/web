@@ -89,10 +89,13 @@ if ($_SERVER['HTTP_HOST'] == "blindern-studenterhjem.no" || !empty($GLOBALS['gaq
 	_gaq.push(["_setAccount", "UA-13059225-1"]);
 	_gaq.push(["_trackPageview", '.json_encode($_SERVER['REQUEST_URI']).']);';
 			
-	foreach (ess::$b->page->gaq as $gaq)
+	if (!empty($GLOBALS['gaq']))
 	{
-		$google_analytics .= '
+		foreach ($GLOBALS['gaq'] as $gaq)
+		{
+			$google_analytics .= '
 	_gaq.push('.$gaq.');';
+		}
 	}
 
 	$google_analytics .= '

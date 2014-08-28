@@ -230,13 +230,13 @@ class bs_side
 		if (bs_side::$is_beboer)
 		{
 			self::$menu_main .= '
-			<li class="'.(self::$menu_active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">'.(bs::is_adm() || login::$logged_in ? 'Admin' : 'Beboer').'</a>
+			<li class="'.(self::$menu_active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">'.(bs::is_adm() ? 'Admin' : 'Beboer').'</a>
 				<ul>
 					<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
 					<li><a href="https://foreningenbs.no/intern/arrplan">Arrangementplan</a></li>
 					<li><a href="/dugnaden/">Dugnadssystemet</a></li>
 					<li><a href="/dokumenter/statutter">Statuttene osv.</a></li>
-					<li><a href="https://foreningenbs.no/wiki/">Wikien</a></li>'.(bs::is_adm() || login::$logged_in ? '
+					<li><a href="https://foreningenbs.no/wiki/">Wikien</a></li>'.(bs::is_adm() ? '
 					<li class="beboerlenke_quicklinks_desc">Administrasjonen:</li>
 					<li><a href="/matmeny">Endre matmeny</a></li>
 					<li><a href="/tilpasset">Endre infoboks</a></li>' : '').'

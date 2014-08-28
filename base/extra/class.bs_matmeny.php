@@ -72,7 +72,8 @@ class bs_matmeny_uke {
 		$this->week = substr($weekid, 5);
 
 		// verifiser
-		$d = ess::$b->date->get();
+		$d = new \DateTime();
+		$d->setTimezone(new \DateTimeZone("Europe/Oslo"));
 		if (!$d->setISODate($this->year, $this->week)) throw new Exception("Ugyldig uke.");
 
 		if ($d->format("W") != $this->week || $d->format("o") != $this->year) throw new Exception("Ugyldig uke.");

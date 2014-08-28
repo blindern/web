@@ -9,4 +9,5 @@ bs_side::$menu_active = "beboer";
 // gi status som beboer siden vi ser på denne siden
 bs::beboer_cookie_set();
 
-redirect::handle("https://foreningenbs.no/beboer", redirect::ABSOLUTE);
+header("Location: https://foreningenbs.no/beboer");
+die;

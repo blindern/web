@@ -566,7 +566,9 @@ switch (bs_side::$lang)
 	default:
 		// send til opptakssia
 		// boligtorget skal brukes
-		redirect::handle('opptak');
+		$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
+		header("Location: http{$https}://{$_SERVER['HTTP_HOST']}/opptak");
+		die;
 
 		echo '
 			<h1>S&oslash;knad om plass</h1>';

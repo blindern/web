@@ -2,10 +2,10 @@
 
 bs_side::set_title("Tilpasning av tekst");
 
-if (!bs::is_adm() && !login::$logged_in) {
+if (!bs::is_adm()) {
 	echo '
 	<h1>Tilpasning av tekst</h1>
-	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk eller hvis du er innlogget. <a href="/a/logginn.php?orign='.urlencode('/tilpasset').'">Logg inn</a></p>';
+	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk.</p>';
 
 	return;
 }
@@ -29,8 +29,10 @@ if (isset($_POST['tilpasset_hjorne']) && isset($_POST['save'])) {
 	$t->set("hjorne_title_en", postval("title_en"));
 	$t->set("hjorne_content_en", postval("content_en"));
 	
-	ess::$b->page->add_message("Hjørneboks ble oppdatert.");
-	redirect::handle("/tilpasset");
+	//add_message("Hjørneboks ble oppdatert.");
+	$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
+	header("Location: http{$https}://{$_SERVER['HTTP_HOST']}/tilpasset");
+	die;
 }
 
 echo '

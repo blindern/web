@@ -2,17 +2,18 @@
 
 bs_side::set_title("Redigering av matmeny");
 
-if (!bs::is_adm() && !login::$logged_in) {
+if (!bs::is_adm()) {
 	echo '
 	<h1>Redigering av matmeny</h1>
-	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk eller hvis du er innlogget. <a href="/a/logginn.php?orign='.urlencode('/matmeny').'">Logg inn</a></p>';
+	<p>Denne siden kan kun nås fra administrasjonen sitt nettverk.</p>';
 
 	return;
 }
 
 // sett opp uker
 $weeks = array();
-$d = ess::$b->date->get();
+$d = new \DateTime();
+$d->setTimezone(new \DateTimeZone("Europe/Oslo"));
 $d->modify("+7 days");
 $default_week = $d->format("o-W");
 $d->modify("-21 days");
@@ -56,8 +57,10 @@ if ($week_selected) {
 
 		$matmeny->replace_data($days);
 		if ($matmeny->save()) {
-			ess::$b->page->add_message("Matmenyen for uke $matmeny->week ($matmeny->year) ble oppdatert!");
-			redirect::handle("matmeny");
+			$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? "s" : "";
+			header("Location: http{$https}://{$_SERVER['HTTP_HOST']}/beboer/matmeny");
+			die;
+			//Matmenyen for uke $matmeny->week ($matmeny->year) ble oppdatert!
 		}
 	}
 
