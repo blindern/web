@@ -80,10 +80,10 @@ class bs_side
 		"en" => "Blindern Studenterhjem - A good home for students",
 		"other" => "Blindern Studenterhjem - Et godt hjem for studenter"
 	);
-	/*protected static $title_format = array(
+	protected static $title_format = array(
 		"en" => "%s - Blindern Studenterhjem",
 		"other" => "%s - Blindern Studenterhjem"
-	);*/
+	);
 	
 	public static $menu_sub;
 	public static $menu_active = null;
@@ -156,16 +156,6 @@ class bs_side
 	
 	protected static function load_page()
 	{
-		// sett opp variabler avhengig av språk etc
-		$p = ess::$b->page;
-		if (count($p->title) == 1) {
-			$p->title[0] = self::get_title();
-		}
-		if (count($p->keywords) == 0) $p->keywords = array_merge(self::get_keywords(), $p->keywords);
-		if (!$p->description) $p->description = self::get_description();
-		
-		if (self::$head) ess::$b->page->add_head(self::$head);
-		
 		// sett opp meny
 		self::load_menu();
 		
@@ -176,7 +166,7 @@ class bs_side
 			echo self::$content;
 		}
 		
-		ess::$b->page->load();
+		require ROOT."/base/template.php";
 	}
 	
 	public static function load_menu()
@@ -256,7 +246,7 @@ class bs_side
 				<li class="'.($active == "beboer" ? "active activesub " : "").'beboerlenke" lang="no"><a href="'.self::$pagedata->doc_path.'/beboer">'.(bs::is_adm() || login::$logged_in ? 'Admin' : 'Beboer').'</a>
 					<ul>
 						<li class="beboerlenke_quicklinks_desc">Hurtiglenker:</li>
-						<li><a href="'.self::$pagedata->doc_path.'/wiki/Arrangementplan_h%C3%B8st_2013">Arrangementplan</a></li>
+						<li><a href="https://foreningenbs.no/intern/arrplan">Arrangementplan</a></li>
 						<li><a href="/dugnaden/">Dugnadssystemet</a></li>
 						<li><a href="/dokumenter/statutter">Statuttene osv.</a></li>
 						<li><a href="https://foreningenbs.no/wiki/">Wikien</a></li>'.(bs::is_adm() || login::$logged_in ? '
@@ -333,6 +323,7 @@ class bs_side
 	 */
 	public static function page_not_found($more_info = NULL)
 	{
+		if (!isset(self::$pagedata)) self::$pagedata = new pagedata();
 		$more_info = empty($more_info) ? '' : $more_info;
 		
 		// siden finnes ikke (404)
@@ -355,7 +346,7 @@ class bs_side
 	 */
 	public static function set_title($title)
 	{
-		ess::$b->page->add_title($title);
+		self::$title = $title;
 	}
 	
 	/**
@@ -372,8 +363,16 @@ class bs_side
 	 */
 	public static function get_title()
 	{
-		if (isset(self::$title_default[self::$lang])) return self::$title_default[self::$lang];
-		return self::$title_default['other'];
+		if (empty(self::$title))
+			return isset(self::$title_default[self::$lang])
+				? self::$title_default[self::$lang]
+				: self::$title_default['other'];
+
+		return sprintf(
+			isset(self::$title_format[self::$lang])
+				? self::$title_format[self::$lang]
+				: self::$title_format['other'],
+			self::$title);
 	}
 	
 	/**
@@ -444,28 +443,23 @@ function get_img_line(array $img_list) {
 }
 
 
-function get_rand_images(array $imglist, $num = 1, array $force_descriptions = array()) {
-	$list = implode(",", array_map("intval", $imglist));
-	$result = ess::$b->db->query("
-		SELECT gi_id, gi_description, gi_shot_person
-		FROM gallery_images
-		WHERE gi_id IN ($list) AND gi_visible != 0");
-	$data = array();
-	while ($row = mysql_fetch_assoc($result)) {
-		$data[] = array(
-			"id" => $row['gi_id'],
-			"description" => isset($force_descriptions[$row['gi_id']]) ? $force_descriptions[$row['gi_id']] : $row['gi_description'],
-			"shot_person" => $row['gi_shot_person']
-		);
-	}
+function get_rand_images(array $imglist = array(), $num = 1, array $force_descriptions = array()) {
+	if (!class_exists("omvisning"))
+		require ROOT."/base/omvisning.php";
 
-	$rand = (array) array_rand($data, $num);
-	$ret = array();
-	foreach ($rand as $key) {
-		$ret[] = $data[$key];
-	}
+	$omvisning = new omvisning();
 
-	return $ret;
+	$images = $omvisning->get_rand_images($num, array(), $imglist);
+	$list = array();
+	foreach ($images as $obj)
+	{
+		$row = $obj->data;
+		if (!empty($force_descriptions) && isset($force_descriptions[$row['id']]))
+			$row['desc'] = $force_descriptions[$row['id']];
+		$list[] = $row;
+	}
+	
+	return $list;
 }
 
 function get_rand_images_right(array $imglist, $num = 1, array $force_descriptions = array()) {
@@ -473,8 +467,8 @@ function get_rand_images_right(array $imglist, $num = 1, array $force_descriptio
 
 	$ret = '';
 	foreach ($images as $row) {
-		$foto = $row['shot_person'] ? "Foto: ".$row['shot_person'] : null;
-		$ret .= get_img_p($row['id'], null, $row['description'], $foto, "img");
+		$foto = $row['photographer'] ? "Foto: ".$row['photographer'] : null;
+		$ret .= get_img_p($row['id'], null, $row['desc'], $foto, "img");
 	}
 
 	return '<div class="right_section">'.$ret.'</div>';

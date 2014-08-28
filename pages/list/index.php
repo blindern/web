@@ -97,24 +97,23 @@ Blindern Studenterhjem skal være et godt hjem for akademisk ungdom fra alle kan
 	<p><a href="livet">Les mer om livet på BS &raquo;</a></p>
 </div>';
 
-// hent fire tilfeldige bilder fra galleriet
-// TODO: tar ikke høyde for at parent galleriet evt. er skjult
-// TODO: kanskje litt lite optimalisert?
-$result = ess::$b->db->query("
-	SELECT gi_id, gi_description, gi_shot_person
-	FROM gallery_images JOIN gallery_categories ON gi_gc_id = gc_id
-	WHERE gc_visible != 0 AND gi_visible != 0 AND gc_id != 11"); // ikke hent bilder fra Småbruket (nr=11)
-$data = array();
-$max = 120;
-while ($row = mysql_fetch_assoc($result)) {
-	$d = $row['gi_description'];
-	if (mb_strlen($d) > $max) $d = mb_substr($d, 0, $max-4)."...";
 
-	$data[] = array($row['gi_id'], null, $d, null);
+// hent fire tilfeldige bilder fra galleriet
+$skip = array("Småbruket studenthytte");
+
+if (!class_exists("omvisning"))
+	require ROOT."/base/omvisning.php";
+
+$omvisning = new omvisning();
+$images = $omvisning->get_rand_images(10, $skip);
+$list = array();
+
+$desc_max_len = 120;
+foreach ($images as $obj) {
+	$d = $obj->data['desc'];
+	if (mb_strlen($d) > $desc_max_len) $d = mb_substr($d, 0, $desc_max_len-4)."...";
+
+	$list[] = array($obj->data['id'], null, $d, null);
 }
 
-$s = array_rand($data, 10);
-$c = array();
-foreach ($s as $id) $c[] = $data[$id];
-
-echo get_img_line($c);
+echo get_img_line($list);
