@@ -3,16 +3,16 @@
 require ROOT."/base/omvisning.php";
 
 class studentbolig__omvisning extends omvisning {
+	const PATH = "/studentbolig/omvisning";
 	private $page;
 
 	public function __construct() {
+		parent::__construct();
+
 		bs_side::set_title("Digital omvisning");
-		jquery();
-		ess::$b->page->add_js_file(ess::$s['rpath'].'/omvisning.js');
-		ess::$b->page->add_js_file("http://balupton.github.com/history.js/scripts/bundled/html4+html5/jquery.history.js");
-		
-		// hent inn alle bildene
-		$this->get_images();
+		bs_side::$head .= '
+		<script type="text/javascript" src="/omvisning.js"></script>
+		<script type="text/javascript" src="http://balupton.github.com/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>';
 		
 		// sjekk for korrekt adresse
 		$this->check_subpage();
@@ -48,11 +48,11 @@ class studentbolig__omvisning extends omvisning {
 				bs_side::page_not_found();
 			}
 			
-			$this->image_id = bs_side::$pagedata->path_parts[$part_base];
+			$this->active_image_id = bs_side::$pagedata->path_parts[$part_base];
 			$this->page = "image";
 			
 			// verifiser at vi har bildet
-			if (!isset($this->images_gallery[$this->image_id])) {
+			if (!isset($this->images[$this->active_image_id])) {
 				bs_side::page_not_found("<p>Bildet du refererte til ble ikke funnet.</p>");
 			}
 
@@ -70,7 +70,7 @@ class studentbolig__omvisning extends omvisning {
 	{
 		foreach ($this->galleries as $gallery) {
 			foreach ($gallery['images'] as $image) {
-				return "/omvisning/{$image['gi_id']}";
+				return "/omvisning/{$image->data['id']}";
 			}
 		}
 	}
@@ -99,10 +99,10 @@ class studentbolig__omvisning extends omvisning {
 		<li>Bilder
 			<ul>';
 		
-		foreach ($this->galleries as $id => $data)
+		foreach ($this->galleries as $data)
 		{
 			echo '
-				<li><a href="#c'.$id.'">'.htmlspecialchars($data['title']).'</a></li>';
+				<li><a href="#'.urlencode($data['title']).'">'.htmlspecialchars($data['title']).'</a></li>';
 		}
 		
 		echo '
@@ -116,18 +116,18 @@ class studentbolig__omvisning extends omvisning {
 		foreach ($this->galleries as $gallery_id => $gallery)
 		{
 			echo '
-		<div class="omvisning_bilder_cat">
-			<h2 id="c'.$gallery_id.'">'.htmlspecialchars($gallery['title']).'</h2>
+		<div class="omvisning_bilder_cat" id="'.urlencode($gallery['title']).'">
+			<h2>'.htmlspecialchars($gallery['title']).'</h2>
 			<div class="omvisning_bilder_g">';
 			
 			foreach ($gallery['images'] as $image)
 			{
-				$text = $this->get_image_text($image);
+				$text = $image->get_image_text();
 				
 				echo '<!-- avoid inline-block spacing
-			--><p id="img_'.$image['gi_id'].'"><!--
-				--><a href="'.self::PATH.'/'.$image['gi_id'].'"><!--
-					--><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=thumb_omvisning" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
+			--><p id="img_'.$image->data['id'].'"><!--
+				--><a href="'.self::PATH.'/'.$image->data['id'].'"><!--
+					--><img src="/o.php?a=gi&amp;gi_id='.$image->data['id'].'&amp;gi_size=thumb_omvisning" alt="'.htmlspecialchars($text).'" title="'.htmlspecialchars($text).'" /><!--
 				--></a></p>';
 			}
 			
@@ -157,30 +157,32 @@ class studentbolig__omvisning extends omvisning {
 	 */
 	private function show_image() {
 		list($prev, $next) = $this->get_prev_next();
-		$image = $this->get_img($this->image_id);
-		$gal_title = $this->galleries[$this->images_gallery[$this->image_id]]['title'];
+		$image = $this->get_img($this->active_image_id);
+		$gal_title = $image->data['category'];
 		
 		// lagre alle bilder for javascript
 		list($img_i, $data) = $this->get_js_array();
 		
-		ess::$b->page->add_js('
+		bs_side::$head .= '
+<script type="text/javascript">
 var omvisning_i = '.$img_i.';
-var omvisning_data = '.json_encode($data).';');
+var omvisning_data = '.json_encode($data).';
+</script>';
 		
 		echo '
 <div id="omvisning_bilde_w">
 	<p id="omvisning_nav">
-		<a href="'.self::PATH.'/oversikt#c'.$this->images_gallery[$this->image_id].'" id="omvisning_back"><span>Til oversikt</span></a>
+		<a href="'.self::PATH.'/oversikt#'.urlencode($image->data['category']).'" id="omvisning_back"><span>Til oversikt</span></a>
 		<a href="'.self::PATH.'/'.$prev.'" id="omvisning_prev"><span>Forrige bilde</span></a>
 		<a href="'.self::PATH.'/'.$next.'" id="omvisning_next"><span>Neste bilde</span></a>
 	</p>
 	<div id="omvisning_bilde">
 		<h1>Omvisning - <span id="omvisning_cat">'.htmlspecialchars($gal_title).'</span></h1>
-		<p><a href="'.self::PATH.'/'.$next.'"><img src="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=inside" alt="'.htmlspecialchars($image['gi_description']).'" /></a></p>
-		<p id="omvisning_bilde_tekst">'.$this->get_image_text($image).'</p>
+		<p><a href="'.self::PATH.'/'.$next.'"><img src="/o.php?a=gi&amp;gi_id='.$image->data['id'].'&amp;gi_size=inside" alt="'.htmlspecialchars($image->data['desc']).'" /></a></p>
+		<p id="omvisning_bilde_tekst">'.$image->get_image_text().'</p>
 	</div>
 	<p id="omvisning_stort">
-		<a href="'.ess::$s['relative_path'].'/o.php?a=gi&amp;gi_id='.$image['gi_id'].'&amp;gi_size=original">Vis bilde i full størrelse</a>
+		<a href="/o.php?a=gi&amp;gi_id='.$image->data['id'].'&amp;gi_size=original">Vis bilde i full størrelse</a>
 	</p>
 </div>';
 	}

@@ -114,18 +114,17 @@ if ($_SERVER['HTTP_HOST'] == "blindern-studenterhjem.no" || !empty($GLOBALS['gaq
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="Hjemmesideoppmann Blindern Studenterhjem" />
 <meta name="keywords" content="<?php echo $page_keywords; ?>" />
-<meta name="description" content="<php echo $page_description; ?>" />
+<meta name="description" content="<?php echo $page_description; ?>" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link href="/layout/layout.css?<?php echo @filemtime(dirname(dirname(dirname(__FILE__)))."/layout/layout.css"); ?>" rel="stylesheet" type="text/css" />
 <!--[if lte IE 8]>
 <script src="/html5ie.js" type="text/javascript"></script>
 <![endif]-->
 <?php echo $robots; ?>
-<?php echo $page_head; ?>
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/blindern.js"></script>
+<?php echo $page_head; ?>
 
 </head>
 <body class="lang_<?php echo bs_side::$lang; ?> <?php echo $class_browser; ?><?php if ($is_devserver): ?> devinfobody<?php endif; ?>">
