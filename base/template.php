@@ -142,7 +142,7 @@ if ($_SERVER['HTTP_HOST'] == "blindern-studenterhjem.no" || !empty($GLOBALS['gaq
 	<!-- hvis vi viser banner, endre \'nobanner\' til \'banner\' og aktiver koden nedenfor -->
 	<div id="container"<?php if ($banner[0]): ?> class="banner"<?php endif; ?>><div id="main">
 		<div id="header">
-			<h1><a href="/<?php if ($page_lang != "no"): echo $bs_lang; endif ?>"><span>Blindern Studenterhjem<br />
+			<h1><a href="/<?php if ($page_lang != "no"): echo $page_lang; endif ?>"><span>Blindern Studenterhjem<br />
 				<?php
 				switch (bs_side::$lang)
 				{
