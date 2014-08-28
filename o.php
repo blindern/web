@@ -1,13 +1,16 @@
 <?php
 
-require "base/essentials.php";
+require "base/base.php";
+
+if (!class_exists("omvisning"))
+	require ROOT."/base/omvisning.php";
 
 // script for å hente ressurser
 // _GET: a => action
 
 if (!isset($_GET['a']))
 {
-	page_not_found("<p>What to do?!</p>");
+	bs_side::page_not_found("<p>What to do?!</p>");
 }
 
 switch ($_GET['a'])
@@ -17,14 +20,14 @@ switch ($_GET['a'])
 		ob_start();
 		if (!isset($_GET['gi_id']))
 		{
-			page_not_found("<p>gi_id?</p>");
+			bs_side::page_not_found("<p>gi_id?</p>");
 		}
 		$gi_id = intval($_GET['gi_id']);
-		
+
 		// gi_size
 		if (!isset($_GET['gi_size']))
 		{
-			page_not_found("<p>gi_size?</p>");
+			bs_side::page_not_found("<p>gi_size?</p>");
 		}
 		$sizes = array(
 			"original" => array("original"),
@@ -71,25 +74,24 @@ switch ($_GET['a'])
 		);
 		if (!isset($sizes[$_GET['gi_size']]))
 		{
-			page_not_found("<p>gi_size unknown</p>");
+			bs_side::page_not_found("<p>gi_size unknown</p>");
 		}
 		
 		// størrelsen vi skal bruke
 		$size = $sizes[$_GET['gi_size']];
 		$field = $size[0];
-		
-		// hent fra databasen
-		$result = ess::$b->db->query("SELECT gi_filename, gi_time FROM gallery_images WHERE gi_id = $gi_id");
+
+		// finn bildet
+		$obj = omvisning_repo::get_img_by_id($gi_id);
 		
 		// fant ikke?
-		if (mysql_num_rows($result) == 0)
+		if (!$obj)
 		{
-			page_not_found();
+			bs_side::page_not_found();
 		}
 		
-		$filename = mysql_result($result, 0);
-		$last_mod = mysql_result($result, 0, 1);
-		
+		$filename = $obj->data['filename'];
+
 		// hent data om vi har det
 		$data = null;
 		$sp = $field == "original" ? "original/" : "resized/{$field}_";
@@ -98,31 +100,33 @@ switch ($_GET['a'])
 		{
 			$data = @file_get_contents($filepath);
 		}
+
+		$last_mod = @filemtime(GALLERY_FOLDER."/original/$filename.jpg");
 		
 		// mangler?
 		if (empty($data))
 		{
 			if ($field == "original")
 			{
-				page_not_found("<p>Mangler kildedata for bildet!</p>");
+				bs_side::page_not_found("<p>Mangler kildedata for bildet!</p>");
 			}
 			elseif (!isset($size[2]))
 			{
-				page_not_found("<p>Mangler konvertert bilde. Mangler nye dimensjoner.</p>");
+				bs_side::page_not_found("<p>Mangler konvertert bilde. Mangler nye dimensjoner.</p>");
 			}
 			
 			// hent src
 			$data = @file_get_contents(GALLERY_FOLDER."/original/$filename.jpg");
 			if (empty($data))
 			{
-				page_not_found("<p>Mangler kildedata for bildet! Kan ikke konvertere til annet format.</p>");
+				bs_side::page_not_found("<p>Mangler kildedata for bildet! Kan ikke konvertere til annet format.</p>");
 			}
 			
 			// forsøk å åpne bildet
 			$img = @imagecreatefromstring($data);
 			if (!$img)
 			{
-				page_not_found("<p>Kunne ikke åpne kildedata som bilde.</p>");
+				bs_side::page_not_found("<p>Kunne ikke åpne kildedata som bilde.</p>");
 			}
 			
 			$img_width = imagesx($img);
@@ -172,8 +176,8 @@ switch ($_GET['a'])
 			
 			// eksporter bildet
 			@ob_clean();
-			if (!imagejpeg($img, null, 90)) page_not_found("<p>Kunne ikke eksportere bildet.</p>");
-			#if (!imagepng($img)) page_not_found("<p>Kunne ikke eksportere bildet.</p>");
+			if (!imagejpeg($img, null, 90)) bs_side::page_not_found("<p>Kunne ikke eksportere bildet.</p>");
+			#if (!imagepng($img)) bs_side::page_not_found("<p>Kunne ikke eksportere bildet.</p>");
 			$data = ob_get_contents();
 			@ob_clean();
 			
@@ -197,5 +201,5 @@ switch ($_GET['a'])
 	break;
 	
 	default:
-		page_not_found();
+		bs_side::page_not_found();
 }
